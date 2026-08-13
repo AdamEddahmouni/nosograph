@@ -1,0 +1,436 @@
+{
+  "relationships": [
+    {
+      "source": "CDK2",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK2 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "GDF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "GDF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CCHCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CCHCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MSH5",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH5 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH5-SAPCD1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH5-SAPCD1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TIPARP",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TIPARP is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GADD45G",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GADD45G is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "KITLG",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KITLG is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "YTHDC2",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "YTHDC2 is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "YTHDC2",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "YTHDC2 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "MSH5-SAPCD1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH5-SAPCD1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "NR5A1",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR5A1 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "FSHR",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSHR is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "GNRHR",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRHR is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "KISS1R",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KISS1R is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "LHCGR",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHCGR is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ESR1",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "YTHDC2",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YTHDC2 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SPO11",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPO11 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SPATA22",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA22 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "KISS1",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KISS1 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "KITLG",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KITLG is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SRY",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRY is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "MSH5-SAPCD1",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH5-SAPCD1 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "MSH5",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH5 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "FANCL",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCL is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TAF4B",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAF4B is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "HR",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HR is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FANCA",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "DND1",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DND1 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "HELQ",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HELQ is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CGB2",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB2 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CGB1",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB1 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CGB3",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB3 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CGB7",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB7 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "LHB",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHB is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CGB5",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB5 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CGB8",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB8 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXL2",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXL2 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FAAP100",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAAP100 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SYCE1",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYCE1 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SOHLH2",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOHLH2 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CCDC169-SOHLH2",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC169-SOHLH2 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CPEB3",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPEB3 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "IRS2",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRS2 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "AHR",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHR is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "DMC1",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMC1 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TBPL2",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBPL2 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "GDF9",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF9 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRL",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRL is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SGPL1",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGPL1 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TMPRSS6",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS6 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FMR1",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMR1 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TMEM79",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM79 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "LHX9",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHX9 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "NHLH2",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NHLH2 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "YBX2",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YBX2 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRDM7",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM7 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRDM9",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM9 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "EDA",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDA is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "AMH",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMH is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZGLP1",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZGLP1 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CDK2",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK2 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "GK5",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GK5 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "NR2C2",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR2C2 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TERB2",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERB2 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CCHCR1",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCHCR1 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "MAD2L2",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAD2L2 is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TIPARP",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIPARP is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "GADD45G",
+      "target": "primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GADD45G is associated with primary hypergonadotropic hypogonadism-partial alopecia syndrome (PRIMARY_HYPERGONADOTROPIC_HYPOGONADISM_PARTIAL_ALOPECIA_SYNDROME). Open Targets association score 0.05"
+    }
+  ]
+}

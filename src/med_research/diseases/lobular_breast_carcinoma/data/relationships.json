@@ -1,0 +1,484 @@
+{
+  "relationships": [
+    {
+      "source": "CCND2",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND2 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCND3",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND3 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDK12",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK12 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "STAT5B",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT5B is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K4",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K4 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "AXIN1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "AXIN1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CDH1",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.46"
+    },
+    {
+      "source": "ERBB2",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "ESR1",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "GPC3",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPC3 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FOXA1",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXA1 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "EBF1",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EBF1 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NRG1",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRG1 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "LPP",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPP is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "AFF3",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFF3 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SDHC",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDHC is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CAMTA1",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMTA1 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "H3C2",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C2 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MAP2K4",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K4 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PRDM16",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM16 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TBX3",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX3 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "AKT1",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "RSPO2",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO2 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ABI1",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABI1 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KMT2C",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FHIT",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FHIT is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MTCP1",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTCP1 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PREX2",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PREX2 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NCOR1",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOR1 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CBFB",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBFB is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MAP3K1",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K1 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CD274",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR1",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP53",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KIT",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MYC",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2A",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2A is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "AXIN1",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AXIN1 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDK12",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK12 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CCND3",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND3 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDC73",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDC73 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CCND2",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND2 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "STAT5B",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT5B is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NF1",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "GATA3",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FH",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FH is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRCA2",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRCA1",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTEN",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "STK11",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "AR",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CTCF",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTCF is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "IKZF1",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERCC2",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC2 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "GNAQ",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAQ is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID2",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID2 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAP2K2",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K2 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "U2AF1",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "U2AF1 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NTRK2",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK2 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MECOM",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MECOM is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATRX",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MEN1",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NOTCH2",
+      "target": "lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH2 is associated with lobular breast carcinoma (LOBULAR_BREAST_CARCINOMA). Open Targets association score 0.28"
+    }
+  ]
+}

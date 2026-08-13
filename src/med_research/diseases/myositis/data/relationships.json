@@ -1,0 +1,640 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL118",
+      "target": "PTGS2",
+      "type": "TARGETS",
+      "description": "CELECOXIB targets PTGS2."
+    },
+    {
+      "source": "CHEMBL2105759",
+      "target": "JAK1",
+      "type": "TARGETS",
+      "description": "BARICITINIB targets JAK1."
+    },
+    {
+      "source": "CHEMBL1201438",
+      "target": "IL2RB",
+      "type": "TARGETS",
+      "description": "ALDESLEUKIN targets IL2RB."
+    },
+    {
+      "source": "CHEMBL1201581",
+      "target": "TNF",
+      "type": "TARGETS",
+      "description": "INFLIXIMAB targets TNF."
+    },
+    {
+      "source": "CHEMBL2105759",
+      "target": "JAK2",
+      "type": "TARGETS",
+      "description": "BARICITINIB targets JAK2."
+    },
+    {
+      "source": "CHEMBL1789843",
+      "target": "TNFSF13B",
+      "type": "TARGETS",
+      "description": "BELIMUMAB targets TNFSF13B."
+    },
+    {
+      "source": "CHEMBL221959",
+      "target": "TYK2",
+      "type": "TARGETS",
+      "description": "TOFACITINIB targets TYK2."
+    },
+    {
+      "source": "CHEMBL221959",
+      "target": "JAK1",
+      "type": "TARGETS",
+      "description": "TOFACITINIB targets JAK1."
+    },
+    {
+      "source": "CHEMBL160",
+      "target": "PPIA",
+      "type": "TARGETS",
+      "description": "CYCLOSPORINE targets PPIA."
+    },
+    {
+      "source": "CHEMBL4297808",
+      "target": "IFNB1",
+      "type": "TARGETS",
+      "description": "DAZUKIBART targets IFNB1."
+    },
+    {
+      "source": "CHEMBL4594310",
+      "target": "FCGRT",
+      "type": "TARGETS",
+      "description": "NIPOCALIMAB targets FCGRT."
+    },
+    {
+      "source": "CHEMBL221959",
+      "target": "JAK3",
+      "type": "TARGETS",
+      "description": "TOFACITINIB targets JAK3."
+    },
+    {
+      "source": "CHEMBL1201438",
+      "target": "IL2RA",
+      "type": "TARGETS",
+      "description": "ALDESLEUKIN targets IL2RA."
+    },
+    {
+      "source": "CHEMBL221959",
+      "target": "JAK2",
+      "type": "TARGETS",
+      "description": "TOFACITINIB targets JAK2."
+    },
+    {
+      "source": "BLK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BLK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "HLA-DRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "HLA-DRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "IRF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IRF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "NCF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NCF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TACR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "TACR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL12RB2",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL12RB2 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "MEFV",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "MEFV is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "JAK1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT4",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT4 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "TYK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "TYK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "HMGCR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HMGCR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP3 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "TNIP1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "TNIP1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "DRD4",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "DRD4 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL12RB2",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL12RB2 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTTG1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTTG1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "IRF7",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF7 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP3 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF13B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNB1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNB1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF5",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF5 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF7",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF7 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF8",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "NCF2",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCF2 is associated with myositis (MYOSITIS). Open Targets association score 0.36"
+    },
+    {
+      "source": "STAT4",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT4 is associated with myositis (MYOSITIS). Open Targets association score 0.36"
+    },
+    {
+      "source": "PTPN22",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 is associated with myositis (MYOSITIS). Open Targets association score 0.36"
+    },
+    {
+      "source": "DNASE1L3",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNASE1L3 is associated with myositis (MYOSITIS). Open Targets association score 0.35"
+    },
+    {
+      "source": "TYK2",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYK2 is associated with myositis (MYOSITIS). Open Targets association score 0.34"
+    },
+    {
+      "source": "CAPN3",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAPN3 is associated with myositis (MYOSITIS). Open Targets association score 0.33"
+    },
+    {
+      "source": "TNIP1",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNIP1 is associated with myositis (MYOSITIS). Open Targets association score 0.33"
+    },
+    {
+      "source": "SDK2",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDK2 is associated with myositis (MYOSITIS). Open Targets association score 0.32"
+    },
+    {
+      "source": "DGKQ",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DGKQ is associated with myositis (MYOSITIS). Open Targets association score 0.32"
+    },
+    {
+      "source": "BLK",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLK is associated with myositis (MYOSITIS). Open Targets association score 0.31"
+    },
+    {
+      "source": "IL12RB2",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL12RB2 is associated with myositis (MYOSITIS). Open Targets association score 0.27"
+    },
+    {
+      "source": "FAM111B",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM111B is associated with myositis (MYOSITIS). Open Targets association score 0.27"
+    },
+    {
+      "source": "IFNB1",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNB1 is associated with myositis (MYOSITIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "YDJC",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YDJC is associated with myositis (MYOSITIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFAIP3 is associated with myositis (MYOSITIS). Open Targets association score 0.22"
+    },
+    {
+      "source": "IDUA",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDUA is associated with myositis (MYOSITIS). Open Targets association score 0.18"
+    },
+    {
+      "source": "PRDM1",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM1 is associated with myositis (MYOSITIS). Open Targets association score 0.17"
+    },
+    {
+      "source": "SLC26A1",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC26A1 is associated with myositis (MYOSITIS). Open Targets association score 0.17"
+    },
+    {
+      "source": "IRF8",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF8 is associated with myositis (MYOSITIS). Open Targets association score 0.17"
+    },
+    {
+      "source": "PTTG1",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTTG1 is associated with myositis (MYOSITIS). Open Targets association score 0.16"
+    },
+    {
+      "source": "TMTC2",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMTC2 is associated with myositis (MYOSITIS). Open Targets association score 0.16"
+    },
+    {
+      "source": "TNF",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with myositis (MYOSITIS). Open Targets association score 0.11"
+    },
+    {
+      "source": "IRF7",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF7 is associated with myositis (MYOSITIS). Open Targets association score 0.11"
+    },
+    {
+      "source": "DRD4",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DRD4 is associated with myositis (MYOSITIS). Open Targets association score 0.10"
+    },
+    {
+      "source": "KPNA4",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KPNA4 is associated with myositis (MYOSITIS). Open Targets association score 0.10"
+    },
+    {
+      "source": "IL2RA",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RA is associated with myositis (MYOSITIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "JAK1",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK1 is associated with myositis (MYOSITIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "IL2RB",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RB is associated with myositis (MYOSITIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "JAK2",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with myositis (MYOSITIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "TNFSF13B",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13B is associated with myositis (MYOSITIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "TRIM33",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM33 is associated with myositis (MYOSITIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "TACR1",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TACR1 is associated with myositis (MYOSITIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "DMD",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMD is associated with myositis (MYOSITIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "HLA-DRB1",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DRB1 is associated with myositis (MYOSITIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "MMP9",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with myositis (MYOSITIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "TNPO3",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNPO3 is associated with myositis (MYOSITIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "RETN",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RETN is associated with myositis (MYOSITIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "S100A4",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A4 is associated with myositis (MYOSITIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "JAK3",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with myositis (MYOSITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "FCGRT",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGRT is associated with myositis (MYOSITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "PPIA",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIA is associated with myositis (MYOSITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "TRIM21",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM21 is associated with myositis (MYOSITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "EPS8L2",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPS8L2 is associated with myositis (MYOSITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "HMGCR",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCR is associated with myositis (MYOSITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "IRF5",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF5 is associated with myositis (MYOSITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "DYSF",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYSF is associated with myositis (MYOSITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD4",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with myositis (MYOSITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "NMRK1",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NMRK1 is associated with myositis (MYOSITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "FAM167A",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM167A is associated with myositis (MYOSITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "SNRNP70",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNRNP70 is associated with myositis (MYOSITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "APP",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APP is associated with myositis (MYOSITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "SMC4",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMC4 is associated with myositis (MYOSITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "SCN4A",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN4A is associated with myositis (MYOSITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "NAMPT",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAMPT is associated with myositis (MYOSITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PAX7",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX7 is associated with myositis (MYOSITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTGS2",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with myositis (MYOSITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SCN3B",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN3B is associated with myositis (MYOSITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MEFV",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEFV is associated with myositis (MYOSITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFNG",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with myositis (MYOSITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TTN",
+      "target": "myositis (MYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTN is associated with myositis (MYOSITIS). Open Targets association score 0.04"
+    }
+  ]
+}

@@ -1,0 +1,496 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL596",
+      "target": "OPRM1",
+      "type": "TARGETS",
+      "description": "FENTANYL targets OPRM1."
+    },
+    {
+      "source": "CHEMBL70",
+      "target": "OPRM1",
+      "type": "TARGETS",
+      "description": "MORPHINE targets OPRM1."
+    },
+    {
+      "source": "CHEMBL1005",
+      "target": "OPRM1",
+      "type": "TARGETS",
+      "description": "REMIFENTANIL targets OPRM1."
+    },
+    {
+      "source": "CHEMBL656",
+      "target": "OPRM1",
+      "type": "TARGETS",
+      "description": "OXYCODONE targets OPRM1."
+    },
+    {
+      "source": "ARRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "ARRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "C4A",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C4A is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "TACR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "TACR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "TP53INP2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53INP2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "OPRD1",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "OPRD1 is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "OPRK1",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "OPRK1 is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "OPRM1",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "OPRM1 is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "HTR1A",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTR1A is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "HTR4",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTR4 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TGM2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR7",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR7 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ABCC3",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC3 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP2D6",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2D6 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP3A4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP3A4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GSTM1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "OPRM1",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OPRM1 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.29"
+    },
+    {
+      "source": "ARR3",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARR3 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.04"
+    },
+    {
+      "source": "SST",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SST is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.04"
+    },
+    {
+      "source": "TAC1",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAC1 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.04"
+    },
+    {
+      "source": "CNR1",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNR1 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "LEP",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "OPRK1",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OPRK1 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "TRH",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRH is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "FAAH",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAAH is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "ARRB1",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARRB1 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "PRKCA",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCA is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "CFB",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFB is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "CYP2D6",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2D6 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRPA1",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPA1 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "HTR4",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTR4 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC16A1",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC16A1 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "MCAT",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCAT is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "HTR1A",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTR1A is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "MCPH1",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCPH1 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "HCRTR2",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HCRTR2 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "GCG",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCG is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "KCNMA1",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNMA1 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSMA2",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMA2 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP3A4",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP3A4 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "RGS4",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RGS4 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "ABCB1",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB1 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSTM1",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM1 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "BLOC1S5",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLOC1S5 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TACR1",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TACR1 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "C4A",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C4A is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PITX2",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX2 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "ABCC3",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC3 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPIG",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIG is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRRT2",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRRT2 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKCB",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCB is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKCG",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCG is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "OXTR",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OXTR is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "NRXN2",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRXN2 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKCE",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCE is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "NRXN1",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRXN1 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATOH1",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATOH1 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "ARRB2",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARRB2 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "OPRD1",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OPRD1 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53INP2",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53INP2 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TLR7",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR7 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CMA1",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMA1 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "MCTS1",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCTS1 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCHE",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCHE is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC6A9",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A9 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "GCH1",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCH1 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "GH1",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGM2",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM2 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "GGH",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGH is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TLR4",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "EDN1",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDN1 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "MGAT1",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MGAT1 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "HCRT",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HCRT is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "PGP",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGP is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1B",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "GPBAR1",
+      "target": "respiratory depression (RESPIRATORY_DEPRESSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPBAR1 is associated with respiratory depression (RESPIRATORY_DEPRESSION). Open Targets association score 0.00"
+    }
+  ]
+}

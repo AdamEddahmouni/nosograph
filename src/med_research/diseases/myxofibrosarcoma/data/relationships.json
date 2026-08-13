@@ -1,0 +1,532 @@
+{
+  "relationships": [
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCND2",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND2 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TRAF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "HAVCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL1A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "HAVCR2",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR2 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "TRAF7",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF7 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TRAF7",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF7 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "FUS",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUS is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "DDIT3",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDIT3 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "EWSR1",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EWSR1 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CREB3L2",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREB3L2 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "YWHAE",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YWHAE is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NUTM2B",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUTM2B is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CREB3L1",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREB3L1 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TP53",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RB1",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NF1",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KIT",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ALK",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "HRAS",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTEN",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FLT3",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR3",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KDR",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NPM1",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPM1 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRCA1",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "EGFR",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "CD79A",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "MDM4",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM4 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "ATRX",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "NTRK1",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "EZH2",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EZH2 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TRAF7",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAF7 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "COL1A1",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A1 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "POLE",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CCND2",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND2 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PDGFB",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFB is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NF2",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MTAP",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTAP is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PAK1",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAK1 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CD8A",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ASS1",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASS1 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "AMACR",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMACR is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MET",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD44",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "RSF1",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSF1 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SKP2",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SKP2 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "RPL17",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PDCD1",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SPATA2",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SNCA",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD68",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD68 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CSF2",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "AKT1",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "DCN",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCN is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MMP9",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GNAS",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAS is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MKI67",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "EZR",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EZR is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MTOR",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "AXL",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AXL is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "HDAC9",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC9 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD109",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD109 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "RICTOR",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RICTOR is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "HAVCR2",
+      "target": "myxofibrosarcoma (MYXOFIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAVCR2 is associated with myxofibrosarcoma (MYXOFIBROSARCOMA). Open Targets association score 0.02"
+    }
+  ]
+}

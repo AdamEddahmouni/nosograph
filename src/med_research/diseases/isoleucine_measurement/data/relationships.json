@@ -1,0 +1,460 @@
+{
+  "relationships": [
+    {
+      "source": "CCND2",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND2 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "GRB14",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "GRB14 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "EIF2B4",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EIF2B4 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "KLF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "KLF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATRAID",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRAID is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "SLC1A4",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC1A4 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INSR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INSR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IRS1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "IRS1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "SLC2A4",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A4 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL4 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CD300LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD300LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PLCD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLCD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "PPM1K",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPM1K is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.55"
+    },
+    {
+      "source": "LPL",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "GCKR",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "BCAT2",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCAT2 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "ATRAID",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRAID is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "HSD17B14",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSD17B14 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "FCSK",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCSK is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "ZPR1",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZPR1 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "ST3GAL2",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST3GAL2 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "LPA",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "COBLL1",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COBLL1 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "APOC1",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC1 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL4 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "AHSG",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSG is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "ANKRD55",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKRD55 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "APOA5",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "SLC1A4",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC1A4 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "CD300LG",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD300LG is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "CIB4",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIB4 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "MAP3K1",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K1 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "APOE",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "DDX19B",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDX19B is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "CCND2",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND2 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "GRB14",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRB14 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "CLEC18C",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC18C is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.27"
+    },
+    {
+      "source": "SPRYD4",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPRYD4 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.27"
+    },
+    {
+      "source": "INSR",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INSR is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.25"
+    },
+    {
+      "source": "KLF9",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF9 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.25"
+    },
+    {
+      "source": "TRIB1",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIB1 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.24"
+    },
+    {
+      "source": "HERC6",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HERC6 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.22"
+    },
+    {
+      "source": "ZC3H11B",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZC3H11B is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.21"
+    },
+    {
+      "source": "MSRA",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSRA is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.21"
+    },
+    {
+      "source": "PPM1G",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPM1G is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.20"
+    },
+    {
+      "source": "PEPD",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PEPD is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.19"
+    },
+    {
+      "source": "SLC2A4",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A4 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.18"
+    },
+    {
+      "source": "MLXIPL",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLXIPL is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.18"
+    },
+    {
+      "source": "SPATA31H1",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA31H1 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.18"
+    },
+    {
+      "source": "BCKDK",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCKDK is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.16"
+    },
+    {
+      "source": "BUD13",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUD13 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.16"
+    },
+    {
+      "source": "ABCG2",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG2 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.16"
+    },
+    {
+      "source": "AARS1",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AARS1 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.15"
+    },
+    {
+      "source": "NRBP1",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRBP1 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.15"
+    },
+    {
+      "source": "VEGFA",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.14"
+    },
+    {
+      "source": "IFT172",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT172 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.13"
+    },
+    {
+      "source": "TBL2",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBL2 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.13"
+    },
+    {
+      "source": "FADS1",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS1 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.13"
+    },
+    {
+      "source": "DOCK7",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK7 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.12"
+    },
+    {
+      "source": "MAP1A",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP1A is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.12"
+    },
+    {
+      "source": "RBMS2",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBMS2 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "BAZ1B",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAZ1B is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "DUSP3",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DUSP3 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.10"
+    },
+    {
+      "source": "PDIA3",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDIA3 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.10"
+    },
+    {
+      "source": "GLS2",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLS2 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.09"
+    },
+    {
+      "source": "PLCD4",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCD4 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.08"
+    },
+    {
+      "source": "USP1",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP1 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.07"
+    },
+    {
+      "source": "KRTCAP3",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRTCAP3 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.07"
+    },
+    {
+      "source": "PPP1R15A",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R15A is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.07"
+    },
+    {
+      "source": "EIF2B4",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF2B4 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.07"
+    },
+    {
+      "source": "TMEM258",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM258 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.07"
+    },
+    {
+      "source": "IRS1",
+      "target": "isoleucine measurement (ISOLEUCINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRS1 is associated with isoleucine measurement (ISOLEUCINE_MEASUREMENT). Open Targets association score 0.06"
+    }
+  ]
+}

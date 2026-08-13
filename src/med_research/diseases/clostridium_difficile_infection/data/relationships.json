@@ -1,0 +1,526 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL841",
+      "target": "OPRM1",
+      "type": "TARGETS",
+      "description": "LOPERAMIDE targets OPRM1."
+    },
+    {
+      "source": "CHEMBL1503",
+      "target": "ATP4A",
+      "type": "TARGETS",
+      "description": "OMEPRAZOLE targets ATP4A."
+    },
+    {
+      "source": "CASP1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MBL2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "MBL2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CASP1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL33",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL33 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "OPRM1",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "OPRM1 is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "DRD1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "DRD1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL22",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL22 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TLR2",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR2 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "NLRP1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "MSX2",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSX2 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.34"
+    },
+    {
+      "source": "DRD1",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DRD1 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.18"
+    },
+    {
+      "source": "AVP",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVP is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.10"
+    },
+    {
+      "source": "IL33",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL33 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.10"
+    },
+    {
+      "source": "IL22",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL22 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.09"
+    },
+    {
+      "source": "CXCR2",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR2 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.08"
+    },
+    {
+      "source": "TLR2",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR2 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.08"
+    },
+    {
+      "source": "S100B",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100B is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.08"
+    },
+    {
+      "source": "IL1B",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.08"
+    },
+    {
+      "source": "PPARG",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.08"
+    },
+    {
+      "source": "EGFR",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.08"
+    },
+    {
+      "source": "TP53",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.07"
+    },
+    {
+      "source": "ALB",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.07"
+    },
+    {
+      "source": "OPRM1",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OPRM1 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.07"
+    },
+    {
+      "source": "GRN",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRN is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL27",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL27 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.07"
+    },
+    {
+      "source": "NLRP1",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP1 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.07"
+    },
+    {
+      "source": "CD4",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.07"
+    },
+    {
+      "source": "CRP",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.07"
+    },
+    {
+      "source": "NR1H4",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1H4 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.07"
+    },
+    {
+      "source": "CALCA",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.07"
+    },
+    {
+      "source": "UROD",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UROD is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.07"
+    },
+    {
+      "source": "CAMP",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMP is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.06"
+    },
+    {
+      "source": "TLR4",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.06"
+    },
+    {
+      "source": "VPREB1",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VPREB1 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNF",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXM1",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXM1 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.05"
+    },
+    {
+      "source": "SFXN1",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFXN1 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.05"
+    },
+    {
+      "source": "IFNG",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.05"
+    },
+    {
+      "source": "LTF",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTF is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.05"
+    },
+    {
+      "source": "ATP4A",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP4A is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "ORAI1",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ORAI1 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "MBL2",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBL2 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "UBXN11",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBXN11 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRPV1",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV1 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD79A",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "CASP1",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP1 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "RPH3A",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPH3A is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "STIM1",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STIM1 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "CSF3",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "OCLN",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OCLN is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "CXCL8",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL17A",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "HMGB1",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGB1 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADORA2A",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADORA2A is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "CALM3",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALM3 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "CAMKMT",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMKMT is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "CALM1",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALM1 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "KRIT1",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRIT1 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "CALM2",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALM2 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "AOPEP",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOPEP is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "APOE",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "AZI2",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AZI2 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "ACOT8",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACOT8 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "NAPSA",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAPSA is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "TAB3",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAB3 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "NAP1L1",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAP1L1 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "NCKAP1",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCKAP1 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "NAA25",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAA25 is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "TRMO",
+      "target": "clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRMO is associated with clostridium difficile infection (CLOSTRIDIUM_DIFFICILE_INFECTION). Open Targets association score 0.03"
+    }
+  ]
+}

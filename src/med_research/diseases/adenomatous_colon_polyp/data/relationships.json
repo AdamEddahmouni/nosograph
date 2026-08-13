@@ -1,0 +1,544 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL25",
+      "target": "PTGS1",
+      "type": "TARGETS",
+      "description": "ASPIRIN targets PTGS1."
+    },
+    {
+      "source": "CHEMBL830",
+      "target": "ODC1",
+      "type": "TARGETS",
+      "description": "EFLORNITHINE targets ODC1."
+    },
+    {
+      "source": "CHEMBL25",
+      "target": "PTGS2",
+      "type": "TARGETS",
+      "description": "ASPIRIN targets PTGS2."
+    },
+    {
+      "source": "SLC35A2",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC35A2 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "MS4A12",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MS4A12 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MSH2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ALOX5",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ALOX5 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP13",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP13 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GRIN2D",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2D is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "SELENOP",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELENOP is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK14",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK14 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK8",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK8 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "RENBP",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "RENBP is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "PTGES",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGES is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGS1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR2",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR2 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "GSTK1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTK1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SLCO6A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLCO6A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "APC",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.60"
+    },
+    {
+      "source": "ODC1",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ODC1 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.08"
+    },
+    {
+      "source": "PTGS2",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.07"
+    },
+    {
+      "source": "PTGS1",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS1 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.07"
+    },
+    {
+      "source": "IGF1",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "INS",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGFBP3",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGFBP3 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUTYH",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUTYH is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "MFAP5",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFAP5 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFKB1",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPK8",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK8 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP12A",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP12A is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP4A",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP4A is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "GAST",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAST is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFA",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFA is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACE",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGFR",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "NRIP3",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRIP3 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "ESR2",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR2 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALOX5",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALOX5 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT18",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT18 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "TMED7",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMED7 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGFB1",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "AGT",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "DCLK1",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCLK1 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "SELENOP",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELENOP is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "KLK12",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK12 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "TACSTD2",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TACSTD2 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "TRAP1",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAP1 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "REG4",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REG4 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "MSH2",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH2 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "MKI67",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "MT-CO2",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO2 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "LHFPL7",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHFPL7 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDH1",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "HDAC3",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC3 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "LEP",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "MTOR",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYEOV",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYEOV is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "GRIN2D",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2D is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "KLK11",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK11 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "FAM83A",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM83A is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "LCN2",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN2 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC5A8",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC5A8 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC35A2",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC35A2 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "PLA2G2C",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G2C is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "TLR2",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR2 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "PLA2G2A",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G2A is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYB",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYB is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "POLD1",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD1 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "PLA2G5",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G5 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "GSTK1",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTK1 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLCO6A1",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLCO6A1 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "MS4A12",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MS4A12 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "GRAP2",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRAP2 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "LTF",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTF is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMP13",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP13 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "RENBP",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RENBP is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTGES",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGES is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPK14",
+      "target": "adenomatous colon polyp (ADENOMATOUS_COLON_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK14 is associated with adenomatous colon polyp (ADENOMATOUS_COLON_POLYP). Open Targets association score 0.00"
+    }
+  ]
+}

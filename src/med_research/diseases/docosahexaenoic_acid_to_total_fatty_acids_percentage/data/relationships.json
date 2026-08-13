@@ -1,0 +1,418 @@
+{
+  "relationships": [
+    {
+      "source": "BMERB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "BMERB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "FGF21",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF21 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TM6SF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TM6SF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "RASIP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASIP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MRGPRD",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "MRGPRD is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "GALNT2",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GALNT2 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.49"
+    },
+    {
+      "source": "FADS2",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS2 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.49"
+    },
+    {
+      "source": "LPL",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.47"
+    },
+    {
+      "source": "ZPR1",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZPR1 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.46"
+    },
+    {
+      "source": "APOB",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.45"
+    },
+    {
+      "source": "APOA5",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.44"
+    },
+    {
+      "source": "CPT1A",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPT1A is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.44"
+    },
+    {
+      "source": "LIPC",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.43"
+    },
+    {
+      "source": "BFAR",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BFAR is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.41"
+    },
+    {
+      "source": "LPA",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.40"
+    },
+    {
+      "source": "NTAN1",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTAN1 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.39"
+    },
+    {
+      "source": "FTO",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FTO is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.38"
+    },
+    {
+      "source": "APOC3",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC3 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.37"
+    },
+    {
+      "source": "FADS3",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS3 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.36"
+    },
+    {
+      "source": "SLC22A1",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A1 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.34"
+    },
+    {
+      "source": "SLC22A3",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A3 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.34"
+    },
+    {
+      "source": "PAFAH1B2",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAFAH1B2 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.34"
+    },
+    {
+      "source": "DGAT2",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DGAT2 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.34"
+    },
+    {
+      "source": "TRIB1",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIB1 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.33"
+    },
+    {
+      "source": "PARN",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARN is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.33"
+    },
+    {
+      "source": "FADS1",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS1 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.33"
+    },
+    {
+      "source": "APOE",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.31"
+    },
+    {
+      "source": "NSF",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSF is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.30"
+    },
+    {
+      "source": "DEFB136",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEFB136 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.29"
+    },
+    {
+      "source": "BMERB1",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMERB1 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.28"
+    },
+    {
+      "source": "DEFB134",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEFB134 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.27"
+    },
+    {
+      "source": "DEFB135",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEFB135 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.27"
+    },
+    {
+      "source": "APOA1",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.27"
+    },
+    {
+      "source": "PRKN",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKN is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.26"
+    },
+    {
+      "source": "MRGPRD",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRGPRD is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.26"
+    },
+    {
+      "source": "JMJD1C",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JMJD1C is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.25"
+    },
+    {
+      "source": "PDXDC1",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDXDC1 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.24"
+    },
+    {
+      "source": "NOMO1",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOMO1 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.23"
+    },
+    {
+      "source": "PGA5",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGA5 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.23"
+    },
+    {
+      "source": "SAMM50",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAMM50 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.23"
+    },
+    {
+      "source": "MSRA",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSRA is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.22"
+    },
+    {
+      "source": "XKR6",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XKR6 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.21"
+    },
+    {
+      "source": "RASIP1",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASIP1 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.21"
+    },
+    {
+      "source": "MOGAT2",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MOGAT2 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.20"
+    },
+    {
+      "source": "BUD13",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUD13 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.19"
+    },
+    {
+      "source": "SLC18A1",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC18A1 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.19"
+    },
+    {
+      "source": "GCKR",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.18"
+    },
+    {
+      "source": "RPGRIP1L",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPGRIP1L is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.18"
+    },
+    {
+      "source": "MFHAS1",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFHAS1 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.17"
+    },
+    {
+      "source": "PPP1R3B",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R3B is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.17"
+    },
+    {
+      "source": "APOC1",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC1 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.16"
+    },
+    {
+      "source": "CRHR1",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRHR1 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.16"
+    },
+    {
+      "source": "TOMM40",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOMM40 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.15"
+    },
+    {
+      "source": "IGHMBP2",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGHMBP2 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.14"
+    },
+    {
+      "source": "SCGB1A1",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCGB1A1 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.13"
+    },
+    {
+      "source": "SLC22A5",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A5 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.13"
+    },
+    {
+      "source": "NPIPA5",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPIPA5 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.12"
+    },
+    {
+      "source": "NPIPA1",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPIPA1 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.11"
+    },
+    {
+      "source": "AGPAT4",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGPAT4 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.10"
+    },
+    {
+      "source": "MAU2",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAU2 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.09"
+    },
+    {
+      "source": "FGF21",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF21 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.09"
+    },
+    {
+      "source": "SPPL2C",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPPL2C is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.08"
+    },
+    {
+      "source": "TM6SF2",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM6SF2 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.08"
+    },
+    {
+      "source": "PNPLA3",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PNPLA3 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLC22A4",
+      "target": "docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A4 is associated with docosahexaenoic acid to total fatty acids percentage  (DOCOSAHEXAENOIC_ACID_TO_TOTAL_FATTY_ACIDS_PERCENTAGE). Open Targets association score 0.06"
+    }
+  ]
+}

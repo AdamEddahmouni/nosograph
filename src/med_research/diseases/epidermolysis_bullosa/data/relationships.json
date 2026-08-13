@@ -145,6 +145,12 @@
       "description": "HEATR5B is a component of the DNA Repair pathway."
     },
     {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
       "source": "COL17A1",
       "target": "ecm-remodeling",
       "type": "PARTICIPATES_IN",
@@ -361,16 +367,16 @@
       "description": "IMPDH2 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.07"
     },
     {
-      "source": "RARA",
-      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "RARA is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.04"
-    },
-    {
       "source": "RARB",
       "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
       "type": "ASSOCIATED_WITH",
       "description": "RARB is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.04"
+    },
+    {
+      "source": "RARA",
+      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RARA is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.04"
     },
     {
       "source": "RARG",
@@ -383,6 +389,42 @@
       "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
       "type": "ASSOCIATED_WITH",
       "description": "RNF103 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GABRG1",
+      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRG1 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.02"
+    },
+    {
+      "source": "FGFR2",
+      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GABRA3",
+      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRA3 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GABRG2",
+      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRG2 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GABRA5",
+      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRA5 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GABRA2",
+      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRA2 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.02"
     },
     {
       "source": "CD52",
@@ -401,42 +443,6 @@
       "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
       "type": "ASSOCIATED_WITH",
       "description": "GABRA1 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.02"
-    },
-    {
-      "source": "GABRG2",
-      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GABRG2 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.02"
-    },
-    {
-      "source": "GABRG1",
-      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GABRG1 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.02"
-    },
-    {
-      "source": "GABRA5",
-      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GABRA5 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.02"
-    },
-    {
-      "source": "FGFR2",
-      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "FGFR2 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.02"
-    },
-    {
-      "source": "GABRA2",
-      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GABRA2 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.02"
-    },
-    {
-      "source": "GABRA3",
-      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GABRA3 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.02"
     },
     {
       "source": "DST",
@@ -535,28 +541,28 @@
       "description": "PSMB2 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
     },
     {
-      "source": "ERBIN",
-      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ERBIN is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
-    },
-    {
       "source": "KRT10",
       "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
       "type": "ASSOCIATED_WITH",
       "description": "KRT10 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
     },
     {
-      "source": "ACHE",
+      "source": "ERBIN",
       "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
       "type": "ASSOCIATED_WITH",
-      "description": "ACHE is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
+      "description": "ERBIN is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
     },
     {
       "source": "PLOD1",
       "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
       "type": "ASSOCIATED_WITH",
       "description": "PLOD1 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACHE",
+      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACHE is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
     },
     {
       "source": "PDGFRB",
@@ -577,16 +583,16 @@
       "description": "CD151 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
     },
     {
-      "source": "IFNG",
-      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "IFNG is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
-    },
-    {
       "source": "OGA",
       "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
       "type": "ASSOCIATED_WITH",
       "description": "OGA is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNG",
+      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
     },
     {
       "source": "ABCB5",
@@ -595,16 +601,16 @@
       "description": "ABCB5 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
     },
     {
-      "source": "TGFB1",
-      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "TGFB1 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
-    },
-    {
       "source": "TGM5",
       "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
       "type": "ASSOCIATED_WITH",
       "description": "TGM5 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB1",
+      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
     },
     {
       "source": "TNC",
@@ -613,34 +619,10 @@
       "description": "TNC is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
     },
     {
-      "source": "IL10",
-      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "IL10 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
-    },
-    {
       "source": "SP1",
       "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
       "type": "ASSOCIATED_WITH",
       "description": "SP1 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
-    },
-    {
-      "source": "MUC1",
-      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "MUC1 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
-    },
-    {
-      "source": "GATA3",
-      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GATA3 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
-    },
-    {
-      "source": "SYNE3",
-      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SYNE3 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
     },
     {
       "source": "ARFGEF1",
@@ -649,10 +631,10 @@
       "description": "ARFGEF1 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
     },
     {
-      "source": "HEATR5B",
+      "source": "CUX1",
       "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
       "type": "ASSOCIATED_WITH",
-      "description": "HEATR5B is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
+      "description": "CUX1 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
     },
     {
       "source": "IL2",
@@ -661,10 +643,52 @@
       "description": "IL2 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
     },
     {
-      "source": "CUX1",
+      "source": "DCN",
       "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
       "type": "ASSOCIATED_WITH",
-      "description": "CUX1 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
+      "description": "DCN is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ARID2",
+      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID2 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL10",
+      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GATA3",
+      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC1",
+      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC1 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SYNE3",
+      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYNE3 is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HEATR5B",
+      "target": "epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEATR5B is associated with epidermolysis bullosa (EPIDERMOLYSIS_BULLOSA). Open Targets association score 0.01"
     },
     {
       "source": "ABCC6",

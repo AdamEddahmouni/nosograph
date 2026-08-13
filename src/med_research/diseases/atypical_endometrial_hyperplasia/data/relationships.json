@@ -1,0 +1,496 @@
+{
+  "relationships": [
+    {
+      "source": "BAX",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BAX is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "SLC34A2",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC34A2 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDK12",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK12 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CRLF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CRLF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GRIN2A",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2A is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RRAS2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RRAS2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "IRF4",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF4 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LRP1B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.51"
+    },
+    {
+      "source": "TP53",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.40"
+    },
+    {
+      "source": "KRAS",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.40"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.40"
+    },
+    {
+      "source": "APC",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.38"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.33"
+    },
+    {
+      "source": "BAX",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAX is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "POLE",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MTOR",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID1A",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATM",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CHD4",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD4 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RB1",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRD3",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRD3 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KLF4",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF4 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CUX1",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUX1 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FUBP1",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUBP1 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "GRIN2A",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2A is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2D",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TSC1",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC1 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CIITA",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIITA is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "DROSHA",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DROSHA is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TCF3",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF3 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KDM5C",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM5C is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "LZTR1",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LZTR1 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TRRAP",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRRAP is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID1B",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1B is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NCOR2",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOR2 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RNF43",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF43 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "DNM2",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM2 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CRLF2",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRLF2 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RRAS2",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RRAS2 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SLC34A2",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC34A2 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERBB3",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB3 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EP300",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EP300 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BCL11B",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL11B is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CTCF",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTCF is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAP3K1",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K1 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CIC",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIC is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MET",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2A",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2A is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TFE3",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFE3 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BCORL1",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCORL1 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERG",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERG is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR3",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NUTM1",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUTM1 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TET2",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MED12",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MED12 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CARD11",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "IRF4",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF4 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "LRP1B",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1B is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATP2B3",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP2B3 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BARD1",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BARD1 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "HOXA9",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA9 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CCND1",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ABL1",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABL1 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FBXO11",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXO11 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDK12",
+      "target": "Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK12 is associated with Atypical Endometrial Hyperplasia (ATYPICAL_ENDOMETRIAL_HYPERPLASIA). Open Targets association score 0.28"
+    }
+  ]
+}

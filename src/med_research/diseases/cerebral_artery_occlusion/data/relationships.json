@@ -1,0 +1,490 @@
+{
+  "relationships": [
+    {
+      "source": "CASP8",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP8 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SERPINE1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SERPINE1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IL18",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGAX",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAX is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK14",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK14 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "ITGAX",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAX is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGER2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGER2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFAIP6",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP6 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "CYP46A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP46A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "EDN1",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDN1 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLAT",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAT is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1B",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADCYAP1",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADCYAP1 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "DNM1L",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM1L is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB1",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "GJA1",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA1 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "GABPA",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABPA is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "HMOX1",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMOX1 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "SUMO2",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUMO2 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "BLOC1S6",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLOC1S6 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "ESR1",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNFAIP6",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFAIP6 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "EPB42",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPB42 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PBX3",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBX3 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGF2",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF2 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD68",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD68 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRH2",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH2 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRH1",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH1 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "NTF3",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTF3 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "SERPINE1",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINE1 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP46A1",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP46A1 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "ITGAX",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAX is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "AMY2A",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMY2A is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "AGT",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CBS",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBS is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TEK",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TEK is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "GDNF",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDNF is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPY",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPY is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "BDNF",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BDNF is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "POLDIP2",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLDIP2 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPAG11A",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPAG11A is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "AHSA1",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSA1 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "ICAM1",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "AIMP2",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIMP2 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "GRAP2",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRAP2 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "RNF19A",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF19A is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "CSF2",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTGER2",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGER2 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "CLDN5",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN5 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRK",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRK is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPAG11B",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPAG11B is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPK14",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK14 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPK1",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "HMGB1",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGB1 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "AHR",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHR is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "MIB2",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIB2 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "OLIG2",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OLIG2 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "P2RX7",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RX7 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "CALCA",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "VEGFA",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNF",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL18",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "DAPK2",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAPK2 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRMP1",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRMP1 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "DENR",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DENR is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "UTRN",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UTRN is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "EFNB2",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EFNB2 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "CASP8",
+      "target": "cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP8 is associated with cerebral artery occlusion (CEREBRAL_ARTERY_OCCLUSION). Open Targets association score 0.00"
+    }
+  ]
+}

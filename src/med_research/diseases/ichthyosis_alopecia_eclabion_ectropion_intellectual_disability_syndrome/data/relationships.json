@@ -1,0 +1,436 @@
+{
+  "relationships": [
+    {
+      "source": "RHBDF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "RHBDF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CCHCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CCHCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ALOX12B",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ALOX12B is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "PTCH2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "ZDHHC21",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "ZDHHC21 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "CARD14",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD14 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "CHUK",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CHUK is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "IKBKG",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "IKBKG is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBIZ",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIZ is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RELB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "ACER1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACER1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "ST14",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST14 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "SCD",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCD is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "HR",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HR is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "LRIG1",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRIG1 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "NSDHL",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSDHL is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "DSG4",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSG4 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFKBIZ",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIZ is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "DSG3",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSG3 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TMEM79",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM79 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CTSL",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSL is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CTSV",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSV is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTCH2",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH2 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXP3",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "GSDMA",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMA is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRSS8",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRSS8 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "GRHL1",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRHL1 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "LBR",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LBR is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPINK5",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPINK5 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "DSC1",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSC1 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SHARPIN",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHARPIN is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FLG",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLG is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ABCA12",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA12 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRPV3",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV3 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SUFU",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUFU is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "AWAT2",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AWAT2 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC27A4",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC27A4 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "KRT10",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT10 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IKBKG",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKBKG is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TUFT1",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUFT1 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PKP3",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKP3 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ERP44",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERP44 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RELB",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELB is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "KRT2",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT2 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CST6",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CST6 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "KLK11",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK11 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCHCR1",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCHCR1 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CLDN1",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN1 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FAM83H",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM83H is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MPZL3",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPZL3 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FA2H",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FA2H is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "KRT1",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT1 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "KRT71",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT71 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDSN",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDSN is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SNAP29",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNAP29 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "DMKN",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMKN is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CARD14",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD14 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TTC7A",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC7A is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZDHHC21",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZDHHC21 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ALOX12B",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALOX12B is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ASS1",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASS1 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "KSR1",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KSR1 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TWIST2",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TWIST2 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PNPLA1",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PNPLA1 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GATA3",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHUK",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHUK is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ERCC2",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC2 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PPP2R5A",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP2R5A is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOX21",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX21 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ACER1",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACER1 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "RHBDF2",
+      "target": "ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHBDF2 is associated with ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome (ICHTHYOSIS_ALOPECIA_ECLABION_ECTROPION_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.03"
+    }
+  ]
+}

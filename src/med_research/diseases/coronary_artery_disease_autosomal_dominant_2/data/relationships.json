@@ -1,0 +1,484 @@
+{
+  "relationships": [
+    {
+      "source": "SCARB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "SCARB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "C11orf86",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C11orf86 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MEF2A",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "MEF2A is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PHF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "PHF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ELN",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ELN is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GRM3",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRM3 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "SLC2A8",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A8 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PIK3C2G",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3C2G is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TGFB1I1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1I1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1I1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1I1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "LRP5",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP5 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ABCC9",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC9 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP27A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP27A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP4A11",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4A11 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP4A22",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4A22 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "LRP6",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP6 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.70"
+    },
+    {
+      "source": "MEF2A",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEF2A is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.46"
+    },
+    {
+      "source": "CAD",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAD is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.17"
+    },
+    {
+      "source": "APOE",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.07"
+    },
+    {
+      "source": "LDLR",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.07"
+    },
+    {
+      "source": "NOS3",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.07"
+    },
+    {
+      "source": "LEPR",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "SCARB1",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCARB1 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "ELN",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELN is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "PPM1L",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPM1L is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "ADIPOQ",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOQ is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "IRS2",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRS2 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "APOA1",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRKG1",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKG1 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "NPR1",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPR1 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "ABCC9",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC9 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "CYP27A1",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP27A1 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "PLSCR3",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLSCR3 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "C11orf86",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C11orf86 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "IGF1",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "GPER1",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPER1 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "PITPNC1",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITPNC1 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "CYP4A11",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4A11 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "CYP4A22",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4A22 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "ROCK2",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROCK2 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "LPL",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "LIPG",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPG is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "SDC1",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC1 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "ILRUN",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ILRUN is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "VGF",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VGF is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "WDFY2",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDFY2 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADIPOR2",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOR2 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "PPARG",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "LIPE",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPE is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "USP20",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP20 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "LRIG3",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRIG3 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "PPARA",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARA is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "RALGAPA1",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RALGAPA1 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "LEP",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "PIK3C2G",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3C2G is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "BMAL1",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMAL1 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "SIM1",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIM1 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "GRM3",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRM3 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "PCSK1",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK1 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "LIPC",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.04"
+    },
+    {
+      "source": "SAMD1",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAMD1 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.04"
+    },
+    {
+      "source": "TGFB1I1",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1I1 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.04"
+    },
+    {
+      "source": "PDC",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDC is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.04"
+    },
+    {
+      "source": "WRN",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WRN is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.04"
+    },
+    {
+      "source": "USP12",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP12 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.04"
+    },
+    {
+      "source": "GPR26",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR26 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.04"
+    },
+    {
+      "source": "ING5",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ING5 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.04"
+    },
+    {
+      "source": "PHF8",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHF8 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.04"
+    },
+    {
+      "source": "KIF13B",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF13B is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.04"
+    },
+    {
+      "source": "FSTL1",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSTL1 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.04"
+    },
+    {
+      "source": "RAPGEF3",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAPGEF3 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRP5",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP5 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.04"
+    },
+    {
+      "source": "MSTN",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSTN is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.04"
+    },
+    {
+      "source": "KCNE3",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNE3 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC2A8",
+      "target": "coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A8 is associated with coronary artery disease, autosomal dominant 2 (CORONARY_ARTERY_DISEASE_AUTOSOMAL_DOMINANT_2). Open Targets association score 0.04"
+    }
+  ]
+}

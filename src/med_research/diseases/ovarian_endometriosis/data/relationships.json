@@ -1,0 +1,454 @@
+{
+  "relationships": [
+    {
+      "source": "CDKN2B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MLH1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MLH1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL1A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "FGFR4",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR4 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "DLL1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "DLL1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "GREB1",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GREB1 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.38"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.37"
+    },
+    {
+      "source": "NUTM2B",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUTM2B is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.37"
+    },
+    {
+      "source": "YWHAE",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YWHAE is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.37"
+    },
+    {
+      "source": "ESR1",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.37"
+    },
+    {
+      "source": "KDR",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.35"
+    },
+    {
+      "source": "RSPO3",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO3 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.35"
+    },
+    {
+      "source": "NFE2L3",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L3 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.35"
+    },
+    {
+      "source": "TBX3",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX3 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.35"
+    },
+    {
+      "source": "MYH11",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH11 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.34"
+    },
+    {
+      "source": "SYNE1",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYNE1 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.33"
+    },
+    {
+      "source": "PTPRO",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRO is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.33"
+    },
+    {
+      "source": "CCDC170",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC170 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.33"
+    },
+    {
+      "source": "SRP14",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRP14 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.33"
+    },
+    {
+      "source": "APOH",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOH is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.33"
+    },
+    {
+      "source": "STAP1",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAP1 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.33"
+    },
+    {
+      "source": "FRMD7",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FRMD7 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.32"
+    },
+    {
+      "source": "CDC42",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDC42 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.31"
+    },
+    {
+      "source": "FSHB",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSHB is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.31"
+    },
+    {
+      "source": "CENPC",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CENPC is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.30"
+    },
+    {
+      "source": "DLL1",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLL1 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.30"
+    },
+    {
+      "source": "KRAS",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.30"
+    },
+    {
+      "source": "ARID1A",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.29"
+    },
+    {
+      "source": "CBX3",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBX3 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.29"
+    },
+    {
+      "source": "HNRNPA2B1",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNRNPA2B1 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.29"
+    },
+    {
+      "source": "IL1A",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1A is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.29"
+    },
+    {
+      "source": "CDKN2B",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2B is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "CTCF",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTCF is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTEN",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "AKT1",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "MLH1",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLH1 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "CARD11",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "ETV6",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV6 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "DDR2",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDR2 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR4",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR4 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "IL7R",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7R is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "NOTCH2",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH2 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "NF1",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTPRT",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRT is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID2",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID2 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "HNF1A",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "CREBBP",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "AMER1",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMER1 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "ETAA1",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETAA1 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "VEZT",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEZT is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.27"
+    },
+    {
+      "source": "TTLL4",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTLL4 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "APBB2",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APBB2 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "NFILZ",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFILZ is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.25"
+    },
+    {
+      "source": "AUTS2",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AUTS2 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.25"
+    },
+    {
+      "source": "ID4",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ID4 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.25"
+    },
+    {
+      "source": "WT1",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.23"
+    },
+    {
+      "source": "RIN3",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIN3 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.23"
+    },
+    {
+      "source": "HOXA5",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA5 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.23"
+    },
+    {
+      "source": "UBA6",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBA6 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.22"
+    },
+    {
+      "source": "CD109",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD109 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.22"
+    },
+    {
+      "source": "CEP112",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEP112 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.22"
+    },
+    {
+      "source": "NME7",
+      "target": "Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NME7 is associated with Ovarian Endometriosis (OVARIAN_ENDOMETRIOSIS). Open Targets association score 0.21"
+    }
+  ]
+}

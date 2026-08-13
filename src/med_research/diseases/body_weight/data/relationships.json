@@ -1,0 +1,424 @@
+{
+  "relationships": [
+    {
+      "source": "CCND3",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND3 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "E2F7",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "E2F7 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "E2F7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "E2F7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IGF2BP2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2BP2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MEF2C",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "MEF2C is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ADAMTS10",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS10 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "HNF4G",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF4G is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "RORA",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "RORA is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "LRP1B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "MC4R",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MC4R is associated with body weight (BODY_WEIGHT). Open Targets association score 0.73"
+    },
+    {
+      "source": "ZFAT",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFAT is associated with body weight (BODY_WEIGHT). Open Targets association score 0.70"
+    },
+    {
+      "source": "IGF1R",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1R is associated with body weight (BODY_WEIGHT). Open Targets association score 0.58"
+    },
+    {
+      "source": "PCSK1",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK1 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.56"
+    },
+    {
+      "source": "L3MBTL3",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "L3MBTL3 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.56"
+    },
+    {
+      "source": "NRXN3",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRXN3 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.56"
+    },
+    {
+      "source": "NRXN1",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRXN1 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.56"
+    },
+    {
+      "source": "PDE3B",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE3B is associated with body weight (BODY_WEIGHT). Open Targets association score 0.56"
+    },
+    {
+      "source": "TFAP2B",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFAP2B is associated with body weight (BODY_WEIGHT). Open Targets association score 0.55"
+    },
+    {
+      "source": "ESR1",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.55"
+    },
+    {
+      "source": "CADM2",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CADM2 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.55"
+    },
+    {
+      "source": "SLC22A3",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A3 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.55"
+    },
+    {
+      "source": "FTO",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FTO is associated with body weight (BODY_WEIGHT). Open Targets association score 0.54"
+    },
+    {
+      "source": "BHLHE22",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BHLHE22 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.54"
+    },
+    {
+      "source": "SEC16B",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEC16B is associated with body weight (BODY_WEIGHT). Open Targets association score 0.54"
+    },
+    {
+      "source": "BDNF",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BDNF is associated with body weight (BODY_WEIGHT). Open Targets association score 0.54"
+    },
+    {
+      "source": "GNPDA2",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNPDA2 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.54"
+    },
+    {
+      "source": "NCAPG",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCAPG is associated with body weight (BODY_WEIGHT). Open Targets association score 0.54"
+    },
+    {
+      "source": "CABLES1",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CABLES1 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.54"
+    },
+    {
+      "source": "AUTS2",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AUTS2 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.54"
+    },
+    {
+      "source": "STC2",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STC2 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.53"
+    },
+    {
+      "source": "PATJ",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PATJ is associated with body weight (BODY_WEIGHT). Open Targets association score 0.53"
+    },
+    {
+      "source": "LCORL",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCORL is associated with body weight (BODY_WEIGHT). Open Targets association score 0.53"
+    },
+    {
+      "source": "POC5",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POC5 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.53"
+    },
+    {
+      "source": "ADAMTS10",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS10 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.53"
+    },
+    {
+      "source": "TRPS1",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPS1 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.53"
+    },
+    {
+      "source": "ZFP64",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFP64 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.53"
+    },
+    {
+      "source": "CBLN4",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBLN4 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.53"
+    },
+    {
+      "source": "STK39",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK39 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.53"
+    },
+    {
+      "source": "GNAS",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAS is associated with body weight (BODY_WEIGHT). Open Targets association score 0.52"
+    },
+    {
+      "source": "FEZ2",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FEZ2 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.52"
+    },
+    {
+      "source": "HIP1R",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIP1R is associated with body weight (BODY_WEIGHT). Open Targets association score 0.52"
+    },
+    {
+      "source": "FANCL",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCL is associated with body weight (BODY_WEIGHT). Open Targets association score 0.52"
+    },
+    {
+      "source": "ERBB4",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB4 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.52"
+    },
+    {
+      "source": "MEF2C",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEF2C is associated with body weight (BODY_WEIGHT). Open Targets association score 0.52"
+    },
+    {
+      "source": "FHIT",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FHIT is associated with body weight (BODY_WEIGHT). Open Targets association score 0.52"
+    },
+    {
+      "source": "MAGI2",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAGI2 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.52"
+    },
+    {
+      "source": "ADCY9",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADCY9 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.52"
+    },
+    {
+      "source": "IGF2BP2",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2BP2 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.52"
+    },
+    {
+      "source": "RORA",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RORA is associated with body weight (BODY_WEIGHT). Open Targets association score 0.52"
+    },
+    {
+      "source": "OLFM4",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OLFM4 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.52"
+    },
+    {
+      "source": "LRP1B",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1B is associated with body weight (BODY_WEIGHT). Open Targets association score 0.51"
+    },
+    {
+      "source": "CCND3",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND3 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.51"
+    },
+    {
+      "source": "E2F7",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "E2F7 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.51"
+    },
+    {
+      "source": "GPR139",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR139 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.51"
+    },
+    {
+      "source": "HNF4G",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF4G is associated with body weight (BODY_WEIGHT). Open Targets association score 0.51"
+    },
+    {
+      "source": "HHIP",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HHIP is associated with body weight (BODY_WEIGHT). Open Targets association score 0.51"
+    },
+    {
+      "source": "RBFOX1",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBFOX1 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.51"
+    },
+    {
+      "source": "LCOR",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCOR is associated with body weight (BODY_WEIGHT). Open Targets association score 0.51"
+    },
+    {
+      "source": "FUBP1",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUBP1 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.50"
+    },
+    {
+      "source": "MACROD2",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MACROD2 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.50"
+    },
+    {
+      "source": "RARB",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RARB is associated with body weight (BODY_WEIGHT). Open Targets association score 0.50"
+    },
+    {
+      "source": "GRID1",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRID1 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.50"
+    },
+    {
+      "source": "CPNE4",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPNE4 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.50"
+    },
+    {
+      "source": "UBE2E3",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBE2E3 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.50"
+    },
+    {
+      "source": "PTBP2",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTBP2 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.50"
+    },
+    {
+      "source": "CEP120",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEP120 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.50"
+    },
+    {
+      "source": "RIT2",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIT2 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.50"
+    },
+    {
+      "source": "PTCH1",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.50"
+    },
+    {
+      "source": "WDR11",
+      "target": "body weight (BODY_WEIGHT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR11 is associated with body weight (BODY_WEIGHT). Open Targets association score 0.50"
+    }
+  ]
+}

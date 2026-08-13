@@ -1,0 +1,616 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL131",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "PREDNISOLONE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL1201583",
+      "target": "VEGFA",
+      "type": "TARGETS",
+      "description": "BEVACIZUMAB targets VEGFA."
+    },
+    {
+      "source": "CHEMBL384467",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "DEXAMETHASONE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL2021430",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "DEXAMETHASONE SODIUM PHOSPHATE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL635",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "PREDNISONE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL131",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "TREATS",
+      "description": "PREDNISOLONE is phase 4 / marketed for choroiditis (CHOROIDITIS)."
+    },
+    {
+      "source": "CHEMBL384467",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "TREATS",
+      "description": "DEXAMETHASONE is phase 4 / marketed for choroiditis (CHOROIDITIS)."
+    },
+    {
+      "source": "CHEMBL2021430",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "TREATS",
+      "description": "DEXAMETHASONE SODIUM PHOSPHATE is phase 4 / marketed for choroiditis (CHOROIDITIS)."
+    },
+    {
+      "source": "CHEMBL635",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "TREATS",
+      "description": "PREDNISONE is phase 4 / marketed for choroiditis (CHOROIDITIS)."
+    },
+    {
+      "source": "CD19",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD19 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "MS4A1",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MS4A1 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "APLNR",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "APLNR is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CCL21",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL21 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCR3",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR3 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL12",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL12 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR4",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR4 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TM7SF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TM7SF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CX3CR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CX3CR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TIMP3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K7",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K7 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "NR3C1",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.55"
+    },
+    {
+      "source": "VEGFA",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "NLRP3",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CX3CL1",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CX3CL1 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CX3CR1",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CX3CR1 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "SCG3",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCG3 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD4",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNG",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "VWF",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PAEP",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAEP is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPL17",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TIMP3",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP3 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL10",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PREP",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PREP is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTPN22",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ANGPT1",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPT1 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD19",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD19 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHM",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHM is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "NOD2",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOD2 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL12",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL12 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1B",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "NCAPG2",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCAPG2 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP53",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "BRAF",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CTLA4",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTLA4 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCL21",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL21 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SERPINF1",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINF1 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "REG1A",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REG1A is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAP2K7",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K7 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC25A3",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A3 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "FMO5",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMO5 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACE",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDCD1",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "RHO",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHO is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ASAH1",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASAH1 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SNCA",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT20",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT20 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPATA2",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PLAT",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAT is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTPRU",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRU is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD40LG",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MS4A1",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MS4A1 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPGR",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPGR is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "AIRE",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIRE is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MLANA",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLANA is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "APLNR",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APLNR is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "B3GAT1",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B3GAT1 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCR3",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR3 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ENG",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENG is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL8",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "EPO",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPO is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL7",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCR4",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR4 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PMEL",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMEL is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL6",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD160",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD160 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TM7SF2",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM7SF2 is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "KDR",
+      "target": "choroiditis (CHOROIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with choroiditis (CHOROIDITIS). Open Targets association score 0.00"
+    }
+  ]
+}

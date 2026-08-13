@@ -1,0 +1,574 @@
+{
+  "relationships": [
+    {
+      "source": "CD19",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD19 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD207",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD207 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNFRSF21",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF21 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TNFRSF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL5RA",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL5RA is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "TRAF5",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF5 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FCER1G",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "FCER1G is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFATC1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFATC2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBID",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBID is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD28",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD28 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD83",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD83 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ICOS",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ICOS is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ICOSLG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ICOSLG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL21R",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL21R is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL23A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL23A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TLR7",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR7 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNFRSF13B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF13B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF13C",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF13C is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF21",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF21 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF9",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF9 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF13",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TRAF5",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF5 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNAR2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNAR2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF4",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF4 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL21R",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL21R is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD19",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD19 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD40",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PIGR",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIGR is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD28",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD28 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ICOS",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICOS is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CR2",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CR2 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ICOSLG",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICOSLG is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "IRF4",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF4 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXC4",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXC4 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNFRSF13B",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF13B is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "POU2AF1",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU2AF1 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "JCHAIN",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JCHAIN is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFKBID",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBID is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFATC1",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFATC1 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "AICDA",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AICDA is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FCGR2A",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2A is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FCGR2C",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2C is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FCGR2B",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2B is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ERCC6L2",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC6L2 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "REL",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REL is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNFRSF9",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF9 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD207",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD207 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "POLQ",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLQ is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SH2D3C",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2D3C is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PVR",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PVR is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FCER1G",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCER1G is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "STAT6",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT6 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNFRSF21",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF21 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL23A",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL23A is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "BACH2",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BACH2 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SH2D1A",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2D1A is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD83",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD83 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "LY86",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LY86 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFNAR2",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNAR2 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFATC2",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFATC2 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL5RA",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL5RA is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFNG",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNFRSF13C",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF13C is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TRAF5",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAF5 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "DOK3",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOK3 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MAP4K3",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP4K3 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SH3BP2",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3BP2 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "NIBAN3",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NIBAN3 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MAP3K8",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K8 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CH25H",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CH25H is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNFSF13",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRKD2",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKD2 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL17A",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CTSS",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSS is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TLR7",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR7 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FCER2",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCER2 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "LAX1",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAX1 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FNIP1",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FNIP1 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TIMD4",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMD4 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SAMSN1",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAMSN1 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PAX5",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX5 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MYL4",
+      "target": "epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYL4 is associated with epilepsy-telangiectasia syndrome (EPILEPSY_TELANGIECTASIA_SYNDROME). Open Targets association score 0.03"
+    }
+  ]
+}

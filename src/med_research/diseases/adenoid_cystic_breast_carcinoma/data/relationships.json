@@ -1,0 +1,484 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL601719",
+      "target": "ALK",
+      "type": "TARGETS",
+      "description": "CRIZOTINIB targets ALK."
+    },
+    {
+      "source": "CHEMBL3184679",
+      "target": "FGFR1",
+      "type": "TARGETS",
+      "description": "AZD-4547 targets FGFR1."
+    },
+    {
+      "source": "CHEMBL3348923",
+      "target": "BRAF",
+      "type": "TARGETS",
+      "description": "TOVORAFENIB targets BRAF."
+    },
+    {
+      "source": "CHEMBL535",
+      "target": "FLT3",
+      "type": "TARGETS",
+      "description": "SUNITINIB targets FLT3."
+    },
+    {
+      "source": "CHEMBL185",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "TREATS",
+      "description": "FLUOROURACIL is phase 4 / marketed for Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)."
+    },
+    {
+      "source": "CHEMBL3545252",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "TREATS",
+      "description": "DOCETAXEL is phase 4 / marketed for Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MLH1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MLH1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GRIN2A",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2A is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "IL6ST",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6ST is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "LRP1B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "MYB",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYB is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "BRAF",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CREBBP",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NFIB",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFIB is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "GRIN2A",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2A is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2C",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERBB2",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KDM6A",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM6A is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NKX2-1",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-1 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR1",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTEN",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "STAG2",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAG2 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ABL1",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABL1 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EP300",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EP300 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP53",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "BCOR",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCOR is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "KNL1",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KNL1 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MLH1",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLH1 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SND1",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SND1 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MAP3K13",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K13 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CDH1",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SF3B1",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SF3B1 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ETV6",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV6 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TSC2",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NDRG1",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDRG1 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ARHGAP35",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP35 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NTRK2",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK2 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MLLT10",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLLT10 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MTOR",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2D",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ASXL1",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PTPN13",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN13 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FLT3",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ATM",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PREX2",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PREX2 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NRG1",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRG1 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "DDX10",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDX10 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MYH9",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH9 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ZNF479",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF479 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PPM1D",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPM1D is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PTPN11",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TET1",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET1 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ETNK1",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETNK1 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PIM1",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIM1 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RSPO2",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO2 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FAT4",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT4 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "IL6ST",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6ST is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MUC4",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC4 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ERBB4",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB4 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KAT6B",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KAT6B is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "DNM2",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM2 is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "DNMT3A",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT3A is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ALK",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MITF",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MITF is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SETD1B",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD1B is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "LRP1B",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1B is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "USP9X",
+      "target": "Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP9X is associated with Adenoid Cystic Breast Carcinoma (ADENOID_CYSTIC_BREAST_CARCINOMA). Open Targets association score 0.18"
+    }
+  ]
+}

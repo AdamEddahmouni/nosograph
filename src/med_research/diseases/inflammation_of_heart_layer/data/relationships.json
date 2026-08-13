@@ -1,0 +1,574 @@
+{
+  "relationships": [
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCL5",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL5 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL1",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL1 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MBL2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "MBL2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL11",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL11 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17RA",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17RA is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "VCAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "VCAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "FCER1G",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "FCER1G is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL17RA",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17RA is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR2",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR2 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR7",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR7 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF1A",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF1A is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "PTX3",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTX3 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.06"
+    },
+    {
+      "source": "CRP",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNNT2",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNT2 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.02"
+    },
+    {
+      "source": "PLAUR",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAUR is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD8A",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL10",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "MBL2",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBL2 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOD2",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOD2 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD4",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "STAT1",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT1 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDLIM7",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDLIM7 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "LNPK",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LNPK is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "NUSAP1",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUSAP1 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "CALCA",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "TLR2",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR2 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "YBX3",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YBX3 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYOM2",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYOM2 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "POSTN",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POSTN is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "ITGB2",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCL1",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL1 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCR2",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR2 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP4A",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP4A is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP12A",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP12A is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL17RA",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17RA is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL11",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL11 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCR2",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR2 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "LGALS3",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "HP",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HP is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD40LG",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "FCER1G",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCER1G is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "ICAM1",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD79A",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "ARFRP1",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARFRP1 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "RERE",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RERE is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRISP1",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRISP1 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKR1B10",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKR1B10 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "MANF",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MANF is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNG",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "FCN2",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCN2 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACOD1",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACOD1 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1B",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL4",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALB",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCL2",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL2 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.00"
+    },
+    {
+      "source": "HLA-A",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-A is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNFRSF1A",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF1A is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CMPK1",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMPK1 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHKB",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKB is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP53",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHKA",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKA is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.00"
+    },
+    {
+      "source": "HLA-B",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-B is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.00"
+    },
+    {
+      "source": "MUC6",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC6 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.00"
+    },
+    {
+      "source": "ITGAM",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAM is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.00"
+    },
+    {
+      "source": "VCAM1",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VCAM1 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCL5",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL5 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.00"
+    },
+    {
+      "source": "TLR7",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR7 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.00"
+    },
+    {
+      "source": "MUC1",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC1 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC7A7",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC7A7 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRAP1",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRAP1 is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.00"
+    },
+    {
+      "source": "LPO",
+      "target": "inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPO is associated with inflammation of heart layer (INFLAMMATION_OF_HEART_LAYER). Open Targets association score 0.00"
+    }
+  ]
+}

@@ -29,6 +29,7 @@ CAR_T_SCORES = {
         "ACTL7B": 4.0,
         "ADA": 4.0,
         "ARHGEF26": 4.0,
+        "ASRGL1": 4.0,
         "ATP12A": 4.0,
         "ATP4A": 4.0,
         "C3": 4.0,

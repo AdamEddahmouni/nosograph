@@ -1,0 +1,454 @@
+{
+  "relationships": [
+    {
+      "source": "BMERB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "BMERB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TM6SF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TM6SF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TNFSF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATRAID",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRAID is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL3 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "TNFSF10",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF10 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "WNT3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP26A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP26A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP2C19",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2C19 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GSTA1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTA1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "UGT2B15",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "UGT2B15 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.50"
+    },
+    {
+      "source": "MLXIPL",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLXIPL is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.45"
+    },
+    {
+      "source": "GCKR",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.44"
+    },
+    {
+      "source": "CPT1A",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPT1A is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.44"
+    },
+    {
+      "source": "LIPC",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.42"
+    },
+    {
+      "source": "NFE2L3",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L3 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.42"
+    },
+    {
+      "source": "APOA5",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.42"
+    },
+    {
+      "source": "TM6SF2",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM6SF2 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.41"
+    },
+    {
+      "source": "LPL",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.40"
+    },
+    {
+      "source": "BFAR",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BFAR is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.40"
+    },
+    {
+      "source": "ZPR1",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZPR1 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.40"
+    },
+    {
+      "source": "SLC22A1",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A1 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.39"
+    },
+    {
+      "source": "APOE",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.39"
+    },
+    {
+      "source": "FADS2",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS2 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.39"
+    },
+    {
+      "source": "PARN",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARN is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.38"
+    },
+    {
+      "source": "MED9",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MED9 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.37"
+    },
+    {
+      "source": "FADS1",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS1 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.37"
+    },
+    {
+      "source": "GSTA1",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTA1 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.36"
+    },
+    {
+      "source": "FEN1",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FEN1 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.34"
+    },
+    {
+      "source": "ATRAID",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRAID is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.34"
+    },
+    {
+      "source": "DOCK7",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK7 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.33"
+    },
+    {
+      "source": "TRIB1",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIB1 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.33"
+    },
+    {
+      "source": "GPN1",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPN1 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.33"
+    },
+    {
+      "source": "NTAN1",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTAN1 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.33"
+    },
+    {
+      "source": "TMEM258",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM258 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.32"
+    },
+    {
+      "source": "RER1",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RER1 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.32"
+    },
+    {
+      "source": "UVRAG",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UVRAG is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.32"
+    },
+    {
+      "source": "APOC3",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC3 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.31"
+    },
+    {
+      "source": "AKR1C4",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKR1C4 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.30"
+    },
+    {
+      "source": "PBX4",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBX4 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.29"
+    },
+    {
+      "source": "MYRF",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYRF is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.29"
+    },
+    {
+      "source": "CYP2C19",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2C19 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.28"
+    },
+    {
+      "source": "BMERB1",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMERB1 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.28"
+    },
+    {
+      "source": "PAFAH1B2",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAFAH1B2 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.27"
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL3 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.27"
+    },
+    {
+      "source": "PDXDC1",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDXDC1 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.26"
+    },
+    {
+      "source": "BORCS8",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BORCS8 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.26"
+    },
+    {
+      "source": "UGT2B15",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGT2B15 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.25"
+    },
+    {
+      "source": "CBX3",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBX3 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.25"
+    },
+    {
+      "source": "HNRNPA2B1",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNRNPA2B1 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.25"
+    },
+    {
+      "source": "JMJD1C",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JMJD1C is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.25"
+    },
+    {
+      "source": "CEP164",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEP164 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.25"
+    },
+    {
+      "source": "MOGAT2",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MOGAT2 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.24"
+    },
+    {
+      "source": "WNT3",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT3 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.24"
+    },
+    {
+      "source": "PEX10",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PEX10 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.24"
+    },
+    {
+      "source": "NR2C2AP",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR2C2AP is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.23"
+    },
+    {
+      "source": "NOMO1",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOMO1 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.23"
+    },
+    {
+      "source": "CYP26A1",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP26A1 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.23"
+    },
+    {
+      "source": "PGA5",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGA5 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.23"
+    },
+    {
+      "source": "NCAN",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCAN is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.22"
+    },
+    {
+      "source": "SPATA31H1",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA31H1 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.20"
+    },
+    {
+      "source": "FRMD5",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FRMD5 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.19"
+    },
+    {
+      "source": "ZNF512",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF512 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.19"
+    },
+    {
+      "source": "BUD13",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUD13 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.18"
+    },
+    {
+      "source": "APOC1",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC1 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.17"
+    },
+    {
+      "source": "SCGB1A1",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCGB1A1 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.17"
+    },
+    {
+      "source": "MAP1A",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP1A is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.17"
+    },
+    {
+      "source": "TNFSF10",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF10 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.16"
+    },
+    {
+      "source": "CRHR1",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRHR1 is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.16"
+    },
+    {
+      "source": "LIPG",
+      "target": "omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPG is associated with omega-6:omega-3 polyunsaturated fatty acid ratio (OMEGA_6_OMEGA_3_POLYUNSATURATED_FATTY_ACID_RATIO). Open Targets association score 0.16"
+    }
+  ]
+}

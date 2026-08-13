@@ -1,0 +1,114 @@
+{
+  "pathways": [
+    {
+      "id": "cell-cycle",
+      "name": "Cell Cycle Regulation",
+      "description": "Cyclin-CDK machinery controlling cell division; a backbone of oncology target discovery.",
+      "key_components": [
+        "CDKN2A",
+        "RB1"
+      ],
+      "therapeutic_targets": [
+        "CDKN2A",
+        "RB1"
+      ],
+      "references": []
+    },
+    {
+      "id": "dna-repair",
+      "name": "DNA Repair",
+      "description": "Homologous recombination, mismatch repair, and base excision pathways preserving genome integrity.",
+      "key_components": [
+        "ATM",
+        "BRCA1",
+        "TP53"
+      ],
+      "therapeutic_targets": [
+        "ATM",
+        "BRCA1",
+        "TP53"
+      ],
+      "references": []
+    },
+    {
+      "id": "il4-il13",
+      "name": "IL-4 / IL-13 (Th2) Pathway",
+      "description": "Type 2 cytokine signaling driving allergic and eosinophilic inflammation.",
+      "key_components": [
+        "GATA3"
+      ],
+      "therapeutic_targets": [
+        "GATA3"
+      ],
+      "references": []
+    },
+    {
+      "id": "immune-checkpoint",
+      "name": "Immune Checkpoint Signaling",
+      "description": "Co-inhibitory receptor signaling (PD-1/CTLA-4/TIGIT/LAG-3) that restrains T cell responses.",
+      "key_components": [
+        "CD274",
+        "PDCD1"
+      ],
+      "therapeutic_targets": [
+        "CD274",
+        "PDCD1"
+      ],
+      "references": []
+    },
+    {
+      "id": "mapk-erk",
+      "name": "MAPK / ERK Signaling",
+      "description": "RAS-RAF-MEK-ERK cascade coupling growth factor receptors to proliferation and differentiation.",
+      "key_components": [
+        "EGFR",
+        "FGFR1",
+        "FGFR2",
+        "FGFR3",
+        "FGFR4",
+        "HRAS",
+        "KRAS"
+      ],
+      "therapeutic_targets": [
+        "EGFR",
+        "FGFR1",
+        "FGFR2",
+        "FGFR3",
+        "FGFR4",
+        "HRAS",
+        "KRAS"
+      ],
+      "references": []
+    },
+    {
+      "id": "pi3k-akt-mtor",
+      "name": "PI3K / AKT / mTOR Signaling",
+      "description": "Growth and survival signaling through PI3K-AKT-mTOR; a major oncology and immunology target hub.",
+      "key_components": [
+        "MTOR",
+        "PIK3CA",
+        "PIK3CB",
+        "TSC1"
+      ],
+      "therapeutic_targets": [
+        "MTOR",
+        "PIK3CA",
+        "PIK3CB",
+        "TSC1"
+      ],
+      "references": []
+    },
+    {
+      "id": "vegf-angiogenesis",
+      "name": "VEGF / Angiogenesis",
+      "description": "Vascular endothelial growth factor signaling driving angiogenesis and vascular permeability.",
+      "key_components": [
+        "KDR"
+      ],
+      "therapeutic_targets": [
+        "KDR"
+      ],
+      "references": []
+    }
+  ]
+}

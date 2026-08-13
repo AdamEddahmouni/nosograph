@@ -65,6 +65,7 @@ CAR_T_SCORES = {
         "CACNG8": 4.0,
         "CALHM3": 4.0,
         "CARTPT": 4.0,
+        "CAT": 4.0,
         "CCK": 4.0,
         "CEP126": 4.0,
         "CGA": 4.0,

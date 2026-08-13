@@ -1,16 +1,14 @@
 {
-  "disease_id": "gout",
-  "disease_name": "Gout",
   "genes": [
     {
-      "id": "SLC2A9",
-      "symbol": "SLC2A9",
-      "name": "Solute Carrier Family 2 Member 9 (GLUT9)",
+      "id": "SLC22A12",
+      "symbol": "SLC22A12",
+      "name": "Solute Carrier Family 22 Member 12 (URAT1)",
       "category": "Renal Urate Transport",
-      "association_score": 0.98,
-      "odds_ratio": 3.0,
-      "disease_evidence": "Major renal urate reabsorption transporter.",
-      "gwas_pvalue": 1e-150,
+      "association_score": 0.94,
+      "odds_ratio": 2.2,
+      "disease_evidence": "Apical renal urate anion exchanger. | Open Targets association score 0.76",
+      "gwas_pvalue": 1e-90,
       "chromosome": "unknown",
       "function": "unknown"
     },
@@ -21,22 +19,594 @@
       "category": "Renal Urate Transport",
       "association_score": 0.96,
       "odds_ratio": 2.5,
-      "disease_evidence": "Intestinal and renal urate efflux pump.",
+      "disease_evidence": "Intestinal and renal urate efflux pump. | Open Targets association score 0.71",
       "gwas_pvalue": 1e-110,
       "chromosome": "unknown",
       "function": "unknown"
     },
     {
-      "id": "SLC22A12",
-      "symbol": "SLC22A12",
-      "name": "Solute Carrier Family 22 Member 12 (URAT1)",
+      "id": "XDH",
+      "name": "xanthine dehydrogenase",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.69",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "SLC22A11",
+      "name": "solute carrier family 22 member 11",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.64",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "PTGS2",
+      "name": "prostaglandin-endoperoxide synthase 2",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.63",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "PTGS1",
+      "name": "prostaglandin-endoperoxide synthase 1",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.61",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "SLC2A9",
+      "symbol": "SLC2A9",
+      "name": "Solute Carrier Family 2 Member 9 (GLUT9)",
       "category": "Renal Urate Transport",
-      "association_score": 0.94,
-      "odds_ratio": 2.2,
-      "disease_evidence": "Apical renal urate anion exchanger.",
-      "gwas_pvalue": 1e-90,
+      "association_score": 0.98,
+      "odds_ratio": 3.0,
+      "disease_evidence": "Major renal urate reabsorption transporter. | Open Targets association score 0.60",
+      "gwas_pvalue": 1e-150,
       "chromosome": "unknown",
       "function": "unknown"
+    },
+    {
+      "id": "TUBB6",
+      "name": "tubulin beta 6 class V",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.59",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "TUBB",
+      "name": "tubulin beta class I",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.59",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "TUBB4A",
+      "name": "tubulin beta 4A class IVa",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.59",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "TUBB3",
+      "name": "tubulin beta 3 class III",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.59",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "TUBB2A",
+      "name": "tubulin beta 2A class IIa",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.59",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "TUBB2B",
+      "name": "tubulin beta 2B class IIb",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.59",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "TUBB8",
+      "name": "tubulin beta 8 class VIII",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.59",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "TUBB1",
+      "name": "tubulin beta 1 class VI",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.59",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "TUBB4B",
+      "name": "tubulin beta 4B class IVb",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.59",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "NR3C1",
+      "name": "nuclear receptor subfamily 3 group C member 1",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.59",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "SLC16A9",
+      "name": "solute carrier family 16 member 9",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.57",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "PNPLA3",
+      "name": "patatin like phospholipase domain containing 3",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.56",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "ADH1B",
+      "name": "alcohol dehydrogenase 1B (class I), beta polypeptide",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.55",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "WDR1",
+      "name": "WD repeat domain 1",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.53",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "BICC1",
+      "name": "BicC family RNA binding protein 1",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.53",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "GCKR",
+      "name": "glucokinase regulator",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.53",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "IL1B",
+      "symbol": "IL1B",
+      "name": "Interleukin 1 Beta",
+      "category": "NLRP3 Inflammasome Activation",
+      "association_score": 0.88,
+      "odds_ratio": 1.6,
+      "disease_evidence": "Primary inflammatory cytokine causing acute gouty flare. | Open Targets association score 0.53",
+      "gwas_pvalue": 1e-40,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "PDZK1",
+      "name": "PDZ domain containing 1",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.53",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "HNF4G",
+      "name": "hepatocyte nuclear factor 4 gamma",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.52",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "ALDH2",
+      "name": "aldehyde dehydrogenase 2 family member",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.52",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "SLC22A8",
+      "name": "solute carrier family 22 member 8",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.50",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "SLC22A6",
+      "name": "solute carrier family 22 member 6",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.50",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "LRP2",
+      "name": "LDL receptor related protein 2",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.50",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "ALDH16A1",
+      "name": "aldehyde dehydrogenase 16 family member A1",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.50",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "INHBC",
+      "name": "inhibin subunit beta C",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.49",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "HECTD4",
+      "name": "HECT domain E3 ubiquitin protein ligase 4",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.49",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "PKLR",
+      "name": "pyruvate kinase L/R",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.49",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "PKD2",
+      "name": "polycystin 2, transient receptor potential cation channel",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.49",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "BCAS3",
+      "name": "BCAS3 microtubule associated cell migration factor",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.48",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "ABCA6",
+      "name": "ATP binding cassette subfamily A member 6",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.48",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "HLF",
+      "name": "HLF transcription factor, PAR bZIP family member",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.48",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "IGF1R",
+      "name": "insulin like growth factor 1 receptor",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.48",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "RREB1",
+      "name": "ras responsive element binding protein 1",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.47",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "TMEM171",
+      "name": "transmembrane protein 171",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.47",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "ATRAID",
+      "name": "all-trans retinoic acid induced differentiation factor",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.47",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "A1CF",
+      "name": "APOBEC1 complementation factor",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.46",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "SFMBT1",
+      "name": "Scm like with four mbt domains 1",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.46",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "MLXIP",
+      "name": "MLX interacting protein",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.45",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "ADO",
+      "name": "2-aminoethanethiol dioxygenase",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.45",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "PTPN11",
+      "name": "protein tyrosine phosphatase non-receptor type 11",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.45",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "FST",
+      "name": "follistatin",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.45",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "MLXIPL",
+      "name": "MLX interacting protein like",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.45",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "ATXN2",
+      "name": "ataxin 2",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.45",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "KDF1",
+      "name": "keratinocyte differentiation factor 1",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.45",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "PRKAG2",
+      "name": "protein kinase AMP-activated non-catalytic subunit gamma 2",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.44",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "CPS1",
+      "name": "carbamoyl-phosphate synthase 1",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.44",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "GIT2",
+      "name": "GIT ArfGAP 2",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.44",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "MTX1",
+      "name": "metaxin 1",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.44",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "CUX2",
+      "name": "cut like homeobox 2",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.44",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "CUBN",
+      "name": "cubilin",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.43",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "MAF",
+      "name": "MAF bZIP transcription factor",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.43",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "HNF4A",
+      "name": "hepatocyte nuclear factor 4 alpha",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.43",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "ABCA1",
+      "name": "ATP binding cassette subfamily A member 1",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.43",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
     },
     {
       "id": "NLRP3",
@@ -47,18 +617,6 @@
       "odds_ratio": 1.8,
       "disease_evidence": "Sensory receptor for urate crystals initiating IL-1 beta cleavage.",
       "gwas_pvalue": 1e-50,
-      "chromosome": "unknown",
-      "function": "unknown"
-    },
-    {
-      "id": "IL1B",
-      "symbol": "IL1B",
-      "name": "Interleukin 1 Beta",
-      "category": "NLRP3 Inflammasome Activation",
-      "association_score": 0.88,
-      "odds_ratio": 1.6,
-      "disease_evidence": "Primary inflammatory cytokine causing acute gouty flare.",
-      "gwas_pvalue": 1e-40,
       "chromosome": "unknown",
       "function": "unknown"
     }

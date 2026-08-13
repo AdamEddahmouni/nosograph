@@ -1,0 +1,586 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201583",
+      "target": "VEGFA",
+      "type": "TARGETS",
+      "description": "BEVACIZUMAB targets VEGFA."
+    },
+    {
+      "source": "CHEMBL1232461",
+      "target": "BRD2",
+      "type": "TARGETS",
+      "description": "MOLIBRESIB targets BRD2."
+    },
+    {
+      "source": "CHEMBL1201560",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "TREATS",
+      "description": "PEGINTERFERON ALFA-2A is phase 4 / marketed for cystadenoma (CYSTADENOMA)."
+    },
+    {
+      "source": "CHEMBL1201752",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "TREATS",
+      "description": "IXABEPILONE is phase 4 / marketed for cystadenoma (CYSTADENOMA)."
+    },
+    {
+      "source": "CHEMBL1683590",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "TREATS",
+      "description": "ERIBULIN is phase 4 / marketed for cystadenoma (CYSTADENOMA)."
+    },
+    {
+      "source": "CHEMBL1683590",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "TREATS",
+      "description": "ERIBULIN is phase 4 / marketed for cystadenoma (CYSTADENOMA)."
+    },
+    {
+      "source": "CHEMBL1742992",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "TREATS",
+      "description": "BLINATUMOMAB is phase 4 / marketed for cystadenoma (CYSTADENOMA)."
+    },
+    {
+      "source": "CHEMBL1789941",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "TREATS",
+      "description": "RUXOLITINIB is phase 4 / marketed for cystadenoma (CYSTADENOMA)."
+    },
+    {
+      "source": "CHEMBL2110725",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "TREATS",
+      "description": "VINFLUNINE is phase 3 for cystadenoma (CYSTADENOMA)."
+    },
+    {
+      "source": "CHEMBL225071",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "TREATS",
+      "description": "RALTITREXED is phase 4 / marketed for cystadenoma (CYSTADENOMA)."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BECN1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "BECN1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CCNA2",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCNA2 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ARHGEF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ARHGEF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TNFRSF10C",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF10C is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "PLOD1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLOD1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "PDX1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PDX1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "ITGA2B",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA2B is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "GORASP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "GORASP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RELA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD40",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LATS1",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LATS1 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "ITGA2B",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA2B is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF10C",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF10C is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "PGF",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "PGF is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MTDH",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTDH is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "BECN1",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BECN1 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "POU5F1",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU5F1 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TSC2",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ASCC1",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASCC1 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ARHGEF7",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGEF7 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD40",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CEACAM5",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM5 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "BCL2",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "KRAS",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDH1",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLK1",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLK1 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MCAM",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCAM is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BMI1",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMI1 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FOXA1",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXA1 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FOSL1",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOSL1 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RABEP2",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RABEP2 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VEGFA",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSDMB",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC5AC",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5AC is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "LAMC2",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMC2 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "STK11",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ITGA2B",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA2B is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PGF",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGF is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNFRSF10C",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF10C is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC16",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC16 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NBR1",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBR1 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VIM",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIM is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "WNK1",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNK1 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SYT1",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYT1 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RELA",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELA is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DYRK1B",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYRK1B is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "LATS1",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LATS1 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GORASP1",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GORASP1 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD44",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCNA2",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCNA2 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AR",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDX1",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDX1 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RBL2",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBL2 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RARB",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RARB is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BRCA1",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLOD1",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLOD1 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPT",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM1",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM1 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NR4A1",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR4A1 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDK1",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDK1 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HK2",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HK2 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GNRH1",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRH1 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BRD2",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRD2 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRT7",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT7 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP2",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "POR",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POR is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ID1",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ID1 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FSHR",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSHR is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB1",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSG2",
+      "target": "cystadenoma (CYSTADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSG2 is associated with cystadenoma (CYSTADENOMA). Open Targets association score 0.01"
+    }
+  ]
+}

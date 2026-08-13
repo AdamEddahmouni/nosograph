@@ -1,0 +1,496 @@
+{
+  "relationships": [
+    {
+      "source": "LYN",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LYN is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "FGG",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGG is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "G6PC3",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "G6PC3 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL17RB",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17RB is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ITGAE",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAE is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELE",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELE is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELP",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELP is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "CERK",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "CERK is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "KITLG",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KITLG is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3R6",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R6 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "IL17RB",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17RB is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGAE",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAE is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "LTBR",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBR is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IRF4",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF4 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "CSF3R",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3R is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.77"
+    },
+    {
+      "source": "CSF3",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "RAC2",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAC2 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "KIT",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "GFI1",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFI1 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "ITGAM",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAM is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "NCF4",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCF4 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "SERPINB2",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINB2 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "NUDT15",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUDT15 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "ST6GAL1",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST6GAL1 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "SETDB2",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETDB2 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CNN2",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNN2 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "GAB2",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAB2 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "ARHGAP15",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP15 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "LYN",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYN is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "JAK3",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRKDC",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKDC is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "TSPAN9",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSPAN9 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNF",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "DOCK2",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK2 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "VTCN1",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VTCN1 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "KITLG",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KITLG is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "GATA1",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA1 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CAMP",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMP is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ELANE",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELANE is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD177",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD177 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGG",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGG is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PGLYRP1",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGLYRP1 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL6",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SELP",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELP is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PIK3R6",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R6 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "MRC1",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRC1 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADGRE5",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADGRE5 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADGRE2",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADGRE2 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "G6PC3",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "G6PC3 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "FLT3LG",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3LG is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PLAC8",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAC8 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPI1",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPI1 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NDST2",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDST2 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "DEFB4B",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEFB4B is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "DEFB4A",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEFB4A is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CLEC4E",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC4E is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SAMD9L",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAMD9L is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL17RB",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17RB is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "IRF4",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF4 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SELE",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELE is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "FHIT",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FHIT is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LTBR",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTBR is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "MFAP5",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFAP5 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "USP45",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP45 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ECM1",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ECM1 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "STK4",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK4 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ITPRID1",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITPRID1 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LYPD2",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYPD2 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "C5AR2",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C5AR2 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZBTB46",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB46 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD74",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD74 is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ITGAE",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAE is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CERK",
+      "target": "autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CERK is associated with autosomal recessive severe congenital neutropenia due to CSF3R deficiency (AUTOSOMAL_RECESSIVE_SEVERE_CONGENITAL_NEUTROPENIA_DUE_TO_CSF3R_DEFICIENCY). Open Targets association score 0.05"
+    }
+  ]
+}

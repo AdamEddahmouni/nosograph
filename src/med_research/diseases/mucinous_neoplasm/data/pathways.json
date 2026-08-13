@@ -1,0 +1,132 @@
+{
+  "pathways": [
+    {
+      "id": "apoptosis",
+      "name": "Apoptosis",
+      "description": "Intrinsic and extrinsic programmed cell death; dysregulation contributes to autoimmunity and cancer.",
+      "key_components": [
+        "BCL2"
+      ],
+      "therapeutic_targets": [
+        "BCL2"
+      ],
+      "references": []
+    },
+    {
+      "id": "autophagy",
+      "name": "Autophagy",
+      "description": "Autophagosome formation and lysosomal degradation maintaining cellular and immune homeostasis.",
+      "key_components": [
+        "SLC39A1"
+      ],
+      "therapeutic_targets": [
+        "SLC39A1"
+      ],
+      "references": []
+    },
+    {
+      "id": "bcr-signaling",
+      "name": "B Cell Receptor Signaling",
+      "description": "BCR signal transduction controlling B cell survival, proliferation, and antibody production.",
+      "key_components": [
+        "SYK"
+      ],
+      "therapeutic_targets": [
+        "SYK"
+      ],
+      "references": []
+    },
+    {
+      "id": "cell-cycle",
+      "name": "Cell Cycle Regulation",
+      "description": "Cyclin-CDK machinery controlling cell division; a backbone of oncology target discovery.",
+      "key_components": [
+        "CDKN2A",
+        "MKI67"
+      ],
+      "therapeutic_targets": [
+        "CDKN2A",
+        "MKI67"
+      ],
+      "references": []
+    },
+    {
+      "id": "dna-repair",
+      "name": "DNA Repair",
+      "description": "Homologous recombination, mismatch repair, and base excision pathways preserving genome integrity.",
+      "key_components": [
+        "TP53"
+      ],
+      "therapeutic_targets": [
+        "TP53"
+      ],
+      "references": []
+    },
+    {
+      "id": "il1-inflammasome",
+      "name": "IL-1 / Inflammasome Pathway",
+      "description": "NLRP3 inflammasome assembly and IL-1β/IL-18 maturation; a driver of sterile inflammation.",
+      "key_components": [
+        "IL1B"
+      ],
+      "therapeutic_targets": [
+        "IL1B"
+      ],
+      "references": []
+    },
+    {
+      "id": "immune-checkpoint",
+      "name": "Immune Checkpoint Signaling",
+      "description": "Co-inhibitory receptor signaling (PD-1/CTLA-4/TIGIT/LAG-3) that restrains T cell responses.",
+      "key_components": [
+        "CD274"
+      ],
+      "therapeutic_targets": [
+        "CD274"
+      ],
+      "references": []
+    },
+    {
+      "id": "mapk-erk",
+      "name": "MAPK / ERK Signaling",
+      "description": "RAS-RAF-MEK-ERK cascade coupling growth factor receptors to proliferation and differentiation.",
+      "key_components": [
+        "BRAF",
+        "EGFR",
+        "KRAS"
+      ],
+      "therapeutic_targets": [
+        "BRAF",
+        "EGFR",
+        "KRAS"
+      ],
+      "references": []
+    },
+    {
+      "id": "pi3k-akt-mtor",
+      "name": "PI3K / AKT / mTOR Signaling",
+      "description": "Growth and survival signaling through PI3K-AKT-mTOR; a major oncology and immunology target hub.",
+      "key_components": [
+        "MTOR",
+        "PIK3CA"
+      ],
+      "therapeutic_targets": [
+        "MTOR",
+        "PIK3CA"
+      ],
+      "references": []
+    },
+    {
+      "id": "tgf-beta",
+      "name": "TGF-β Signaling",
+      "description": "Transforming growth factor beta signaling controlling fibrosis, immune tolerance, and tumor suppression.",
+      "key_components": [
+        "SMAD4"
+      ],
+      "therapeutic_targets": [
+        "SMAD4"
+      ],
+      "references": []
+    }
+  ]
+}

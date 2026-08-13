@@ -1,0 +1,580 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1200675",
+      "target": "ESR1",
+      "type": "TARGETS",
+      "description": "TOREMIFENE CITRATE targets ESR1."
+    },
+    {
+      "source": "CHEMBL1278146",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "FAMITINIB targets KIT."
+    },
+    {
+      "source": "CHEMBL189963",
+      "target": "CDK6",
+      "type": "TARGETS",
+      "description": "PALBOCICLIB targets CDK6."
+    },
+    {
+      "source": "CHEMBL2408045",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "SAPITINIB targets EGFR."
+    },
+    {
+      "source": "CHEMBL4303201",
+      "target": "FLT4",
+      "type": "TARGETS",
+      "description": "CATEQUENTINIB targets FLT4."
+    },
+    {
+      "source": "CHEMBL554",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "LAPATINIB targets EGFR."
+    },
+    {
+      "source": "CHEMBL572881",
+      "target": "FLT4",
+      "type": "TARGETS",
+      "description": "MOTESANIB targets FLT4."
+    },
+    {
+      "source": "CHEMBL1173655",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "AFATINIB targets EGFR."
+    },
+    {
+      "source": "CHEMBL1201577",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "CETUXIMAB targets EGFR."
+    },
+    {
+      "source": "CHEMBL189963",
+      "target": "CDK6",
+      "type": "TARGETS",
+      "description": "PALBOCICLIB targets CDK6."
+    },
+    {
+      "source": "CHEMBL2017974",
+      "target": "PIK3R1",
+      "type": "TARGETS",
+      "description": "BUPARLISIB targets PIK3R1."
+    },
+    {
+      "source": "CDK6",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK6 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CHEK2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "CHEK2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH6",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH6 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "MAML2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MAML2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3R1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LRP1B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "BRCA1",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP63",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NSD2",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSD2 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ESR1",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EGFR",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PBRM1",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBRM1 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3R1",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R1 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "APC",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID1A",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EP300",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EP300 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "DDR2",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDR2 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAP3K13",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K13 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CHEK2",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHEK2 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BCORL1",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCORL1 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SPEN",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPEN is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FLT4",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2C",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "LRP1B",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1B is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KDM6A",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM6A is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EIF3E",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF3E is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTPRC",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TRIM33",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM33 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDK6",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK6 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BCL9L",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL9L is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FANCA",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CARD11",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NCOR1",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOR1 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ASXL1",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAML2",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAML2 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NCOA2",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOA2 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "GNAQ",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAQ is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MSH6",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH6 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CREBBP",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "UBR5",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBR5 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ACVR1",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACVR1 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TSC2",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTCH1",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SDHC",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDHC is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRCA2",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR3",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NF2",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRAF",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "STAT3",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "STK11",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRIP1",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRIP1 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATM",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTPRB",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRB is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDH1",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SH2B3",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2B3 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTPRT",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRT is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KIT",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BCOR",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCOR is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NSD3",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSD3 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CBFA2T3",
+      "target": "metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBFA2T3 is associated with metaplastic breast carcinoma (METAPLASTIC_BREAST_CARCINOMA). Open Targets association score 0.28"
+    }
+  ]
+}

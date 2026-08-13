@@ -1,0 +1,604 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL964",
+      "target": "ALDH2",
+      "type": "TARGETS",
+      "description": "DISULFIRAM targets ALDH2."
+    },
+    {
+      "source": "CHEMBL964",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "TREATS",
+      "description": "DISULFIRAM is phase 4 / marketed for parasitic infection (TRYPANOSOMIASIS)."
+    },
+    {
+      "source": "BCL2L11",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2L11 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL10",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL10 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR3",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR3 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "SRSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SRSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL18",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL5",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL5 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "LAG3",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "LAG3 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGAL",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAL is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "IL21",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL21 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL21R",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL21R is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL22",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL22 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGAL",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAL is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "MYD88",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MYD88 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "LTB",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTB is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNA17",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA17 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNA2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "ALDH2",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDH2 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.46"
+    },
+    {
+      "source": "TET2",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.34"
+    },
+    {
+      "source": "EDIL3",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDIL3 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.30"
+    },
+    {
+      "source": "PKD1",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKD1 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "WIPF3",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WIPF3 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.24"
+    },
+    {
+      "source": "SRSF2",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRSF2 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.23"
+    },
+    {
+      "source": "BRCA2",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.12"
+    },
+    {
+      "source": "ASXL1",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.11"
+    },
+    {
+      "source": "ANK1",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "IFNA1",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "CD4",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "IL6",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "IFNG",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "EIF4EBP1",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF4EBP1 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "DLX4",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLX4 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "ASAH1",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASAH1 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "CD40",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "TP53",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "TLR4",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "IFNA17",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA17 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "IFNA2",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA2 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "ICAM1",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD8A",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "RPL17",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CRP",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD40LG",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CTLA4",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTLA4 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "DNAJC5",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAJC5 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL5",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL5 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "LGALS1",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS1 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNF",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL21",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL21 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "DAPP1",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAPP1 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CXCL10",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL10 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL21R",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL21R is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ITGB2",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ITGAL",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAL is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "LAG3",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAG3 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCL2",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL2 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "AHR",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHR is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TDP1",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TDP1 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "AXL",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AXL is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CP",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CP is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CAD",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAD is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL22",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL22 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD274",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL18",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "NEU1",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEU1 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "BCL2L11",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2L11 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SDC1",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC1 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "VEGFA",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MYD88",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYD88 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CALCA",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "LTB",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTB is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PDE4DIP",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE4DIP is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SPP1",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPP1 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL10",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TGFB1",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CXCR3",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR3 is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "UROD",
+      "target": "parasitic infection (TRYPANOSOMIASIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UROD is associated with parasitic infection (TRYPANOSOMIASIS). Open Targets association score 0.03"
+    }
+  ]
+}

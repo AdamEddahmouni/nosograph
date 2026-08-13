@@ -1,0 +1,580 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL502835",
+      "target": "FLT4",
+      "type": "TARGETS",
+      "description": "NINTEDANIB targets FLT4."
+    },
+    {
+      "source": "CHEMBL502835",
+      "target": "FGFR4",
+      "type": "TARGETS",
+      "description": "NINTEDANIB targets FGFR4."
+    },
+    {
+      "source": "CHEMBL1946170",
+      "target": "FLT4",
+      "type": "TARGETS",
+      "description": "REGORAFENIB targets FLT4."
+    },
+    {
+      "source": "CHEMBL502835",
+      "target": "KDR",
+      "type": "TARGETS",
+      "description": "NINTEDANIB targets KDR."
+    },
+    {
+      "source": "CHEMBL1946170",
+      "target": "NTRK1",
+      "type": "TARGETS",
+      "description": "REGORAFENIB targets NTRK1."
+    },
+    {
+      "source": "CHEMBL1946170",
+      "target": "BRAF",
+      "type": "TARGETS",
+      "description": "REGORAFENIB targets BRAF."
+    },
+    {
+      "source": "CHEMBL2105717",
+      "target": "KDR",
+      "type": "TARGETS",
+      "description": "CABOZANTINIB targets KDR."
+    },
+    {
+      "source": "CHEMBL3301612",
+      "target": "BRAF",
+      "type": "TARGETS",
+      "description": "ENCORAFENIB targets BRAF."
+    },
+    {
+      "source": "BAX",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BAX is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CASP8",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP8 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CCND2",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND2 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ACKR3",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ACKR3 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH6",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH6 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "SMO",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SMO is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IL6ST",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6ST is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "APOBEC3B",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOBEC3B is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR4",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR4 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3R1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "SMAD2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SMAD3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SMAD4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "AXIN2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "AXIN2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.60"
+    },
+    {
+      "source": "TP53",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.56"
+    },
+    {
+      "source": "KRAS",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.56"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.56"
+    },
+    {
+      "source": "AMER1",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMER1 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.53"
+    },
+    {
+      "source": "TCF7L2",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF7L2 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.52"
+    },
+    {
+      "source": "FBXW7",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXW7 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.49"
+    },
+    {
+      "source": "ARID1A",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.48"
+    },
+    {
+      "source": "SMAD4",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD4 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.46"
+    },
+    {
+      "source": "MSH6",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH6 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.45"
+    },
+    {
+      "source": "FBXO11",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXO11 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.45"
+    },
+    {
+      "source": "BRAF",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.45"
+    },
+    {
+      "source": "PIK3R1",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R1 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.44"
+    },
+    {
+      "source": "CCND2",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND2 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.44"
+    },
+    {
+      "source": "SMAD2",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD2 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.41"
+    },
+    {
+      "source": "BCL9",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL9 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.41"
+    },
+    {
+      "source": "CHD4",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD4 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.40"
+    },
+    {
+      "source": "BCL9L",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL9L is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.40"
+    },
+    {
+      "source": "RNF43",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF43 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.40"
+    },
+    {
+      "source": "ATM",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.40"
+    },
+    {
+      "source": "KDR",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.40"
+    },
+    {
+      "source": "FLT4",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.39"
+    },
+    {
+      "source": "NTRK1",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.39"
+    },
+    {
+      "source": "B2M",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B2M is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "FGFR4",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR4 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "ERBB2",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "BAX",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAX is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "POLE",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "JUN",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JUN is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SALL4",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SALL4 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SOX2",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX2 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NFKB2",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "BRCA2",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ACKR3",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACKR3 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "POLD1",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD1 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PTCH1",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "AXIN2",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AXIN2 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "DDX5",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDX5 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "HNF1A",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "EP300",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EP300 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "BCL3",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL3 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TPM3",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPM3 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TRRAP",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRRAP is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CASP8",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP8 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KMT2D",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FUBP1",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUBP1 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PALB2",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PALB2 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "BRD4",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRD4 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "APOBEC3B",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOBEC3B is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "RSPO3",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO3 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PTPRK",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRK is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "RPL22",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL22 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "BCORL1",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCORL1 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "EIF3E",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF3E is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SMAD3",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD3 is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "GNAS",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAS is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SMO",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMO is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CIITA",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIITA is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "IL6ST",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6ST is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ATRX",
+      "target": "colon adenocarcinoma (COLON_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with colon adenocarcinoma (COLON_ADENOCARCINOMA). Open Targets association score 0.37"
+    }
+  ]
+}

@@ -1,0 +1,532 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL160",
+      "target": "PPIA",
+      "type": "TARGETS",
+      "description": "CYCLOSPORINE targets PPIA."
+    },
+    {
+      "source": "CHEMBL1201828",
+      "target": "C5",
+      "type": "TARGETS",
+      "description": "ECULIZUMAB targets C5."
+    },
+    {
+      "source": "CHEMBL1201576",
+      "target": "MS4A1",
+      "type": "TARGETS",
+      "description": "RITUXIMAB targets MS4A1."
+    },
+    {
+      "source": "CHEMBL1743007",
+      "target": "CD38",
+      "type": "TARGETS",
+      "description": "DARATUMUMAB targets CD38."
+    },
+    {
+      "source": "CHEMBL4594448",
+      "target": "CFB",
+      "type": "TARGETS",
+      "description": "IPTACOPAN targets CFB."
+    },
+    {
+      "source": "LYN",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LYN is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "MS4A1",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MS4A1 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CFH",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CFH is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CFHR5",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CFHR5 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "SLC4A5",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC4A5 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "COL4A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A4",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A4 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A5",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A5 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GLIS2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLIS2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "KIRREL1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "KIRREL1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "DRD5",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "DRD5 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD38",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD38 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "CYP4A11",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4A11 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP4A22",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4A22 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP4F11",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4F11 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP4F12",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4F12 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CFHR5",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFHR5 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.51"
+    },
+    {
+      "source": "CFB",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFB is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.44"
+    },
+    {
+      "source": "C3",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.27"
+    },
+    {
+      "source": "MS4A1",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MS4A1 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "PPIA",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIA is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "C5",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C5 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "CD38",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD38 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "COL4A3",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A3 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "UMOD",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UMOD is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "FAS",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "WT1",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "CFH",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFH is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "COL4A4",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A4 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "CD2AP",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD2AP is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "NPHS2",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHS2 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "ACE",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "DNASE1",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNASE1 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "AGT",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "COL4A1",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A1 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "CYP4A22",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4A22 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "CYP4A11",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4A11 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLC12A1",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A1 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "DRD5",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DRD5 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "CLCN5",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCN5 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "MYO1E",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO1E is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "LAMB2",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMB2 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "GNE",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNE is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD151",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD151 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL4A5",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A5 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "PDE1A",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE1A is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "AQP11",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP11 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "INS",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "LAMA5",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMA5 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "MAGI2",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAGI2 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FASLG",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTGS2",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "TREX1",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREX1 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "WNK1",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNK1 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CCNI",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCNI is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "NPHS1",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHS1 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "B4GALT1",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B4GALT1 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRKDC",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKDC is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD1D",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD1D is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "GATA5",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA5 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "MAS1",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAS1 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC6A18",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A18 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CYP4F12",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4F12 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CYP4F11",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4F11 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ACTN4",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTN4 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "GUCA2B",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GUCA2B is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "MAP3K15",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K15 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "WNK4",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNK4 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "KIRREL1",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIRREL1 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "RRM2B",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RRM2B is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTPRC",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "LYN",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYN is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "GLIS2",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLIS2 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "KLHL2",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLHL2 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC4A5",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC4A5 is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "AGXT",
+      "target": "primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGXT is associated with primary membranoproliferative glomerulonephritis (PRIMARY_MEMBRANOPROLIFERATIVE_GLOMERULONEPHRITIS). Open Targets association score 0.04"
+    }
+  ]
+}

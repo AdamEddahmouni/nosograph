@@ -1,0 +1,544 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1429",
+      "target": "AVPR1A",
+      "type": "TARGETS",
+      "description": "DESMOPRESSIN targets AVPR1A."
+    },
+    {
+      "source": "CHEMBL1429",
+      "target": "AVPR2",
+      "type": "TARGETS",
+      "description": "DESMOPRESSIN targets AVPR2."
+    },
+    {
+      "source": "CHEMBL384467",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "DEXAMETHASONE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL1429",
+      "target": "AVPR1B",
+      "type": "TARGETS",
+      "description": "DESMOPRESSIN targets AVPR1B."
+    },
+    {
+      "source": "SQSTM1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SQSTM1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL10",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL10 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "GTF2H1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "GTF2H1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IGF2BP2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2BP2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "HAVCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL18BP",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18BP is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SOCS1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "SOCS1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL21",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL21 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL23A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL23A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR2",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR2 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "CD40LG",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "MIF",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIF is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "HAVCR1",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAVCR1 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "NR3C1",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "AVPR1B",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVPR1B is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "AVPR2",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVPR2 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "AVPR1A",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVPR1A is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "CCL2",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL2 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "CRP",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "TLR2",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR2 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL10",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "LGALS9",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS9 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "LCN2",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN2 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "PLA2G7",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G7 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "TLR4",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPP1",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPP1 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXP3",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PAFAH1B1",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAFAH1B1 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TGFB1",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "VEGFA",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "LIF",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIF is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ANGPT2",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPT2 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOCS1",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOCS1 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PROX1",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROX1 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL17A",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL6",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CXCL10",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL10 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFNG",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "ALB",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL37",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL37 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL21",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL21 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL23A",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL23A is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "VWF",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CXCL8",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL1B",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDH1",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "NUP62",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUP62 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IGF2BP2",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2BP2 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "KHDRBS1",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KHDRBS1 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "SQSTM1",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SQSTM1 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "DCTN4",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCTN4 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "GTF2H1",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GTF2H1 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CLPB",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLPB is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "MB",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MB is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "SPTB",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTB is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "ANK1",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL18BP",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18BP is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "SSTR2",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSTR2 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CORT",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CORT is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "GOT1",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOT1 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "GPT",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CP",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CP is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "VPS51",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VPS51 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "LGALS3",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "NOS2",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "ICAM1",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLC17A5",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A5 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CLU",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLU is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "NBR1",
+      "target": "leptospirosis (LEPTOSPIROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBR1 is associated with leptospirosis (LEPTOSPIROSIS). Open Targets association score 0.02"
+    }
+  ]
+}

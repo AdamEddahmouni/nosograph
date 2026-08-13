@@ -1,0 +1,442 @@
+{
+  "relationships": [
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "PTH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TG",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TG is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "SLCO3A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLCO3A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SLCO3A1",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLCO3A1 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.30"
+    },
+    {
+      "source": "ST8SIA2",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST8SIA2 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL1B",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.02"
+    },
+    {
+      "source": "ENO2",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENO2 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL6",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD274",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "ROS1",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROS1 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSF3",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC7A5",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC7A5 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "LAT",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAT is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "AFP",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM5",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM5 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYCN",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYCN is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "FOXN1",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXN1 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTH",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTH is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD1D",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD1D is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "RAC1",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAC1 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "NF1",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAGEA1",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAGEA1 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "POMC",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD5",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD5 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP63",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPE65",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPE65 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "UVRAG",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UVRAG is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CKAP4",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CKAP4 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALK",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD4",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "KIT",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEACAM3",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM3 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "DNTT",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNTT is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD40LG",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "TG",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TG is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "GPT",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRAS",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "NCL",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCL is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOD2",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD2 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSG2",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSG2 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "SALL4",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SALL4 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "MUC5AC",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5AC is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEACAM7",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM7 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRP",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD8A",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "MKI67",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "RET",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALB",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "GPHN",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPHN is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "NECTIN1",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NECTIN1 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "YAP1",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YAP1 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "GFAP",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHKB",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKB is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATP6AP2",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP6AP2 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHKA",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKA is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "DES",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DES is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CMPK1",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMPK1 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "NR1I2",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1I2 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNA1",
+      "target": "neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with neoplasm of mediastinum (NEOPLASM_OF_MEDIASTINUM). Open Targets association score 0.00"
+    }
+  ]
+}

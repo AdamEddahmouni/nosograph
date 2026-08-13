@@ -1,0 +1,448 @@
+{
+  "relationships": [
+    {
+      "source": "RHBDF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "RHBDF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CCHCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CCHCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ADAMTS20",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS20 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MCOLN3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MCOLN3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ZDHHC13",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "ZDHHC13 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "ZDHHC21",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "ZDHHC21 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "KITLG",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KITLG is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "IKBKG",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "IKBKG is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBIZ",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIZ is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "TGFA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGM3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "GJB6",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJB6 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.83"
+    },
+    {
+      "source": "GJB2",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJB2 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.19"
+    },
+    {
+      "source": "NSDHL",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSDHL is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "EGFR",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "HR",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HR is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "TMEM79",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM79 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "EDA",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDA is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "DSG4",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSG4 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "MITF",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MITF is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "ST14",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST14 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "GSDMA",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMA is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "FOXN1",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXN1 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "HOXC13",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXC13 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "SCD",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCD is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "C8orf44-SGK3",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C8orf44-SGK3 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "SGK3",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGK3 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "CTSV",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSV is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "CTSL",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSL is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "RHBDF2",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHBDF2 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "GRHL1",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRHL1 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "DSG3",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSG3 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "MPZL3",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPZL3 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "KIT",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SOX18",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX18 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "GNAQ",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAQ is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TGFA",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFA is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ATP7A",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP7A is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "KITLG",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KITLG is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TYR",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYR is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ASIP",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASIP is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRSS8",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRSS8 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "MYO5A",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO5A is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "OCA2",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OCA2 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "LYST",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYST is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "KRT71",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT71 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "MC1R",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MC1R is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "MCOLN3",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCOLN3 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ZDHHC21",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZDHHC21 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TYRP1",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYRP1 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "AP3B1",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AP3B1 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "NFKBIZ",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIZ is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLC45A2",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC45A2 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "EDNRB",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRB is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ADAMTS20",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS20 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TAL1",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAL1 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "IKBKG",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKBKG is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "KRT25",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT25 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PAX3",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX3 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CCHCR1",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCHCR1 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "EDAR",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDAR is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "HPS5",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPS5 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PKP3",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKP3 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD109",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD109 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "EIF3CL",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF3CL is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "EIF3C",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF3C is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ZDHHC13",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZDHHC13 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "HPS6",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPS6 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TGM3",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM3 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "GATA3",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SUFU",
+      "target": "Clouston syndrome (CLOUSTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUFU is associated with Clouston syndrome (CLOUSTON_SYNDROME). Open Targets association score 0.06"
+    }
+  ]
+}

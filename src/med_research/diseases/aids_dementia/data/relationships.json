@@ -1,0 +1,520 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201187",
+      "target": "CCR5",
+      "type": "TARGETS",
+      "description": "MARAVIROC targets CCR5."
+    },
+    {
+      "source": "LYN",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LYN is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ARRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "ARRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN3",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN3 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCR5",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR5 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL1",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL1 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TIMP1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IRS1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "IRS1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "SLC2A1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CHUK",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CHUK is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "SMAD3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.10"
+    },
+    {
+      "source": "SOX30",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX30 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.10"
+    },
+    {
+      "source": "UHRF1",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UHRF1 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "CLDN3",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN3 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "VEGFA",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "CCR5",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR5 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "CXCL8",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "FOXM1",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXM1 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "DDX11",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDX11 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CDKN3",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN3 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CITED4",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CITED4 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "ARRB1",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARRB1 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "EGFR",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CLEC3B",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC3B is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "LYN",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYN is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLC2A1",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A1 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CHUK",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHUK is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "LHX3",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHX3 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "DOCK4",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK4 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "TGFB1",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CXCL1",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL1 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "RPL17",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CCND1",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PLPP4",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLPP4 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPON2",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPON2 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CMA1",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMA1 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MCTS1",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCTS1 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MCAT",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCAT is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC16A1",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC16A1 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TACSTD2",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TACSTD2 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "COMMD4",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COMMD4 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ANGPT2",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPT2 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MUC1",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC1 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CEACAM8",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM8 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "HMGB1",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGB1 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNF",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "EZH2",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EZH2 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TIMP1",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP1 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "KRAS",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "IRS2",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRS2 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PDCD1",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SNCA",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPATA2",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "COMMD1",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COMMD1 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TP53",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "UCK2",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UCK2 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ERBB2",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CHKB",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKB is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CMPK1",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMPK1 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CHKA",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKA is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL10",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NHLRC2",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NHLRC2 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "DACH1",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DACH1 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "AKT1",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "IRS1",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRS1 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "IGF1R",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1R is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD8A",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SMAD3",
+      "target": "AIDS dementia (AIDS_DEMENTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD3 is associated with AIDS dementia (AIDS_DEMENTIA). Open Targets association score 0.04"
+    }
+  ]
+}

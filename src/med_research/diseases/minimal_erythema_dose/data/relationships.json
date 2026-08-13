@@ -1,0 +1,442 @@
+{
+  "relationships": [
+    {
+      "source": "AURKA",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "AURKA is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDK5R2",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK5R2 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "EIF2AK3",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EIF2AK3 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "KIF20A",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "KIF20A is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL12A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL12A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL9A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL9A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL9A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL9A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL9A3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL9A3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ABCC8",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC8 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "KCNJ11",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNJ11 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "SMOC2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SMOC2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "CRELD2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CRELD2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "THBS1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THBS1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TGFBI",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBI is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBI",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBI is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ABCC8",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC8 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "MATN3",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MATN3 is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.38"
+    },
+    {
+      "source": "COMP",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COMP is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.03"
+    },
+    {
+      "source": "IER3IP1",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IER3IP1 is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.02"
+    },
+    {
+      "source": "KIF20A",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF20A is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLC26A2",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC26A2 is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.01"
+    },
+    {
+      "source": "AURKA",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AURKA is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MANF",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MANF is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.01"
+    },
+    {
+      "source": "COL9A1",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL9A1 is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRELD2",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRELD2 is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.01"
+    },
+    {
+      "source": "COL9A2",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL9A2 is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.01"
+    },
+    {
+      "source": "COL9A3",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL9A3 is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TARDBP",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TARDBP is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.01"
+    },
+    {
+      "source": "COL12A1",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL12A1 is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SCN8A",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN8A is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "INS",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "COL2A1",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TUBB3",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB3 is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MATN1",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MATN1 is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CANT1",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CANT1 is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMP2",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "DCN",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCN is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNXB",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNXB is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "THBS1",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THBS1 is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "JUN",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JUN is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC26A1",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC26A1 is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSMA2",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMA2 is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATP6V0D1",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP6V0D1 is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDK5R2",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK5R2 is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SMOC2",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMOC2 is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "HYOU1",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HYOU1 is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ENO4",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENO4 is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGFBI",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBI is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPT",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPT is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "AKT1",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "EIF2AK3",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF2AK3 is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CTAG1B",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTAG1B is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP53",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CTAG1A",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTAG1A is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ABCC8",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC8 is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "HSPA5",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPA5 is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "VWF",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "NOS3",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    },
+    {
+      "source": "KCNJ11",
+      "target": "minimal erythema dose (MINIMAL_ERYTHEMA_DOSE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNJ11 is associated with minimal erythema dose (MINIMAL_ERYTHEMA_DOSE). Open Targets association score 0.00"
+    }
+  ]
+}

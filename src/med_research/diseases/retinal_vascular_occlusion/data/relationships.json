@@ -1,0 +1,376 @@
+{
+  "relationships": [
+    {
+      "source": "F2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PROC",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "PROC is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "MAP2K1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "RENBP",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "RENBP is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "MTHFR",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFR is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "FLT1",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "FLT1 is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "PGF",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "PGF is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFB",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFB is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "GSTM1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SH3PXD2A",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3PXD2A is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.24"
+    },
+    {
+      "source": "PLEKHG1",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLEKHG1 is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.23"
+    },
+    {
+      "source": "CYB5A",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYB5A is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.15"
+    },
+    {
+      "source": "PRH2",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH2 is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSAP",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSAP is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRH1",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH1 is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "VEGFA",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC5A2",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC5A2 is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "SERPINC1",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINC1 is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "F5",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F5 is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "LGALS1",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS1 is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD40LG",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "NAMPT",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAMPT is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "FLT1",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT1 is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL10",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL6",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD34",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "PROS1",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROS1 is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "MSX2",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSX2 is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAP2K1",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K1 is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "VKORC1",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VKORC1 is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "STAMBP",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAMBP is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "POMC",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "MTHFR",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFR is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "TF",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "RENBP",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RENBP is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "VEGFB",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFB is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "AGXT",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGXT is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACLY",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACLY is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "NOS2",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "NOS1",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS1 is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "PGF",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGF is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "APOH",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOH is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "NF1",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYRF",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYRF is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1B",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1A",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1A is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "PROC",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROC is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "F2",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F2 is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDE5A",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE5A is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "GSTM1",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM1 is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "APOE",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNF",
+      "target": "retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with retinal vascular occlusion (RETINAL_VASCULAR_OCCLUSION). Open Targets association score 0.00"
+    }
+  ]
+}

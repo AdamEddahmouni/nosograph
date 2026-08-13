@@ -1,0 +1,436 @@
+{
+  "relationships": [
+    {
+      "source": "EIF2B3",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EIF2B3 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ZNF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "TFRC",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFRC is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGB3BP",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB3BP is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGB3BP",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB3BP is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "HBB",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBB is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.64"
+    },
+    {
+      "source": "KLF1",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF1 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.56"
+    },
+    {
+      "source": "HBG1",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBG1 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.46"
+    },
+    {
+      "source": "HBG2",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBG2 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.46"
+    },
+    {
+      "source": "GCDH",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCDH is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.34"
+    },
+    {
+      "source": "HBD",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBD is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.20"
+    },
+    {
+      "source": "HBA1",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBA1 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "HBA2",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBA2 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "RHBDF1",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHBDF1 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "TMPRSS6",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS6 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "ANK1",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "AHSP",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSP is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "KIT",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "HBZ",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBZ is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "TFRC",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFRC is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "HEPH",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEPH is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "EPOR",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPOR is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "EPS15",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPS15 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "SPTA1",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "EPB41",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPB41 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "NR2C1",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR2C1 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "CPOX",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPOX is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "SLC6A14",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A14 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "EIF2B3",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF2B3 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "CEP290",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEP290 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "EMP3",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EMP3 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "UMODL1",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UMODL1 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "ZNF7",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF7 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "LRIF1",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRIF1 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "SON",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SON is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "GLYR1",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLYR1 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "ITGB3BP",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB3BP is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "PLXNA2",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLXNA2 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "PRF1",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRF1 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "LMBRD1",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMBRD1 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "SRC",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRC is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "HHIP",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HHIP is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "RAB40B",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB40B is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "ITGAM",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAM is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "KPRP",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KPRP is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "SMARCAL1",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCAL1 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "DHPS",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHPS is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "MTMR7",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTMR7 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "CHIC1",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHIC1 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "USP11",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP11 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "USP37",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP37 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "RAB40A",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB40A is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "TOMM22",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOMM22 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "RAB40AL",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB40AL is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "HEG1",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEG1 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "AGFG2",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGFG2 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "SUPT4H1",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUPT4H1 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "RNPEP",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNPEP is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "RDX",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RDX is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "IPO8",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IPO8 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "MOSPD1",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MOSPD1 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "DNAJC8",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAJC8 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "CRIPT",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRIPT is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "CCDC50",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC50 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "CERT1",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CERT1 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "GPNMB",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPNMB is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "CLCC1",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCC1 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "ZNF174",
+      "target": "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF174 is associated with hereditary persistence of fetal hemoglobin-sickle cell disease syndrome (HEREDITARY_PERSISTENCE_OF_FETAL_HEMOGLOBIN_SICKLE_CELL_DISEASE_SYNDROME). Open Targets association score 0.08"
+    }
+  ]
+}

@@ -26,6 +26,7 @@ GWAS_SEARCH_TERMS = ["Primary ciliary dyskinesia", "Primary"]
 # ── CAR-T Scoring Tables (used by car_t_predictor/predictor.py) ──────────
 CAR_T_SCORES = {
     "Uncategorized": {
+        "BACH2": 4.0,
         "CCDC39": 4.0,
         "CCDC40": 4.0,
         "CCDC65": 4.0,

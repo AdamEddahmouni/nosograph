@@ -1,0 +1,472 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL941",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "IMATINIB targets KIT."
+    },
+    {
+      "source": "CHEMBL1642",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "IMATINIB MESYLATE targets KIT."
+    },
+    {
+      "source": "CCNA2",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCNA2 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "SLC2A1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TGM2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "FASN",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASN is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.38"
+    },
+    {
+      "source": "ALK",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.37"
+    },
+    {
+      "source": "ROS1",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROS1 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.37"
+    },
+    {
+      "source": "TPM3",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPM3 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.37"
+    },
+    {
+      "source": "NTRK1",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.37"
+    },
+    {
+      "source": "RET",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.37"
+    },
+    {
+      "source": "LMNA",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNA is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.37"
+    },
+    {
+      "source": "MYO5A",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO5A is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.37"
+    },
+    {
+      "source": "KIF5B",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF5B is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.37"
+    },
+    {
+      "source": "HLA-A",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-A is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.37"
+    },
+    {
+      "source": "ERC1",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERC1 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.37"
+    },
+    {
+      "source": "CLIP1",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLIP1 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.37"
+    },
+    {
+      "source": "PPFIBP1",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPFIBP1 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.37"
+    },
+    {
+      "source": "DCTN1",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCTN1 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.37"
+    },
+    {
+      "source": "GOLGA5",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOLGA5 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.37"
+    },
+    {
+      "source": "BRAF",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "NRAS",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP53",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.20"
+    },
+    {
+      "source": "LSM14A",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LSM14A is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.18"
+    },
+    {
+      "source": "ZCCHC8",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZCCHC8 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.18"
+    },
+    {
+      "source": "SHTN1",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHTN1 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.18"
+    },
+    {
+      "source": "PWWP2A",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PWWP2A is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.18"
+    },
+    {
+      "source": "CEP89",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEP89 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.18"
+    },
+    {
+      "source": "GSDMB",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRPM1",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPM1 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "KIT",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CCND1",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "NME1",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NME1 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.02"
+    },
+    {
+      "source": "AKT1",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.02"
+    },
+    {
+      "source": "PCNA",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNA is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.02"
+    },
+    {
+      "source": "S100A6",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A6 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.02"
+    },
+    {
+      "source": "BAP1",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAP1 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLC2A1",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A1 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPPL2A",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPPL2A is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IMP3",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IMP3 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRAME",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRAME is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MKI67",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MLPH",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLPH is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "FASN",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASN is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TCEAL1",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCEAL1 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NSG1",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSG1 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GH1",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "FN1",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FN1 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN2B",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2B is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NXT1",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NXT1 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGM2",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM2 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MRPL28",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRPL28 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "SUB1",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUB1 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GGH",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGH is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "HOXA1",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA1 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MIB1",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIB1 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYC",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "UBE2C",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBE2C is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCNA2",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCNA2 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "FOS",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOS is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MLANA",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLANA is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NRP2",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRP2 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "spitz nevus (SPITZ_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with spitz nevus (SPITZ_NEVUS). Open Targets association score 0.01"
+    }
+  ]
+}

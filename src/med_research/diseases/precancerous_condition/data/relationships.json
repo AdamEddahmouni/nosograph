@@ -1,0 +1,76 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL830",
+      "target": "ODC1",
+      "type": "TARGETS",
+      "description": "EFLORNITHINE targets ODC1."
+    },
+    {
+      "source": "CHEMBL1201577",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "CETUXIMAB targets EGFR."
+    },
+    {
+      "source": "CHEMBL15770",
+      "target": "PTGS1",
+      "type": "TARGETS",
+      "description": "SULINDAC targets PTGS1."
+    },
+    {
+      "source": "CHEMBL15770",
+      "target": "PTGS2",
+      "type": "TARGETS",
+      "description": "SULINDAC targets PTGS2."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PTGS1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ODC1",
+      "target": "precancerous condition (PRECANCEROUS_CONDITION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ODC1 is associated with precancerous condition (PRECANCEROUS_CONDITION). Open Targets association score 0.26"
+    },
+    {
+      "source": "PTGS1",
+      "target": "precancerous condition (PRECANCEROUS_CONDITION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS1 is associated with precancerous condition (PRECANCEROUS_CONDITION). Open Targets association score 0.26"
+    },
+    {
+      "source": "PTGS2",
+      "target": "precancerous condition (PRECANCEROUS_CONDITION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with precancerous condition (PRECANCEROUS_CONDITION). Open Targets association score 0.26"
+    },
+    {
+      "source": "EGFR",
+      "target": "precancerous condition (PRECANCEROUS_CONDITION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with precancerous condition (PRECANCEROUS_CONDITION). Open Targets association score 0.04"
+    },
+    {
+      "source": "OLFM4",
+      "target": "precancerous condition (PRECANCEROUS_CONDITION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OLFM4 is associated with precancerous condition (PRECANCEROUS_CONDITION). Open Targets association score 0.00"
+    }
+  ]
+}

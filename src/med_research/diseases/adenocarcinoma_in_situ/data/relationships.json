@@ -1,0 +1,454 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201577",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "CETUXIMAB targets EGFR."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "LATS2",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LATS2 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "FAP",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAP is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.03"
+    },
+    {
+      "source": "ALK",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.02"
+    },
+    {
+      "source": "F11R",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F11R is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.02"
+    },
+    {
+      "source": "EGFR",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.02"
+    },
+    {
+      "source": "EML4",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EML4 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "MKI67",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP9",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD274",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "MIB1",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIB1 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCND1",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM5",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM5 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDH1",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "LEP",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM3",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM3 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSG2",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSG2 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM7",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM7 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC5AC",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5AC is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERBB2",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "VIM",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIM is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "CADM1",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CADM1 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMN1",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMN1 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "LATS2",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LATS2 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERBB3",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB3 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSDMB",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC1",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC1 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRAS",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "TTF1",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTF1 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS1",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS1 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS2",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "SYP",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYP is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "PCNA",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNA is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "CP",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CP is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRMT5",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRMT5 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "AFP",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "CIB1",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIB1 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "DCTN6",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCTN6 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "MET",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNF",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "PAK2",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAK2 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFI27",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFI27 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHKA",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKA is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSMD9",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMD9 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "ZNRD2",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNRD2 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHKB",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKB is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "TMED7",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMED7 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "CMPK1",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMPK1 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTEN",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "PBX1",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBX1 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "BCL2",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALKBH4",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALKBH4 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHGA",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHGA is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "SALL4",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SALL4 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "BRAF",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "ISLR",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISLR is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "DUOX2",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DUOX2 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "NTRK1",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "NBR1",
+      "target": "adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBR1 is associated with adenocarcinoma in situ (ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    }
+  ]
+}

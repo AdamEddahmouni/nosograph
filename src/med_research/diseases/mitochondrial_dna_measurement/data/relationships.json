@@ -1,0 +1,442 @@
+{
+  "relationships": [
+    {
+      "source": "BANK1",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BANK1 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD226",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD226 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CDK6",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK6 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ACKR1",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ACKR1 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "FGG",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGG is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MEF2C",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "MEF2C is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "THPO",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THPO is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TFAM",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFAM is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.56"
+    },
+    {
+      "source": "DGUOK",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DGUOK is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "MGME1",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MGME1 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "TWNK",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TWNK is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "MCAT",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCAT is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "LONP1",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LONP1 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "APEX1",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APEX1 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "PRDM16",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM16 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "MFN1",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFN1 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "CD226",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD226 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "USP30",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP30 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "MEF2C",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEF2C is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "APOE",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "TERT",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "BAK1",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAK1 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "MFN2",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFN2 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "BANK1",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BANK1 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "SNX5",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNX5 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "CDK6",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK6 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "GP6",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GP6 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "STMP1",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STMP1 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "SIRPB1",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRPB1 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "SIRPA",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRPA is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "POLG",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLG is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "RHOF",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHOF is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "SLC25A5",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A5 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "RRM1",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RRM1 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "POLG2",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLG2 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "CUX1",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUX1 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "TRIM58",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM58 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "SERTAD2",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERTAD2 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "MDFIC",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDFIC is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "ACKR1",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACKR1 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "JMJD1C",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JMJD1C is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "RNPEPL1",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNPEPL1 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "THPO",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THPO is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "EIF4E3",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF4E3 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "SHMT1",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHMT1 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "TRABD",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRABD is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "MYB",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYB is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "ANKLE1",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKLE1 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "RHD",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHD is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "TBRG4",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBRG4 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "SLC12A7",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A7 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "VWF",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "MRPS35",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRPS35 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "COPZ1",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COPZ1 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "NFE2",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "DNM3",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM3 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "CXCR2",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR2 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "PLAUR",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAUR is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "FGG",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGG is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "S1PR4",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S1PR4 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "CSF3R",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3R is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "CXCL2",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL2 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "TUBB1",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB1 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "MPO",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPO is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "LDLR",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "SCO2",
+      "target": "mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCO2 is associated with mitochondrial DNA measurement (MITOCHONDRIAL_DNA_MEASUREMENT). Open Targets association score 0.35"
+    }
+  ]
+}

@@ -1,0 +1,526 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201830",
+      "target": "IL1B",
+      "type": "TARGETS",
+      "description": "RILONACEPT targets IL1B."
+    },
+    {
+      "source": "CHEMBL1201834",
+      "target": "IL1B",
+      "type": "TARGETS",
+      "description": "CANAKINUMAB targets IL1B."
+    },
+    {
+      "source": "CHEMBL1201830",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "TREATS",
+      "description": "RILONACEPT is phase 4 / marketed for cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)."
+    },
+    {
+      "source": "CHEMBL1201834",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "TREATS",
+      "description": "CANAKINUMAB is phase 4 / marketed for cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)."
+    },
+    {
+      "source": "ATG5",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "ATG5 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL10",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL10 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "TNFSF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BMP6",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP6 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ATG5",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ATG5 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF10",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF10 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.58"
+    },
+    {
+      "source": "IL1B",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.54"
+    },
+    {
+      "source": "MYC",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.12"
+    },
+    {
+      "source": "AR",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.12"
+    },
+    {
+      "source": "CALCA",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.11"
+    },
+    {
+      "source": "UROD",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UROD is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.11"
+    },
+    {
+      "source": "ERG",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERG is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.11"
+    },
+    {
+      "source": "TNF",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.11"
+    },
+    {
+      "source": "IL17A",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "KLK3",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK3 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "IL6",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "TP53",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "PROS1",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROS1 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "PLAG1",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAG1 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "NPEPPS",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPEPPS is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "PSAT1",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSAT1 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "CRP",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "IL10",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "BSG",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BSG is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "LDHA",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDHA is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "BMI1",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMI1 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "PMEPA1",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMEPA1 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "NPPB",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPB is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "AHSG",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSG is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "GABARAPL1",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABARAPL1 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "S100A12",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A12 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "LCN2",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN2 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "CD44",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "CHI3L1",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHI3L1 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "RPL17",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "TGFB1",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "SPP1",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPP1 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "IL2",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "S100A9",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A9 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "HMGB1",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGB1 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "EPCAM",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPCAM is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "TMPRSS2",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS2 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "IL27",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL27 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "CXCL10",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL10 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "S100A8",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A8 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "IL7R",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7R is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "BMP6",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP6 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "IFNA1",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "IL37",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL37 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "SFTPA1",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFTPA1 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "SLC16A4",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC16A4 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "SLC16A3",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC16A3 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "C3",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "FOLH1",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOLH1 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "CCL2",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL2 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "CCN1",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCN1 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "DNMT1",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT1 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "ATG5",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATG5 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "MTOR",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "FASLG",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "RETN",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RETN is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "PTEN",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "TNFSF10",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF10 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "HP",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HP is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "SFTPA2",
+      "target": "cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFTPA2 is associated with cryopyrin-associated periodic syndrome (CRYOPYRIN_ASSOCIATED_PERIODIC_SYNDROME). Open Targets association score 0.08"
+    }
+  ]
+}

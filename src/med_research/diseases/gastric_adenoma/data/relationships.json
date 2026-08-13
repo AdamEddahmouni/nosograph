@@ -1,0 +1,520 @@
+{
+  "relationships": [
+    {
+      "source": "BAX",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BAX is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CD79B",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79B is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "SYK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "SYK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ACKR3",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ACKR3 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "MLH1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MLH1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GRIN2A",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2A is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6ST",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6ST is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR4",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR4 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAML2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MAML2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "SMAD4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "AXIN2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "AXIN2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ARID2",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID2 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ERBB2",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "GNAS",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAS is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ZNF521",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF521 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NTRK1",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CIITA",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIITA is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MN1",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MN1 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "RPL22",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL22 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "RNF43",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF43 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TP53",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KRAS",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BCL2",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FANCA",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MLH1",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLH1 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "IL6ST",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6ST is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMAD4",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD4 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "AXIN2",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AXIN2 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDC73",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDC73 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MET",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BAX",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAX is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EGFR",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TGFBR2",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBR2 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TET1",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET1 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FBXW7",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXW7 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MSH2",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH2 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "HMGA2",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGA2 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDH1",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID1A",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PPARG",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "STK11",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ESR1",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTPN13",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN13 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SYK",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYK is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTPRB",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRB is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RAD21",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD21 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CIC",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIC is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BCL9",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL9 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EBF1",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EBF1 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERBB4",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB4 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTPRT",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRT is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTCH1",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAML2",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAML2 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NRG1",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRG1 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "POLD1",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD1 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PREX2",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PREX2 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "HNF1A",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NKX2-1",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-1 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTK6",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTK6 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ACKR3",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACKR3 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PRDM16",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM16 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "GATA3",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "HIP1",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIP1 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "JAK3",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ZFHX3",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFHX3 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR4",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR4 is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "GRIN2A",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2A is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CD79B",
+      "target": "Gastric Adenoma (GASTRIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79B is associated with Gastric Adenoma (GASTRIC_ADENOMA). Open Targets association score 0.28"
+    }
+  ]
+}

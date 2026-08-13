@@ -1,0 +1,406 @@
+{
+  "relationships": [
+    {
+      "source": "CACNA1D",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1D is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "HCN1",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "HCN1 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CDKN2D",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2D is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "GABRB2",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GABRB2 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRM1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRM1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "KLHDC2",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KLHDC2 is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "UGT8",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "UGT8 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "FOXE3",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXE3 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "CRYGD",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYGD is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "SPTBN4",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTBN4 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ATP2B2",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP2B2 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CNTNAP1",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNTNAP1 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "NHS",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NHS is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "HSF4",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSF4 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PMP22",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMP22 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CRYGC",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYGC is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "LIM2",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIM2 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CRYAA",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYAA is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SCN8A",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN8A is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TRPM3",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPM3 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXC1",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CRYBB2",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYBB2 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "GRID2",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRID2 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "MAPT",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPT is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CDH23",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH23 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "GJA8",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA8 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "MBP",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBP is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ATCAY",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATCAY is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GOLGA1",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOLGA1 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "MPZ",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPZ is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NDRG1",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDRG1 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SIPA1L3",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIPA1L3 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CPOX",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPOX is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "LSS",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LSS is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CHD7",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD7 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NCOA6",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOA6 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "DST",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DST is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "MIP",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIP is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ROBO3",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROBO3 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "LGR4",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGR4 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GJE1",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJE1 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ASPA",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASPA is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CRYBA2",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYBA2 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "UGT8",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGT8 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZFYVE26",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFYVE26 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "KCNE1",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNE1 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ETV1",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV1 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SPTBN2",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTBN2 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ECT2",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ECT2 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC17A8",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A8 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC26A4",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC26A4 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GJB6",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJB6 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CA8",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA8 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "POU4F3",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU4F3 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "POU3F4",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU3F4 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "KCNV1",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNV1 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "HCN1",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HCN1 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "KCNJ10",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNJ10 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SHC1",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHC1 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "EMX2",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EMX2 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GABRB2",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRB2 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "KLHDC2",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLHDC2 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDKN2D",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2D is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PSAP",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSAP is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GRM1",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRM1 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ILDR1",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ILDR1 is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CACNA1D",
+      "target": "cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1D is associated with cataract-ataxia-deafness syndrome (CATARACT_ATAXIA_DEAFNESS_SYNDROME). Open Targets association score 0.03"
+    }
+  ]
+}

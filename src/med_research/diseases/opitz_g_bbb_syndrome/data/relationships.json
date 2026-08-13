@@ -1,0 +1,442 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL503",
+      "target": "HMGCR",
+      "type": "TARGETS",
+      "description": "LOVASTATIN targets HMGCR."
+    },
+    {
+      "source": "FGF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "NDUFAF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NDUFAF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ELN",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ELN is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "MEFV",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "MEFV is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "HMGCR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HMGCR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "JAG2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "JAG2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "FBN1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "FBN1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "IFIH1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFIH1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "MID1",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MID1 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.75"
+    },
+    {
+      "source": "SPECC1L",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPECC1L is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.55"
+    },
+    {
+      "source": "FOXL2",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXL2 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.52"
+    },
+    {
+      "source": "ENSG00000291314",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENSG00000291314 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.46"
+    },
+    {
+      "source": "HMGCR",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCR is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "FGF10",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF10 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CHTOP",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHTOP is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RPGRIP1L",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPGRIP1L is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PBX1",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBX1 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FOXH1",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXH1 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FGFR2",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GLDC",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLDC is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ARB2A",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARB2A is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "WDR11",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR11 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PSPH",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSPH is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFT27",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT27 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "NDST1",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDST1 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ROBO1",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROBO1 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZEB1",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "IGBP1",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGBP1 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "PSMA7",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMA7 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "PSMA8",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMA8 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TMSB10",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMSB10 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "MID1IP1",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MID1IP1 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTPA",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPA is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPC3",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPC3 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP63",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "MID2",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MID2 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "MEFV",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEFV is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "KISS1R",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KISS1R is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "EVC",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EVC is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHD7",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD7 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "EVC2",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EVC2 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "EFNB1",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EFNB1 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "NTRK2",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK2 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "FBN1",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBN1 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "TBX1",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX1 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "STRA6",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STRA6 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CR1",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CR1 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ELN",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELN is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ZIC3",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZIC3 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "MLN",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLN is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "SGSM3",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGSM3 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "FSD1",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSD1 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEP290",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEP290 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "UVRAG",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UVRAG is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFIH1",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFIH1 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "NBR1",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBR1 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "TMEM231",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM231 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CKAP4",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CKAP4 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPE65",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPE65 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "JAG2",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAG2 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "SALL1",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SALL1 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "SALL4",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SALL4 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CSPP1",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSPP1 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "GLI3",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "UFD1",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UFD1 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "NDUFAF7",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFAF7 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CBLL2",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBLL2 is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "MTOR",
+      "target": "Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with Opitz G/BBB syndrome (OPITZ_G_BBB_SYNDROME). Open Targets association score 0.00"
+    }
+  ]
+}

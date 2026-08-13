@@ -1,0 +1,436 @@
+{
+  "relationships": [
+    {
+      "source": "GRB14",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "GRB14 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "COLEC11",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COLEC11 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TIMP4",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP4 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IRS1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "IRS1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAML2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MAML2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "TSC22D2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC22D2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "FASTKD5",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASTKD5 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF13",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFB",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFB is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "RSPO3",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO3 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "VEGFB",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFB is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "MAP3K1",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K1 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "ZC3H11B",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZC3H11B is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "ANKRD55",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKRD55 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "COLEC11",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COLEC11 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "SHBG",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHBG is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "FGFR2",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "PPARG",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "SLC22A3",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A3 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "PEPD",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PEPD is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "FTO",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FTO is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "PEMT",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PEMT is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "CPLX1",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPLX1 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "LHCGR",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHCGR is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "KNTC1",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KNTC1 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "ABCA1",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "UBOX5",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBOX5 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "FASTKD5",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASTKD5 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "WDR11",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR11 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "CMIP",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMIP is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "VEGFA",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "CITED2",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CITED2 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.27"
+    },
+    {
+      "source": "MAML2",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAML2 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.26"
+    },
+    {
+      "source": "BAIAP2L2",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAIAP2L2 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.26"
+    },
+    {
+      "source": "HMGA1",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGA1 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.25"
+    },
+    {
+      "source": "PRR5L",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRR5L is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.25"
+    },
+    {
+      "source": "NYAP2",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NYAP2 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.24"
+    },
+    {
+      "source": "MAFB",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAFB is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.24"
+    },
+    {
+      "source": "OSMR",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OSMR is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.24"
+    },
+    {
+      "source": "TNFSF13",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.23"
+    },
+    {
+      "source": "MAFF",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAFF is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.23"
+    },
+    {
+      "source": "TSC22D2",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC22D2 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.23"
+    },
+    {
+      "source": "EYA1",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EYA1 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.23"
+    },
+    {
+      "source": "TFAP2B",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFAP2B is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.22"
+    },
+    {
+      "source": "PRKAG3",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAG3 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.22"
+    },
+    {
+      "source": "PDGFC",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFC is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.21"
+    },
+    {
+      "source": "HOXC12",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXC12 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.20"
+    },
+    {
+      "source": "IRS1",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRS1 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.19"
+    },
+    {
+      "source": "SETD9",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD9 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.19"
+    },
+    {
+      "source": "DLG1",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLG1 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.19"
+    },
+    {
+      "source": "CCDC92",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC92 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.19"
+    },
+    {
+      "source": "EBF1",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EBF1 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.19"
+    },
+    {
+      "source": "ZNF664",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF664 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.19"
+    },
+    {
+      "source": "COBLL1",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COBLL1 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.18"
+    },
+    {
+      "source": "NCOA7",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOA7 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.16"
+    },
+    {
+      "source": "IER5",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IER5 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.16"
+    },
+    {
+      "source": "CLOCK",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLOCK is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.15"
+    },
+    {
+      "source": "GRB14",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRB14 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.15"
+    },
+    {
+      "source": "EXOG",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EXOG is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.14"
+    },
+    {
+      "source": "SPSB1",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPSB1 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.12"
+    },
+    {
+      "source": "TMEM165",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM165 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.10"
+    },
+    {
+      "source": "PLCB3",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCB3 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.10"
+    },
+    {
+      "source": "HINT3",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HINT3 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.09"
+    },
+    {
+      "source": "PLA2G6",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G6 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.09"
+    },
+    {
+      "source": "MTMR2",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTMR2 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.09"
+    },
+    {
+      "source": "SAT2",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAT2 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.08"
+    },
+    {
+      "source": "NAP1L5",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAP1L5 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.08"
+    },
+    {
+      "source": "FAM13A",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM13A is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.07"
+    },
+    {
+      "source": "TIMP4",
+      "target": "gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP4 is associated with gluteofemoral adipose tissue measurement (GLUTEOFEMORAL_ADIPOSE_TISSUE_MEASUREMENT). Open Targets association score 0.07"
+    }
+  ]
+}

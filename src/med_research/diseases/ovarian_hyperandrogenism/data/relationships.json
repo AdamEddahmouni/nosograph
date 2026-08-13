@@ -1,0 +1,394 @@
+{
+  "relationships": [
+    {
+      "source": "IGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PLOD1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLOD1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INSL3",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INSL3 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INSR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INSR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IRS1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "IRS1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "AKT2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "WNT4",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT4 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT5A",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT5A is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP11A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP11A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP17A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP17A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP19A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP19A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP21A2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP21A2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SULT2A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SULT2A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "HSP90AA1",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSP90AA1 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.03"
+    },
+    {
+      "source": "PPT1",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPT1 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.03"
+    },
+    {
+      "source": "AR",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.02"
+    },
+    {
+      "source": "IGFBP1",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGFBP1 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.01"
+    },
+    {
+      "source": "INS",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLOD1",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLOD1 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.01"
+    },
+    {
+      "source": "RARRES2",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RARRES2 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.01"
+    },
+    {
+      "source": "BRD2",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRD2 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.01"
+    },
+    {
+      "source": "INSL3",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INSL3 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.01"
+    },
+    {
+      "source": "CGA",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGA is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.01"
+    },
+    {
+      "source": "CGB5",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB5 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.01"
+    },
+    {
+      "source": "GNRH1",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRH1 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.01"
+    },
+    {
+      "source": "SHBG",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHBG is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.01"
+    },
+    {
+      "source": "HLA-G",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-G is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALDH7A1",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDH7A1 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTX3",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTX3 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.01"
+    },
+    {
+      "source": "AHSG",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSG is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP19A1",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP19A1 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.01"
+    },
+    {
+      "source": "CALCA",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "S100A12",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A12 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "RETN",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RETN is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "INSR",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INSR is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGF1",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "IRS1",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRS1 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "HLA-DPA1",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DPA1 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "AMH",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMH is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYP17A1",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP17A1 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "SULT2A1",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SULT2A1 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "IARS1",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IARS1 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGF2",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "WNT4",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT4 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "FEM1A",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FEM1A is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYP21A2",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP21A2 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "POMC",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "STK11",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNF",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYP11A1",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP11A1 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "FNDC5",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FNDC5 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "DENND1A",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DENND1A is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "HLA-DQA2",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DQA2 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRH",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRH is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "HLA-DQA1",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DQA1 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "STAR",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAR is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "HLA-DMA",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DMA is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "HLA-DRA",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DRA is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "AKT2",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT2 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "FEM1B",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FEM1B is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "WNT5A",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT5A is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "HLA-DQB1",
+      "target": "Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DQB1 is associated with Ovarian Hyperandrogenism (OVARIAN_HYPERANDROGENISM). Open Targets association score 0.00"
+    }
+  ]
+}

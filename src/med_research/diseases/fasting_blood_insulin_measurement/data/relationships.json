@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "SLC30A8",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC30A8 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "GRB10",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "GRB10 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "GRB14",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "GRB14 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "PROCR",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "PROCR is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ATRAID",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRAID is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TIMP4",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP4 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "G6PC2",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "G6PC2 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GCK",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCK is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IRS1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "IRS1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "FASTKD3",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASTKD3 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ABCB11",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB11 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ANKRD55",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKRD55 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "COBLL1",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COBLL1 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "GCKR",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "ATRAID",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRAID is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "TCF7L2",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF7L2 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "MTNR1B",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTNR1B is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "IRS1",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRS1 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "PPARG",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "DGKB",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DGKB is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "TUBA3C",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBA3C is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "SLC30A8",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC30A8 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "PROX1",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROX1 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "CR1",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CR1 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "CLU",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLU is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "ARL15",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARL15 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "IGF1",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "GCK",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCK is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "FTO",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FTO is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "TET2",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "MTRR",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTRR is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "BCL2",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "GRB10",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRB10 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "PPP1R3B",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R3B is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.27"
+    },
+    {
+      "source": "CRY2",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRY2 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.27"
+    },
+    {
+      "source": "ZC3H11B",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZC3H11B is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.26"
+    },
+    {
+      "source": "NYAP2",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NYAP2 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.25"
+    },
+    {
+      "source": "VPS13C",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VPS13C is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.25"
+    },
+    {
+      "source": "SNX15",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNX15 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.23"
+    },
+    {
+      "source": "FASTKD3",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASTKD3 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.23"
+    },
+    {
+      "source": "GATA4",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA4 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.22"
+    },
+    {
+      "source": "OR1L1",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OR1L1 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.22"
+    },
+    {
+      "source": "ADRA2A",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2A is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.22"
+    },
+    {
+      "source": "CHL1",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHL1 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.21"
+    },
+    {
+      "source": "ABCB11",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB11 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.20"
+    },
+    {
+      "source": "SPC25",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPC25 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.20"
+    },
+    {
+      "source": "BCL11A",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL11A is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.19"
+    },
+    {
+      "source": "RBL2",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBL2 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.19"
+    },
+    {
+      "source": "GRB14",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRB14 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.19"
+    },
+    {
+      "source": "MADD",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MADD is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.18"
+    },
+    {
+      "source": "NR5A2",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR5A2 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.17"
+    },
+    {
+      "source": "G6PC2",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "G6PC2 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.17"
+    },
+    {
+      "source": "PROCR",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROCR is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.17"
+    },
+    {
+      "source": "NOSTRIN",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOSTRIN is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.17"
+    },
+    {
+      "source": "PDGFC",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFC is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.16"
+    },
+    {
+      "source": "BCL3",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL3 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.15"
+    },
+    {
+      "source": "HIP1",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIP1 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.13"
+    },
+    {
+      "source": "NEIL2",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEIL2 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.13"
+    },
+    {
+      "source": "SAC3D1",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAC3D1 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.13"
+    },
+    {
+      "source": "MAP3K1",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K1 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.12"
+    },
+    {
+      "source": "CFAP90",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFAP90 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "POM121C",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POM121C is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.10"
+    },
+    {
+      "source": "LRRC70",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRC70 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.09"
+    },
+    {
+      "source": "NDUFS4",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS4 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.07"
+    },
+    {
+      "source": "TIMP4",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP4 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.07"
+    },
+    {
+      "source": "SPDYE5",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPDYE5 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.07"
+    },
+    {
+      "source": "MIER3",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIER3 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.07"
+    },
+    {
+      "source": "SETD9",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD9 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.07"
+    },
+    {
+      "source": "RPGRIP1L",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPGRIP1L is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.06"
+    },
+    {
+      "source": "ADCY2",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADCY2 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.06"
+    },
+    {
+      "source": "KRTCAP3",
+      "target": "fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRTCAP3 is associated with fasting blood insulin measurement (FASTING_BLOOD_INSULIN_MEASUREMENT). Open Targets association score 0.05"
+    }
+  ]
+}

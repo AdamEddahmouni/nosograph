@@ -1,0 +1,460 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CDK12",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK12 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GRIN2A",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2A is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3R1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "SMAD2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LRP1B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "DDX3X",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDX3X is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.37"
+    },
+    {
+      "source": "TP53",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMARCB1",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCB1 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "EWSR1",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EWSR1 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "FLI1",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLI1 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "FOXO1",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXO1 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "BCOR",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCOR is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "APC",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "RB1",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTCH1",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "IDH1",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "PER1",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PER1 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "NTRK3",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK3 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "GNAQ",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAQ is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "KDM5A",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM5A is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "NT5C2",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NT5C2 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "SETD2",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD2 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "MYB",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYB is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "TCF7L2",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF7L2 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "POLQ",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLQ is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "NCOR1",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOR1 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTPRB",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRB is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "NRAS",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "RSPO3",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO3 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "TFEB",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFEB is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "SDHC",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDHC is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "GRIN2A",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2A is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "PBX1",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBX1 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID2",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID2 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2C",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "BCL2",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "NCOA2",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOA2 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "SPEN",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPEN is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "PAX5",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX5 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "FHIT",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FHIT is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "FBXW7",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXW7 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "PRDM1",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM1 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "CBFB",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBFB is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTPN11",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "EIF3E",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF3E is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "CCDC6",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC6 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "DDR2",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDR2 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "TMEM127",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM127 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "FLCN",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLCN is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMAD2",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD2 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "MTOR",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "TET2",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "YWHAE",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YWHAE is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3R1",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R1 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "DNMT3A",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT3A is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "LRP1B",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1B is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "ETV6",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV6 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTPRK",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRK is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARHGAP26",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP26 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDK12",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK12 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "MET",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "H3-3A",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3-3A is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "GNA11",
+      "target": "central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNA11 is associated with central nervous system primitive neuroectodermal neoplasm (CENTRAL_NERVOUS_SYSTEM_PRIMITIVE_NEUROECTODERMAL_NEOPLASM). Open Targets association score 0.28"
+    }
+  ]
+}

@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL121",
+      "target": "PPARG",
+      "type": "TARGETS",
+      "description": "ROSIGLITAZONE targets PPARG."
+    },
+    {
+      "source": "FGF21",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF21 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C1QTNF1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INSR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INSR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IRS1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "IRS1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "SLC2A4",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A4 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "NEIL1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NEIL1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PIK3C2G",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3C2G is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CYP11B2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP11B2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "TLR5",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR5 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "C1QTNF1",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF1 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP11B1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP11B1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP11B2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP11B2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP19A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP19A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "BSCL2",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BSCL2 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "LEP",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CYP19A1",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP19A1 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LEPR",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NOS3",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PPARA",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARA is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "BGLAP",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BGLAP is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "IRS2",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRS2 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "AGPAT2",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGPAT2 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "HNF1A",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ALMS1",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALMS1 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SEC61A1",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEC61A1 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "KMT2B",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2B is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CRH",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRH is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "FSTL3",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSTL3 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC2A4",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A4 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLIN1",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLIN1 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "NINJ2",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NINJ2 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GPRC6A",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPRC6A is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PNPLA2",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PNPLA2 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TLR5",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR5 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYP11B2",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP11B2 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYP11B1",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP11B1 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRP6",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP6 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADIPOQ",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOQ is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PDE3B",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE3B is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLAAT3",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAAT3 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "LCN2",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN2 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "FFAR4",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FFAR4 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKAG2",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAG2 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "NR1H4",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1H4 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "INSR",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INSR is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SIK3",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIK3 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CES2",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CES2 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "BRD2",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRD2 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "BMAL1",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMAL1 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PPP1R3C",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R3C is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTPN11",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "OCA2",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OCA2 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "PIK3C2G",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3C2G is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "STEAP4",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STEAP4 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "CES1",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CES1 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "NEIL1",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEIL1 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "WDFY2",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDFY2 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "AKR1B15",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKR1B15 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "AKR1B10",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKR1B10 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "MSTN",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSTN is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "TRIM37",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM37 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "OSMR",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OSMR is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ENHO",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENHO is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "HADHB",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HADHB is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "IRS1",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRS1 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "FGF21",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF21 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "HINT2",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HINT2 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "NR1H3",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1H3 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "SIRT3",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT3 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "SNAP25",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNAP25 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "SCG5",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCG5 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "C1QTNF1",
+      "target": "acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1QTNF1 is associated with acquired generalized lipodystrophy (ACQUIRED_GENERALIZED_LIPODYSTROPHY). Open Targets association score 0.03"
+    }
+  ]
+}

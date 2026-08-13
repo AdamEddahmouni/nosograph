@@ -1,0 +1,490 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "IRF2BP2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF2BP2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL11A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL11A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL1A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP5",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP5 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ERAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "ERAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RELA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "SLC6A3",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC6A3 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "IRF2BP2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF2BP2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "HIF1A",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "HIF1A is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "NLRP5",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP5 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP19A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP19A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.70"
+    },
+    {
+      "source": "NLRP5",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP5 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.14"
+    },
+    {
+      "source": "CLUAP1",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLUAP1 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.11"
+    },
+    {
+      "source": "CXCL8",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FREM1",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FREM1 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "P2RX7",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RX7 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "NCAM1",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCAM1 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "KLRK1",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLRK1 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "OMP",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OMP is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "P2RX2",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RX2 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "P2RX6",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RX6 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "P2RY2",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RY2 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "P2RX1",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RX1 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "P2RY1",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RY1 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "P2RX4",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RX4 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "P2RX3",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RX3 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "P2RX5",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RX5 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "P2RX5-TAX1BP3",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RX5-TAX1BP3 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "ESR1",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "CYP19A1",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP19A1 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "TF",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "NBR1",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBR1 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "MUC16",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC16 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTGS2",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "MT-CO2",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO2 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "AMH",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMH is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "NTRK1",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "HIF1A",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF1A is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "VEGFA",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IRF2BP2",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF2BP2 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "YAP1",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YAP1 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "YY1AP1",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YY1AP1 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "BMI1",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMI1 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALDH1A1",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDH1A1 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "DCX",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCX is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "NRAS",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PGR",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIEZO1",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIEZO1 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1A",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1A is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1B",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "COL11A1",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL11A1 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "EREG",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EREG is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "S1PR2",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S1PR2 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERAS",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERAS is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERAL1",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERAL1 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL2",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "WFDC2",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WFDC2 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD4",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ABCG2",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG2 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "MBTPS1",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBTPS1 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "LMO3",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMO3 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC6A3",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A3 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "RUNX3",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX3 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMARCC1",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCC1 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGF",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGF is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "RELA",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELA is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFA",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFA is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "RRM2",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RRM2 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM5",
+      "target": "Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM5 is associated with Toriello-Lacassie-Droste syndrome (TORIELLO_LACASSIE_DROSTE_SYNDROME). Open Targets association score 0.01"
+    }
+  ]
+}

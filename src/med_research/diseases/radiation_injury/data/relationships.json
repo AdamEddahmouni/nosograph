@@ -1,0 +1,508 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL679",
+      "target": "ADRA1D",
+      "type": "TARGETS",
+      "description": "EPINEPHRINE targets ADRA1D."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BCL2L1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2L1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GLUL",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GLUL is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL18",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK14",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK14 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "TRAF4",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF4 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "JAG1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "JAG1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "STH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "STH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "THPO",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THPO is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD28",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD28 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TRAF4",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF4 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "CYP4F3",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4F3 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "UMPS",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UMPS is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL2",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSF3",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NT5E",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NT5E is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACP3",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACP3 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1A",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1A is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNG",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD160",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD160 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL18",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1B",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CMPK1",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMPK1 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "B3GAT1",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B3GAT1 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CMPK2",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMPK2 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSF2",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSMA6",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMA6 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "DDB2",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDB2 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "JAG1",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAG1 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TRAF4",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAF4 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TRIAP1",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIAP1 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "AEN",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AEN is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NOS2",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYP4F3",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4F3 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NOS1",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS1 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ISYNA1",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISYNA1 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GRAP2",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRAP2 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRK",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRK is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "AHSP",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSP is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "POLDIP2",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLDIP2 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "HELT",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HELT is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPK14",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK14 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PHGDH",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHGDH is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "AIMP2",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIMP2 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADRA1D",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA1D is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GPT",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PGD",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGD is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "AHSA1",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSA1 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GSDMB",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPK1",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "RNF19A",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF19A is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "HPGD",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPGD is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "STH",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STH is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "THPO",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THPO is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "FGF2",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF2 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "EGF",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGF is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "INS",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "HBG2",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBG2 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TF",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD28",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD28 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "BCL2L1",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2L1 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CP",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CP is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SERPINA6",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA6 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GLUL",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLUL is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SAA2",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAA2 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "BCL2",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SAA1",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAA1 is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MPO",
+      "target": "radiation injury (RADIATION_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPO is associated with radiation injury (RADIATION_INJURY). Open Targets association score 0.00"
+    }
+  ]
+}

@@ -1,0 +1,418 @@
+{
+  "relationships": [
+    {
+      "source": "HCN1",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "HCN1 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "HCN2",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "HCN2 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "KCNQ1",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNQ1 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "ZNF780A",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF780A is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GRM1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRM1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "ARAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "ARAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RTRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RTRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "SLC5A5",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC5A5 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "RTRAF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "RTRAF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "PANK2",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PANK2 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.37"
+    },
+    {
+      "source": "MECP2",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MECP2 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "ASPA",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASPA is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "ATP1A3",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP1A3 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "ATP2B1",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP2B1 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "SPTBN4",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTBN4 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "ABCA2",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA2 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "ATP2B2",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP2B2 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "TOR1A",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOR1A is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "NPC1",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPC1 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "HPRT1",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPRT1 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "SCN8A",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN8A is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "ARAF",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARAF is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "PMP22",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMP22 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "KCNQ1",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNQ1 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "CNTNAP1",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNTNAP1 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "FCGR2B",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2B is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "FCGR2C",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2C is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "FCGR2A",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2A is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "KCNN2",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNN2 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "NDUFS4",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS4 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC6A1",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A1 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "BORCS7-ASMT",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BORCS7-ASMT is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "BORCS7",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BORCS7 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "SHISA7",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHISA7 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "ESPN",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESPN is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDH23",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH23 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "ARHGEF33",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGEF33 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "ATXN7L1",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATXN7L1 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRRT2",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRRT2 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "USP31",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP31 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "CARS2",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARS2 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "CTTN",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTTN is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "GRM1",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRM1 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZNF780A",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF780A is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "HCN2",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HCN2 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "TMEM240",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM240 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "GLRA1",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLRA1 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "HCN1",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HCN1 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "FAF1",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAF1 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "TAFA2",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAFA2 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC5A5",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC5A5 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "NGFR",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NGFR is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "DHDDS",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHDDS is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "ATP8A2",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP8A2 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "DNAL4",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAL4 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "KY",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KY is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "TTBK1",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTBK1 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "ANKFN1",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKFN1 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "DST",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DST is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "MYO7A",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO7A is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "NRXN2",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRXN2 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "DDC",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDC is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "MYO6",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO6 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "GRID2",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRID2 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "RTRAF",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RTRAF is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "PCDH15",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCDH15 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "CLCN3",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCN3 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "NEDD4",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEDD4 is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "MPZ",
+      "target": "atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPZ is associated with atypical pantothenate kinase-associated neurodegeneration (ATYPICAL_PANTOTHENATE_KINASE_ASSOCIATED_NEURODEGENERATION). Open Targets association score 0.04"
+    }
+  ]
+}

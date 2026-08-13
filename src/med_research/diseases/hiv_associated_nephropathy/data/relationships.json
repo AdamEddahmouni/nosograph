@@ -1,0 +1,568 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL635",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "PREDNISONE targets NR3C1."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1C",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1C is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "EIF2AK2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EIF2AK2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "FABP1",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "FABP1 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "GORASP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "GORASP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RELA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NOTCH4",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH4 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGTR1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGTR1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "REN",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "REN is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "TAT",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAT is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "FGF2",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF2 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "NR3C1",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "APOL1",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOL1 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "LCN2",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN2 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "NOTCH4",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH4 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TERT",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "MTOR",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "HIPK2",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIPK2 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "MYH9",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH9 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "STAT3",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "TGFB1",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "RBBP6",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBBP6 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "EIF2AK2",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF2AK2 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "S100B",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100B is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD4",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "HP",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HP is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "ACE",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNF",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "FASLG",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ASAH1",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASAH1 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFKB1",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CST3",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CST3 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP9",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "RTN1",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RTN1 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "RARA",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RARA is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCND1",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SDK1",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDK1 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB3",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB3 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "UBD",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBD is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "REN",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REN is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MKI67",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "AQP4",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP4 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PAK2",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAK2 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB2",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB2 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPK1",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZNRD2",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNRD2 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFI27",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFI27 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TMED7",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMED7 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSMD9",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMD9 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "DCTN6",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCTN6 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SIRT1",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT1 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "VEGFA",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "FABP1",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FABP1 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPON1",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPON1 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN1C",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1C is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CORO1A",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CORO1A is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNA1",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SSBP2",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSBP2 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAP3K5",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K5 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "AGT",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CMIP",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMIP is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "RELA",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELA is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "AGTR1",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGTR1 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SYT1",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYT1 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GORASP1",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GORASP1 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "WNK1",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNK1 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCL2",
+      "target": "HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL2 is associated with HIV-associated nephropathy (HIV_ASSOCIATED_NEPHROPATHY). Open Targets association score 0.01"
+    }
+  ]
+}

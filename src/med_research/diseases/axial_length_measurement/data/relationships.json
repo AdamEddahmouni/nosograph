@@ -1,0 +1,442 @@
+{
+  "relationships": [
+    {
+      "source": "SQSTM1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SQSTM1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "KCNQ5",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNQ5 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "C9orf72",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C9orf72 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "BMP2",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP2 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "BMP4",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP4 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "RASGRF1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASGRF1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KHDC1",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KHDC1 is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "KHDC1L",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KHDC1L is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "RENBP",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "RENBP is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "WNT7B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT7B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "BMP2",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP2 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "RBP3",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBP3 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "SDK1",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDK1 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "ZC3H11B",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZC3H11B is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "ZMAT4",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZMAT4 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "VIPR2",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIPR2 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "WNT7B",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT7B is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "KCNQ5",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNQ5 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "SNTB1",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNTB1 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "RDH5",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RDH5 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "RASGRF1",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASGRF1 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "LRRC4C",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRC4C is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "RSPO1",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO1 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "NOG",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOG is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.25"
+    },
+    {
+      "source": "TOX",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOX is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.24"
+    },
+    {
+      "source": "GJD2",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJD2 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.24"
+    },
+    {
+      "source": "KHDC1",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KHDC1 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.23"
+    },
+    {
+      "source": "MAF",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAF is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.22"
+    },
+    {
+      "source": "BMP4",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP4 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.21"
+    },
+    {
+      "source": "PRSS56",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRSS56 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.21"
+    },
+    {
+      "source": "LAMA2",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMA2 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.21"
+    },
+    {
+      "source": "ZNF543",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF543 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.14"
+    },
+    {
+      "source": "G3BP1",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "G3BP1 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.14"
+    },
+    {
+      "source": "SPARC",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPARC is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.14"
+    },
+    {
+      "source": "ENSG00000284779",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENSG00000284779 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.13"
+    },
+    {
+      "source": "TARDBP",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TARDBP is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.12"
+    },
+    {
+      "source": "SOD1",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD1 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.12"
+    },
+    {
+      "source": "C9orf72",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C9orf72 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.12"
+    },
+    {
+      "source": "FUS",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUS is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.12"
+    },
+    {
+      "source": "STK36",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK36 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.12"
+    },
+    {
+      "source": "C9",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C9 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.12"
+    },
+    {
+      "source": "NEFL",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEFL is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.12"
+    },
+    {
+      "source": "MAPT",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPT is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.12"
+    },
+    {
+      "source": "ATXN2",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATXN2 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "UBQLN2",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBQLN2 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "TBK1",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBK1 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "SQSTM1",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SQSTM1 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "OPTN",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OPTN is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "TNF",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "CRP",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "ANG",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANG is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "ANXA11",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANXA11 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "CSF2",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "LAMC2",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMC2 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "NEFH",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEFH is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "MOK",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MOK is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "KHDC1L",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KHDC1L is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "SCAP",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCAP is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "NUP62",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUP62 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "VCP",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VCP is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "RBP4",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBP4 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "RENBP",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RENBP is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "SUGP1",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUGP1 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "LEP",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "CD8A",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "IGF1",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "CHKA",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKA is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "CHKB",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKB is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "CMPK1",
+      "target": "axial length measurement (AXIAL_LENGTH_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMPK1 is associated with axial length measurement (AXIAL_LENGTH_MEASUREMENT). Open Targets association score 0.11"
+    }
+  ]
+}

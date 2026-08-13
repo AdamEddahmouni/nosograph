@@ -7,6 +7,12 @@
       "description": "METFORMIN targets NDUFV3."
     },
     {
+      "source": "CHEMBL1431",
+      "target": "NDUFAF2",
+      "type": "TARGETS",
+      "description": "METFORMIN targets NDUFAF2."
+    },
+    {
       "source": "CHEMBL1703",
       "target": "NDUFB3",
       "type": "TARGETS",
@@ -79,6 +85,12 @@
       "description": "METFORMIN targets NDUFAF4."
     },
     {
+      "source": "CHEMBL1431",
+      "target": "NDUFB10",
+      "type": "TARGETS",
+      "description": "METFORMIN targets NDUFB10."
+    },
+    {
       "source": "CHEMBL1703",
       "target": "NDUFB7",
       "type": "TARGETS",
@@ -113,6 +125,12 @@
       "target": "NDUFS3",
       "type": "TARGETS",
       "description": "METFORMIN targets NDUFS3."
+    },
+    {
+      "source": "CHEMBL1703",
+      "target": "MT-ND3",
+      "type": "TARGETS",
+      "description": "METFORMIN HYDROCHLORIDE targets MT-ND3."
     },
     {
       "source": "CHEMBL1703",
@@ -169,6 +187,12 @@
       "description": "FLUDARABINE PHOSPHATE targets POLE."
     },
     {
+      "source": "CHEMBL1703",
+      "target": "NDUFA2",
+      "type": "TARGETS",
+      "description": "METFORMIN HYDROCHLORIDE targets NDUFA2."
+    },
+    {
       "source": "CHEMBL1201567",
       "target": "CSF3R",
       "type": "TARGETS",
@@ -187,10 +211,52 @@
       "description": "METFORMIN targets NDUFA6."
     },
     {
+      "source": "CHEMBL1703",
+      "target": "NDUFB10",
+      "type": "TARGETS",
+      "description": "METFORMIN HYDROCHLORIDE targets NDUFB10."
+    },
+    {
+      "source": "CHEMBL1703",
+      "target": "NDUFAB1",
+      "type": "TARGETS",
+      "description": "METFORMIN HYDROCHLORIDE targets NDUFAB1."
+    },
+    {
+      "source": "CHEMBL1703",
+      "target": "NDUFA13",
+      "type": "TARGETS",
+      "description": "METFORMIN HYDROCHLORIDE targets NDUFA13."
+    },
+    {
       "source": "CHEMBL461101",
       "target": "MPL",
       "type": "TARGETS",
       "description": "ELTROMBOPAG targets MPL."
+    },
+    {
+      "source": "CHEMBL1703",
+      "target": "MT-ND4L",
+      "type": "TARGETS",
+      "description": "METFORMIN HYDROCHLORIDE targets MT-ND4L."
+    },
+    {
+      "source": "CHEMBL1431",
+      "target": "MT-ND2",
+      "type": "TARGETS",
+      "description": "METFORMIN targets MT-ND2."
+    },
+    {
+      "source": "CHEMBL1703",
+      "target": "NDUFA3",
+      "type": "TARGETS",
+      "description": "METFORMIN HYDROCHLORIDE targets NDUFA3."
+    },
+    {
+      "source": "CHEMBL1703",
+      "target": "NDUFA4",
+      "type": "TARGETS",
+      "description": "METFORMIN HYDROCHLORIDE targets NDUFA4."
     },
     {
       "source": "CHEMBL1201568",
@@ -245,6 +311,12 @@
       "target": "coagulation",
       "type": "PARTICIPATES_IN",
       "description": "ZNF276 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "NDUFAF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NDUFAF2 is a component of the Coagulation Cascade pathway."
     },
     {
       "source": "BRCA1",
@@ -499,34 +571,16 @@
       "description": "NDUFV1 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
     },
     {
-      "source": "GPD2",
-      "target": "Fanconi anemia (FANCONI_ANEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GPD2 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
-    },
-    {
       "source": "NDUFS8",
       "target": "Fanconi anemia (FANCONI_ANEMIA)",
       "type": "ASSOCIATED_WITH",
       "description": "NDUFS8 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
     },
     {
-      "source": "NDUFV2",
+      "source": "NDUFV3",
       "target": "Fanconi anemia (FANCONI_ANEMIA)",
       "type": "ASSOCIATED_WITH",
-      "description": "NDUFV2 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
-    },
-    {
-      "source": "NDUFA12",
-      "target": "Fanconi anemia (FANCONI_ANEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFA12 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
-    },
-    {
-      "source": "NDUFB3",
-      "target": "Fanconi anemia (FANCONI_ANEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFB3 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
+      "description": "NDUFV3 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
     },
     {
       "source": "NDUFB11",
@@ -535,22 +589,160 @@
       "description": "NDUFB11 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
     },
     {
-      "source": "NDUFB1",
-      "target": "Fanconi anemia (FANCONI_ANEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFB1 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
-    },
-    {
       "source": "NDUFB7",
       "target": "Fanconi anemia (FANCONI_ANEMIA)",
       "type": "ASSOCIATED_WITH",
       "description": "NDUFB7 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
     },
     {
+      "source": "NDUFAF1",
+      "target": "Fanconi anemia (FANCONI_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFAF1 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "NDUFS2",
+      "target": "Fanconi anemia (FANCONI_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS2 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "NDUFA13",
+      "target": "Fanconi anemia (FANCONI_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA13 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "MPL",
+      "target": "Fanconi anemia (FANCONI_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPL is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "NDUFB3",
+      "target": "Fanconi anemia (FANCONI_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFB3 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "NDUFB4",
+      "target": "Fanconi anemia (FANCONI_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFB4 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "NDUFB2",
+      "target": "Fanconi anemia (FANCONI_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFB2 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "MT-ND4L",
+      "target": "Fanconi anemia (FANCONI_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-ND4L is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "NDUFB1",
+      "target": "Fanconi anemia (FANCONI_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFB1 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "NDUFA2",
+      "target": "Fanconi anemia (FANCONI_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA2 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "NDUFA3",
+      "target": "Fanconi anemia (FANCONI_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA3 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "NDUFS7",
+      "target": "Fanconi anemia (FANCONI_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS7 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "NDUFA12",
+      "target": "Fanconi anemia (FANCONI_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA12 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "MT-ND3",
+      "target": "Fanconi anemia (FANCONI_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-ND3 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "NDUFA4",
+      "target": "Fanconi anemia (FANCONI_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA4 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
+    },
+    {
       "source": "NDUFAF4",
       "target": "Fanconi anemia (FANCONI_ANEMIA)",
       "type": "ASSOCIATED_WITH",
       "description": "NDUFAF4 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "NDUFA4L2",
+      "target": "Fanconi anemia (FANCONI_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA4L2 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "NDUFAF2",
+      "target": "Fanconi anemia (FANCONI_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFAF2 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "NDUFA5",
+      "target": "Fanconi anemia (FANCONI_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA5 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "NDUFB10",
+      "target": "Fanconi anemia (FANCONI_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFB10 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "MT-ND2",
+      "target": "Fanconi anemia (FANCONI_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-ND2 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "NDUFAB1",
+      "target": "Fanconi anemia (FANCONI_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFAB1 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "NDUFS1",
+      "target": "Fanconi anemia (FANCONI_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS1 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "GPD2",
+      "target": "Fanconi anemia (FANCONI_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPD2 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "NDUFV2",
+      "target": "Fanconi anemia (FANCONI_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFV2 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
     },
     {
       "source": "NDUFA11",
@@ -565,22 +757,10 @@
       "description": "NDUFS3 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
     },
     {
-      "source": "MPL",
-      "target": "Fanconi anemia (FANCONI_ANEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "MPL is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
-    },
-    {
       "source": "MT-ND5",
       "target": "Fanconi anemia (FANCONI_ANEMIA)",
       "type": "ASSOCIATED_WITH",
       "description": "MT-ND5 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
-    },
-    {
-      "source": "NDUFA5",
-      "target": "Fanconi anemia (FANCONI_ANEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFA5 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
     },
     {
       "source": "NDUFA8",
@@ -595,22 +775,10 @@
       "description": "NDUFAF3 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
     },
     {
-      "source": "NDUFB4",
-      "target": "Fanconi anemia (FANCONI_ANEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFB4 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
-    },
-    {
       "source": "NDUFA9",
       "target": "Fanconi anemia (FANCONI_ANEMIA)",
       "type": "ASSOCIATED_WITH",
       "description": "NDUFA9 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
-    },
-    {
-      "source": "NDUFAF1",
-      "target": "Fanconi anemia (FANCONI_ANEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFAF1 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
     },
     {
       "source": "NDUFC1",
@@ -625,12 +793,6 @@
       "description": "NDUFB5 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
     },
     {
-      "source": "NDUFV3",
-      "target": "Fanconi anemia (FANCONI_ANEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFV3 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
-    },
-    {
       "source": "NDUFC2",
       "target": "Fanconi anemia (FANCONI_ANEMIA)",
       "type": "ASSOCIATED_WITH",
@@ -641,18 +803,6 @@
       "target": "Fanconi anemia (FANCONI_ANEMIA)",
       "type": "ASSOCIATED_WITH",
       "description": "MT-ND1 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
-    },
-    {
-      "source": "NDUFA4L2",
-      "target": "Fanconi anemia (FANCONI_ANEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFA4L2 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
-    },
-    {
-      "source": "NDUFB2",
-      "target": "Fanconi anemia (FANCONI_ANEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFB2 is associated with Fanconi anemia (FANCONI_ANEMIA). Open Targets association score 0.09"
     },
     {
       "source": "NDUFA6",

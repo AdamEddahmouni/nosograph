@@ -1,0 +1,484 @@
+{
+  "relationships": [
+    {
+      "source": "SLC39A8",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC39A8 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "KCNAB1",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNAB1 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "IRF2BP1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF2BP1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TMEFF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TMEFF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL11A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL11A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL1A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "SLC2A9",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A9 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "ITGB8",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB8 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "RILPL2",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "RILPL2 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "MAPK3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PIK3C3",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3C3 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "FBN1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "FBN1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "RORA",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "RORA is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGB8",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB8 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "IRF2BP1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF2BP1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "WNT7B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT7B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "FBN1",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBN1 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.58"
+    },
+    {
+      "source": "COL2A1",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.54"
+    },
+    {
+      "source": "COL1A1",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A1 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.50"
+    },
+    {
+      "source": "DCC",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCC is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.50"
+    },
+    {
+      "source": "SOX5",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX5 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.45"
+    },
+    {
+      "source": "WSCD2",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WSCD2 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.44"
+    },
+    {
+      "source": "NCAM1",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCAM1 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.42"
+    },
+    {
+      "source": "BMAL1",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMAL1 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.41"
+    },
+    {
+      "source": "COL11A1",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL11A1 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.40"
+    },
+    {
+      "source": "ADGRL3",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADGRL3 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.40"
+    },
+    {
+      "source": "ZMIZ1",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZMIZ1 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.39"
+    },
+    {
+      "source": "DPF3",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPF3 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.39"
+    },
+    {
+      "source": "VRK2",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VRK2 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.38"
+    },
+    {
+      "source": "CLVS1",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLVS1 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.37"
+    },
+    {
+      "source": "LPP",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPP is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.36"
+    },
+    {
+      "source": "ACAN",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACAN is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.36"
+    },
+    {
+      "source": "ITGB8",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB8 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.36"
+    },
+    {
+      "source": "MKRN1",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKRN1 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.36"
+    },
+    {
+      "source": "FOXP2",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP2 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.35"
+    },
+    {
+      "source": "MMP2",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.35"
+    },
+    {
+      "source": "SLC39A8",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC39A8 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.35"
+    },
+    {
+      "source": "ABCG2",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG2 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.34"
+    },
+    {
+      "source": "TMEFF2",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEFF2 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.34"
+    },
+    {
+      "source": "TACC3",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TACC3 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.34"
+    },
+    {
+      "source": "TMEM196",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM196 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.34"
+    },
+    {
+      "source": "MDGA2",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDGA2 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.33"
+    },
+    {
+      "source": "COG6",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COG6 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.33"
+    },
+    {
+      "source": "ETV1",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV1 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.33"
+    },
+    {
+      "source": "SLC25A13",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A13 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.32"
+    },
+    {
+      "source": "WNT7B",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT7B is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.32"
+    },
+    {
+      "source": "SLC7A5",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC7A5 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.32"
+    },
+    {
+      "source": "SETBP1",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETBP1 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.32"
+    },
+    {
+      "source": "PTPRD",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRD is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.32"
+    },
+    {
+      "source": "MAPK3",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK3 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.31"
+    },
+    {
+      "source": "ZBBX",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBBX is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.31"
+    },
+    {
+      "source": "POLR1F",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLR1F is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.31"
+    },
+    {
+      "source": "TGFA",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFA is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.31"
+    },
+    {
+      "source": "BCL11A",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL11A is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.31"
+    },
+    {
+      "source": "KHK",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KHK is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.31"
+    },
+    {
+      "source": "RRAGC",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RRAGC is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.30"
+    },
+    {
+      "source": "NFU1",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFU1 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.30"
+    },
+    {
+      "source": "JAZF1",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAZF1 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.29"
+    },
+    {
+      "source": "KCNAB1",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNAB1 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.29"
+    },
+    {
+      "source": "SOX11",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX11 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.29"
+    },
+    {
+      "source": "TAFA2",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAFA2 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.29"
+    },
+    {
+      "source": "RILPL2",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RILPL2 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.29"
+    },
+    {
+      "source": "SOX6",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX6 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.29"
+    },
+    {
+      "source": "PTCH1",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "IRF2BP1",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF2BP1 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3C3",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3C3 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.27"
+    },
+    {
+      "source": "SYT4",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYT4 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.27"
+    },
+    {
+      "source": "MLLT10",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLLT10 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.27"
+    },
+    {
+      "source": "NEBL",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEBL is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.27"
+    },
+    {
+      "source": "RORA",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RORA is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "MSANTD1",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSANTD1 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "SLC2A9",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A9 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "GPR27",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR27 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "C17orf58",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C17orf58 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "TXNL1",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TXNL1 is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "IBSP",
+      "target": "musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IBSP is associated with musculoskeletal system disease (OSTEOPETROSIS_WITH_RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.26"
+    }
+  ]
+}

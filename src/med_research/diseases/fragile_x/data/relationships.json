@@ -283,12 +283,6 @@
       "description": "GABRB1 is a component of the Cell Cycle Regulation pathway."
     },
     {
-      "source": "NDUFAF2",
-      "target": "coagulation",
-      "type": "PARTICIPATES_IN",
-      "description": "NDUFAF2 is a component of the Coagulation Cascade pathway."
-    },
-    {
       "source": "GRM1",
       "target": "gaba-glutamate",
       "type": "PARTICIPATES_IN",
@@ -361,6 +355,12 @@
       "description": "HTR1A is a component of the Serotonin / Dopamine Signaling pathway."
     },
     {
+      "source": "NDUFAF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NDUFAF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
       "source": "FMR1",
       "target": "fragile X syndrome (FRAGILE_X)",
       "type": "ASSOCIATED_WITH",
@@ -391,16 +391,16 @@
       "description": "GRM1 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.34"
     },
     {
-      "source": "RAB32",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "RAB32 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.33"
-    },
-    {
       "source": "ADGB",
       "target": "fragile X syndrome (FRAGILE_X)",
       "type": "ASSOCIATED_WITH",
       "description": "ADGB is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.33"
+    },
+    {
+      "source": "RAB32",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB32 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.33"
     },
     {
       "source": "CNR1",
@@ -427,22 +427,28 @@
       "description": "GABRA2 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.11"
     },
     {
-      "source": "GABRA5",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GABRA5 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.11"
-    },
-    {
       "source": "GABRA1",
       "target": "fragile X syndrome (FRAGILE_X)",
       "type": "ASSOCIATED_WITH",
       "description": "GABRA1 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.11"
     },
     {
+      "source": "GABRA5",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRA5 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.11"
+    },
+    {
       "source": "GABRB1",
       "target": "fragile X syndrome (FRAGILE_X)",
       "type": "ASSOCIATED_WITH",
       "description": "GABRB1 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.11"
+    },
+    {
+      "source": "GABRB2",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRB2 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.11"
     },
     {
       "source": "GABRB3",
@@ -457,12 +463,6 @@
       "description": "GABRA4 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.11"
     },
     {
-      "source": "GABRB2",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GABRB2 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.11"
-    },
-    {
       "source": "GABRA6",
       "target": "fragile X syndrome (FRAGILE_X)",
       "type": "ASSOCIATED_WITH",
@@ -475,16 +475,208 @@
       "description": "HTR1A is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.11"
     },
     {
+      "source": "NDUFV2",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFV2 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFB4",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFB4 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
       "source": "NDUFA12",
       "target": "fragile X syndrome (FRAGILE_X)",
       "type": "ASSOCIATED_WITH",
       "description": "NDUFA12 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
     },
     {
-      "source": "NDUFA4",
+      "source": "NDUFC2",
       "target": "fragile X syndrome (FRAGILE_X)",
       "type": "ASSOCIATED_WITH",
-      "description": "NDUFA4 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+      "description": "NDUFC2 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "MT-ND2",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-ND2 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFA7",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA7 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFB7",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFB7 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFA9",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA9 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFB6",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFB6 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFA10",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA10 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFA11",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA11 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "GPD2",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPD2 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFV3",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFV3 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFB1",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFB1 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFAF4",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFAF4 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFA8",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA8 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFS1",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS1 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFB8",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFB8 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFAF3",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFAF3 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFS6",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS6 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFS4",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS4 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFS3",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS3 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "MT-ND3",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-ND3 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFA13",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA13 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFA3",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA3 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "MT-ND1",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-ND1 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFS8",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS8 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "MT-ND4L",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-ND4L is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFA6",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA6 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFC1",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFC1 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFB11",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFB11 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFAF1",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFAF1 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "MT-ND4",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-ND4 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFAB1",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFAB1 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
     },
     {
       "source": "NDUFB10",
@@ -493,10 +685,40 @@
       "description": "NDUFB10 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
     },
     {
-      "source": "GPD2",
+      "source": "NDUFA4L2",
       "target": "fragile X syndrome (FRAGILE_X)",
       "type": "ASSOCIATED_WITH",
-      "description": "GPD2 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+      "description": "NDUFA4L2 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFA1",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA1 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFB5",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFB5 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFB3",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFB3 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFS2",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS2 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
+    },
+    {
+      "source": "NDUFA4",
+      "target": "fragile X syndrome (FRAGILE_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA4 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
     },
     {
       "source": "NDUFS5",
@@ -511,76 +733,10 @@
       "description": "NDUFB2 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
     },
     {
-      "source": "NDUFS4",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFS4 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
-      "source": "NDUFS8",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFS8 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
-      "source": "NDUFAF3",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFAF3 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
-      "source": "MT-ND4",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "MT-ND4 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
-      "source": "NDUFA13",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFA13 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
-      "source": "NDUFB11",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFB11 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
-      "source": "NDUFA11",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFA11 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
       "source": "NDUFV1",
       "target": "fragile X syndrome (FRAGILE_X)",
       "type": "ASSOCIATED_WITH",
       "description": "NDUFV1 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
-      "source": "NDUFA3",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFA3 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
-      "source": "NDUFB6",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFB6 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
-      "source": "NDUFA7",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFA7 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
-      "source": "NDUFAF1",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFAF1 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
     },
     {
       "source": "NDUFA5",
@@ -601,124 +757,10 @@
       "description": "NDUFA2 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
     },
     {
-      "source": "NDUFB1",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFB1 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
-      "source": "MT-ND3",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "MT-ND3 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
-      "source": "NDUFV3",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFV3 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
-      "source": "NDUFS1",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFS1 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
-      "source": "NDUFS3",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFS3 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
-      "source": "NDUFA1",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFA1 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
-      "source": "MT-ND4L",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "MT-ND4L is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
-      "source": "NDUFS2",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFS2 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
-      "source": "NDUFA10",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFA10 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
-      "source": "NDUFV2",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFV2 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
-      "source": "NDUFAB1",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFAB1 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
-      "source": "MT-ND1",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "MT-ND1 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
       "source": "NDUFS7",
       "target": "fragile X syndrome (FRAGILE_X)",
       "type": "ASSOCIATED_WITH",
       "description": "NDUFS7 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
-      "source": "NDUFB4",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFB4 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
-      "source": "NDUFA4L2",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFA4L2 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
-      "source": "NDUFB5",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFB5 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
-      "source": "NDUFB3",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFB3 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
-      "source": "MT-ND2",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "MT-ND2 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
-      "source": "NDUFB7",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFB7 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
-    },
-    {
-      "source": "NDUFAF4",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFAF4 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.10"
     },
     {
       "source": "MT-ND5",
@@ -733,58 +775,16 @@
       "description": "COXFA4 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.21"
     },
     {
-      "source": "NDUFC1",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFC1 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.21"
-    },
-    {
       "source": "NDUFB9",
       "target": "fragile X syndrome (FRAGILE_X)",
       "type": "ASSOCIATED_WITH",
       "description": "NDUFB9 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.21"
     },
     {
-      "source": "NDUFA8",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFA8 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.21"
-    },
-    {
-      "source": "NDUFA9",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFA9 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.21"
-    },
-    {
-      "source": "NDUFB8",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFB8 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.21"
-    },
-    {
-      "source": "NDUFS6",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFS6 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.21"
-    },
-    {
       "source": "COXFA4L2",
       "target": "fragile X syndrome (FRAGILE_X)",
       "type": "ASSOCIATED_WITH",
       "description": "COXFA4L2 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.21"
-    },
-    {
-      "source": "NDUFC2",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFC2 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.21"
-    },
-    {
-      "source": "NDUFA6",
-      "target": "fragile X syndrome (FRAGILE_X)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NDUFA6 is associated with fragile X syndrome (FRAGILE_X). Open Targets association score 0.21"
     }
   ]
 }

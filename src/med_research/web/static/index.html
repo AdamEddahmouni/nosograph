@@ -750,6 +750,35 @@
                 </div>
             </section>
 
+            <section class="multi-disease-comparison-shell" id="multi-disease-comparison" aria-labelledby="multi-disease-comparison-title">
+                <div class="condition-comparison-intro">
+                    <div>
+                        <span class="workspace-kicker">CROSS-DISEASE ANALYSIS · MULTI-OMICS</span>
+                        <h2 id="multi-disease-comparison-title">Multi-Disease Comparative Matrix & Target Overlap</h2>
+                        <p>Analyze shared therapeutic targets, pathway cross-talk, and pairwise Jaccard disease similarity across curated autoimmune modules.</p>
+                    </div>
+                    <div class="condition-comparison-disclaimer">⚠️ Multi-disease therapeutic hypotheses</div>
+                </div>
+                <div class="condition-comparison-panel">
+                    <div class="multi-disease-toolbar">
+                        <span class="multi-disease-label">Select Diseases to Compare:</span>
+                        <div class="multi-disease-checkboxes" id="multi-disease-selector">
+                            <label><input type="checkbox" value="sle" checked> SLE</label>
+                            <label><input type="checkbox" value="ra" checked> RA</label>
+                            <label><input type="checkbox" value="ms" checked> MS</label>
+                            <label><input type="checkbox" value="sjogrens" checked> Sjögren's</label>
+                            <label><input type="checkbox" value="systemic_sclerosis" checked> Scleroderma</label>
+                            <label><input type="checkbox" value="t1d" checked> T1D</label>
+                            <label><input type="checkbox" value="ibd" checked> IBD</label>
+                        </div>
+                        <button type="button" class="btn btn-primary" id="multi-disease-run-btn" data-action="run-multi-disease-comparison">📊 Generate Comparison Matrix</button>
+                    </div>
+                    <div class="multi-disease-body" id="multi-disease-result" aria-live="polite">
+                        <p class="condition-comparison-placeholder">Click 'Generate Comparison Matrix' to calculate pairwise similarity and shared target networks.</p>
+                    </div>
+                </div>
+            </section>
+
             <!-- ── Knowledge Graph Explorer ─────────────────────────── -->
             <h2 class="section-title" id="kg-explorer">
                 <span>🕸️</span> Knowledge Graph Explorer
@@ -764,7 +793,20 @@
                         <label class="kg-filter"><input type="checkbox" data-type="pathway" checked> <span class="dot" style="background:#f59e0b;"></span> Pathways</label>
                         <label class="kg-filter"><input type="checkbox" data-type="disease" checked> <span class="dot" style="background:#f43f5e;"></span> Diseases</label>
                     </div>
-                    <button type="button" class="btn btn-secondary" id="kg-reset" data-action="kg-reset">🔄 Reset Layout</button>
+                    <div class="kg-edge-filters">
+                        <span class="kg-sub-label">Edges:</span>
+                        <label class="kg-filter-sm"><input type="checkbox" data-edge-type="targets" checked> Targets</label>
+                        <label class="kg-filter-sm"><input type="checkbox" data-edge-type="interacts" checked> Interacts</label>
+                        <label class="kg-filter-sm"><input type="checkbox" data-edge-type="associated_with" checked> Associated</label>
+                        <label class="kg-filter-sm"><input type="checkbox" data-edge-type="symptom_of" checked> Symptom</label>
+                    </div>
+                    <div class="kg-extra-controls">
+                        <button type="button" class="btn btn-secondary btn-sm" id="kg-physics-toggle" data-action="kg-toggle-physics">⏸ Pause Physics</button>
+                        <button type="button" class="btn btn-secondary btn-sm" id="kg-centrality-toggle" data-action="kg-toggle-centrality">📊 Centrality</button>
+                        <button type="button" class="btn btn-secondary btn-sm" id="kg-community-toggle" data-action="kg-toggle-communities">🎨 Communities</button>
+                        <button type="button" class="btn btn-secondary btn-sm" id="kg-export-png" data-action="kg-export-png">📷 Export PNG</button>
+                        <button type="button" class="btn btn-secondary btn-sm" id="kg-reset" data-action="kg-reset">🔄 Reset</button>
+                    </div>
                 </div>
                 <div class="kg-body">
                     <div id="kg-canvas" class="kg-canvas">

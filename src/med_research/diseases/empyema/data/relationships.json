@@ -1,0 +1,532 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201593",
+      "target": "PLAT",
+      "type": "TARGETS",
+      "description": "ALTEPLASE targets PLAT."
+    },
+    {
+      "source": "CHEMBL1201420",
+      "target": "PLAU",
+      "type": "TARGETS",
+      "description": "UROKINASE targets PLAU."
+    },
+    {
+      "source": "CHEMBL1201420",
+      "target": "PLAU",
+      "type": "TARGETS",
+      "description": "UROKINASE targets PLAU."
+    },
+    {
+      "source": "CCL20",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL20 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCL4L2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL4L2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL1",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL1 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL5",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL5 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "FGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SERPINE1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SERPINE1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MBL2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "MBL2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "SMOX",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SMOX is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IL18",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1R1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1R1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1RN",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1RN is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "IL6R",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6R is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR9",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR9 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "PLAU",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAU is associated with empyema (EMPYEMA). Open Targets association score 0.27"
+    },
+    {
+      "source": "PLAT",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAT is associated with empyema (EMPYEMA). Open Targets association score 0.26"
+    },
+    {
+      "source": "SERPINE1",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINE1 is associated with empyema (EMPYEMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "IL36G",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL36G is associated with empyema (EMPYEMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CALCA",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with empyema (EMPYEMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "UROD",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UROD is associated with empyema (EMPYEMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CRP",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with empyema (EMPYEMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNF",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with empyema (EMPYEMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "LCN2",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN2 is associated with empyema (EMPYEMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADA",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADA is associated with empyema (EMPYEMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MIF",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIF is associated with empyema (EMPYEMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MBL2",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBL2 is associated with empyema (EMPYEMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TGFB1",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with empyema (EMPYEMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CCL20",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL20 is associated with empyema (EMPYEMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "DNASE1",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNASE1 is associated with empyema (EMPYEMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "HSPA1B",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPA1B is associated with empyema (EMPYEMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "HSPA1A",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPA1A is associated with empyema (EMPYEMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CXCL8",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with empyema (EMPYEMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "DNASE1L3",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNASE1L3 is associated with empyema (EMPYEMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL1B",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with empyema (EMPYEMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD4",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with empyema (EMPYEMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL6",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with empyema (EMPYEMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "DSP",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSP is associated with empyema (EMPYEMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "HMOX1",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMOX1 is associated with empyema (EMPYEMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TBXT",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBXT is associated with empyema (EMPYEMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TREM1",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREM1 is associated with empyema (EMPYEMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSF3",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with empyema (EMPYEMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTX3",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTX3 is associated with empyema (EMPYEMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SCUBE3",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCUBE3 is associated with empyema (EMPYEMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCL5",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL5 is associated with empyema (EMPYEMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPT",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with empyema (EMPYEMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSG2",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSG2 is associated with empyema (EMPYEMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM3",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM3 is associated with empyema (EMPYEMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM7",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM7 is associated with empyema (EMPYEMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM5",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM5 is associated with empyema (EMPYEMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SERPINB2",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINB2 is associated with empyema (EMPYEMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALB",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with empyema (EMPYEMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PCLAF",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCLAF is associated with empyema (EMPYEMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNG",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with empyema (EMPYEMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TLR9",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR9 is associated with empyema (EMPYEMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VEGFA",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with empyema (EMPYEMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLG",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLG is associated with empyema (EMPYEMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SAG",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAG is associated with empyema (EMPYEMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "A2M",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "A2M is associated with empyema (EMPYEMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SMOX",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMOX is associated with empyema (EMPYEMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "S100B",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100B is associated with empyema (EMPYEMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TFPI",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFPI is associated with empyema (EMPYEMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCL4L2",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL4L2 is associated with empyema (EMPYEMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1R1",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1R1 is associated with empyema (EMPYEMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MPO",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPO is associated with empyema (EMPYEMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "HPSE",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPSE is associated with empyema (EMPYEMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL1",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL1 is associated with empyema (EMPYEMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL6R",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6R is associated with empyema (EMPYEMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FGF2",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF2 is associated with empyema (EMPYEMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL18",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18 is associated with empyema (EMPYEMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1RN",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1RN is associated with empyema (EMPYEMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL2",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL2 is associated with empyema (EMPYEMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ISG20",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISG20 is associated with empyema (EMPYEMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "BPI",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BPI is associated with empyema (EMPYEMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "JUN",
+      "target": "empyema (EMPYEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JUN is associated with empyema (EMPYEMA). Open Targets association score 0.00"
+    }
+  ]
+}

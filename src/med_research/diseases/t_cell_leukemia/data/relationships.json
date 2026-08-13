@@ -1,0 +1,592 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL112",
+      "target": "FAAH",
+      "type": "TARGETS",
+      "description": "ACETAMINOPHEN targets FAAH."
+    },
+    {
+      "source": "CHEMBL657",
+      "target": "HRH1",
+      "type": "TARGETS",
+      "description": "DIPHENHYDRAMINE targets HRH1."
+    },
+    {
+      "source": "CHEMBL4297555",
+      "target": "CD3E",
+      "type": "TARGETS",
+      "description": "RESIMMUNE targets CD3E."
+    },
+    {
+      "source": "CHEMBL112",
+      "target": "TRPV1",
+      "type": "TARGETS",
+      "description": "ACETAMINOPHEN targets TRPV1."
+    },
+    {
+      "source": "CHEMBL4297555",
+      "target": "EEF2",
+      "type": "TARGETS",
+      "description": "RESIMMUNE targets EEF2."
+    },
+    {
+      "source": "CHEMBL112",
+      "target": "PTGS1",
+      "type": "TARGETS",
+      "description": "ACETAMINOPHEN targets PTGS1."
+    },
+    {
+      "source": "CHEMBL384467",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "DEXAMETHASONE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL1790041",
+      "target": "HRH2",
+      "type": "TARGETS",
+      "description": "RANITIDINE targets HRH2."
+    },
+    {
+      "source": "CHEMBL3545131",
+      "target": "CD38",
+      "type": "TARGETS",
+      "description": "ISATUXIMAB targets CD38."
+    },
+    {
+      "source": "CHEMBL112",
+      "target": "PTGS2",
+      "type": "TARGETS",
+      "description": "ACETAMINOPHEN targets PTGS2."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCR4",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR4 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCR7",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR7 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "EEF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EEF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IKZF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IKZF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "DPP4",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "DPP4 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL15",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL15 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RELB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "NOTCH3",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH3 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTHLH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTHLH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD38",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD38 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD3E",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD3E is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD47",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD47 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LCK",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LCK is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "BTG1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "BTG1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGS1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF4",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF4 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CD3E",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD3E is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "EEF2",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EEF2 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "JAK2",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTGS2",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NR3C1",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD38",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD38 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTGS1",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS1 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRPV1",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV1 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FAAH",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAAH is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "HRH2",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRH2 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "HRH1",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRH1 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ICAM1",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FAS",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "BTG1",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTG1 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TM9SF3",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM9SF3 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ETV6",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV6 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CADM1",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CADM1 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IKZF1",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "UBR5",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBR5 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "AKT1",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "LIMK1",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIMK1 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "RPL17",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL2",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CNTN2",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNTN2 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "DPP4",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPP4 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "BCL11B",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL11B is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IKZF2",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF2 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "RELB",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELB is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "NFKB1",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "LCK",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCK is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCR4",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR4 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "FOSL2",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOSL2 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "APC",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "USP44",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP44 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD47",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD47 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCR7",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR7 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IRF4",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF4 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TCL1B",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCL1B is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL15",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL15 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MYC",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "EZH2",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EZH2 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IFNG",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDKN2B",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2B is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TAL1",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAL1 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "FOXP3",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "NOTCH3",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH3 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL9",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL9 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MTCP1",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTCP1 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TXNIP",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TXNIP is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TCL1A",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCL1A is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "BCL2",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SOAT1",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOAT1 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "FUT7",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUT7 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SPOCK3",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPOCK3 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTHLH",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTHLH is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSF3",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PBX1",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBX1 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RTN4",
+      "target": "T-cell leukemia (T_CELL_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RTN4 is associated with T-cell leukemia (T_CELL_LEUKEMIA). Open Targets association score 0.01"
+    }
+  ]
+}

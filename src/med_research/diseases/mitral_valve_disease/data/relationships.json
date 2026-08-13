@@ -1,0 +1,550 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL24",
+      "target": "ADRB1",
+      "type": "TARGETS",
+      "description": "ATENOLOL targets ADRB1."
+    },
+    {
+      "source": "CHEMBL578",
+      "target": "ACE",
+      "type": "TARGETS",
+      "description": "ENALAPRIL targets ACE."
+    },
+    {
+      "source": "CHEMBL13",
+      "target": "ADRB1",
+      "type": "TARGETS",
+      "description": "METOPROLOL targets ADRB1."
+    },
+    {
+      "source": "CHEMBL2051955",
+      "target": "TNNI3",
+      "type": "TARGETS",
+      "description": "LEVOSIMENDAN targets TNNI3."
+    },
+    {
+      "source": "CHEMBL471",
+      "target": "ADRB1",
+      "type": "TARGETS",
+      "description": "SOTALOL targets ADRB1."
+    },
+    {
+      "source": "ADRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "ADRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR4",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR4 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TIMP1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1RL1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1RL1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL33",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL33 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "NFATC4",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC4 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "REN",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "REN is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "HTR2A",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTR2A is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TPH1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "TPH1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "LAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "FBN1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "FBN1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "SULT2A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SULT2A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "TTN",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTN is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.37"
+    },
+    {
+      "source": "FBN1",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBN1 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.20"
+    },
+    {
+      "source": "ACE",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPPA",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPA is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPPB",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPB is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ASAH1",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASAH1 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADRB2",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB2 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "PSMB6",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMB6 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "AGER",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGER is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNNI3",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNI3 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL4",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "HMOX1",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMOX1 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PON1",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PON1 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL10",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MOK",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MOK is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "B3GNT2",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B3GNT2 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "B3GALNT1",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B3GALNT1 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "B3GNTL1",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B3GNTL1 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "LGALS3",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB1",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "EDN1",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDN1 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "FLNA",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLNA is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "GJA5",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA5 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOD2",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD2 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP3",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP3 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TAB2",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAB2 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSF3",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "HTR2A",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTR2A is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "LCN2",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN2 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "REN",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REN is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SAMHD1",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAMHD1 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADCY1",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADCY1 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SULT2A1",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SULT2A1 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1RL1",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1RL1 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SDCBP2",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDCBP2 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "LPA",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB3",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB3 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMN1",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMN1 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCR2",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR2 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "GJA1",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA1 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "DNAH8",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH8 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "HP",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HP is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TIMP1",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP1 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "LAT",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAT is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CKM",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CKM is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CALR",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALR is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CP",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CP is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMP2",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCR4",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR4 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADRB1",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB1 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGFBP7",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGFBP7 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ERBB2",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "NFATC4",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFATC4 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL33",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL33 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMP9",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SERPINC1",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINC1 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1B",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TPH1",
+      "target": "mitral valve disease (MITRAL_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPH1 is associated with mitral valve disease (MITRAL_VALVE_DISEASE). Open Targets association score 0.00"
+    }
+  ]
+}

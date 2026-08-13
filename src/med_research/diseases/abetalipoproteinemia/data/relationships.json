@@ -1,0 +1,442 @@
+{
+  "relationships": [
+    {
+      "source": "LYN",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LYN is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "POU4F2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "POU4F2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TMEFF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TMEFF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CX3CR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CX3CR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "TIMP3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "VLDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "VLDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "AGTPBP1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGTPBP1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "IRF3",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF3 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "LRP5",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP5 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "NMNAT3",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NMNAT3 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "MTTP",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTTP is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.83"
+    },
+    {
+      "source": "SPTA1",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "AHSP",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSP is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "RHO",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHO is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ANK1",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRPH2",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRPH2 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "HEPH",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEPH is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CRB1",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRB1 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PMP22",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMP22 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ATP8A2",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP8A2 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CX3CR1",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CX3CR1 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "VLDLR",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VLDLR is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "RS1",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RS1 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "RPGR",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPGR is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "STX5",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STX5 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRP5",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP5 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PDE6B",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE6B is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "STEAP3",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STEAP3 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PPP1R15A",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R15A is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "LAMA1",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMA1 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "KLK5",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK5 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TULP1",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TULP1 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "EPB41",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPB41 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRDX2",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDX2 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TF",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "MERTK",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MERTK is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TMEFF2",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEFF2 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "HBA1",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBA1 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "HBA2",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBA2 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "AGPAT3",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGPAT3 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "EPB42",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPB42 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ATOH7",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATOH7 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "UBE2E1",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBE2E1 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MFRP",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFRP is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "LYN",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYN is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADD2",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADD2 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "JAK2",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "BNIP3L",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BNIP3L is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IRF3",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF3 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "RD3",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RD3 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PROM1",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROM1 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SCRIB",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCRIB is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MDM1",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM1 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "AGTPBP1",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGTPBP1 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "APOE",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "RABGAP1",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RABGAP1 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "POU4F2",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU4F2 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "DSCAML1",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSCAML1 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NMNAT3",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NMNAT3 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "EXOC6",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EXOC6 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PODXL",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PODXL is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PDE6A",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE6A is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SATB2",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SATB2 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MPZ",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPZ is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "JMJD6",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JMJD6 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "DSCAM",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSCAM is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADIPOR1",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOR1 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "LACTB",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LACTB is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TIMP3",
+      "target": "abetalipoproteinemia (ABETALIPOPROTEINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP3 is associated with abetalipoproteinemia (ABETALIPOPROTEINEMIA). Open Targets association score 0.03"
+    }
+  ]
+}

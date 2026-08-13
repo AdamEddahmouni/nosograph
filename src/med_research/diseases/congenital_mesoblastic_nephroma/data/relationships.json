@@ -1,0 +1,526 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1421",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "DASATINIB targets KIT."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CXCL10",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL10 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "IGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TCF21",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF21 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PLOD1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLOD1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TIMP3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K7",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K7 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RAF1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RAF1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "KITLG",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KITLG is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "MRGPRF",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "MRGPRF is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "PTHLH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTHLH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "THBS1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THBS1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NTRK3",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK3 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ETV6",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV6 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MC1R",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MC1R is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "NRAS",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "MAP2K1",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K1 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "BRAF",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FRMD7",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FRMD7 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "VEGFA",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "WT1",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IGF2",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EML4",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EML4 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MRC1",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRC1 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPP2R3B",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP2R3B is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.01 | Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCOR",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCOR is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "THBS1",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THBS1 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTHLH",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTHLH is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCND1",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ENO2",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENO2 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EN2",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EN2 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EPHB2",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHB2 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPK1",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "JAK2",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFBR2",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBR2 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCL10",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL10 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRAS",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KIT",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RET",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLOD1",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLOD1 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAP2K7",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K7 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RAF1",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAF1 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NTRK1",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEACAM7",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM7 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEACAM5",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM5 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PF4",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PF4 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TIMP3",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP3 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ANGPT2",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPT2 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRAME",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRAME is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KITLG",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KITLG is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSG2",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSG2 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "VPS51",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VPS51 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEACAM3",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM3 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ANGPT1",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPT1 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPK3",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK3 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "VIM",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIM is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD34",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MKI67",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FZD1",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FZD1 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TCF21",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF21 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MRGPRF",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRGPRF is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOX10",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX10 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRP",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD99",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD99 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.00 | Open Targets association score 0.00"
+    },
+    {
+      "source": "MITF",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MITF is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PGR",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDH1",
+      "target": "congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with congenital mesoblastic nephroma (CONGENITAL_MESOBLASTIC_NEPHROMA). Open Targets association score 0.00"
+    }
+  ]
+}

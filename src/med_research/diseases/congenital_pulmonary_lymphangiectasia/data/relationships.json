@@ -1,0 +1,490 @@
+{
+  "relationships": [
+    {
+      "source": "XIAP",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "XIAP is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "PLCG2",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLCG2 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "RB1CC1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1CC1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ACKR3",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ACKR3 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "ADAM19",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM19 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ELN",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ELN is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP8",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP8 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TIMP3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "BMP10",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP10 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "ITGA9",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA9 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "TRAF3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFATC1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "TSC1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "LTBP4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "ITGA9",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA9 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGER4",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGER4 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "LTBP4",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP4 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TRAF3",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF3 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFC",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFC is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "FLT4",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "VEGFC",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFC is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZFPM2",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFPM2 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MB",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MB is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ITGA9",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA9 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "EFNB2",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EFNB2 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "HEY2",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEY2 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CGAS",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGAS is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "KLF3",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF3 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLCG2",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCG2 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFATC1",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFATC1 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ACKR3",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACKR3 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "EPHA3",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHA3 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTPN14",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN14 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "GJA1",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA1 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CGA",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGA is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "KLHL2",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLHL2 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MAVS",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAVS is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTPN11",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "HEG1",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEG1 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "GJB2",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJB2 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TBX5",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX5 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CLEC1B",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC1B is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TPM1",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPM1 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "LTBP4",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTBP4 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "BMP10",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP10 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PKD2",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKD2 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "DNM1L",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM1L is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "RXRA",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RXRA is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ARF6",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARF6 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SVEP1",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SVEP1 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTGER4",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGER4 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOX18",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX18 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CCBE1",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCBE1 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TSC1",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC1 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TIMP3",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP3 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "UBE4B",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBE4B is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MAN1A2",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAN1A2 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FOXC2",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC2 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADAM19",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAM19 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "XIAP",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XIAP is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "HBEGF",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBEGF is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PKP2",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKP2 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FKBP1C",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP1C is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FKBP1A",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP1A is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "DOCK1",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK1 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TGFB3",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB3 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CASZ1",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASZ1 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ELK3",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELK3 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "RB1CC1",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1CC1 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MDFIC",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDFIC is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "JUP",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JUP is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TRAF3",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAF3 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MMP8",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP8 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ELN",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELN is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPARA",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARA is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HLA-DPA1",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DPA1 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "HLA-DPB1",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DPB1 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GPAT2",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPAT2 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PFKFB4",
+      "target": "congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PFKFB4 is associated with congenital pulmonary lymphangiectasia (CONGENITAL_PULMONARY_LYMPHANGIECTASIA). Open Targets association score 0.00"
+    }
+  ]
+}

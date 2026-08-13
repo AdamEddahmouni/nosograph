@@ -1,0 +1,460 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL3785909",
+      "target": "MET",
+      "type": "TARGETS",
+      "description": "AMG-337 targets MET."
+    },
+    {
+      "source": "CHEMBL84",
+      "target": "TOP1MT",
+      "type": "TARGETS",
+      "description": "TOPOTECAN targets TOP1MT."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "IGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "SHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IRF1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF4",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF4 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "EWSR1",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EWSR1 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "CREB1",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREB1 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ATF1",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATF1 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "YWHAE",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YWHAE is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NUTM2B",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUTM2B is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ETV6",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV6 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NTRK3",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK3 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SS18",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SS18 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SSX1",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSX1 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SSX2",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSX2 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTEN",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP53",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRAF",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "DDIT3",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDIT3 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "NRAS",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "WT1",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "FLI1",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLI1 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "FOXO1",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXO1 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "EGFR",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "PAX3",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX3 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "ERG",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERG is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "NR4A3",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR4A3 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "FEV",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FEV is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "PAX7",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX7 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NBN",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBN is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MET",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TOP1MT",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOP1MT is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "KIT",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MLANA",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLANA is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD151",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD151 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MITF",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MITF is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CREM",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREM is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IRF4",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF4 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PWWP3A",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PWWP3A is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NTRK1",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCOR",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCOR is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HGF",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TYR",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYR is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOX10",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX10 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRTC1",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRTC1 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRIM11",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM11 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ENO2",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENO2 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD40LG",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FUS",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUS is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "STK36",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK36 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCND1",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCNB3",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCNB3 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRMT5",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRMT5 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRIM25",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM25 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HDAC9",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC9 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IRF1",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF1 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KDR",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RTL1",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RTL1 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SHH",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHH is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERBB3",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB3 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDH1",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MCAM",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCAM is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGF2",
+      "target": "clear cell sarcoma (CLEAR_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2 is associated with clear cell sarcoma (CLEAR_CELL_SARCOMA). Open Targets association score 0.01"
+    }
+  ]
+}

@@ -1,0 +1,544 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1276308",
+      "target": "PGR",
+      "type": "TARGETS",
+      "description": "MIFEPRISTONE targets PGR."
+    },
+    {
+      "source": "CHEMBL940",
+      "target": "CACNA2D1",
+      "type": "TARGETS",
+      "description": "GABAPENTIN targets CACNA2D1."
+    },
+    {
+      "source": "CHEMBL1276308",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "MIFEPRISTONE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL606",
+      "target": "PTGER3",
+      "type": "TARGETS",
+      "description": "MISOPROSTOL targets PTGER3."
+    },
+    {
+      "source": "CHEMBL606",
+      "target": "PTGER3",
+      "type": "TARGETS",
+      "description": "MISOPROSTOL targets PTGER3."
+    },
+    {
+      "source": "CACNA2D1",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA2D1 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CCR5",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR5 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "HAVCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ADAM12",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM12 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL18",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "IL6R",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6R is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELP",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELP is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "IL23R",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL23R is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "PTGER3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGER3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF14",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF14 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "PGF",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "PGF is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "PTGER3",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGER3 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.28"
+    },
+    {
+      "source": "PGR",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.26"
+    },
+    {
+      "source": "NR3C1",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.26"
+    },
+    {
+      "source": "CACNA2D1",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA2D1 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.07"
+    },
+    {
+      "source": "VEGFA",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADAM12",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAM12 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "FASLG",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLPI",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLPI is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PGF",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGF is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "FANCA",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "FAS",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "FXN",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FXN is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "LEP",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "LEPR",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "ICAM1",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "HLA-E",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-E is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL7",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "HLA-G",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-G is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADA",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADA is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6R",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6R is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "BTRC",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTRC is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNAI1",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNAI1 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "KIR3DL1",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIR3DL1 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "GEM",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GEM is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCR5",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR5 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PI3",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PI3 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD40LG",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL10",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CGB5",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB5 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CGA",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGA is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "SELP",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELP is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS3",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNFRSF14",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF14 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD274",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "BRD2",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRD2 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PAPPA",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAPPA is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL4",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "GNRH1",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRH1 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDCD1",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL18",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD8A",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGFB1",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "KIR2DL4",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIR2DL4 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "HAVCR1",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAVCR1 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL23R",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL23R is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "TEAD1",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TEAD1 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "CTSB",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSB is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATF4",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATF4 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "MUC16",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC16 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "ARHGEF5",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGEF5 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "USP7",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP7 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "PBX1",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBX1 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "TIMELESS",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMELESS is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "SERPINA1",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA1 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "FKBP5",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP5 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "HNRNPA2B1",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNRNPA2B1 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "EXOC2",
+      "target": "spontaneous abortion (SPONTANEOUS_ABORTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EXOC2 is associated with spontaneous abortion (SPONTANEOUS_ABORTION). Open Targets association score 0.00"
+    }
+  ]
+}

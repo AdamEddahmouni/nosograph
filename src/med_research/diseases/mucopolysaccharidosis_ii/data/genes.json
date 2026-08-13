@@ -81,8 +81,8 @@
       "category": ""
     },
     {
-      "id": "PPIA",
-      "name": "peptidylprolyl isomerase A",
+      "id": "PPAT",
+      "name": "phosphoribosyl pyrophosphate amidotransferase",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.04",
@@ -91,8 +91,8 @@
       "category": ""
     },
     {
-      "id": "PPAT",
-      "name": "phosphoribosyl pyrophosphate amidotransferase",
+      "id": "PPIA",
+      "name": "peptidylprolyl isomerase A",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.04",
@@ -171,8 +171,8 @@
       "category": ""
     },
     {
-      "id": "ARSK",
-      "name": "arylsulfatase family member K",
+      "id": "DPP4",
+      "name": "dipeptidyl peptidase 4",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.01",
@@ -181,8 +181,8 @@
       "category": ""
     },
     {
-      "id": "DPP4",
-      "name": "dipeptidyl peptidase 4",
+      "id": "ARSK",
+      "name": "arylsulfatase family member K",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.01",
@@ -221,6 +221,16 @@
       "category": ""
     },
     {
+      "id": "CST3",
+      "name": "cystatin C",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.01",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
       "id": "CTSL",
       "name": "cathepsin L",
       "chromosome": "",
@@ -233,16 +243,6 @@
     {
       "id": "NEU1",
       "name": "neuraminidase 1",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.01",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "CST3",
-      "name": "cystatin C",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.01",
@@ -291,56 +291,6 @@
       "category": ""
     },
     {
-      "id": "EXTL2",
-      "name": "exostosin like glycosyltransferase 2",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.01",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "GPER1",
-      "name": "G protein-coupled estrogen receptor 1",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.01",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "NPPC",
-      "name": "natriuretic peptide C",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.01",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "IGF2",
-      "name": "insulin like growth factor 2",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.01",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "C3",
-      "name": "complement C3",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.01",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
       "id": "CD34",
       "name": "CD34 molecule",
       "chromosome": "",
@@ -361,28 +311,8 @@
       "category": ""
     },
     {
-      "id": "ACADVL",
-      "name": "acyl-CoA dehydrogenase very long chain",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.01",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "EBP",
-      "name": "EBP cholestenol delta-isomerase",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.01",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "OXTR",
-      "name": "oxytocin receptor",
+      "id": "CTSB",
+      "name": "cathepsin B",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.01",
@@ -401,8 +331,78 @@
       "category": ""
     },
     {
-      "id": "CTSB",
-      "name": "cathepsin B",
+      "id": "GPER1",
+      "name": "G protein-coupled estrogen receptor 1",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.01",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "C3",
+      "name": "complement C3",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.01",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "ACADVL",
+      "name": "acyl-CoA dehydrogenase very long chain",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.01",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "IGF2",
+      "name": "insulin like growth factor 2",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.01",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "NPPC",
+      "name": "natriuretic peptide C",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.01",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "OXTR",
+      "name": "oxytocin receptor",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.01",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "EXTL2",
+      "name": "exostosin like glycosyltransferase 2",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.01",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "EBP",
+      "name": "EBP cholestenol delta-isomerase",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.01",
@@ -511,16 +511,6 @@
       "category": ""
     },
     {
-      "id": "SERPIND1",
-      "name": "serpin family D member 1",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.00",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
       "id": "HEXB",
       "name": "hexosaminidase subunit beta",
       "chromosome": "",
@@ -533,6 +523,16 @@
     {
       "id": "HEXA",
       "name": "hexosaminidase subunit alpha",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.00",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "SERPIND1",
+      "name": "serpin family D member 1",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.00",
@@ -573,6 +573,26 @@
     {
       "id": "MMP2",
       "name": "matrix metallopeptidase 2",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.00",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "NAT10",
+      "name": "N-acetyltransferase 10",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.00",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "TIMP2",
+      "name": "TIMP metallopeptidase inhibitor 2",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.00",

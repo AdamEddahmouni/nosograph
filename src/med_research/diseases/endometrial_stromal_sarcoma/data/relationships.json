@@ -1,0 +1,490 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1358",
+      "target": "ESR2",
+      "type": "TARGETS",
+      "description": "FULVESTRANT targets ESR2."
+    },
+    {
+      "source": "CHEMBL1358",
+      "target": "ESR1",
+      "type": "TARGETS",
+      "description": "FULVESTRANT targets ESR1."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "IRF4",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF4 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LRP1B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP19A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP19A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "YWHAE",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YWHAE is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "SUZ12",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUZ12 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "NUTM2B",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUTM2B is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "BCOR",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCOR is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "TP53",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATM",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MED12",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MED12 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2C",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KRAS",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "APC",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ASXL1",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FBXW7",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXW7 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "JAZF1",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAZF1 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "KIT",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "KAT6B",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KAT6B is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "AR",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "SSX1",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSX1 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "IRF4",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF4 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "MTOR",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "ALK",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "KDR",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "CREBBP",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "FLT4",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "KMT2D",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "ATRX",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "SS18",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SS18 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "SSX2",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSX2 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "MEN1",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CDH11",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH11 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "DAXX",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAXX is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PPARG",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PTCH1",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PBRM1",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBRM1 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "USP6",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP6 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "JAK3",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SF3B1",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SF3B1 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "UBR5",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBR5 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FGFR2",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "LRP1B",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1B is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "DICER1",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DICER1 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NF1",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "EP300",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EP300 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FLT3",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PTPRT",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRT is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "HGF",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "GNA11",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNA11 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "EBF1",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EBF1 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ERBB3",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB3 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SRGAP3",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRGAP3 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "CTNNA2",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNA2 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "DCC",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCC is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "ACSL3",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACSL3 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "ESR1",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "ESR2",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR2 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CYP19A1",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP19A1 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MKI67",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "EGFR",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGF12",
+      "target": "endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF12 is associated with endometrial stromal sarcoma (ENDOMETRIAL_STROMAL_SARCOMA). Open Targets association score 0.02"
+    }
+  ]
+}

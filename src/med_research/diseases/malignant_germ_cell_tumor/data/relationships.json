@@ -1,0 +1,454 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL2108738",
+      "target": "PDCD1",
+      "type": "TARGETS",
+      "description": "NIVOLUMAB targets PDCD1."
+    },
+    {
+      "source": "CHEMBL939",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "GEFITINIB targets EGFR."
+    },
+    {
+      "source": "CHEMBL1567",
+      "target": "FLT4",
+      "type": "TARGETS",
+      "description": "SUNITINIB MALATE targets FLT4."
+    },
+    {
+      "source": "CHEMBL535",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "SUNITINIB targets KIT."
+    },
+    {
+      "source": "SYK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "SYK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ARHGEF10L",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ARHGEF10L is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CHEK2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "CHEK2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GADD45B",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GADD45B is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "MAML2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MAML2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "LEF1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LEF1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LRP1B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "RAC1",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAC1 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "TRRAP",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRRAP is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "NCOR2",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOR2 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "MAML2",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAML2 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "BCL9",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL9 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "MYH9",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH9 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "CHEK2",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHEK2 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "PBRM1",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBRM1 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "IKZF1",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2C",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "EP300",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EP300 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "POLE",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "FAT1",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT1 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "PAX3",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX3 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "CUX1",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUX1 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "POLQ",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLQ is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "SYK",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYK is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "KLF4",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF4 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "SPEN",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPEN is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "FLT4",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "BRD4",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRD4 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "NT5C2",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NT5C2 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "GATA2",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA2 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ETV1",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV1 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2D",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "LRP1B",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1B is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "LEF1",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEF1 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "CIC",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIC is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "CHD4",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD4 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "MUC16",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC16 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "SETDB1",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETDB1 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "KTN1",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KTN1 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "NCOA1",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOA1 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "CANT1",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CANT1 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "ARHGEF10L",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGEF10L is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "ECT2L",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ECT2L is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "MUC6",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC6 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "POLG",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLG is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "BCR",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCR is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "TP53",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "IGFBP2",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGFBP2 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "AFP",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "KRIT1",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRIT1 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CGB5",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB5 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "SALL4",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SALL4 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRIPTO",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRIPTO is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "BLMH",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLMH is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "KIT",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CGB3",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB3 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "POU5F1",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU5F1 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDCD1",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "MDM2",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM2 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPC3",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPC3 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "TCL1B",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCL1B is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "PROM1",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROM1 is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "TCL1A",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCL1A is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGFR",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "GADD45B",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GADD45B is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "LIN28A",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIN28A is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "ARID1A",
+      "target": "Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with Malignant Germ Cell Tumor (MALIGNANT_GERM_CELL_TUMOR). Open Targets association score 0.01"
+    }
+  ]
+}

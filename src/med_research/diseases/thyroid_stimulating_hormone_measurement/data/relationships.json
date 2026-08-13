@@ -1,0 +1,460 @@
+{
+  "relationships": [
+    {
+      "source": "IGF2BP2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2BP2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TIMP4",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP4 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GADD45A",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GADD45A is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "INSR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INSR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GLIS3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLIS3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "SMOC2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SMOC2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BMP2",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP2 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "NR3C2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "NR3C2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "THADA",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THADA is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "MICOS10",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MICOS10 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TG",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TG is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TPO",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TPO is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TSHR",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TSHR is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "VEGFC",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFC is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "TG",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TG is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.55"
+    },
+    {
+      "source": "GLIS3",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLIS3 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "PDE10A",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE10A is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "PDE8B",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE8B is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "NR3C2",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C2 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "NRG1",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRG1 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "SOX9",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX9 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "TPO",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPO is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "ADCY9",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADCY9 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "TSHR",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSHR is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "NFIA",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFIA is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "IGF2BP2",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2BP2 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "B4GALNT3",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B4GALNT3 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "APOH",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOH is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "VAV3",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VAV3 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "PTPRS",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRS is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "CADM1",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CADM1 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "VEGFC",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFC is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "ADSS1",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADSS1 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "SH2B3",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2B3 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "CAPZB",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAPZB is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "NEK6",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEK6 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "PRDM11",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM11 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "GATA3",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "THADA",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THADA is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "SMOC2",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMOC2 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "TNP1",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNP1 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "SULF1",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SULF1 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "TM4SF4",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM4SF4 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "DET1",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DET1 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "ITPK1",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITPK1 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "INSR",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INSR is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "SPRY2",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPRY2 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "ELK3",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELK3 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "TMEM71",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM71 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "FAF1",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAF1 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "DLEU7",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLEU7 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "CERS4",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CERS4 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "SCNN1B",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCNN1B is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "RAB20",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB20 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "ABO",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABO is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "TIMP4",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP4 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "ZNF652",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF652 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "BNC2",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BNC2 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "BMP2",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP2 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "NKX2-3",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-3 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "MICOS10",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MICOS10 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "FLRT2",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLRT2 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "IGF1",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "SPATA13",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA13 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "SLC25A37",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A37 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "COMMD7",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COMMD7 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "CGA",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGA is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "GADD45A",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GADD45A is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "FOXA2",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXA2 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "PTPN22",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "ANXA5",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANXA5 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "NRXN3",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRXN3 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "BCAS3",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCAS3 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "CNPPD1",
+      "target": "thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNPPD1 is associated with thyroid stimulating hormone measurement (THYROID_STIMULATING_HORMONE_MEASUREMENT). Open Targets association score 0.34"
+    }
+  ]
+}

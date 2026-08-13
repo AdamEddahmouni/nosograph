@@ -1,0 +1,574 @@
+{
+  "relationships": [
+    {
+      "source": "BAX",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BAX is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CASP3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CASP1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "ACKR3",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ACKR3 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ALOX15",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ALOX15 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GADD45B",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GADD45B is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "CASP1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "PPARGC1A",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARGC1A is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK14",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK14 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RASSF1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASSF1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "FASTK",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASTK is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "HIF1A",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "HIF1A is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP2C18",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2C18 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP2C19",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2C19 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP2C9",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2C9 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "S1PR1",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S1PR1 is associated with heart injury (HEART_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with heart injury (HEART_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD8A",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with heart injury (HEART_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GABPA",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABPA is associated with heart injury (HEART_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with heart injury (HEART_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS2",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with heart injury (HEART_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP2C9",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2C9 is associated with heart injury (HEART_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SETD2",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD2 is associated with heart injury (HEART_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP2C19",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2C19 is associated with heart injury (HEART_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP2C18",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2C18 is associated with heart injury (HEART_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "HMOX1",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMOX1 is associated with heart injury (HEART_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CGA",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGA is associated with heart injury (HEART_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRF1",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRF1 is associated with heart injury (HEART_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "HIF1A",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF1A is associated with heart injury (HEART_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP2",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with heart injury (HEART_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNG",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with heart injury (HEART_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC9A1",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC9A1 is associated with heart injury (HEART_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CGAS",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGAS is associated with heart injury (HEART_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALOX15",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALOX15 is associated with heart injury (HEART_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CASP3",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP3 is associated with heart injury (HEART_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "DDIT4",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDIT4 is associated with heart injury (HEART_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "STAT3",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with heart injury (HEART_INJURY). Open Targets association score 0.01"
+    },
+    {
+      "source": "AGT",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "FSTL1",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSTL1 is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "RASSF1",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASSF1 is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP53",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACKR3",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACKR3 is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GADD45B",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GADD45B is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPARGC1A",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARGC1A is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPK14",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK14 is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "AHSA1",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSA1 is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TAB1",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAB1 is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRK",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRK is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "FASTK",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASTK is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ANGPT4",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPT4 is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GRAP2",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRAP2 is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPK1",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "POLDIP2",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLDIP2 is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "RNF19A",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF19A is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "AKT1",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "AIMP2",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIMP2 is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NFKB1",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TRIM72",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM72 is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NDNF",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDNF is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NPPB",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPB is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRP",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "BCL2",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GPER1",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPER1 is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "BAX",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAX is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALB",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD4",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1B",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCKBR",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCKBR is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "HMGB1",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGB1 is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GAST",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAST is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MIF",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIF is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NLRP3",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CASP1",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP1 is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHKA",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKA is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SORBS2",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORBS2 is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "DYRK1A",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYRK1A is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CMPK1",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMPK1 is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GOT1",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOT1 is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC17A5",
+      "target": "heart injury (HEART_INJURY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A5 is associated with heart injury (HEART_INJURY). Open Targets association score 0.00"
+    }
+  ]
+}

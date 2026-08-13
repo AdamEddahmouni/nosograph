@@ -1,0 +1,502 @@
+{
+  "relationships": [
+    {
+      "source": "CDK6",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK6 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ACKR1",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ACKR1 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL12",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL12 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL6",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL6 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "IRF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MARCHF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "MARCHF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "NUF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NUF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TNFRSF10C",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF10C is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF4A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF4A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "ITGA4",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA4 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "MAPK4",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK4 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "CD300LF",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD300LF is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ITGA4",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA4 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFRSF10C",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF10C is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IRF8",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ACKR1",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACKR1 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.49"
+    },
+    {
+      "source": "CSF3R",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3R is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.45"
+    },
+    {
+      "source": "CXCL6",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL6 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.45"
+    },
+    {
+      "source": "LY75",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LY75 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.44"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.42"
+    },
+    {
+      "source": "RIN3",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIN3 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.42"
+    },
+    {
+      "source": "CDK6",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK6 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.41"
+    },
+    {
+      "source": "JAML",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAML is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.41"
+    },
+    {
+      "source": "NUF2",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUF2 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.40"
+    },
+    {
+      "source": "MPO",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPO is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.39"
+    },
+    {
+      "source": "EHD4",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EHD4 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.38"
+    },
+    {
+      "source": "FLT3",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.37"
+    },
+    {
+      "source": "GC",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GC is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.37"
+    },
+    {
+      "source": "SLAMF6",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLAMF6 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.37"
+    },
+    {
+      "source": "PEAR1",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PEAR1 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.36"
+    },
+    {
+      "source": "TNFRSF10C",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF10C is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.36"
+    },
+    {
+      "source": "LYZ",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYZ is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.36"
+    },
+    {
+      "source": "S1PR4",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S1PR4 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.36"
+    },
+    {
+      "source": "ADGRL4",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADGRL4 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.36"
+    },
+    {
+      "source": "LEPR",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.36"
+    },
+    {
+      "source": "CXCR2",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR2 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.36"
+    },
+    {
+      "source": "PTPN22",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.36"
+    },
+    {
+      "source": "NOSTRIN",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOSTRIN is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.35"
+    },
+    {
+      "source": "CXCL12",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL12 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.35"
+    },
+    {
+      "source": "GSDMA",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMA is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.35"
+    },
+    {
+      "source": "ACVRL1",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACVRL1 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.35"
+    },
+    {
+      "source": "IFITM2",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFITM2 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.35"
+    },
+    {
+      "source": "SLC25A24",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A24 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.35"
+    },
+    {
+      "source": "TADA2B",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TADA2B is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.35"
+    },
+    {
+      "source": "TNS3",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNS3 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.35"
+    },
+    {
+      "source": "SH2B3",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2B3 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.35"
+    },
+    {
+      "source": "ADRB2",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB2 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.35"
+    },
+    {
+      "source": "PLPP3",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLPP3 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.34"
+    },
+    {
+      "source": "ATXN1",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATXN1 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.34"
+    },
+    {
+      "source": "HDGFL1",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDGFL1 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.34"
+    },
+    {
+      "source": "ARHGAP23",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP23 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.34"
+    },
+    {
+      "source": "CD300LF",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD300LF is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.34"
+    },
+    {
+      "source": "ITGA4",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA4 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.34"
+    },
+    {
+      "source": "MARCHF7",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MARCHF7 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.34"
+    },
+    {
+      "source": "TERT",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.33"
+    },
+    {
+      "source": "CD247",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD247 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.33"
+    },
+    {
+      "source": "PMVK",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMVK is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.33"
+    },
+    {
+      "source": "NLRP3",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.33"
+    },
+    {
+      "source": "DAP3",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAP3 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.33"
+    },
+    {
+      "source": "KIT",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.33"
+    },
+    {
+      "source": "TRIM37",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM37 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.33"
+    },
+    {
+      "source": "BCL9",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL9 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.33"
+    },
+    {
+      "source": "PYHIN1",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PYHIN1 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.32"
+    },
+    {
+      "source": "SLC12A7",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A7 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.32"
+    },
+    {
+      "source": "FCGR2A",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2A is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.32"
+    },
+    {
+      "source": "HNF4A",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF4A is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.32"
+    },
+    {
+      "source": "NCSTN",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCSTN is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.32"
+    },
+    {
+      "source": "GCKR",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.32"
+    },
+    {
+      "source": "ZMIZ2",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZMIZ2 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.32"
+    },
+    {
+      "source": "GLCCI1",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLCCI1 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.32"
+    },
+    {
+      "source": "MAPK4",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK4 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.32"
+    },
+    {
+      "source": "STXBP6",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STXBP6 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.32"
+    },
+    {
+      "source": "IRF8",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF8 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.31"
+    },
+    {
+      "source": "CXCL2",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL2 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.31"
+    },
+    {
+      "source": "SPRED2",
+      "target": "granulocyte count (GRANULOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPRED2 is associated with granulocyte count (GRANULOCYTE_COUNT). Open Targets association score 0.31"
+    }
+  ]
+}

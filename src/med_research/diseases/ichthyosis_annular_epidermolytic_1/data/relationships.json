@@ -1,0 +1,448 @@
+{
+  "relationships": [
+    {
+      "source": "RHBDF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "RHBDF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ALOX12B",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ALOX12B is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL17A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL17A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL1RN",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1RN is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "PSTPIP2",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "PSTPIP2 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "CARD14",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD14 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "CHUK",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CHUK is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "IKBKG",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "IKBKG is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBIA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBIZ",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIZ is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RELB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGM1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "KRT10",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT10 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.64"
+    },
+    {
+      "source": "KRT1",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT1 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.50"
+    },
+    {
+      "source": "ST14",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST14 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.07"
+    },
+    {
+      "source": "SPINK5",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPINK5 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "SCD",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCD is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "HR",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HR is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "GBA1",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GBA1 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "ABCA12",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA12 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "IKBKG",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKBKG is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "NSDHL",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSDHL is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "FLG",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLG is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "LRIG1",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRIG1 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "DSG4",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSG4 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "MPZL3",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPZL3 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "CTSV",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSV is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "CTSL",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSL is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "KLK11",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK11 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "RHBDF2",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHBDF2 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC27A4",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC27A4 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "KRT2",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT2 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "ALOX12B",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALOX12B is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "KRT9",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT9 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "GSDMA",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMA is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "ITGB2",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "CARD14",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD14 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFKBIZ",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIZ is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "DSG3",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSG3 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "PKP3",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKP3 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "PNPLA1",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PNPLA1 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "TUFT1",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUFT1 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "GRHL1",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRHL1 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "DSC1",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSC1 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "CLDN1",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN1 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRPV3",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV3 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDSN",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDSN is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "SNAP29",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNAP29 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "DMKN",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMKN is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "PSTPIP2",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSTPIP2 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "CST6",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CST6 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "RELB",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELB is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL36RN",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL36RN is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "TMEM79",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM79 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "XPA",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XPA is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXN1",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXN1 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "CHUK",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHUK is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRSS8",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRSS8 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "NIPAL4",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NIPAL4 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "LBR",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LBR is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "KRT76",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT76 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "LAMC2",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMC2 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "NFKBIA",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIA is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "CERS3",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CERS3 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "GRHL3",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRHL3 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "TTC7A",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC7A is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "CES2",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CES2 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "ELOVL4",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELOVL4 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "COL17A1",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL17A1 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "TGM1",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM1 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "GPX8",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPX8 is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL1RN",
+      "target": "ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1RN is associated with ichthyosis, annular epidermolytic 1 (ICHTHYOSIS_ANNULAR_EPIDERMOLYTIC_1). Open Targets association score 0.03"
+    }
+  ]
+}

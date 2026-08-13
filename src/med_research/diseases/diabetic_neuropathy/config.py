@@ -83,6 +83,7 @@ CAR_T_SCORES = {
         "JADE2": 4.0,
         "JAZF1": 4.0,
         "KCNQ1": 4.0,
+        "MAOA": 4.0,
         "MC4R": 4.0,
         "MGMT": 4.0,
         "MS4A1": 4.0,

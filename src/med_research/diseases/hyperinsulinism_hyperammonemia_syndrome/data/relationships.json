@@ -1,0 +1,484 @@
+{
+  "relationships": [
+    {
+      "source": "BAD",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BAD is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "SLC30A8",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC30A8 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "SLC39A8",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC39A8 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CACNA1E",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1E is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "KCNH6",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNH6 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "ABCC8",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC8 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "DPP4",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "DPP4 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GCK",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCK is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INSR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INSR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IRS1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "IRS1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "PDX1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PDX1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GLIS3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLIS3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "MAPK13",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK13 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "AKT2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "RPS6KB1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "RPS6KB1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "THRA",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THRA is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "NUDCD3",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NUDCD3 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "THRA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "THRA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ABCC8",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC8 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GLUD1",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLUD1 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.84"
+    },
+    {
+      "source": "SHLD2",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHLD2 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.20"
+    },
+    {
+      "source": "LEPR",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "GCK",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCK is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "LEP",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "INS",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PDX1",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDX1 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "INSR",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INSR is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "KCNH6",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNH6 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PDZD2",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDZD2 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "KCNB1",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNB1 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "IRS1",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRS1 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "AKT2",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT2 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "MAPK13",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK13 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SPHKAP",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPHKAP is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SSTR5",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSTR5 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "DPP4",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPP4 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "KMT2B",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2B is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CREBBP",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "BAD",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAD is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SIM1",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIM1 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PHPT1",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHPT1 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLC30A8",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC30A8 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ABCC8",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC8 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "GPR68",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR68 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CACNA1E",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1E is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CPE",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPE is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "KBTBD2",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KBTBD2 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "NUDCD3",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUDCD3 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "RPS6KB1",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPS6KB1 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PGR",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "GHRL",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHRL is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "GNAO1",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAO1 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "GCGR",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCGR is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ADIPOR2",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOR2 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "DBH",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DBH is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "RIMS2",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIMS2 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC9B2",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC9B2 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PCSK2",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK2 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "GHR",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHR is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ATF4",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATF4 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRKAA2",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA2 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FAM3B",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM3B is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "GPR27",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR27 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "THRA",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THRA is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "HMGA1",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGA1 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "WFS1",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WFS1 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TRARG1",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRARG1 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "GAST",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAST is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "RBM4",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM4 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC39A8",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC39A8 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "GLIS3",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLIS3 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ARFGEF3",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARFGEF3 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ALMS1",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALMS1 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "AKAP5",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKAP5 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SIK1",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIK1 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC17A9",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A9 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXA1",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXA1 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "GPR142",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR142 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CHRM3",
+      "target": "hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHRM3 is associated with hyperinsulinism-hyperammonemia syndrome (HYPERINSULINISM_HYPERAMMONEMIA_SYNDROME). Open Targets association score 0.05"
+    }
+  ]
+}

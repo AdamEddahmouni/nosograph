@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "IGF2BP2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2BP2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ADAMTS10",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS10 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ADAMTS17",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS17 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ADAMTSL3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTSL3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IRS1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "IRS1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BMP6",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP6 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL4 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CETP is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "FGFR4",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR4 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CD300LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD300LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LTBP1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SMAD3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "LTBP1",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP1 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETP is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "LPL",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "ABCA1",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "LIPG",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPG is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "HHIP",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HHIP is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "ADAMTS17",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS17 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "EFEMP1",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EFEMP1 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "LIPC",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "PCSK5",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK5 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "ADAMTS10",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS10 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "ACAN",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACAN is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "IGF1R",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1R is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "CD300LG",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD300LG is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "IRS1",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRS1 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "GPIHBP1",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPIHBP1 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "PTCH1",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "ESR1",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "RSPO3",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO3 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "APOB",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "ID4",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ID4 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL4 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "SMAD3",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD3 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "POC5",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POC5 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "MFAP2",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFAP2 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "L3MBTL3",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "L3MBTL3 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "TSEN15",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSEN15 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "BCKDHB",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCKDHB is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "NFE2L3",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L3 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "LCAT",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCAT is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "BMP6",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP6 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "ZMIZ1",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZMIZ1 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "JAZF1",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAZF1 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "ADAMTSL3",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTSL3 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "LTBP1",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTBP1 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "NPR3",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPR3 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "LCORL",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCORL is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "PITX1",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX1 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "B4GALNT3",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B4GALNT3 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "IGF2BP2",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2BP2 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "SMIM23",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMIM23 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "DLEU7",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLEU7 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "HMGA1",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGA1 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "APOA5",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "MC4R",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MC4R is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "ZFAT",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFAT is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "FNDC3B",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FNDC3B is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "FGFR4",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR4 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "CEP120",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEP120 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "CABLES1",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CABLES1 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "PLAG1",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAG1 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "GPAM",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPAM is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "TRPS1",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPS1 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "GALNT2",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GALNT2 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "APOE",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "FGF18",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF18 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "APOA4",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA4 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "PXMP4",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PXMP4 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "BOLA1",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BOLA1 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "TET2",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "RHBDD1",
+      "target": "sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHBDD1 is associated with sexual dimorphism measurement (SEXUAL_DIMORPHISM_MEASUREMENT). Open Targets association score 0.39"
+    }
+  ]
+}

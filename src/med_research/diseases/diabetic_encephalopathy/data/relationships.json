@@ -1,0 +1,514 @@
+{
+  "relationships": [
+    {
+      "source": "F2R",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F2R is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GIGYF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "GIGYF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "MAP2K3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK8",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK8 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KITLG",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KITLG is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "NFAT5",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFAT5 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "BACE1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "BACE1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "RENBP",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "RENBP is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "GSK3B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "GSK3B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LCN2",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN2 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNF",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "NFKB1",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "MTOR",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TFEB",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFEB is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "MT-ND3",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-ND3 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CASR",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASR is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL17A",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGF1R",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1R is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "INS",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIN1",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIN1 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CLCN3",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCN3 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYLK2",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYLK2 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYLK3",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYLK3 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYLK",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYLK is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "AGER",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGER is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MOK",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MOK is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPK8",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK8 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NLRP3",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFAT5",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFAT5 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSK3B",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSK3B is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAP2K3",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K3 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPT",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPT is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKT1",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GABPA",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABPA is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CX3CL1",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CX3CL1 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "HMGB1",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGB1 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAD2L2",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAD2L2 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "KITLG",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KITLG is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CNR1",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNR1 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GNAO1",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAO1 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "RENBP",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RENBP is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NGF",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NGF is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS2",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "BACE1",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BACE1 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1B",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "F2R",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F2R is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SYT1",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYT1 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "APP",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APP is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACHE",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACHE is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "RHO",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHO is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "KEAP1",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KEAP1 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYH14",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH14 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "DISC1",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DISC1 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PHB2",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHB2 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SIRT6",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT6 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "HDAC4",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC4 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTEN",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "HDAC2",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC2 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GIGYF2",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIGYF2 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "XBP1",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XBP1 is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPID",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPID is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPIF",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIF is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCHE",
+      "target": "diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCHE is associated with diabetic encephalopathy (DIABETIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    }
+  ]
+}

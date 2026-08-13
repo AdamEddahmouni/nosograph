@@ -265,16 +265,16 @@
       "description": "TLR7 is associated with localized scleroderma (SCLERODERMA_LOCALIZED). Open Targets association score 0.32"
     },
     {
-      "source": "ABL1",
-      "target": "localized scleroderma (SCLERODERMA_LOCALIZED)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ABL1 is associated with localized scleroderma (SCLERODERMA_LOCALIZED). Open Targets association score 0.09"
-    },
-    {
       "source": "BCR",
       "target": "localized scleroderma (SCLERODERMA_LOCALIZED)",
       "type": "ASSOCIATED_WITH",
       "description": "BCR is associated with localized scleroderma (SCLERODERMA_LOCALIZED). Open Targets association score 0.09"
+    },
+    {
+      "source": "ABL1",
+      "target": "localized scleroderma (SCLERODERMA_LOCALIZED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABL1 is associated with localized scleroderma (SCLERODERMA_LOCALIZED). Open Targets association score 0.09"
     },
     {
       "source": "PDGFRB",
@@ -289,22 +289,22 @@
       "description": "KIT is associated with localized scleroderma (SCLERODERMA_LOCALIZED). Open Targets association score 0.09"
     },
     {
-      "source": "PDE4B",
-      "target": "localized scleroderma (SCLERODERMA_LOCALIZED)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PDE4B is associated with localized scleroderma (SCLERODERMA_LOCALIZED). Open Targets association score 0.07"
-    },
-    {
       "source": "PDE4A",
       "target": "localized scleroderma (SCLERODERMA_LOCALIZED)",
       "type": "ASSOCIATED_WITH",
       "description": "PDE4A is associated with localized scleroderma (SCLERODERMA_LOCALIZED). Open Targets association score 0.07"
     },
     {
-      "source": "IL4R",
+      "source": "PDE4C",
       "target": "localized scleroderma (SCLERODERMA_LOCALIZED)",
       "type": "ASSOCIATED_WITH",
-      "description": "IL4R is associated with localized scleroderma (SCLERODERMA_LOCALIZED). Open Targets association score 0.07"
+      "description": "PDE4C is associated with localized scleroderma (SCLERODERMA_LOCALIZED). Open Targets association score 0.07"
+    },
+    {
+      "source": "PDE4B",
+      "target": "localized scleroderma (SCLERODERMA_LOCALIZED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE4B is associated with localized scleroderma (SCLERODERMA_LOCALIZED). Open Targets association score 0.07"
     },
     {
       "source": "PDE4D",
@@ -313,10 +313,10 @@
       "description": "PDE4D is associated with localized scleroderma (SCLERODERMA_LOCALIZED). Open Targets association score 0.07"
     },
     {
-      "source": "PDE4C",
+      "source": "IL4R",
       "target": "localized scleroderma (SCLERODERMA_LOCALIZED)",
       "type": "ASSOCIATED_WITH",
-      "description": "PDE4C is associated with localized scleroderma (SCLERODERMA_LOCALIZED). Open Targets association score 0.07"
+      "description": "IL4R is associated with localized scleroderma (SCLERODERMA_LOCALIZED). Open Targets association score 0.07"
     },
     {
       "source": "IL6R",
@@ -343,6 +343,12 @@
       "description": "VDR is associated with localized scleroderma (SCLERODERMA_LOCALIZED). Open Targets association score 0.02"
     },
     {
+      "source": "CD40LG",
+      "target": "localized scleroderma (SCLERODERMA_LOCALIZED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with localized scleroderma (SCLERODERMA_LOCALIZED). Open Targets association score 0.00"
+    },
+    {
       "source": "PDC",
       "target": "localized scleroderma (SCLERODERMA_LOCALIZED)",
       "type": "ASSOCIATED_WITH",
@@ -353,12 +359,6 @@
       "target": "localized scleroderma (SCLERODERMA_LOCALIZED)",
       "type": "ASSOCIATED_WITH",
       "description": "CD34 is associated with localized scleroderma (SCLERODERMA_LOCALIZED). Open Targets association score 0.00"
-    },
-    {
-      "source": "CD40LG",
-      "target": "localized scleroderma (SCLERODERMA_LOCALIZED)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CD40LG is associated with localized scleroderma (SCLERODERMA_LOCALIZED). Open Targets association score 0.00"
     },
     {
       "source": "ACLY",
@@ -385,18 +385,6 @@
       "description": "CD55 is associated with localized scleroderma (SCLERODERMA_LOCALIZED). Open Targets association score 0.00"
     },
     {
-      "source": "F13A1",
-      "target": "localized scleroderma (SCLERODERMA_LOCALIZED)",
-      "type": "ASSOCIATED_WITH",
-      "description": "F13A1 is associated with localized scleroderma (SCLERODERMA_LOCALIZED). Open Targets association score 0.00"
-    },
-    {
-      "source": "BTG3",
-      "target": "localized scleroderma (SCLERODERMA_LOCALIZED)",
-      "type": "ASSOCIATED_WITH",
-      "description": "BTG3 is associated with localized scleroderma (SCLERODERMA_LOCALIZED). Open Targets association score 0.00"
-    },
-    {
       "source": "IL6",
       "target": "localized scleroderma (SCLERODERMA_LOCALIZED)",
       "type": "ASSOCIATED_WITH",
@@ -407,6 +395,18 @@
       "target": "localized scleroderma (SCLERODERMA_LOCALIZED)",
       "type": "ASSOCIATED_WITH",
       "description": "CD46 is associated with localized scleroderma (SCLERODERMA_LOCALIZED). Open Targets association score 0.00"
+    },
+    {
+      "source": "BTG3",
+      "target": "localized scleroderma (SCLERODERMA_LOCALIZED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTG3 is associated with localized scleroderma (SCLERODERMA_LOCALIZED). Open Targets association score 0.00"
+    },
+    {
+      "source": "F13A1",
+      "target": "localized scleroderma (SCLERODERMA_LOCALIZED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F13A1 is associated with localized scleroderma (SCLERODERMA_LOCALIZED). Open Targets association score 0.00"
     },
     {
       "source": "TNFSF13B",

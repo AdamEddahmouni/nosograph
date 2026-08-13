@@ -1,0 +1,580 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN1",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN1."
+    },
+    {
+      "source": "CHEMBL1042",
+      "target": "VDR",
+      "type": "TARGETS",
+      "description": "CHOLECALCIFEROL targets VDR."
+    },
+    {
+      "source": "CHEMBL1201570",
+      "target": "IL1R1",
+      "type": "TARGETS",
+      "description": "ANAKINRA targets IL1R1."
+    },
+    {
+      "source": "CHEMBL3989989",
+      "target": "CD19",
+      "type": "TARGETS",
+      "description": "AXICABTAGENE CILOLEUCEL targets CD19."
+    },
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN2B",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN2B."
+    },
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN3A",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN3A."
+    },
+    {
+      "source": "CHEMBL940",
+      "target": "CACNA2D1",
+      "type": "TARGETS",
+      "description": "GABAPENTIN targets CACNA2D1."
+    },
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN2D",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN2D."
+    },
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN3B",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN3B."
+    },
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN2C",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN2C."
+    },
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN2A",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN2A."
+    },
+    {
+      "source": "CD19",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD19 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CACNA2D1",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA2D1 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CDK5R1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK5R1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "PARP1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "PARP1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GRIN1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN2A",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2A is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN2B",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2B is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN2C",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2C is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN2D",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2D is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN3A",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN3A is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN3B",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN3B is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GLP1R",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GLP1R is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL1R1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1R1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "PPARGC1A",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARGC1A is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "GRIN2D",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2D is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.26"
+    },
+    {
+      "source": "GRIN2B",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2B is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.26"
+    },
+    {
+      "source": "GRIN2A",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2A is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.26"
+    },
+    {
+      "source": "CACNA2D1",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA2D1 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.26"
+    },
+    {
+      "source": "GRIN3B",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN3B is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.26"
+    },
+    {
+      "source": "GRIN3A",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN3A is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.26"
+    },
+    {
+      "source": "GRIN1",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN1 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.26"
+    },
+    {
+      "source": "GRIN2C",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2C is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.26"
+    },
+    {
+      "source": "CD19",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD19 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.08"
+    },
+    {
+      "source": "IL1R1",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1R1 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.07"
+    },
+    {
+      "source": "VDR",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VDR is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.07"
+    },
+    {
+      "source": "TNF",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GZMB",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GZMB is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.03"
+    },
+    {
+      "source": "BDNF",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BDNF is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "LRRK2",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRK2 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TAT",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAT is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "ITIH4",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITIH4 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "PARP1",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARP1 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "PINK1",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PINK1 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDK5R1",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK5R1 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TARDBP",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TARDBP is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL6",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TGFB1",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "GABPA",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABPA is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CYC1",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYC1 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "HDAC4",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC4 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NAMPT",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAMPT is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC5A2",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC5A2 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NTRK2",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK2 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NDFIP1",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDFIP1 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "FFAR2",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FFAR2 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNCA",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNCG",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCG is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNCB",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCB is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "HTT",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTT is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "STAT3",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CREB1",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREB1 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTPA",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPA is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "HDAC6",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC6 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GHRL",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHRL is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKN",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKN is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GLP1R",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLP1R is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPARGC1A",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARGC1A is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGF1",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFKB1",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NTRK1",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKT1",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACHE",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACHE is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPT",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPT is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GCG",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCG is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZGLP1",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZGLP1 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "EHMT1",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EHMT1 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "APP",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APP is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTGS2",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCHE",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCHE is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "FYN",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FYN is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SYNM",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYNM is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TLR4",
+      "target": "neurotoxicity (NEUROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with neurotoxicity (NEUROTOXICITY). Open Targets association score 0.01"
+    }
+  ]
+}

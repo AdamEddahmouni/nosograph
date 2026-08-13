@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import logging
+
 from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
@@ -13,12 +15,18 @@ from med_research.exceptions import (
     MedResearchError,
     ModuleNotAvailableError,
 )
+from med_research.web.config import DEBUG
+
+logger = logging.getLogger(__name__)
 
 
 def _error_response(status_code: int, exc: Exception) -> JSONResponse:
+    detail = str(exc) if DEBUG or status_code < 500 else "An internal server error occurred."
+    if status_code >= 500 and not DEBUG:
+        logger.exception("Unhandled application error", exc_info=exc)
     return JSONResponse(
         status_code=status_code,
-        content={"detail": str(exc), "error_type": type(exc).__name__},
+        content={"detail": detail, "error_type": type(exc).__name__},
     )
 
 

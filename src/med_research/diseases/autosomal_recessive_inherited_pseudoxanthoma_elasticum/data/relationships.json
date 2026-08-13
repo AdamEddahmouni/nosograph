@@ -1,0 +1,88 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1742982",
+      "target": "VEGFA",
+      "type": "TARGETS",
+      "description": "AFLIBERCEPT targets VEGFA."
+    },
+    {
+      "source": "CHEMBL1742982",
+      "target": "PGF",
+      "type": "TARGETS",
+      "description": "AFLIBERCEPT targets PGF."
+    },
+    {
+      "source": "PGF",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "PGF is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "ABCC2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ABCC6",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC6 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ABCC6",
+      "target": "autosomal recessive inherited pseudoxanthoma elasticum (AUTOSOMAL_RECESSIVE_INHERITED_PSEUDOXANTHOMA_ELASTICUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC6 is associated with autosomal recessive inherited pseudoxanthoma elasticum (AUTOSOMAL_RECESSIVE_INHERITED_PSEUDOXANTHOMA_ELASTICUM). Open Targets association score 0.67"
+    },
+    {
+      "source": "ABCC2",
+      "target": "autosomal recessive inherited pseudoxanthoma elasticum (AUTOSOMAL_RECESSIVE_INHERITED_PSEUDOXANTHOMA_ELASTICUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC2 is associated with autosomal recessive inherited pseudoxanthoma elasticum (AUTOSOMAL_RECESSIVE_INHERITED_PSEUDOXANTHOMA_ELASTICUM). Open Targets association score 0.26"
+    },
+    {
+      "source": "XYLT1",
+      "target": "autosomal recessive inherited pseudoxanthoma elasticum (AUTOSOMAL_RECESSIVE_INHERITED_PSEUDOXANTHOMA_ELASTICUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XYLT1 is associated with autosomal recessive inherited pseudoxanthoma elasticum (AUTOSOMAL_RECESSIVE_INHERITED_PSEUDOXANTHOMA_ELASTICUM). Open Targets association score 0.15"
+    },
+    {
+      "source": "XYLT2",
+      "target": "autosomal recessive inherited pseudoxanthoma elasticum (AUTOSOMAL_RECESSIVE_INHERITED_PSEUDOXANTHOMA_ELASTICUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XYLT2 is associated with autosomal recessive inherited pseudoxanthoma elasticum (AUTOSOMAL_RECESSIVE_INHERITED_PSEUDOXANTHOMA_ELASTICUM). Open Targets association score 0.12"
+    },
+    {
+      "source": "VEGFA",
+      "target": "autosomal recessive inherited pseudoxanthoma elasticum (AUTOSOMAL_RECESSIVE_INHERITED_PSEUDOXANTHOMA_ELASTICUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with autosomal recessive inherited pseudoxanthoma elasticum (AUTOSOMAL_RECESSIVE_INHERITED_PSEUDOXANTHOMA_ELASTICUM). Open Targets association score 0.07"
+    },
+    {
+      "source": "PGF",
+      "target": "autosomal recessive inherited pseudoxanthoma elasticum (AUTOSOMAL_RECESSIVE_INHERITED_PSEUDOXANTHOMA_ELASTICUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGF is associated with autosomal recessive inherited pseudoxanthoma elasticum (AUTOSOMAL_RECESSIVE_INHERITED_PSEUDOXANTHOMA_ELASTICUM). Open Targets association score 0.07"
+    },
+    {
+      "source": "ENPP1",
+      "target": "autosomal recessive inherited pseudoxanthoma elasticum (AUTOSOMAL_RECESSIVE_INHERITED_PSEUDOXANTHOMA_ELASTICUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENPP1 is associated with autosomal recessive inherited pseudoxanthoma elasticum (AUTOSOMAL_RECESSIVE_INHERITED_PSEUDOXANTHOMA_ELASTICUM). Open Targets association score 0.00"
+    },
+    {
+      "source": "NT5E",
+      "target": "autosomal recessive inherited pseudoxanthoma elasticum (AUTOSOMAL_RECESSIVE_INHERITED_PSEUDOXANTHOMA_ELASTICUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NT5E is associated with autosomal recessive inherited pseudoxanthoma elasticum (AUTOSOMAL_RECESSIVE_INHERITED_PSEUDOXANTHOMA_ELASTICUM). Open Targets association score 0.00"
+    }
+  ]
+}

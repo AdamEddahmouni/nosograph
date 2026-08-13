@@ -27,6 +27,7 @@ import redis
 
 # Redis URL for the distributed store. Prefer an explicit
 # REDIS_RATE_LIMIT_URL; otherwise reuse the Celery broker's Redis.
+RATE_LIMIT_FAIL_CLOSED = os.environ.get("RATE_LIMIT_FAIL_CLOSED", "false").lower() == "true"
 REDIS_RATE_LIMIT_URL = (
     os.environ.get("REDIS_RATE_LIMIT_URL")
     or os.environ.get("CELERY_BROKER_URL")
@@ -143,6 +144,8 @@ class RedisRateLimitStore(RateLimitStore):
         try:
             result = self._script(keys=[key], args=[current, window, limit, member])
         except redis.RedisError:
+            if RATE_LIMIT_FAIL_CLOSED:
+                return False, float(window)
             # Fail open: Redis hiccups must not lock out legitimate clients.
             return True, 0.0
         allowed, retry_after = result

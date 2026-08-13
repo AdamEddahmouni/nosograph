@@ -1,0 +1,496 @@
+{
+  "relationships": [
+    {
+      "source": "CDK6",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK6 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "FANCD2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "FANCD2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GRIN2A",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2A is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "JAK1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "AKT2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NRAS",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KIT",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRAF",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP53",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SF3B1",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SF3B1 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EGFR",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NTRK1",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAP2K2",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K2 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FAT1",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT1 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MITF",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MITF is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "HRAS",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NF1",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTPRB",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRB is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CBL",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBL is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NF2",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "MET",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "GNA11",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNA11 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "FH",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FH is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CIITA",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIITA is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TSC2",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "GRIN2A",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2A is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MSH2",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH2 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PTK6",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTK6 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NCOR1",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOR1 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NR4A3",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR4A3 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CDK6",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK6 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "IKZF1",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "AKT2",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT2 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PSIP1",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSIP1 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ATM",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CTNND2",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNND2 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "AKT1",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TFE3",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFE3 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CDX2",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDX2 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "IDH1",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ERBB4",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB4 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PREX2",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PREX2 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "USP6",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP6 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MN1",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MN1 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2D",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FOXP1",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP1 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "DAXX",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAXX is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KDM5C",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM5C is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "DICER1",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DICER1 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CUX1",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUX1 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "JAK1",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK1 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CIC",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIC is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MRTFA",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRTFA is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ROS1",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROS1 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FANCD2",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCD2 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PTEN",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CAMTA1",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMTA1 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RANBP2",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RANBP2 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NTRK2",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK2 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RAC1",
+      "target": "Vaginal Melanoma (VAGINAL_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAC1 is associated with Vaginal Melanoma (VAGINAL_MELANOMA). Open Targets association score 0.18"
+    }
+  ]
+}

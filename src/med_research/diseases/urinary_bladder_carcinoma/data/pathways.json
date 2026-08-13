@@ -1,0 +1,124 @@
+{
+  "pathways": [
+    {
+      "id": "cell-cycle",
+      "name": "Cell Cycle Regulation",
+      "description": "Cyclin-CDK machinery controlling cell division; a backbone of oncology target discovery.",
+      "key_components": [
+        "CCNE1",
+        "CDKN1A",
+        "CDKN2A",
+        "RB1"
+      ],
+      "therapeutic_targets": [
+        "CCNE1",
+        "CDKN1A",
+        "CDKN2A",
+        "RB1"
+      ],
+      "references": []
+    },
+    {
+      "id": "dna-repair",
+      "name": "DNA Repair",
+      "description": "Homologous recombination, mismatch repair, and base excision pathways preserving genome integrity.",
+      "key_components": [
+        "ATM",
+        "BRCA1",
+        "BRCA2",
+        "TP53"
+      ],
+      "therapeutic_targets": [
+        "ATM",
+        "BRCA1",
+        "BRCA2",
+        "TP53"
+      ],
+      "references": []
+    },
+    {
+      "id": "immune-checkpoint",
+      "name": "Immune Checkpoint Signaling",
+      "description": "Co-inhibitory receptor signaling (PD-1/CTLA-4/TIGIT/LAG-3) that restrains T cell responses.",
+      "key_components": [
+        "CD274"
+      ],
+      "therapeutic_targets": [
+        "CD274"
+      ],
+      "references": []
+    },
+    {
+      "id": "mapk-erk",
+      "name": "MAPK / ERK Signaling",
+      "description": "RAS-RAF-MEK-ERK cascade coupling growth factor receptors to proliferation and differentiation.",
+      "key_components": [
+        "EGFR",
+        "FGFR3",
+        "HRAS",
+        "KRAS"
+      ],
+      "therapeutic_targets": [
+        "EGFR",
+        "FGFR3",
+        "HRAS",
+        "KRAS"
+      ],
+      "references": []
+    },
+    {
+      "id": "notch-signaling",
+      "name": "Notch Signaling",
+      "description": "Notch receptor signaling regulating cell fate decisions and immune development.",
+      "key_components": [
+        "JAG1"
+      ],
+      "therapeutic_targets": [
+        "JAG1"
+      ],
+      "references": []
+    },
+    {
+      "id": "pi3k-akt-mtor",
+      "name": "PI3K / AKT / mTOR Signaling",
+      "description": "Growth and survival signaling through PI3K-AKT-mTOR; a major oncology and immunology target hub.",
+      "key_components": [
+        "PIK3CA",
+        "PTEN",
+        "TSC1"
+      ],
+      "therapeutic_targets": [
+        "PIK3CA",
+        "PTEN",
+        "TSC1"
+      ],
+      "references": []
+    },
+    {
+      "id": "wnt-signaling",
+      "name": "Wnt Signaling",
+      "description": "Canonical Wnt/β-catenin signaling controlling cell fate, proliferation, and tissue regeneration.",
+      "key_components": [
+        "CTNNB1"
+      ],
+      "therapeutic_targets": [
+        "CTNNB1"
+      ],
+      "references": []
+    },
+    {
+      "id": "xenobiotic-metabolism",
+      "name": "Xenobiotic Metabolism",
+      "description": "Cytochrome P450 and conjugating enzymes governing drug metabolism and toxicity.",
+      "key_components": [
+        "GSTM1",
+        "GSTM4"
+      ],
+      "therapeutic_targets": [
+        "GSTM1",
+        "GSTM4"
+      ],
+      "references": []
+    }
+  ]
+}

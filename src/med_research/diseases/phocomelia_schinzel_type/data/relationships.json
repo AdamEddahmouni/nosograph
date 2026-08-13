@@ -1,0 +1,454 @@
+{
+  "relationships": [
+    {
+      "source": "FGF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLI2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "IHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BMP5",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP5 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "BMPR1B",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMPR1B is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PTHLH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTHLH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "LRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT5A",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT5A is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT7A",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT7A is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP51A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP51A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "WNT7A",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT7A is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.77"
+    },
+    {
+      "source": "ROR2",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROR2 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.06"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.06"
+    },
+    {
+      "source": "GLI3",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL2A1",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "PHEX",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHEX is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "WNT5A",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT5A is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXA11",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA11 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "BMP5",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP5 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "GLI2",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI2 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "TP63",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGFR3",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXD13",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD13 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGF9",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF9 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "IFT172",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT172 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZEB1",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "PITX1",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX1 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "GDF5",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF5 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "SP8",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SP8 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "RSPO2",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO2 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "TBX15",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX15 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "SMPD3",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMPD3 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "NABP2",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NABP2 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "RPL38",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL38 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "SOX9",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX9 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGFR1",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "HOXD12",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD12 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "POSTN",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POSTN is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "IHH",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IHH is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRRX1",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRRX1 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRP6",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP6 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC10A7",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC10A7 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CILK1",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CILK1 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "NPR2",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPR2 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTHLH",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTHLH is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "TENT5A",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TENT5A is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "PHOSPHO1",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHOSPHO1 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "EVC",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EVC is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "FLNB",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLNB is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXC1",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "BMPR1B",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMPR1B is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "HOXC10",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXC10 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "FGFR2",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "HOXD11",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD11 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "HOXA10",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA10 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ACAN",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACAN is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFITM5",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFITM5 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CYP51A1",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP51A1 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CXXC5",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXXC5 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "PDS5B",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDS5B is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "DYM",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYM is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SALL1",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SALL1 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOX11",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX11 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "WDR19",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR19 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "FSTL1",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSTL1 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "RYK",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYK is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "PCSK5",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK5 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SC5D",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SC5D is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "LNPK",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LNPK is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "LRRK1",
+      "target": "phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRK1 is associated with phocomelia, Schinzel type (PHOCOMELIA_SCHINZEL_TYPE). Open Targets association score 0.03"
+    }
+  ]
+}

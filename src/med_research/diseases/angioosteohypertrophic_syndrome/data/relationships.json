@@ -1,0 +1,532 @@
+{
+  "relationships": [
+    {
+      "source": "SOST",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "SOST is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "CCL27",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL27 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "ATRNL1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRNL1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLP1R",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GLP1R is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL15",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL15 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL15RA",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL15RA is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "ITGAX",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAX is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "FABP4",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "FABP4 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "RASA1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASA1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "ACE2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD28",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD28 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL21",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL21 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGAX",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAX is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "NAT10",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NAT10 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.51"
+    },
+    {
+      "source": "RASA1",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASA1 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.50"
+    },
+    {
+      "source": "GNAQ",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAQ is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.34"
+    },
+    {
+      "source": "CD8A",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "HOXD13",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD13 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXA13",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA13 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GDF5",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF5 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GLI3",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ROGDI",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROGDI is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD4",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FMN1",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMN1 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "LMBR1",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMBR1 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTCH1",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MKS1",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKS1 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GRIP1",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIP1 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SFRP2",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFRP2 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL15",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL15 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL10",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "AGGF1",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGGF1 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "ACE2",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE2 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "LEP",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL2",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "FABP4",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FABP4 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "MMP9",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD68",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD68 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "HSPB3",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPB3 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "HSPB2",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPB2 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "HSPB1",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPB1 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD28",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD28 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL21",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL21 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD163",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD163 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD14",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD14 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "FCGR3A",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR3A is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "FCGR3B",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR3B is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "MSTN",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSTN is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPP1",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPP1 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOST",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOST is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "GLP1R",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLP1R is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL15RA",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL15RA is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ITGAX",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAX is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC13A5",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC13A5 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "NAT10",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAT10 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDLIM3",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDLIM3 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ASRGL1",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASRGL1 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCL27",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL27 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATRNL1",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRNL1 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALPP",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPP is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLPI",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLPI is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNG",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADIPOQ",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOQ is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF11B is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "DKK1",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DKK1 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SERPINC1",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINC1 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CST3",
+      "target": "angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CST3 is associated with angioosteohypertrophic syndrome (ANGIOOSTEOHYPERTROPHIC_SYNDROME). Open Targets association score 0.01"
+    }
+  ]
+}

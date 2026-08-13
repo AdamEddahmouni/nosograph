@@ -1,0 +1,418 @@
+{
+  "relationships": [
+    {
+      "source": "C10orf71",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C10orf71 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL13A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL13A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL6A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL6A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL6A3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL6A3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ITGA7",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA7 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELENON",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELENON is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "MRGPRD",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "MRGPRD is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "ITGA7",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA7 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "LRP1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "SLC5A6",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC5A6 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.62"
+    },
+    {
+      "source": "DES",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DES is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.06"
+    },
+    {
+      "source": "DMD",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMD is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.06"
+    },
+    {
+      "source": "RYR1",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYR1 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.06"
+    },
+    {
+      "source": "MYH4",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH4 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.06"
+    },
+    {
+      "source": "DNAJB4",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAJB4 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYBPC3",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYBPC3 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "LMNA",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNA is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "GAA",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAA is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "EMD",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EMD is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "CAV3",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAV3 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "DYSF",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYSF is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "XIRP1",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XIRP1 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "LAMA2",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMA2 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "LMOD2",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMOD2 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "DNM2",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM2 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNNT1",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNT1 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "SGCD",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCD is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "RBM20",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM20 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL6A3",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL6A3 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "CAPN3",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAPN3 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL6A1",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL6A1 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "SGCB",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCB is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CSRP3",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSRP3 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "LMOD3",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMOD3 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "MYOZ2",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYOZ2 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "NEB",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEB is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC6A6",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A6 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "SYNM",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYNM is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL13A1",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL13A1 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "TTN",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTN is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "TCAP",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCAP is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "SRPK3",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRPK3 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNNC1",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNC1 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "IGHMBP2",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGHMBP2 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "BARX2",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BARX2 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "PABPN1",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PABPN1 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "SCN4A",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN4A is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "C10orf71",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C10orf71 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "SELENON",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELENON is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "MTM1",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTM1 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CAP2",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAP2 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "SGCA",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCA is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRP1",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "SGCG",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCG is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CALR",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALR is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "PDLIM5",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDLIM5 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "FLNC",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLNC is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "LARGE1",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LARGE1 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "FKRP",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKRP is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CHD4",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD4 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "ATP7A",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP7A is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "MYL2",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYL2 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "MRGPRD",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRGPRD is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "DTNA",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DTNA is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "ALPK3",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPK3 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLEC",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLEC is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "ITGA7",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA7 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "MYH6",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH6 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRRC10",
+      "target": "peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRC10 is associated with peripheral motor neuropathy, childhood-onset, biotin-responsive (PERIPHERAL_MOTOR_NEUROPATHY_CHILDHOOD_ONSET_BIOTIN_RESPONSIVE). Open Targets association score 0.04"
+    }
+  ]
+}

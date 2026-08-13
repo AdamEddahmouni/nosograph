@@ -45,6 +45,7 @@ CAR_T_SCORES = {
         "COL11A2": 4.0,
         "COL4A1": 4.0,
         "DCT": 4.0,
+        "DNAH11": 4.0,
         "DSC1": 4.0,
         "EDA": 4.0,
         "EDAR": 4.0,

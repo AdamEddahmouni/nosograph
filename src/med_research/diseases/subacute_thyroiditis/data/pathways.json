@@ -1,0 +1,138 @@
+{
+  "pathways": [
+    {
+      "id": "apoptosis",
+      "name": "Apoptosis",
+      "description": "Intrinsic and extrinsic programmed cell death; dysregulation contributes to autoimmunity and cancer.",
+      "key_components": [
+        "BAX",
+        "BCL2"
+      ],
+      "therapeutic_targets": [
+        "BAX",
+        "BCL2"
+      ],
+      "references": []
+    },
+    {
+      "id": "coagulation",
+      "name": "Coagulation Cascade",
+      "description": "Plasma coagulation factors and fibrinolysis; a hub for cardiovascular and thrombotic disease.",
+      "key_components": [
+        "F2"
+      ],
+      "therapeutic_targets": [
+        "F2"
+      ],
+      "references": []
+    },
+    {
+      "id": "il6-signaling",
+      "name": "IL-6 Signaling",
+      "description": "Interleukin-6 signaling via gp130 and STAT3; a key amplifier of systemic inflammation.",
+      "key_components": [
+        "IL6"
+      ],
+      "therapeutic_targets": [
+        "IL6"
+      ],
+      "references": []
+    },
+    {
+      "id": "integrin-adhesion",
+      "name": "Integrin / Cell Adhesion",
+      "description": "Integrin-mediated adhesion and leukocyte trafficking into inflamed tissue.",
+      "key_components": [
+        "ICAM1"
+      ],
+      "therapeutic_targets": [
+        "ICAM1"
+      ],
+      "references": []
+    },
+    {
+      "id": "renin-angiotensin",
+      "name": "Renin-Angiotensin System",
+      "description": "Renin-angiotensin-aldosterone axis controlling blood pressure and fluid balance.",
+      "key_components": [
+        "ACE2"
+      ],
+      "therapeutic_targets": [
+        "ACE2"
+      ],
+      "references": []
+    },
+    {
+      "id": "tcr-signaling",
+      "name": "T Cell Receptor Signaling",
+      "description": "TCR signal transduction and T cell activation; a therapeutic hub in autoimmunity.",
+      "key_components": [
+        "CD4",
+        "CD8A"
+      ],
+      "therapeutic_targets": [
+        "CD4",
+        "CD8A"
+      ],
+      "references": []
+    },
+    {
+      "id": "thyroid-hormone",
+      "name": "Thyroid Hormone Signaling",
+      "description": "Thyroid hormone synthesis, transport, and nuclear receptor signaling.",
+      "key_components": [
+        "PTGS2",
+        "TG",
+        "TPO",
+        "TSHR"
+      ],
+      "therapeutic_targets": [
+        "PTGS2",
+        "TG",
+        "TPO",
+        "TSHR"
+      ],
+      "references": []
+    },
+    {
+      "id": "tnf-signaling",
+      "name": "TNF Signaling",
+      "description": "Tumor necrosis factor receptor superfamily signaling; central to many autoimmune and inflammatory diseases.",
+      "key_components": [
+        "FAS",
+        "FASLG",
+        "TNF"
+      ],
+      "therapeutic_targets": [
+        "FAS",
+        "FASLG",
+        "TNF"
+      ],
+      "references": []
+    },
+    {
+      "id": "type1-ifn",
+      "name": "Type I Interferon Pathway",
+      "description": "IFN-α/β production and signaling through IFNAR; drives the interferon gene signature in autoimmune disease.",
+      "key_components": [
+        "IFNG"
+      ],
+      "therapeutic_targets": [
+        "IFNG"
+      ],
+      "references": []
+    },
+    {
+      "id": "mast-cell",
+      "name": "Mast Cell / IgE Signaling",
+      "description": "FcεRI-mediated mast cell activation and degranulation in allergic disease.",
+      "key_components": [
+        "KITLG"
+      ],
+      "therapeutic_targets": [
+        "KITLG"
+      ],
+      "references": []
+    }
+  ]
+}

@@ -1,0 +1,472 @@
+{
+  "relationships": [
+    {
+      "source": "CSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "F7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "HSF2BP",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "HSF2BP is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MLH1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MLH1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ADAM12",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM12 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL1A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL1A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLI1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "SHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BMP2",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP2 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "BMP4",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP4 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "MTHFR",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFR is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGM2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "AFP",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with trisomy (TRISOMY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTHFR",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFR is associated with trisomy (TRISOMY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TTC3",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC3 is associated with trisomy (TRISOMY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TF",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with trisomy (TRISOMY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with trisomy (TRISOMY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNG",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with trisomy (TRISOMY). Open Targets association score 0.01"
+    },
+    {
+      "source": "S100B",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100B is associated with trisomy (TRISOMY). Open Targets association score 0.01"
+    },
+    {
+      "source": "APP",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APP is associated with trisomy (TRISOMY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SHH",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHH is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PAPPA2",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAPPA2 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHD7",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD7 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "FGFR3",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "EWSR1",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EWSR1 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PAPPA",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAPPA is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADAM12",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAM12 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CGA",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGA is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CGB5",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB5 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "F7",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F7 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "RUNX1",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "COL1A1",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A1 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGFB1",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "BMP2",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP2 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CSF2",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IDH2",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH2 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "AOPEP",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOPEP is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "UBTF",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBTF is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATP12A",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP12A is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "HK1",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HK1 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "COL1A2",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A2 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "RUNX1T1",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1T1 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TRIB1",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIB1 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "BMP4",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP4 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GLI1",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI1 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYC",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "KNG1",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KNG1 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PECAM1",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PECAM1 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIEZO1",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIEZO1 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD34",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "WT1",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGF1",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SH3BGR",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3BGR is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD7",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD7 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "STAG2",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAG2 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPI1",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPI1 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MLH1",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLH1 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "FLT3",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GGH",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGH is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "BRAF",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPL17",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "RRM2",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RRM2 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "HSF2BP",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSF2BP is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GH1",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "DYRK1A",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYRK1A is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "U2AF1",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "U2AF1 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGM2",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM2 is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PCNT",
+      "target": "trisomy (TRISOMY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNT is associated with trisomy (TRISOMY). Open Targets association score 0.00"
+    }
+  ]
+}

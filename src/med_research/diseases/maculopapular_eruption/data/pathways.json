@@ -1,0 +1,84 @@
+{
+  "pathways": [
+    {
+      "id": "complement",
+      "name": "Complement Cascade",
+      "description": "Classical, lectin, and alternative complement pathways for opsonization, lysis, and immune complex clearance.",
+      "key_components": [
+        "CFH",
+        "CFHR2",
+        "CFHR4"
+      ],
+      "therapeutic_targets": [
+        "CFH",
+        "CFHR2",
+        "CFHR4"
+      ],
+      "references": []
+    },
+    {
+      "id": "il6-signaling",
+      "name": "IL-6 Signaling",
+      "description": "Interleukin-6 signaling via gp130 and STAT3; a key amplifier of systemic inflammation.",
+      "key_components": [
+        "IL6"
+      ],
+      "therapeutic_targets": [
+        "IL6"
+      ],
+      "references": []
+    },
+    {
+      "id": "immune-checkpoint",
+      "name": "Immune Checkpoint Signaling",
+      "description": "Co-inhibitory receptor signaling (PD-1/CTLA-4/TIGIT/LAG-3) that restrains T cell responses.",
+      "key_components": [
+        "CD274",
+        "PDCD1"
+      ],
+      "therapeutic_targets": [
+        "CD274",
+        "PDCD1"
+      ],
+      "references": []
+    },
+    {
+      "id": "renin-angiotensin",
+      "name": "Renin-Angiotensin System",
+      "description": "Renin-angiotensin-aldosterone axis controlling blood pressure and fluid balance.",
+      "key_components": [
+        "HACE1"
+      ],
+      "therapeutic_targets": [
+        "HACE1"
+      ],
+      "references": []
+    },
+    {
+      "id": "tnf-signaling",
+      "name": "TNF Signaling",
+      "description": "Tumor necrosis factor receptor superfamily signaling; central to many autoimmune and inflammatory diseases.",
+      "key_components": [
+        "TNF"
+      ],
+      "therapeutic_targets": [
+        "TNF"
+      ],
+      "references": []
+    },
+    {
+      "id": "type1-ifn",
+      "name": "Type I Interferon Pathway",
+      "description": "IFN-α/β production and signaling through IFNAR; drives the interferon gene signature in autoimmune disease.",
+      "key_components": [
+        "IFNA6",
+        "IFNG"
+      ],
+      "therapeutic_targets": [
+        "IFNA6",
+        "IFNG"
+      ],
+      "references": []
+    }
+  ]
+}

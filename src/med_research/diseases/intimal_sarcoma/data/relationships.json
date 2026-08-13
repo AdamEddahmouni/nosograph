@@ -1,0 +1,568 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201577",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "CETUXIMAB targets EGFR."
+    },
+    {
+      "source": "CHEMBL1289926",
+      "target": "KDR",
+      "type": "TARGETS",
+      "description": "AXITINIB targets KDR."
+    },
+    {
+      "source": "CHEMBL2105717",
+      "target": "KDR",
+      "type": "TARGETS",
+      "description": "CABOZANTINIB targets KDR."
+    },
+    {
+      "source": "CHEMBL3545402",
+      "target": "PDGFRA",
+      "type": "TARGETS",
+      "description": "XL-820 targets PDGFRA."
+    },
+    {
+      "source": "CHEMBL4303201",
+      "target": "KDR",
+      "type": "TARGETS",
+      "description": "CATEQUENTINIB targets KDR."
+    },
+    {
+      "source": "CHEMBL482968",
+      "target": "KDR",
+      "type": "TARGETS",
+      "description": "ENMD-2076 targets KDR."
+    },
+    {
+      "source": "CHEMBL522892",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "DOVITINIB targets KIT."
+    },
+    {
+      "source": "CHEMBL465",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "TREATS",
+      "description": "DRONABINOL is phase 4 / marketed for Intimal Sarcoma (INTIMAL_SARCOMA)."
+    },
+    {
+      "source": "CDK4",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK4 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ATR",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATR is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MLH1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MLH1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GRIN2A",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2A is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GLI1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT4",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT4 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "GSTM1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "PDGFRB",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "ALK",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "TP53",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "JAK3",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PTCH1",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "BARD1",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BARD1 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FAT1",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT1 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ERCC2",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC2 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "U2AF1",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "U2AF1 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "GATA1",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA1 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RECQL4",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RECQL4 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MDM4",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM4 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ATR",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATR is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "GRIN2A",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2A is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ERCC5",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC5 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ERBB4",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB4 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SETD2",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD2 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SOX2",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX2 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "NSD1",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSD1 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "EIF1AX",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF1AX is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "MDM2",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM2 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TERT",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TF",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGFR",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD44",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFKB1",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "APC",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RUNX1",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDK4",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK4 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GLI1",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI1 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MLH1",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLH1 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "UMPS",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UMPS is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PECAM1",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PECAM1 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL6",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KDR",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD4",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "VIM",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIM is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "DES",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DES is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GSTM1",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM1 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD8A",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TWIST1",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TWIST1 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PMS2",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMS2 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ROS1",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROS1 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "STAT4",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT4 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CALR",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALR is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KIT",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "STAT3",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRP",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "STPG2",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STPG2 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "BTN1A1",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTN1A1 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL2",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CREB1",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREB1 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FBXW7",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXW7 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "S100A1",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A1 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD34",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNG",
+      "target": "Intimal Sarcoma (INTIMAL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with Intimal Sarcoma (INTIMAL_SARCOMA). Open Targets association score 0.00"
+    }
+  ]
+}

@@ -1,0 +1,448 @@
+{
+  "relationships": [
+    {
+      "source": "PLCG2",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLCG2 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "HAVCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ADAM10",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM10 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "HAVCR2",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR2 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ITGA2B",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA2B is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "TNIP1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "TNIP1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "ADAM10",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM10 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGTR1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGTR1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD33",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD33 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ITGA2B",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA2B is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ABCC2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.62"
+    },
+    {
+      "source": "CR1",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CR1 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.47"
+    },
+    {
+      "source": "CLU",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLU is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.43"
+    },
+    {
+      "source": "APP",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APP is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.41"
+    },
+    {
+      "source": "SLC24A4",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC24A4 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.38"
+    },
+    {
+      "source": "TREM2",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREM2 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.37"
+    },
+    {
+      "source": "ATP5F1C",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP5F1C is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.37"
+    },
+    {
+      "source": "ABI3",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABI3 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.36"
+    },
+    {
+      "source": "PLCG2",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCG2 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.36"
+    },
+    {
+      "source": "APH1B",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APH1B is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.36"
+    },
+    {
+      "source": "CD33",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD33 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.35"
+    },
+    {
+      "source": "GRN",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRN is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.35"
+    },
+    {
+      "source": "BIN1",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIN1 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.35"
+    },
+    {
+      "source": "ACE",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.34"
+    },
+    {
+      "source": "CLNK",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLNK is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.34"
+    },
+    {
+      "source": "OARD1",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OARD1 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.34"
+    },
+    {
+      "source": "MOB3B",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MOB3B is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.32"
+    },
+    {
+      "source": "HAVCR2",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAVCR2 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.32"
+    },
+    {
+      "source": "SORL1",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORL1 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.32"
+    },
+    {
+      "source": "TMEM106B",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM106B is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.30"
+    },
+    {
+      "source": "PILRA",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PILRA is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.30"
+    },
+    {
+      "source": "ADAM10",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAM10 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.30"
+    },
+    {
+      "source": "TSPOAP1",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSPOAP1 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.30"
+    },
+    {
+      "source": "GFAP",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.30"
+    },
+    {
+      "source": "TNIP1",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNIP1 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.29"
+    },
+    {
+      "source": "CASS4",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASS4 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.29"
+    },
+    {
+      "source": "MS4A4E",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MS4A4E is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.28"
+    },
+    {
+      "source": "MPDZ",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPDZ is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.28"
+    },
+    {
+      "source": "PSG2",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSG2 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.28"
+    },
+    {
+      "source": "ZNF652",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF652 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.28"
+    },
+    {
+      "source": "USP6NL",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP6NL is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.26"
+    },
+    {
+      "source": "ZNF461",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF461 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.24"
+    },
+    {
+      "source": "EPHA1",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHA1 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.23"
+    },
+    {
+      "source": "FAM171A2",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM171A2 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.23"
+    },
+    {
+      "source": "SHARPIN",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHARPIN is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.23"
+    },
+    {
+      "source": "RIN3",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIN3 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.22"
+    },
+    {
+      "source": "OPLAH",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OPLAH is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.22"
+    },
+    {
+      "source": "MPI",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPI is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.21"
+    },
+    {
+      "source": "NCK2",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCK2 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.21"
+    },
+    {
+      "source": "ABCA7",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA7 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.21"
+    },
+    {
+      "source": "MINDY2",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MINDY2 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.20"
+    },
+    {
+      "source": "ITGA2B",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA2B is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.20"
+    },
+    {
+      "source": "MS4A6A",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MS4A6A is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.19"
+    },
+    {
+      "source": "PICALM",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PICALM is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.19"
+    },
+    {
+      "source": "TYROBP",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYROBP is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.19"
+    },
+    {
+      "source": "CYB561",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYB561 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.18"
+    },
+    {
+      "source": "HS3ST1",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HS3ST1 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.18"
+    },
+    {
+      "source": "NFYA",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFYA is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.18"
+    },
+    {
+      "source": "CD2AP",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD2AP is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.18"
+    },
+    {
+      "source": "CSNK2A1",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSNK2A1 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.17"
+    },
+    {
+      "source": "TOMM40",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOMM40 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.16"
+    },
+    {
+      "source": "DOCK2",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK2 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.16"
+    },
+    {
+      "source": "PSG11",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSG11 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.15"
+    },
+    {
+      "source": "HCK",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HCK is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.15"
+    },
+    {
+      "source": "LILRA5",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LILRA5 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.15"
+    },
+    {
+      "source": "PSEN1",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSEN1 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.14"
+    },
+    {
+      "source": "AGTR1",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGTR1 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.14"
+    },
+    {
+      "source": "GAB2",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAB2 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.14"
+    },
+    {
+      "source": "HSPA1A",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPA1A is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.14"
+    },
+    {
+      "source": "ABCC2",
+      "target": "late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC2 is associated with late-onset Alzheimers disease (LATE_ONSET_ALZHEIMERS_DISEASE). Open Targets association score 0.14"
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+{
+  "relationships": [
+    {
+      "source": "SQSTM1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SQSTM1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CACNA1S",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1S is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "FGF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IGF2BP2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2BP2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SULF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SULF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "DPP4",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "DPP4 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GLI2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CHUK",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CHUK is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "DPAGT1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "DPAGT1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "PTH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "FBN2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "FBN2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "GNPTG",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "GNPTG is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "GNPTAB",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNPTAB is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.83"
+    },
+    {
+      "source": "ROR2",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROR2 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.04"
+    },
+    {
+      "source": "IDUA",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDUA is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZEB1",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.03"
+    },
+    {
+      "source": "LRRK1",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRK1 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.03"
+    },
+    {
+      "source": "FOXC1",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.03"
+    },
+    {
+      "source": "FGF9",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF9 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.03"
+    },
+    {
+      "source": "FBN2",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBN2 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPR2",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPR2 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZMPSTE24",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZMPSTE24 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.03"
+    },
+    {
+      "source": "RPL38",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL38 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.03"
+    },
+    {
+      "source": "CACNA1S",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1S is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.03"
+    },
+    {
+      "source": "SH3PXD2B",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3PXD2B is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOX11",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX11 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.03"
+    },
+    {
+      "source": "CPLANE1",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPLANE1 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.03"
+    },
+    {
+      "source": "IDS",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDS is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHUK",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHUK is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.03"
+    },
+    {
+      "source": "SCUBE3",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCUBE3 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.03"
+    },
+    {
+      "source": "HEY2",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEY2 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.03"
+    },
+    {
+      "source": "TBX15",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX15 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.03"
+    },
+    {
+      "source": "FGFR2",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.03"
+    },
+    {
+      "source": "GLI2",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI2 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTH",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTH is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.02"
+    },
+    {
+      "source": "FAP",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAP is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "DPP4",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPP4 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "GNPTG",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNPTG is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTSL",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSL is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "OGA",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OGA is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "GLB1",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLB1 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "LYSET",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYSET is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "ART4",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ART4 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "GAL",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAL is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "GALNS",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GALNS is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "DPAGT1",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPAGT1 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "SERPINA1",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA1 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTSK",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSK is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.01"
+    },
+    {
+      "source": "RNASE7",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNASE7 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "MBTPS1",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBTPS1 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "BRAP",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAP is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "IMPA1",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IMPA1 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPP1CB",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1CB is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "TF",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATM",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "POLG",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLG is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "AP2S1",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AP2S1 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "DGUOK",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DGUOK is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "NAGLU",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAGLU is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "MECP2",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MECP2 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "GNA11",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNA11 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "ARSH",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARSH is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "SQSTM1",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SQSTM1 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "NAGPA",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAGPA is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSAP",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSAP is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "CTSS",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSS is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGF2BP2",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2BP2 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "SULF1",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SULF1 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "ARSL",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARSL is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACP2",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACP2 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.00"
+    },
+    {
+      "source": "SULF2",
+      "target": "mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SULF2 is associated with mucolipidosis type II (MUCOLIPIDOSIS_TYPE_II). Open Targets association score 0.00"
+    }
+  ]
+}

@@ -1,0 +1,496 @@
+{
+  "relationships": [
+    {
+      "source": "CDK6",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK6 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ACKR1",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ACKR1 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL12",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL12 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL6",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL6 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "IRF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MARCHF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "MARCHF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TNFRSF10C",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF10C is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF4A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF4A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "ITGA4",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA4 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "MAPK4",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK4 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RASA2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASA2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ITGA4",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA4 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFRSF10C",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF10C is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IRF8",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ACKR1",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACKR1 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.47"
+    },
+    {
+      "source": "CSF3R",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3R is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.45"
+    },
+    {
+      "source": "CXCL6",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL6 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.45"
+    },
+    {
+      "source": "LY75",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LY75 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.44"
+    },
+    {
+      "source": "RIN3",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIN3 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.42"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.42"
+    },
+    {
+      "source": "JAML",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAML is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.41"
+    },
+    {
+      "source": "MPO",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPO is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.39"
+    },
+    {
+      "source": "FLT3",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.38"
+    },
+    {
+      "source": "EHD4",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EHD4 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.38"
+    },
+    {
+      "source": "ARHGAP23",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP23 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.38"
+    },
+    {
+      "source": "NLRP3",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.37"
+    },
+    {
+      "source": "GC",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GC is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.37"
+    },
+    {
+      "source": "LYZ",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYZ is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.36"
+    },
+    {
+      "source": "TNFRSF10C",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF10C is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.36"
+    },
+    {
+      "source": "S1PR4",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S1PR4 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.36"
+    },
+    {
+      "source": "ADGRL4",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADGRL4 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.36"
+    },
+    {
+      "source": "LEPR",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.36"
+    },
+    {
+      "source": "CXCR2",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR2 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.36"
+    },
+    {
+      "source": "PTPN22",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.36"
+    },
+    {
+      "source": "ACVRL1",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACVRL1 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.35"
+    },
+    {
+      "source": "SH2B3",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2B3 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.35"
+    },
+    {
+      "source": "NOSTRIN",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOSTRIN is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.35"
+    },
+    {
+      "source": "CXCL12",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL12 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.35"
+    },
+    {
+      "source": "IFITM2",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFITM2 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.35"
+    },
+    {
+      "source": "GSDMA",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMA is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.35"
+    },
+    {
+      "source": "LIPA",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPA is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.35"
+    },
+    {
+      "source": "TADA2B",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TADA2B is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.35"
+    },
+    {
+      "source": "TNS3",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNS3 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.35"
+    },
+    {
+      "source": "ADRB2",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB2 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.35"
+    },
+    {
+      "source": "ATXN1",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATXN1 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.34"
+    },
+    {
+      "source": "SLC25A24",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A24 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.34"
+    },
+    {
+      "source": "ITGA4",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA4 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.34"
+    },
+    {
+      "source": "MARCHF7",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MARCHF7 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.34"
+    },
+    {
+      "source": "TERT",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.33"
+    },
+    {
+      "source": "KIT",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.33"
+    },
+    {
+      "source": "TRIM37",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM37 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.33"
+    },
+    {
+      "source": "PLPP3",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLPP3 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.32"
+    },
+    {
+      "source": "SLC12A7",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A7 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.32"
+    },
+    {
+      "source": "HNF4A",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF4A is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.32"
+    },
+    {
+      "source": "GCKR",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.32"
+    },
+    {
+      "source": "GLCCI1",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLCCI1 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.32"
+    },
+    {
+      "source": "MAPK4",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK4 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.32"
+    },
+    {
+      "source": "STXBP6",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STXBP6 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.32"
+    },
+    {
+      "source": "ZMIZ2",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZMIZ2 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.32"
+    },
+    {
+      "source": "SMIM35",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMIM35 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.31"
+    },
+    {
+      "source": "CDK6",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK6 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.31"
+    },
+    {
+      "source": "IRF8",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF8 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.31"
+    },
+    {
+      "source": "CXCL2",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL2 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.31"
+    },
+    {
+      "source": "FADS1",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS1 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.31"
+    },
+    {
+      "source": "CD164",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD164 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.31"
+    },
+    {
+      "source": "EML6",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EML6 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.31"
+    },
+    {
+      "source": "DOCK8",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK8 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.31"
+    },
+    {
+      "source": "PLAUR",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAUR is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.30"
+    },
+    {
+      "source": "SLC45A4",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC45A4 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.30"
+    },
+    {
+      "source": "ETS1",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETS1 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.30"
+    },
+    {
+      "source": "FRAT1",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FRAT1 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.30"
+    },
+    {
+      "source": "RASA2",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASA2 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.30"
+    },
+    {
+      "source": "CREBBP",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.30"
+    },
+    {
+      "source": "EXOC3L2",
+      "target": "sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EXOC3L2 is associated with sum of neutrophil and eosinophil counts (SUM_OF_NEUTROPHIL_AND_EOSINOPHIL_COUNTS). Open Targets association score 0.29"
+    }
+  ]
+}

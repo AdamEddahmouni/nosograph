@@ -1,0 +1,496 @@
+{
+  "relationships": [
+    {
+      "source": "SOST",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "SOST is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "TNFRSF11A",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11A is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "KLF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "KLF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SCARF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SCARF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL10A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL10A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL1A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TIMP1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BMPR1B",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMPR1B is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL6ST",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6ST is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "SOCS2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "SOCS2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "RPS6KA3",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "RPS6KA3 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "THBS3",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THBS3 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11A",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11A is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "LRP5",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP5 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP27B1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP27B1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GDF5",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF5 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "LNPK",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LNPK is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "HOXD13",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD13 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "GLI3",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "FGFR3",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "LRP5",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP5 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "FMN1",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMN1 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CST5",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CST5 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CST3",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CST3 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "NOTCH2",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH2 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "HOXA13",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA13 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "COL2A1",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "MMP9",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "EVX2",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EVX2 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "KLF10",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF10 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "TIMP1",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP1 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "PHEX",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHEX is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "SOST",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOST is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLC29A4",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC29A4 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CXXC5",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXXC5 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CYP27B1",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP27B1 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "IGFALS",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGFALS is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "TNNI1",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNI1 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "SCARF2",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCARF2 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "PDE3B",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE3B is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "TRIM5",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM5 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "WDR4",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR4 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "ST6GAL2",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST6GAL2 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "TP63",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "COL10A1",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL10A1 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MSTN",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSTN is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SFRP4",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFRP4 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ANO5",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANO5 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PHOSPHO1",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHOSPHO1 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "STAT1",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT1 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "THBS3",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THBS3 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SOCS2",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOCS2 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "BBLN",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BBLN is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TBX4",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX4 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXD12",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD12 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXD11",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD11 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL1A2",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A2 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "IFITM5",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFITM5 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "IFT80",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT80 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "LGALS3",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL6ST",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6ST is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "RPS6KA3",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPS6KA3 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SMPD3",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMPD3 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ACP5",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACP5 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "INPP4B",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INPP4B is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRKD3",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKD3 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "BMPR1B",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMPR1B is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXD9",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD9 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NBR1",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBR1 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "QRFPR",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "QRFPR is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NPR3",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPR3 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNFRSF11A",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF11A is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "BGN",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BGN is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRRK1",
+      "target": "pacman dysplasia (PACMAN_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRK1 is associated with pacman dysplasia (PACMAN_DYSPLASIA). Open Targets association score 0.04"
+    }
+  ]
+}

@@ -1,0 +1,556 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL45",
+      "target": "MTNR1B",
+      "type": "TARGETS",
+      "description": "MELATONIN targets MTNR1B."
+    },
+    {
+      "source": "CHEMBL521",
+      "target": "PTGS2",
+      "type": "TARGETS",
+      "description": "IBUPROFEN targets PTGS2."
+    },
+    {
+      "source": "CHEMBL1530428",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "DEXAMETHASONE ACETATE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL45",
+      "target": "MTNR1A",
+      "type": "TARGETS",
+      "description": "MELATONIN targets MTNR1A."
+    },
+    {
+      "source": "CHEMBL112",
+      "target": "FAAH",
+      "type": "TARGETS",
+      "description": "ACETAMINOPHEN targets FAAH."
+    },
+    {
+      "source": "CHEMBL384467",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "DEXAMETHASONE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL521",
+      "target": "PTGS1",
+      "type": "TARGETS",
+      "description": "IBUPROFEN targets PTGS1."
+    },
+    {
+      "source": "CHEMBL112",
+      "target": "PTGS1",
+      "type": "TARGETS",
+      "description": "ACETAMINOPHEN targets PTGS1."
+    },
+    {
+      "source": "CHEMBL112",
+      "target": "PTGS2",
+      "type": "TARGETS",
+      "description": "ACETAMINOPHEN targets PTGS2."
+    },
+    {
+      "source": "CHEMBL112",
+      "target": "TRPV1",
+      "type": "TARGETS",
+      "description": "ACETAMINOPHEN targets TRPV1."
+    },
+    {
+      "source": "CASP3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "MS4A1",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MS4A1 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "RUNX2",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "RUNX2 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GLI2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "SHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IL1A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "ALPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ALPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "MTHFR",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFR is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "PTH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "PTGS1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "LRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT4",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT4 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "SLCO2A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLCO2A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CCDC91",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC91 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.32"
+    },
+    {
+      "source": "MCM9",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCM9 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.28"
+    },
+    {
+      "source": "MTNR1B",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTNR1B is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.26"
+    },
+    {
+      "source": "MTNR1A",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTNR1A is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.26"
+    },
+    {
+      "source": "NPHS1",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHS1 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.15"
+    },
+    {
+      "source": "PGM5",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGM5 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "CTNND1",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNND1 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "NAA38",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAA38 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "HOXC13",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXC13 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "TMEM252",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM252 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "PTGS2",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "PTGS1",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS1 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "ASF1A",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASF1A is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "NR3C1",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "TRPV1",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV1 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "FAAH",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAAH is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "TGFB1",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTH",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTH is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRT20",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT20 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MS4A1",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MS4A1 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTHFR",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFR is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "WNT4",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT4 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "OPRPN",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OPRPN is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD79A",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFKB1",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSTB",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSTB is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALB",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SAA1",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAA1 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SAA2",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAA2 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SERPINH1",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINH1 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "RUNX2",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX2 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1B",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALPL",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPL is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SHH",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHH is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1A",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1A is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "LRP6",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP6 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CASP3",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP3 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "KHDRBS3",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KHDRBS3 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "LBX1",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LBX1 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL8",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PLAT",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAT is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "AMBN",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMBN is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRP",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSPN",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSPN is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "BPIFA2",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BPIFA2 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "RECQL4",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RECQL4 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SERPINB5",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINB5 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "HP",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HP is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CST6",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CST6 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "FOS",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOS is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "DIAPH1",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DIAPH1 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MSMB",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSMB is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLCO2A1",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLCO2A1 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "REG1A",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REG1A is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SFN",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFN is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "AGRN",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGRN is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PBX3",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBX3 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "RIDA",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIDA is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CLDN1",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN1 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GLI2",
+      "target": "tooth disease (TOOTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI2 is associated with tooth disease (TOOTH_DISEASE). Open Targets association score 0.00"
+    }
+  ]
+}

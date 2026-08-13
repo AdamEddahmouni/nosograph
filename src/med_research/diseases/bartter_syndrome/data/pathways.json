@@ -6,11 +6,13 @@
       "description": "Autophagosome formation and lysosomal degradation maintaining cellular and immune homeostasis.",
       "key_components": [
         "SLC3A1",
-        "SLC33A1"
+        "SLC33A1",
+        "MAP1LC3B"
       ],
       "therapeutic_targets": [
         "SLC3A1",
-        "SLC33A1"
+        "SLC33A1",
+        "MAP1LC3B"
       ],
       "references": []
     },
@@ -35,6 +37,20 @@
       ],
       "therapeutic_targets": [
         "ATM"
+      ],
+      "references": []
+    },
+    {
+      "id": "hedgehog",
+      "name": "Hedgehog Signaling",
+      "description": "Hedgehog morphogen signaling governing embryonic patterning and stem cell maintenance.",
+      "key_components": [
+        "GLIS2",
+        "SHH"
+      ],
+      "therapeutic_targets": [
+        "GLIS2",
+        "SHH"
       ],
       "references": []
     },
@@ -141,18 +157,6 @@
       "therapeutic_targets": [
         "HNF1A",
         "SLC2A9"
-      ],
-      "references": []
-    },
-    {
-      "id": "hedgehog",
-      "name": "Hedgehog Signaling",
-      "description": "Hedgehog morphogen signaling governing embryonic patterning and stem cell maintenance.",
-      "key_components": [
-        "GLIS2"
-      ],
-      "therapeutic_targets": [
-        "GLIS2"
       ],
       "references": []
     }

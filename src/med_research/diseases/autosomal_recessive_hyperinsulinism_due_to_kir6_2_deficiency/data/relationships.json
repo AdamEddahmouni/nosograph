@@ -1,0 +1,478 @@
+{
+  "relationships": [
+    {
+      "source": "BAD",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BAD is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "SLC30A8",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC30A8 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CACNA1E",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1E is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "KCNH6",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNH6 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "C11orf86",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C11orf86 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "EIF2AK3",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EIF2AK3 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ABCC8",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC8 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GCK",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCK is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF1B",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1B is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INSR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INSR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "KCNJ11",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNJ11 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "PDX1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PDX1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "MAPK13",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK13 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "AKT2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "THRA",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THRA is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "THRA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "THRA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ABCC8",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC8 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "KCNJ11",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNJ11 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.37"
+    },
+    {
+      "source": "LEPR",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "LEP",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "GCK",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCK is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "MEN1",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "KCNH6",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNH6 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PDX1",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDX1 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXA1",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXA1 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "INS",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CPE",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPE is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "KMT2B",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2B is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "INSR",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INSR is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC30A8",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC30A8 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ABCC8",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC8 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "AKT2",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT2 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PCSK2",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK2 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CACNA1E",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1E is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SIM1",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIM1 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PDZD2",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDZD2 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "GHR",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHR is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "GCGR",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCGR is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ALMS1",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALMS1 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADIPOR2",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOR2 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "THRA",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THRA is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "IRS2",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRS2 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "HADH",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HADH is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CREBBP",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PPARA",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARA is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "RAPGEF3",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAPGEF3 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZEB1",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "KCNB1",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNB1 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAPK13",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK13 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ANK2",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK2 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "BGLAP",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BGLAP is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CES1",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CES1 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "FFAR4",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FFAR4 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKAA2",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA2 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "RBM4",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM4 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ALX3",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALX3 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SSTR5",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSTR5 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "MC4R",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MC4R is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ALDH1B1",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDH1B1 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "C3",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "RIMS2",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIMS2 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "BAD",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAD is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PDE3B",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE3B is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "EIF2AK3",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF2AK3 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPHKAP",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPHKAP is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ILRUN",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ILRUN is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SNAP25",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNAP25 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "HNF1B",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1B is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CARTPT",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARTPT is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "DBH",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DBH is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PGR",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "C11orf86",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C11orf86 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CSF2",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PHPT1",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHPT1 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "KBTBD2",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KBTBD2 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "WDR13",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR13 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GPR27",
+      "target": "autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR27 is associated with autosomal recessive hyperinsulinism due to Kir6.2 deficiency (AUTOSOMAL_RECESSIVE_HYPERINSULINISM_DUE_TO_KIR6_2_DEFICIENCY). Open Targets association score 0.04"
+    }
+  ]
+}

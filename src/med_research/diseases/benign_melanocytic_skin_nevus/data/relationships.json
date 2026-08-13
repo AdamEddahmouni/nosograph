@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "ATR",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATR is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "FANCD2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "FANCD2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "JAK1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "LRP1B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.37"
+    },
+    {
+      "source": "EGFR",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID2",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID2 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERG",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERG is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "HRAS",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2D",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "JAK1",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK1 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "BCORL1",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCORL1 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "MED12",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MED12 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "BLM",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLM is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "IL7R",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7R is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "CLTC",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLTC is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "FOXO4",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXO4 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "KDM5C",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM5C is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "CIC",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIC is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "PLCG1",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCG1 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "CLTCL1",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLTCL1 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATR",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATR is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "CBL",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBL is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "BAP1",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAP1 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "PAX5",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX5 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "FLT4",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "KDR",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "NF1",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "KDM6A",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM6A is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "NRAS",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "ABL1",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABL1 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "FANCD2",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCD2 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "ALK",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "NOTCH2",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH2 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "CARS1",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARS1 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "LRP1B",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1B is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "NTRK1",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "PMS2",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMS2 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "MECOM",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MECOM is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "KRAS",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "TET1",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET1 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "SETD2",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD2 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "PPARG",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "SETBP1",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETBP1 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "MYH9",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH9 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "RET",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARHGAP26",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP26 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "NTRK3",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK3 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "MET",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "RUNX1T1",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1T1 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "ROS1",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROS1 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "PER1",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PER1 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "IDH1",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "GNAS",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAS is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "PREX2",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PREX2 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "TSC2",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "TET2",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID1B",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1B is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "AFDN",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFDN is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "MSH2",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH2 is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2C",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "FHIT",
+      "target": "benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FHIT is associated with benign melanocytic skin nevus (BENIGN_MELANOCYTIC_SKIN_NEVUS). Open Targets association score 0.28"
+    }
+  ]
+}

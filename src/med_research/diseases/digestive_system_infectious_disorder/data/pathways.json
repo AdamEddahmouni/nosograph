@@ -1,0 +1,246 @@
+{
+  "pathways": [
+    {
+      "id": "apoptosis",
+      "name": "Apoptosis",
+      "description": "Intrinsic and extrinsic programmed cell death; dysregulation contributes to autoimmunity and cancer.",
+      "key_components": [
+        "CASP8"
+      ],
+      "therapeutic_targets": [
+        "CASP8"
+      ],
+      "references": []
+    },
+    {
+      "id": "bcr-signaling",
+      "name": "B Cell Receptor Signaling",
+      "description": "BCR signal transduction controlling B cell survival, proliferation, and antibody production.",
+      "key_components": [
+        "CD79A"
+      ],
+      "therapeutic_targets": [
+        "CD79A"
+      ],
+      "references": []
+    },
+    {
+      "id": "chemokine-signaling",
+      "name": "Chemokine Signaling",
+      "description": "Chemokine-receptor interactions directing leukocyte migration and lymphoid organization.",
+      "key_components": [
+        "CCL28",
+        "CXCR3"
+      ],
+      "therapeutic_targets": [
+        "CCL28",
+        "CXCR3"
+      ],
+      "references": []
+    },
+    {
+      "id": "coagulation",
+      "name": "Coagulation Cascade",
+      "description": "Plasma coagulation factors and fibrinolysis; a hub for cardiovascular and thrombotic disease.",
+      "key_components": [
+        "CSF2"
+      ],
+      "therapeutic_targets": [
+        "CSF2"
+      ],
+      "references": []
+    },
+    {
+      "id": "glucose-metabolism",
+      "name": "Glucose Metabolism / Insulin Secretion",
+      "description": "Pancreatic β-cell function, insulin secretion, and glycemic control.",
+      "key_components": [
+        "INS"
+      ],
+      "therapeutic_targets": [
+        "INS"
+      ],
+      "references": []
+    },
+    {
+      "id": "il1-inflammasome",
+      "name": "IL-1 / Inflammasome Pathway",
+      "description": "NLRP3 inflammasome assembly and IL-1β/IL-18 maturation; a driver of sterile inflammation.",
+      "key_components": [
+        "IL10",
+        "IL17A",
+        "IL18",
+        "IL1B"
+      ],
+      "therapeutic_targets": [
+        "IL10",
+        "IL17A",
+        "IL18",
+        "IL1B"
+      ],
+      "references": []
+    },
+    {
+      "id": "il4-il13",
+      "name": "IL-4 / IL-13 (Th2) Pathway",
+      "description": "Type 2 cytokine signaling driving allergic and eosinophilic inflammation.",
+      "key_components": [
+        "IL4"
+      ],
+      "therapeutic_targets": [
+        "IL4"
+      ],
+      "references": []
+    },
+    {
+      "id": "il6-signaling",
+      "name": "IL-6 Signaling",
+      "description": "Interleukin-6 signaling via gp130 and STAT3; a key amplifier of systemic inflammation.",
+      "key_components": [
+        "IL6",
+        "STAT3"
+      ],
+      "therapeutic_targets": [
+        "IL6",
+        "STAT3"
+      ],
+      "references": []
+    },
+    {
+      "id": "jak-stat",
+      "name": "JAK-STAT Signaling",
+      "description": "Cytokine receptor signaling through JAK kinases and STAT transcription factors; a hub for inflammatory and autoimmune disease pathways.",
+      "key_components": [
+        "STAT1",
+        "STAT3",
+        "STAT4"
+      ],
+      "therapeutic_targets": [
+        "STAT1",
+        "STAT3",
+        "STAT4"
+      ],
+      "references": []
+    },
+    {
+      "id": "lipid-metabolism",
+      "name": "Lipid Metabolism",
+      "description": "Cholesterol and lipid homeostasis; the therapeutic hub of cardiovascular disease.",
+      "key_components": [
+        "FABP2"
+      ],
+      "therapeutic_targets": [
+        "FABP2"
+      ],
+      "references": []
+    },
+    {
+      "id": "nfkb",
+      "name": "NF-κB Pathway",
+      "description": "Canonical and non-canonical NF-κB activation driving pro-inflammatory gene expression.",
+      "key_components": [
+        "NFKB1"
+      ],
+      "therapeutic_targets": [
+        "NFKB1"
+      ],
+      "references": []
+    },
+    {
+      "id": "serotonin-dopamine",
+      "name": "Serotonin / Dopamine Signaling",
+      "description": "Monoamine neurotransmission; the pharmacological hub of psychiatry.",
+      "key_components": [
+        "HTR3A"
+      ],
+      "therapeutic_targets": [
+        "HTR3A"
+      ],
+      "references": []
+    },
+    {
+      "id": "tcr-signaling",
+      "name": "T Cell Receptor Signaling",
+      "description": "TCR signal transduction and T cell activation; a therapeutic hub in autoimmunity.",
+      "key_components": [
+        "CD4",
+        "CD40LG",
+        "CD8A"
+      ],
+      "therapeutic_targets": [
+        "CD4",
+        "CD40LG",
+        "CD8A"
+      ],
+      "references": []
+    },
+    {
+      "id": "th17-il17",
+      "name": "Th17 / IL-17 Pathway",
+      "description": "Th17 differentiation and IL-17 family cytokine signaling driving neutrophil recruitment and autoimmunity.",
+      "key_components": [
+        "IL17A",
+        "IL22"
+      ],
+      "therapeutic_targets": [
+        "IL17A",
+        "IL22"
+      ],
+      "references": []
+    },
+    {
+      "id": "tnf-signaling",
+      "name": "TNF Signaling",
+      "description": "Tumor necrosis factor receptor superfamily signaling; central to many autoimmune and inflammatory diseases.",
+      "key_components": [
+        "TNF"
+      ],
+      "therapeutic_targets": [
+        "TNF"
+      ],
+      "references": []
+    },
+    {
+      "id": "type1-ifn",
+      "name": "Type I Interferon Pathway",
+      "description": "IFN-α/β production and signaling through IFNAR; drives the interferon gene signature in autoimmune disease.",
+      "key_components": [
+        "IFNA1",
+        "IFNG",
+        "IFNL4",
+        "STAT1"
+      ],
+      "therapeutic_targets": [
+        "IFNA1",
+        "IFNG",
+        "IFNL4",
+        "STAT1"
+      ],
+      "references": []
+    },
+    {
+      "id": "vegf-angiogenesis",
+      "name": "VEGF / Angiogenesis",
+      "description": "Vascular endothelial growth factor signaling driving angiogenesis and vascular permeability.",
+      "key_components": [
+        "HIF1A"
+      ],
+      "therapeutic_targets": [
+        "HIF1A"
+      ],
+      "references": []
+    },
+    {
+      "id": "wnt-signaling",
+      "name": "Wnt Signaling",
+      "description": "Canonical Wnt/β-catenin signaling controlling cell fate, proliferation, and tissue regeneration.",
+      "key_components": [
+        "APCS"
+      ],
+      "therapeutic_targets": [
+        "APCS"
+      ],
+      "references": []
+    }
+  ]
+}

@@ -1,0 +1,340 @@
+{
+  "relationships": [
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CHEK2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "CHEK2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PARP1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "PARP1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PPIL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PPIL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "JAG2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "JAG2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "THRB",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THRB is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "THRB",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "THRB is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ABCC5",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC5 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "TERT",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.52"
+    },
+    {
+      "source": "CD164",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD164 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.46"
+    },
+    {
+      "source": "TCL1A",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCL1A is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.43"
+    },
+    {
+      "source": "IFT80",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT80 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.35"
+    },
+    {
+      "source": "KCNRG",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNRG is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.34"
+    },
+    {
+      "source": "NRIP1",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRIP1 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.34"
+    },
+    {
+      "source": "TET2",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.34"
+    },
+    {
+      "source": "ZFHX3",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFHX3 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.33"
+    },
+    {
+      "source": "GATA2",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA2 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.32"
+    },
+    {
+      "source": "NDUFA4",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFA4 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.32"
+    },
+    {
+      "source": "THRB",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THRB is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.32"
+    },
+    {
+      "source": "PARP1",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARP1 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.31"
+    },
+    {
+      "source": "JAG2",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAG2 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.30"
+    },
+    {
+      "source": "CHEK2",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHEK2 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.27"
+    },
+    {
+      "source": "TTC28",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC28 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "HEPH",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEPH is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.24"
+    },
+    {
+      "source": "STXBP4",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STXBP4 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.24"
+    },
+    {
+      "source": "HSCB",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSCB is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.24"
+    },
+    {
+      "source": "TBC1D1",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D1 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.23"
+    },
+    {
+      "source": "ATP5PO",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP5PO is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.22"
+    },
+    {
+      "source": "ITPR2",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITPR2 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.21"
+    },
+    {
+      "source": "DLK1",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLK1 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.21"
+    },
+    {
+      "source": "TMEM209",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM209 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.20"
+    },
+    {
+      "source": "NKX2-3",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-3 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.15"
+    },
+    {
+      "source": "MICAL1",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MICAL1 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.14"
+    },
+    {
+      "source": "SMC4",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMC4 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.14"
+    },
+    {
+      "source": "POGLUT3",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POGLUT3 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.13"
+    },
+    {
+      "source": "RABEP1",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RABEP1 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.12"
+    },
+    {
+      "source": "ABCC5",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC5 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.11"
+    },
+    {
+      "source": "NPAT",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPAT is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.11"
+    },
+    {
+      "source": "USP6",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP6 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.11"
+    },
+    {
+      "source": "TRIM13",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM13 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.10"
+    },
+    {
+      "source": "ATM",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "AK9",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AK9 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "C11orf65",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C11orf65 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "SPRYD7",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPRYD7 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "COX11",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COX11 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "TRIM59",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM59 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "DLEU7",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLEU7 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PITPNB",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITPNB is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "XBP1",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XBP1 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCDC117",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC117 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SSPN",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSPN is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZBTB24",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB24 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SMPD2",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMPD2 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PPIL6",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIL6 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "VSIG4",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VSIG4 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PHF14",
+      "target": "clonal hematopoiesis (CLONAL_HEMATOPOIESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHF14 is associated with clonal hematopoiesis (CLONAL_HEMATOPOIESIS). Open Targets association score 0.02"
+    }
+  ]
+}

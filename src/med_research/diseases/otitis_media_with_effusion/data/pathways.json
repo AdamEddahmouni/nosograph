@@ -1,0 +1,236 @@
+{
+  "pathways": [
+    {
+      "id": "apoptosis",
+      "name": "Apoptosis",
+      "description": "Intrinsic and extrinsic programmed cell death; dysregulation contributes to autoimmunity and cancer.",
+      "key_components": [
+        "CASP1"
+      ],
+      "therapeutic_targets": [
+        "CASP1"
+      ],
+      "references": []
+    },
+    {
+      "id": "bcr-signaling",
+      "name": "B Cell Receptor Signaling",
+      "description": "BCR signal transduction controlling B cell survival, proliferation, and antibody production.",
+      "key_components": [
+        "CD19",
+        "CD79A"
+      ],
+      "therapeutic_targets": [
+        "CD19",
+        "CD79A"
+      ],
+      "references": []
+    },
+    {
+      "id": "chemokine-signaling",
+      "name": "Chemokine Signaling",
+      "description": "Chemokine-receptor interactions directing leukocyte migration and lymphoid organization.",
+      "key_components": [
+        "CCL17",
+        "CCL5",
+        "CXCL1",
+        "CXCL8"
+      ],
+      "therapeutic_targets": [
+        "CCL17",
+        "CCL5",
+        "CXCL1",
+        "CXCL8"
+      ],
+      "references": []
+    },
+    {
+      "id": "ecm-remodeling",
+      "name": "ECM Remodeling",
+      "description": "Matrix metalloproteinases and extracellular matrix turnover in tissue remodeling and fibrosis.",
+      "key_components": [
+        "MMP2",
+        "MMP9"
+      ],
+      "therapeutic_targets": [
+        "MMP2",
+        "MMP9"
+      ],
+      "references": []
+    },
+    {
+      "id": "il1-inflammasome",
+      "name": "IL-1 / Inflammasome Pathway",
+      "description": "NLRP3 inflammasome assembly and IL-1β/IL-18 maturation; a driver of sterile inflammation.",
+      "key_components": [
+        "CASP1",
+        "IL10",
+        "IL17A",
+        "IL18",
+        "IL1B"
+      ],
+      "therapeutic_targets": [
+        "CASP1",
+        "IL10",
+        "IL17A",
+        "IL18",
+        "IL1B"
+      ],
+      "references": []
+    },
+    {
+      "id": "il4-il13",
+      "name": "IL-4 / IL-13 (Th2) Pathway",
+      "description": "Type 2 cytokine signaling driving allergic and eosinophilic inflammation.",
+      "key_components": [
+        "IL4"
+      ],
+      "therapeutic_targets": [
+        "IL4"
+      ],
+      "references": []
+    },
+    {
+      "id": "il6-signaling",
+      "name": "IL-6 Signaling",
+      "description": "Interleukin-6 signaling via gp130 and STAT3; a key amplifier of systemic inflammation.",
+      "key_components": [
+        "IL6"
+      ],
+      "therapeutic_targets": [
+        "IL6"
+      ],
+      "references": []
+    },
+    {
+      "id": "integrin-adhesion",
+      "name": "Integrin / Cell Adhesion",
+      "description": "Integrin-mediated adhesion and leukocyte trafficking into inflamed tissue.",
+      "key_components": [
+        "ICAM1",
+        "ITGAL",
+        "SELL"
+      ],
+      "therapeutic_targets": [
+        "ICAM1",
+        "ITGAL",
+        "SELL"
+      ],
+      "references": []
+    },
+    {
+      "id": "tcr-signaling",
+      "name": "T Cell Receptor Signaling",
+      "description": "TCR signal transduction and T cell activation; a therapeutic hub in autoimmunity.",
+      "key_components": [
+        "CD28",
+        "CD4",
+        "CD44",
+        "CD8A"
+      ],
+      "therapeutic_targets": [
+        "CD28",
+        "CD4",
+        "CD44",
+        "CD8A"
+      ],
+      "references": []
+    },
+    {
+      "id": "tgf-beta",
+      "name": "TGF-β Signaling",
+      "description": "Transforming growth factor beta signaling controlling fibrosis, immune tolerance, and tumor suppression.",
+      "key_components": [
+        "TGFB1"
+      ],
+      "therapeutic_targets": [
+        "TGFB1"
+      ],
+      "references": []
+    },
+    {
+      "id": "th17-il17",
+      "name": "Th17 / IL-17 Pathway",
+      "description": "Th17 differentiation and IL-17 family cytokine signaling driving neutrophil recruitment and autoimmunity.",
+      "key_components": [
+        "IL17A"
+      ],
+      "therapeutic_targets": [
+        "IL17A"
+      ],
+      "references": []
+    },
+    {
+      "id": "thyroid-hormone",
+      "name": "Thyroid Hormone Signaling",
+      "description": "Thyroid hormone synthesis, transport, and nuclear receptor signaling.",
+      "key_components": [
+        "ITGAL",
+        "PTGS2",
+        "TGFB1"
+      ],
+      "therapeutic_targets": [
+        "ITGAL",
+        "PTGS2",
+        "TGFB1"
+      ],
+      "references": []
+    },
+    {
+      "id": "tlr-signaling",
+      "name": "TLR / Innate Sensing",
+      "description": "Endosomal and surface Toll-like receptor signaling driving innate immune activation.",
+      "key_components": [
+        "TLR7"
+      ],
+      "therapeutic_targets": [
+        "TLR7"
+      ],
+      "references": []
+    },
+    {
+      "id": "tnf-signaling",
+      "name": "TNF Signaling",
+      "description": "Tumor necrosis factor receptor superfamily signaling; central to many autoimmune and inflammatory diseases.",
+      "key_components": [
+        "FAS",
+        "FASLG",
+        "LTA",
+        "TNF"
+      ],
+      "therapeutic_targets": [
+        "FAS",
+        "FASLG",
+        "LTA",
+        "TNF"
+      ],
+      "references": []
+    },
+    {
+      "id": "type1-ifn",
+      "name": "Type I Interferon Pathway",
+      "description": "IFN-α/β production and signaling through IFNAR; drives the interferon gene signature in autoimmune disease.",
+      "key_components": [
+        "IFNA1",
+        "IFNG"
+      ],
+      "therapeutic_targets": [
+        "IFNA1",
+        "IFNG"
+      ],
+      "references": []
+    },
+    {
+      "id": "vegf-angiogenesis",
+      "name": "VEGF / Angiogenesis",
+      "description": "Vascular endothelial growth factor signaling driving angiogenesis and vascular permeability.",
+      "key_components": [
+        "VEGFA"
+      ],
+      "therapeutic_targets": [
+        "VEGFA"
+      ],
+      "references": []
+    }
+  ]
+}

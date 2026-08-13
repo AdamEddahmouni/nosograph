@@ -1,0 +1,514 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL606",
+      "target": "PTGER3",
+      "type": "TARGETS",
+      "description": "MISOPROSTOL targets PTGER3."
+    },
+    {
+      "source": "CXCL12",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL12 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR4",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR4 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "PLOD1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLOD1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "SLC2A4",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A4 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ERAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "ERAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "COMT",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "COMT is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "SMAD2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "PTGER3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGER3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "HIF1A",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "HIF1A is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "ABCC4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP19A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP19A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "PTGER3",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGER3 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.26"
+    },
+    {
+      "source": "GATA2",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA2 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "NR4A1",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR4A1 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "GABPA",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABPA is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "ESM1",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESM1 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "ENTPD2",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENTPD2 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRIM28",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM28 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "NCOA2",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOA2 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGR",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGR is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "DKK1",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DKK1 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYP19A1",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP19A1 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPARG",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDH1",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTGS2",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1B",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL12",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL12 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOX9",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX9 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "AR",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCR4",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR4 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "GNRH1",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRH1 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "ABCC4",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC4 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "HGF",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "COMT",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COMT is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "KIR3DL1",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIR3DL1 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "GEM",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GEM is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL8",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "AKT1",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "LCN2",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN2 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "HSD17B1",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSD17B1 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "ESR1",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "VIM",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIM is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "LGALS7",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS7 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "SRC",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRC is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "AKR1C3",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKR1C3 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "ERAS",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERAS is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "GAS1",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAS1 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "NBR1",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBR1 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "MUC16",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC16 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "EPO",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPO is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CLOCK",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLOCK is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "ERAL1",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERAL1 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "MT-CO2",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO2 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC2A4",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A4 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "HOXA10",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA10 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PLOD1",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLOD1 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "HIF1A",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF1A is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "MTOR",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "SMAD2",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD2 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "BRD2",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRD2 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "KDR",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "ESR2",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR2 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL6",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "ENTPD1",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENTPD1 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCR2",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR2 is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "VEGFA",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "FAM50A",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM50A is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PCNA",
+      "target": "endometrial disorder (ENDOMETRIAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNA is associated with endometrial disorder (ENDOMETRIAL_DISORDER). Open Targets association score 0.00"
+    }
+  ]
+}

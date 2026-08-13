@@ -1,0 +1,538 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL4298178",
+      "target": "ERBB2",
+      "type": "TARGETS",
+      "description": "TRASTUZUMAB DUOCARMAZINE targets ERBB2."
+    },
+    {
+      "source": "CHEMBL4298124",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "TREATS",
+      "description": "DOSTARLIMAB is phase 4 / marketed for endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)."
+    },
+    {
+      "source": "CHEMBL3137343",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "TREATS",
+      "description": "PEMBROLIZUMAB is phase 4 / marketed for endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)."
+    },
+    {
+      "source": "CASP8",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP8 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDK12",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK12 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "SDHAF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SDHAF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MLH1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MLH1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "SMO",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SMO is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3R1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "LATS2",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LATS2 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "MYD88",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MYD88 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PTEN",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PPP2R1A",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP2R1A is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TP53",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PIK3R1",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R1 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MED12",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MED12 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERCC4",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC4 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID1A",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2C",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NRAS",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "POLE",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ALK",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FOXP1",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP1 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FBXW7",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXW7 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TERT",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SPOP",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPOP is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2D",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KRAS",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDK12",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK12 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EP300",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EP300 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR2",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAP3K1",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K1 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATM",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRCA2",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CASP8",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP8 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MLH1",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLH1 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KDM5A",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM5A is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "DROSHA",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DROSHA is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "HGF",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "LATS2",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LATS2 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "EPHA3",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHA3 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FAT1",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT1 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "JAK2",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "USP8",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP8 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RPL5",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL5 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CD79A",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CIC",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIC is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RPL22",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL22 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "IKZF1",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MAP2K2",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K2 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MET",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FANCA",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ASXL1",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SETD2",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD2 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CARD11",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CREBBP",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NFKB2",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MTOR",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "BRAF",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ERBB2",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SMO",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMO is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SDHAF2",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDHAF2 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CCND1",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FLT3",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MYD88",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYD88 is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FANCG",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCG is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CALR",
+      "target": "endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALR is associated with endometrial mixed adenocarcinoma (ENDOMETRIAL_MIXED_ADENOCARCINOMA). Open Targets association score 0.18"
+    }
+  ]
+}

@@ -1,0 +1,592 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201583",
+      "target": "VEGFA",
+      "type": "TARGETS",
+      "description": "BEVACIZUMAB targets VEGFA."
+    },
+    {
+      "source": "CHEMBL1232461",
+      "target": "BRD2",
+      "type": "TARGETS",
+      "description": "MOLIBRESIB targets BRD2."
+    },
+    {
+      "source": "CHEMBL2110732",
+      "target": "ERBB2",
+      "type": "TARGETS",
+      "description": "DACOMITINIB ANHYDROUS targets ERBB2."
+    },
+    {
+      "source": "CHEMBL1201560",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "TREATS",
+      "description": "PEGINTERFERON ALFA-2A is phase 4 / marketed for granulosa cell tumor (GRANULOSA_CELL_TUMOR)."
+    },
+    {
+      "source": "CHEMBL1201752",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "TREATS",
+      "description": "IXABEPILONE is phase 4 / marketed for granulosa cell tumor (GRANULOSA_CELL_TUMOR)."
+    },
+    {
+      "source": "CHEMBL1683590",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "TREATS",
+      "description": "ERIBULIN is phase 4 / marketed for granulosa cell tumor (GRANULOSA_CELL_TUMOR)."
+    },
+    {
+      "source": "CHEMBL1683590",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "TREATS",
+      "description": "ERIBULIN is phase 4 / marketed for granulosa cell tumor (GRANULOSA_CELL_TUMOR)."
+    },
+    {
+      "source": "CHEMBL1742992",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "TREATS",
+      "description": "BLINATUMOMAB is phase 4 / marketed for granulosa cell tumor (GRANULOSA_CELL_TUMOR)."
+    },
+    {
+      "source": "CHEMBL1789941",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "TREATS",
+      "description": "RUXOLITINIB is phase 4 / marketed for granulosa cell tumor (GRANULOSA_CELL_TUMOR)."
+    },
+    {
+      "source": "CHEMBL2110725",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "TREATS",
+      "description": "VINFLUNINE is phase 3 for granulosa cell tumor (GRANULOSA_CELL_TUMOR)."
+    },
+    {
+      "source": "CHEMBL225071",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "TREATS",
+      "description": "RALTITREXED is phase 4 / marketed for granulosa cell tumor (GRANULOSA_CELL_TUMOR)."
+    },
+    {
+      "source": "CCND2",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND2 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "SMAD1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SMAD3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SMAD5",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD5 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFBR1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP19A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP19A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP2B6",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2B6 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CDH1",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYP19A1",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP19A1 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "TGFBR1",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBR1 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "FOXL2",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXL2 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "ESR1",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "SMAD1",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD1 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "GSDMB",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "PGR",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "AMH",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMH is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "TFE3",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFE3 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "FSHR",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSHR is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "NCAM1",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCAM1 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "TERT",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "IDH1",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "PPARG",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "TMEM37",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM37 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "PRH2",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH2 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "AMHR2",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMHR2 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "PDGFA",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFA is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "PMS2",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMS2 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "EGFR",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "LHCGR",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHCGR is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "TGFA",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFA is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "MKI67",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "HRAS",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGF1R",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1R is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "INHA",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INHA is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP2B6",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2B6 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "RUNX1",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "SIRT1",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT1 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "BRD2",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRD2 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERBB2",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "ESR2",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR2 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTOR",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "NBR1",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBR1 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC16",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC16 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTEN",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB1",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "INHBE",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INHBE is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRAS",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "PER1",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PER1 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "AFP",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMAD3",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD3 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCND2",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND2 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "GNRH1",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRH1 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "FOXO1",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXO1 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "VEGFA",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZP3",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZP3 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "SF1",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SF1 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "GATA4",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA4 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKT1",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMAD5",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD5 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "SALL4",
+      "target": "granulosa cell tumor (GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SALL4 is associated with granulosa cell tumor (GRANULOSA_CELL_TUMOR). Open Targets association score 0.01"
+    }
+  ]
+}

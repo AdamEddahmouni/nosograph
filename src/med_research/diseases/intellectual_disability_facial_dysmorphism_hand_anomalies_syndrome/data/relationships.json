@@ -1,0 +1,472 @@
+{
+  "relationships": [
+    {
+      "source": "FGF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ADAMTS17",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS17 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ADAMTS5",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS5 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL1A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "IHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "SHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "SMOC1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SMOC1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BMP5",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP5 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "BMPR1B",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMPR1B is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CHUK",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CHUK is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "FBN1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "FBN1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "FBN2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "FBN2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "LTBP1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "LTBP1",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP1 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LRP4",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP4 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP51A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP51A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "HOXD13",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD13 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "GDF5",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF5 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "HOXA13",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA13 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "HOXD12",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD12 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SFRP2",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFRP2 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "EVX2",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EVX2 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ROR2",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROR2 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "GLI3",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FMN1",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMN1 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "LRP4",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP4 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "BMPR1B",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMPR1B is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FREM2",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FREM2 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PAX1",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX1 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRICKLE1",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRICKLE1 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TBX4",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX4 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FBN2",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBN2 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PORCN",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PORCN is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGFR1",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PITX1",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX1 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GAS1",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAS1 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FLNB",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLNB is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RPL38",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL38 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SMOC1",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMOC1 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FBN1",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBN1 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ASPH",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASPH is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IHH",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IHH is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "HOXD11",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD11 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SHH",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHH is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FREM1",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FREM1 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADAMTS17",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS17 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TBX15",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX15 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "LMBR1",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMBR1 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ACVR1",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACVR1 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "BMP5",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP5 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GBX1",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GBX1 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "HOXD9",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD9 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPR2",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPR2 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "COL1A1",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A1 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FGF9",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF9 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "HOXC10",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXC10 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "RARA",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RARA is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SALL1",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SALL1 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPR3",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPR3 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "COL2A1",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHUK",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHUK is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "EN1",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EN1 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SPRY4",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPRY4 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TSHZ1",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSHZ1 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "LTBP1",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTBP1 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "UBE2G1",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBE2G1 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "RAI1",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAI1 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SP6",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SP6 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "RSPO2",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO2 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CYP51A1",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP51A1 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "B3GLCT",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B3GLCT is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZEB1",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADAMTS5",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS5 is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SFN",
+      "target": "intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFN is associated with intellectual disability-facial dysmorphism-hand anomalies syndrome (INTELLECTUAL_DISABILITY_FACIAL_DYSMORPHISM_HAND_ANOMALIES_SYNDROME). Open Targets association score 0.03"
+    }
+  ]
+}

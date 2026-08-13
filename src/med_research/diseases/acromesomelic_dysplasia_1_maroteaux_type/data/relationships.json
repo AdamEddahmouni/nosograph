@@ -1,0 +1,454 @@
+{
+  "relationships": [
+    {
+      "source": "FGF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ADAMTS17",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS17 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "IHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "SHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BMP5",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP5 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "BMPR1B",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMPR1B is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PTHLH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTHLH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "LTBP1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "LTBP1",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP1 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LRP4",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP4 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT7A",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT7A is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "NPR2",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPR2 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.78"
+    },
+    {
+      "source": "SPAG8",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPAG8 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.54"
+    },
+    {
+      "source": "HOXD13",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD13 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.07"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.07"
+    },
+    {
+      "source": "FGFR3",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.06"
+    },
+    {
+      "source": "GDF5",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF5 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.06"
+    },
+    {
+      "source": "COL2A1",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.06"
+    },
+    {
+      "source": "PHEX",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHEX is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.06"
+    },
+    {
+      "source": "NPR3",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPR3 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.06"
+    },
+    {
+      "source": "GLI3",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.06"
+    },
+    {
+      "source": "HOXD11",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD11 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.06"
+    },
+    {
+      "source": "ROR2",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROR2 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.06"
+    },
+    {
+      "source": "FLNB",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLNB is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXD12",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD12 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "BMP5",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP5 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGFR1",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "FMN1",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMN1 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "EVX2",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EVX2 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "LNPK",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LNPK is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXA11",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA11 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "CANT1",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CANT1 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXA13",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA13 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "PORCN",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PORCN is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "RPL38",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL38 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "RSPO2",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO2 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "WNT7A",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT7A is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "PAX1",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX1 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "BMPR1B",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMPR1B is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRICKLE1",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRICKLE1 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "HOXD9",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD9 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "PITX1",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX1 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "IHH",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IHH is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CBS",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBS is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "TWIST1",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TWIST1 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "PBXIP1",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBXIP1 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "PKDCC",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKDCC is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTHLH",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTHLH is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "TBX15",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX15 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "SFRP2",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFRP2 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "ACVR1",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACVR1 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNNI2",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNI2 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "ACP5",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACP5 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKG2",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKG2 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "SHH",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHH is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGF9",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF9 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "FSTL1",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSTL1 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADAMTS17",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS17 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "TMEM53",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM53 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "PHOSPHO1",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHOSPHO1 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "PPIB",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIB is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRAM2",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAM2 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRP4",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP4 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "EVC",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EVC is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "HOXC8",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXC8 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGF18",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF18 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CHST11",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHST11 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "LTBP1",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTBP1 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC26A2",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC26A2 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "RAI1",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAI1 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXC1",
+      "target": "acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with acromesomelic dysplasia 1, Maroteaux type (ACROMESOMELIC_DYSPLASIA_1_MAROTEAUX_TYPE). Open Targets association score 0.04"
+    }
+  ]
+}

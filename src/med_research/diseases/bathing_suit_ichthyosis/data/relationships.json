@@ -1,0 +1,478 @@
+{
+  "relationships": [
+    {
+      "source": "CCL4",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL4 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "RHBDF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "RHBDF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1RN",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1RN is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "CARD14",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD14 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "CHUK",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CHUK is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "IKBKG",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "IKBKG is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBIZ",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIZ is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RELB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "ACER1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACER1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGM1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNAR2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNAR2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "TGM1",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM1 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.37"
+    },
+    {
+      "source": "TNF",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "UROD",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UROD is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "CALCA",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "IFNG",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "IL3",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL3 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "CCL4",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL4 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL6",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL10",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "ST14",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST14 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "IFNAR2",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNAR2 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "DSG4",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSG4 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL17A",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "HR",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HR is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "SCD",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCD is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "CTSL",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSL is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "CTSV",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSV is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "CP",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CP is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CRP",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "LRIG1",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRIG1 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFKBIZ",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIZ is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "MPZL3",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPZL3 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "IKBKG",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKBKG is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FLG",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLG is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "DSC1",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSC1 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPINK5",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPINK5 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "RHBDF2",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHBDF2 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PKP3",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKP3 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "NSDHL",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSDHL is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TMEM79",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM79 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "KRT10",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT10 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "KRT2",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT2 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ITGB2",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "RELB",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELB is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRPV3",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV3 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CARD14",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD14 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDSN",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDSN is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CLDN1",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN1 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL1RN",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1RN is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ABCA12",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA12 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "KRT1",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT1 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "GRHL1",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRHL1 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "GSDMA",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMA is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TUFT1",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUFT1 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CST6",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CST6 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHUK",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHUK is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ELOVL3",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELOVL3 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "KRT9",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT9 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ACER1",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACER1 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SNAP29",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNAP29 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD109",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD109 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "KLK11",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK11 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "FOXN1",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXN1 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC27A4",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC27A4 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "GK5",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GK5 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "LMNA",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNA is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SGK3",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGK3 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "C8orf44-SGK3",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C8orf44-SGK3 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "LBR",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LBR is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PNPLA1",
+      "target": "bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PNPLA1 is associated with bathing suit ichthyosis (BATHING_SUIT_ICHTHYOSIS). Open Targets association score 0.03"
+    }
+  ]
+}

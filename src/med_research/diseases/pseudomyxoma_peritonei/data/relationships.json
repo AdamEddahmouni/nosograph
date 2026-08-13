@@ -1,0 +1,484 @@
+{
+  "relationships": [
+    {
+      "source": "RNF213",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "RNF213 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATR",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATR is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "SMO",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SMO is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "SMAD2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SMAD3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SMAD4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.37"
+    },
+    {
+      "source": "GNAS",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAS is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.37"
+    },
+    {
+      "source": "TP53",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.28"
+    },
+    {
+      "source": "AKT1",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.28"
+    },
+    {
+      "source": "HNF1A",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMAD4",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD4 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.28"
+    },
+    {
+      "source": "FAT4",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT4 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR3",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.28"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.28"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMAD2",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD2 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.28"
+    },
+    {
+      "source": "MUC16",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC16 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.19"
+    },
+    {
+      "source": "KMT2D",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "HGF",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "RBM10",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM10 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "MN1",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MN1 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "BRCA2",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "CNTNAP2",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNTNAP2 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "WRN",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WRN is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "CBLC",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBLC is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "NRG1",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRG1 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "KLF4",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF4 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "SMO",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMO is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "TRRAP",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRRAP is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "FEV",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FEV is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "SH3GL1",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3GL1 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "PRKACA",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKACA is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "WT1",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "ARID1A",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "TGFBR2",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBR2 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "AR",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "TET2",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "ATM",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "CDH1",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "CARD11",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "SMAD3",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD3 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "STK11",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "RET",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "ATR",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATR is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "SPEN",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPEN is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "VHL",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VHL is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "NRAS",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "NOTCH2",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH2 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.18"
+    },
+    {
+      "source": "CTNNA2",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNA2 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.09"
+    },
+    {
+      "source": "ANK1",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.09"
+    },
+    {
+      "source": "PTPN6",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN6 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.09"
+    },
+    {
+      "source": "CSMD3",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSMD3 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.09"
+    },
+    {
+      "source": "FAM135B",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM135B is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.09"
+    },
+    {
+      "source": "MSN",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSN is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.09"
+    },
+    {
+      "source": "ZNF429",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF429 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.09"
+    },
+    {
+      "source": "AKAP9",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKAP9 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.09"
+    },
+    {
+      "source": "RNF213",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF213 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.09"
+    },
+    {
+      "source": "TNC",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNC is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.09"
+    },
+    {
+      "source": "RAP1B",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAP1B is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.09"
+    },
+    {
+      "source": "SEPTIN6",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEPTIN6 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.09"
+    },
+    {
+      "source": "FAT3",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT3 is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.09"
+    },
+    {
+      "source": "PRKCB",
+      "target": "pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCB is associated with pseudomyxoma peritonei (PSEUDOMYXOMA_PERITONEI). Open Targets association score 0.09"
+    }
+  ]
+}

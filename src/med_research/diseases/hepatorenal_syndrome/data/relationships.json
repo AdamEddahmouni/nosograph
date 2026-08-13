@@ -229,6 +229,12 @@
       "description": "F2 is a component of the Coagulation Cascade pathway."
     },
     {
+      "source": "HAVCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR1 is a component of the Complement Cascade pathway."
+    },
+    {
       "source": "ADAMTS13",
       "target": "ecm-remodeling",
       "type": "PARTICIPATES_IN",
@@ -355,34 +361,10 @@
       "description": "TNF is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.02"
     },
     {
-      "source": "ADRB2",
+      "source": "ADRB1",
       "target": "hepatorenal syndrome (HEPATORENAL_SYNDROME)",
       "type": "ASSOCIATED_WITH",
-      "description": "ADRB2 is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.02"
-    },
-    {
-      "source": "ADRA1D",
-      "target": "hepatorenal syndrome (HEPATORENAL_SYNDROME)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ADRA1D is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.02"
-    },
-    {
-      "source": "ADRA2B",
-      "target": "hepatorenal syndrome (HEPATORENAL_SYNDROME)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ADRA2B is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.02"
-    },
-    {
-      "source": "ADRA1A",
-      "target": "hepatorenal syndrome (HEPATORENAL_SYNDROME)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ADRA1A is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.02"
-    },
-    {
-      "source": "ADRA2C",
-      "target": "hepatorenal syndrome (HEPATORENAL_SYNDROME)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ADRA2C is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.02"
+      "description": "ADRB1 is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.02"
     },
     {
       "source": "ADRB3",
@@ -391,22 +373,46 @@
       "description": "ADRB3 is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.02"
     },
     {
+      "source": "ADRB2",
+      "target": "hepatorenal syndrome (HEPATORENAL_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB2 is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADRA1A",
+      "target": "hepatorenal syndrome (HEPATORENAL_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA1A is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADRA2B",
+      "target": "hepatorenal syndrome (HEPATORENAL_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2B is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADRA2C",
+      "target": "hepatorenal syndrome (HEPATORENAL_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2C is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.02"
+    },
+    {
       "source": "ADRA2A",
       "target": "hepatorenal syndrome (HEPATORENAL_SYNDROME)",
       "type": "ASSOCIATED_WITH",
       "description": "ADRA2A is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.02"
     },
     {
+      "source": "ADRA1D",
+      "target": "hepatorenal syndrome (HEPATORENAL_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA1D is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.02"
+    },
+    {
       "source": "ADRA1B",
       "target": "hepatorenal syndrome (HEPATORENAL_SYNDROME)",
       "type": "ASSOCIATED_WITH",
       "description": "ADRA1B is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.02"
-    },
-    {
-      "source": "ADRB1",
-      "target": "hepatorenal syndrome (HEPATORENAL_SYNDROME)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ADRB1 is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.02"
     },
     {
       "source": "CST3",
@@ -505,16 +511,16 @@
       "description": "HP is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.01"
     },
     {
-      "source": "SSTR2",
-      "target": "hepatorenal syndrome (HEPATORENAL_SYNDROME)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SSTR2 is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.01"
-    },
-    {
       "source": "ENO4",
       "target": "hepatorenal syndrome (HEPATORENAL_SYNDROME)",
       "type": "ASSOCIATED_WITH",
       "description": "ENO4 is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SSTR2",
+      "target": "hepatorenal syndrome (HEPATORENAL_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSTR2 is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.01"
     },
     {
       "source": "CORT",
@@ -535,16 +541,16 @@
       "description": "GPT is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.01"
     },
     {
-      "source": "CNR2",
-      "target": "hepatorenal syndrome (HEPATORENAL_SYNDROME)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CNR2 is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.01"
-    },
-    {
       "source": "B2M",
       "target": "hepatorenal syndrome (HEPATORENAL_SYNDROME)",
       "type": "ASSOCIATED_WITH",
       "description": "B2M is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CNR2",
+      "target": "hepatorenal syndrome (HEPATORENAL_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNR2 is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.01"
     },
     {
       "source": "CRP",
@@ -553,10 +559,22 @@
       "description": "CRP is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.01"
     },
     {
+      "source": "PTGIS",
+      "target": "hepatorenal syndrome (HEPATORENAL_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGIS is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.01"
+    },
+    {
       "source": "NPY",
       "target": "hepatorenal syndrome (HEPATORENAL_SYNDROME)",
       "type": "ASSOCIATED_WITH",
       "description": "NPY is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TIMP2",
+      "target": "hepatorenal syndrome (HEPATORENAL_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP2 is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.01"
     },
     {
       "source": "IGFBP7",
@@ -571,28 +589,16 @@
       "description": "RPL17 is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.01"
     },
     {
-      "source": "PTGIS",
+      "source": "SLC17A5",
       "target": "hepatorenal syndrome (HEPATORENAL_SYNDROME)",
       "type": "ASSOCIATED_WITH",
-      "description": "PTGIS is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.01"
-    },
-    {
-      "source": "TIMP2",
-      "target": "hepatorenal syndrome (HEPATORENAL_SYNDROME)",
-      "type": "ASSOCIATED_WITH",
-      "description": "TIMP2 is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.01"
+      "description": "SLC17A5 is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.01"
     },
     {
       "source": "GOT1",
       "target": "hepatorenal syndrome (HEPATORENAL_SYNDROME)",
       "type": "ASSOCIATED_WITH",
       "description": "GOT1 is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.01"
-    },
-    {
-      "source": "SLC17A5",
-      "target": "hepatorenal syndrome (HEPATORENAL_SYNDROME)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SLC17A5 is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.01"
     },
     {
       "source": "SLC51B",
@@ -647,6 +653,12 @@
       "target": "hepatorenal syndrome (HEPATORENAL_SYNDROME)",
       "type": "ASSOCIATED_WITH",
       "description": "CD79A is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "HAVCR1",
+      "target": "hepatorenal syndrome (HEPATORENAL_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAVCR1 is associated with hepatorenal syndrome (HEPATORENAL_SYNDROME). Open Targets association score 0.00"
     },
     {
       "source": "LACTB",

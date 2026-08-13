@@ -97,6 +97,12 @@
       "description": "EVEROLIMUS targets FKBP1A."
     },
     {
+      "source": "CHEMBL428647",
+      "target": "TUBB",
+      "type": "TARGETS",
+      "description": "PACLITAXEL targets TUBB."
+    },
+    {
       "source": "CHEMBL94657",
       "target": "TUBB2B",
       "type": "TARGETS",
@@ -643,16 +649,16 @@
       "description": "VHL is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.42"
     },
     {
-      "source": "IFNAR2",
-      "target": "carcinoid tumor (CARCINOID_TUMOR)",
-      "type": "ASSOCIATED_WITH",
-      "description": "IFNAR2 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.39"
-    },
-    {
       "source": "IFNAR1",
       "target": "carcinoid tumor (CARCINOID_TUMOR)",
       "type": "ASSOCIATED_WITH",
       "description": "IFNAR1 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.39"
+    },
+    {
+      "source": "IFNAR2",
+      "target": "carcinoid tumor (CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNAR2 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.39"
     },
     {
       "source": "TPH1",
@@ -721,6 +727,12 @@
       "description": "PDGFRB is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.21"
     },
     {
+      "source": "FGFR4",
+      "target": "carcinoid tumor (CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR4 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.20"
+    },
+    {
       "source": "BTK",
       "target": "carcinoid tumor (CARCINOID_TUMOR)",
       "type": "ASSOCIATED_WITH",
@@ -731,12 +743,6 @@
       "target": "carcinoid tumor (CARCINOID_TUMOR)",
       "type": "ASSOCIATED_WITH",
       "description": "FGFR3 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.20"
-    },
-    {
-      "source": "FGFR4",
-      "target": "carcinoid tumor (CARCINOID_TUMOR)",
-      "type": "ASSOCIATED_WITH",
-      "description": "FGFR4 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.20"
     },
     {
       "source": "EGFR",
@@ -787,10 +793,10 @@
       "description": "HNF1A is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.19"
     },
     {
-      "source": "ETV1",
+      "source": "TENT5C",
       "target": "carcinoid tumor (CARCINOID_TUMOR)",
       "type": "ASSOCIATED_WITH",
-      "description": "ETV1 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.18"
+      "description": "TENT5C is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.18"
     },
     {
       "source": "JAK1",
@@ -799,10 +805,10 @@
       "description": "JAK1 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.18"
     },
     {
-      "source": "ZFHX3",
+      "source": "SRSF2",
       "target": "carcinoid tumor (CARCINOID_TUMOR)",
       "type": "ASSOCIATED_WITH",
-      "description": "ZFHX3 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.18"
+      "description": "SRSF2 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.18"
     },
     {
       "source": "MED12",
@@ -811,34 +817,10 @@
       "description": "MED12 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.18"
     },
     {
-      "source": "MAP2K2",
+      "source": "STAG2",
       "target": "carcinoid tumor (CARCINOID_TUMOR)",
       "type": "ASSOCIATED_WITH",
-      "description": "MAP2K2 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.18"
-    },
-    {
-      "source": "ABL1",
-      "target": "carcinoid tumor (CARCINOID_TUMOR)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ABL1 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.18"
-    },
-    {
-      "source": "SRSF2",
-      "target": "carcinoid tumor (CARCINOID_TUMOR)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SRSF2 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.18"
-    },
-    {
-      "source": "RBM10",
-      "target": "carcinoid tumor (CARCINOID_TUMOR)",
-      "type": "ASSOCIATED_WITH",
-      "description": "RBM10 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.18"
-    },
-    {
-      "source": "PBRM1",
-      "target": "carcinoid tumor (CARCINOID_TUMOR)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PBRM1 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.18"
+      "description": "STAG2 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.18"
     },
     {
       "source": "FUBP1",
@@ -847,16 +829,40 @@
       "description": "FUBP1 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.18"
     },
     {
-      "source": "STAG2",
+      "source": "ZFHX3",
       "target": "carcinoid tumor (CARCINOID_TUMOR)",
       "type": "ASSOCIATED_WITH",
-      "description": "STAG2 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.18"
+      "description": "ZFHX3 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.18"
     },
     {
-      "source": "TENT5C",
+      "source": "MAP2K2",
       "target": "carcinoid tumor (CARCINOID_TUMOR)",
       "type": "ASSOCIATED_WITH",
-      "description": "TENT5C is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.18"
+      "description": "MAP2K2 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ETV1",
+      "target": "carcinoid tumor (CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV1 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ABL1",
+      "target": "carcinoid tumor (CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABL1 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "PBRM1",
+      "target": "carcinoid tumor (CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBRM1 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "RBM10",
+      "target": "carcinoid tumor (CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM10 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.18"
     },
     {
       "source": "RET",
@@ -907,28 +913,22 @@
       "description": "PTPRD is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.09"
     },
     {
-      "source": "NSD1",
-      "target": "carcinoid tumor (CARCINOID_TUMOR)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NSD1 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.09"
-    },
-    {
       "source": "ASXL2",
       "target": "carcinoid tumor (CARCINOID_TUMOR)",
       "type": "ASSOCIATED_WITH",
       "description": "ASXL2 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.09"
     },
     {
-      "source": "TUBB2B",
+      "source": "NSD1",
       "target": "carcinoid tumor (CARCINOID_TUMOR)",
       "type": "ASSOCIATED_WITH",
-      "description": "TUBB2B is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.08"
+      "description": "NSD1 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.09"
     },
     {
-      "source": "TUBB6",
+      "source": "TUBB4A",
       "target": "carcinoid tumor (CARCINOID_TUMOR)",
       "type": "ASSOCIATED_WITH",
-      "description": "TUBB6 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.08"
+      "description": "TUBB4A is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.08"
     },
     {
       "source": "TUBB2A",
@@ -943,16 +943,34 @@
       "description": "TUBB8 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.08"
     },
     {
+      "source": "TUBB1",
+      "target": "carcinoid tumor (CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB1 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.08"
+    },
+    {
+      "source": "TUBB6",
+      "target": "carcinoid tumor (CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB6 is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.08"
+    },
+    {
+      "source": "TUBB",
+      "target": "carcinoid tumor (CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.08"
+    },
+    {
+      "source": "TUBB2B",
+      "target": "carcinoid tumor (CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB2B is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.08"
+    },
+    {
       "source": "TUBB4B",
       "target": "carcinoid tumor (CARCINOID_TUMOR)",
       "type": "ASSOCIATED_WITH",
       "description": "TUBB4B is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.08"
-    },
-    {
-      "source": "TUBB4A",
-      "target": "carcinoid tumor (CARCINOID_TUMOR)",
-      "type": "ASSOCIATED_WITH",
-      "description": "TUBB4A is associated with carcinoid tumor (CARCINOID_TUMOR). Open Targets association score 0.08"
     },
     {
       "source": "BRD4",

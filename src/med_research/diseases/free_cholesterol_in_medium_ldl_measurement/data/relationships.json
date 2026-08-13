@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "IGF2R",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2R is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TM6SF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TM6SF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ZNF229",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF229 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SLC4A4",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC4A4 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ATRAID",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRAID is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF4A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF4A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "ITGA1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CETP is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "HMGCR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HMGCR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ITGA1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFSF13",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.70"
+    },
+    {
+      "source": "PCSK9",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.69"
+    },
+    {
+      "source": "APOB",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.69"
+    },
+    {
+      "source": "ASGR1",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASGR1 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "ZNF229",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF229 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "ABCG8",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG8 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "CELSR2",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR2 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "SORT1",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORT1 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "APOE",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "ABCA6",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA6 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "ABCA1",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "SLC22A1",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A1 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "TIMD4",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMD4 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "HP",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HP is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "SERPINA1",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA1 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "HMGCR",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCR is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "DNAH11",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH11 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "USP24",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP24 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "ST3GAL4",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST3GAL4 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "FADS2",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS2 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "ASGR2",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASGR2 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "TNFSF13",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "GCKR",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "ITGA1",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA1 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "DHODH",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHODH is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "MAFB",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAFB is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "TOP1",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOP1 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "LIPC",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "PELO",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PELO is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "DLG4",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLG4 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "ZHX3",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZHX3 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "PLCG1",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCG1 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "FAM117B",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM117B is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "PLTP",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLTP is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "APOH",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOH is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "PKD1L3",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKD1L3 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "PKN3",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKN3 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "MYLIP",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYLIP is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "NECTIN2",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NECTIN2 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "HNF1A",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "NYNRIN",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NYNRIN is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "TRIM5",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM5 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "CETP",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETP is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "CLEC10A",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC10A is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "EPGN",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPGN is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "TRPS1",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPS1 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "ATRAID",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRAID is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "HGFAC",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGFAC is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "HK1",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HK1 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "SH2B3",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2B3 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "DOK7",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOK7 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "ABCG5",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG5 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "ABO",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABO is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "TM6SF2",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM6SF2 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "SLC4A4",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC4A4 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "TRIB1",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIB1 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "ATXN2",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATXN2 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "ATP1A3",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP1A3 is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "IGF2R",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2R is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "HNF4A",
+      "target": "free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF4A is associated with free cholesterol in medium LDL measurement  (FREE_CHOLESTEROL_IN_MEDIUM_LDL_MEASUREMENT). Open Targets association score 0.32"
+    }
+  ]
+}

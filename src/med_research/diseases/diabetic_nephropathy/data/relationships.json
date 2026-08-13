@@ -523,6 +523,18 @@
       "description": "GRM5 is a component of the GABA / Glutamate Signaling pathway."
     },
     {
+      "source": "GRIA3",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIA3 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN3B",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN3B is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
       "source": "ABCC8",
       "target": "glucose-metabolism",
       "type": "PARTICIPATES_IN",
@@ -769,10 +781,10 @@
       "description": "SCN3A is associated with diabetic kidney disease (DIABETIC_NEPHROPATHY). Open Targets association score 0.39"
     },
     {
-      "source": "SCN5A",
+      "source": "SCN4A",
       "target": "diabetic kidney disease (DIABETIC_NEPHROPATHY)",
       "type": "ASSOCIATED_WITH",
-      "description": "SCN5A is associated with diabetic kidney disease (DIABETIC_NEPHROPATHY). Open Targets association score 0.39"
+      "description": "SCN4A is associated with diabetic kidney disease (DIABETIC_NEPHROPATHY). Open Targets association score 0.39"
     },
     {
       "source": "SCN1A",
@@ -781,16 +793,16 @@
       "description": "SCN1A is associated with diabetic kidney disease (DIABETIC_NEPHROPATHY). Open Targets association score 0.39"
     },
     {
+      "source": "SCN5A",
+      "target": "diabetic kidney disease (DIABETIC_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN5A is associated with diabetic kidney disease (DIABETIC_NEPHROPATHY). Open Targets association score 0.39"
+    },
+    {
       "source": "SCN7A",
       "target": "diabetic kidney disease (DIABETIC_NEPHROPATHY)",
       "type": "ASSOCIATED_WITH",
       "description": "SCN7A is associated with diabetic kidney disease (DIABETIC_NEPHROPATHY). Open Targets association score 0.39"
-    },
-    {
-      "source": "SCN4A",
-      "target": "diabetic kidney disease (DIABETIC_NEPHROPATHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SCN4A is associated with diabetic kidney disease (DIABETIC_NEPHROPATHY). Open Targets association score 0.39"
     },
     {
       "source": "TRPV1",
@@ -895,16 +907,16 @@
       "description": "HRH1 is associated with diabetic kidney disease (DIABETIC_NEPHROPATHY). Open Targets association score 0.09"
     },
     {
-      "source": "GRIN2A",
-      "target": "diabetic kidney disease (DIABETIC_NEPHROPATHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GRIN2A is associated with diabetic kidney disease (DIABETIC_NEPHROPATHY). Open Targets association score 0.09"
-    },
-    {
       "source": "HTR2C",
       "target": "diabetic kidney disease (DIABETIC_NEPHROPATHY)",
       "type": "ASSOCIATED_WITH",
       "description": "HTR2C is associated with diabetic kidney disease (DIABETIC_NEPHROPATHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "GRIN2A",
+      "target": "diabetic kidney disease (DIABETIC_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2A is associated with diabetic kidney disease (DIABETIC_NEPHROPATHY). Open Targets association score 0.09"
     },
     {
       "source": "TRPA1",
@@ -1003,16 +1015,16 @@
       "description": "HCRTR1 is associated with diabetic kidney disease (DIABETIC_NEPHROPATHY). Open Targets association score 0.07"
     },
     {
-      "source": "CACNA1B",
-      "target": "diabetic kidney disease (DIABETIC_NEPHROPATHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CACNA1B is associated with diabetic kidney disease (DIABETIC_NEPHROPATHY). Open Targets association score 0.07"
-    },
-    {
       "source": "MS4A1",
       "target": "diabetic kidney disease (DIABETIC_NEPHROPATHY)",
       "type": "ASSOCIATED_WITH",
       "description": "MS4A1 is associated with diabetic kidney disease (DIABETIC_NEPHROPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "CACNA1B",
+      "target": "diabetic kidney disease (DIABETIC_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1B is associated with diabetic kidney disease (DIABETIC_NEPHROPATHY). Open Targets association score 0.07"
     },
     {
       "source": "GRIA1",
@@ -1021,28 +1033,10 @@
       "description": "GRIA1 is associated with diabetic kidney disease (DIABETIC_NEPHROPATHY). Open Targets association score 0.07"
     },
     {
-      "source": "GUCY1B1",
-      "target": "diabetic kidney disease (DIABETIC_NEPHROPATHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GUCY1B1 is associated with diabetic kidney disease (DIABETIC_NEPHROPATHY). Open Targets association score 0.07"
-    },
-    {
-      "source": "HCRTR2",
-      "target": "diabetic kidney disease (DIABETIC_NEPHROPATHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "HCRTR2 is associated with diabetic kidney disease (DIABETIC_NEPHROPATHY). Open Targets association score 0.07"
-    },
-    {
       "source": "GRIA4",
       "target": "diabetic kidney disease (DIABETIC_NEPHROPATHY)",
       "type": "ASSOCIATED_WITH",
       "description": "GRIA4 is associated with diabetic kidney disease (DIABETIC_NEPHROPATHY). Open Targets association score 0.07"
-    },
-    {
-      "source": "MAOA",
-      "target": "diabetic kidney disease (DIABETIC_NEPHROPATHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "MAOA is associated with diabetic kidney disease (DIABETIC_NEPHROPATHY). Open Targets association score 0.07"
     },
     {
       "source": "CACNA2D2",
@@ -1051,10 +1045,46 @@
       "description": "CACNA2D2 is associated with diabetic kidney disease (DIABETIC_NEPHROPATHY). Open Targets association score 0.07"
     },
     {
+      "source": "GUCY1B1",
+      "target": "diabetic kidney disease (DIABETIC_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GUCY1B1 is associated with diabetic kidney disease (DIABETIC_NEPHROPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "GRIN3B",
+      "target": "diabetic kidney disease (DIABETIC_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN3B is associated with diabetic kidney disease (DIABETIC_NEPHROPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "SNAP25",
+      "target": "diabetic kidney disease (DIABETIC_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNAP25 is associated with diabetic kidney disease (DIABETIC_NEPHROPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "GRIA3",
+      "target": "diabetic kidney disease (DIABETIC_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIA3 is associated with diabetic kidney disease (DIABETIC_NEPHROPATHY). Open Targets association score 0.07"
+    },
+    {
       "source": "GRIN2C",
       "target": "diabetic kidney disease (DIABETIC_NEPHROPATHY)",
       "type": "ASSOCIATED_WITH",
       "description": "GRIN2C is associated with diabetic kidney disease (DIABETIC_NEPHROPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "MAOA",
+      "target": "diabetic kidney disease (DIABETIC_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAOA is associated with diabetic kidney disease (DIABETIC_NEPHROPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "HCRTR2",
+      "target": "diabetic kidney disease (DIABETIC_NEPHROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HCRTR2 is associated with diabetic kidney disease (DIABETIC_NEPHROPATHY). Open Targets association score 0.07"
     },
     {
       "source": "GRIN3A",

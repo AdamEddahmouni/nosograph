@@ -1,0 +1,592 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL118",
+      "target": "PTGS2",
+      "type": "TARGETS",
+      "description": "CELECOXIB targets PTGS2."
+    },
+    {
+      "source": "CHEMBL844",
+      "target": "ADRA2B",
+      "type": "TARGETS",
+      "description": "BRIMONIDINE targets ADRA2B."
+    },
+    {
+      "source": "CHEMBL1467",
+      "target": "XDH",
+      "type": "TARGETS",
+      "description": "ALLOPURINOL targets XDH."
+    },
+    {
+      "source": "CHEMBL139",
+      "target": "PTGS1",
+      "type": "TARGETS",
+      "description": "DICLOFENAC targets PTGS1."
+    },
+    {
+      "source": "CHEMBL844",
+      "target": "ADRA2C",
+      "type": "TARGETS",
+      "description": "BRIMONIDINE targets ADRA2C."
+    },
+    {
+      "source": "CHEMBL2062257",
+      "target": "ADRA2A",
+      "type": "TARGETS",
+      "description": "BRIMONIDINE TARTRATE targets ADRA2A."
+    },
+    {
+      "source": "CHEMBL2062257",
+      "target": "ADRA2C",
+      "type": "TARGETS",
+      "description": "BRIMONIDINE TARTRATE targets ADRA2C."
+    },
+    {
+      "source": "CHEMBL192",
+      "target": "PDE5A",
+      "type": "TARGETS",
+      "description": "SILDENAFIL targets PDE5A."
+    },
+    {
+      "source": "CHEMBL2062257",
+      "target": "ADRA2B",
+      "type": "TARGETS",
+      "description": "BRIMONIDINE TARTRATE targets ADRA2B."
+    },
+    {
+      "source": "CHEMBL844",
+      "target": "ADRA2A",
+      "type": "TARGETS",
+      "description": "BRIMONIDINE targets ADRA2A."
+    },
+    {
+      "source": "CHEMBL1737",
+      "target": "PDE5A",
+      "type": "TARGETS",
+      "description": "SILDENAFIL CITRATE targets PDE5A."
+    },
+    {
+      "source": "CHEMBL1773",
+      "target": "TYMS",
+      "type": "TARGETS",
+      "description": "CAPECITABINE targets TYMS."
+    },
+    {
+      "source": "CHEMBL139",
+      "target": "PTGS2",
+      "type": "TARGETS",
+      "description": "DICLOFENAC targets PTGS2."
+    },
+    {
+      "source": "CHEMBL1034",
+      "target": "PTGS1",
+      "type": "TARGETS",
+      "description": "DICLOFENAC SODIUM targets PTGS1."
+    },
+    {
+      "source": "CHEMBL118",
+      "target": "PTGS2",
+      "type": "TARGETS",
+      "description": "CELECOXIB targets PTGS2."
+    },
+    {
+      "source": "CHEMBL1034",
+      "target": "PTGS2",
+      "type": "TARGETS",
+      "description": "DICLOFENAC SODIUM targets PTGS2."
+    },
+    {
+      "source": "WEE1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "WEE1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCL27",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL27 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATRNL1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRNL1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK14",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK14 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "MTHFR",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFR is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTGS1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "PGF",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "PGF is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "NAT10",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NAT10 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.34"
+    },
+    {
+      "source": "TYMS",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYMS is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDH4",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH4 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.20"
+    },
+    {
+      "source": "ADRA2A",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2A is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "ADRA2C",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2C is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "PTGS1",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS1 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "ADRA2B",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2B is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "XDH",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XDH is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "MTHFR",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFR is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PDE5A",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE5A is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ABCG2",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG2 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GPT",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "VEGFA",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "DPYD",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPYD is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLC17A5",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A5 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "GOT1",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOT1 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "ABCB1",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB1 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "ENOSF1",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENOSF1 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "KDR",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "AFP",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGFR",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "MT-CO2",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO2 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP12A",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP12A is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP4A",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP4A is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD4",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDA",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDA is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TYMP",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYMP is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "GRAP2",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRAP2 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "AHSA1",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSA1 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFKB1",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "AIMP2",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIMP2 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "POLDIP2",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLDIP2 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "RNF19A",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF19A is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "STAT3",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPK14",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK14 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRK",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRK is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPK1",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "MCPH1",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCPH1 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "MCAT",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCAT is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC16A1",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC16A1 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERBB2",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD8A",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDLIM3",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDLIM3 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATRNL1",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRNL1 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PGF",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGF is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALPP",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPP is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCL27",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL27 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLPI",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLPI is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "NAT10",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAT10 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACE",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "MATK",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MATK is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "WEE1",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WEE1 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATM",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ENO2",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENO2 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ASRGL1",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASRGL1 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHKA",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKA is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ASAH1",
+      "target": "Hand-foot syndrome (HAND_FOOT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASAH1 is associated with Hand-foot syndrome (HAND_FOOT_SYNDROME). Open Targets association score 0.01"
+    }
+  ]
+}

@@ -79,16 +79,35 @@ services:
   web:
     build: .
     image: med-research:latest
+    env_file:
+      - .env
     ports:
       - "${PORT:-8000}:${PORT:-8000}"
     environment:
       - PORT=${PORT:-8000}
+      - DEBUG=${DEBUG:-true}
+      - API_KEY=${API_KEY:-}
+      - AUTH_SESSION_SECRET=${AUTH_SESSION_SECRET:-}
+      - CORS_ORIGINS=${CORS_ORIGINS:-http://localhost:8000}
       - CELERY_BROKER_URL=redis://redis:6379/0
       - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - REDIS_RATE_LIMIT_URL=redis://redis:6379/0
       - USE_CACHE=true
     depends_on:
       redis:
         condition: service_healthy
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import os, urllib.request; urllib.request.urlopen(f'http://127.0.0.1:{os.environ.get(\"PORT\", \"8000\")}/api/health', timeout=3)",
+        ]
+      interval: 30s
+      timeout: 5s
+      start_period: 30s
+      retries: 3
     volumes:
       - ./data:/app/data
     profiles:

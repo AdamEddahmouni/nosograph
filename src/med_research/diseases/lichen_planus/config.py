@@ -34,6 +34,7 @@ CAR_T_SCORES = {
         "BCL2": 4.0,
         "C12orf42": 4.0,
         "CALM3": 4.0,
+        "CAMKMT": 4.0,
         "CASP8": 4.0,
         "CCR6": 4.0,
         "CD163": 4.0,

@@ -1,0 +1,454 @@
+{
+  "relationships": [
+    {
+      "source": "SOST",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "SOST is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCL27",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL27 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATRNL1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRNL1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL1A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "SHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "HFE",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "HFE is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "PTHLH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTHLH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "NAT10",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NAT10 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GNAS",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAS is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.77"
+    },
+    {
+      "source": "SOST",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOST is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "TP53",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PAX8",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX8 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ANO6",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANO6 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXD13",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD13 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PKDCC",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKDCC is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL2A1",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ACP5",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACP5 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GDF5",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF5 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXD12",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD12 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CLCN7",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCN7 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TWIST1",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TWIST1 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PHEX",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHEX is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRIM62",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM62 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTHLH",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTHLH is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NF2",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "MEN1",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PPIB",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIB is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "EVC2",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EVC2 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRRX1",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRRX1 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "RSPO2",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO2 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXC1",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "XYLT1",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XYLT1 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "KRAS",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SHH",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHH is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TCIRG1",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCIRG1 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "HIC1",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIC1 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKG2",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKG2 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFITM5",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFITM5 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNK1",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNK1 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FGR",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGR is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "BGN",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BGN is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHSY1",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHSY1 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "COL1A1",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A1 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRDX1",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDX1 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "GAS1",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAS1 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "EVX2",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EVX2 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNNT3",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNT3 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PINX1",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PINX1 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "BUB1B-PAK6",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUB1B-PAK6 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "BUB1B",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUB1B is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNNI2",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNI2 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SFRP2",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFRP2 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ERRFI1",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERRFI1 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NF1",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TMEM178A",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM178A is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTEN",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FMN1",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMN1 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTH",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTH is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "FUT1",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUT1 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HFE",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HFE is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "LDOC1",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDOC1 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ASRGL1",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASRGL1 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATRNL1",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRNL1 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALPP",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPP is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NAT10",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAT10 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCL27",
+      "target": "progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL27 is associated with progressive osseous heteroplasia (PROGRESSIVE_OSSEOUS_HETEROPLASIA). Open Targets association score 0.01"
+    }
+  ]
+}

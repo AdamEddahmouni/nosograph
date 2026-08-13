@@ -1,0 +1,412 @@
+{
+  "relationships": [
+    {
+      "source": "LYN",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LYN is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "GIGYF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "GIGYF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "RNF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "RNF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SLC4A1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC4A1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TFRC",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFRC is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "ABCB7",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB7 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ABCB7",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB7 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.82"
+    },
+    {
+      "source": "SPTA1",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "ANK1",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLC4A1",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC4A1 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "AHSP",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSP is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TF",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GIGYF2",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIGYF2 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TP53",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "LPIN2",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPIN2 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "HEPH",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEPH is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "RPL27A",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL27A is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC11A2",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC11A2 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "IREB2",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IREB2 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "EXOC6",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EXOC6 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "LEPR",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "HK1",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HK1 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "KCTD1",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCTD1 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TFRC",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFRC is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "WWOX",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WWOX is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TMCC2",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMCC2 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "GPR146",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR146 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TMPRSS6",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS6 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "STEAP3",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STEAP3 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "WDR45",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR45 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "BNIP3L",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BNIP3L is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "RNF10",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF10 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKAG1",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAG1 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FECH",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FECH is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "HBZ",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBZ is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SMAP1",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAP1 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TTC7A",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC7A is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ABCD2",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCD2 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "EPB41",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPB41 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ATP4A",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP4A is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "HSD17B4",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSD17B4 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "LYN",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYN is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CTNNA2",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNA2 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "KCNE1",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNE1 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "JAK2",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TAL1",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAL1 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD59",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD59 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "BMI1",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMI1 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "COMMD3-BMI1",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COMMD3-BMI1 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC20A1",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC20A1 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FBXO7",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXO7 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "RUNX1",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NEMP1",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEMP1 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CPOX",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPOX is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADD2",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADD2 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRDX2",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDX2 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "GNAO1",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAO1 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "HBA1",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBA1 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "HBA2",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBA2 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "KLF14",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF14 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "EPB42",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPB42 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPHP3-ACAD11",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHP3-ACAD11 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPHP3",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHP3 is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PPP1R15A",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R15A is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "UNC5C",
+      "target": "X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UNC5C is associated with X-linked sideroblastic anemia with ataxia (X_LINKED_SIDEROBLASTIC_ANEMIA_WITH_ATAXIA). Open Targets association score 0.03"
+    }
+  ]
+}

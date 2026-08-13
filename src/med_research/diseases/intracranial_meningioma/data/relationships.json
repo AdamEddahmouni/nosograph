@@ -1,0 +1,586 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL3301610",
+      "target": "CDK4",
+      "type": "TARGETS",
+      "description": "ABEMACICLIB targets CDK4."
+    },
+    {
+      "source": "CHEMBL3301610",
+      "target": "CDK6",
+      "type": "TARGETS",
+      "description": "ABEMACICLIB targets CDK6."
+    },
+    {
+      "source": "CHEMBL4742157",
+      "target": "PTK2",
+      "type": "TARGETS",
+      "description": "GSK-2256098 targets PTK2."
+    },
+    {
+      "source": "CHEMBL2325741",
+      "target": "AKT1",
+      "type": "TARGETS",
+      "description": "CAPIVASERTIB targets AKT1."
+    },
+    {
+      "source": "CHEMBL2325741",
+      "target": "AKT2",
+      "type": "TARGETS",
+      "description": "CAPIVASERTIB targets AKT2."
+    },
+    {
+      "source": "CHEMBL1201583",
+      "target": "VEGFA",
+      "type": "TARGETS",
+      "description": "BEVACIZUMAB targets VEGFA."
+    },
+    {
+      "source": "CHEMBL473417",
+      "target": "SMO",
+      "type": "TARGETS",
+      "description": "VISMODEGIB targets SMO."
+    },
+    {
+      "source": "CHEMBL2325741",
+      "target": "AKT3",
+      "type": "TARGETS",
+      "description": "CAPIVASERTIB targets AKT3."
+    },
+    {
+      "source": "CHEMBL1908360",
+      "target": "FKBP1A",
+      "type": "TARGETS",
+      "description": "EVEROLIMUS targets FKBP1A."
+    },
+    {
+      "source": "CASP3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CCNA2",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCNA2 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDK4",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK4 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDK6",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK6 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "IGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CHEK2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "CHEK2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MLH1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MLH1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "SMO",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SMO is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "TFRC",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFRC is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "AKT2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "AKT3",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT3 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "THBS1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THBS1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GSTP1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTP1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "PTK2",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTK2 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "AKT1",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CDK6",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK6 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "AKT3",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT3 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CDK4",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK4 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "AKT2",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT2 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "SMO",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMO is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "FKBP1A",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP1A is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "ESR1",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDH1",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "EREG",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EREG is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PIEZO1",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIEZO1 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TP53",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDH2",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH2 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTGS2",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MKI67",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SSTR2",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSTR2 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "NF2",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ALB",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PGR",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GRN",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRN is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TFRC",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFRC is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ARMC5",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARMC5 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MT-CO2",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO2 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ABCB1",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB1 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PCNA",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNA is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MIB1",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIB1 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP2",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GH1",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB1",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CASP3",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP3 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYC",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP9",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCNA2",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCNA2 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOD1",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD1 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLAT",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAT is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NR4A1",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR4A1 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MGMT",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MGMT is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PITPNB",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITPNB is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MLH1",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLH1 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PECAM1",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PECAM1 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHEK2",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHEK2 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NDRG2",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDRG2 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CENPF",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CENPF is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGF2",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MSH2",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH2 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSTP1",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTP1 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC16",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC16 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TTC28",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC28 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MSLN",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSLN is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNNI3",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNI3 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPIB",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIB is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "THBS1",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THBS1 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MME",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MME is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FN1",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FN1 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALCAM",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALCAM is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRH2",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH2 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TMEM37",
+      "target": "intracranial meningioma (INTRACRANIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM37 is associated with intracranial meningioma (INTRACRANIAL_MENINGIOMA). Open Targets association score 0.01"
+    }
+  ]
+}

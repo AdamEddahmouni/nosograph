@@ -1,0 +1,478 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL35",
+      "target": "SLC12A1",
+      "type": "TARGETS",
+      "description": "FUROSEMIDE targets SLC12A1."
+    },
+    {
+      "source": "CHEMBL1072",
+      "target": "SLC12A1",
+      "type": "TARGETS",
+      "description": "BUMETANIDE targets SLC12A1."
+    },
+    {
+      "source": "CHEMBL1336",
+      "target": "RET",
+      "type": "TARGETS",
+      "description": "SORAFENIB targets RET."
+    },
+    {
+      "source": "CHEMBL1072",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "TREATS",
+      "description": "BUMETANIDE is phase 4 / marketed for posterior urethral valve (POSTERIOR_URETHRAL_VALVE)."
+    },
+    {
+      "source": "SLC3A1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC3A1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "COL4A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "SLC2A9",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A9 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "BMP4",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP4 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "NFAT5",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFAT5 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "REN",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "REN is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "DRD5",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "DRD5 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "HTR3A",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTR3A is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CYP4A11",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4A11 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP4A22",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4A22 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP4F11",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4F11 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP4F12",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4F12 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "BNC2",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BNC2 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.55"
+    },
+    {
+      "source": "TBX5",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX5 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.22"
+    },
+    {
+      "source": "ACE",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "UMOD",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UMOD is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "AQP2",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP2 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "HTR3A",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTR3A is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "AGT",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "REN",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REN is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "CYP4A22",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4A22 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYP4A11",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4A11 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "DRD5",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DRD5 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC12A1",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A1 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "PAX2",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX2 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "PDE1A",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE1A is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CLCNKA",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCNKA is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CLCNKB",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCNKB is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD151",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD151 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "APRT",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APRT is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "DIS3L2",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DIS3L2 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL4A3",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A3 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL4A1",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A1 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "UPK2",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UPK2 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "NPHP3-ACAD11",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHP3-ACAD11 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "NPHP3",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHP3 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZNG1A",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNG1A is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZNG1B",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNG1B is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZNG1C",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNG1C is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZNG1F",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNG1F is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZNG1E",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNG1E is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "UPK3A",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UPK3A is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXD2",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXD2 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFIA",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFIA is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC3A1",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC3A1 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYP4F12",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4F12 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYP4F11",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4F11 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAP3K15",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K15 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC6A18",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A18 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "GATA5",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA5 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "KCNJ1",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNJ1 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "GRHPR",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRHPR is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "FSTL1",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSTL1 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "AQP1",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP1 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CRIM1",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRIM1 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "FRYL",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FRYL is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "NFAT5",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFAT5 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "AGXT",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGXT is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "GEN1",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GEN1 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "AQP11",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP11 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "GNE",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNE is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC2A9",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A9 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "BMP4",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP4 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD2AP",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD2AP is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "DVL3",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DVL3 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "TAC1",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAC1 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "GUCA2B",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GUCA2B is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "RET",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CLDN4",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN4 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "LIN7C",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIN7C is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "GDNF",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDNF is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNS1",
+      "target": "posterior urethral valve (POSTERIOR_URETHRAL_VALVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNS1 is associated with posterior urethral valve (POSTERIOR_URETHRAL_VALVE). Open Targets association score 0.03"
+    }
+  ]
+}

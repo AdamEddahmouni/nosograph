@@ -1,0 +1,532 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2L1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2L1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "F9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TACR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "TACR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP20",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP20 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLI1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "SHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "SMO",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SMO is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BMP2",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP2 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL1A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "TPSAB1",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "TPSAB1 is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "IKBKB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "IKBKB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.03"
+    },
+    {
+      "source": "SHH",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHH is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.03"
+    },
+    {
+      "source": "MMP20",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP20 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.03"
+    },
+    {
+      "source": "IKBKB",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKBKB is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "MKI67",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "EPHB2",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHB2 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "MAPK1",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "HRAS",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "CALB2",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALB2 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "GSDMB",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNF",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "PDPN",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDPN is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "BRAF",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "KRT5",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT5 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "TACR1",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TACR1 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "NES",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NES is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNC",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNC is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "KRAS",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "BMP2",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP2 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB2",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB2 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "DNMT1",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT1 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKAR1A",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAR1A is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD34",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "F9",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F9 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSMD9",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMD9 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "DCTN6",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCTN6 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFI27",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFI27 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZNRD2",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNRD2 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "PAK2",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAK2 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "TMED7",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMED7 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMO",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMO is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTCH1",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGFR",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPC3",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPC3 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACTA1",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTA1 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMN1",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMN1 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "PECAM1",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PECAM1 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB1",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "GLI1",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI1 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "HGF",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "MET",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCDC6",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC6 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "RET",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "TAS2R38",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAS2R38 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1A",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1A is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "POSTN",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POSTN is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "KLK4",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK4 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "FSCN1",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSCN1 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL2L1",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2L1 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDH1",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "S100A1",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A1 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "S100B",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100B is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "IVL",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IVL is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "TPSD1",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPSD1 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "TPSAB1",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPSAB1 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "FN1",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FN1 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "AMBN",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMBN is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "odontogenic neoplasm (ODONTOGENIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with odontogenic neoplasm (ODONTOGENIC_NEOPLASM). Open Targets association score 0.01"
+    }
+  ]
+}

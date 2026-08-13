@@ -1,84 +1,832 @@
 {
-  "disease_id": "asthma",
-  "disease_name": "Chronic Airway Inflammation (Asthma)",
   "relationships": [
     {
-      "source": "IL5",
-      "type": "ASSOCIATED_WITH",
-      "target": "Chronic Airway Inflammation (Asthma)",
-      "evidence": "Primary cytokine regulating eosinophil differentiation and survival."
+      "source": "CHEMBL1200681",
+      "target": "CYSLTR1",
+      "type": "TARGETS",
+      "description": "MONTELUKAST SODIUM targets CYSLTR1."
     },
     {
-      "source": "TSLP",
-      "type": "ASSOCIATED_WITH",
+      "source": "CHEMBL1201027",
+      "target": "CHRM3",
+      "type": "TARGETS",
+      "description": "GLYCOPYRROLATE targets CHRM3."
+    },
+    {
+      "source": "CHEMBL1256786",
+      "target": "ADRB2",
+      "type": "TARGETS",
+      "description": "FORMOTEROL targets ADRB2."
+    },
+    {
+      "source": "CHEMBL131",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "PREDNISOLONE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL1370561",
+      "target": "ADORA2A",
+      "type": "TARGETS",
+      "description": "AMINOPHYLLINE targets ADORA2A."
+    },
+    {
+      "source": "CHEMBL1473",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "FLUTICASONE PROPIONATE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL1523964",
+      "target": "ADRB1",
+      "type": "TARGETS",
+      "description": "EPHEDRINE SULFATE targets ADRB1."
+    },
+    {
+      "source": "CHEMBL1523964",
+      "target": "ADRA2A",
+      "type": "TARGETS",
+      "description": "EPHEDRINE SULFATE targets ADRA2A."
+    },
+    {
+      "source": "CHEMBL193240",
+      "target": "PDE4A",
+      "type": "TARGETS",
+      "description": "ROFLUMILAST targets PDE4A."
+    },
+    {
+      "source": "CHEMBL2109595",
+      "target": "TSLP",
+      "type": "TARGETS",
+      "description": "AMG-157 targets TSLP."
+    },
+    {
+      "source": "CHEMBL2146102",
+      "target": "ADRA2A",
+      "type": "TARGETS",
+      "description": "EPHEDRINE HYDROCHLORIDE targets ADRA2A."
+    },
+    {
+      "source": "CHEMBL217899",
+      "target": "PDE4D",
+      "type": "TARGETS",
+      "description": "TOFIMILAST targets PDE4D."
+    },
+    {
+      "source": "CHEMBL3707229",
+      "target": "TSLP",
+      "type": "TARGETS",
+      "description": "TEZEPELUMAB targets TSLP."
+    },
+    {
+      "source": "CHEMBL650",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "METHYLPREDNISOLONE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL679",
+      "target": "ADRA2B",
+      "type": "TARGETS",
+      "description": "EPINEPHRINE targets ADRA2B."
+    },
+    {
+      "source": "CHEMBL679",
+      "target": "ADRA1D",
+      "type": "TARGETS",
+      "description": "EPINEPHRINE targets ADRA1D."
+    },
+    {
+      "source": "CHEMBL93",
+      "target": "ALOX5",
+      "type": "TARGETS",
+      "description": "ZILEUTON targets ALOX5."
+    },
+    {
+      "source": "CHEMBL1200500",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "BECLOMETHASONE DIPROPIONATE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL1200500",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "BECLOMETHASONE DIPROPIONATE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL131",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "PREDNISOLONE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL1743035",
+      "target": "IL13",
+      "type": "TARGETS",
+      "description": "LEBRIKIZUMAB targets IL13."
+    },
+    {
+      "source": "CHEMBL190",
+      "target": "PDE4C",
+      "type": "TARGETS",
+      "description": "THEOPHYLLINE targets PDE4C."
+    },
+    {
+      "source": "CHEMBL190",
+      "target": "PDE4C",
+      "type": "TARGETS",
+      "description": "THEOPHYLLINE targets PDE4C."
+    },
+    {
+      "source": "CHEMBL193240",
+      "target": "PDE4A",
+      "type": "TARGETS",
+      "description": "ROFLUMILAST targets PDE4A."
+    },
+    {
+      "source": "CHEMBL193240",
+      "target": "PDE4D",
+      "type": "TARGETS",
+      "description": "ROFLUMILAST targets PDE4D."
+    },
+    {
+      "source": "CHEMBL2107884",
+      "target": "IL5",
+      "type": "TARGETS",
+      "description": "RESLIZUMAB targets IL5."
+    },
+    {
+      "source": "CHEMBL2134724",
+      "target": "CHRM3",
+      "type": "TARGETS",
+      "description": "IPRATROPIUM BROMIDE targets CHRM3."
+    },
+    {
+      "source": "CHEMBL3039530",
+      "target": "ADRB2",
+      "type": "TARGETS",
+      "description": "ABEDITEROL targets ADRB2."
+    },
+    {
+      "source": "CHEMBL3545181",
+      "target": "CHRM3",
+      "type": "TARGETS",
+      "description": "TIOTROPIUM BROMIDE targets CHRM3."
+    },
+    {
+      "source": "CHEMBL679",
+      "target": "ADRB2",
+      "type": "TARGETS",
+      "description": "EPINEPHRINE targets ADRB2."
+    },
+    {
+      "source": "CHEMBL679",
+      "target": "ADRB1",
+      "type": "TARGETS",
+      "description": "EPINEPHRINE targets ADRB1."
+    },
+    {
+      "source": "CHEMBL978",
+      "target": "CHRM3",
+      "type": "TARGETS",
+      "description": "METHACHOLINE targets CHRM3."
+    },
+    {
+      "source": "CHEMBL1198857",
+      "target": "ADRB2",
+      "type": "TARGETS",
+      "description": "VILANTEROL targets ADRB2."
+    },
+    {
+      "source": "CHEMBL1370",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "BUDESONIDE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL190",
+      "target": "PDE3B",
+      "type": "TARGETS",
+      "description": "THEOPHYLLINE targets PDE3B."
+    },
+    {
+      "source": "CHEMBL193240",
+      "target": "PDE4B",
+      "type": "TARGETS",
+      "description": "ROFLUMILAST targets PDE4B."
+    },
+    {
+      "source": "CHEMBL193240",
+      "target": "PDE4C",
+      "type": "TARGETS",
+      "description": "ROFLUMILAST targets PDE4C."
+    },
+    {
+      "source": "CHEMBL3989798",
+      "target": "ADRB2",
+      "type": "TARGETS",
+      "description": "FORMOTEROL FUMARATE targets ADRB2."
+    },
+    {
+      "source": "CHEMBL635",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "PREDNISONE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL679",
+      "target": "ADRA1D",
+      "type": "TARGETS",
+      "description": "EPINEPHRINE targets ADRA1D."
+    },
+    {
+      "source": "CHEMBL1082607",
+      "target": "ADRB2",
+      "type": "TARGETS",
+      "description": "SALMETEROL XINAFOATE targets ADRB2."
+    },
+    {
+      "source": "CHEMBL1523964",
       "target": "Chronic Airway Inflammation (Asthma)",
-      "evidence": "Upstream epithelial alarmin initiating airway Type 2 cascade."
+      "type": "TREATS",
+      "description": "EPHEDRINE SULFATE is phase 4 / marketed for Chronic Airway Inflammation (Asthma)."
+    },
+    {
+      "source": "CHEMBL1523964",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "TREATS",
+      "description": "EPHEDRINE SULFATE is phase 4 / marketed for Chronic Airway Inflammation (Asthma)."
+    },
+    {
+      "source": "CHEMBL2146102",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "TREATS",
+      "description": "EPHEDRINE HYDROCHLORIDE is phase 4 / marketed for Chronic Airway Inflammation (Asthma)."
+    },
+    {
+      "source": "CHEMBL679",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "TREATS",
+      "description": "EPINEPHRINE is phase 4 / marketed for Chronic Airway Inflammation (Asthma)."
+    },
+    {
+      "source": "CHEMBL131",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "TREATS",
+      "description": "PREDNISOLONE is phase 4 / marketed for Chronic Airway Inflammation (Asthma)."
+    },
+    {
+      "source": "CHEMBL190",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "TREATS",
+      "description": "THEOPHYLLINE is phase 4 / marketed for Chronic Airway Inflammation (Asthma)."
+    },
+    {
+      "source": "CHEMBL679",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "TREATS",
+      "description": "EPINEPHRINE is phase 4 / marketed for Chronic Airway Inflammation (Asthma)."
+    },
+    {
+      "source": "CHEMBL3989798",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "TREATS",
+      "description": "FORMOTEROL FUMARATE is phase 4 / marketed for Chronic Airway Inflammation (Asthma)."
+    },
+    {
+      "source": "ADRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "ADRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TNFRSF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "RAD51B",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "RAD51B is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ALOX5",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ALOX5 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1RL1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1RL1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL33",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL33 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
     },
     {
       "source": "IL4R",
-      "type": "ASSOCIATED_WITH",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4R is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL5",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL5 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL5RA",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL5RA is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "TSLP",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "TSLP is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "SMAD3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "IL21R",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL21R is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "RORA",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "RORA is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TLR1",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR1 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNFRSF8",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF8 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF4",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF4 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IRF1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IL5",
+      "target": "t2-airway-inflammation",
+      "type": "PARTICIPATES_IN",
+      "description": "IL5 is a component of the Type 2 High Airway Inflammation pathway."
+    },
+    {
+      "source": "IL4R",
+      "target": "t2-airway-inflammation",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4R is a component of the Type 2 High Airway Inflammation pathway."
+    },
+    {
+      "source": "TSLP",
+      "target": "alarmin-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TSLP is a component of the Epithelial Alarmin Signaling pathway."
+    },
+    {
+      "source": "FLG",
       "target": "Chronic Airway Inflammation (Asthma)",
-      "evidence": "Receptor subunit mediating IgE class switching and mucus hypersecretion."
+      "type": "ASSOCIATED_WITH",
+      "description": "FLG is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.73"
+    },
+    {
+      "source": "ADORA1",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADORA1 is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.73"
+    },
+    {
+      "source": "IL33",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL33 is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.71"
+    },
+    {
+      "source": "IL4R",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4R is associated with Chronic Airway Inflammation (Asthma). Receptor subunit mediating IgE class switching and mucus hypersecretion. | Open Targets association score 0.68"
+    },
+    {
+      "source": "IL13",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13 is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.68"
+    },
+    {
+      "source": "TSLP",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSLP is associated with Chronic Airway Inflammation (Asthma). Upstream epithelial alarmin initiating airway Type 2 cascade. | Open Targets association score 0.67"
+    },
+    {
+      "source": "IL5",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL5 is associated with Chronic Airway Inflammation (Asthma). Primary cytokine regulating eosinophil differentiation and survival. | Open Targets association score 0.62"
+    },
+    {
+      "source": "ADRB2",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB2 is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.61"
+    },
+    {
+      "source": "NR3C1",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.61"
+    },
+    {
+      "source": "CYSLTR1",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYSLTR1 is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.61"
+    },
+    {
+      "source": "CHRM3",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHRM3 is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.60"
+    },
+    {
+      "source": "PDE4B",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE4B is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.60"
+    },
+    {
+      "source": "PDE4A",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE4A is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.60"
+    },
+    {
+      "source": "PDE4D",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE4D is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.60"
+    },
+    {
+      "source": "PDE4C",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE4C is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.60"
+    },
+    {
+      "source": "PDE3B",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE3B is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.60"
+    },
+    {
+      "source": "PDE3A",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE3A is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.60"
+    },
+    {
+      "source": "ADORA3",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADORA3 is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.60"
+    },
+    {
+      "source": "ADORA2A",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADORA2A is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.60"
+    },
+    {
+      "source": "ADORA2B",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADORA2B is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.60"
+    },
+    {
+      "source": "ADRA1A",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA1A is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.60"
+    },
+    {
+      "source": "ADRA1D",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA1D is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.60"
+    },
+    {
+      "source": "ADRA2B",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2B is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.60"
+    },
+    {
+      "source": "ADRB1",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB1 is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.60"
+    },
+    {
+      "source": "ADRA1B",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA1B is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.60"
+    },
+    {
+      "source": "ADRB3",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB3 is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.60"
+    },
+    {
+      "source": "ADRA2A",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2A is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.60"
+    },
+    {
+      "source": "ADRA2C",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2C is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.60"
+    },
+    {
+      "source": "IL1RL1",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1RL1 is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.59"
+    },
+    {
+      "source": "IL5RA",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL5RA is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.59"
+    },
+    {
+      "source": "TLR1",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR1 is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.58"
+    },
+    {
+      "source": "LPP",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPP is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.58"
+    },
+    {
+      "source": "GATA3",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.57"
+    },
+    {
+      "source": "TNFRSF8",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF8 is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.57"
+    },
+    {
+      "source": "D2HGDH",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "D2HGDH is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.57"
+    },
+    {
+      "source": "RUNX1",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.57"
+    },
+    {
+      "source": "OTULINL",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OTULINL is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.57"
+    },
+    {
+      "source": "BACH2",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BACH2 is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.56"
+    },
+    {
+      "source": "IL7R",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7R is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.56"
+    },
+    {
+      "source": "CARD11",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.56"
+    },
+    {
+      "source": "IL2RA",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RA is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.56"
+    },
+    {
+      "source": "ALOX5",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALOX5 is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.56"
+    },
+    {
+      "source": "CHI3L1",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHI3L1 is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.56"
+    },
+    {
+      "source": "NPNT",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPNT is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.55"
+    },
+    {
+      "source": "GLB1",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLB1 is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.55"
+    },
+    {
+      "source": "TNFSF4",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF4 is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.55"
+    },
+    {
+      "source": "ID2",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ID2 is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.55"
+    },
+    {
+      "source": "IL6",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.54"
+    },
+    {
+      "source": "SUOX",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUOX is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.54"
+    },
+    {
+      "source": "PRKCQ",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCQ is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.54"
+    },
+    {
+      "source": "IRF1",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF1 is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.54"
+    },
+    {
+      "source": "PTPRC",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.53"
+    },
+    {
+      "source": "APOE",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.53"
+    },
+    {
+      "source": "IL21R",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL21R is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.53"
+    },
+    {
+      "source": "SMAD3",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD3 is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.52"
+    },
+    {
+      "source": "IRAG1",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRAG1 is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.52"
+    },
+    {
+      "source": "STAT6",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT6 is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.52"
+    },
+    {
+      "source": "WDR36",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR36 is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.52"
+    },
+    {
+      "source": "RAD51B",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD51B is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.51"
+    },
+    {
+      "source": "RORA",
+      "target": "Chronic Airway Inflammation (Asthma)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RORA is associated with Chronic Airway Inflammation (Asthma). Open Targets association score 0.51"
     },
     {
       "source": "ADAM33",
+      "target": "Chronic Airway Inflammation (Asthma)",
       "type": "ASSOCIATED_WITH",
-      "target": "Chronic Airway Inflammation (Asthma)",
-      "evidence": "Airway smooth muscle hyperresponsiveness and remodeling gene."
-    },
-    {
-      "source": "mepolizumab",
-      "type": "TREATS",
-      "target": "Chronic Airway Inflammation (Asthma)",
-      "evidence": "Approved disease treatment"
-    },
-    {
-      "source": "mepolizumab",
-      "type": "TARGETS",
-      "target": "IL5",
-      "evidence": "Humanized anti-IL-5 monoclonal antibody"
-    },
-    {
-      "source": "tezepelumab",
-      "type": "TREATS",
-      "target": "Chronic Airway Inflammation (Asthma)",
-      "evidence": "Approved disease treatment"
-    },
-    {
-      "source": "tezepelumab",
-      "type": "TARGETS",
-      "target": "TSLP",
-      "evidence": "Human anti-TSLP monoclonal antibody"
-    },
-    {
-      "source": "fluticasone",
-      "type": "TREATS",
-      "target": "Chronic Airway Inflammation (Asthma)",
-      "evidence": "Approved disease treatment"
-    },
-    {
-      "source": "fluticasone",
-      "type": "TARGETS",
-      "target": "NR3C1",
-      "evidence": "Inhaled corticosteroid anti-inflammatory agent"
-    },
-    {
-      "source": "IL5",
-      "type": "PARTICIPATES_IN",
-      "target": "t2-airway-inflammation",
-      "evidence": "Key component of Type 2 High Airway Inflammation"
-    },
-    {
-      "source": "IL4R",
-      "type": "PARTICIPATES_IN",
-      "target": "t2-airway-inflammation",
-      "evidence": "Key component of Type 2 High Airway Inflammation"
-    },
-    {
-      "source": "TSLP",
-      "type": "PARTICIPATES_IN",
-      "target": "alarmin-signaling",
-      "evidence": "Key component of Epithelial Alarmin Signaling"
+      "description": "ADAM33 is associated with Chronic Airway Inflammation (Asthma). Airway smooth muscle hyperresponsiveness and remodeling gene."
     }
   ]
 }

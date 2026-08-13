@@ -1,0 +1,418 @@
+{
+  "relationships": [
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "SOCS3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "SOCS3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PIK3R1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "SMAD3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "DIO3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "DIO3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "LRP1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP26B1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP26B1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SOX5",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX5 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.45"
+    },
+    {
+      "source": "SLC25A21",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A21 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.40"
+    },
+    {
+      "source": "SMAD3",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD3 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.38"
+    },
+    {
+      "source": "DCC",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCC is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.37"
+    },
+    {
+      "source": "NGF",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NGF is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.36"
+    },
+    {
+      "source": "FGFR3",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.35"
+    },
+    {
+      "source": "FANCL",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCL is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.35"
+    },
+    {
+      "source": "DCDC1",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCDC1 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.33"
+    },
+    {
+      "source": "RTL1",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RTL1 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.32"
+    },
+    {
+      "source": "TNRC18",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNRC18 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.32"
+    },
+    {
+      "source": "PDE3A",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE3A is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.32"
+    },
+    {
+      "source": "NAV1",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAV1 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.32"
+    },
+    {
+      "source": "CHST3",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHST3 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.31"
+    },
+    {
+      "source": "AGMO",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGMO is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.30"
+    },
+    {
+      "source": "DIO3",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DIO3 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.30"
+    },
+    {
+      "source": "DYSF",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYSF is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.29"
+    },
+    {
+      "source": "PWWP4",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PWWP4 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.29"
+    },
+    {
+      "source": "C3orf33",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3orf33 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.28"
+    },
+    {
+      "source": "GSDMC",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMC is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.28"
+    },
+    {
+      "source": "FAM161A",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM161A is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.27"
+    },
+    {
+      "source": "DYNC1I1",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYNC1I1 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.27"
+    },
+    {
+      "source": "LRP1",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.27"
+    },
+    {
+      "source": "MST1",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MST1 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.26"
+    },
+    {
+      "source": "MAEA",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAEA is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.26"
+    },
+    {
+      "source": "IL6",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.25"
+    },
+    {
+      "source": "MTMR3",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTMR3 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.25"
+    },
+    {
+      "source": "PIK3R1",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R1 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.25"
+    },
+    {
+      "source": "SLC25A13",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A13 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.25"
+    },
+    {
+      "source": "MAFB",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAFB is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.24"
+    },
+    {
+      "source": "ZNF638",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF638 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.23"
+    },
+    {
+      "source": "KLF3",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF3 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.23"
+    },
+    {
+      "source": "SOX6",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX6 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.23"
+    },
+    {
+      "source": "NFU1",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFU1 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.22"
+    },
+    {
+      "source": "EXOC6B",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EXOC6B is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.22"
+    },
+    {
+      "source": "ZIC1",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZIC1 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.22"
+    },
+    {
+      "source": "MTMR11",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTMR11 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.22"
+    },
+    {
+      "source": "MPPED2",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPPED2 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.22"
+    },
+    {
+      "source": "TRAPPC8",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAPPC8 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.21"
+    },
+    {
+      "source": "WARS1",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WARS1 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.21"
+    },
+    {
+      "source": "SLC25A47",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A47 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.21"
+    },
+    {
+      "source": "PPARD",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARD is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.21"
+    },
+    {
+      "source": "TBC1D1",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D1 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.20"
+    },
+    {
+      "source": "PTPRC",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.20"
+    },
+    {
+      "source": "CRIPTO3",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRIPTO3 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.19"
+    },
+    {
+      "source": "CYP26B1",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP26B1 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.19"
+    },
+    {
+      "source": "GFPT1",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFPT1 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.19"
+    },
+    {
+      "source": "RAB28",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB28 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.19"
+    },
+    {
+      "source": "TGFA",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFA is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.17"
+    },
+    {
+      "source": "CHRDL1",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHRDL1 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.17"
+    },
+    {
+      "source": "INO80D",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INO80D is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.16"
+    },
+    {
+      "source": "PAIP2B",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAIP2B is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.16"
+    },
+    {
+      "source": "ZCCHC8",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZCCHC8 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.14"
+    },
+    {
+      "source": "PPFIA1",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPFIA1 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.13"
+    },
+    {
+      "source": "CDC5L",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDC5L is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.13"
+    },
+    {
+      "source": "UVSSA",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UVSSA is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.13"
+    },
+    {
+      "source": "PIP4K2C",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIP4K2C is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.13"
+    },
+    {
+      "source": "SOCS3",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOCS3 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.12"
+    },
+    {
+      "source": "DMP1",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMP1 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.12"
+    },
+    {
+      "source": "BPTF",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BPTF is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.11"
+    },
+    {
+      "source": "RSRC2",
+      "target": "vertebral disorder (VERTEBRAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSRC2 is associated with vertebral disorder (VERTEBRAL_DISORDER). Open Targets association score 0.11"
+    }
+  ]
+}

@@ -1,0 +1,348 @@
+{
+  "pathways": [
+    {
+      "id": "apoptosis",
+      "name": "Apoptosis",
+      "description": "Intrinsic and extrinsic programmed cell death; dysregulation contributes to autoimmunity and cancer.",
+      "key_components": [
+        "CASP1",
+        "RIPK3"
+      ],
+      "therapeutic_targets": [
+        "CASP1",
+        "RIPK3"
+      ],
+      "references": []
+    },
+    {
+      "id": "bcr-signaling",
+      "name": "B Cell Receptor Signaling",
+      "description": "BCR signal transduction controlling B cell survival, proliferation, and antibody production.",
+      "key_components": [
+        "BTK",
+        "PLCG2"
+      ],
+      "therapeutic_targets": [
+        "BTK",
+        "PLCG2"
+      ],
+      "references": []
+    },
+    {
+      "id": "bone-remodeling",
+      "name": "Bone Remodeling",
+      "description": "RANK-RANKL-OPG axis and osteoclast/osteoblast balance governing skeletal homeostasis.",
+      "key_components": [
+        "TNFRSF11A",
+        "TNFRSF11B",
+        "TNFSF11"
+      ],
+      "therapeutic_targets": [
+        "TNFRSF11A",
+        "TNFRSF11B",
+        "TNFSF11"
+      ],
+      "references": []
+    },
+    {
+      "id": "chemokine-signaling",
+      "name": "Chemokine Signaling",
+      "description": "Chemokine-receptor interactions directing leukocyte migration and lymphoid organization.",
+      "key_components": [
+        "CCL5",
+        "CCL7",
+        "CCR2",
+        "CXCL8"
+      ],
+      "therapeutic_targets": [
+        "CCL5",
+        "CCL7",
+        "CCR2",
+        "CXCL8"
+      ],
+      "references": []
+    },
+    {
+      "id": "coagulation",
+      "name": "Coagulation Cascade",
+      "description": "Plasma coagulation factors and fibrinolysis; a hub for cardiovascular and thrombotic disease.",
+      "key_components": [
+        "GDF2"
+      ],
+      "therapeutic_targets": [
+        "GDF2"
+      ],
+      "references": []
+    },
+    {
+      "id": "complement",
+      "name": "Complement Cascade",
+      "description": "Classical, lectin, and alternative complement pathways for opsonization, lysis, and immune complex clearance.",
+      "key_components": [
+        "CCR2"
+      ],
+      "therapeutic_targets": [
+        "CCR2"
+      ],
+      "references": []
+    },
+    {
+      "id": "ecm-remodeling",
+      "name": "ECM Remodeling",
+      "description": "Matrix metalloproteinases and extracellular matrix turnover in tissue remodeling and fibrosis.",
+      "key_components": [
+        "ALOX5",
+        "MMP2",
+        "MMP8",
+        "MMP9",
+        "TIMP1"
+      ],
+      "therapeutic_targets": [
+        "ALOX5",
+        "MMP2",
+        "MMP8",
+        "MMP9",
+        "TIMP1"
+      ],
+      "references": []
+    },
+    {
+      "id": "glucose-metabolism",
+      "name": "Glucose Metabolism / Insulin Secretion",
+      "description": "Pancreatic β-cell function, insulin secretion, and glycemic control.",
+      "key_components": [
+        "INS"
+      ],
+      "therapeutic_targets": [
+        "INS"
+      ],
+      "references": []
+    },
+    {
+      "id": "hepcidin-iron",
+      "name": "Hepcidin / Iron Homeostasis",
+      "description": "Hepcidin-ferroportin axis regulating systemic iron balance.",
+      "key_components": [
+        "HAMP"
+      ],
+      "therapeutic_targets": [
+        "HAMP"
+      ],
+      "references": []
+    },
+    {
+      "id": "il1-inflammasome",
+      "name": "IL-1 / Inflammasome Pathway",
+      "description": "NLRP3 inflammasome assembly and IL-1β/IL-18 maturation; a driver of sterile inflammation.",
+      "key_components": [
+        "CASP1",
+        "IL17A",
+        "IL17F",
+        "IL1B",
+        "NLRP3"
+      ],
+      "therapeutic_targets": [
+        "CASP1",
+        "IL17A",
+        "IL17F",
+        "IL1B",
+        "NLRP3"
+      ],
+      "references": []
+    },
+    {
+      "id": "il6-signaling",
+      "name": "IL-6 Signaling",
+      "description": "Interleukin-6 signaling via gp130 and STAT3; a key amplifier of systemic inflammation.",
+      "key_components": [
+        "IL6",
+        "STAT3"
+      ],
+      "therapeutic_targets": [
+        "IL6",
+        "STAT3"
+      ],
+      "references": []
+    },
+    {
+      "id": "immune-checkpoint",
+      "name": "Immune Checkpoint Signaling",
+      "description": "Co-inhibitory receptor signaling (PD-1/CTLA-4/TIGIT/LAG-3) that restrains T cell responses.",
+      "key_components": [
+        "VSIR"
+      ],
+      "therapeutic_targets": [
+        "VSIR"
+      ],
+      "references": []
+    },
+    {
+      "id": "integrin-adhesion",
+      "name": "Integrin / Cell Adhesion",
+      "description": "Integrin-mediated adhesion and leukocyte trafficking into inflamed tissue.",
+      "key_components": [
+        "ICAM1"
+      ],
+      "therapeutic_targets": [
+        "ICAM1"
+      ],
+      "references": []
+    },
+    {
+      "id": "jak-stat",
+      "name": "JAK-STAT Signaling",
+      "description": "Cytokine receptor signaling through JAK kinases and STAT transcription factors; a hub for inflammatory and autoimmune disease pathways.",
+      "key_components": [
+        "STAT3"
+      ],
+      "therapeutic_targets": [
+        "STAT3"
+      ],
+      "references": []
+    },
+    {
+      "id": "mapk-erk",
+      "name": "MAPK / ERK Signaling",
+      "description": "RAS-RAF-MEK-ERK cascade coupling growth factor receptors to proliferation and differentiation.",
+      "key_components": [
+        "FGFR2"
+      ],
+      "therapeutic_targets": [
+        "FGFR2"
+      ],
+      "references": []
+    },
+    {
+      "id": "nfkb",
+      "name": "NF-κB Pathway",
+      "description": "Canonical and non-canonical NF-κB activation driving pro-inflammatory gene expression.",
+      "key_components": [
+        "NFKB1"
+      ],
+      "therapeutic_targets": [
+        "NFKB1"
+      ],
+      "references": []
+    },
+    {
+      "id": "pi3k-akt-mtor",
+      "name": "PI3K / AKT / mTOR Signaling",
+      "description": "Growth and survival signaling through PI3K-AKT-mTOR; a major oncology and immunology target hub.",
+      "key_components": [
+        "CTSC",
+        "PIK3CA",
+        "PIK3CB",
+        "PIK3CD",
+        "PIK3CG"
+      ],
+      "therapeutic_targets": [
+        "CTSC",
+        "PIK3CA",
+        "PIK3CB",
+        "PIK3CD",
+        "PIK3CG"
+      ],
+      "references": []
+    },
+    {
+      "id": "tgf-beta",
+      "name": "TGF-β Signaling",
+      "description": "Transforming growth factor beta signaling controlling fibrosis, immune tolerance, and tumor suppression.",
+      "key_components": [
+        "TGFB1"
+      ],
+      "therapeutic_targets": [
+        "TGFB1"
+      ],
+      "references": []
+    },
+    {
+      "id": "th17-il17",
+      "name": "Th17 / IL-17 Pathway",
+      "description": "Th17 differentiation and IL-17 family cytokine signaling driving neutrophil recruitment and autoimmunity.",
+      "key_components": [
+        "IL17A",
+        "IL17F"
+      ],
+      "therapeutic_targets": [
+        "IL17A",
+        "IL17F"
+      ],
+      "references": []
+    },
+    {
+      "id": "thyroid-hormone",
+      "name": "Thyroid Hormone Signaling",
+      "description": "Thyroid hormone synthesis, transport, and nuclear receptor signaling.",
+      "key_components": [
+        "TGFB1"
+      ],
+      "therapeutic_targets": [
+        "TGFB1"
+      ],
+      "references": []
+    },
+    {
+      "id": "tlr-signaling",
+      "name": "TLR / Innate Sensing",
+      "description": "Endosomal and surface Toll-like receptor signaling driving innate immune activation.",
+      "key_components": [
+        "TLR2",
+        "TLR4"
+      ],
+      "therapeutic_targets": [
+        "TLR2",
+        "TLR4"
+      ],
+      "references": []
+    },
+    {
+      "id": "tnf-signaling",
+      "name": "TNF Signaling",
+      "description": "Tumor necrosis factor receptor superfamily signaling; central to many autoimmune and inflammatory diseases.",
+      "key_components": [
+        "TNF",
+        "TNFRSF11A",
+        "TNFRSF11B",
+        "TNFRSF1A",
+        "TNFSF11",
+        "TNFSF13B"
+      ],
+      "therapeutic_targets": [
+        "TNF",
+        "TNFRSF11A",
+        "TNFRSF11B",
+        "TNFRSF1A",
+        "TNFSF11",
+        "TNFSF13B"
+      ],
+      "references": []
+    },
+    {
+      "id": "vegf-angiogenesis",
+      "name": "VEGF / Angiogenesis",
+      "description": "Vascular endothelial growth factor signaling driving angiogenesis and vascular permeability.",
+      "key_components": [
+        "KDR",
+        "VEGFA"
+      ],
+      "therapeutic_targets": [
+        "KDR",
+        "VEGFA"
+      ],
+      "references": []
+    },
+    {
+      "id": "wnt-signaling",
+      "name": "Wnt Signaling",
+      "description": "Canonical Wnt/β-catenin signaling controlling cell fate, proliferation, and tissue regeneration.",
+      "key_components": [
+        "NLRP3"
+      ],
+      "therapeutic_targets": [
+        "NLRP3"
+      ],
+      "references": []
+    }
+  ]
+}

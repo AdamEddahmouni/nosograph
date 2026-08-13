@@ -1,0 +1,538 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL3590106",
+      "target": "MAPK3",
+      "type": "TARGETS",
+      "description": "ULIXERTINIB targets MAPK3."
+    },
+    {
+      "source": "CHEMBL3590106",
+      "target": "MAPK1",
+      "type": "TARGETS",
+      "description": "ULIXERTINIB targets MAPK1."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BCL2L1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2L1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BTK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BTK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD207",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD207 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "SYK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "SYK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CDK2",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK2 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TNFRSF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PARP1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "PARP1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL11A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL11A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K7",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K7 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RAF1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RAF1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD80",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD80 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNFRSF8",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF8 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.08"
+    },
+    {
+      "source": "MAPK3",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK3 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.07"
+    },
+    {
+      "source": "BRAF",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "KIT",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSF1R",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF1R is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALK",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRAS",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "NTRK1",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL2",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL2L1",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2L1 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAP2K7",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K7 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "EPHB2",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHB2 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "RAF1",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAF1 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZHX2",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZHX2 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD163",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD163 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "WNK2",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNK2 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAP2K1",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K1 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "FLT3",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "LGI1",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGI1 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "PARP1",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARP1 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD74",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD74 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "IDH2",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH2 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "IDH1",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "MET",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "COL11A2",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL11A2 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "S100A1",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A1 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "S100B",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100B is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "SYK",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYK is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "NRAS",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD68",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD68 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD274",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "RET",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "F13A1",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F13A1 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTH",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTH is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "BTK",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTK is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "XG",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XG is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "BLOC1S3",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLOC1S3 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRKAR1A",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAR1A is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT20",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT20 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "GFAP",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CTSB",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSB is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDK2",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK2 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNFRSF8",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF8 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "MLANA",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLANA is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "NAPSA",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAPSA is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "RTL1",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RTL1 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "OLIG2",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OLIG2 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOX10",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX10 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD1A",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD1A is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CLTC",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLTC is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNG",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "MLN",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLN is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD207",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD207 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "TET2",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "MTAP",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTAP is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD80",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD80 is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "histiocytic neoplasm (HISTIOCYTIC_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with histiocytic neoplasm (HISTIOCYTIC_NEOPLASM). Open Targets association score 0.00"
+    }
+  ]
+}

@@ -1,0 +1,544 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201231",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "PREDNISOLONE PHOSPHORIC ACID targets NR3C1."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ACKR1",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ACKR1 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TIMP1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "THBS1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THBS1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL21",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL21 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TLR9",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR9 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTA",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTA is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF18",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF18 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNA17",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA17 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNA2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNB1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNB1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNL3",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNL3 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "NR3C1",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "NGF",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NGF is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL2",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD79A",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IFNA1",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD4",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "ICAM1",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "PSMA6",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMA6 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "TLR9",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR9 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL10",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "PDC",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDC is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACKR1",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACKR1 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "LGALS8",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS8 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "FN1",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FN1 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNA2",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA2 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP2",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TIMP1",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP1 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "HLA-C",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-C is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLG",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLG is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "LTF",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTF is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL21",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL21 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ART4",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ART4 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNL3",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNL3 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADRA1D",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA1D is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TPT1",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPT1 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "HSD17B6",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSD17B6 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNA17",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA17 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL27",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL27 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL17A",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GNAI1",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAI1 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "RNF5",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF5 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TXNRD1",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TXNRD1 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "THBS1",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THBS1 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD40LG",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD8A",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "VEGFA",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP9",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TKT",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TKT is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNC",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNC is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "RNASEL",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNASEL is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "C3",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1B",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CLEC4C",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC4C is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CSF1R",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF1R is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "HPSE",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPSE is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPL9",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL9 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "LAT",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAT is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNB1",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNB1 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "GFAP",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "GIT1",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIT1 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MATN2",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MATN2 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "AOPEP",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOPEP is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "APOE",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "FASLG",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TFF3",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFF3 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "OPN1SW",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OPN1SW is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "LTA",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTA is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNFRSF18",
+      "target": "Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF18 is associated with Herpes simplex virus keratitis (HERPES_SIMPLEX_VIRUS_KERATITIS). Open Targets association score 0.00"
+    }
+  ]
+}

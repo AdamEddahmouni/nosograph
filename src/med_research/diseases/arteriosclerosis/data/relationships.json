@@ -1,0 +1,568 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1771",
+      "target": "P2RY12",
+      "type": "TARGETS",
+      "description": "CLOPIDOGREL targets P2RY12."
+    },
+    {
+      "source": "CHEMBL111",
+      "target": "CNR1",
+      "type": "TARGETS",
+      "description": "RIMONABANT targets CNR1."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "CCL27",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL27 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCR7",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR7 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR5",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR5 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "SERPINE1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SERPINE1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATRNL1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRNL1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GLP1R",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GLP1R is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "HMGCR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HMGCR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGTR1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGTR1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "MTHFR",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFR is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD80",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD80 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "CYP2C19",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2C19 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP3A5",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP3A5 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "NAT10",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NAT10 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "P2RY12",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RY12 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "CNR1",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNR1 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "HS3ST1",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HS3ST1 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.19"
+    },
+    {
+      "source": "GDF15",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF15 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "MTHFR",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFR is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "IL6",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "ALDH2",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDH2 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "INS",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "KIT",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IGF1",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "NOS2",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADIPOQ",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOQ is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CRP",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "AGTR1",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGTR1 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ICAM1",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNF",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "LDLR",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL17A",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOX9",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX9 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "GLP1R",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLP1R is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ISYNA1",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISYNA1 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "SPHK1",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPHK1 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "FGF19",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF19 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD40LG",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD80",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD80 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CST3",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CST3 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "GPT",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "APOL1",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOL1 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "PECAM1",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PECAM1 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "ABCA1",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "APOA1",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "FAP",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAP is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "MAPT",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPT is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "ASRGL1",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASRGL1 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "NAT10",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAT10 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLPI",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLPI is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "ATRNL1",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRNL1 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "ALPP",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPP is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCL27",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL27 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "PDLIM3",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDLIM3 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "SERPINE1",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINE1 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CYP3A5",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP3A5 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "HMGB1",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGB1 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "PER2",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PER2 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "NOS3",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "EDN1",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDN1 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "LPA",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "HMGCR",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCR is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "EFNB2",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EFNB2 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL4",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF11B is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "TGFB1",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCR7",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR7 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "VEGFA",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CXCR5",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR5 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IFNG",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "ACE",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "AGT",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CYP2C19",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2C19 is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "APOE",
+      "target": "arteriosclerosis (ARTERIOSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with arteriosclerosis (ARTERIOSCLEROSIS). Open Targets association score 0.02"
+    }
+  ]
+}

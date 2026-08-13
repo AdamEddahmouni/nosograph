@@ -1,0 +1,304 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "XIAP",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "XIAP is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BTK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BTK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "MSH6",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH6 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "IL10RA",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10RA is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3R1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "LTA",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTA is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "MX1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "MX1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.55"
+    },
+    {
+      "source": "CD40",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40 is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.17"
+    },
+    {
+      "source": "AICDA",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AICDA is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.17"
+    },
+    {
+      "source": "UNG",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UNG is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.15"
+    },
+    {
+      "source": "CDA",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDA is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "XIAP",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XIAP is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD79A",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "MX1",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MX1 is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL6",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "LIG4",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIG4 is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ITGB2",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "BCL2",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "WAS",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WAS is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "STAT1",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT1 is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL10RA",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10RA is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "BTK",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTK is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "DCLRE1C",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCLRE1C is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "NFKB1",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "REL",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REL is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "LTA",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTA is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "FCMR",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCMR is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD4",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "MSH6",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH6 is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "MUTYH",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUTYH is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "SH2D1A",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2D1A is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHI3L1",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHI3L1 is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3R1",
+      "target": "hyper-IgM syndrome (HYPER_IGM_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R1 is associated with hyper-IgM syndrome (HYPER_IGM_SYNDROME). Open Targets association score 0.00"
+    }
+  ]
+}

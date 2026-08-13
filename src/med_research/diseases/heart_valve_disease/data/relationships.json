@@ -1,0 +1,526 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL578",
+      "target": "ACE",
+      "type": "TARGETS",
+      "description": "ENALAPRIL targets ACE."
+    },
+    {
+      "source": "BIRC5",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BIRC5 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "APLN",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "APLN is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "APLNR",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "APLNR is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CXCL16",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL16 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ADAMTS19",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS19 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "BMPR2",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMPR2 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "HTR2B",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTR2B is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "PTH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR2",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR2 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "CYP2C9",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2C9 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GSTM1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ADAMTS19",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS19 is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.46"
+    },
+    {
+      "source": "PITX2",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX2 is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.26"
+    },
+    {
+      "source": "CRH",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRH is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SNX10",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNX10 is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "DACT1",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DACT1 is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPPB",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPB is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "GJA1",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA1 is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ALB",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "VEGFA",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNF",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ACLY",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACLY is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CXCL16",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL16 is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "DACT2",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DACT2 is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD8A",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "VWF",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPPA",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPA is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "L1CAM",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "L1CAM is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACE",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB1",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP12A",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP12A is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP4A",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP4A is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TLR2",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR2 is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDGFB",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFB is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNG",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPBP",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPBP is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "APOE",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP2C9",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2C9 is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD79A",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "POSTN",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POSTN is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "VKORC1",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VKORC1 is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "DNAH8",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH8 is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSTM1",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM1 is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "LCN2",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN2 is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "APOH",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOH is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTH",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTH is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "HTR2B",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTR2B is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "EPO",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPO is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "AOPEP",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOPEP is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPT",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC5A2",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC5A2 is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "FLNA",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLNA is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "BMPR2",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMPR2 is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "APLNR",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APLNR is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS3",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "APLN",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APLN is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "BIRC5",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIRC5 is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "LPL",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "AHR",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHR is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPHP3",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHP3 is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "FASLG",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PF4",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PF4 is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "LBP",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LBP is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLIT2",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLIT2 is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP9",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB3",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB3 is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS2",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTF1",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTF1 is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CMA1",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMA1 is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TWIST1",
+      "target": "heart valve disease (HEART_VALVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TWIST1 is associated with heart valve disease (HEART_VALVE_DISEASE). Open Targets association score 0.01"
+    }
+  ]
+}

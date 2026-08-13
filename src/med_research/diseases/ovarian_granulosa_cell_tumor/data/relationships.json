@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ACKR3",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ACKR3 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATR",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATR is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL3A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL3A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3R1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "SMAD3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "AXIN2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "AXIN2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "GNAI2",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAI2 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.42"
+    },
+    {
+      "source": "FOXL2",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXL2 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.37"
+    },
+    {
+      "source": "AKT1",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.37"
+    },
+    {
+      "source": "TP53",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "MTOR",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "FOXO1",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXO1 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMAD3",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD3 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "IDH1",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "GNAS",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAS is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "RUNX1",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATM",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATR",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATR is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "NF1",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "GNAQ",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAQ is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "MED12",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MED12 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "STAG2",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAG2 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "POLE",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2C",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2D",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "MYOD1",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYOD1 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3R1",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R1 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "CIC",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIC is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "ERBB2",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "ETV6",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV6 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "STK11",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "MSH2",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH2 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "DICER1",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DICER1 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "AXIN2",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AXIN2 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ALK",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "COL3A1",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL3A1 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "MAP3K1",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K1 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "CEP89",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEP89 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "KDM5C",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM5C is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2A",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2A is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ASXL1",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "SH2B3",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2B3 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "SUZ12",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUZ12 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ATRX",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "UBR5",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBR5 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "CBFA2T3",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBFA2T3 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ELL",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELL is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ARHGAP35",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP35 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "SPOP",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPOP is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ACKR3",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACKR3 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "BAZ1A",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAZ1A is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "PTCH1",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "KAT6B",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KAT6B is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ERCC5",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC5 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "TET1",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET1 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "NOTCH2",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH2 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "APC",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "H3-3B",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3-3B is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "PRDM16",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM16 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ABL1",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABL1 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ARHGAP26",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP26 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "LRIG3",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRIG3 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ERBB3",
+      "target": "Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB3 is associated with Ovarian Granulosa Cell Tumor (OVARIAN_GRANULOSA_CELL_TUMOR). Open Targets association score 0.18"
+    }
+  ]
+}

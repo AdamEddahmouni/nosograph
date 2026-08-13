@@ -1,0 +1,532 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL499",
+      "target": "ADRB1",
+      "type": "TARGETS",
+      "description": "TIMOLOL targets ADRB1."
+    },
+    {
+      "source": "CHEMBL3545073",
+      "target": "ROCK1",
+      "type": "TARGETS",
+      "description": "AMA0076 targets ROCK1."
+    },
+    {
+      "source": "CHEMBL1200870",
+      "target": "ADRB2",
+      "type": "TARGETS",
+      "description": "TIMOLOL MALEATE targets ADRB2."
+    },
+    {
+      "source": "CHEMBL499",
+      "target": "ADRB2",
+      "type": "TARGETS",
+      "description": "TIMOLOL targets ADRB2."
+    },
+    {
+      "source": "CHEMBL3545073",
+      "target": "ROCK2",
+      "type": "TARGETS",
+      "description": "AMA0076 targets ROCK2."
+    },
+    {
+      "source": "CHEMBL1200870",
+      "target": "ADRB1",
+      "type": "TARGETS",
+      "description": "TIMOLOL MALEATE targets ADRB1."
+    },
+    {
+      "source": "ADRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "ADRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "HLA-DRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "HLA-DRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53I13",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53I13 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ADAMTS8",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS8 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "LOXL1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "LOXL1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "SLC1A1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC1A1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "SLC1A3",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC1A3 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "BMP2",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP2 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "MAPK14",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK14 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "REN",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "REN is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "TGFBR3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "PTGDS",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGDS is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFBR3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR2",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR2 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "LMX1B",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "LMX1B is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "LRP1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "SIX6",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIX6 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.45"
+    },
+    {
+      "source": "ADAMTS8",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS8 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.34"
+    },
+    {
+      "source": "TMCO1",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMCO1 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.32"
+    },
+    {
+      "source": "FOXC1",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.32"
+    },
+    {
+      "source": "CDKN2B",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2B is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.31"
+    },
+    {
+      "source": "ABCA1",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.31"
+    },
+    {
+      "source": "LMX1B",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMX1B is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "C14orf39",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C14orf39 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "GMDS",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GMDS is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BMP2",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP2 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.27"
+    },
+    {
+      "source": "AFAP1",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFAP1 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.27"
+    },
+    {
+      "source": "SRSF3",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRSF3 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.25"
+    },
+    {
+      "source": "GIT1",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIT1 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TAOK1",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAOK1 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.16"
+    },
+    {
+      "source": "ZBTB34",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB34 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.14"
+    },
+    {
+      "source": "LRRC9",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRC9 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.13"
+    },
+    {
+      "source": "RALGPS1",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RALGPS1 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.12"
+    },
+    {
+      "source": "CDC7",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDC7 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.10"
+    },
+    {
+      "source": "AZU1",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AZU1 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.10"
+    },
+    {
+      "source": "ADRB1",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB1 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "ADRB2",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB2 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "ROCK1",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROCK1 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "ROCK2",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROCK2 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PPM1A",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPM1A is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "EFCAB13",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EFCAB13 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TGFBR3",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBR3 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SIX1",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIX1 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "KCTD20",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCTD20 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TBKBP1",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBKBP1 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PCNX4",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNX4 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "APOE",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PLPPR3",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLPPR3 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "BDNF",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BDNF is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TBK1",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBK1 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TLR4",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MAPK14",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK14 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TP53I13",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53I13 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "EDN1",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDN1 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TRMT5",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRMT5 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "OPA1",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OPA1 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "OPTN",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OPTN is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "LOXL1",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LOXL1 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "AOPEP",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOPEP is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HLA-DRB1",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DRB1 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYOC",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYOC is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC1A3",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC1A3 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "WDR36",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR36 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "REN",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REN is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PADI2",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PADI2 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTGDS",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGDS is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RBM45",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM45 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACE",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC1A1",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC1A1 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TLR2",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR2 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NCK2",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCK2 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EDNRA",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRA is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "LRP1",
+      "target": "low tension glaucoma (LOW_TENSION_GLAUCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1 is associated with low tension glaucoma (LOW_TENSION_GLAUCOMA). Open Targets association score 0.01"
+    }
+  ]
+}

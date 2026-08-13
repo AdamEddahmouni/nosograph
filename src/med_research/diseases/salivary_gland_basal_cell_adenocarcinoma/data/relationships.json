@@ -1,0 +1,430 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1946170",
+      "target": "FGFR2",
+      "type": "TARGETS",
+      "description": "REGORAFENIB targets FGFR2."
+    },
+    {
+      "source": "CHEMBL1946170",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "REGORAFENIB targets KIT."
+    },
+    {
+      "source": "CHEMBL1946170",
+      "target": "FLT4",
+      "type": "TARGETS",
+      "description": "REGORAFENIB targets FLT4."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBIA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "MAML2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MAML2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LEF1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LEF1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CRTC1",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRTC1 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAML2",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAML2 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "WIF1",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WIF1 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FHIT",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FHIT is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TCEA1",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCEA1 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PLAG1",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAG1 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FGFR2",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "LIFR",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIFR is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "HMGA2",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGA2 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CHCHD7",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHCHD7 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FLT4",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FBXW7",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXW7 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "BCOR",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCOR is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NFIB",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFIB is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CREBBP",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ARID1B",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1B is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MYB",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYB is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TP53",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TLE1",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLE1 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYLD",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYLD is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRT7",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT7 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MKI67",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "EGFR",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SMN1",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMN1 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ENTPD1",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENTPD1 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TACSTD2",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TACSTD2 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "BCL2",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD44",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ELMO3",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELMO3 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CKAP4",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CKAP4 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "UVRAG",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UVRAG is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPE65",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPE65 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP63",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KIT",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NR4A3",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR4A3 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "LEF1",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEF1 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TRPS1",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPS1 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GFAP",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACTB",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTB is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "AR",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT14",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT14 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD99",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD99 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00 | Open Targets association score 0.00"
+    },
+    {
+      "source": "SMARCB1",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCB1 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPN",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPN is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "LAMB2",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMB2 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NFKB1",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NUTM1",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUTM1 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MDM2",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM2 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "S100B",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100B is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "S100A1",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A1 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NFKBIA",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIA is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "OSCP1",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OSCP1 is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GON4L",
+      "target": "Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GON4L is associated with Salivary Gland Basal Cell Adenocarcinoma (SALIVARY_GLAND_BASAL_CELL_ADENOCARCINOMA). Open Targets association score 0.00"
+    }
+  ]
+}

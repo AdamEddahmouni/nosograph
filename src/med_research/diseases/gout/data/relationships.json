@@ -1,114 +1,844 @@
 {
-  "disease_id": "gout",
-  "disease_name": "Gout",
   "relationships": [
     {
-      "source": "SLC2A9",
-      "type": "ASSOCIATED_WITH",
-      "target": "Gout",
-      "evidence": "Major renal urate reabsorption transporter."
-    },
-    {
-      "source": "ABCG2",
-      "type": "ASSOCIATED_WITH",
-      "target": "Gout",
-      "evidence": "Intestinal and renal urate efflux pump."
-    },
-    {
-      "source": "SLC22A12",
-      "type": "ASSOCIATED_WITH",
-      "target": "Gout",
-      "evidence": "Apical renal urate anion exchanger."
-    },
-    {
-      "source": "NLRP3",
-      "type": "ASSOCIATED_WITH",
-      "target": "Gout",
-      "evidence": "Sensory receptor for urate crystals initiating IL-1 beta cleavage."
-    },
-    {
-      "source": "IL1B",
-      "type": "ASSOCIATED_WITH",
-      "target": "Gout",
-      "evidence": "Primary inflammatory cytokine causing acute gouty flare."
-    },
-    {
-      "source": "allopurinol",
-      "type": "TREATS",
-      "target": "Gout",
-      "evidence": "Approved disease treatment"
-    },
-    {
-      "source": "allopurinol",
+      "source": "CHEMBL107",
+      "target": "TUBB2B",
       "type": "TARGETS",
+      "description": "COLCHICINE targets TUBB2B."
+    },
+    {
+      "source": "CHEMBL1467",
       "target": "XDH",
-      "evidence": "Xanthine oxidase inhibitor reducing uric acid synthesis"
-    },
-    {
-      "source": "febuxostat",
-      "type": "TREATS",
-      "target": "Gout",
-      "evidence": "Approved disease treatment"
-    },
-    {
-      "source": "febuxostat",
       "type": "TARGETS",
+      "description": "ALLOPURINOL targets XDH."
+    },
+    {
+      "source": "CHEMBL1467",
       "target": "XDH",
-      "evidence": "Non-purine selective xanthine oxidase inhibitor"
-    },
-    {
-      "source": "colchicine",
-      "type": "TREATS",
-      "target": "Gout",
-      "evidence": "Approved disease treatment"
-    },
-    {
-      "source": "colchicine",
       "type": "TARGETS",
-      "target": "TUBB",
-      "evidence": "Microtubule assembly inhibitor blocking neutrophil chemotaxis"
+      "description": "ALLOPURINOL targets XDH."
     },
     {
-      "source": "canakinumab",
-      "type": "TREATS",
-      "target": "Gout",
-      "evidence": "Approved disease treatment"
-    },
-    {
-      "source": "canakinumab",
+      "source": "CHEMBL154",
+      "target": "PTGS2",
       "type": "TARGETS",
+      "description": "NAPROXEN targets PTGS2."
+    },
+    {
+      "source": "CHEMBL6",
+      "target": "PTGS1",
+      "type": "TARGETS",
+      "description": "INDOMETHACIN targets PTGS1."
+    },
+    {
+      "source": "CHEMBL1164729",
+      "target": "XDH",
+      "type": "TARGETS",
+      "description": "FEBUXOSTAT targets XDH."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "TUBB6",
+      "type": "TARGETS",
+      "description": "COLCHICINE targets TUBB6."
+    },
+    {
+      "source": "CHEMBL897",
+      "target": "SLC22A6",
+      "type": "TARGETS",
+      "description": "PROBENECID targets SLC22A6."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "TUBB8",
+      "type": "TARGETS",
+      "description": "COLCHICINE targets TUBB8."
+    },
+    {
+      "source": "CHEMBL1201830",
       "target": "IL1B",
-      "evidence": "Human anti-IL-1 beta monoclonal antibody"
+      "type": "TARGETS",
+      "description": "RILONACEPT targets IL1B."
+    },
+    {
+      "source": "CHEMBL1364144",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "METHYLPREDNISOLONE ACETATE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL1467",
+      "target": "XDH",
+      "type": "TARGETS",
+      "description": "ALLOPURINOL targets XDH."
+    },
+    {
+      "source": "CHEMBL1504",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "TRIAMCINOLONE ACETONIDE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "TUBB2A",
+      "type": "TARGETS",
+      "description": "COLCHICINE targets TUBB2A."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "TUBB",
+      "type": "TARGETS",
+      "description": "COLCHICINE targets TUBB."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "TUBB3",
+      "type": "TARGETS",
+      "description": "COLCHICINE targets TUBB3."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "TUBB3",
+      "type": "TARGETS",
+      "description": "COLCHICINE targets TUBB3."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "TUBB8",
+      "type": "TARGETS",
+      "description": "COLCHICINE targets TUBB8."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "TUBB1",
+      "type": "TARGETS",
+      "description": "COLCHICINE targets TUBB1."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "TUBB4A",
+      "type": "TARGETS",
+      "description": "COLCHICINE targets TUBB4A."
+    },
+    {
+      "source": "CHEMBL2105720",
+      "target": "SLC22A12",
+      "type": "TARGETS",
+      "description": "LESINURAD targets SLC22A12."
+    },
+    {
+      "source": "CHEMBL832",
+      "target": "SLC22A12",
+      "type": "TARGETS",
+      "description": "SULFINPYRAZONE targets SLC22A12."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "TUBB",
+      "type": "TARGETS",
+      "description": "COLCHICINE targets TUBB."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "TUBB4B",
+      "type": "TARGETS",
+      "description": "COLCHICINE targets TUBB4B."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "TUBB4B",
+      "type": "TARGETS",
+      "description": "COLCHICINE targets TUBB4B."
+    },
+    {
+      "source": "CHEMBL635",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "PREDNISONE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL1201830",
+      "target": "IL1B",
+      "type": "TARGETS",
+      "description": "RILONACEPT targets IL1B."
+    },
+    {
+      "source": "CHEMBL388590",
+      "target": "SLC22A12",
+      "type": "TARGETS",
+      "description": "BENZBROMARONE targets SLC22A12."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "TUBB8",
+      "type": "TARGETS",
+      "description": "COLCHICINE targets TUBB8."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "TUBB2B",
+      "type": "TARGETS",
+      "description": "COLCHICINE targets TUBB2B."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "TUBB2A",
+      "type": "TARGETS",
+      "description": "COLCHICINE targets TUBB2A."
+    },
+    {
+      "source": "CHEMBL1164729",
+      "target": "XDH",
+      "type": "TARGETS",
+      "description": "FEBUXOSTAT targets XDH."
+    },
+    {
+      "source": "CHEMBL139",
+      "target": "PTGS1",
+      "type": "TARGETS",
+      "description": "DICLOFENAC targets PTGS1."
+    },
+    {
+      "source": "CHEMBL1200806",
+      "target": "PTGS2",
+      "type": "TARGETS",
+      "description": "NAPROXEN SODIUM targets PTGS2."
+    },
+    {
+      "source": "CHEMBL1201834",
+      "target": "IL1B",
+      "type": "TARGETS",
+      "description": "CANAKINUMAB targets IL1B."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "TUBB6",
+      "type": "TARGETS",
+      "description": "COLCHICINE targets TUBB6."
+    },
+    {
+      "source": "CHEMBL1201830",
+      "target": "IL1B",
+      "type": "TARGETS",
+      "description": "RILONACEPT targets IL1B."
+    },
+    {
+      "source": "CHEMBL1201834",
+      "target": "IL1B",
+      "type": "TARGETS",
+      "description": "CANAKINUMAB targets IL1B."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "TUBB2A",
+      "type": "TARGETS",
+      "description": "COLCHICINE targets TUBB2A."
+    },
+    {
+      "source": "CHEMBL1164729",
+      "target": "XDH",
+      "type": "TARGETS",
+      "description": "FEBUXOSTAT targets XDH."
+    },
+    {
+      "source": "CHEMBL1467",
+      "target": "XDH",
+      "type": "TARGETS",
+      "description": "ALLOPURINOL targets XDH."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "TUBB4A",
+      "type": "TARGETS",
+      "description": "COLCHICINE targets TUBB4A."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "TUBB3",
+      "type": "TARGETS",
+      "description": "COLCHICINE targets TUBB3."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "TUBB1",
+      "type": "TARGETS",
+      "description": "COLCHICINE targets TUBB1."
+    },
+    {
+      "source": "CHEMBL118",
+      "target": "PTGS2",
+      "type": "TARGETS",
+      "description": "CELECOXIB targets PTGS2."
+    },
+    {
+      "source": "CHEMBL1504",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "TRIAMCINOLONE ACETONIDE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL635",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "PREDNISONE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "TUBB4B",
+      "type": "TARGETS",
+      "description": "COLCHICINE targets TUBB4B."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "TUBB",
+      "type": "TARGETS",
+      "description": "COLCHICINE targets TUBB."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "TUBB1",
+      "type": "TARGETS",
+      "description": "COLCHICINE targets TUBB1."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "TUBB4A",
+      "type": "TARGETS",
+      "description": "COLCHICINE targets TUBB4A."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "TUBB4B",
+      "type": "TARGETS",
+      "description": "COLCHICINE targets TUBB4B."
+    },
+    {
+      "source": "CHEMBL6",
+      "target": "Gout",
+      "type": "TREATS",
+      "description": "INDOMETHACIN is phase 4 / marketed for Gout."
+    },
+    {
+      "source": "CHEMBL1164729",
+      "target": "Gout",
+      "type": "TREATS",
+      "description": "FEBUXOSTAT is phase 4 / marketed for Gout."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "Gout",
+      "type": "TREATS",
+      "description": "COLCHICINE is phase 4 / marketed for Gout."
+    },
+    {
+      "source": "CHEMBL897",
+      "target": "Gout",
+      "type": "TREATS",
+      "description": "PROBENECID is phase 4 / marketed for Gout."
+    },
+    {
+      "source": "CHEMBL1504",
+      "target": "Gout",
+      "type": "TREATS",
+      "description": "TRIAMCINOLONE ACETONIDE is phase 4 / marketed for Gout."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "Gout",
+      "type": "TREATS",
+      "description": "COLCHICINE is phase 4 / marketed for Gout."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "Gout",
+      "type": "TREATS",
+      "description": "COLCHICINE is phase 4 / marketed for Gout."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "Gout",
+      "type": "TREATS",
+      "description": "COLCHICINE is phase 4 / marketed for Gout."
+    },
+    {
+      "source": "CHEMBL832",
+      "target": "Gout",
+      "type": "TREATS",
+      "description": "SULFINPYRAZONE is phase 4 / marketed for Gout."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "Gout",
+      "type": "TREATS",
+      "description": "COLCHICINE is phase 4 / marketed for Gout."
+    },
+    {
+      "source": "CHEMBL635",
+      "target": "Gout",
+      "type": "TREATS",
+      "description": "PREDNISONE is phase 4 / marketed for Gout."
+    },
+    {
+      "source": "CHEMBL388590",
+      "target": "Gout",
+      "type": "TREATS",
+      "description": "BENZBROMARONE is phase 4 / marketed for Gout."
+    },
+    {
+      "source": "CHEMBL1200806",
+      "target": "Gout",
+      "type": "TREATS",
+      "description": "NAPROXEN SODIUM is phase 4 / marketed for Gout."
+    },
+    {
+      "source": "ATRAID",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRAID is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF4A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF4A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF4G",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF4G is a component of the Glucose Metabolism / Insulin Secretion pathway."
     },
     {
       "source": "SLC2A9",
+      "target": "glucose-metabolism",
       "type": "PARTICIPATES_IN",
-      "target": "urate-transport",
-      "evidence": "Key component of Renal & Intestinal Urate Transport"
-    },
-    {
-      "source": "ABCG2",
-      "type": "PARTICIPATES_IN",
-      "target": "urate-transport",
-      "evidence": "Key component of Renal & Intestinal Urate Transport"
-    },
-    {
-      "source": "SLC22A12",
-      "type": "PARTICIPATES_IN",
-      "target": "urate-transport",
-      "evidence": "Key component of Renal & Intestinal Urate Transport"
-    },
-    {
-      "source": "NLRP3",
-      "type": "PARTICIPATES_IN",
-      "target": "nlrp3-inflammasome",
-      "evidence": "Key component of NLRP3 Inflammasome Activation"
+      "description": "SLC2A9 is a component of the Glucose Metabolism / Insulin Secretion pathway."
     },
     {
       "source": "IL1B",
+      "target": "il1-inflammasome",
       "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "PTGS1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "LRP2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "SLC2A9",
+      "target": "urate-transport",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A9 is a component of the Renal & Intestinal Urate Transport pathway."
+    },
+    {
+      "source": "ABCG2",
+      "target": "urate-transport",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCG2 is a component of the Renal & Intestinal Urate Transport pathway."
+    },
+    {
+      "source": "SLC22A12",
+      "target": "urate-transport",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC22A12 is a component of the Renal & Intestinal Urate Transport pathway."
+    },
+    {
+      "source": "NLRP3",
       "target": "nlrp3-inflammasome",
-      "evidence": "Key component of NLRP3 Inflammasome Activation"
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the NLRP3 Inflammasome Activation pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "nlrp3-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the NLRP3 Inflammasome Activation pathway."
+    },
+    {
+      "source": "SLC22A12",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A12 is associated with Gout. Apical renal urate anion exchanger. | Open Targets association score 0.76"
+    },
+    {
+      "source": "ABCG2",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG2 is associated with Gout. Intestinal and renal urate efflux pump. | Open Targets association score 0.71"
+    },
+    {
+      "source": "XDH",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "XDH is associated with Gout. Open Targets association score 0.69"
+    },
+    {
+      "source": "SLC22A11",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A11 is associated with Gout. Open Targets association score 0.64"
+    },
+    {
+      "source": "PTGS2",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with Gout. Open Targets association score 0.63"
+    },
+    {
+      "source": "PTGS1",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS1 is associated with Gout. Open Targets association score 0.61"
+    },
+    {
+      "source": "SLC2A9",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A9 is associated with Gout. Major renal urate reabsorption transporter. | Open Targets association score 0.60"
+    },
+    {
+      "source": "TUBB6",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB6 is associated with Gout. Open Targets association score 0.59"
+    },
+    {
+      "source": "TUBB",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB is associated with Gout. Open Targets association score 0.59"
+    },
+    {
+      "source": "TUBB4A",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB4A is associated with Gout. Open Targets association score 0.59"
+    },
+    {
+      "source": "TUBB3",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB3 is associated with Gout. Open Targets association score 0.59"
+    },
+    {
+      "source": "TUBB2A",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB2A is associated with Gout. Open Targets association score 0.59"
+    },
+    {
+      "source": "TUBB2B",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB2B is associated with Gout. Open Targets association score 0.59"
+    },
+    {
+      "source": "TUBB8",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB8 is associated with Gout. Open Targets association score 0.59"
+    },
+    {
+      "source": "TUBB1",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB1 is associated with Gout. Open Targets association score 0.59"
+    },
+    {
+      "source": "TUBB4B",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB4B is associated with Gout. Open Targets association score 0.59"
+    },
+    {
+      "source": "NR3C1",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with Gout. Open Targets association score 0.59"
+    },
+    {
+      "source": "SLC16A9",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC16A9 is associated with Gout. Open Targets association score 0.57"
+    },
+    {
+      "source": "PNPLA3",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "PNPLA3 is associated with Gout. Open Targets association score 0.56"
+    },
+    {
+      "source": "ADH1B",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADH1B is associated with Gout. Open Targets association score 0.55"
+    },
+    {
+      "source": "WDR1",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR1 is associated with Gout. Open Targets association score 0.53"
+    },
+    {
+      "source": "BICC1",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "BICC1 is associated with Gout. Open Targets association score 0.53"
+    },
+    {
+      "source": "GCKR",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with Gout. Open Targets association score 0.53"
+    },
+    {
+      "source": "IL1B",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with Gout. Primary inflammatory cytokine causing acute gouty flare. | Open Targets association score 0.53"
+    },
+    {
+      "source": "PDZK1",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDZK1 is associated with Gout. Open Targets association score 0.53"
+    },
+    {
+      "source": "HNF4G",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF4G is associated with Gout. Open Targets association score 0.52"
+    },
+    {
+      "source": "ALDH2",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDH2 is associated with Gout. Open Targets association score 0.52"
+    },
+    {
+      "source": "SLC22A8",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A8 is associated with Gout. Open Targets association score 0.50"
+    },
+    {
+      "source": "SLC22A6",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A6 is associated with Gout. Open Targets association score 0.50"
+    },
+    {
+      "source": "LRP2",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP2 is associated with Gout. Open Targets association score 0.50"
+    },
+    {
+      "source": "ALDH16A1",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDH16A1 is associated with Gout. Open Targets association score 0.50"
+    },
+    {
+      "source": "INHBC",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "INHBC is associated with Gout. Open Targets association score 0.49"
+    },
+    {
+      "source": "HECTD4",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "HECTD4 is associated with Gout. Open Targets association score 0.49"
+    },
+    {
+      "source": "PKLR",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKLR is associated with Gout. Open Targets association score 0.49"
+    },
+    {
+      "source": "PKD2",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKD2 is associated with Gout. Open Targets association score 0.49"
+    },
+    {
+      "source": "BCAS3",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCAS3 is associated with Gout. Open Targets association score 0.48"
+    },
+    {
+      "source": "ABCA6",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA6 is associated with Gout. Open Targets association score 0.48"
+    },
+    {
+      "source": "HLF",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLF is associated with Gout. Open Targets association score 0.48"
+    },
+    {
+      "source": "IGF1R",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1R is associated with Gout. Open Targets association score 0.48"
+    },
+    {
+      "source": "RREB1",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "RREB1 is associated with Gout. Open Targets association score 0.47"
+    },
+    {
+      "source": "TMEM171",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM171 is associated with Gout. Open Targets association score 0.47"
+    },
+    {
+      "source": "ATRAID",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRAID is associated with Gout. Open Targets association score 0.47"
+    },
+    {
+      "source": "A1CF",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "A1CF is associated with Gout. Open Targets association score 0.46"
+    },
+    {
+      "source": "SFMBT1",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFMBT1 is associated with Gout. Open Targets association score 0.46"
+    },
+    {
+      "source": "MLXIP",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLXIP is associated with Gout. Open Targets association score 0.45"
+    },
+    {
+      "source": "ADO",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADO is associated with Gout. Open Targets association score 0.45"
+    },
+    {
+      "source": "PTPN11",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with Gout. Open Targets association score 0.45"
+    },
+    {
+      "source": "FST",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "FST is associated with Gout. Open Targets association score 0.45"
+    },
+    {
+      "source": "MLXIPL",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLXIPL is associated with Gout. Open Targets association score 0.45"
+    },
+    {
+      "source": "ATXN2",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATXN2 is associated with Gout. Open Targets association score 0.45"
+    },
+    {
+      "source": "KDF1",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDF1 is associated with Gout. Open Targets association score 0.45"
+    },
+    {
+      "source": "PRKAG2",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAG2 is associated with Gout. Open Targets association score 0.44"
+    },
+    {
+      "source": "CPS1",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPS1 is associated with Gout. Open Targets association score 0.44"
+    },
+    {
+      "source": "GIT2",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIT2 is associated with Gout. Open Targets association score 0.44"
+    },
+    {
+      "source": "MTX1",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTX1 is associated with Gout. Open Targets association score 0.44"
+    },
+    {
+      "source": "CUX2",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUX2 is associated with Gout. Open Targets association score 0.44"
+    },
+    {
+      "source": "CUBN",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUBN is associated with Gout. Open Targets association score 0.43"
+    },
+    {
+      "source": "MAF",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAF is associated with Gout. Open Targets association score 0.43"
+    },
+    {
+      "source": "HNF4A",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF4A is associated with Gout. Open Targets association score 0.43"
+    },
+    {
+      "source": "ABCA1",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with Gout. Open Targets association score 0.43"
+    },
+    {
+      "source": "NLRP3",
+      "target": "Gout",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with Gout. Sensory receptor for urate crystals initiating IL-1 beta cleavage."
     }
   ]
 }

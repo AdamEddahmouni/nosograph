@@ -98,6 +98,7 @@ CAR_T_SCORES = {
         "INPP4B": 4.0,
         "IRS1": 4.0,
         "ISL1": 4.0,
+        "JCAD": 4.0,
         "KLB": 4.0,
         "LRFN5": 4.0,
         "MDFIC": 4.0,

@@ -1,0 +1,586 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2L11",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2L11 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "LYN",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LYN is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCR6",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR6 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCR7",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR7 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "IRF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MEFV",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "MEFV is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP6",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP6 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "RASSF5",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASSF5 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RELB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "TNIP1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "TNIP1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ZAP70",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ZAP70 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "SMAD3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "CCR6",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR6 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTA",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTA is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTB",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTB is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFAIP8L2",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP8L2 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF13B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF13B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF4",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF4 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF8",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "NLRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "MVK",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MVK is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.85"
+    },
+    {
+      "source": "VPS41",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VPS41 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.27"
+    },
+    {
+      "source": "MMAB",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMAB is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.12"
+    },
+    {
+      "source": "IL2",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.05"
+    },
+    {
+      "source": "FASLG",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.05"
+    },
+    {
+      "source": "LAT",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAT is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFKB1",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFKB2",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.05"
+    },
+    {
+      "source": "LYN",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYN is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXP3",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNIP1",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNIP1 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.05"
+    },
+    {
+      "source": "REL",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REL is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNF",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.05"
+    },
+    {
+      "source": "FAS",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.05"
+    },
+    {
+      "source": "LTB",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTB is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL2RA",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RA is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.05"
+    },
+    {
+      "source": "IFNG",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.05"
+    },
+    {
+      "source": "LTA",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTA is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.05"
+    },
+    {
+      "source": "MEFV",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEFV is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.05"
+    },
+    {
+      "source": "RAG2",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG2 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.05"
+    },
+    {
+      "source": "IKZF1",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.05"
+    },
+    {
+      "source": "ABCB1",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB1 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.05"
+    },
+    {
+      "source": "CARD11",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL2RG",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RG is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTPN22",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.04"
+    },
+    {
+      "source": "CEBPE",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPE is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.04"
+    },
+    {
+      "source": "RELB",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELB is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKDC",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKDC is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.04"
+    },
+    {
+      "source": "JAK3",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.04"
+    },
+    {
+      "source": "BCL6",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL6 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.04"
+    },
+    {
+      "source": "POLB",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLB is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.04"
+    },
+    {
+      "source": "NKX2-3",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-3 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.04"
+    },
+    {
+      "source": "ITGB2",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.04"
+    },
+    {
+      "source": "GNAI2",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAI2 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCR7",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR7 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTPRC",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNFAIP8L2",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFAIP8L2 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.04"
+    },
+    {
+      "source": "WIPF1",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WIPF1 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.04"
+    },
+    {
+      "source": "GIMAP1-GIMAP5",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP1-GIMAP5 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.04"
+    },
+    {
+      "source": "GIMAP5",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP5 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.04"
+    },
+    {
+      "source": "IRF8",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF8 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.04"
+    },
+    {
+      "source": "TOM1L2",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOM1L2 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.04"
+    },
+    {
+      "source": "SMAD3",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD3 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPTA1",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRF1",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRF1 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTPN2",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN2 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.04"
+    },
+    {
+      "source": "NLRP6",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP6 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.04"
+    },
+    {
+      "source": "GPR132",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR132 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZC3H12A",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZC3H12A is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.03"
+    },
+    {
+      "source": "IRF4",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF4 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPY1R",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPY1R is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.03"
+    },
+    {
+      "source": "CYLD",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYLD is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.03"
+    },
+    {
+      "source": "CCR6",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR6 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRKCD",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCD is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNFRSF13B",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF13B is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZAP70",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZAP70 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.03"
+    },
+    {
+      "source": "RASSF5",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASSF5 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.03"
+    },
+    {
+      "source": "CTLA4",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTLA4 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.03"
+    },
+    {
+      "source": "BCL2L11",
+      "target": "hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2L11 is associated with hyperimmunoglobulinemia D with periodic fever (HYPERIMMUNOGLOBULINEMIA_D_WITH_PERIODIC_FEVER). Open Targets association score 0.03"
+    }
+  ]
+}

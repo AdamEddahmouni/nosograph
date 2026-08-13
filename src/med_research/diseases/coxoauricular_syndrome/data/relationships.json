@@ -1,0 +1,484 @@
+{
+  "relationships": [
+    {
+      "source": "SOST",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "SOST is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "TNFRSF11A",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11A is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "EBF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EBF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FGF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "KLF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "KLF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL10A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL10A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL9A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL9A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "BMP5",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP5 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "PTHLH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTHLH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "THRB",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THRB is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "THRB",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "THRB is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11A",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11A is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LRP5",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP5 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP27B1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP27B1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "BMP5",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP5 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "PHEX",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHEX is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRKRA",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKRA is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "LRRK1",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRK1 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "NOTCH2",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH2 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGFR1",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ACP5",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACP5 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TBX4",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX4 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL2A1",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PITX1",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX1 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF11B is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLS3",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLS3 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRP5",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP5 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "INPP4B",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INPP4B is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ARID4A",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID4A is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "COMP",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COMP is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PAPPA",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAPPA is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GDF5",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF5 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "THRB",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THRB is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SOST",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOST is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGFR3",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CXXC5",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXXC5 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGF10",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF10 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "BGN",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BGN is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PPIB",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIB is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "HOXD12",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD12 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PAX8",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX8 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PHOSPHO1",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHOSPHO1 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CRTAP",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRTAP is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "KLF10",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF10 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "EBF2",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EBF2 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NBR1",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBR1 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "UBE2G1",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBE2G1 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNFRSF11A",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF11A is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TWIST1",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TWIST1 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PKDCC",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKDCC is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CLEC2D",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC2D is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GHRHR",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHRHR is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ESR1",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "EVC2",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EVC2 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TENT5A",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TENT5A is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TCIRG1",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCIRG1 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTHLH",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTHLH is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TMEM53",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM53 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFITM5",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFITM5 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ISL1",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISL1 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "KL",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KL is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SMPD3",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMPD3 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CYP27B1",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP27B1 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CANT1",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CANT1 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ANO5",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANO5 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "JDP2",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JDP2 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FGR",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGR is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "RGS10",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RGS10 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FOXC1",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "COL10A1",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL10A1 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "COL9A2",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL9A2 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "RSPO2",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO2 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNNT3",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNT3 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ANO6",
+      "target": "coxoauricular syndrome (COXOAURICULAR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANO6 is associated with coxoauricular syndrome (COXOAURICULAR_SYNDROME). Open Targets association score 0.03"
+    }
+  ]
+}

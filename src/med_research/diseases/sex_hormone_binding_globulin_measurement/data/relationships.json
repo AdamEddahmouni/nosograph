@@ -1,0 +1,424 @@
+{
+  "relationships": [
+    {
+      "source": "SERPINF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SERPINF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ZNF770",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF770 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF4A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF4A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "THRB",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THRB is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TGDS",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGDS is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "THRB",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "THRB is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "SLCO1B1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLCO1B1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "UGT2B15",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "UGT2B15 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SHBG",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHBG is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.74"
+    },
+    {
+      "source": "PLA2G12A",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G12A is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.67"
+    },
+    {
+      "source": "ZNF770",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF770 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.67"
+    },
+    {
+      "source": "HNF4A",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF4A is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.66"
+    },
+    {
+      "source": "NR1H4",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1H4 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.66"
+    },
+    {
+      "source": "HGFAC",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGFAC is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.63"
+    },
+    {
+      "source": "FOXA3",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXA3 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.62"
+    },
+    {
+      "source": "SERPINA1",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA1 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.59"
+    },
+    {
+      "source": "ZBTB10",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB10 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.58"
+    },
+    {
+      "source": "APOH",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOH is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.57"
+    },
+    {
+      "source": "NFIA",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFIA is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.57"
+    },
+    {
+      "source": "CPS1",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPS1 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.57"
+    },
+    {
+      "source": "SLCO1B1",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLCO1B1 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.57"
+    },
+    {
+      "source": "TMEM102",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM102 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.56"
+    },
+    {
+      "source": "PNPLA3",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PNPLA3 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.56"
+    },
+    {
+      "source": "GCKR",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.56"
+    },
+    {
+      "source": "FXR2",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FXR2 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.56"
+    },
+    {
+      "source": "SLC22A3",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A3 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.55"
+    },
+    {
+      "source": "SERPINF2",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINF2 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.55"
+    },
+    {
+      "source": "MIF",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIF is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.55"
+    },
+    {
+      "source": "PKN3",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKN3 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.55"
+    },
+    {
+      "source": "ERLIN1",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERLIN1 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.55"
+    },
+    {
+      "source": "SERPINA5",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA5 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.55"
+    },
+    {
+      "source": "EML4",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EML4 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.55"
+    },
+    {
+      "source": "SERTAD2",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERTAD2 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "EPHA1",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHA1 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "HNF1A",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "ANKRD55",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKRD55 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "NR2F6",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR2F6 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "SOS2",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOS2 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "PROX1",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROX1 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "CUX2",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUX2 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "MTARC1",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTARC1 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "CLEC10A",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC10A is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "PDE3A",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE3A is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "TMEM176A",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM176A is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "ZNF652",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF652 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "JADE2",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JADE2 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "ZC3HC1",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZC3HC1 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "ADO",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADO is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "ARID5B",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID5B is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "RREB1",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RREB1 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "UGT2B15",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGT2B15 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "BRI3",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRI3 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "FKBP4",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP4 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "TGDS",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGDS is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "THRB",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THRB is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "PRMT6",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRMT6 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "SOX6",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX6 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "TRPS1",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPS1 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "ZNF573",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF573 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "HLX",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLX is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "WDR81",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR81 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "SLC25A47",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A47 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "ARL15",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARL15 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "COBLL1",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COBLL1 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "QSER1",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "QSER1 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "L3MBTL3",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "L3MBTL3 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "SLC12A2",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A2 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "HSD17B13",
+      "target": "sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSD17B13 is associated with sex hormone-binding globulin measurement (SEX_HORMONE_BINDING_GLOBULIN_MEASUREMENT). Open Targets association score 0.52"
+    }
+  ]
+}

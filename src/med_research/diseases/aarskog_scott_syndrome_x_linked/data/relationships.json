@@ -1,0 +1,490 @@
+{
+  "relationships": [
+    {
+      "source": "SOST",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "SOST is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "CCL3",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL3 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "GLI2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL18",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL33",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL33 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "VCAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "VCAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "SOCS3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "SOCS3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "CHUK",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CHUK is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD38",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD38 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "FGD1",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGD1 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.82"
+    },
+    {
+      "source": "TSR2",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSR2 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.48"
+    },
+    {
+      "source": "CD8A",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.11"
+    },
+    {
+      "source": "TNF",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.09"
+    },
+    {
+      "source": "VCAM1",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VCAM1 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.09"
+    },
+    {
+      "source": "CD34",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.09"
+    },
+    {
+      "source": "CRP",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.08"
+    },
+    {
+      "source": "NLRP3",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.07"
+    },
+    {
+      "source": "FAS",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL17A",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.07"
+    },
+    {
+      "source": "FANCA",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.07"
+    },
+    {
+      "source": "FXN",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FXN is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL3RA",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL3RA is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.07 | Open Targets association score 0.07"
+    },
+    {
+      "source": "KLRK1",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLRK1 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.06"
+    },
+    {
+      "source": "HMGB1",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGB1 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL33",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL33 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL7",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.06"
+    },
+    {
+      "source": "DKK1",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DKK1 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "IFNG",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL18",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "CALCA",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "UROD",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UROD is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "SOCS3",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOCS3 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD4",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "SOD1",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD1 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "JAK1",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK1 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "ROR2",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROR2 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL7R",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7R is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD38",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD38 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "SSTR2",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSTR2 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "CORT",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CORT is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXP3",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "SDC1",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC1 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD70",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD70 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFNA1",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "PROM1",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROM1 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "NPR2",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPR2 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "MUC1",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC1 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD27",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD27 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "HSPD1",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPD1 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "POSTN",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POSTN is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "CXCL8",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCL3",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL3 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "VDR",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VDR is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.03"
+    },
+    {
+      "source": "HOXD13",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD13 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD63",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD63 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.03"
+    },
+    {
+      "source": "FSHR",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSHR is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.03"
+    },
+    {
+      "source": "MIF",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIF is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.03"
+    },
+    {
+      "source": "EYA1",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EYA1 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.03"
+    },
+    {
+      "source": "CSF3",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZEB1",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.03"
+    },
+    {
+      "source": "DSP",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSP is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.03"
+    },
+    {
+      "source": "SFTPD",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFTPD is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHUK",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHUK is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.03"
+    },
+    {
+      "source": "LCN2",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN2 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.03"
+    },
+    {
+      "source": "TMEM107",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM107 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.03"
+    },
+    {
+      "source": "SFN",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFN is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.03"
+    },
+    {
+      "source": "GLI2",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI2 is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOST",
+      "target": "Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOST is associated with Aarskog-Scott syndrome, X-linked (AARSKOG_SCOTT_SYNDROME_X_LINKED). Open Targets association score 0.03"
+    }
+  ]
+}

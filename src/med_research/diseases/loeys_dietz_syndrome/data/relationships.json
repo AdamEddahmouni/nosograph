@@ -313,6 +313,12 @@
       "description": "BMPR1B is a component of the Hepcidin / Iron Homeostasis pathway."
     },
     {
+      "source": "BMPR2",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMPR2 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
       "source": "AGT",
       "target": "renin-angiotensin",
       "type": "PARTICIPATES_IN",
@@ -541,10 +547,10 @@
       "description": "MYH11 is associated with Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME). Open Targets association score 0.11"
     },
     {
-      "source": "MYLK",
+      "source": "COL5A1",
       "target": "Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME)",
       "type": "ASSOCIATED_WITH",
-      "description": "MYLK is associated with Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME). Open Targets association score 0.11"
+      "description": "COL5A1 is associated with Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME). Open Targets association score 0.11"
     },
     {
       "source": "COL5A2",
@@ -553,10 +559,10 @@
       "description": "COL5A2 is associated with Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME). Open Targets association score 0.11"
     },
     {
-      "source": "COL5A1",
+      "source": "MYLK",
       "target": "Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME)",
       "type": "ASSOCIATED_WITH",
-      "description": "COL5A1 is associated with Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME). Open Targets association score 0.11"
+      "description": "MYLK is associated with Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME). Open Targets association score 0.11"
     },
     {
       "source": "PCSK5",
@@ -679,16 +685,16 @@
       "description": "FUZ is associated with Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME). Open Targets association score 0.03"
     },
     {
-      "source": "QSOX1",
-      "target": "Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME)",
-      "type": "ASSOCIATED_WITH",
-      "description": "QSOX1 is associated with Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME). Open Targets association score 0.03"
-    },
-    {
       "source": "HSPG2",
       "target": "Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME)",
       "type": "ASSOCIATED_WITH",
       "description": "HSPG2 is associated with Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "QSOX1",
+      "target": "Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "QSOX1 is associated with Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME). Open Targets association score 0.03"
     },
     {
       "source": "SMG9",
@@ -751,16 +757,10 @@
       "description": "SERPINA1 is associated with Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME). Open Targets association score 0.00"
     },
     {
-      "source": "MMP9",
+      "source": "BAG3",
       "target": "Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME)",
       "type": "ASSOCIATED_WITH",
-      "description": "MMP9 is associated with Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME). Open Targets association score 0.00"
-    },
-    {
-      "source": "MITF",
-      "target": "Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME)",
-      "type": "ASSOCIATED_WITH",
-      "description": "MITF is associated with Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME). Open Targets association score 0.00"
+      "description": "BAG3 is associated with Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME). Open Targets association score 0.00"
     },
     {
       "source": "MYBPC3",
@@ -769,16 +769,16 @@
       "description": "MYBPC3 is associated with Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME). Open Targets association score 0.00"
     },
     {
-      "source": "ARID2",
-      "target": "Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ARID2 is associated with Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME). Open Targets association score 0.00"
-    },
-    {
       "source": "BMPR1B",
       "target": "Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME)",
       "type": "ASSOCIATED_WITH",
       "description": "BMPR1B is associated with Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "MITF",
+      "target": "Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MITF is associated with Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME). Open Targets association score 0.00"
     },
     {
       "source": "ALK",
@@ -787,16 +787,22 @@
       "description": "ALK is associated with Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME). Open Targets association score 0.00"
     },
     {
-      "source": "VWF",
+      "source": "BMPR2",
       "target": "Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME)",
       "type": "ASSOCIATED_WITH",
-      "description": "VWF is associated with Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME). Open Targets association score 0.00"
+      "description": "BMPR2 is associated with Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME). Open Targets association score 0.00"
     },
     {
-      "source": "BAG3",
+      "source": "MMP9",
       "target": "Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME)",
       "type": "ASSOCIATED_WITH",
-      "description": "BAG3 is associated with Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME). Open Targets association score 0.00"
+      "description": "MMP9 is associated with Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "XK",
+      "target": "Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XK is associated with Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME). Open Targets association score 0.00"
     },
     {
       "source": "CLN3",
@@ -805,10 +811,16 @@
       "description": "CLN3 is associated with Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME). Open Targets association score 0.00"
     },
     {
-      "source": "XK",
+      "source": "VWF",
       "target": "Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME)",
       "type": "ASSOCIATED_WITH",
-      "description": "XK is associated with Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME). Open Targets association score 0.00"
+      "description": "VWF is associated with Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ARID2",
+      "target": "Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID2 is associated with Loeys-Dietz syndrome (LOEYS_DIETZ_SYNDROME). Open Targets association score 0.00"
     },
     {
       "source": "ACOX1",

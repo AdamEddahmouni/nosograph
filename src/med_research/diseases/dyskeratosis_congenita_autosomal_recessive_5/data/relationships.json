@@ -1,0 +1,574 @@
+{
+  "relationships": [
+    {
+      "source": "BTK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BTK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD19",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD19 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LYN",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LYN is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCR6",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR6 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "TNFRSF21",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF21 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL5RA",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL5RA is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "RASGRP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASGRP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFATC1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP3 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "TNIP1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "TNIP1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD28",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD28 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ICOS",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ICOS is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCR6",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR6 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL21R",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL21R is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "RORC",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "RORC is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP3 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF13C",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF13C is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF21",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF21 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF6B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF6B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "RTEL1",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RTEL1 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.82"
+    },
+    {
+      "source": "TNFRSF6B",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF6B is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.19"
+    },
+    {
+      "source": "ARFRP1",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARFRP1 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.15"
+    },
+    {
+      "source": "TERT",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.12"
+    },
+    {
+      "source": "CARD11",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.06"
+    },
+    {
+      "source": "SPPL2A",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPPL2A is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL2RG",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RG is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRKDC",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKDC is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFKB1",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD19",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD19 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL21R",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL21R is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.05"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.05"
+    },
+    {
+      "source": "LMBR1L",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMBR1L is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.05"
+    },
+    {
+      "source": "ICOS",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICOS is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.05"
+    },
+    {
+      "source": "POU2AF1",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU2AF1 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.05"
+    },
+    {
+      "source": "STK4",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK4 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFKB2",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD40",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNFRSF13C",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF13C is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTPN22",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "REL",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REL is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "JAK3",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "ABCB1",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB1 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNIP1",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNIP1 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "BCL6",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL6 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "ITGB2",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "RAC2",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAC2 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "LYN",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYN is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "INPP5D",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INPP5D is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXP3",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "BTK",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTK is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "LAT",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAT is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "SH2D1A",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2D1A is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCR6",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR6 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "VAV1",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VAV1 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "GIMAP5",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP5 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "GIMAP1-GIMAP5",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP1-GIMAP5 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD28",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD28 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNFRSF21",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF21 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFATC1",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFATC1 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNF",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "ATP11C",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP11C is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL5RA",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL5RA is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "FPR2",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FPR2 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "RASGRP1",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASGRP1 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "EPCAM",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPCAM is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "ITPKB",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITPKB is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "RORC",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RORC is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD79A",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "RAG2",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG2 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "WAS",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WAS is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "FAM3D",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM3D is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADGRG3",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADGRG3 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "BACH2",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BACH2 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL2RA",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RA is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFAIP3 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "GCNT3",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCNT3 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL2",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "RC3H1",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RC3H1 is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL17A",
+      "target": "dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with dyskeratosis congenita, autosomal recessive 5 (DYSKERATOSIS_CONGENITA_AUTOSOMAL_RECESSIVE_5). Open Targets association score 0.04"
+    }
+  ]
+}

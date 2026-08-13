@@ -1,0 +1,532 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1743016",
+      "target": "FOLR1",
+      "type": "TARGETS",
+      "description": "FARLETUZUMAB targets FOLR1."
+    },
+    {
+      "source": "CHEMBL1201087",
+      "target": "DRD2",
+      "type": "TARGETS",
+      "description": "CABERGOLINE targets DRD2."
+    },
+    {
+      "source": "CHEMBL778",
+      "target": "ADRA2C",
+      "type": "TARGETS",
+      "description": "DEXMEDETOMIDINE targets ADRA2C."
+    },
+    {
+      "source": "CHEMBL1201087",
+      "target": "DRD2",
+      "type": "TARGETS",
+      "description": "CABERGOLINE targets DRD2."
+    },
+    {
+      "source": "CHEMBL3349607",
+      "target": "SSTR2",
+      "type": "TARGETS",
+      "description": "PASIREOTIDE targets SSTR2."
+    },
+    {
+      "source": "CHEMBL778",
+      "target": "ADRA2B",
+      "type": "TARGETS",
+      "description": "DEXMEDETOMIDINE targets ADRA2B."
+    },
+    {
+      "source": "CHEMBL3349607",
+      "target": "SSTR1",
+      "type": "TARGETS",
+      "description": "PASIREOTIDE targets SSTR1."
+    },
+    {
+      "source": "CHEMBL3349607",
+      "target": "SSTR3",
+      "type": "TARGETS",
+      "description": "PASIREOTIDE targets SSTR3."
+    },
+    {
+      "source": "CHEMBL778",
+      "target": "ADRA2A",
+      "type": "TARGETS",
+      "description": "DEXMEDETOMIDINE targets ADRA2A."
+    },
+    {
+      "source": "CHEMBL3349607",
+      "target": "SSTR5",
+      "type": "TARGETS",
+      "description": "PASIREOTIDE targets SSTR5."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH6",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH6 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "SOCS1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "SOCS1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "DRD2",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "DRD2 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "SMAD2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SMAD3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SMAD7",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD7 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "CYP19A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP19A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SOCS1",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOCS1 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "DRD2",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DRD2 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "TP53",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "GNAS",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAS is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SDHA",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDHA is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BCL9",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL9 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PAX3",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX3 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RMI2",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RMI2 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FOXP1",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP1 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FLT4",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRAF",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "MEN1",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "KDM5A",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM5A is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ANK1",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "YWHAE",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YWHAE is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NOTCH2",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH2 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ZFHX3",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFHX3 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ATM",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "DROSHA",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DROSHA is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TRIM24",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM24 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SSTR2",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSTR2 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.10"
+    },
+    {
+      "source": "SSTR3",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSTR3 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.10"
+    },
+    {
+      "source": "SSTR5",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSTR5 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "SSTR1",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSTR1 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "SMAD3",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD3 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "WNK2",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNK2 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "CRTC3",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRTC3 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "CD8A",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "FOLR1",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOLR1 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "ADRA2B",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2B is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "ADRA2A",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2A is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "ADRA2C",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2C is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL10",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "SMAD2",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD2 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRL",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRL is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "FSHR",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSHR is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "TGFB1",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD274",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GH1",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "LHCGR",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHCGR is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ESR1",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MSH6",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH6 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MLKL",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLKL is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GNRHR",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRHR is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "AR",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "GNRH1",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRH1 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NCAM1",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCAM1 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "KISS1R",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KISS1R is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TAF4B",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAF4B is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CSH1",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSH1 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "GH2",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH2 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CSH2",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSH2 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CSHL1",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSHL1 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "BGLAP",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BGLAP is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYP19A1",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP19A1 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "AFP",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CGB3",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB3 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SMAD7",
+      "target": "non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD7 is associated with non-functioning pituitary adenoma (NON_FUNCTIONING_PITUITARY_ADENOMA). Open Targets association score 0.04"
+    }
+  ]
+}

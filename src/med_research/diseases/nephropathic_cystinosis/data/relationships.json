@@ -1,0 +1,514 @@
+{
+  "relationships": [
+    {
+      "source": "BAX",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BAX is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CASP3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CASP4",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP4 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "MAP1LC3A",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP1LC3A is a component of the Autophagy pathway."
+    },
+    {
+      "source": "SQSTM1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SQSTM1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "FGF23",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF23 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GTF2H1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "GTF2H1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IGF2BP2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2BP2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SLC4A1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC4A1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "SLC4A4",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC4A4 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "COL4A4",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A4 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "SLC2A9",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A9 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "NLRP1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGM2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LRP2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "NLRP1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CTNS",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNS is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.84"
+    },
+    {
+      "source": "SHPK",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHPK is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.42"
+    },
+    {
+      "source": "TRPV1",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV1 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.34"
+    },
+    {
+      "source": "TAX1BP3",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAX1BP3 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.18"
+    },
+    {
+      "source": "SLC66A1",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC66A1 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.12"
+    },
+    {
+      "source": "HNF1A",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC4A4",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC4A4 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC12A1",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A1 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CRH",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRH is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC5A2",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC5A2 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CISD2",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CISD2 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "VDR",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VDR is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC2A9",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A9 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC4A1",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC4A1 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "RRM2B",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RRM2B is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "GRN",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRN is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "GPRC6A",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPRC6A is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "BBS4",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BBS4 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "MPV17",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPV17 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CASR",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASR is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "COL4A4",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A4 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SQSTM1",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SQSTM1 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "GH1",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CHIT1",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHIT1 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CLU",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLU is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "NUP62",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUP62 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IGF2BP2",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2BP2 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "GTF2H1",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GTF2H1 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "DCTN4",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCTN4 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "KHDRBS1",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KHDRBS1 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "FGF23",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF23 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "TGFA",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFA is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "LRP2",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP2 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CASP4",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP4 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MCC",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCC is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGF",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGF is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CUBN",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUBN is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "RB1",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTOR",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPT",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GOT1",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOT1 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC17A5",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A5 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACE",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NLRP1",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP1 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ASAH1",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASAH1 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "XK",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XK is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB1",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGF1",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAP1LC3A",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP1LC3A is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNF",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "RET",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CAT",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAT is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CASP3",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP3 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOD1",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD1 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGM2",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM2 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "GGH",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGH is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PAX2",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX2 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "BAX",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAX is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "KIT",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PROM1",
+      "target": "nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROM1 is associated with nephropathic cystinosis (NEPHROPATHIC_CYSTINOSIS). Open Targets association score 0.00"
+    }
+  ]
+}

@@ -1,12 +1,16 @@
 # Medical Research Platform
 
+[![Tests](https://github.com/AdamEddahmouni/med-research/actions/workflows/test.yml/badge.svg)](https://github.com/AdamEddahmouni/med-research/actions/workflows/test.yml)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11%20%7C%203.12-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 `med-research` is a multi-disease computational research platform for biomedical evidence exploration, drug discovery, and hypothesis generation. It combines disease-specific knowledge graphs, explainable scoring pipelines, literature and clinical-trial evidence, provenance metadata, and a FastAPI dashboard.
 
 > **Research use only.** Outputs are computational prioritization hypotheses, not medical advice, treatment recommendations, or evidence of efficacy. Validate every finding against the cited source and appropriate experimental or clinical evidence.
 
 ## What is implemented
 
-- Seven disease modules: SLE, RA, MS, Sjögren's syndrome, systemic sclerosis, type 1 diabetes, and IBD.
+- **544 disease modules** in the registry (seven fully curated autoimmune modules — SLE, RA, MS, Sjögren's syndrome, systemic sclerosis, type 1 diabetes, and IBD — plus scaffolded modules across additional conditions).
 - Disease-specific JSON knowledge-graph data and pipeline configuration under `src/med_research/diseases/`.
 - Knowledge-graph construction and export, drug repurposing, bioinformatics, literature mining, virtual screening, clinical-trial tracking, ML target prediction, synergy, safety, network pharmacology, expression, CAR-T, biomarker, semantic search, evidence gathering, extraction, and monitoring.
 - Evidence-to-Hypothesis Workspace with PubMed and ClinicalTrials.gov adapters, deterministic claims, optional LLM enrichment, explainable drug/target rankings, graph explanations, provenance fingerprints, saved history, comparison, trends, and JSON/HTML exports.
@@ -224,11 +228,17 @@ CI runs lint, lock-check, the offline suite with an **80% coverage gate**, integ
 
 ## Docker
 
+Copy the environment template before starting the stack:
+
+```bash
+cp .env.example .env
+```
+
 The Compose file defines `redis`, `worker`, `web`, and `pipeline` services. The services are under the `full` and `cli` profiles:
 
 ```bash
 # API, worker, and Redis
- docker compose --profile full up --build
+docker compose --profile full up --build
 
 # CLI container
  docker compose --profile cli run --rm pipeline diseases
@@ -237,18 +247,26 @@ The Compose file defines `redis`, `worker`, `web`, and `pipeline` services. The 
    --no-llm
 ```
 
-The web service listens on port 8000. Configure `CELERY_BROKER_URL`, `CELERY_RESULT_BACKEND`, `USE_CACHE`, `HOST`, `PORT`, `DEBUG`, `CORS_ORIGINS`, `WORKSPACE_DB_PATH`, `API_KEY`, `RATE_LIMIT_REQUESTS`, `RATE_LIMIT_WINDOW`, and `REDIS_RATE_LIMIT_URL` through the environment as needed. The rate limiter is distributed via Redis when `REDIS_RATE_LIMIT_URL` (default: the Celery broker URL) is reachable and falls back to per-process in-memory limiting otherwise. When using `med-research serve`, explicit `--host`/`--port` values (including their parser defaults) take precedence over `HOST`/`PORT`; see [`docs/api-reference.md`](docs/api-reference.md) for the distinction and security caveats.
+The web service listens on port 8000. Copy `.env.example` to `.env` before `docker compose up`. Set `DOCKER_SKIP_DISEASE_VALIDATE=1` as a build arg for faster local image builds when disease validation is not needed.
+
+Configure `CELERY_BROKER_URL`, `CELERY_RESULT_BACKEND`, `USE_CACHE`, `HOST`, `PORT`, `DEBUG`, `CORS_ORIGINS`, `WORKSPACE_DB_PATH`, `API_KEY`, `RATE_LIMIT_REQUESTS`, `RATE_LIMIT_WINDOW`, and `REDIS_RATE_LIMIT_URL` through the environment as needed. The rate limiter is distributed via Redis when `REDIS_RATE_LIMIT_URL` (default: the Celery broker URL) is reachable and falls back to per-process in-memory limiting otherwise. When using `med-research serve`, explicit `--host`/`--port` values (including their parser defaults) take precedence over `HOST`/`PORT`; see [`docs/api-reference.md`](docs/api-reference.md) for the distinction and security caveats.
 
 ## Documentation map
 
 - [`docs/evidence-workspace.md`](docs/evidence-workspace.md) — Workspace tutorial and reference.
 - [`docs/disease-curation.md`](docs/disease-curation.md) — Disease validate/coverage/refresh workflow and curation checklist.
+- [`docs/deployment.md`](docs/deployment.md) — Self-hosted Docker Compose setup and production env guidance.
+- [`docs/licensing.md`](docs/licensing.md) — MIT license and third-party data attribution.
 - [`docs/api-reference.md`](docs/api-reference.md) — Current server, job, history, export, and admin endpoints.
 - [`docs/superpowers/specs/`](docs/superpowers/specs/) — Historical design specifications.
 - [`docs/superpowers/plans/`](docs/superpowers/plans/) — Historical implementation plans and verification records.
 - [`CHANGELOG.md`](CHANGELOG.md) — Historical changes; current commands are maintained in this README and `docs/`.
 - [`TECHNICAL_DEBT_ISSUES.md`](TECHNICAL_DEBT_ISSUES.md) — Technical audit and remaining follow-up work; resolved findings are labeled.
 
+## Security
+
+This platform is for **research-only public biomedical knowledge** — not for storing or processing patient-identifiable data. When exposing the API beyond localhost, set `DEBUG=false` and a strong `API_KEY`. See [SECURITY.md](SECURITY.md) for the vulnerability reporting process and [docs/deployment.md](docs/deployment.md) for self-hosted setup.
+
 ## License and contribution
 
-The project is an open computational research platform. Contributions in computational biology, immunology, data science, software engineering, testing, and documentation are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for dev setup, testing expectations, and contribution guidelines. Keep source provenance explicit, preserve disease context, avoid overstating computational results, and add deterministic tests for new behavior.
+The project is released under the [MIT License](LICENSE). Contributions in computational biology, immunology, data science, software engineering, testing, and documentation are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for dev setup, testing expectations, and contribution guidelines. Third-party data licenses are summarized in [docs/licensing.md](docs/licensing.md). Keep source provenance explicit, preserve disease context, avoid overstating computational results, and add deterministic tests for new behavior.

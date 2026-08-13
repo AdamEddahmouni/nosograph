@@ -1,0 +1,610 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL2028663",
+      "target": "BRAF",
+      "type": "TARGETS",
+      "description": "DABRAFENIB targets BRAF."
+    },
+    {
+      "source": "CHEMBL2103875",
+      "target": "MAP2K2",
+      "type": "TARGETS",
+      "description": "TRAMETINIB targets MAP2K2."
+    },
+    {
+      "source": "CHEMBL2028663",
+      "target": "BRAF",
+      "type": "TARGETS",
+      "description": "DABRAFENIB targets BRAF."
+    },
+    {
+      "source": "CHEMBL2103875",
+      "target": "MAP2K1",
+      "type": "TARGETS",
+      "description": "TRAMETINIB targets MAP2K1."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BCL2L1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2L1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BIRC5",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BIRC5 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "TNFSF11",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF11 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MLH1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MLH1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ADAMTS1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP14",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP14 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TIMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "SHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "SMO",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SMO is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTHLH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTHLH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TLR2",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR2 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF11",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF11 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "AXIN2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "AXIN2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.45"
+    },
+    {
+      "source": "SMO",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMO is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "TP53",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "KRAS",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "APC",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NRAS",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR2",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "HRAS",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMARCB1",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCB1 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "MMP2",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.10"
+    },
+    {
+      "source": "CALB2",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALB2 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.10"
+    },
+    {
+      "source": "CDH1",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.10"
+    },
+    {
+      "source": "MDM2",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM2 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "SOX2",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX2 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "PTHLH",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTHLH is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "PTEN",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "PDPN",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDPN is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "RECK",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RECK is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "MAP2K1",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K1 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "EGFR",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "ADAMTS1",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS1 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "MAP2K2",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K2 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "EZR",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EZR is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "NTRK1",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "TNFSF11",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF11 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "BIRC5",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIRC5 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "AXIN2",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AXIN2 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "BCL2",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "TLR2",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR2 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "MMP9",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "IGF1",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "MKI67",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "FAM83H",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM83H is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "FN1",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FN1 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF11B is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "PTCH1",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "TIMP2",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP2 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "YAP1",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YAP1 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "NGF",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NGF is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "VEGFA",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TP63",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "UVRAG",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UVRAG is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "RPE65",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPE65 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CKAP4",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CKAP4 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "YY1AP1",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YY1AP1 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MTDH",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTDH is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PCNA",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNA is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SNAI1",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNAI1 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNC",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNC is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SHH",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHH is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFKB1",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD34",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MMP14",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP14 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "MLH1",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLH1 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SDC1",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC1 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "MSH2",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH2 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "BCL2L1",
+      "target": "ameloblastoma (AMELOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2L1 is associated with ameloblastoma (AMELOBLASTOMA). Open Targets association score 0.04"
+    }
+  ]
+}

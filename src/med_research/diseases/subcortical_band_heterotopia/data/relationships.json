@@ -1,0 +1,442 @@
+{
+  "relationships": [
+    {
+      "source": "CASP3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CASP9",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP9 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "ULK4",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "ULK4 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CDK5R1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK5R1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "FGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GDF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "GDF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "RELN",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "RELN is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK8IP3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK8IP3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RELN",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELN is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AKT3",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT3 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "APC2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "EML1",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EML1 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.77"
+    },
+    {
+      "source": "PAFAH1B1",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAFAH1B1 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.76"
+    },
+    {
+      "source": "DCX",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCX is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.63"
+    },
+    {
+      "source": "TUBA1A",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBA1A is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "WDFY3",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDFY3 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYH10",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH10 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "DAB1",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAB1 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CASP9",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP9 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDON",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDON is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFIA",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFIA is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "GDF7",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF7 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "L1CAM",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "L1CAM is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAPK8IP3",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK8IP3 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ROBO1",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROBO1 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TUBB2B",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB2B is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "LHX5",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHX5 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDK5R1",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK5R1 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "EMX2",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EMX2 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ARX",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARX is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "HSF1",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSF1 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAP3K12",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K12 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "LLGL1",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LLGL1 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGFR2",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZNF423",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF423 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "MBOAT7",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBOAT7 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NCALD",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCALD is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MANF",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MANF is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "RND3",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RND3 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MARCKS",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MARCKS is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "DSCAM",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSCAM is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "POMK",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMK is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TRIP6",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIP6 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SMARCB1",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCB1 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOX1",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX1 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ARFGEF1",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARFGEF1 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TSKU",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSKU is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "APC2",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC2 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SDCCAG8",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDCCAG8 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MYO9A",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO9A is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "KPTN",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KPTN is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHD7",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD7 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FEZF1",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FEZF1 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZBTB18",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB18 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MAP1B",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP1B is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "KATNIP",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KATNIP is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "KIF6",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF6 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NEUROG2",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEUROG2 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "AKT3",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT3 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CABLES1",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CABLES1 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "GLI3",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZNF503",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF503 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "RELN",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELN is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "AK8",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AK8 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MSI1",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSI1 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "LMNB2",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNB2 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "USP18",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP18 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FGF2",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF2 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PLAUR",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAUR is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CASP3",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP3 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ULK4",
+      "target": "subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ULK4 is associated with subcortical band heterotopia (SUBCORTICAL_BAND_HETEROTOPIA). Open Targets association score 0.03"
+    }
+  ]
+}

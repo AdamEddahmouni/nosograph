@@ -1,0 +1,418 @@
+{
+  "relationships": [
+    {
+      "source": "CACNA1A",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1A is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CACNA1C",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1C is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "BMPR2",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMPR2 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "DRD2",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "DRD2 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "SLC6A3",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC6A3 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "DIO2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "DIO2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGM2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFRSF13B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF13B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFIH1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFIH1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "DNAH7",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH7 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.33"
+    },
+    {
+      "source": "IFIH1",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFIH1 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.27"
+    },
+    {
+      "source": "CACNA1A",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1A is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.12"
+    },
+    {
+      "source": "TNFRSF13B",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF13B is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.12"
+    },
+    {
+      "source": "BMPR2",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMPR2 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.12"
+    },
+    {
+      "source": "SLC19A3",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC19A3 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADORA2A",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADORA2A is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "AP1S2",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AP1S2 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TPK1",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPK1 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "P2RX5-TAX1BP3",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RX5-TAX1BP3 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NDUFS1",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS1 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "P2RX1",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RX1 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SST",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SST is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "P2RX6",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RX6 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "P2RX2",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RX2 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "P2RX5",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RX5 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "P2RX4",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RX4 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "P2RX3",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RX3 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "P2RX7",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RX7 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NDUFV1",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFV1 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "P2RY2",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RY2 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "P2RY1",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RY1 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC19A2",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC19A2 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "DRD2",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DRD2 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "VPS13A",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VPS13A is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "NPY4R2",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPY4R2 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSEN1",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSEN1 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GZMA",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GZMA is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SYAP1",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYAP1 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "DGKQ",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DGKQ is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPA1",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPA1 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC18A2",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC18A2 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "NPY4R",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPY4R is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TMEM175",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM175 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "FAM193A",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM193A is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GAK",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAK is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "HTT",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTT is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ARC",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARC is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGM2",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM2 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "HIBCH",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIBCH is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC6A3",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A3 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PINK1",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PINK1 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDE10A",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE10A is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CNR1",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNR1 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CACNA1C",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1C is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "DNM1L",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM1L is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TBXT",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBXT is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRMP1",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRMP1 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "HSD17B12",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSD17B12 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCK",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCK is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRKRA",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKRA is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "DAPK2",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAPK2 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MDH1",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDH1 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "DIO2",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DIO2 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TBXAS1",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBXAS1 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "DENR",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DENR is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "KARS1",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KARS1 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "HLCS",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLCS is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "UTRN",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UTRN is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "NTF4",
+      "target": "basal ganglia disease (BASAL_GANGLIA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTF4 is associated with basal ganglia disease (BASAL_GANGLIA_DISEASE). Open Targets association score 0.00"
+    }
+  ]
+}

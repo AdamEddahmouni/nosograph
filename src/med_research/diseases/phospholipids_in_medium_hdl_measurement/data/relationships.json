@@ -1,0 +1,496 @@
+{
+  "relationships": [
+    {
+      "source": "SLC39A8",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC39A8 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "SCARB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "SCARB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ARHGEF28",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ARHGEF28 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MARCHF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "MARCHF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SULF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SULF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SLC4A1AP",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC4A1AP is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ATRAID",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRAID is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF4A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF4A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "ZDHHC18",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "ZDHHC18 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL3 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL4 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ANGPTL8",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL8 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CETP is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CD300LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD300LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "GSTM1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GSTM4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "UGT2B15",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "UGT2B15 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ABCA1",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.68"
+    },
+    {
+      "source": "LIPG",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPG is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.68"
+    },
+    {
+      "source": "CETP",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETP is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.62"
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL3 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.59"
+    },
+    {
+      "source": "LPL",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.58"
+    },
+    {
+      "source": "SCARB1",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCARB1 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.57"
+    },
+    {
+      "source": "APOA1",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.57"
+    },
+    {
+      "source": "GALNT2",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GALNT2 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "GPIHBP1",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPIHBP1 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "LIPC",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "APOE",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "CD300LG",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD300LG is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "SORT1",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORT1 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "APOA2",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA2 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "APOB",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "MTARC1",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTARC1 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "CELSR2",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR2 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL4 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "LCAT",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCAT is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "GPAM",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPAM is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "GCKR",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "TTC39B",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC39B is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "GNMT",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNMT is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "SULF2",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SULF2 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "HNF4A",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF4A is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "PLTP",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLTP is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "PCSK6",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK6 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "EEPD1",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EEPD1 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "MVK",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MVK is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "FADS2",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS2 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "TMPRSS11E",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS11E is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "CTSS",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSS is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "ARHGEF28",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGEF28 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "PCSK9",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "APOC3",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC3 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "UVRAG",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UVRAG is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "CPS1",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPS1 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "PGS1",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGS1 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "SLC39A8",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC39A8 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "UBE2L3",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBE2L3 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "UGT2B15",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGT2B15 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "PAFAH1B2",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAFAH1B2 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "ATRAID",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRAID is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "PSRC1",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSRC1 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "TRPS1",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPS1 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "GSTM1",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM1 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "TRIM5",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM5 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "MARCHF8",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MARCHF8 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "NEB",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEB is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "AQP9",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP9 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "ANGPTL8",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL8 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "SDC1",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC1 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "ZDHHC18",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZDHHC18 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "SIK3",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIK3 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "SLC4A1AP",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC4A1AP is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "GSTM4",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM4 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "VTN",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VTN is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "CABP1",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CABP1 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "AKR1C4",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKR1C4 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "CFAP97D1",
+      "target": "phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFAP97D1 is associated with phospholipids in medium HDL measurement  (PHOSPHOLIPIDS_IN_MEDIUM_HDL_MEASUREMENT). Open Targets association score 0.29"
+    }
+  ]
+}

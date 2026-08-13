@@ -36,6 +36,7 @@ CAR_T_SCORES = {
         "ARID2": 4.0,
         "BAG3": 4.0,
         "BMPR1B": 4.0,
+        "BMPR2": 4.0,
         "CCN2": 4.0,
         "CHTOP": 4.0,
         "CHUK": 4.0,

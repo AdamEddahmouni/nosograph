@@ -69,6 +69,7 @@ CAR_T_SCORES = {
         "IL6": 4.0,
         "IL7": 4.0,
         "INS": 4.0,
+        "ISYNA1": 4.0,
         "ITGAL": 4.0,
         "ITGB2": 4.0,
         "KCNH8": 4.0,
@@ -142,8 +143,8 @@ DRUG_INDUCED_LUPUS_RISK = DRUG_SAFETY_RISK
 SCREENING_PROFILE = {
     "strategy_id": "chronic_venous_insufficiency-screening-v1",
     "pathway_keywords": [
-        "(th2)",
         "adhesion",
+        "angiotensin",
         "cardiac",
         "cascade",
         "cell",
@@ -154,8 +155,8 @@ SCREENING_PROFILE = {
         "integrin",
     ],
     "mechanism_keywords": [
-        "(th2)",
         "adhesion",
+        "angiotensin",
         "cardiac",
         "cascade",
         "cell",

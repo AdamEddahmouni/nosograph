@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "SCARB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "SCARB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TM6SF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TM6SF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ZNF229",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF229 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATRAID",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRAID is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "ITGA1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "HMGCR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HMGCR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ITGA1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFRSF13B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF13B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF13",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "CYP7A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP7A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "UGT2B15",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "UGT2B15 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.70"
+    },
+    {
+      "source": "PCSK9",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.69"
+    },
+    {
+      "source": "APOB",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.69"
+    },
+    {
+      "source": "SLC22A1",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A1 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "ABCG8",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG8 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "HP",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HP is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "ASGR1",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASGR1 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "SORT1",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORT1 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "SERPINA1",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA1 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "APOE",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "CELSR2",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR2 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "ABCA1",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "TIMD4",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMD4 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "DNAH11",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH11 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "ST3GAL4",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST3GAL4 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "HMGCR",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCR is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "LIPG",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPG is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "ABCA6",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA6 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "TNFSF13",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "USP24",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP24 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "NECTIN2",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NECTIN2 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "FADS2",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS2 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "ZNF229",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF229 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "COBLL1",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COBLL1 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "TNFRSF13B",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF13B is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "APOA5",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "ASGR2",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASGR2 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "GCKR",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "PKD1L3",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKD1L3 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "MAP3K1",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K1 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "TM6SF2",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM6SF2 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "SH2B3",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2B3 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "ITGA1",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA1 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "ZPR1",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZPR1 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "MYLIP",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYLIP is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "ZHX3",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZHX3 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "GPCPD1",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPCPD1 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "FAM117B",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM117B is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "ATXN2",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATXN2 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "SCARB1",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCARB1 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "LIPC",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "PELO",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PELO is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "CYP7A1",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP7A1 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "ATRAID",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRAID is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "HGFAC",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGFAC is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "MAFB",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAFB is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "GAS6",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAS6 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "ABCA5",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA5 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "MAMSTR",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAMSTR is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "UGT2B15",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGT2B15 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "HNF1A",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "EPGN",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPGN is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "TRIB1",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIB1 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "GALNT2",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GALNT2 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "CLEC10A",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC10A is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "TMPRSS11E",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS11E is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "TRPS1",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPS1 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "MAU2",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAU2 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "ABO",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABO is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "HK1",
+      "target": "phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HK1 is associated with phospholipids in small LDL measurement  (PHOSPHOLIPIDS_IN_SMALL_LDL_MEASUREMENT). Open Targets association score 0.33"
+    }
+  ]
+}

@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "CASP3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CD19",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD19 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "MS4A1",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MS4A1 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CDKN1C",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1C is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "FGF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "KIF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "KIF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MEGF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "MEGF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "RENBP",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "RENBP is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD38",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD38 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "WNT5A",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT5A is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "PIGN",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIGN is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.37"
+    },
+    {
+      "source": "TBC1D32",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D32 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "MKS1",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKS1 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGFR2",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CPLANE1",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPLANE1 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RPGRIP1L",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPGRIP1L is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXH1",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXH1 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CHTOP",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHTOP is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SOX11",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX11 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGF10",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF10 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GLDC",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLDC is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TGFB2",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB2 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "WNT5A",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT5A is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NDST1",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDST1 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PCSK5",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK5 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "KIF7",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF7 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PSPH",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSPH is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFT27",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT27 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MEGF8",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEGF8 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PIGV",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIGV is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ROBO1",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROBO1 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FOXC1",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SFN",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFN is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PDS5B",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDS5B is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "DNM2",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM2 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PCNT",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNT is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFT172",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT172 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "EYA1",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EYA1 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "WDR11",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR11 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "DLG1",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLG1 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SMG9",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMG9 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRICKLE1",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRICKLE1 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "QSOX1",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "QSOX1 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TP63",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CC2D2A",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CC2D2A is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDKN1C",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1C is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD40LG",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD27",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD27 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "RLIM",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RLIM is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKT1",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPHS2",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHS2 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CASP3",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP3 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPARA",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARA is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "WT1",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "POMC",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRKN",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKN is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "SUSD4",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUSD4 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CBLL2",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBLL2 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL6",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "MUL1",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUL1 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT20",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT20 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "MS4A1",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MS4A1 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "HLA-DQB1",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DQB1 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIGA",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIGA is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "HLA-DQA2",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DQA2 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "HLA-DQA1",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DQA1 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "KIF4A",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF4A is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD38",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD38 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "RENBP",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RENBP is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD19",
+      "target": "Fryns syndrome (FRYNS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD19 is associated with Fryns syndrome (FRYNS_SYNDROME). Open Targets association score 0.00"
+    }
+  ]
+}

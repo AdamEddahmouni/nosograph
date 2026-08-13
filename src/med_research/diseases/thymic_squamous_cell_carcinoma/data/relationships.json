@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "SLC34A2",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC34A2 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "SMAD4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TNFRSF14",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF14 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "AXIN2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "AXIN2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KIT",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP53",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SETD2",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD2 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TRRAP",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRRAP is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RB1",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KRAS",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TET2",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MED12",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MED12 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KDM6A",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM6A is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "HRAS",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CYLD",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYLD is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EP300",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EP300 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ALK",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "RET",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "NTRK1",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "U2AF1",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "U2AF1 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FBXW7",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXW7 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "USP6",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP6 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NSD2",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSD2 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CEBPA",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPA is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "JAK2",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ETV5",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV5 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MUC4",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC4 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2A",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2A is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ARID1A",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CREBBP",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NRAS",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FAT4",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT4 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "GNAQ",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAQ is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2D",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SLC34A2",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC34A2 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FGFR2",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "DDR2",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDR2 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PATZ1",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PATZ1 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PBRM1",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBRM1 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TNFRSF14",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF14 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "DDX10",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDX10 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ARID1B",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1B is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TET1",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET1 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SMAD4",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD4 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "BCL9L",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL9L is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "AR",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2C",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "DNM2",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM2 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RBM10",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM10 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "AXIN2",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AXIN2 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "BRAF",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "AKT1",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FUS",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUS is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PAFAH1B2",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAFAH1B2 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "NFIB",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFIB is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "KAT7",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KAT7 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "NONO",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NONO is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "FAT3",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT3 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "FAM47C",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM47C is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "ASXL2",
+      "target": "Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL2 is associated with Thymic Squamous Cell Carcinoma (THYMIC_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.09"
+    }
+  ]
+}

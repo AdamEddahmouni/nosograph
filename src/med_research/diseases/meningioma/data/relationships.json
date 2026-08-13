@@ -1,0 +1,616 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL473417",
+      "target": "SMO",
+      "type": "TARGETS",
+      "description": "VISMODEGIB targets SMO."
+    },
+    {
+      "source": "CHEMBL553",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "ERLOTINIB targets EGFR."
+    },
+    {
+      "source": "CHEMBL2325741",
+      "target": "AKT2",
+      "type": "TARGETS",
+      "description": "CAPIVASERTIB targets AKT2."
+    },
+    {
+      "source": "CHEMBL2105717",
+      "target": "KDR",
+      "type": "TARGETS",
+      "description": "CABOZANTINIB targets KDR."
+    },
+    {
+      "source": "CHEMBL2325741",
+      "target": "AKT1",
+      "type": "TARGETS",
+      "description": "CAPIVASERTIB targets AKT1."
+    },
+    {
+      "source": "CHEMBL1079742",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "ERLOTINIB HYDROCHLORIDE targets EGFR."
+    },
+    {
+      "source": "CHEMBL2336325",
+      "target": "MTOR",
+      "type": "TARGETS",
+      "description": "VISTUSERTIB targets MTOR."
+    },
+    {
+      "source": "CHEMBL2105717",
+      "target": "MET",
+      "type": "TARGETS",
+      "description": "CABOZANTINIB targets MET."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2C",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2C is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TRAF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CHEK2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "CHEK2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MLH1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MLH1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "SMO",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SMO is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RAF1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RAF1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "TRAF7",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF7 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "AKT2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "SMAD4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TRAF7",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF7 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with meningioma (MENINGIOMA). Open Targets association score 0.64"
+    },
+    {
+      "source": "NF2",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with meningioma (MENINGIOMA). Open Targets association score 0.55"
+    },
+    {
+      "source": "SMARCE1",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCE1 is associated with meningioma (MENINGIOMA). Open Targets association score 0.52"
+    },
+    {
+      "source": "AKT1",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with meningioma (MENINGIOMA). Open Targets association score 0.47"
+    },
+    {
+      "source": "PDGFB",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFB is associated with meningioma (MENINGIOMA). Open Targets association score 0.46"
+    },
+    {
+      "source": "SMARCB1",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCB1 is associated with meningioma (MENINGIOMA). Open Targets association score 0.44"
+    },
+    {
+      "source": "SUFU",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUFU is associated with meningioma (MENINGIOMA). Open Targets association score 0.44"
+    },
+    {
+      "source": "TRAF7",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAF7 is associated with meningioma (MENINGIOMA). Open Targets association score 0.39"
+    },
+    {
+      "source": "KLF4",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF4 is associated with meningioma (MENINGIOMA). Open Targets association score 0.39"
+    },
+    {
+      "source": "SMO",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMO is associated with meningioma (MENINGIOMA). Open Targets association score 0.39"
+    },
+    {
+      "source": "BAP1",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAP1 is associated with meningioma (MENINGIOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "STAT6",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT6 is associated with meningioma (MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NAB2",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAB2 is associated with meningioma (MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "LZTR1",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LZTR1 is associated with meningioma (MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "EGFR",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with meningioma (MENINGIOMA). Open Targets association score 0.31"
+    },
+    {
+      "source": "MET",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with meningioma (MENINGIOMA). Open Targets association score 0.31"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with meningioma (MENINGIOMA). Open Targets association score 0.31"
+    },
+    {
+      "source": "KDR",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with meningioma (MENINGIOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with meningioma (MENINGIOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "CDH1",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with meningioma (MENINGIOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "ERBB2",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with meningioma (MENINGIOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "MTOR",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with meningioma (MENINGIOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "AKT2",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT2 is associated with meningioma (MENINGIOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "SETD2",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD2 is associated with meningioma (MENINGIOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "EZH2",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EZH2 is associated with meningioma (MENINGIOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "KIT",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with meningioma (MENINGIOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "TP53",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with meningioma (MENINGIOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "STAT3",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with meningioma (MENINGIOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "IDH1",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with meningioma (MENINGIOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "RB1",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with meningioma (MENINGIOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "TERT",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with meningioma (MENINGIOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "SMAD4",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD4 is associated with meningioma (MENINGIOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "PGR",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with meningioma (MENINGIOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with meningioma (MENINGIOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "PTCH1",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with meningioma (MENINGIOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "FGFR3",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with meningioma (MENINGIOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "RAF1",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAF1 is associated with meningioma (MENINGIOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "ARID1A",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with meningioma (MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDKN2C",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2C is associated with meningioma (MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NF1",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with meningioma (MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MN1",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MN1 is associated with meningioma (MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MDM2",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM2 is associated with meningioma (MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "STK11",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with meningioma (MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MLH1",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLH1 is associated with meningioma (MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRCA1",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with meningioma (MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NTRK1",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with meningioma (MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KDM6A",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM6A is associated with meningioma (MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "GNAS",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAS is associated with meningioma (MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with meningioma (MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CHEK2",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHEK2 is associated with meningioma (MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATRX",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with meningioma (MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with meningioma (MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATM",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with meningioma (MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KRAS",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with meningioma (MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERBB3",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB3 is associated with meningioma (MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ALK",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with meningioma (MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ROS1",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROS1 is associated with meningioma (MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "VHL",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VHL is associated with meningioma (MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "DDX3X",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDX3X is associated with meningioma (MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRAF",
+      "target": "meningioma (MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with meningioma (MENINGIOMA). Open Targets association score 0.28"
+    }
+  ]
+}

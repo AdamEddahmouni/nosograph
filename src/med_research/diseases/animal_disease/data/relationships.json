@@ -1,0 +1,460 @@
+{
+  "relationships": [
+    {
+      "source": "SYF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SYF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C4BPA",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C4BPA is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "CARD14",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD14 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "ACE2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFBR3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "ABCB6",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB6 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "IL7",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS2",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SYF2",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYF2 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD4",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD8A",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "EPHA4",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHA4 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ABCB6",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB6 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRDX2",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDX2 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRNP",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRNP is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CARD14",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD14 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "C4BPA",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C4BPA is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ST8SIA2",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST8SIA2 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MIDN",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIDN is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CALR",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALR is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHPT1",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHPT1 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PLA2G2A",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G2A is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "FMO5",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMO5 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRP",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "UBE3A",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBE3A is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "HLA-B",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-B is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "DHDDS",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHDDS is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GAB2",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAB2 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRYL1",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYL1 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "C3",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "NFKB1",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "VPREB1",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VPREB1 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADSL",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADSL is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MFAP1",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFAP1 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "APRT",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APRT is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SAT1",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAT1 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD40LG",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "DGKA",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DGKA is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "BATF3",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BATF3 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACE2",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE2 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TLR4",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "FOSL1",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOSL1 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "JUNB",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JUNB is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MSMB",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSMB is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "AR",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CPA1",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPA1 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ISYNA1",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISYNA1 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GPR4",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR4 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ICAM1",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CMKLR1",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMKLR1 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "AGER",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGER is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CP",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CP is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIKFYVE",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIKFYVE is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "RARRES2",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RARRES2 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MOK",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MOK is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "HMGB1",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGB1 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGFBR3",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBR3 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "FPR2",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FPR2 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "EGR1",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGR1 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNA1",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "FPR1",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FPR1 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SAA2",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAA2 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ROCK1",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROCK1 is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "HSPA1A",
+      "target": "animal disease (ANIMAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPA1A is associated with animal disease (ANIMAL_DISEASE). Open Targets association score 0.00"
+    }
+  ]
+}

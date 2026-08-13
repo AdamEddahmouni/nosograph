@@ -1,0 +1,484 @@
+{
+  "relationships": [
+    {
+      "source": "TCF7L2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PDX1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PDX1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6ST",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6ST is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "TNIP1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "TNIP1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "HTR2A",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTR2A is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "LAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "RORC",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "RORC is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "MYD88",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MYD88 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR7",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR7 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "TTC7A",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC7A is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.78"
+    },
+    {
+      "source": "PI4KA",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PI4KA is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.51"
+    },
+    {
+      "source": "MCFD2",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCFD2 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.45"
+    },
+    {
+      "source": "IL2",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "FOXL1",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXL1 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTK6",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTK6 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRKDC",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKDC is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "USH1C",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USH1C is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "LAT",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAT is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PDGFA",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFA is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TRIM71",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM71 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL2RG",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RG is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MUC2",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC2 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "YIPF6",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YIPF6 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXP3",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNIP1",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNIP1 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "NR5A2",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR5A2 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTPN22",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFKB1",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "RAG2",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG2 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CLDN15",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN15 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TLX2",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLX2 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "GNAI2",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAI2 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TLR7",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR7 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPDEF",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPDEF is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "GIMAP5",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP5 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "GIMAP1-GIMAP5",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP1-GIMAP5 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CA9",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA9 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "HPRT1",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPRT1 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FFAR2",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FFAR2 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFKB2",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TGFB1",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "HTR2A",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTR2A is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PDX1",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDX1 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "INPP5D",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INPP5D is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "MYO1A",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO1A is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NKX2-3",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-3 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "JAK3",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "MYD88",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYD88 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "EHF",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EHF is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TCF7L2",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF7L2 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PKD1",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKD1 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ENPP7",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENPP7 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL4",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "WIPF1",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WIPF1 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "RC3H1",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RC3H1 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CEBPE",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPE is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "RET",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL6ST",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6ST is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL2RA",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RA is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAP3K14",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K14 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "LIG4",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIG4 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "AGR2",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGR2 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "RORC",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RORC is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FAM3D",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM3D is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "STX2",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STX2 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "RAB25",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB25 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "REL",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REL is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ABCB1",
+      "target": "multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB1 is associated with multiple intestinal atresia (MULTIPLE_INTESTINAL_ATRESIA). Open Targets association score 0.04"
+    }
+  ]
+}

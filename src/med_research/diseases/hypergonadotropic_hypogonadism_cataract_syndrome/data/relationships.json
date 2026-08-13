@@ -1,0 +1,418 @@
+{
+  "relationships": [
+    {
+      "source": "GDF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "GDF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PRAMEF20",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "PRAMEF20 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PRAMEF26",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "PRAMEF26 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "DHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "DHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "YTHDC2",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "YTHDC2 is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TDRD12",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "TDRD12 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "YTHDC2",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "YTHDC2 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "FSHR",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSHR is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "SIX5",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIX5 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "GNRHR",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRHR is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "YTHDC2",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YTHDC2 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "TBC1D20",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D20 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "AR",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "TAF4B",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAF4B is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "KIT",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "UTP14C",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UTP14C is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "UTP14A",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UTP14A is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "FOXE3",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXE3 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "GNRH1",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRH1 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "FANCL",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCL is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PTDSS2",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTDSS2 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ADAD2",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAD2 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TESMIN",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TESMIN is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ESR1",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "LHX9",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHX9 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ZGLP1",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZGLP1 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "DHH",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHH is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "AFP",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PSEN1",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSEN1 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PLK4",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLK4 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CRYGD",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYGD is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SOX30",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX30 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TSSK3",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSSK3 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRL",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRL is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SPATA22",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA22 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "GDF9",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF9 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SMC1B",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMC1B is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "MKRN3",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKRN3 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ANKRD31",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKRD31 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PAX6",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX6 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "KIF18A",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF18A is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "FAAP100",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAAP100 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "NANOS3",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NANOS3 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "DNMT3L",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT3L is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "LHCGR",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHCGR is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "KDM3A",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM3A is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CRYBB2",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYBB2 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADRA1B",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA1B is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "MRC1",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRC1 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FSHB",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSHB is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "DMC1",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMC1 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "NHS",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NHS is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "GOLGA3",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOLGA3 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CRYGC",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYGC is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TEX14",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TEX14 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "KISS1R",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KISS1R is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SOHLH2",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOHLH2 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CCDC169-SOHLH2",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC169-SOHLH2 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "USP26",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP26 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TDRD12",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TDRD12 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "HSP90AA1",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSP90AA1 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRAMEF26",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRAMEF26 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRAMEF5",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRAMEF5 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRAMEF14",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRAMEF14 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRAMEF18",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRAMEF18 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRAMEF20",
+      "target": "hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRAMEF20 is associated with hypergonadotropic hypogonadism-cataract syndrome (HYPERGONADOTROPIC_HYPOGONADISM_CATARACT_SYNDROME). Open Targets association score 0.05"
+    }
+  ]
+}

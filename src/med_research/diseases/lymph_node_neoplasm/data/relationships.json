@@ -1,0 +1,490 @@
+{
+  "relationships": [
+    {
+      "source": "MAP1LC3B",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP1LC3B is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTHLH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTHLH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBI",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBI is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFBI",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBI is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.56"
+    },
+    {
+      "source": "ATM",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.37"
+    },
+    {
+      "source": "PALB2",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PALB2 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.29"
+    },
+    {
+      "source": "ERBB2",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "INHA",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INHA is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "FOLH1",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOLH1 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "EPO",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPO is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD8A",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRAS",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "S100A1",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A1 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "ESR1",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIEZO1",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIEZO1 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "S100B",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100B is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "EREG",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EREG is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZNRD2",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNRD2 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "DCTN6",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCTN6 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSMD9",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMD9 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "RB1",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "PAK2",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAK2 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFI27",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFI27 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "TMED7",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMED7 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLAUR",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAUR is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYC",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCND1",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDH1",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CSF1",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF1 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "EGFR",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTHLH",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTHLH is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "PCNA",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNA is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDLIM7",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDLIM7 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGFBI",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBI is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "NDRG4",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDRG4 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDPN",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDPN is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "HMGCS1",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCS1 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "SSH1",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSH1 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "PLAGL2",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAGL2 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "BRAF",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAP1LC3B",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP1LC3B is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD274",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "PGR",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD14",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD14 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEACAM5",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM5 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "TMEM37",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM37 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRH2",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH2 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEACAM6",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM6 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CSF2",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "PHB1",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHB1 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGFB1",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT19",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT19 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRYAB",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYAB is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT20",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT20 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD4",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "AICDA",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AICDA is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD34",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "NME1",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NME1 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "TERT",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    },
+    {
+      "source": "TCEAL1",
+      "target": "lymph node neoplasm (LYMPH_NODE_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCEAL1 is associated with lymph node neoplasm (LYMPH_NODE_NEOPLASM). Open Targets association score 0.00"
+    }
+  ]
+}

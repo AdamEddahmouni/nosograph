@@ -1,0 +1,406 @@
+{
+  "relationships": [
+    {
+      "source": "CCHCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CCHCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ADAMTS20",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS20 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "KITLG",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KITLG is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "TGM3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PADI3",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PADI3 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.70"
+    },
+    {
+      "source": "TGM3",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM3 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.51"
+    },
+    {
+      "source": "TCHH",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCHH is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.45"
+    },
+    {
+      "source": "EDA",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDA is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.11"
+    },
+    {
+      "source": "KRT25",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT25 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.11"
+    },
+    {
+      "source": "C8orf44-SGK3",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C8orf44-SGK3 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.11"
+    },
+    {
+      "source": "SGK3",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGK3 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.11"
+    },
+    {
+      "source": "EGFR",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.11"
+    },
+    {
+      "source": "KRT71",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT71 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "GATA3",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "ASIP",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASIP is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "KITLG",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KITLG is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "KIT",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "FAM83G",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM83G is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "KRT10",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT10 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "KRT27",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT27 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "TYR",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYR is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "CCHCR1",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCHCR1 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "ADAMTS20",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS20 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "MITF",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MITF is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "TMEM79",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM79 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "TYRP1",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYRP1 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "ATP7A",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP7A is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "MYO5A",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO5A is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "OCA2",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OCA2 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "KRT75",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT75 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "PAX3",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX3 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "EDNRB",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRB is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "SLC45A2",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC45A2 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "MC1R",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MC1R is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "MGRN1",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MGRN1 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "HR",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HR is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "AP3B1",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AP3B1 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "LYST",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYST is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "RAB27A",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB27A is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "SOX18",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX18 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "TRPV3",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV3 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "DCT",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCT is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "EDAR",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDAR is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "RAB38",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB38 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "HPS3",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPS3 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "GK5",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GK5 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "FGF5",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF5 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "HOXC13",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXC13 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "HPS5",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPS5 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "MLPH",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLPH is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "NSDHL",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSDHL is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "SOX10",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX10 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "KRT76",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT76 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "OTC",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OTC is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "NAA10",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAA10 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "FOXN1",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXN1 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "HPS6",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPS6 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "KRT17",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT17 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "SUPT7L",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUPT7L is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "UQCRFS1",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UQCRFS1 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "AP3D1",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AP3D1 is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "CRYGD",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYGD is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "LIPH",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPH is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "CTSL",
+      "target": "uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSL is associated with uncombable hair syndrome (UNCOMBABLE_HAIR_SYNDROME). Open Targets association score 0.08"
+    }
+  ]
+}

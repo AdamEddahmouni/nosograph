@@ -1,0 +1,406 @@
+{
+  "relationships": [
+    {
+      "source": "ATRN",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRN is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ADAMTS20",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS20 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MCOLN3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MCOLN3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "KITLG",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KITLG is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "PFAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PFAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LMX1A",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "LMX1A is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "MITF",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MITF is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.79"
+    },
+    {
+      "source": "SOX10",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX10 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.39"
+    },
+    {
+      "source": "POLR2F",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLR2F is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.38"
+    },
+    {
+      "source": "TYR",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYR is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.08"
+    },
+    {
+      "source": "LYST",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYST is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.07"
+    },
+    {
+      "source": "KIT",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.07"
+    },
+    {
+      "source": "KITLG",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KITLG is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.07"
+    },
+    {
+      "source": "SLC45A2",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC45A2 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.07"
+    },
+    {
+      "source": "AP3B1",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AP3B1 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.07"
+    },
+    {
+      "source": "OCA2",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OCA2 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.07"
+    },
+    {
+      "source": "HPS5",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPS5 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.07"
+    },
+    {
+      "source": "MC1R",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MC1R is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.07"
+    },
+    {
+      "source": "TYRP1",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYRP1 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.07"
+    },
+    {
+      "source": "EDNRB",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRB is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.07"
+    },
+    {
+      "source": "ASIP",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASIP is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.07"
+    },
+    {
+      "source": "MYO5A",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO5A is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.07"
+    },
+    {
+      "source": "MCOLN3",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCOLN3 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.07"
+    },
+    {
+      "source": "HPS6",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPS6 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.07"
+    },
+    {
+      "source": "PAX3",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX3 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.07"
+    },
+    {
+      "source": "ADAMTS20",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS20 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.06"
+    },
+    {
+      "source": "DCT",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCT is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.06"
+    },
+    {
+      "source": "GNAQ",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAQ is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.06"
+    },
+    {
+      "source": "EDA",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDA is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLC24A5",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC24A5 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.06"
+    },
+    {
+      "source": "ATP7A",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP7A is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.06"
+    },
+    {
+      "source": "PFAS",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PFAS is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.06"
+    },
+    {
+      "source": "NSDHL",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSDHL is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.06"
+    },
+    {
+      "source": "MGRN1",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MGRN1 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.06"
+    },
+    {
+      "source": "HPS3",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPS3 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.06"
+    },
+    {
+      "source": "RAB27A",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB27A is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.05"
+    },
+    {
+      "source": "HPS1",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPS1 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.05"
+    },
+    {
+      "source": "EDAR",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDAR is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.05"
+    },
+    {
+      "source": "PAX6",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX6 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.05"
+    },
+    {
+      "source": "SOX18",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX18 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.05"
+    },
+    {
+      "source": "RAB38",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB38 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.05"
+    },
+    {
+      "source": "DOCK7",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK7 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.05"
+    },
+    {
+      "source": "PMEL",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMEL is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.05"
+    },
+    {
+      "source": "GNA11",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNA11 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.05"
+    },
+    {
+      "source": "SOX2",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX2 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.05"
+    },
+    {
+      "source": "TPCN2",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPCN2 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.05"
+    },
+    {
+      "source": "ATRN",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRN is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.05"
+    },
+    {
+      "source": "BLOC1S5",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLOC1S5 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.05"
+    },
+    {
+      "source": "BLOC1S5-TXNDC5",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLOC1S5-TXNDC5 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.05"
+    },
+    {
+      "source": "MLPH",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLPH is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.05"
+    },
+    {
+      "source": "LMX1A",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMX1A is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.05"
+    },
+    {
+      "source": "ETS1",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETS1 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.05"
+    },
+    {
+      "source": "PLXNB2",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLXNB2 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYO10",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO10 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.05"
+    },
+    {
+      "source": "TMEM79",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM79 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.05"
+    },
+    {
+      "source": "TAL1",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAL1 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.05"
+    },
+    {
+      "source": "EDN3",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDN3 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.05"
+    },
+    {
+      "source": "GPC3",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPC3 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.04"
+    },
+    {
+      "source": "HNRNPH2",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNRNPH2 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.04"
+    },
+    {
+      "source": "NAA10",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAA10 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.04"
+    },
+    {
+      "source": "HPS4",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPS4 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.04"
+    },
+    {
+      "source": "AFG1L",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFG1L is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.04"
+    },
+    {
+      "source": "TMEM175",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM175 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZC3H11B",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZC3H11B is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZC3H11A",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZC3H11A is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC6A19",
+      "target": "Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A19 is associated with Waardenburg syndrome type 2A (WAARDENBURG_SYNDROME_TYPE_2A). Open Targets association score 0.04"
+    }
+  ]
+}

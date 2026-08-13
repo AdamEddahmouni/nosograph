@@ -1,0 +1,520 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2A1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2A1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CD200",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD200 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCL24",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL24 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCR3",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR3 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CSF2RB",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2RB is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IKZF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IKZF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TNFRSF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TNFSF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ALOX15",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ALOX15 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL17RA",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17RA is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1RL1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1RL1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL33",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL33 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4R",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4R is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL5RA",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL5RA is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "TSLP",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "TSLP is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "JAK1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFATC2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "MTHFS",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFS is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "SMAD3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "IL17RA",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17RA is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TNFRSF8",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF8 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF8",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF8 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IL33",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL33 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.67"
+    },
+    {
+      "source": "ALOX15",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALOX15 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.67"
+    },
+    {
+      "source": "CSF2RB",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2RB is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.66"
+    },
+    {
+      "source": "S1PR4",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S1PR4 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.62"
+    },
+    {
+      "source": "IL5RA",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL5RA is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.60"
+    },
+    {
+      "source": "TET2",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.59"
+    },
+    {
+      "source": "GFI1B",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFI1B is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.57"
+    },
+    {
+      "source": "RUNX1",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.55"
+    },
+    {
+      "source": "CCL24",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL24 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.54"
+    },
+    {
+      "source": "CEBPE",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPE is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.53"
+    },
+    {
+      "source": "CDC42SE2",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDC42SE2 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.53"
+    },
+    {
+      "source": "IKZF2",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF2 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.52"
+    },
+    {
+      "source": "PLD1",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLD1 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.52"
+    },
+    {
+      "source": "CCR3",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR3 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.52"
+    },
+    {
+      "source": "ADRB2",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB2 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.52"
+    },
+    {
+      "source": "GNB1",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNB1 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.52"
+    },
+    {
+      "source": "GATA3",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.51"
+    },
+    {
+      "source": "IL1RL1",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1RL1 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.51"
+    },
+    {
+      "source": "TNFRSF8",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF8 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.51"
+    },
+    {
+      "source": "ASB2",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASB2 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.51"
+    },
+    {
+      "source": "INPP5D",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INPP5D is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.51"
+    },
+    {
+      "source": "TSLP",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSLP is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.50"
+    },
+    {
+      "source": "ETS1",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETS1 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.50"
+    },
+    {
+      "source": "PTPRC",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.50"
+    },
+    {
+      "source": "IL17RA",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17RA is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.49"
+    },
+    {
+      "source": "CD200",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD200 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.49"
+    },
+    {
+      "source": "JAK1",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK1 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.49"
+    },
+    {
+      "source": "SMAD3",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD3 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.48"
+    },
+    {
+      "source": "APBB1IP",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APBB1IP is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.48"
+    },
+    {
+      "source": "HABP2",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HABP2 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.48"
+    },
+    {
+      "source": "CPS1",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPS1 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.48"
+    },
+    {
+      "source": "NFATC2",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFATC2 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.48"
+    },
+    {
+      "source": "IL4R",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4R is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.48"
+    },
+    {
+      "source": "GGT5",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGT5 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.47"
+    },
+    {
+      "source": "GAGE1",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAGE1 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.47"
+    },
+    {
+      "source": "LPP",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPP is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.47"
+    },
+    {
+      "source": "KLF12",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF12 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.47"
+    },
+    {
+      "source": "IL2RB",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RB is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.47"
+    },
+    {
+      "source": "AUH",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AUH is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.47"
+    },
+    {
+      "source": "CHSY3",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHSY3 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.46"
+    },
+    {
+      "source": "JAK2",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.46"
+    },
+    {
+      "source": "HIVEP3",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIVEP3 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.46"
+    },
+    {
+      "source": "NRIP1",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRIP1 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.46"
+    },
+    {
+      "source": "MYC",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.46"
+    },
+    {
+      "source": "TNFSF8",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF8 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.46"
+    },
+    {
+      "source": "ASXL1",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.46"
+    },
+    {
+      "source": "ACSL6",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACSL6 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.46"
+    },
+    {
+      "source": "ID2",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ID2 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.46"
+    },
+    {
+      "source": "MTHFS",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFS is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.46"
+    },
+    {
+      "source": "BEND3",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BEND3 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.46"
+    },
+    {
+      "source": "SPSB1",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPSB1 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.45"
+    },
+    {
+      "source": "WDR36",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR36 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.45"
+    },
+    {
+      "source": "ADO",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADO is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.45"
+    },
+    {
+      "source": "CSF2",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.45"
+    },
+    {
+      "source": "DNMT3A",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT3A is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.45"
+    },
+    {
+      "source": "BCL2A1",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2A1 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.45"
+    },
+    {
+      "source": "GLB1",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLB1 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.45"
+    },
+    {
+      "source": "KCNRG",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNRG is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.45"
+    },
+    {
+      "source": "CARD11",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.45"
+    },
+    {
+      "source": "NCF4",
+      "target": "eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCF4 is associated with eosinophil percentage of leukocytes (EOSINOPHIL_PERCENTAGE_OF_LEUKOCYTES). Open Targets association score 0.45"
+    }
+  ]
+}

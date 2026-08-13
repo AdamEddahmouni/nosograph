@@ -1,0 +1,514 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL4596392",
+      "target": "TYK2",
+      "type": "TARGETS",
+      "description": "CRAVACITINIB targets TYK2."
+    },
+    {
+      "source": "CHEMBL2364648",
+      "target": "IL23A",
+      "type": "TARGETS",
+      "description": "GUSELKUMAB targets IL23A."
+    },
+    {
+      "source": "CHEMBL4435170",
+      "target": "TYK2",
+      "type": "TARGETS",
+      "description": "DEUCRAVACITINIB targets TYK2."
+    },
+    {
+      "source": "CHEMBL1743034",
+      "target": "IL17A",
+      "type": "TARGETS",
+      "description": "IXEKIZUMAB targets IL17A."
+    },
+    {
+      "source": "CHEMBL1743068",
+      "target": "IL17A",
+      "type": "TARGETS",
+      "description": "SECUKINUMAB targets IL17A."
+    },
+    {
+      "source": "LYNX1",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LYNX1 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "RHBDF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "RHBDF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ALOXE3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ALOXE3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL17A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL17A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1RN",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1RN is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGB4",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB4 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "TYK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "TYK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "CARD14",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD14 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "IKBKG",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "IKBKG is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBIA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBIZ",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIZ is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RELB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL23A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL23A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGB4",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB4 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "CARD14",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD14 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.81"
+    },
+    {
+      "source": "SGSH",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGSH is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.20"
+    },
+    {
+      "source": "TYK2",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYK2 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "IL17A",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "IL23A",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL23A is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "ITGB2",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "FLG",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLG is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "IKBKG",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKBKG is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "NSDHL",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSDHL is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "ST14",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST14 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLC27A4",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC27A4 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "ABCA12",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA12 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "TMEM79",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM79 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "KRT76",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT76 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "KRT2",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT2 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPINK5",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPINK5 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "GPX8",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPX8 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFKBIZ",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIZ is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "RHBDF2",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHBDF2 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CES2",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CES2 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "TRPV3",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV3 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "KRT10",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT10 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAP3K1",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K1 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "KRT9",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT9 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "DSG4",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSG4 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "KLK11",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK11 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "GSDMA",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMA is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL1RN",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1RN is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRIG1",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRIG1 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDSN",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDSN is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CTSL",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSL is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CTSV",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSV is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "KLK6",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK6 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL36RN",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL36RN is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "KRT1",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT1 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "RELB",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELB is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "KLF4",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF4 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "KRT36",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT36 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PPARD",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARD is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "GRHL1",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRHL1 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "KPRP",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KPRP is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "LORICRIN",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LORICRIN is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "DSC1",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSC1 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CLDN1",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN1 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL17A1",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL17A1 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD109",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD109 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ALOXE3",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALOXE3 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "HIC1",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIC1 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SGPP1",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGPP1 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "STAT6",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT6 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ELOVL3",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELOVL3 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MPZL3",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPZL3 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFKBIA",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIA is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "GBA1",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GBA1 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "EBP",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EBP is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "NIN",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NIN is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "DMKN",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMKN is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ITGB4",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB4 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "LYNX1",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYNX1 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLURP2",
+      "target": "pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLURP2 is associated with pityriasis rubra pilaris (PITYRIASIS_RUBRA_PILARIS). Open Targets association score 0.03"
+    }
+  ]
+}

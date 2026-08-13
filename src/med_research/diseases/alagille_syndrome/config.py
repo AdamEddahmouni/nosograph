@@ -55,6 +55,7 @@ CAR_T_SCORES = {
         "EDNRA": 4.0,
         "EGF": 4.0,
         "ELN": 4.0,
+        "ENPP2": 4.0,
         "FAT2": 4.0,
         "FBLN1": 4.0,
         "FGF9": 4.0,

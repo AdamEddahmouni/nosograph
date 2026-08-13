@@ -1,0 +1,442 @@
+{
+  "relationships": [
+    {
+      "source": "FLVCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "FLVCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "COL4A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "RELN",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "RELN is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "SLC1A1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC1A1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "SLC1A2",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC1A2 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "SLC1A3",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC1A3 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "BMP4",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP4 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "ITGAX",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAX is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELENON",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELENON is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "RELN",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELN is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "ITGAX",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAX is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "FKRP",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKRP is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.67"
+    },
+    {
+      "source": "POMT1",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMT1 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.67"
+    },
+    {
+      "source": "POMT2",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMT2 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.67"
+    },
+    {
+      "source": "DAG1",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAG1 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.67"
+    },
+    {
+      "source": "POMGNT1",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMGNT1 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.67"
+    },
+    {
+      "source": "FKTN",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKTN is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.65"
+    },
+    {
+      "source": "LARGE1",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LARGE1 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.64"
+    },
+    {
+      "source": "B4GAT1",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B4GAT1 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.60"
+    },
+    {
+      "source": "GMPPB",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GMPPB is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.57"
+    },
+    {
+      "source": "RXYLT1",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RXYLT1 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.50"
+    },
+    {
+      "source": "POMGNT2",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMGNT2 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.46"
+    },
+    {
+      "source": "POMK",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMK is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.38"
+    },
+    {
+      "source": "CRPPA",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRPPA is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.38"
+    },
+    {
+      "source": "B3GALNT2",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B3GALNT2 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.37"
+    },
+    {
+      "source": "CELSR1",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR1 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.15"
+    },
+    {
+      "source": "STRN4",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STRN4 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.12"
+    },
+    {
+      "source": "COL4A1",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A1 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.05"
+    },
+    {
+      "source": "BMP4",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP4 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.04"
+    },
+    {
+      "source": "PXDN",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PXDN is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.03"
+    },
+    {
+      "source": "LGR4",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGR4 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.03"
+    },
+    {
+      "source": "GNPAT",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNPAT is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.03"
+    },
+    {
+      "source": "B3GNT2",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B3GNT2 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.03"
+    },
+    {
+      "source": "MCPH1",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCPH1 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.03"
+    },
+    {
+      "source": "DSCAM",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSCAM is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.03"
+    },
+    {
+      "source": "RPL24",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL24 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.03"
+    },
+    {
+      "source": "ARHGAP35",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP35 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.03"
+    },
+    {
+      "source": "ARHGEF12",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGEF12 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.02"
+    },
+    {
+      "source": "LAMA2",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMA2 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.01"
+    },
+    {
+      "source": "RAB3GAP1",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB3GAP1 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZC4H2",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZC4H2 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.01"
+    },
+    {
+      "source": "SGCA",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCA is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.01"
+    },
+    {
+      "source": "LAMB2",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMB2 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.01"
+    },
+    {
+      "source": "TUBA1A",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBA1A is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.01"
+    },
+    {
+      "source": "L1CAM",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "L1CAM is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.00"
+    },
+    {
+      "source": "SYNM",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYNM is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.00"
+    },
+    {
+      "source": "FYN",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FYN is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL27",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL27 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYC",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.00"
+    },
+    {
+      "source": "ITGAX",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAX is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC1A3",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC1A3 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.00"
+    },
+    {
+      "source": "LMNA",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNA is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC1A1",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC1A1 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC1A2",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC1A2 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.00"
+    },
+    {
+      "source": "CAPN3",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAPN3 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRH2",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH2 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.00"
+    },
+    {
+      "source": "MUSK",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUSK is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSAP",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSAP is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD1C",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD1C is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.00"
+    },
+    {
+      "source": "DMD",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMD is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRH1",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH1 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.00"
+    },
+    {
+      "source": "RELN",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELN is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.00"
+    },
+    {
+      "source": "GPR162",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR162 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.00"
+    },
+    {
+      "source": "SELENON",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELENON is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.00"
+    },
+    {
+      "source": "GPHA2",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPHA2 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.00"
+    },
+    {
+      "source": "CFAP410",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFAP410 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.00"
+    },
+    {
+      "source": "LAMC3",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMC3 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.00"
+    },
+    {
+      "source": "COL4A2",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A2 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.00"
+    },
+    {
+      "source": "FLVCR1",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLVCR1 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAN2A2",
+      "target": "muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAN2A2 is associated with muscular dystrophy-dystroglycanopathy, type A (MUSCULAR_DYSTROPHY_DYSTROGLYCANOPATHY_TYPE_A). Open Targets association score 0.00"
+    }
+  ]
+}

@@ -1,0 +1,526 @@
+{
+  "relationships": [
+    {
+      "source": "CASP1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CASP8",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP8 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "FADD",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "FADD is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "RIPK1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "RIPK1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BECN1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "BECN1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MCOLN1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MCOLN1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "CASP1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL18",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "PYCARD",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "PYCARD is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "PYCARD",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "PYCARD is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "CTSC",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "CTSC is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "RPS6KC1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "RPS6KC1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "IL22",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL22 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "MCOLN1",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCOLN1 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.32"
+    },
+    {
+      "source": "ARID1A",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.27"
+    },
+    {
+      "source": "TMCO1",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMCO1 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.27"
+    },
+    {
+      "source": "RPS6KC1",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPS6KC1 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.26"
+    },
+    {
+      "source": "SYVN1",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYVN1 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.15"
+    },
+    {
+      "source": "DNAH11",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH11 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.12"
+    },
+    {
+      "source": "GPR17",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR17 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "TNF",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "FADD",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADD is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "NLRP3",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL22",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL22 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "OLIG1",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OLIG1 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CASP8",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP8 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GFAP",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL4",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ALPP",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPP is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL6",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "BBC3",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BBC3 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FASLG",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "LIF",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIF is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "S100B",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100B is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "HGF",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "BECN1",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BECN1 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "MKI67",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "DPYSL2",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPYSL2 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "STS",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STS is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PYCARD",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PYCARD is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "RIPK1",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIPK1 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "EPO",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPO is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "DENR",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DENR is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PPBP",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPBP is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "DAPK2",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAPK2 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CRMP1",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRMP1 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "UTRN",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UTRN is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "DNM1L",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM1L is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CYBB",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYBB is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FANCA",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FAS",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FXN",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FXN is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "GPT",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFNG",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "GDNF",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDNF is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "EFNB3",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EFNB3 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ENO2",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENO2 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL1B",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CSPG4",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSPG4 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "RNF5",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF5 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC17A7",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A7 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "HSPA5",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPA5 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL18",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MYT1",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYT1 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FIS1",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FIS1 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "AGT",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "NTRK1",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "NOS2",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MBP",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBP is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL10",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TGFB1",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CTSC",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSC is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CASP1",
+      "target": "periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP1 is associated with periventricular leukomalacia (PERIVENTRICULAR_LEUKOMALACIA). Open Targets association score 0.02"
+    }
+  ]
+}

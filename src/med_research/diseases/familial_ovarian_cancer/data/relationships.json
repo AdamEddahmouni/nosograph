@@ -1,0 +1,520 @@
+{
+  "relationships": [
+    {
+      "source": "CASP8",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP8 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RASSF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "RASSF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CHEK1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "CHEK1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CHEK2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "CHEK2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "FANCD2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "FANCD2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PARP1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "PARP1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "RAD51",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "RAD51 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "RAD51B",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "RAD51B is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "RAD51C",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "RAD51C is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "RAD51D",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "RAD51D is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53I3",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53I3 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL11A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL11A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RASSF7",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASSF7 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "BRIP1",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRIP1 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.62"
+    },
+    {
+      "source": "ATM",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.45"
+    },
+    {
+      "source": "CHEK2",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHEK2 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.39"
+    },
+    {
+      "source": "C11orf65",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C11orf65 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.39"
+    },
+    {
+      "source": "TP53",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.38"
+    },
+    {
+      "source": "POLE",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.33"
+    },
+    {
+      "source": "PALB2",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PALB2 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.17"
+    },
+    {
+      "source": "BARD1",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BARD1 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.15"
+    },
+    {
+      "source": "STK11",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.14"
+    },
+    {
+      "source": "PTEN",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.14"
+    },
+    {
+      "source": "FANCC",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCC is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.14"
+    },
+    {
+      "source": "NBN",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBN is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.11"
+    },
+    {
+      "source": "BRCA1",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.02"
+    },
+    {
+      "source": "ESR1",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.02"
+    },
+    {
+      "source": "BRCA2",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "TACC3",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TACC3 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "FANCM",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCM is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "RAD51D",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD51D is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "RAD51C",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD51C is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHEK1",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHEK1 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "RAD1",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD1 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53I3",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53I3 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUTYH",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUTYH is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "RAD51",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD51 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "TOX3",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOX3 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "MRE11",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRE11 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "GEN1",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GEN1 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "RINT1",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RINT1 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "RAD50",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD50 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDH1",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "ENSG00000279284",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENSG00000279284 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "RECQL",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RECQL is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "XRCC2",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XRCC2 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "MCPH1",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCPH1 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "RAD51B",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD51B is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "MRC1",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRC1 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLX4",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLX4 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "NF1",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "ENSG00000280371",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENSG00000280371 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "ARL11",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARL11 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "FBXW7",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXW7 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PARP1",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARP1 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "COL11A2",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL11A2 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CASP8",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP8 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "HRAS",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "FANCD2",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCD2 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "MSH2",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH2 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "NRAS",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "RASSF7",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASSF7 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPK3",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK3 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CTLA4",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTLA4 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "MUC16",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC16 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "NBR1",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBR1 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRL",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRL is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "HSD17B2",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSD17B2 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "HELQ",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HELQ is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "FANCA",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "HSD17B1",
+      "target": "familial ovarian cancer (FAMILIAL_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSD17B1 is associated with familial ovarian cancer (FAMILIAL_OVARIAN_CANCER). Open Targets association score 0.00"
+    }
+  ]
+}

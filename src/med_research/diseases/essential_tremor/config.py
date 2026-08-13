@@ -34,6 +34,7 @@ CAR_T_SCORES = {
         "CA4": 4.0,
         "CACNA1A": 4.0,
         "CALN1": 4.0,
+        "CCDC183": 4.0,
         "CDC14B": 4.0,
         "CPLX1": 4.0,
         "DHX15": 4.0,

@@ -1,0 +1,574 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201583",
+      "target": "VEGFA",
+      "type": "TARGETS",
+      "description": "BEVACIZUMAB targets VEGFA."
+    },
+    {
+      "source": "CHEMBL1278146",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "FAMITINIB targets KIT."
+    },
+    {
+      "source": "CHEMBL1336",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "SORAFENIB targets KIT."
+    },
+    {
+      "source": "CHEMBL2103851",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "AMUVATINIB targets KIT."
+    },
+    {
+      "source": "CHEMBL3039525",
+      "target": "KDR",
+      "type": "TARGETS",
+      "description": "GOLVATINIB targets KDR."
+    },
+    {
+      "source": "CHEMBL1201560",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "TREATS",
+      "description": "PEGINTERFERON ALFA-2A is phase 4 / marketed for hemangiopericytoma (HEMANGIOPERICYTOMA)."
+    },
+    {
+      "source": "CHEMBL1201752",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "TREATS",
+      "description": "IXABEPILONE is phase 4 / marketed for hemangiopericytoma (HEMANGIOPERICYTOMA)."
+    },
+    {
+      "source": "CHEMBL1683590",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "TREATS",
+      "description": "ERIBULIN is phase 4 / marketed for hemangiopericytoma (HEMANGIOPERICYTOMA)."
+    },
+    {
+      "source": "CHEMBL1683590",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "TREATS",
+      "description": "ERIBULIN is phase 4 / marketed for hemangiopericytoma (HEMANGIOPERICYTOMA)."
+    },
+    {
+      "source": "CHEMBL1742992",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "TREATS",
+      "description": "BLINATUMOMAB is phase 4 / marketed for hemangiopericytoma (HEMANGIOPERICYTOMA)."
+    },
+    {
+      "source": "CHEMBL1789941",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "TREATS",
+      "description": "RUXOLITINIB is phase 4 / marketed for hemangiopericytoma (HEMANGIOPERICYTOMA)."
+    },
+    {
+      "source": "CHEMBL2110725",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "TREATS",
+      "description": "VINFLUNINE is phase 3 for hemangiopericytoma (HEMANGIOPERICYTOMA)."
+    },
+    {
+      "source": "CHEMBL225071",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "TREATS",
+      "description": "RALTITREXED is phase 4 / marketed for hemangiopericytoma (HEMANGIOPERICYTOMA)."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "FGF23",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF23 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FGF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "MAPK3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTTG1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTTG1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGM2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "PGF",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "PGF is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LEF1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LEF1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT6 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "NAB2",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAB2 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CLDN1",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN1 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CLDN7",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN7 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IGF2",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "BCAS3",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCAS3 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD34",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VEGFA",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MKI67",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FOLH1",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOLH1 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KDR",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDH1",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD99",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD99 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01 | Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL2",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC1",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC1 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GCG",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCG is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NF2",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSDMB",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DSTYK",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSTYK is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPK3",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK3 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PROM1",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROM1 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD274",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SDHB",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDHB is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TSC2",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "LEF1",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEF1 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FN1",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FN1 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NKX2-1",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-1 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TWIST1",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TWIST1 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNAI2",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNAI2 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGF23",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF23 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ANPEP",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANPEP is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGF7",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF7 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MEPE",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEPE is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GH1",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ROCK2",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROCK2 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SFRP4",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFRP4 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VIM",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIM is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTPRC",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "S100A1",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A1 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "S100B",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100B is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ETFA",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETFA is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ESR1",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MIB1",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIB1 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KIT",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MME",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MME is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PGR",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PECAM1",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PECAM1 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PGF",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGF is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTTG1",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTTG1 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GGH",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGH is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGM2",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM2 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NCAM1",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCAM1 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "DES",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DES is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD4",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "C6orf47",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C6orf47 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ESR2",
+      "target": "hemangiopericytoma (HEMANGIOPERICYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR2 is associated with hemangiopericytoma (HEMANGIOPERICYTOMA). Open Targets association score 0.00"
+    }
+  ]
+}

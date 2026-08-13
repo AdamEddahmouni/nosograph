@@ -1,0 +1,484 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BCL2L11",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2L11 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATR",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATR is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ELN",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ELN is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ANGPTL2",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL2 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL4 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "PIK3C2A",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3C2A is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "LAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "LRP1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT3A",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT3A is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP19A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP19A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SMARCAL1",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCAL1 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.84"
+    },
+    {
+      "source": "FAS",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "COG6",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COG6 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SIK3",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIK3 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TWSG1",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TWSG1 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PMP22",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMP22 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "BCL2",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "LAT",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAT is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "BCL2L11",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2L11 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PIK3C2A",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3C2A is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SON",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SON is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTPN22",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "BMAL1",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMAL1 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CYP19A1",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP19A1 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FGL2",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGL2 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL2",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SGPL1",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGPL1 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ELN",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELN is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNF",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "HFM1",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HFM1 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL7R",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7R is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ANKS4B",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKS4B is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTN",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTN is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKR1B10",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKR1B10 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL4 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PANK2",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PANK2 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ANGPTL2",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL2 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS2",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNCA",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDCD1",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS1",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS1 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPATA2",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "LDLR",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TPP1",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPP1 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DNAH8",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH8 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPP1",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPP1 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SMARCA2",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA2 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CLCN5",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCN5 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NBAS",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBAS is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "EBP",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EBP is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TRPC6",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPC6 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PKHD1",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKHD1 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FCGR3A",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR3A is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FCGR3B",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR3B is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNG",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATM",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATR",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATR is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "WNT3A",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT3A is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "BRD2",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRD2 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACE",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL7",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "LRP1",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SMARCA1",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA1 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRF1",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRF1 is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "DMD",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMD is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYC",
+      "target": "Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with Schimke immuno-osseous dysplasia (SCHIMKE_IMMUNO_OSSEOUS_DYSPLASIA). Open Targets association score 0.00"
+    }
+  ]
+}

@@ -1,0 +1,544 @@
+{
+  "relationships": [
+    {
+      "source": "BIRC3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BIRC3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CASP8",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP8 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CRLF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CRLF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATR",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATR is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CHEK2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "CHEK2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH6",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH6 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "SMO",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SMO is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6ST",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6ST is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "SOCS1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "SOCS1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP3 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MYD88",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MYD88 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP3 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "STK11",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.37"
+    },
+    {
+      "source": "KMT2D",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "BCORL1",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCORL1 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2A",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2A is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "RET",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "KDR",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTCH1",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR3",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "SETD2",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD2 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "FAT1",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT1 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "NTRK3",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK3 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "NCOR2",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOR2 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATR",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATR is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "STAG2",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAG2 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "EP300",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EP300 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "RUNX1",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "MSH2",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH2 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFAIP3 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "FBXO11",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXO11 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "MSH6",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH6 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "EGFR",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ATM",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "GNA11",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNA11 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "MET",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "CASP8",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP8 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ATP2B3",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP2B3 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "B2M",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B2M is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "PRDM1",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM1 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "BIRC3",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIRC3 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "TP53",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "IL6ST",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6ST is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "GNAS",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAS is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "SH2B3",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2B3 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "MYD88",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYD88 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "NCOR1",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOR1 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ZFHX3",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFHX3 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "CREBBP",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "SMO",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMO is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "CHEK2",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHEK2 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "APC",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "CRLF2",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRLF2 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ARID1B",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1B is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "RMI2",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RMI2 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "BAP1",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAP1 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "SOCS1",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOCS1 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "TRRAP",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRRAP is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "BRAF",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "SPEN",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPEN is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "SETDB1",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETDB1 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "IL4",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADIPOQ",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOQ is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL13",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "KIT",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT7",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT7 is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRAS",
+      "target": "Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with Wolffian adnexal tumor (WOLFFIAN_ADNEXAL_TUMOR). Open Targets association score 0.00"
+    }
+  ]
+}

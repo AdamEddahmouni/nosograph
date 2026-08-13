@@ -1,0 +1,538 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201827",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "PANITUMUMAB targets EGFR."
+    },
+    {
+      "source": "CHEMBL939",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "GEFITINIB targets EGFR."
+    },
+    {
+      "source": "CHEMBL428647",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "TREATS",
+      "description": "PACLITAXEL is phase 4 / marketed for mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)."
+    },
+    {
+      "source": "CHEMBL1200721",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "TREATS",
+      "description": "ESTRAMUSTINE PHOSPHATE SODIUM is phase 4 / marketed for mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)."
+    },
+    {
+      "source": "CHEMBL409",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "TREATS",
+      "description": "BICALUTAMIDE is phase 4 / marketed for mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MSH3",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH3 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TFRC",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFRC is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "MAML2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MAML2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTHLH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTHLH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "THBS1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THBS1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ABCC1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "APC",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAML2",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAML2 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.20"
+    },
+    {
+      "source": "CRTC1",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRTC1 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.20"
+    },
+    {
+      "source": "EGFR",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.20"
+    },
+    {
+      "source": "TP53",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "MSH3",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH3 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "CD9",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD9 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "ABCC1",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC1 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "MDM4",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM4 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "CMA1",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMA1 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDH1",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ESR1",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "THBS1",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THBS1 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ERBB2",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PCNA",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNA is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PCP4",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCP4 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTHLH",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTHLH is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MTOR",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MUC1",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC1 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "BCL2",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TGFB1",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "DNMT1",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT1 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "EPCAM",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPCAM is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IMP3",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IMP3 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SDC1",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC1 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TP63",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD44",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "RPE65",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPE65 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "UVRAG",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UVRAG is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CKAP4",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CKAP4 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PROM1",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROM1 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TFRC",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFRC is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MDM2",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM2 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "VEGFA",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "FUCA1",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUCA1 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GSDMB",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL6",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "NFKB1",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "KRT5",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT5 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTGS2",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MCM7",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCM7 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ANO1",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANO1 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ZNRD2",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNRD2 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TMED7",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMED7 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PSMD9",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMD9 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "DCTN6",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCTN6 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PAK2",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAK2 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IFI27",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFI27 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CRISP2",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRISP2 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SPZ1",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPZ1 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PRSS55",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRSS55 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PIEZO1",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIEZO1 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "EREG",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EREG is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MMP2",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SERPINB5",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINB5 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD274",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MKI67",
+      "target": "mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with mucoepidermoid carcinoma (MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.02"
+    }
+  ]
+}

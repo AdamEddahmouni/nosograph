@@ -1,0 +1,490 @@
+{
+  "relationships": [
+    {
+      "source": "IRF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "KIF21B",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "KIF21B is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17REL",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17REL is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL19",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL19 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "IL17REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "SMAD3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "IL17REL",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17REL is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL23R",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL23R is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "RORC",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "RORC is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IFIH1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFIH1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF5",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF5 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF8",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "FCGR2A",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2A is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.45"
+    },
+    {
+      "source": "IL10",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.45"
+    },
+    {
+      "source": "MST1",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MST1 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.39"
+    },
+    {
+      "source": "IL23R",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL23R is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.39"
+    },
+    {
+      "source": "LPP",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPP is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.37"
+    },
+    {
+      "source": "FCGR2B",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2B is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.37"
+    },
+    {
+      "source": "TNRC18",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNRC18 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.36"
+    },
+    {
+      "source": "GPR35",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR35 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.35"
+    },
+    {
+      "source": "TMEM121",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM121 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.35"
+    },
+    {
+      "source": "DLD",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLD is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.34"
+    },
+    {
+      "source": "IRF5",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF5 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.34"
+    },
+    {
+      "source": "SMAD3",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD3 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.34"
+    },
+    {
+      "source": "SLC26A3",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC26A3 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.34"
+    },
+    {
+      "source": "IFIH1",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFIH1 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.31"
+    },
+    {
+      "source": "NXPE1",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NXPE1 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.31"
+    },
+    {
+      "source": "STAT3",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.30"
+    },
+    {
+      "source": "IL17REL",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17REL is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.30"
+    },
+    {
+      "source": "IRF1",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF1 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.30"
+    },
+    {
+      "source": "RORC",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RORC is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.29"
+    },
+    {
+      "source": "RNF186",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF186 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.29"
+    },
+    {
+      "source": "IL19",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL19 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "ADCY7",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADCY7 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "PDCD1",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.27"
+    },
+    {
+      "source": "TPRG1",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPRG1 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "HELZ2",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HELZ2 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "PUS10",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PUS10 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.25"
+    },
+    {
+      "source": "SEC22B",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEC22B is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.25"
+    },
+    {
+      "source": "OTUD3",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OTUD3 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.25"
+    },
+    {
+      "source": "NEU4",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEU4 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.25"
+    },
+    {
+      "source": "NKX2-3",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-3 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.25"
+    },
+    {
+      "source": "IRF8",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF8 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.25"
+    },
+    {
+      "source": "TMCO4",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMCO4 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.24"
+    },
+    {
+      "source": "ACOXL",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACOXL is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.24"
+    },
+    {
+      "source": "PSMG1",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMG1 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.24"
+    },
+    {
+      "source": "RTP5",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RTP5 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.24"
+    },
+    {
+      "source": "SATB2",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SATB2 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.23"
+    },
+    {
+      "source": "PRDM1",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM1 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.23"
+    },
+    {
+      "source": "PDGFB",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFB is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.23"
+    },
+    {
+      "source": "MXRA8",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MXRA8 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.22"
+    },
+    {
+      "source": "ANKRD44",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKRD44 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.22"
+    },
+    {
+      "source": "FTCDNL1",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FTCDNL1 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.22"
+    },
+    {
+      "source": "ADO",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADO is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.22"
+    },
+    {
+      "source": "PLCL1",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCL1 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.22"
+    },
+    {
+      "source": "BRD7",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRD7 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.21"
+    },
+    {
+      "source": "RFTN2",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RFTN2 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.19"
+    },
+    {
+      "source": "ZBTB40",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB40 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.19"
+    },
+    {
+      "source": "KIF21B",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF21B is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.18"
+    },
+    {
+      "source": "SLC7A10",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC7A10 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.18"
+    },
+    {
+      "source": "RUFY4",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUFY4 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.17"
+    },
+    {
+      "source": "HSPD1",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPD1 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.16"
+    },
+    {
+      "source": "C2orf69",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C2orf69 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.16"
+    },
+    {
+      "source": "COQ10B",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COQ10B is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.16"
+    },
+    {
+      "source": "SGO2",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGO2 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.16"
+    },
+    {
+      "source": "CLK1",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLK1 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.16"
+    },
+    {
+      "source": "NIF3L1",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NIF3L1 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.16"
+    },
+    {
+      "source": "BZW1",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BZW1 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.16"
+    },
+    {
+      "source": "MOB4",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MOB4 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.16"
+    },
+    {
+      "source": "MAIP1",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAIP1 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.16"
+    },
+    {
+      "source": "PGAP1",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGAP1 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.16"
+    },
+    {
+      "source": "KCTD18",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCTD18 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.16"
+    },
+    {
+      "source": "SPATS2L",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATS2L is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.16"
+    },
+    {
+      "source": "AOX1",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOX1 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.16"
+    },
+    {
+      "source": "PPIL3",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIL3 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.16"
+    },
+    {
+      "source": "HSPE1",
+      "target": "ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPE1 is associated with ulcerative proctosigmoiditis (ULCERATIVE_PROCTOSIGMOIDITIS). Open Targets association score 0.16"
+    }
+  ]
+}

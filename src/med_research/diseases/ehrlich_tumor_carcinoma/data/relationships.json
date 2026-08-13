@@ -1,0 +1,532 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL428647",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "TREATS",
+      "description": "PACLITAXEL is phase 4 / marketed for ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)."
+    },
+    {
+      "source": "CHEMBL1200721",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "TREATS",
+      "description": "ESTRAMUSTINE PHOSPHATE SODIUM is phase 4 / marketed for ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)."
+    },
+    {
+      "source": "CHEMBL409",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "TREATS",
+      "description": "BICALUTAMIDE is phase 4 / marketed for ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)."
+    },
+    {
+      "source": "BAX",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BAX is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CASP3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "SIGLEC1",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "SIGLEC1 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CACNA1C",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1C is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "BDKRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "BDKRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PARP1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "PARP1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL11A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL11A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TIMP1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ACTG1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ACTG1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "TRPV1",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV1 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNF",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "GPT",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SP1",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SP1 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TSPO",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSPO is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "INS",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL1B",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PSMA2",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMA2 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BAX",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAX is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNG",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALB",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACTB",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTB is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GOT1",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOT1 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC17A5",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A5 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SP3",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SP3 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCHE",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCHE is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GLS",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLS is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NGF",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NGF is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PHGDH",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHGDH is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "COL11A2",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL11A2 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BDKRB1",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BDKRB1 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SIGLEC1",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIGLEC1 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC1",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC1 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC5AC",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5AC is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKT1",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PARP1",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARP1 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFKB1",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOD1",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD1 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CAT",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAT is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "DNAJC5",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAJC5 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CP",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CP is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CSF3",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "STAT3",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD40LG",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SEZ6L2",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEZ6L2 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TAOK2",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAOK2 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "STK16",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK16 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "WNK1",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNK1 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CASP3",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP3 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TBXAS1",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBXAS1 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TIMP1",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP1 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TYMS",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYMS is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CSF2",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD34",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "A2M",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "A2M is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "HK1",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HK1 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CACNA1C",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1C is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ASRGL1",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASRGL1 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMP9",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TKT",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TKT is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "LAMC2",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMC2 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMP2",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TBXT",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBXT is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ASPG",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASPG is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACTG1",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTG1 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "VEGFA",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PKLR",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKLR is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IDO1",
+      "target": "ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDO1 is associated with ehrlich tumor carcinoma (EHRLICH_TUMOR_CARCINOMA). Open Targets association score 0.00"
+    }
+  ]
+}

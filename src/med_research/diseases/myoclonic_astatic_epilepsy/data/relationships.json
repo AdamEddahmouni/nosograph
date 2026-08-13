@@ -1,0 +1,454 @@
+{
+  "relationships": [
+    {
+      "source": "HCN2",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "HCN2 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "KCNA2",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNA2 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "SCN5A",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "SCN5A is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CDKL5",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKL5 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ARHGEF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ARHGEF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SH3RF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SH3RF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MCOLN3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MCOLN3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GABRA1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GABRA1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GABRB3",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GABRB3 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "SLC2A1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "SLC2A4RG",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A4RG is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "SLC6A1",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A1 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.73"
+    },
+    {
+      "source": "SLC2A1",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A1 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.46"
+    },
+    {
+      "source": "CHD2",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD2 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.45"
+    },
+    {
+      "source": "SCN1A",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN1A is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.38"
+    },
+    {
+      "source": "SYNGAP1",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYNGAP1 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.37"
+    },
+    {
+      "source": "NEXMIF",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEXMIF is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.37"
+    },
+    {
+      "source": "AP2M1",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AP2M1 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.37"
+    },
+    {
+      "source": "SEMA6B",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEMA6B is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.27"
+    },
+    {
+      "source": "GABRG2",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRG2 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.04"
+    },
+    {
+      "source": "MCOLN3",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCOLN3 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.03"
+    },
+    {
+      "source": "KCNC2",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNC2 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.03"
+    },
+    {
+      "source": "RAI1",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAI1 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.03"
+    },
+    {
+      "source": "HCN2",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HCN2 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.03"
+    },
+    {
+      "source": "SH3RF2",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3RF2 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.03"
+    },
+    {
+      "source": "CNTNAP2",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNTNAP2 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.03"
+    },
+    {
+      "source": "MBP",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBP is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.03"
+    },
+    {
+      "source": "UBE3A",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBE3A is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ARX",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARX is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.03"
+    },
+    {
+      "source": "STX1B",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STX1B is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD4",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TYMP",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYMP is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.02"
+    },
+    {
+      "source": "LCN1",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN1 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TMPO",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPO is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.02"
+    },
+    {
+      "source": "SCO2",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCO2 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.02"
+    },
+    {
+      "source": "ARHGEF2",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGEF2 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC2A4RG",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A4RG is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMARCA2",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA2 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKL5",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKL5 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.01"
+    },
+    {
+      "source": "AQP3",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP3 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SCN5A",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN5A is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRIMPOL",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRIMPOL is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1B",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.01"
+    },
+    {
+      "source": "FZR1",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FZR1 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ENO2",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENO2 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.01"
+    },
+    {
+      "source": "HNRNPU",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNRNPU is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.01"
+    },
+    {
+      "source": "STXBP1",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STXBP1 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC6A11",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A11 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SCN2A",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN2A is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADGRV1",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADGRV1 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNNT2",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNT2 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYL2",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYL2 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIGT",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIGT is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.00"
+    },
+    {
+      "source": "POGZ",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POGZ is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYBPC3",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYBPC3 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL6",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GABRB3",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRB3 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GABRA1",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRA1 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.00"
+    },
+    {
+      "source": "KLHL11",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLHL11 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.00"
+    },
+    {
+      "source": "KCNB1",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNB1 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.00"
+    },
+    {
+      "source": "KCNA2",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNA2 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHD4",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD4 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ASH1L",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASH1L is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MECP2",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MECP2 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GREM1",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GREM1 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SYNCRIP",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYNCRIP is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.00"
+    },
+    {
+      "source": "AQP8",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP8 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CLCN2",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCN2 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHKA",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKA is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CMPK1",
+      "target": "myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMPK1 is associated with myoclonic-astatic epilepsy (MYOCLONIC_ASTATIC_EPILEPSY). Open Targets association score 0.00"
+    }
+  ]
+}

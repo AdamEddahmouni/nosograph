@@ -1,0 +1,472 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201577",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "CETUXIMAB targets EGFR."
+    },
+    {
+      "source": "CHEMBL2028663",
+      "target": "BRAF",
+      "type": "TARGETS",
+      "description": "DABRAFENIB targets BRAF."
+    },
+    {
+      "source": "CHEMBL465",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "TREATS",
+      "description": "DRONABINOL is phase 4 / marketed for spindle cell sarcoma (SPINDLE_CELL_SARCOMA)."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TFF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TFF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PARP1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "PARP1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.34"
+    },
+    {
+      "source": "EWSR1",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EWSR1 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FLI1",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLI1 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERG",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERG is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRAF",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "CREB3L2",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREB3L2 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "FUS",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUS is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "EGFR",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "PTEN",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SUFU",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUFU is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KIAA1549",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIAA1549 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.10"
+    },
+    {
+      "source": "NUTM1",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUTM1 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MDM2",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM2 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "NRG1",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRG1 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GPT",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "AFAP1L1",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFAP1L1 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TP53",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGFR1",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TFG",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFG is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DICER1",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DICER1 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NTRK1",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL2",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MET",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VEGFA",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TACC1",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TACC1 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MEIS1",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEIS1 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRAS",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMARCB1",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCB1 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FN1",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FN1 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ETV6",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV6 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCOR",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCOR is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MGA",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MGA is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NCOA2",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOA2 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DSP",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSP is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "B3GAT1",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B3GAT1 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TPM3",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPM3 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DLEU7",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLEU7 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EML4",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EML4 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TFF2",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFF2 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDE10A",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE10A is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PARP1",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARP1 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KMT2D",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KMT2B",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2B is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPS2",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPS2 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DDIT3",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDIT3 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ENO2",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENO2 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "WT1",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "S100B",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100B is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "S100A1",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A1 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALK",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TMED7",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMED7 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DES",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DES is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD34",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSMD9",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMD9 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDH1",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DCTN6",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCTN6 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZNRD2",
+      "target": "spindle cell sarcoma (SPINDLE_CELL_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNRD2 is associated with spindle cell sarcoma (SPINDLE_CELL_SARCOMA). Open Targets association score 0.01"
+    }
+  ]
+}

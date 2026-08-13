@@ -1,0 +1,604 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL79",
+      "target": "SCN7A",
+      "type": "TARGETS",
+      "description": "LIDOCAINE targets SCN7A."
+    },
+    {
+      "source": "CHEMBL679",
+      "target": "ADRB3",
+      "type": "TARGETS",
+      "description": "EPINEPHRINE targets ADRB3."
+    },
+    {
+      "source": "CHEMBL679",
+      "target": "ADRA1D",
+      "type": "TARGETS",
+      "description": "EPINEPHRINE targets ADRA1D."
+    },
+    {
+      "source": "CHEMBL79",
+      "target": "SCN9A",
+      "type": "TARGETS",
+      "description": "LIDOCAINE targets SCN9A."
+    },
+    {
+      "source": "CHEMBL679",
+      "target": "ADRA1A",
+      "type": "TARGETS",
+      "description": "EPINEPHRINE targets ADRA1A."
+    },
+    {
+      "source": "CHEMBL79",
+      "target": "SCN3A",
+      "type": "TARGETS",
+      "description": "LIDOCAINE targets SCN3A."
+    },
+    {
+      "source": "CHEMBL79",
+      "target": "SCN2A",
+      "type": "TARGETS",
+      "description": "LIDOCAINE targets SCN2A."
+    },
+    {
+      "source": "CHEMBL679",
+      "target": "ADRA2A",
+      "type": "TARGETS",
+      "description": "EPINEPHRINE targets ADRA2A."
+    },
+    {
+      "source": "CHEMBL679",
+      "target": "ADRA1B",
+      "type": "TARGETS",
+      "description": "EPINEPHRINE targets ADRA1B."
+    },
+    {
+      "source": "CHEMBL79",
+      "target": "SCN1A",
+      "type": "TARGETS",
+      "description": "LIDOCAINE targets SCN1A."
+    },
+    {
+      "source": "CHEMBL679",
+      "target": "ADRB2",
+      "type": "TARGETS",
+      "description": "EPINEPHRINE targets ADRB2."
+    },
+    {
+      "source": "CHEMBL679",
+      "target": "ADRA2C",
+      "type": "TARGETS",
+      "description": "EPINEPHRINE targets ADRA2C."
+    },
+    {
+      "source": "CHEMBL1098",
+      "target": "SCN4A",
+      "type": "TARGETS",
+      "description": "BUPIVACAINE targets SCN4A."
+    },
+    {
+      "source": "CHEMBL1200396",
+      "target": "SCN4A",
+      "type": "TARGETS",
+      "description": "BUPIVACAINE HYDROCHLORIDE targets SCN4A."
+    },
+    {
+      "source": "CHEMBL679",
+      "target": "ADRB1",
+      "type": "TARGETS",
+      "description": "EPINEPHRINE targets ADRB1."
+    },
+    {
+      "source": "CHEMBL79",
+      "target": "SCN8A",
+      "type": "TARGETS",
+      "description": "LIDOCAINE targets SCN8A."
+    },
+    {
+      "source": "CHEMBL679",
+      "target": "ADRA2B",
+      "type": "TARGETS",
+      "description": "EPINEPHRINE targets ADRA2B."
+    },
+    {
+      "source": "CHEMBL79",
+      "target": "SCN5A",
+      "type": "TARGETS",
+      "description": "LIDOCAINE targets SCN5A."
+    },
+    {
+      "source": "CHEMBL79",
+      "target": "SCN4A",
+      "type": "TARGETS",
+      "description": "LIDOCAINE targets SCN4A."
+    },
+    {
+      "source": "CHEMBL79",
+      "target": "SCN11A",
+      "type": "TARGETS",
+      "description": "LIDOCAINE targets SCN11A."
+    },
+    {
+      "source": "CHEMBL79",
+      "target": "SCN10A",
+      "type": "TARGETS",
+      "description": "LIDOCAINE targets SCN10A."
+    },
+    {
+      "source": "SCN5A",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "SCN5A is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "ADRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "ADRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2C",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2C is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "COL3A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL3A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RASSF1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASSF1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "PTHLH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTHLH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CDC73",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDC73 is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.73"
+    },
+    {
+      "source": "MEN1",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.67"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDKN2C",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2C is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EZH2",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EZH2 is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "GNAS",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAS is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CASR",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASR is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.20"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "HGF",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "POT1",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POT1 is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "PAX8",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX8 is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "MTOR",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "DROSHA",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DROSHA is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CDH11",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH11 is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FLI1",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLI1 is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NTRK1",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KDM6A",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM6A is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TSC2",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ERCC5",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC5 is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FAT1",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT1 is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PPARG",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PATZ1",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PATZ1 is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "HRAS",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.12"
+    },
+    {
+      "source": "COL3A1",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL3A1 is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "NONO",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NONO is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "PTH",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTH is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCND1",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "POMC",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "AIP",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIP is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "RASSF1",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASSF1 is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDKN2B",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2B is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SCN4A",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN4A is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "VDR",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VDR is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTHLH",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTHLH is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ZFX",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFX is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PGP",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGP is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDH1",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ANXA2",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANXA2 is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GCM2",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCM2 is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADRB2",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB2 is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SCN5A",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN5A is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SCN1A",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN1A is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADRA2A",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2A is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SCN10A",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN10A is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADRA1D",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA1D is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SCN8A",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN8A is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SCN11A",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN11A is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SCN3A",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN3A is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADRA2C",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2C is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SCN2A",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN2A is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SCN7A",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN7A is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADRA2B",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2B is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SCN9A",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN9A is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADRA1A",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA1A is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADRB3",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB3 is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADRB1",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB1 is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADRA1B",
+      "target": "parathyroid adenoma (PARATHYROID_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA1B is associated with parathyroid adenoma (PARATHYROID_ADENOMA). Open Targets association score 0.02"
+    }
+  ]
+}

@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "SCARB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "SCARB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TM6SF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TM6SF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ZNF285",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF285 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "ITGA1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL3 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CETP is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "HMGCR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HMGCR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "TDRD15",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "TDRD15 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "ITGA1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFSF13",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "ABCB11",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB11 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.70"
+    },
+    {
+      "source": "APOB",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.69"
+    },
+    {
+      "source": "PCSK9",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.68"
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL3 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.61"
+    },
+    {
+      "source": "CETP",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETP is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "ABCG8",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG8 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "HP",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HP is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "TIMD4",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMD4 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "APOC3",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC3 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "SORT1",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORT1 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "SLC22A1",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A1 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "LIPC",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "CELSR2",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR2 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "APOA5",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "APOE",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "ZPR1",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZPR1 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "GPCPD1",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPCPD1 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "TRPS1",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPS1 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "ABCA6",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA6 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "TNFSF13",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "MAP3K1",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K1 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "MAFB",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAFB is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "PKD1L3",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKD1L3 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "ST3GAL4",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST3GAL4 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "APOA1",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "NECTIN2",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NECTIN2 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "HK1",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HK1 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "ABCB11",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB11 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "TOP1",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOP1 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "DNAH11",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH11 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "ZHX3",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZHX3 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "ASGR1",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASGR1 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "HMGCR",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCR is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "OGDH",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OGDH is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "HNF1A",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "GAS6",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAS6 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "TMPRSS11E",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS11E is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "MAMSTR",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAMSTR is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "TDRD15",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TDRD15 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "SIDT2",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIDT2 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "LPA",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "HGFAC",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGFAC is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "GCKR",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "ZNF285",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF285 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "TRIM5",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM5 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "FUT2",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUT2 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "ITGA1",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA1 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "DOK7",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOK7 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "FADS2",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS2 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "UEVLD",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UEVLD is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "PELO",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PELO is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "TM6SF2",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM6SF2 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "TRIB1",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIB1 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "SCARB1",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCARB1 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "TMED4",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMED4 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "DOCK7",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK7 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "MSL2",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSL2 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "ANKRD55",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKRD55 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "MISFA",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MISFA is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "CERT1",
+      "target": "cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CERT1 is associated with cholesterol in medium VLDL measurement  (CHOLESTEROL_IN_MEDIUM_VLDL_MEASUREMENT). Open Targets association score 0.28"
+    }
+  ]
+}

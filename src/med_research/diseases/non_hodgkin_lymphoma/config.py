@@ -67,6 +67,7 @@ CAR_T_SCORES = {
         "IRF4": 4.0,
         "JAK1": 4.0,
         "KIT": 4.0,
+        "KLHL6": 4.0,
         "KMT2D": 4.0,
         "LRRC41": 4.0,
         "MEF2B": 4.0,

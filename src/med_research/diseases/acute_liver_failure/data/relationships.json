@@ -1,0 +1,478 @@
+{
+  "relationships": [
+    {
+      "source": "CASP8",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP8 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "C5AR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C5AR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL18",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "SOCS1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "SOCS1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "THBS1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THBS1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR9",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR9 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "GSK3B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "GSK3B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "UGT1A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "UGT1A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "UGT1A6",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "UGT1A6 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ALDOB",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDOB is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.46"
+    },
+    {
+      "source": "POLG2",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLG2 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.27"
+    },
+    {
+      "source": "MT-CO3",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO3 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.12"
+    },
+    {
+      "source": "TNF",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.06"
+    },
+    {
+      "source": "SND1",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SND1 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD14",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD14 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ALB",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.03"
+    },
+    {
+      "source": "FCGR3B",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR3B is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.03"
+    },
+    {
+      "source": "FCGR3A",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR3A is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.03"
+    },
+    {
+      "source": "TGFB1",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.03"
+    },
+    {
+      "source": "GPT",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC6A12",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A12 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.03"
+    },
+    {
+      "source": "HGF",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.03"
+    },
+    {
+      "source": "HMGB1",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGB1 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "BCHE",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCHE is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "GC",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GC is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "UGT1A1",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGT1A1 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "SERPINC1",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINC1 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "HDAC2",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC2 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "TLR9",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR9 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "MFN2",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFN2 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "PPARA",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARA is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "DDIT3",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDIT3 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "FAS",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "SPHK1",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPHK1 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "FXN",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FXN is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "FANCA",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CSF1",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF1 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL10",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "SOCS1",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOCS1 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "AFP",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "PRKAA1",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA1 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "NFKB1",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "PRKAA2",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA2 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADIPOQ",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOQ is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "IGF1",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "GSK3B",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSK3B is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "VEGFA",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCL2",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL2 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CMA1",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMA1 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ANGPT2",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPT2 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "FST",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FST is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "C5AR1",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C5AR1 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "SIRT2",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT2 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "GABPA",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABPA is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "THBS1",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THBS1 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "FASLG",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CP",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CP is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL18",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "HDAC6",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC6 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "PEBP1",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PEBP1 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "AARS1",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AARS1 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ACTB",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTB is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "RPL17",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL1B",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CASP8",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP8 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "NBAS",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBAS is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    },
+    {
+      "source": "UGT1A6",
+      "target": "acute liver failure (ACUTE_LIVER_FAILURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGT1A6 is associated with acute liver failure (ACUTE_LIVER_FAILURE). Open Targets association score 0.02"
+    }
+  ]
+}

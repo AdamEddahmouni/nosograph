@@ -1,0 +1,418 @@
+{
+  "relationships": [
+    {
+      "source": "SQSTM1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SQSTM1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CDK12",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK12 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "EIF2AK1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EIF2AK1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IRF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SLC4A1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC4A1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "TNIP1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "TNIP1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "IRF8",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "ABCB4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "NMNAT3",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NMNAT3 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GATB",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATB is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.50"
+    },
+    {
+      "source": "SPTA1",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.05"
+    },
+    {
+      "source": "AHSP",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSP is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.05"
+    },
+    {
+      "source": "HEPH",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEPH is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.04"
+    },
+    {
+      "source": "ANK1",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC4A1",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC4A1 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.04"
+    },
+    {
+      "source": "ABCB4",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB4 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.04"
+    },
+    {
+      "source": "SQSTM1",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SQSTM1 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.04"
+    },
+    {
+      "source": "RPA1",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPA1 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.04"
+    },
+    {
+      "source": "GIMAP6",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP6 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC29A3",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC29A3 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNIP1",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNIP1 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.04"
+    },
+    {
+      "source": "OSM",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OSM is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.04"
+    },
+    {
+      "source": "EPB41",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPB41 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.04"
+    },
+    {
+      "source": "EPB42",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPB42 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKAG1",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAG1 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.04"
+    },
+    {
+      "source": "IRGM",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRGM is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.04"
+    },
+    {
+      "source": "PACSIN2",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PACSIN2 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "BHLHE40",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BHLHE40 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC20A1",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC20A1 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "ATP13A3",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP13A3 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "IRF8",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF8 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "TF",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "RHPN1",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHPN1 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "MPV17",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPV17 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "HK1",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HK1 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "ATP5MK",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP5MK is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "WDR53",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR53 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZFPM1",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFPM1 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "EIF2AK1",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF2AK1 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "NMNAT3",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NMNAT3 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "RUNX1",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "EXOC6",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EXOC6 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "TMCC2",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMCC2 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "ATP4A",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP4A is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDK12",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK12 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "LDHA",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDHA is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "STEAP3",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STEAP3 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "USP54",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP54 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "FOXA1",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXA1 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRDX2",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDX2 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "PPP1R3C",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R3C is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "USP32",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP32 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "USP6",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP6 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "TMPRSS6",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS6 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "FERRY3",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FERRY3 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "TSPAN18",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSPAN18 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "TPI1",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPI1 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "MYB",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYB is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "DBNL",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DBNL is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "RIC1",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIC1 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZBTB20",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB20 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "DCUN1D3",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCUN1D3 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "SMAP1",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAP1 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADD2",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADD2 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "STK38",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK38 is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "BNIP3L",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BNIP3L is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "YDJC",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YDJC is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    },
+    {
+      "source": "OSMR",
+      "target": "combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OSMR is associated with combined oxidative phosphorylation deficiency 41 (COMBINED_OXIDATIVE_PHOSPHORYLATION_DEFICIENCY_41). Open Targets association score 0.03"
+    }
+  ]
+}

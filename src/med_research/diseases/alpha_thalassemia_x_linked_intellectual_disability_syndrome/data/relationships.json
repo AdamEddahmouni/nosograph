@@ -1,0 +1,430 @@
+{
+  "relationships": [
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ATR",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATR is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ALPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ALPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MAGT1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "MAGT1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "COMT",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "COMT is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.84"
+    },
+    {
+      "source": "ALPL",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPL is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.27"
+    },
+    {
+      "source": "GBA1",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GBA1 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.12"
+    },
+    {
+      "source": "SFN",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFN is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "EYA1",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EYA1 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CPLANE1",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPLANE1 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "NSD1",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSD1 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SIGMAR1",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIGMAR1 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "DAXX",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAXX is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "HBA1",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBA1 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMARCA2",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA2 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "MEN1",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "HFM1",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HFM1 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "HBA2",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBA2 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IDH1",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "GFAP",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ZBED1",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBED1 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00 | Open Targets association score 0.00"
+    },
+    {
+      "source": "DNAH8",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH8 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "IDH2",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH2 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHGA",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHGA is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "OLIG2",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OLIG2 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP53",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAGT1",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAGT1 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATR",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATR is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSMB5",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMB5 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "MECP2",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MECP2 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "SMARCA1",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA1 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOS2",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOS2 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CBX5",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBX5 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "TFF1",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFF1 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOS1",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOS1 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "HDAC1",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC1 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "KMT2D",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "HBD",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBD is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "HBB",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBB is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "FGF16",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF16 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "BDNF",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BDNF is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTEN",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "GSDMB",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ARHGAP26",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP26 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "EGFR",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "DNMT3B",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT3B is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "GATA1",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA1 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "SP100",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SP100 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "PCNA",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNA is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "PML",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PML is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "HELLS",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HELLS is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "TERT",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "IDH3A",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH3A is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFI16",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFI16 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "REST",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REST is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "PQBP1",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PQBP1 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACVR1",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACVR1 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "MVP",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MVP is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "FGFR1",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "RCOR1",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RCOR1 is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "COMT",
+      "target": "alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COMT is associated with alpha thalassemia-X-linked intellectual disability syndrome (ALPHA_THALASSEMIA_X_LINKED_INTELLECTUAL_DISABILITY_SYNDROME). Open Targets association score 0.00"
+    }
+  ]
+}

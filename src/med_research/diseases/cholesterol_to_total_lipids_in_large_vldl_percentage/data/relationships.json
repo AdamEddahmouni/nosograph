@@ -1,0 +1,436 @@
+{
+  "relationships": [
+    {
+      "source": "BLK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BLK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ATRAID",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRAID is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CETP is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "HMGCR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HMGCR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "TDRD15",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "TDRD15 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CYP2W1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2W1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.72"
+    },
+    {
+      "source": "PCSK9",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.71"
+    },
+    {
+      "source": "APOB",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.71"
+    },
+    {
+      "source": "LIPC",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.62"
+    },
+    {
+      "source": "CETP",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETP is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.59"
+    },
+    {
+      "source": "LPA",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.53"
+    },
+    {
+      "source": "APOH",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOH is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.50"
+    },
+    {
+      "source": "APOA5",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.48"
+    },
+    {
+      "source": "APOE",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.47"
+    },
+    {
+      "source": "APOC3",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC3 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.46"
+    },
+    {
+      "source": "SORT1",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORT1 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.46"
+    },
+    {
+      "source": "LPL",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.45"
+    },
+    {
+      "source": "ZPR1",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZPR1 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.44"
+    },
+    {
+      "source": "PDE3B",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE3B is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.43"
+    },
+    {
+      "source": "LCAT",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCAT is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.43"
+    },
+    {
+      "source": "CELSR2",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR2 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.43"
+    },
+    {
+      "source": "ABCG8",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG8 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.42"
+    },
+    {
+      "source": "GCKR",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.42"
+    },
+    {
+      "source": "DHODH",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHODH is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.41"
+    },
+    {
+      "source": "SLC22A3",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A3 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.39"
+    },
+    {
+      "source": "ABCA6",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA6 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.39"
+    },
+    {
+      "source": "MSRA",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSRA is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.37"
+    },
+    {
+      "source": "SERPINA1",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA1 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.37"
+    },
+    {
+      "source": "STX1A",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STX1A is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.34"
+    },
+    {
+      "source": "SAMM50",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAMM50 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.34"
+    },
+    {
+      "source": "FADS2",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS2 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.34"
+    },
+    {
+      "source": "PKD1L3",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKD1L3 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.34"
+    },
+    {
+      "source": "ATRAID",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRAID is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.33"
+    },
+    {
+      "source": "TRIM5",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM5 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.33"
+    },
+    {
+      "source": "HMGCR",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCR is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.32"
+    },
+    {
+      "source": "TAGLN",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAGLN is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.31"
+    },
+    {
+      "source": "BLK",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLK is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.31"
+    },
+    {
+      "source": "SP3",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SP3 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.31"
+    },
+    {
+      "source": "BAZ1B",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAZ1B is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.30"
+    },
+    {
+      "source": "NFE2L3",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L3 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.29"
+    },
+    {
+      "source": "NPEPPS",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPEPPS is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.27"
+    },
+    {
+      "source": "PCSK7",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK7 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.26"
+    },
+    {
+      "source": "TYW1B",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYW1B is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.26"
+    },
+    {
+      "source": "MLXIPL",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLXIPL is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.25"
+    },
+    {
+      "source": "ABO",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABO is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.25"
+    },
+    {
+      "source": "DNAH11",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH11 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.24"
+    },
+    {
+      "source": "MAFB",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAFB is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.24"
+    },
+    {
+      "source": "POLK",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLK is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.23"
+    },
+    {
+      "source": "FZD9",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FZD9 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.23"
+    },
+    {
+      "source": "PSRC1",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSRC1 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.23"
+    },
+    {
+      "source": "TDRD15",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TDRD15 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.23"
+    },
+    {
+      "source": "ABCA10",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA10 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.23"
+    },
+    {
+      "source": "ZNF648",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF648 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.21"
+    },
+    {
+      "source": "CYP2W1",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2W1 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.21"
+    },
+    {
+      "source": "BUD13",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUD13 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.21"
+    },
+    {
+      "source": "HP",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HP is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.21"
+    },
+    {
+      "source": "SIPA1",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIPA1 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.21"
+    },
+    {
+      "source": "ZFAND2A",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFAND2A is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.20"
+    },
+    {
+      "source": "NYAP2",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NYAP2 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.19"
+    },
+    {
+      "source": "TOMM40",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOMM40 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.19"
+    },
+    {
+      "source": "FAM20A",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM20A is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.18"
+    },
+    {
+      "source": "TMEM258",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM258 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.17"
+    },
+    {
+      "source": "JMJD1C",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JMJD1C is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.17"
+    },
+    {
+      "source": "PCSK6",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK6 is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.17"
+    },
+    {
+      "source": "RPRML",
+      "target": "cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPRML is associated with cholesterol to total lipids in large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.16"
+    }
+  ]
+}

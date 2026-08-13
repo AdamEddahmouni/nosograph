@@ -1,0 +1,622 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1513",
+      "target": "AGTR1",
+      "type": "TARGETS",
+      "description": "IRBESARTAN targets AGTR1."
+    },
+    {
+      "source": "CHEMBL1144",
+      "target": "HMGCR",
+      "type": "TARGETS",
+      "description": "PRAVASTATIN targets HMGCR."
+    },
+    {
+      "source": "CHEMBL1139",
+      "target": "PTGIR",
+      "type": "TARGETS",
+      "description": "EPOPROSTENOL targets PTGIR."
+    },
+    {
+      "source": "CHEMBL1201576",
+      "target": "MS4A1",
+      "type": "TARGETS",
+      "description": "RITUXIMAB targets MS4A1."
+    },
+    {
+      "source": "MS4A1",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MS4A1 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL10",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL10 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL12",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL12 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR4",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR4 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "C1QTNF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FGF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SERPINE1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SERPINE1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C1QTNF9",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ADAM19",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM19 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GLI2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "HMGCR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HMGCR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGTR1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGTR1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "REN",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "REN is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "THBS2",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THBS2 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "PTGIR",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGIR is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "C1QTNF9",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "GSTK1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTK1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SLCO6A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLCO6A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.68"
+    },
+    {
+      "source": "AGTR1",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGTR1 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.27"
+    },
+    {
+      "source": "PTGIR",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGIR is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "HMGCR",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCR is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "MS4A1",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MS4A1 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "C1QTNF9",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1QTNF9 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "ITLN1",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITLN1 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "LEP",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL1B",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL1A",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1A is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ADIPOQ",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOQ is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TGFB1",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TNF",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ACE",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "HMGB1",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGB1 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTK2",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTK2 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFKB1",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "MAPK1",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "MMP9",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "THBS2",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THBS2 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "EPHB2",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHB2 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRICKLE1",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRICKLE1 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ASAH1",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASAH1 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FN1",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FN1 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TCOF1",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCOF1 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL10",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCN2",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCN2 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD4",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPPB",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPB is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CRP",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "COL2A1",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FGF9",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF9 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PPARG",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GATA3",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GLI2",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI2 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TMEM107",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM107 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CRKL",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRKL is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PGAP1",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGAP1 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "REN",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REN is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ROR2",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROR2 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CXCR4",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR4 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CXCL10",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL10 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CXCL12",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL12 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "INS",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADAM19",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAM19 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ANGPT1",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPT1 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFNG",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MTOR",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SERPINE1",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINE1 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLCO6A1",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLCO6A1 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "GSTK1",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTK1 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCL2",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL2 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "POSTN",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POSTN is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "FOXP3",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "CAMK2A",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMK2A is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "CAMK2G",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMK2G is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "CAMK2B",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMK2B is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL2RA",
+      "target": "Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RA is associated with Crouzon syndrome-acanthosis nigricans syndrome (CROUZON_SYNDROME_ACANTHOSIS_NIGRICANS_SYNDROME). Open Targets association score 0.02"
+    }
+  ]
+}

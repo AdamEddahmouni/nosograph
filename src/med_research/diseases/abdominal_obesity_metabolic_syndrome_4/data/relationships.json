@@ -1,0 +1,472 @@
+{
+  "relationships": [
+    {
+      "source": "SCARB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "SCARB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "C11orf86",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C11orf86 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TM6SF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TM6SF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL4A5",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A5 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ELN",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ELN is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GCK",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCK is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "SLC2A8",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A8 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "RRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "ECHDC1",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "ECHDC1 is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "TNIP1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "TNIP1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PIK3C2G",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3C2G is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TNFSF4",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF4 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ABCB4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ABCC9",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC9 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CELA2A",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELA2A is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.67"
+    },
+    {
+      "source": "APOE",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.07"
+    },
+    {
+      "source": "LDLR",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.07"
+    },
+    {
+      "source": "NOS3",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.05"
+    },
+    {
+      "source": "LEPR",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.05"
+    },
+    {
+      "source": "SCARB1",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCARB1 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.05"
+    },
+    {
+      "source": "GCK",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCK is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.05"
+    },
+    {
+      "source": "ELN",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELN is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.05"
+    },
+    {
+      "source": "APOA1",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "LPL",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL4A5",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A5 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "ATP11C",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP11C is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "SIM1",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIM1 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPTA1",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADD2",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADD2 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "C11orf86",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C11orf86 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "CEP19",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEP19 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLSCR3",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLSCR3 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADIPOQ",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOQ is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "APOC2",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC2 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "APOC4-APOC2",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC4-APOC2 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "IRS2",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRS2 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "SDC2",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC2 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC29A3",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC29A3 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "ABCC9",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC9 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNFSF4",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF4 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "CUL3",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUL3 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "IRGM",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRGM is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "ARID3A",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID3A is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "PPM1L",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPM1L is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "ALPP",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPP is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "ALPG",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPG is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "ALPI",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPI is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "GPER1",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPER1 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "RALGAPA1",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RALGAPA1 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "RRAS",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RRAS is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "LIPE",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPE is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "PIK3C2G",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3C2G is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "ENHO",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENHO is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "ABCB4",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB4 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "VCP",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VCP is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "WDFY2",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDFY2 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "NUAK2",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUAK2 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "CEBPA",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPA is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "PDE3B",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE3B is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "ECHDC1",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ECHDC1 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "MGAT4A",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MGAT4A is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNIP1",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNIP1 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "CAV1",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAV1 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "TM6SF2",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM6SF2 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "OCA2",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OCA2 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "LRP6",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP6 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "CPT1C",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPT1C is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "BAAT",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAAT is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "NR3C1",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "APOC4",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC4 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "LRIG3",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRIG3 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "PPP1R3C",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R3C is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC2A8",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A8 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "CCDC18",
+      "target": "abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC18 is associated with abdominal obesity-metabolic syndrome 4 (ABDOMINAL_OBESITY_METABOLIC_SYNDROME_4). Open Targets association score 0.03"
+    }
+  ]
+}

@@ -1,0 +1,532 @@
+{
+  "relationships": [
+    {
+      "source": "BTK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BTK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "F10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "F2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C5AR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C5AR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "C4A",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C4A is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "REN",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "REN is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "SMAD3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "BTG3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "BTG3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TPO",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TPO is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNA17",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA17 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNA2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "NPPB",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPB is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC17A5",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A5 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.03"
+    },
+    {
+      "source": "GOT1",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOT1 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPPA",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPA is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.02"
+    },
+    {
+      "source": "RPL17",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNNI3",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNI3 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRTN3",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRTN3 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TF",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDCD1",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNCA",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPATA2",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1B",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "AVP",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVP is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTX3",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTX3 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "F2",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F2 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "VWF",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "C5",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C5 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "C5AR1",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C5AR1 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "REN",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REN is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "HESX1",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HESX1 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYRIB",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYRIB is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC16",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC16 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NBR1",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBR1 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNA1",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD4",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM5",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM5 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "BTK",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTK is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "VEGFA",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCL2",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL2 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GPT",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CP",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CP is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SMAD3",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD3 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "RHOA",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHOA is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "BRAF",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNNT2",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNT2 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNA17",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA17 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNA2",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA2 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "F10",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F10 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT19",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT19 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MSLN",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSLN is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MPO",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPO is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSG2",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSG2 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEACAM3",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM3 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACE",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TPO",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPO is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "DUX4",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DUX4 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEACAM7",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM7 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "EDN1",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDN1 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD274",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CMPK1",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMPK1 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALB",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PCLAF",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCLAF is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHKB",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKB is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ART4",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ART4 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "C4A",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C4A is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD163",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD163 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "AGT",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL2",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "LCT",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCT is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHKA",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKA is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PROS1",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROS1 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNF",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "BTG3",
+      "target": "Cardiac Tamponade (CARDIAC_TAMPONADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTG3 is associated with Cardiac Tamponade (CARDIAC_TAMPONADE). Open Targets association score 0.00"
+    }
+  ]
+}

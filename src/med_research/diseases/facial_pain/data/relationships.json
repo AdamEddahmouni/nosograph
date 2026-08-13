@@ -1,0 +1,46 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201574",
+      "target": "SNAP25",
+      "type": "TARGETS",
+      "description": "ONABOTULINUMTOXINA targets SNAP25."
+    },
+    {
+      "source": "CHEMBL294199",
+      "target": "TRPV1",
+      "type": "TARGETS",
+      "description": "CAPSAICIN targets TRPV1."
+    },
+    {
+      "source": "CHEMBL118",
+      "target": "PTGS2",
+      "type": "TARGETS",
+      "description": "CELECOXIB targets PTGS2."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "SNAP25",
+      "target": "facial pain (FACIAL_PAIN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNAP25 is associated with facial pain (FACIAL_PAIN). Open Targets association score 0.07"
+    },
+    {
+      "source": "PTGS2",
+      "target": "facial pain (FACIAL_PAIN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with facial pain (FACIAL_PAIN). Open Targets association score 0.07"
+    },
+    {
+      "source": "TRPV1",
+      "target": "facial pain (FACIAL_PAIN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV1 is associated with facial pain (FACIAL_PAIN). Open Targets association score 0.07"
+    }
+  ]
+}

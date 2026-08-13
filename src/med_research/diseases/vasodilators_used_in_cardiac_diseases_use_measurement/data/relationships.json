@@ -1,0 +1,394 @@
+{
+  "relationships": [
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RNF213",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "RNF213 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TCF21",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF21 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ADAMTS7",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS7 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "TRAFD1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAFD1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "TRAFD1",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAFD1 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "OAS2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "OAS2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "FLT1",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "FLT1 is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "CYP17A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP17A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "IRX1",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRX1 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "APOB",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "PCSK9",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "FDX1",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FDX1 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "RNF213",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF213 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "FLT1",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT1 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "HECTD4",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HECTD4 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "LPA",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "PTPN11",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "TCF21",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF21 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "EDNRA",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRA is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "TRAFD1",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAFD1 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "VAMP8",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VAMP8 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "ALDH2",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDH2 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "CUX2",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUX2 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "FAM222A",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM222A is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "CDKN2B",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2B is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "CCDC63",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC63 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "CFAP73",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFAP73 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "RPH3A",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPH3A is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "AS3MT",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AS3MT is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "DDI1",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDI1 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.27"
+    },
+    {
+      "source": "ADAMTS7",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS7 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.26"
+    },
+    {
+      "source": "ATP2B1",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP2B1 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.26"
+    },
+    {
+      "source": "SLC22A3",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A3 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.26"
+    },
+    {
+      "source": "MYL2",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYL2 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.24"
+    },
+    {
+      "source": "PHACTR1",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHACTR1 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.23"
+    },
+    {
+      "source": "PLG",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLG is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.22"
+    },
+    {
+      "source": "TTC32",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC32 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.22"
+    },
+    {
+      "source": "ATP2A2",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP2A2 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.21"
+    },
+    {
+      "source": "GGCX",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGCX is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.20"
+    },
+    {
+      "source": "NT5C2",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NT5C2 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.20"
+    },
+    {
+      "source": "ABHD2",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABHD2 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.19"
+    },
+    {
+      "source": "CNNM2",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNNM2 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.17"
+    },
+    {
+      "source": "PDGFD",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFD is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.16"
+    },
+    {
+      "source": "RDX",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RDX is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.12"
+    },
+    {
+      "source": "TPCN1",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPCN1 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.10"
+    },
+    {
+      "source": "PHETA1",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHETA1 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.10"
+    },
+    {
+      "source": "MAT2A",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAT2A is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.08"
+    },
+    {
+      "source": "TWIST1",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TWIST1 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.08"
+    },
+    {
+      "source": "OAS2",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OAS2 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.07"
+    },
+    {
+      "source": "TBC1D7",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D7 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.07"
+    },
+    {
+      "source": "GFOD1",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFOD1 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.07"
+    },
+    {
+      "source": "RPL6",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL6 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.05"
+    },
+    {
+      "source": "DYNC2H1",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYNC2H1 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.04"
+    },
+    {
+      "source": "HDAC9",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC9 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.04"
+    },
+    {
+      "source": "VAMP5",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VAMP5 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.04"
+    },
+    {
+      "source": "ENDOV",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENDOV is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.03"
+    },
+    {
+      "source": "DTX1",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DTX1 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.03"
+    },
+    {
+      "source": "MATN3",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MATN3 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.03"
+    },
+    {
+      "source": "CYP17A1",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP17A1 is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.02"
+    },
+    {
+      "source": "MFSD13A",
+      "target": "Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFSD13A is associated with Vasodilators used in cardiac diseases use measurement (VASODILATORS_USED_IN_CARDIAC_DISEASES_USE_MEASUREMENT). Open Targets association score 0.02"
+    }
+  ]
+}

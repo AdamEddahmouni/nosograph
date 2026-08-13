@@ -52,6 +52,7 @@ CAR_T_SCORES = {
         "MT-ND6": 4.0,
         "NDUFA1": 4.0,
         "NDUFA10": 4.0,
+        "NDUFA11": 4.0,
         "NDUFA12": 4.0,
         "NDUFA13": 4.0,
         "NDUFA2": 4.0,

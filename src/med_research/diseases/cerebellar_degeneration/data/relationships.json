@@ -1,0 +1,496 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CASP1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CASP3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CACNA1A",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1A is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "C9orf72",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C9orf72 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PARP1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "PARP1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL11A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL11A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GAD2",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GAD2 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "BMPER",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMPER is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "CASP1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "PYCARD",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "PYCARD is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PYCARD",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "PYCARD is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AGTPBP1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGTPBP1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "BTG3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "BTG3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "EPB41L3",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPB41L3 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.24"
+    },
+    {
+      "source": "TRIM21",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM21 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "PARP1",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARP1 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "CALR",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALR is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDR2",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDR2 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.02"
+    },
+    {
+      "source": "COL11A2",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL11A2 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.02"
+    },
+    {
+      "source": "ATXN7",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATXN7 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.02"
+    },
+    {
+      "source": "ATXN3",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATXN3 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.02"
+    },
+    {
+      "source": "C9orf72",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C9orf72 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.02"
+    },
+    {
+      "source": "CERS2",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CERS2 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.02"
+    },
+    {
+      "source": "NLRP3",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "RO60",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RO60 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRND",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRND is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "SETX",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETX is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "SSB",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSB is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPT",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPT is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOX1",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX1 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNX14",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNX14 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CASK",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASK is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "DPYSL5",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPYSL5 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATXN1",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATXN1 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGF1",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "BMPER",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMPER is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALKBH7",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALKBH7 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PKN1",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKN1 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRH",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRH is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD8A",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CASP3",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP3 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNG",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZIC4",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZIC4 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CACNA1A",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1A is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRIM32",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM32 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "KCNC3",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNC3 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "GAD2",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAD2 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRIM9",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM9 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRIM67",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM67 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLPPR5",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLPPR5 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGLON5",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGLON5 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERBB2",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNPH",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNPH is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKCG",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCG is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "DNER",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNER is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYBL2",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYBL2 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "APC",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CASP1",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP1 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "RLN3",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RLN3 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "H3C14",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C14 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "NBR1",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBR1 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "AGTPBP1",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGTPBP1 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC25A12",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A12 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "STS",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STS is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL2",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGFR1",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZNF146",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF146 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "HAX1",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAX1 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "BTG3",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTG3 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "BRAF",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PYCARD",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PYCARD is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC16",
+      "target": "cerebellar degeneration (CEREBELLAR_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC16 is associated with cerebellar degeneration (CEREBELLAR_DEGENERATION). Open Targets association score 0.01"
+    }
+  ]
+}

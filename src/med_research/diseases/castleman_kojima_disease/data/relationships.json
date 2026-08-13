@@ -1,0 +1,490 @@
+{
+  "relationships": [
+    {
+      "source": "LYN",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LYN is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "C9orf72",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C9orf72 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "SLC4A1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC4A1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "IL18BP",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18BP is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "MEFV",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "MEFV is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "MAP2K2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RASA3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASA3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "TNIP1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "TNIP1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "LAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "UNC93B1",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "UNC93B1 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTA",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTA is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTB",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTB is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "ABCB4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "MAP2K2",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K2 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.33"
+    },
+    {
+      "source": "RUNX1",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.27"
+    },
+    {
+      "source": "KMT2B",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2B is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.11"
+    },
+    {
+      "source": "AR",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.11"
+    },
+    {
+      "source": "ARID2",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID2 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.11"
+    },
+    {
+      "source": "MPEG1",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPEG1 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.11"
+    },
+    {
+      "source": "TCF3",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF3 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.11"
+    },
+    {
+      "source": "SPTA1",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "ANK1",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "GATA1",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA1 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "LTA",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTA is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "LYN",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYN is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "TET2",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "IKZF1",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFKB2",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "LTB",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTB is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZFPM1",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFPM1 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "CXCR2",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR2 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "C9orf72",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C9orf72 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC4A1",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC4A1 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNIP1",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNIP1 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNF",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPTB",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTB is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "AHSP",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSP is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "ASAH1",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASAH1 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "ABCB4",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB4 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "LGMN",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGMN is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL2RG",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RG is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "WAS",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WAS is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "FLT3",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "LAT",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAT is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXP3",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "FECH",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FECH is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "TTC7A",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC7A is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "TPI1",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPI1 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "LDHA",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDHA is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "GPI",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPI is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "FASLG",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "UNC93B1",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UNC93B1 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "SH2B3",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2B3 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "BNIP3L",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BNIP3L is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "RASA3",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASA3 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPI1",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPI1 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZC3H12A",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZC3H12A is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "JAK3",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "SAMD9L",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAMD9L is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "STEAP3",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STEAP3 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "JAK2",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "EPB42",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPB42 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "MEFV",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEFV is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLCD1",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCD1 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL18BP",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18BP is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "ARID4A",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID4A is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKDC",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKDC is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "NCKAP1L",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCKAP1L is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFNG",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "HPRT1",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPRT1 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "NBEAL2",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBEAL2 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "COG6",
+      "target": "Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COG6 is associated with Castleman-Kojima disease (CASTLEMAN_KOJIMA_DISEASE). Open Targets association score 0.04"
+    }
+  ]
+}

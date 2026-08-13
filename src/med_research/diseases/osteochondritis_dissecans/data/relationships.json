@@ -1,0 +1,508 @@
+{
+  "relationships": [
+    {
+      "source": "PLCG2",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLCG2 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "C1QTNF3",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF3 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "C1QTNF3-AMACR",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF3-AMACR is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "COL11A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL11A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL1A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL1A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL9A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL9A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL1RN",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1RN is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "THRA",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THRA is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "ZAP70",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ZAP70 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "THRA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "THRA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "MYD88",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MYD88 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "C1QTNF3",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF3 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "C1QTNF3-AMACR",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF3-AMACR is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "HIF1A",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "HIF1A is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "LRP5",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP5 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ACAN",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACAN is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.71"
+    },
+    {
+      "source": "PHEX",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHEX is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.06"
+    },
+    {
+      "source": "ENPP1",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENPP1 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.06"
+    },
+    {
+      "source": "ANKH",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKH is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.06"
+    },
+    {
+      "source": "TNF",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.06"
+    },
+    {
+      "source": "COL1A1",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A1 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.06"
+    },
+    {
+      "source": "BGN",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BGN is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.06"
+    },
+    {
+      "source": "MMP9",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRG4",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRG4 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL11A1",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL11A1 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ANO5",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANO5 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ATN1",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATN1 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CYGB",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYGB is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.05"
+    },
+    {
+      "source": "LNPK",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LNPK is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.05"
+    },
+    {
+      "source": "MMP3",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP3 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL9A1",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL9A1 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGR",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGR is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL2A1",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "INPP4B",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INPP4B is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL1A2",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A2 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLS3",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLS3 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZAP70",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZAP70 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TBX4",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX4 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "THRA",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THRA is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "UBE2G1",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBE2G1 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "HSPG2",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPG2 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PHOSPHO1",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHOSPHO1 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "EPYC",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPYC is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PPIB",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIB is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MYD88",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYD88 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MATN3",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MATN3 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL1RN",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1RN is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TMEM178A",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM178A is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRRK1",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRK1 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAPT",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPT is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRP5",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP5 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "COMP",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COMP is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PALS2",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PALS2 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ERRFI1",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERRFI1 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "HIF1A",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF1A is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC26A2",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC26A2 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "NID2",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NID2 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SH3BP2",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3BP2 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "NUDT7",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUDT7 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CHSY1",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHSY1 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "C1QTNF3-AMACR",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1QTNF3-AMACR is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "C1QTNF3",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1QTNF3 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SOD3",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD3 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF11B is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "AKR1A1",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKR1A1 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TIA1",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIA1 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFITM5",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFITM5 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.03"
+    },
+    {
+      "source": "MMP2",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.03"
+    },
+    {
+      "source": "DMP1",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMP1 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PECAM1",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PECAM1 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.03"
+    },
+    {
+      "source": "FMOD",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMOD is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SMPD3",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMPD3 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PLCG2",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCG2 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PAPSS2",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAPSS2 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PDCD1",
+      "target": "osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with osteochondritis dissecans (OSTEOCHONDRITIS_DISSECANS). Open Targets association score 0.03"
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+{
+  "relationships": [
+    {
+      "source": "FGF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FOXF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FOXF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ADAMTS17",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS17 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "BMP4",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP4 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "JAG1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "JAG1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "TDRD7",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "TDRD7 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "LTBP2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "LTBP2",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP2 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LMX1B",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "LMX1B is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "CYP1B1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP1B1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ADAMTS17",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS17 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.73"
+    },
+    {
+      "source": "FOXE3",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXE3 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.07"
+    },
+    {
+      "source": "FOXC1",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.07"
+    },
+    {
+      "source": "PAX6",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX6 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.06"
+    },
+    {
+      "source": "CRYGD",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYGD is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.06"
+    },
+    {
+      "source": "HSF4",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSF4 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "CRYGC",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYGC is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "NHS",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NHS is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "CRYAA",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYAA is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "TRPM3",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPM3 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZEB1",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "CRYBB2",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYBB2 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL4A1",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A1 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.05"
+    },
+    {
+      "source": "VAV2",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VAV2 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "SIPA1L3",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIPA1L3 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "LMX1B",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMX1B is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "PITX2",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX2 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CRYGB",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYGB is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "GJA3",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA3 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "TDRD7",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TDRD7 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CRYGS",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYGS is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "BCAR3",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCAR3 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "FREM2",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FREM2 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CUBN",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUBN is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXC2",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC2 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYP1B1",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP1B1 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXF2",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXF2 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "LGR4",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGR4 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "BMP4",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP4 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "LTBP2",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTBP2 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "UBE3B",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBE3B is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGF9",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF9 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "AHSG",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSG is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "LIM2",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIM2 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CPOX",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPOX is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "GPNMB",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPNMB is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "JAG1",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAG1 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "PANK4",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PANK4 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "LCTL",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCTL is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "TYRP1",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYRP1 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "NCOA6",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOA6 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "MSX2",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSX2 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "MYO10",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO10 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "PXDN",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PXDN is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZNF597",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF597 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "TSSK4",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSSK4 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "GJA8",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA8 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "NUP37",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUP37 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRSS56",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRSS56 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SPRY4",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPRY4 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ACADSB",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACADSB is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "TEX2",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TEX2 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "TPM2",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPM2 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "TBCE",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBCE is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD7",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD7 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZNF182",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF182 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "FAM216A",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM216A is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ABCD1",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCD1 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SORD",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORD is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.03"
+    },
+    {
+      "source": "HERC1",
+      "target": "Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HERC1 is associated with Weill-Marchesani 4 syndrome, recessive (WEILL_MARCHESANI_4_SYNDROME_RECESSIVE). Open Targets association score 0.03"
+    }
+  ]
+}

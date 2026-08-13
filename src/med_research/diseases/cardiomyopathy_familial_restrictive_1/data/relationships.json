@@ -1,0 +1,418 @@
+{
+  "relationships": [
+    {
+      "source": "RYR2",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "RYR2 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "SCN5A",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "SCN5A is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "C10orf71",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C10orf71 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ADAMTS6",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS6 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ITGB3",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB3 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MRGPRD",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "MRGPRD is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "ITGB3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNNI3",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNI3 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.78"
+    },
+    {
+      "source": "CRYAB",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYAB is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.34"
+    },
+    {
+      "source": "DNAAF3",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAAF3 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.15"
+    },
+    {
+      "source": "MYL3",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYL3 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.11"
+    },
+    {
+      "source": "MYBPC3",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYBPC3 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.08"
+    },
+    {
+      "source": "MYH6",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH6 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.07"
+    },
+    {
+      "source": "DES",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DES is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.07"
+    },
+    {
+      "source": "RBM20",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM20 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.07"
+    },
+    {
+      "source": "SCN5A",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN5A is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.07"
+    },
+    {
+      "source": "IRX4",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRX4 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.07"
+    },
+    {
+      "source": "CASQ2",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASQ2 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.07"
+    },
+    {
+      "source": "TTN",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTN is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "NEXN",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEXN is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "XIRP1",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XIRP1 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "DSG2",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSG2 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "RYR2",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYR2 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "TNNC1",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNC1 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "NKX2-5",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-5 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "CSRP3",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSRP3 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "LMNA",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNA is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "SGCD",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCD is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "ITGB3",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB3 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "HEY2",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEY2 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "GAA",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAA is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "IER3",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IER3 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYLK3",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYLK3 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYH10",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH10 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "NPPA",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPA is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "MRGPRD",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRGPRD is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "LMOD2",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMOD2 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "LRRC10",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRC10 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "CTNNA3",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNA3 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "ALPK3",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPK3 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADAMTS6",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS6 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYPN",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYPN is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "TEAD1",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TEAD1 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "PDLIM5",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDLIM5 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "C10orf71",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C10orf71 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "HDAC9",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC9 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "TRIM63",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM63 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZNF416",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF416 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "TBX20",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX20 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "A1CF",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "A1CF is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "ANK2",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK2 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "DSC2",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSC2 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "LAMP2",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMP2 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "GLA",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLA is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "PPP1R13L",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R13L is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "MYOZ2",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYOZ2 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "ASXL3",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL3 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "EGFR",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "KRAS",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "ECSIT",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ECSIT is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "MYL2",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYL2 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "LEMD2",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEMD2 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC8A1",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC8A1 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "HEXIM1",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEXIM1 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "CAP2",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAP2 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "CAV1",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAV1 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "RPSA2",
+      "target": "cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPSA2 is associated with cardiomyopathy, familial restrictive, 1 (CARDIOMYOPATHY_FAMILIAL_RESTRICTIVE_1). Open Targets association score 0.04"
+    }
+  ]
+}

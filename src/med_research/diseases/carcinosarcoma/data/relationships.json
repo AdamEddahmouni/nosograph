@@ -1,0 +1,574 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL53463",
+      "target": "TOP2A",
+      "type": "TARGETS",
+      "description": "DOXORUBICIN targets TOP2A."
+    },
+    {
+      "source": "CHEMBL3137343",
+      "target": "PDCD1",
+      "type": "TARGETS",
+      "description": "PEMBROLIZUMAB targets PDCD1."
+    },
+    {
+      "source": "CHEMBL2108738",
+      "target": "PDCD1",
+      "type": "TARGETS",
+      "description": "NIVOLUMAB targets PDCD1."
+    },
+    {
+      "source": "CHEMBL521686",
+      "target": "PARP2",
+      "type": "TARGETS",
+      "description": "OLAPARIB targets PARP2."
+    },
+    {
+      "source": "CHEMBL521686",
+      "target": "PARP3",
+      "type": "TARGETS",
+      "description": "OLAPARIB targets PARP3."
+    },
+    {
+      "source": "CHEMBL521686",
+      "target": "PARP1",
+      "type": "TARGETS",
+      "description": "OLAPARIB targets PARP1."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PARP1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "PARP1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PARP2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "PARP2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PARP3",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "PARP3 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP7",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP7 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSHR",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TSHR is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "MPL",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPL is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MET",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EGFR",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CREBBP",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "GNAS",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAS is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SETD2",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD2 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2D",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTCH1",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR1",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NOTCH2",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH2 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TSC2",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SUFU",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUFU is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATM",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2A",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2A is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "TP53",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "KRAS",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "NRAS",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "KMT2C",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "TSHR",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSHR is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "APC",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PDCD1",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "PARP1",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARP1 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "TOP2A",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOP2A is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PARP3",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARP3 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PARP2",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARP2 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "TRIM24",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM24 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "ERBB2",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "KIT",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TACSTD2",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TACSTD2 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "RGN",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RGN is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "LETMD1",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LETMD1 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MMP7",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP7 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MTOR",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "EPCAM",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPCAM is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "HMGA1",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGA1 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PAX8",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX8 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "FOXA1",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXA1 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD274",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "FGFR2",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTEN",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SMARCB1",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCB1 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDH1",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "LDHA",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDHA is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ARID1B",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1B is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "XRCC2",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XRCC2 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GSDMB",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ESR1",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PRKCA",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCA is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MKI67",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SOX17",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX17 is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VIM",
+      "target": "carcinosarcoma (CARCINOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIM is associated with carcinosarcoma (CARCINOSARCOMA). Open Targets association score 0.01"
+    }
+  ]
+}

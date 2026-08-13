@@ -1,0 +1,496 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL578",
+      "target": "ACE",
+      "type": "TARGETS",
+      "description": "ENALAPRIL targets ACE."
+    },
+    {
+      "source": "CHEMBL1016",
+      "target": "AGTR1",
+      "type": "TARGETS",
+      "description": "CANDESARTAN targets AGTR1."
+    },
+    {
+      "source": "CHEMBL2051955",
+      "target": "TNNI3",
+      "type": "TARGETS",
+      "description": "LEVOSIMENDAN targets TNNI3."
+    },
+    {
+      "source": "APLN",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "APLN is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "F2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FGG",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGG is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "SELP",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELP is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "ACE2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGTR1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGTR1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "REN",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "REN is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "F11",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F11 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.44"
+    },
+    {
+      "source": "F2",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F2 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.43"
+    },
+    {
+      "source": "PROS1",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROS1 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.38"
+    },
+    {
+      "source": "GRK5",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRK5 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.34"
+    },
+    {
+      "source": "F5",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F5 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.34"
+    },
+    {
+      "source": "TSPAN15",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSPAN15 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.30"
+    },
+    {
+      "source": "FGG",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGG is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.29"
+    },
+    {
+      "source": "ABO",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABO is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.18"
+    },
+    {
+      "source": "SLC44A2",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC44A2 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.15"
+    },
+    {
+      "source": "UQCC1",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UQCC1 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.08"
+    },
+    {
+      "source": "NPPB",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPB is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.07"
+    },
+    {
+      "source": "MSTN",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSTN is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.04"
+    },
+    {
+      "source": "MUC16",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC16 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.03"
+    },
+    {
+      "source": "NBR1",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBR1 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.03"
+    },
+    {
+      "source": "FAM83C",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM83C is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CEP250",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEP250 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ACE2",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE2 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLC19A2",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC19A2 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.02"
+    },
+    {
+      "source": "NPPA",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPA is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.02"
+    },
+    {
+      "source": "FGA",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGA is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.02"
+    },
+    {
+      "source": "EDN1",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDN1 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ACE",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.02"
+    },
+    {
+      "source": "SERPINA1",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA1 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.02"
+    },
+    {
+      "source": "JUNB",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JUNB is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "FOS",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOS is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "FOSB",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOSB is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZNF185",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF185 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "JUND",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JUND is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "JUN",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JUN is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALB",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGF2",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF2 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "AGT",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS3",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTLA4",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTLA4 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOD2",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOD2 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNNI3",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNI3 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "APLN",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APLN is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "AQP2",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP2 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SERPINC1",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINC1 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SCUBE1",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCUBE1 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "GZMB",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GZMB is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ASAH1",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASAH1 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "REN",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REN is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLAT",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAT is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SELP",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELP is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "AGTR1",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGTR1 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SGCB",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCB is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "VWF",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CAMK1",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMK1 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL10",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKCA",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCA is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHRNA3",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHRNA3 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHRNA5",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHRNA5 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAS1",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAS1 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIR",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIR is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHRNB4",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHRNB4 is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    },
+    {
+      "source": "FAS",
+      "target": "cor pulmonale (COR_PULMONALE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with cor pulmonale (COR_PULMONALE). Open Targets association score 0.01"
+    }
+  ]
+}

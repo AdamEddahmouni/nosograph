@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "ULK4",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "ULK4 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "ARRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "ARRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "FGF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SLC4A4",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC4A4 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "COL17A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL17A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "BMP2K",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP2K is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "ITGA6",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA6 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "MAPK10",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK10 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TPH1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "TPH1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TPH2",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "TPH2 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "ITGA6",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA6 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGM2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "CYP27B1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP27B1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "NPHS1",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHS1 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.58"
+    },
+    {
+      "source": "CTSK",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSK is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.11"
+    },
+    {
+      "source": "LRFN3",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRFN3 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "GHRL",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHRL is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "FGF9",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF9 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FOXC1",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ULK4",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ULK4 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOX2",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX2 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PYGO1",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PYGO1 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB1",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BGLAP",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BGLAP is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGF1",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GH1",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AMBN",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMBN is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BMP2K",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP2K is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGM2",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM2 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GGH",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGH is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ENAM",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENAM is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PITX2",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX2 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCK",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCK is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PAPPA",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAPPA is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TBC1D22A",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D22A is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTH",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTH is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACP4",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACP4 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC4A4",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC4A4 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PAK2",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAK2 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "COG6",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COG6 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CELSR1",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR1 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "AMELX",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMELX is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "COL17A1",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL17A1 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ASCL5",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASCL5 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FOSB",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOSB is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "HYCC1",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HYCC1 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALB",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "WDR72",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR72 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TPH1",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPH1 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "JUN",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JUN is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "HCCS",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HCCS is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FOSL2",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOSL2 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TPH2",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPH2 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FOS",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOS is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "JUNB",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JUNB is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ZNF185",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF185 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "JUND",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JUND is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SP6",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SP6 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MACROD2",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MACROD2 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PEX1",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PEX1 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTPRD",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRD is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPK10",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK10 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "DLX3",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLX3 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ITGA6",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA6 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "LAMA3",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMA3 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "LAMB3",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMB3 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PEX6",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PEX6 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ARRB1",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARRB1 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYP27B1",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP27B1 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MTOR",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "VDR",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VDR is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPY",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPY is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "LAMC2",
+      "target": "Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMC2 is associated with Dental enamel hypoplasia (DENTAL_ENAMEL_HYPOPLASIA). Open Targets association score 0.00"
+    }
+  ]
+}

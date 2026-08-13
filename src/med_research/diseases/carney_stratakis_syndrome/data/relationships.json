@@ -1,0 +1,382 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL572881",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "MOTESANIB targets KIT."
+    },
+    {
+      "source": "CHEMBL572881",
+      "target": "PDGFRA",
+      "type": "TARGETS",
+      "description": "MOTESANIB targets PDGFRA."
+    },
+    {
+      "source": "CHEMBL572881",
+      "target": "RET",
+      "type": "TARGETS",
+      "description": "MOTESANIB targets RET."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MSH2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL19A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL19A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "NLRP6",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP6 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "ACE2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "SMAD4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "NLRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "SDHB",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDHB is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.80"
+    },
+    {
+      "source": "SDHD",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDHD is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.76"
+    },
+    {
+      "source": "SDHC",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDHC is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.73"
+    },
+    {
+      "source": "TP53",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.42"
+    },
+    {
+      "source": "TMEM127",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM127 is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.37"
+    },
+    {
+      "source": "VHL",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VHL is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.37"
+    },
+    {
+      "source": "APC",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "RET",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "STK11",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PTEN",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "RB1",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CDX2",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDX2 is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "MEN1",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SMAD4",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD4 is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CFTR",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFTR is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "MSH2",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH2 is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NF1",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "KIT",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FEM1A",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FEM1A is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TGFB1",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL19A1",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL19A1 is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PGLYRP1",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGLYRP1 is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PGLYRP4",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGLYRP4 is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PGLYRP2",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGLYRP2 is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PGLYRP3",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGLYRP3 is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "MUC2",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC2 is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "NLRP6",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP6 is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNK1",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNK1 is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MUC13",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC13 is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "B3GNT6",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B3GNT6 is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ACE2",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE2 is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TRPV5",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV5 is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "POLE",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ANXA1",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANXA1 is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FNDC4",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FNDC4 is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SORD",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORD is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SARDH",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SARDH is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SDS",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDS is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "AASS",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AASS is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "MPZ",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPZ is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SDHA",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDHA is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "BRAF",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "KIF1B",
+      "target": "Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF1B is associated with Carney-Stratakis syndrome (CARNEY_STRATAKIS_SYNDROME). Open Targets association score 0.00"
+    }
+  ]
+}

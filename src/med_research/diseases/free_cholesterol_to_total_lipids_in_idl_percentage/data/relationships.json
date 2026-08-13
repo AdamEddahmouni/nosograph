@@ -1,0 +1,436 @@
+{
+  "relationships": [
+    {
+      "source": "ATRAID",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRAID is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL3 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL4 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "NAT2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NAT2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.52"
+    },
+    {
+      "source": "LDLR",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.52"
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL3 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.52"
+    },
+    {
+      "source": "APOA5",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.52"
+    },
+    {
+      "source": "PCSK9",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.49"
+    },
+    {
+      "source": "TRIB1",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIB1 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.47"
+    },
+    {
+      "source": "APOE",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.46"
+    },
+    {
+      "source": "AHSG",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSG is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.46"
+    },
+    {
+      "source": "MLXIPL",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLXIPL is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.46"
+    },
+    {
+      "source": "SORT1",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORT1 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.46"
+    },
+    {
+      "source": "LIPC",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.45"
+    },
+    {
+      "source": "CELSR2",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR2 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.45"
+    },
+    {
+      "source": "FADS2",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS2 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.44"
+    },
+    {
+      "source": "LPA",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.44"
+    },
+    {
+      "source": "PLTP",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLTP is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.44"
+    },
+    {
+      "source": "APOC3",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC3 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.43"
+    },
+    {
+      "source": "ZPR1",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZPR1 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.42"
+    },
+    {
+      "source": "PGS1",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGS1 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.41"
+    },
+    {
+      "source": "TMEM121",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM121 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.41"
+    },
+    {
+      "source": "PLG",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLG is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.41"
+    },
+    {
+      "source": "NAT2",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAT2 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.40"
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL4 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.39"
+    },
+    {
+      "source": "GCKR",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.39"
+    },
+    {
+      "source": "PCSK6",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK6 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.37"
+    },
+    {
+      "source": "RSPO3",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO3 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.36"
+    },
+    {
+      "source": "APOB",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.36"
+    },
+    {
+      "source": "CPT1A",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPT1A is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.35"
+    },
+    {
+      "source": "CRIP2",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRIP2 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.35"
+    },
+    {
+      "source": "ADH1B",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADH1B is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.32"
+    },
+    {
+      "source": "TRMT10A",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRMT10A is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.30"
+    },
+    {
+      "source": "BAZ1B",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAZ1B is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.30"
+    },
+    {
+      "source": "LCAT",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCAT is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.29"
+    },
+    {
+      "source": "AP5B1",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AP5B1 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.29"
+    },
+    {
+      "source": "ABCA6",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA6 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.28"
+    },
+    {
+      "source": "PAFAH1B2",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAFAH1B2 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATRAID",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRAID is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.28"
+    },
+    {
+      "source": "APOA1",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.27"
+    },
+    {
+      "source": "SUGP1",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUGP1 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.27"
+    },
+    {
+      "source": "FRMD5",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FRMD5 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.26"
+    },
+    {
+      "source": "SEC16A",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEC16A is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.26"
+    },
+    {
+      "source": "FZD9",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FZD9 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.25"
+    },
+    {
+      "source": "SIPA1",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIPA1 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.25"
+    },
+    {
+      "source": "OVOL1",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OVOL1 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.24"
+    },
+    {
+      "source": "PPARG",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.24"
+    },
+    {
+      "source": "POC5",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POC5 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.24"
+    },
+    {
+      "source": "VEGFA",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.24"
+    },
+    {
+      "source": "POLK",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLK is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.23"
+    },
+    {
+      "source": "PRAG1",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRAG1 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.23"
+    },
+    {
+      "source": "PSRC1",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSRC1 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.23"
+    },
+    {
+      "source": "FADS1",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS1 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.22"
+    },
+    {
+      "source": "AFF1",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFF1 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.22"
+    },
+    {
+      "source": "BUD13",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUD13 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.22"
+    },
+    {
+      "source": "JMJD1C",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JMJD1C is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.21"
+    },
+    {
+      "source": "NYAP2",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NYAP2 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.21"
+    },
+    {
+      "source": "ABO",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABO is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.21"
+    },
+    {
+      "source": "PINX1",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PINX1 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.20"
+    },
+    {
+      "source": "MTA1",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTA1 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.20"
+    },
+    {
+      "source": "SLC18A1",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC18A1 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.20"
+    },
+    {
+      "source": "PDXDC1",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDXDC1 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.19"
+    },
+    {
+      "source": "MFHAS1",
+      "target": "free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFHAS1 is associated with free cholesterol to total lipids in IDL percentage  (FREE_CHOLESTEROL_TO_TOTAL_LIPIDS_IN_IDL_PERCENTAGE). Open Targets association score 0.18"
+    }
+  ]
+}

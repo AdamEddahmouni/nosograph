@@ -1,0 +1,472 @@
+{
+  "relationships": [
+    {
+      "source": "SPTLC3",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SPTLC3 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CXCL16",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL16 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "ZNF229",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF229 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATRAID",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRAID is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53BP1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53BP1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IRS1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "IRS1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL4 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CETP is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "TDRD15",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "TDRD15 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD300LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD300LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNFSF13",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "NAT2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NAT2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "LIPC",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.67"
+    },
+    {
+      "source": "LDLR",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.66"
+    },
+    {
+      "source": "PCSK9",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.66"
+    },
+    {
+      "source": "CETP",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETP is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.54"
+    },
+    {
+      "source": "APOB",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.54"
+    },
+    {
+      "source": "LPL",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.52"
+    },
+    {
+      "source": "APOA5",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.51"
+    },
+    {
+      "source": "GALNT2",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GALNT2 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.49"
+    },
+    {
+      "source": "ABCG8",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG8 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.48"
+    },
+    {
+      "source": "MLXIPL",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLXIPL is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.48"
+    },
+    {
+      "source": "BAZ1B",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAZ1B is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.46"
+    },
+    {
+      "source": "ZNF229",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF229 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.46"
+    },
+    {
+      "source": "SORT1",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORT1 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.46"
+    },
+    {
+      "source": "CD300LG",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD300LG is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.46"
+    },
+    {
+      "source": "TBL2",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBL2 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.45"
+    },
+    {
+      "source": "APOC3",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC3 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.45"
+    },
+    {
+      "source": "LPA",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.44"
+    },
+    {
+      "source": "CELSR2",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR2 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.44"
+    },
+    {
+      "source": "ABCA6",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA6 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.43"
+    },
+    {
+      "source": "APOE",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.43"
+    },
+    {
+      "source": "GCKR",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.42"
+    },
+    {
+      "source": "NECTIN2",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NECTIN2 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.42"
+    },
+    {
+      "source": "LCAT",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCAT is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.41"
+    },
+    {
+      "source": "ZPR1",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZPR1 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.40"
+    },
+    {
+      "source": "SPTLC3",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTLC3 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.40"
+    },
+    {
+      "source": "TTC39B",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC39B is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.40"
+    },
+    {
+      "source": "PLG",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLG is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.39"
+    },
+    {
+      "source": "PINX1",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PINX1 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.39"
+    },
+    {
+      "source": "TP53BP1",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53BP1 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.35"
+    },
+    {
+      "source": "IRS1",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRS1 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.35"
+    },
+    {
+      "source": "CXCL16",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL16 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.35"
+    },
+    {
+      "source": "TNFSF13",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.34"
+    },
+    {
+      "source": "ATRAID",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRAID is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.33"
+    },
+    {
+      "source": "TRIB1",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIB1 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.33"
+    },
+    {
+      "source": "GPAM",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPAM is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.33"
+    },
+    {
+      "source": "FADS2",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS2 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.33"
+    },
+    {
+      "source": "SLC22A4",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A4 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.33"
+    },
+    {
+      "source": "PGS1",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGS1 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.32"
+    },
+    {
+      "source": "TAGLN",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAGLN is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.31"
+    },
+    {
+      "source": "PCNX3",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNX3 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.31"
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL4 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.31"
+    },
+    {
+      "source": "APOA1",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.31"
+    },
+    {
+      "source": "RNF111",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF111 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.30"
+    },
+    {
+      "source": "GATA4",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA4 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.30"
+    },
+    {
+      "source": "ZNF112",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF112 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.30"
+    },
+    {
+      "source": "TDRD15",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TDRD15 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.30"
+    },
+    {
+      "source": "JMJD1C",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JMJD1C is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.30"
+    },
+    {
+      "source": "C19orf38",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C19orf38 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.29"
+    },
+    {
+      "source": "PPP1R3B",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R3B is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.29"
+    },
+    {
+      "source": "NAT2",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAT2 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.28"
+    },
+    {
+      "source": "DOCK7",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK7 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.28"
+    },
+    {
+      "source": "PAFAH1B2",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAFAH1B2 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.28"
+    },
+    {
+      "source": "FRMD5",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FRMD5 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.28"
+    },
+    {
+      "source": "ANKDD1B",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKDD1B is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.27"
+    },
+    {
+      "source": "TTBK2",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTBK2 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.27"
+    },
+    {
+      "source": "PCSK7",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK7 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.26"
+    },
+    {
+      "source": "ABO",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABO is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.26"
+    },
+    {
+      "source": "PCCB",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCCB is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.26"
+    },
+    {
+      "source": "RRN3",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RRN3 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.25"
+    },
+    {
+      "source": "SLC22A5",
+      "target": "triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A5 is associated with triglycerides to total lipids in medium LDL percentage  (TRIGLYCERIDES_TO_TOTAL_LIPIDS_IN_MEDIUM_LDL_PERCENTAGE). Open Targets association score 0.25"
+    }
+  ]
+}

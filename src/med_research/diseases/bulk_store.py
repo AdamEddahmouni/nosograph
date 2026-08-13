@@ -397,6 +397,15 @@ class OpenTargetsBulkStore:
                 f"SELECT diseaseId, COUNT(*) AS n FROM read_parquet('{assoc_glob}') GROUP BY diseaseId"
             )
             counts = {r["diseaseId"]: int(r["n"]) for r in count_rows}
+
+        drug_counts: dict[str, int] = {}
+        drug_glob = self._parquet_glob("known_drug")
+        if drug_glob:
+            drug_rows = self._query(
+                f"SELECT diseaseId, COUNT(*) AS n FROM read_parquet('{drug_glob}') GROUP BY diseaseId"
+            )
+            drug_counts = {r["diseaseId"]: int(r["n"]) for r in drug_rows}
+
         results = []
         for row in disease_rows:
             efo = row.get("id") or ""
@@ -410,7 +419,7 @@ class OpenTargetsBulkStore:
                     "efo_id": efo,
                     "name": row.get("name") or "",
                     "gene_count": n_targets,
-                    "drug_count": self.count_drugs(efo),
+                    "drug_count": drug_counts.get(efo, 0),
                 }
             )
         return results[:limit]

@@ -1,0 +1,460 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL941",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "IMATINIB targets KIT."
+    },
+    {
+      "source": "CHEMBL1201129",
+      "target": "DNMT3A",
+      "type": "TARGETS",
+      "description": "DECITABINE targets DNMT3A."
+    },
+    {
+      "source": "CHEMBL1201567",
+      "target": "CSF3R",
+      "type": "TARGETS",
+      "description": "FILGRASTIM targets CSF3R."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "SRSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SRSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "JAK1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "SOCS1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "SOCS1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MYD88",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MYD88 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "CSF3R",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3R is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.37"
+    },
+    {
+      "source": "RUNX1",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.37"
+    },
+    {
+      "source": "GATA2",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA2 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.37"
+    },
+    {
+      "source": "CEBPA",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPA is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.37"
+    },
+    {
+      "source": "TET2",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.37"
+    },
+    {
+      "source": "SRSF2",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRSF2 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.37"
+    },
+    {
+      "source": "ASXL1",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.37"
+    },
+    {
+      "source": "NRAS",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.37"
+    },
+    {
+      "source": "U2AF1",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "U2AF1 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.37"
+    },
+    {
+      "source": "IDH2",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH2 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.37"
+    },
+    {
+      "source": "DNMT3A",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT3A is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.37"
+    },
+    {
+      "source": "ZRSR2",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZRSR2 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "BCOR",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCOR is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "PHF6",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHF6 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "KDM5A",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM5A is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "ETV6",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV6 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP53",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2D",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "KIT",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "MN1",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MN1 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "TET1",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET1 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "EP300",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EP300 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "CBL",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBL is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "JAK2",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "FLT3",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "JAK3",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "NUP98",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUP98 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "SF3B1",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SF3B1 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTPN11",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "STAG2",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAG2 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "IKZF1",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2A",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2A is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "SETBP1",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETBP1 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "SH2B3",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2B3 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "KRAS",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "CALR",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALR is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "NPM1",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPM1 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "IDH1",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "CUX1",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUX1 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "NF1",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "BCORL1",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCORL1 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "EZH2",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EZH2 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "WT1",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.28"
+    },
+    {
+      "source": "KDM6A",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM6A is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.18"
+    },
+    {
+      "source": "JAK1",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK1 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.18"
+    },
+    {
+      "source": "SOCS1",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOCS1 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.18"
+    },
+    {
+      "source": "RAD21",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD21 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.18"
+    },
+    {
+      "source": "RB1",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.18"
+    },
+    {
+      "source": "RMI2",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RMI2 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.18"
+    },
+    {
+      "source": "BRAF",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.18"
+    },
+    {
+      "source": "MYD88",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYD88 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.18"
+    },
+    {
+      "source": "RUNX1T1",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1T1 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.18"
+    },
+    {
+      "source": "SETD2",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD2 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.18"
+    },
+    {
+      "source": "FBXO11",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXO11 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.18"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.18"
+    },
+    {
+      "source": "CDH1",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.18"
+    },
+    {
+      "source": "MPL",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPL is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.18"
+    },
+    {
+      "source": "MET",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.18"
+    },
+    {
+      "source": "PTEN",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.18"
+    },
+    {
+      "source": "GATA1",
+      "target": "acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA1 is associated with acute myeloid leukemia, t(3;5)(q25;q34) (ACUTE_MYELOID_LEUKEMIA_T_3_5_Q25_Q34). Open Targets association score 0.18"
+    }
+  ]
+}

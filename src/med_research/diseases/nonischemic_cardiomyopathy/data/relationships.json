@@ -1,0 +1,508 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL578",
+      "target": "ACE",
+      "type": "TARGETS",
+      "description": "ENALAPRIL targets ACE."
+    },
+    {
+      "source": "RYR2",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "RYR2 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCL5",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL5 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "DPP4",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "DPP4 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GLP1R",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GLP1R is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "PTH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "ISG15",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "ISG15 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.39"
+    },
+    {
+      "source": "BAG3",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAG3 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.36"
+    },
+    {
+      "source": "MGMT",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MGMT is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.34"
+    },
+    {
+      "source": "PRKCA",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCA is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.30"
+    },
+    {
+      "source": "CLCNKA",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCNKA is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.24"
+    },
+    {
+      "source": "PITX2",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX2 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.22"
+    },
+    {
+      "source": "MTX2",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTX2 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.22"
+    },
+    {
+      "source": "FLNC",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLNC is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.20"
+    },
+    {
+      "source": "HSPB7",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPB7 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.13"
+    },
+    {
+      "source": "SYNPO2L",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYNPO2L is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.13"
+    },
+    {
+      "source": "TTN",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTN is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "DSP",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSP is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "CCDC136",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC136 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "CLCNKB",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCNKB is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "APOH",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOH is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "FUT11",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUT11 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "CP",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CP is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "MYOZ1",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYOZ1 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "HOXD1",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD1 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "FAM131C",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM131C is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNF",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "ALAS2",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALAS2 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "DPP4",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPP4 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ISG15",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISG15 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "DSG2",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSG2 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACE",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP2",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALB",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GDF15",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF15 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSF3",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SRC",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRC is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GJA1",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA1 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MCU",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCU is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ANXA5",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANXA5 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NOS3",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GCG",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCG is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NPPB",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPB is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC25A20",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A20 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTH",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTH is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCL5",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL5 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "HGF",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "LGALS3",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CS",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CS is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "RYR2",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYR2 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GLP1R",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLP1R is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ZGLP1",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZGLP1 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "EHMT1",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EHMT1 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CPT2",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPT2 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRKCB",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCB is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAP3K14",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K14 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "AGT",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNA1",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MB",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MB is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRRT2",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRRT2 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD40LG",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC52A1",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC52A1 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "OPN3",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OPN3 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC5A2",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC5A2 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPK1",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHPT1",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHPT1 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHKA",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKA is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "FUT1",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUT1 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "EGFR",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CMPK1",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMPK1 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "XDH",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XDH is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "FRMD4B",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FRMD4B is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NR1I2",
+      "target": "nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1I2 is associated with nonischemic cardiomyopathy (NONISCHEMIC_CARDIOMYOPATHY). Open Targets association score 0.00"
+    }
+  ]
+}

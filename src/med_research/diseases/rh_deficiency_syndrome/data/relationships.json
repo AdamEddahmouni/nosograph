@@ -1,0 +1,430 @@
+{
+  "relationships": [
+    {
+      "source": "C1orf21",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C1orf21 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SLC4A1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC4A1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "SLC40A1",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC40A1 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "TFRC",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFRC is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL6ST",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6ST is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "KITLG",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KITLG is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "THOC7",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THOC7 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "C2CD4B",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "C2CD4B is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ABCB4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "RHAG",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHAG is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.76"
+    },
+    {
+      "source": "RHCE",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHCE is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.61"
+    },
+    {
+      "source": "RHD",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHD is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.38"
+    },
+    {
+      "source": "SPTA1",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "HBA2",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBA2 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "HBA1",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBA1 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "ANK1",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "AHSP",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSP is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "SLC4A1",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC4A1 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "STEAP3",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STEAP3 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "HEPH",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEPH is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "RHBDF1",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHBDF1 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "DOCK6",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK6 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "EPOR",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPOR is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "TFRC",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFRC is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "EXOC6",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EXOC6 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "LDHA",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDHA is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "TPI1",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPI1 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "SPTB",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTB is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "KIT",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "BNIP3L",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BNIP3L is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "C1orf21",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1orf21 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PPP1R15A",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R15A is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CPOX",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPOX is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TMPRSS6",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS6 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "EPB41",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPB41 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ADD2",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADD2 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ATP11C",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP11C is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL6ST",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6ST is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "THOC7",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THOC7 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CES2",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CES2 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "MRPL3",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRPL3 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "DMTN",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMTN is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLC40A1",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC40A1 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "FECH",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FECH is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRKAG1",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAG1 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "EPB42",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPB42 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TF",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "KLF1",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF1 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLC11A2",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC11A2 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "JAK2",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PKLR",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKLR is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "XPO7",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XPO7 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "HBZ",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBZ is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "C2CD4B",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C2CD4B is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "HK1",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HK1 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "KITLG",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KITLG is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "STARD13",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STARD13 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "KCNE2",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNE2 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "EPO",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPO is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "IREB2",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IREB2 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "GATA1",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA1 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TTC7A",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC7A is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "DNAJC13",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAJC13 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "UBE2D1",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBE2D1 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ABCB4",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB4 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRKAA1",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA1 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRDX2",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDX2 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "DNM2",
+      "target": "Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM2 is associated with Rh deficiency syndrome (RH_DEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    }
+  ]
+}

@@ -1,0 +1,646 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1950289",
+      "target": "MAPK8",
+      "type": "TARGETS",
+      "description": "TANZISERTIB targets MAPK8."
+    },
+    {
+      "source": "CHEMBL1950289",
+      "target": "MAPK10",
+      "type": "TARGETS",
+      "description": "TANZISERTIB targets MAPK10."
+    },
+    {
+      "source": "CHEMBL1201575",
+      "target": "ITGAL",
+      "type": "TARGETS",
+      "description": "EFALIZUMAB targets ITGAL."
+    },
+    {
+      "source": "CHEMBL4435170",
+      "target": "TYK2",
+      "type": "TARGETS",
+      "description": "DEUCRAVACITINIB targets TYK2."
+    },
+    {
+      "source": "CHEMBL1950289",
+      "target": "MAPK9",
+      "type": "TARGETS",
+      "description": "TANZISERTIB targets MAPK9."
+    },
+    {
+      "source": "CHEMBL4596392",
+      "target": "TYK2",
+      "type": "TARGETS",
+      "description": "CRAVACITINIB targets TYK2."
+    },
+    {
+      "source": "CHEMBL3545159",
+      "target": "SYK",
+      "type": "TARGETS",
+      "description": "R-333 targets SYK."
+    },
+    {
+      "source": "CHEMBL1201572",
+      "target": "TNF",
+      "type": "TARGETS",
+      "description": "ETANERCEPT targets TNF."
+    },
+    {
+      "source": "CHEMBL3137309",
+      "target": "BCL2",
+      "type": "TARGETS",
+      "description": "VENETOCLAX targets BCL2."
+    },
+    {
+      "source": "CHEMBL3545159",
+      "target": "JAK3",
+      "type": "TARGETS",
+      "description": "R-333 targets JAK3."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BLK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BLK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "SYK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "SYK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CDK13",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK13 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "NCF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NCF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C4A",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C4A is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGAL",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAL is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGAX",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAX is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT4",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT4 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "TYK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "TYK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "MAPK10",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK10 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK8",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK8 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK9",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK9 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD80",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD80 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "BTG3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "BTG3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGAL",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAL is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGAX",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAX is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR7",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR7 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF12A",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF12A is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF13B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF5",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF5 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "C2",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C2 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.46"
+    },
+    {
+      "source": "CR2",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CR2 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.37"
+    },
+    {
+      "source": "PTPN2",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN2 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.37"
+    },
+    {
+      "source": "NCF2",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCF2 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.36"
+    },
+    {
+      "source": "LIMK1",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIMK1 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.31"
+    },
+    {
+      "source": "CASTOR2",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASTOR2 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.31"
+    },
+    {
+      "source": "PTPN22",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.29"
+    },
+    {
+      "source": "GPT2",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT2 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.28"
+    },
+    {
+      "source": "BLK",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLK is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.25"
+    },
+    {
+      "source": "STAT4",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT4 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.25"
+    },
+    {
+      "source": "TNPO3",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNPO3 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.22"
+    },
+    {
+      "source": "CDK13",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK13 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.19"
+    },
+    {
+      "source": "ITGAM",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAM is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.17"
+    },
+    {
+      "source": "TYK2",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYK2 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.09"
+    },
+    {
+      "source": "IRF5",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF5 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.09"
+    },
+    {
+      "source": "TNF",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.09"
+    },
+    {
+      "source": "SYK",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYK is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.08"
+    },
+    {
+      "source": "JAK3",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.07"
+    },
+    {
+      "source": "ITGAL",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAL is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.07"
+    },
+    {
+      "source": "TNFSF13B",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13B is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.06"
+    },
+    {
+      "source": "ITGAX",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAX is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "BCL2",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAPK10",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK10 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAPK9",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK9 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAPK8",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK8 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TLR7",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR7 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "RSBN1",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSBN1 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "NCF1",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCF1 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CALR",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALR is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "BCL3",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL3 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD40LG",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TRIM21",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM21 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ICAM1",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.02"
+    },
+    {
+      "source": "PHTF1",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHTF1 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.02"
+    },
+    {
+      "source": "FAM167A",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM167A is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CRP",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNFRSF12A",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF12A is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.02"
+    },
+    {
+      "source": "DNAJA2",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAJA2 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.02"
+    },
+    {
+      "source": "SUGCT",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUGCT is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.02"
+    },
+    {
+      "source": "SSB",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSB is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.02"
+    },
+    {
+      "source": "JAK1",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK1 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IFNA1",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.02"
+    },
+    {
+      "source": "RNPC3",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNPC3 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD4",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.02"
+    },
+    {
+      "source": "FAS",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.02"
+    },
+    {
+      "source": "FCGR2A",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2A is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.02"
+    },
+    {
+      "source": "GJA1",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA1 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "RO60",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RO60 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL3RA",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL3RA is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.01 | Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC5AC",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5AC is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "HP",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HP is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "BTG3",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTG3 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MPO",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPO is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD80",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD80 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ASS1",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASS1 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB1",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCL2",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL2 is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "C4A",
+      "target": "lupus erythematosus (LUPUS_ERYTHEMATOSUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C4A is associated with lupus erythematosus (LUPUS_ERYTHEMATOSUS). Open Targets association score 0.01"
+    }
+  ]
+}

@@ -64,6 +64,7 @@ CAR_T_SCORES = {
         "FLNA": 4.0,
         "FLT4": 4.0,
         "FOXF1": 4.0,
+        "FOXH1": 4.0,
         "FOXP4": 4.0,
         "GATA4": 4.0,
         "GATA6": 4.0,

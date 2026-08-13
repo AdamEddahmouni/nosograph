@@ -50,6 +50,12 @@
     },
     {
       "source": "CHEMBL768",
+      "target": "ADRB1",
+      "type": "TARGETS",
+      "description": "ESMOLOL targets ADRB1."
+    },
+    {
+      "source": "CHEMBL768",
       "target": "ADRB2",
       "type": "TARGETS",
       "description": "ESMOLOL targets ADRB2."
@@ -113,72 +119,6 @@
       "target": "NR3C1",
       "type": "TARGETS",
       "description": "BETAMETHASONE DIPROPIONATE targets NR3C1."
-    },
-    {
-      "source": "EBF2",
-      "target": "coagulation",
-      "type": "PARTICIPATES_IN",
-      "description": "EBF2 is a component of the Coagulation Cascade pathway."
-    },
-    {
-      "source": "MMP14",
-      "target": "ecm-remodeling",
-      "type": "PARTICIPATES_IN",
-      "description": "MMP14 is a component of the ECM Remodeling pathway."
-    },
-    {
-      "source": "MMP2",
-      "target": "ecm-remodeling",
-      "type": "PARTICIPATES_IN",
-      "description": "MMP2 is a component of the ECM Remodeling pathway."
-    },
-    {
-      "source": "GLIS3",
-      "target": "hedgehog",
-      "type": "PARTICIPATES_IN",
-      "description": "GLIS3 is a component of the Hedgehog Signaling pathway."
-    },
-    {
-      "source": "FGFR2",
-      "target": "mapk-erk",
-      "type": "PARTICIPATES_IN",
-      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
-    },
-    {
-      "source": "NFATC2",
-      "target": "nfkb",
-      "type": "PARTICIPATES_IN",
-      "description": "NFATC2 is a component of the NF-κB Pathway pathway."
-    },
-    {
-      "source": "JAG1",
-      "target": "notch-signaling",
-      "type": "PARTICIPATES_IN",
-      "description": "JAG1 is a component of the Notch Signaling pathway."
-    },
-    {
-      "source": "PRTG",
-      "target": "thyroid-hormone",
-      "type": "PARTICIPATES_IN",
-      "description": "PRTG is a component of the Thyroid Hormone Signaling pathway."
-    },
-    {
-      "source": "KDR",
-      "target": "vegf-angiogenesis",
-      "type": "PARTICIPATES_IN",
-      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
-    },
-    {
-      "source": "WNT7B",
-      "target": "wnt-signaling",
-      "type": "PARTICIPATES_IN",
-      "description": "WNT7B is a component of the Wnt Signaling pathway."
-    },
-    {
-      "source": "WNT2",
-      "target": "wnt-signaling",
-      "type": "PARTICIPATES_IN",
-      "description": "WNT2 is a component of the Wnt Signaling pathway."
     },
     {
       "source": "CACNA1A",
@@ -269,6 +209,78 @@
       "target": "cardiac-ion-channel",
       "type": "PARTICIPATES_IN",
       "description": "SCN5A is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "ADRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "ADRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "EBF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EBF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MMP14",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP14 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLIS3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLIS3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFATC2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "JAG1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "JAG1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "PRTG",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PRTG is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "WNT7B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT7B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT2 is a component of the Wnt Signaling pathway."
     },
     {
       "source": "MAFB",
@@ -583,6 +595,54 @@
       "description": "SLC12A3 is associated with lumbar disc herniation (HERNIATED_DISC). Open Targets association score 0.08"
     },
     {
+      "source": "SCN11A",
+      "target": "lumbar disc herniation (HERNIATED_DISC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN11A is associated with lumbar disc herniation (HERNIATED_DISC). Open Targets association score 0.07"
+    },
+    {
+      "source": "ADRB1",
+      "target": "lumbar disc herniation (HERNIATED_DISC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB1 is associated with lumbar disc herniation (HERNIATED_DISC). Open Targets association score 0.07"
+    },
+    {
+      "source": "SCN5A",
+      "target": "lumbar disc herniation (HERNIATED_DISC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN5A is associated with lumbar disc herniation (HERNIATED_DISC). Open Targets association score 0.07"
+    },
+    {
+      "source": "SCN1A",
+      "target": "lumbar disc herniation (HERNIATED_DISC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN1A is associated with lumbar disc herniation (HERNIATED_DISC). Open Targets association score 0.07"
+    },
+    {
+      "source": "SCN8A",
+      "target": "lumbar disc herniation (HERNIATED_DISC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN8A is associated with lumbar disc herniation (HERNIATED_DISC). Open Targets association score 0.07"
+    },
+    {
+      "source": "SCN9A",
+      "target": "lumbar disc herniation (HERNIATED_DISC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN9A is associated with lumbar disc herniation (HERNIATED_DISC). Open Targets association score 0.07"
+    },
+    {
+      "source": "SCN10A",
+      "target": "lumbar disc herniation (HERNIATED_DISC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN10A is associated with lumbar disc herniation (HERNIATED_DISC). Open Targets association score 0.07"
+    },
+    {
+      "source": "SCN2A",
+      "target": "lumbar disc herniation (HERNIATED_DISC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN2A is associated with lumbar disc herniation (HERNIATED_DISC). Open Targets association score 0.07"
+    },
+    {
       "source": "ADRB2",
       "target": "lumbar disc herniation (HERNIATED_DISC)",
       "type": "ASSOCIATED_WITH",
@@ -595,40 +655,10 @@
       "description": "SCN7A is associated with lumbar disc herniation (HERNIATED_DISC). Open Targets association score 0.07"
     },
     {
-      "source": "SCN8A",
-      "target": "lumbar disc herniation (HERNIATED_DISC)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SCN8A is associated with lumbar disc herniation (HERNIATED_DISC). Open Targets association score 0.07"
-    },
-    {
-      "source": "SCN10A",
-      "target": "lumbar disc herniation (HERNIATED_DISC)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SCN10A is associated with lumbar disc herniation (HERNIATED_DISC). Open Targets association score 0.07"
-    },
-    {
       "source": "SCN3A",
       "target": "lumbar disc herniation (HERNIATED_DISC)",
       "type": "ASSOCIATED_WITH",
       "description": "SCN3A is associated with lumbar disc herniation (HERNIATED_DISC). Open Targets association score 0.07"
-    },
-    {
-      "source": "SCN9A",
-      "target": "lumbar disc herniation (HERNIATED_DISC)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SCN9A is associated with lumbar disc herniation (HERNIATED_DISC). Open Targets association score 0.07"
-    },
-    {
-      "source": "SCN11A",
-      "target": "lumbar disc herniation (HERNIATED_DISC)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SCN11A is associated with lumbar disc herniation (HERNIATED_DISC). Open Targets association score 0.07"
-    },
-    {
-      "source": "SCN1A",
-      "target": "lumbar disc herniation (HERNIATED_DISC)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SCN1A is associated with lumbar disc herniation (HERNIATED_DISC). Open Targets association score 0.07"
     },
     {
       "source": "SCN4A",
@@ -641,18 +671,6 @@
       "target": "lumbar disc herniation (HERNIATED_DISC)",
       "type": "ASSOCIATED_WITH",
       "description": "NR3C1 is associated with lumbar disc herniation (HERNIATED_DISC). Open Targets association score 0.27"
-    },
-    {
-      "source": "SCN2A",
-      "target": "lumbar disc herniation (HERNIATED_DISC)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SCN2A is associated with lumbar disc herniation (HERNIATED_DISC). Open Targets association score 0.26"
-    },
-    {
-      "source": "SCN5A",
-      "target": "lumbar disc herniation (HERNIATED_DISC)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SCN5A is associated with lumbar disc herniation (HERNIATED_DISC). Open Targets association score 0.26"
     },
     {
       "source": "CACNB3",

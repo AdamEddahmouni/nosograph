@@ -1,0 +1,472 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL578",
+      "target": "ACE",
+      "type": "TARGETS",
+      "description": "ENALAPRIL targets ACE."
+    },
+    {
+      "source": "C10orf71",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C10orf71 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SERPINE1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SERPINE1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ELN",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ELN is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP13",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP13 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TIMP1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TIMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "DHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "DHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IL5",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL5 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "FABP3",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "FABP3 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PPARGC1A",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARGC1A is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "DRD2",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "DRD2 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "CYP11A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP11A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP51A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP51A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "TAFAZZIN",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAFAZZIN is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.18"
+    },
+    {
+      "source": "DNASE1L1",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNASE1L1 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.12"
+    },
+    {
+      "source": "LHCGR",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHCGR is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "DHH",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHH is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYP51A1",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP51A1 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "DRD2",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DRD2 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ROBO1",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROBO1 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "GNRH1",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRH1 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNNC1",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNC1 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ALPK3",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPK3 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "RXRA",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RXRA is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "AR",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "C10orf71",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C10orf71 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TIMP1",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP1 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "NEXN",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEXN is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CALR",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALR is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "FABP3",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FABP3 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRIM21",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM21 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "RO60",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RO60 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPPB",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPB is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZP1",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZP1 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "SSB",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSB is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSRP3",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSRP3 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALMS1",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALMS1 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACTN2",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTN2 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL5",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL5 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "SERPINE1",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINE1 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "FSTL1",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSTL1 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TIMP2",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP2 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "KHK",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KHK is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NEBL",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEBL is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CGA",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGA is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP13",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP13 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZP3",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZP3 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ELN",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELN is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ZP2",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZP2 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRP",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "S100A4",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A4 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "NPPA",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPA is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MPO",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPO is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHGA",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHGA is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "UTS2",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UTS2 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPARGC1A",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARGC1A is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "UCP1",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UCP1 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRDM16",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM16 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MICAL2",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MICAL2 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPL17",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "FUT4",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUT4 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACE",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD40LG",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "HEPHL1",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEPHL1 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "HDAC6",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC6 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPN",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPN is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGFB1",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CA7",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA7 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "STAR",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAR is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "GZMB",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GZMB is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PLA2G7",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G7 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNNT2",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNT2 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYP11A1",
+      "target": "endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP11A1 is associated with endocardial fibroelastosis (ENDOCARDIAL_FIBROELASTOSIS). Open Targets association score 0.00"
+    }
+  ]
+}

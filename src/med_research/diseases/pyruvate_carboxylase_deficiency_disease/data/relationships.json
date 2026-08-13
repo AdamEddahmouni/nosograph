@@ -1,0 +1,478 @@
+{
+  "relationships": [
+    {
+      "source": "BTK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BTK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "AURKA",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "AURKA is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "F2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "F8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PROC",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "PROC is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SERPINE1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SERPINE1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "GATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "G6PC1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "G6PC1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "ACE2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "MTHFR",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFR is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "PC",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PC is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.82"
+    },
+    {
+      "source": "LRFN4",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRFN4 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.34"
+    },
+    {
+      "source": "G6PC1",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "G6PC1 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "PHKB",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHKB is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CA2",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA2 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "PKD2",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKD2 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "GPR4",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR4 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "PYGL",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PYGL is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "AGL",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGL is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "HNF1A",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SERPINC1",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINC1 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "F5",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F5 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TF",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "FBP1",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBP1 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRB2",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRB2 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "OCA2",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OCA2 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "F2",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F2 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "LPA",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PROC",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROC is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRH1",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH1 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSAP",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSAP is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRH2",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH2 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "F8",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F8 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "VWF",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "APC",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "BTK",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTK is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "GATM",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATM is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTHFR",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFR is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACLY",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACLY is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "LCT",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCT is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CSF2",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PCK2",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCK2 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "RAB14",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB14 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "FOLR1",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOLR1 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSIP1",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSIP1 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "FUBP1",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUBP1 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "FOLR2",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOLR2 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PROS1",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROS1 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PCYT1A",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCYT1A is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TCP1",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCP1 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "F11",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F11 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SEPSECS",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEPSECS is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SEC61A1",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEC61A1 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PLAT",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAT is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSEN1",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSEN1 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TMEM11",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM11 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SERPINE1",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINE1 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRP",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACE2",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE2 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SERPIND1",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPIND1 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACE",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "UTP25",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UTP25 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "HLCS",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLCS is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SAA2",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAA2 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "POMC",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "KAT5",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KAT5 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "AURKA",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AURKA is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEPT1",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEPT1 is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GAA",
+      "target": "pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAA is associated with pyruvate carboxylase deficiency disease (PYRUVATE_CARBOXYLASE_DEFICIENCY_DISEASE). Open Targets association score 0.00"
+    }
+  ]
+}

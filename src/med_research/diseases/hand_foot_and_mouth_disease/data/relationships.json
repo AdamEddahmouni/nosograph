@@ -1,0 +1,556 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL265502",
+      "target": "FGF1",
+      "type": "TARGETS",
+      "description": "SURAMIN targets FGF1."
+    },
+    {
+      "source": "CHEMBL413376",
+      "target": "FGF1",
+      "type": "TARGETS",
+      "description": "SURAMIN HEXASODIUM targets FGF1."
+    },
+    {
+      "source": "CCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCL27",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL27 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCL5",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL5 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL1",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL1 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL18",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "SELPLG",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELPLG is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELPLG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SELPLG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "DLL1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "DLL1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "DLL4",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "DLL4 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL22",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL22 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TLR3",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR3 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR7",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR7 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFIH1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFIH1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNAR1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNAR1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "OAS1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "OAS1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "RIGI",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "RIGI is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "NPPB",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPB is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "HMGB1",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGB1 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "DLL4",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLL4 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "TLR7",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR7 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "TLR3",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR3 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL6",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGF1",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF1 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "SELPLG",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELPLG is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFIH1",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFIH1 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL27",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL27 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "AGT",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD40LG",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD4",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "AFP",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFNAR1",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNAR1 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL17A",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CXCL8",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "H2AX",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H2AX is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL22",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL22 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD8A",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL10",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SCARA3",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCARA3 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "NCAM1",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCAM1 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFITM3",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFITM3 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "HSPA6",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPA6 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL4",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CA6",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA6 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCL5",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL5 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ENO2",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENO2 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "PLCB2",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCB2 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CXCL1",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL1 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "SAA1",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAA1 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "SAA2",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAA2 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "RIGI",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIGI is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CRP",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "G6PD",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "G6PD is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ARRDC4",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARRDC4 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "IFNG",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "DLL1",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLL1 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL37",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL37 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "GPT",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCL2",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL2 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "S100B",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100B is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "VDR",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VDR is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CLU",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLU is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "SCARB2",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCARB2 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "UROD",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UROD is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CALCA",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL18",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "C3",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCL27",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL27 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "HOXD13",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD13 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "SFTPD",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFTPD is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "FAS",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL2",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "OAS1",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OAS1 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ASRGL1",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASRGL1 is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALPP",
+      "target": "hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPP is associated with hand, foot and mouth disease (HAND_FOOT_AND_MOUTH_DISEASE). Open Targets association score 0.01"
+    }
+  ]
+}

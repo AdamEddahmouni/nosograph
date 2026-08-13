@@ -235,6 +235,12 @@
       "description": "IBRUTINIB targets BTK."
     },
     {
+      "source": "CHEMBL44657",
+      "target": "TOP2A",
+      "type": "TARGETS",
+      "description": "ETOPOSIDE targets TOP2A."
+    },
+    {
       "source": "CHEMBL1201576",
       "target": "MS4A1",
       "type": "TARGETS",
@@ -335,6 +341,18 @@
       "target": "POLA1",
       "type": "TARGETS",
       "description": "GEMCITABINE HYDROCHLORIDE targets POLA1."
+    },
+    {
+      "source": "CHEMBL53463",
+      "target": "TOP2A",
+      "type": "TARGETS",
+      "description": "DOXORUBICIN targets TOP2A."
+    },
+    {
+      "source": "CHEMBL359744",
+      "target": "TOP2A",
+      "type": "TARGETS",
+      "description": "DOXORUBICIN HYDROCHLORIDE targets TOP2A."
     },
     {
       "source": "CHEMBL3301625",
@@ -529,28 +547,10 @@
       "description": "NR3C1 is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.30"
     },
     {
-      "source": "PRIM1",
+      "source": "POLA1",
       "target": "Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA)",
       "type": "ASSOCIATED_WITH",
-      "description": "PRIM1 is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.29"
-    },
-    {
-      "source": "POLE3",
-      "target": "Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "POLE3 is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.29"
-    },
-    {
-      "source": "POLE",
-      "target": "Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "POLE is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.29"
-    },
-    {
-      "source": "PRIM2",
-      "target": "Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PRIM2 is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.29"
+      "description": "POLA1 is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.29"
     },
     {
       "source": "RRM1",
@@ -559,28 +559,22 @@
       "description": "RRM1 is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.29"
     },
     {
+      "source": "PRIM2",
+      "target": "Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRIM2 is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.29"
+    },
+    {
+      "source": "PRIM1",
+      "target": "Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRIM1 is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.29"
+    },
+    {
       "source": "POLA2",
       "target": "Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA)",
       "type": "ASSOCIATED_WITH",
       "description": "POLA2 is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.29"
-    },
-    {
-      "source": "POLD1",
-      "target": "Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "POLD1 is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.29"
-    },
-    {
-      "source": "POLA1",
-      "target": "Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "POLA1 is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.29"
-    },
-    {
-      "source": "POLD3",
-      "target": "Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "POLD3 is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.29"
     },
     {
       "source": "POLD4",
@@ -589,16 +583,40 @@
       "description": "POLD4 is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.29"
     },
     {
-      "source": "POLD2",
+      "source": "POLD1",
       "target": "Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA)",
       "type": "ASSOCIATED_WITH",
-      "description": "POLD2 is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.29"
+      "description": "POLD1 is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.29"
     },
     {
       "source": "POLE2",
       "target": "Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA)",
       "type": "ASSOCIATED_WITH",
       "description": "POLE2 is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.29"
+    },
+    {
+      "source": "POLE3",
+      "target": "Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE3 is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.29"
+    },
+    {
+      "source": "POLD2",
+      "target": "Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD2 is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.29"
+    },
+    {
+      "source": "POLE",
+      "target": "Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.29"
+    },
+    {
+      "source": "POLD3",
+      "target": "Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD3 is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.29"
     },
     {
       "source": "IMPDH1",
@@ -661,18 +679,6 @@
       "description": "PIK3CD is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.12"
     },
     {
-      "source": "CRBN",
-      "target": "Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CRBN is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.11"
-    },
-    {
-      "source": "DDB1",
-      "target": "Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "DDB1 is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.11"
-    },
-    {
       "source": "CUL4A",
       "target": "Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA)",
       "type": "ASSOCIATED_WITH",
@@ -683,6 +689,18 @@
       "target": "Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA)",
       "type": "ASSOCIATED_WITH",
       "description": "RBX1 is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.11"
+    },
+    {
+      "source": "DDB1",
+      "target": "Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDB1 is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.11"
+    },
+    {
+      "source": "CRBN",
+      "target": "Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRBN is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.11"
     },
     {
       "source": "CD38",
@@ -835,10 +853,28 @@
       "description": "HDAC1 is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.07"
     },
     {
+      "source": "HDAC11",
+      "target": "Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC11 is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.07"
+    },
+    {
       "source": "HDAC3",
       "target": "Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA)",
       "type": "ASSOCIATED_WITH",
       "description": "HDAC3 is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "HDAC6",
+      "target": "Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC6 is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "TOP2A",
+      "target": "Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOP2A is associated with Waldenstrom macroglobulinemia (WALDENSTROM_MACROGLOBULINEMIA). Open Targets association score 0.07"
     },
     {
       "source": "TOP2B",

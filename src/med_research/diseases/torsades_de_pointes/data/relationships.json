@@ -1,0 +1,616 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL477",
+      "target": "ADORA1",
+      "type": "TARGETS",
+      "description": "ADENOSINE targets ADORA1."
+    },
+    {
+      "source": "CHEMBL471",
+      "target": "KCNH2",
+      "type": "TARGETS",
+      "description": "SOTALOL targets KCNH2."
+    },
+    {
+      "source": "CHEMBL13",
+      "target": "ADRB1",
+      "type": "TARGETS",
+      "description": "METOPROLOL targets ADRB1."
+    },
+    {
+      "source": "CHEMBL679",
+      "target": "ADRB1",
+      "type": "TARGETS",
+      "description": "EPINEPHRINE targets ADRB1."
+    },
+    {
+      "source": "CHEMBL471",
+      "target": "ADRB1",
+      "type": "TARGETS",
+      "description": "SOTALOL targets ADRB1."
+    },
+    {
+      "source": "CHEMBL633",
+      "target": "KCNH2",
+      "type": "TARGETS",
+      "description": "AMIODARONE targets KCNH2."
+    },
+    {
+      "source": "CHEMBL1083993",
+      "target": "KCNH2",
+      "type": "TARGETS",
+      "description": "AMIODARONE HYDROCHLORIDE targets KCNH2."
+    },
+    {
+      "source": "CHEMBL633",
+      "target": "KCNH2",
+      "type": "TARGETS",
+      "description": "AMIODARONE targets KCNH2."
+    },
+    {
+      "source": "CHEMBL1375743",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "TREATS",
+      "description": "ZIPRASIDONE HYDROCHLORIDE is phase 4 / marketed for torsades de pointes (TORSADES_DE_POINTES)."
+    },
+    {
+      "source": "CHEMBL1375743",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "TREATS",
+      "description": "ZIPRASIDONE HYDROCHLORIDE is phase 4 / marketed for torsades de pointes (TORSADES_DE_POINTES)."
+    },
+    {
+      "source": "CHEMBL1375743",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "TREATS",
+      "description": "ZIPRASIDONE HYDROCHLORIDE is phase 4 / marketed for torsades de pointes (TORSADES_DE_POINTES)."
+    },
+    {
+      "source": "CHEMBL1083993",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "TREATS",
+      "description": "AMIODARONE HYDROCHLORIDE is phase 4 / marketed for torsades de pointes (TORSADES_DE_POINTES)."
+    },
+    {
+      "source": "CACNA1C",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1C is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "KCNA3",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNA3 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "KCNA4",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNA4 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "KCNA5",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNA5 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "KCNH2",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNH2 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "KCNQ1",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNQ1 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "PLN",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "PLN is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "RYR2",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "RYR2 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "SCN5A",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "SCN5A is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "ADRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "ADRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "WEE1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "WEE1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "PARP1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "PARP1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL11A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL11A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "IKBKG",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "IKBKG is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "PTGIR",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGIR is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP2C19",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2C19 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP2D6",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2D6 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP2J2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2J2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP3A4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP3A4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP4F3",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4F3 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GSTM1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SLCO1B1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLCO1B1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SLCO3A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLCO3A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "KCNH2",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNH2 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.02"
+    },
+    {
+      "source": "CYP3A4",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP3A4 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC8A1",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC8A1 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.01"
+    },
+    {
+      "source": "PARP1",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARP1 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.01"
+    },
+    {
+      "source": "COL11A2",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL11A2 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.01"
+    },
+    {
+      "source": "KCNE1",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNE1 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCHE",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCHE is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.01"
+    },
+    {
+      "source": "KCNA3",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNA3 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.01"
+    },
+    {
+      "source": "KCNQ1",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNQ1 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADORA1",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADORA1 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.01"
+    },
+    {
+      "source": "SCN5A",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN5A is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.01"
+    },
+    {
+      "source": "HRH1",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRH1 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGFR",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPPA",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPA is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.01"
+    },
+    {
+      "source": "KCNV2",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNV2 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACE",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "NEDD4L",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEDD4L is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "IK",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IK is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRL",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRL is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "GSTM1",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM1 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "TRDN",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRDN is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "RYR2",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYR2 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "ABCB1",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB1 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "CALR",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALR is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "ANK2",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK2 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYP2C19",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2C19 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "CACNA1C",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1C is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYP2D6",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2D6 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "KCNA4",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNA4 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACHE",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACHE is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "KCNA5",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNA5 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "KCNK3",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNK3 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "BRAF",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "SGK1",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGK1 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "IKZF1",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRP",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATP5IF1",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP5IF1 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "AR",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "KCNN4",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNN4 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYP2J2",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2J2 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADRB1",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB1 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLCO3A1",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLCO3A1 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "IKBKG",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKBKG is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRKCG",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCG is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "RAPGEF4",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAPGEF4 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRKCB",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCB is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLCO1B1",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLCO1B1 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "SDHB",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDHB is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNF",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "PLN",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLN is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "NDRG4",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDRG4 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "PGP",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGP is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRKCA",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCA is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRRT2",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRRT2 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "WEE1",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WEE1 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTGIR",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGIR is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "FGFR3",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYP4F3",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4F3 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL6",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATP12A",
+      "target": "torsades de pointes (TORSADES_DE_POINTES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP12A is associated with torsades de pointes (TORSADES_DE_POINTES). Open Targets association score 0.00"
+    }
+  ]
+}

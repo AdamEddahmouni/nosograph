@@ -1,0 +1,496 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL413",
+      "target": "FKBP1A",
+      "type": "TARGETS",
+      "description": "SIROLIMUS targets FKBP1A."
+    },
+    {
+      "source": "CHEMBL413",
+      "target": "FKBP1A",
+      "type": "TARGETS",
+      "description": "SIROLIMUS targets FKBP1A."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ASPSCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "ASPSCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ITGB1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ITGB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNA2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF4",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF4 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with PEComa (PECOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "TP53",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with PEComa (PECOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATRX",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with PEComa (PECOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MED12",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MED12 is associated with PEComa (PECOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TFE3",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFE3 is associated with PEComa (PECOMA). Open Targets association score 0.20"
+    },
+    {
+      "source": "SFPQ",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFPQ is associated with PEComa (PECOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "ASPSCR1",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASPSCR1 is associated with PEComa (PECOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "TSC1",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC1 is associated with PEComa (PECOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "PRCC",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRCC is associated with PEComa (PECOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "RB1",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with PEComa (PECOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "NOTCH2",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH2 is associated with PEComa (PECOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "ALK",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with PEComa (PECOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "NTRK3",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK3 is associated with PEComa (PECOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CIC",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIC is associated with PEComa (PECOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ZRSR2",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZRSR2 is associated with PEComa (PECOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ATM",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with PEComa (PECOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KDM6A",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM6A is associated with PEComa (PECOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "JAK3",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with PEComa (PECOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SDHA",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDHA is associated with PEComa (PECOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FKBP1A",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP1A is associated with PEComa (PECOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "CTSK",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSK is associated with PEComa (PECOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "MTOR",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with PEComa (PECOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MME",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MME is associated with PEComa (PECOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MITF",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MITF is associated with PEComa (PECOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NOS1",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS1 is associated with PEComa (PECOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NOS2",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with PEComa (PECOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "KDR",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with PEComa (PECOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PMEL",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMEL is associated with PEComa (PECOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TRIM63",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM63 is associated with PEComa (PECOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD1A",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD1A is associated with PEComa (PECOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "RPL17",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with PEComa (PECOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IRF4",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF4 is associated with PEComa (PECOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PWWP3A",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PWWP3A is associated with PEComa (PECOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLC12A3",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A3 is associated with PEComa (PECOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TESC",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TESC is associated with PEComa (PECOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "YAP1",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YAP1 is associated with PEComa (PECOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IGFBP7",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGFBP7 is associated with PEComa (PECOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "APH1A",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APH1A is associated with PEComa (PECOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ANGPT1",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPT1 is associated with PEComa (PECOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "YY1AP1",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YY1AP1 is associated with PEComa (PECOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KIT",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with PEComa (PECOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ITGB1",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB1 is associated with PEComa (PECOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "S100A1",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A1 is associated with PEComa (PECOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "S100B",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100B is associated with PEComa (PECOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "WT1",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with PEComa (PECOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNA2",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA2 is associated with PEComa (PECOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD44",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with PEComa (PECOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDCD1",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with PEComa (PECOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNCA",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with PEComa (PECOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with PEComa (PECOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPATA2",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with PEComa (PECOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MLANA",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLANA is associated with PEComa (PECOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FH",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FH is associated with PEComa (PECOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TFEB",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFEB is associated with PEComa (PECOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with PEComa (PECOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD34",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with PEComa (PECOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VCP",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VCP is associated with PEComa (PECOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PAX8",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX8 is associated with PEComa (PECOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DES",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DES is associated with PEComa (PECOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNA1",
+      "target": "PEComa (PECOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with PEComa (PECOMA). Open Targets association score 0.01"
+    }
+  ]
+}

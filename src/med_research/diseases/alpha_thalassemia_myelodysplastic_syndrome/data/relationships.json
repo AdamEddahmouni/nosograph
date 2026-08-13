@@ -1,0 +1,442 @@
+{
+  "relationships": [
+    {
+      "source": "EIF2B3",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EIF2B3 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PHF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "PHF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "SLC4A1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC4A1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL4A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TFR2",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFR2 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "TFRC",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFRC is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "KITLG",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KITLG is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.64"
+    },
+    {
+      "source": "HBA1",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBA1 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "HBA2",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBA2 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "HEPH",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEPH is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "KIT",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "TFRC",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFRC is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "RHBDF1",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHBDF1 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "ANK1",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "AHSP",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSP is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "EXOC6",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EXOC6 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "TMPRSS6",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS6 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "SLC4A1",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC4A1 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "TENT5C",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TENT5C is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "HBZ",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBZ is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "KITLG",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KITLG is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "DNM2",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM2 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "PICALM",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PICALM is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "STEAP3",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STEAP3 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "EPOR",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPOR is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "EPS15",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPS15 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "CPOX",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPOX is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "TFR2",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFR2 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "COL4A1",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A1 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "GATA1",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA1 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "SPTA1",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "ZFPM1",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFPM1 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "SLC11A2",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC11A2 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "EPB41",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPB41 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "IREB2",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IREB2 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "MSN",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSN is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "IKZF1",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PROM2",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROM2 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "TENM1",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TENM1 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "TPI1",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPI1 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "MPL",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPL is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "LDHA",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDHA is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PPP1R15A",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R15A is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "FBXL2",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXL2 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "IDH2",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH2 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "RAB11B",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB11B is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SPTB",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTB is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CTSG",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSG is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ITGAM",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAM is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PHF8",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHF8 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SAMD9L",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAMD9L is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "EIF2B3",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF2B3 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "EMP3",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EMP3 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CEP290",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEP290 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLC6A14",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A14 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "KLF1",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF1 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TET2",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "MYB",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYB is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "EPO",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPO is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ATP4A",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP4A is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "GSDMA",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMA is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TF",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PIM1",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIM1 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "FBXW12",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXW12 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "DYNLT4",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYNLT4 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SNX27",
+      "target": "alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNX27 is associated with alpha-thalassemia-myelodysplastic syndrome (ALPHA_THALASSEMIA_MYELODYSPLASTIC_SYNDROME). Open Targets association score 0.06"
+    }
+  ]
+}

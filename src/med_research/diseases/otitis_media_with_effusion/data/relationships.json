@@ -1,0 +1,604 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201231",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "PREDNISOLONE PHOSPHORIC ACID targets NR3C1."
+    },
+    {
+      "source": "CHEMBL1201014",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "PREDNISOLONE SODIUM PHOSPHATE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL1161",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "MOMETASONE FUROATE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL1504",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "TRIAMCINOLONE ACETONIDE targets NR3C1."
+    },
+    {
+      "source": "CASP1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CD19",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD19 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCL17",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL17 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCL5",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL5 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL1",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL1 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "CASP1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL18",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGAL",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAL is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELL",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELL is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "CD28",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD28 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGAL",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAL is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR7",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR7 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTA",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTA is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "RSPH4A",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPH4A is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.37"
+    },
+    {
+      "source": "NR3C1",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.27"
+    },
+    {
+      "source": "IL4",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.08"
+    },
+    {
+      "source": "CDC42",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDC42 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL17A",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.06"
+    },
+    {
+      "source": "IFNG",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.05"
+    },
+    {
+      "source": "GABPA",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABPA is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL1B",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.04"
+    },
+    {
+      "source": "AQP1",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP1 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.04"
+    },
+    {
+      "source": "NOS3",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL7R",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7R is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.04"
+    },
+    {
+      "source": "VEGFA",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.04"
+    },
+    {
+      "source": "MPO",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPO is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD4",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL10",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.03"
+    },
+    {
+      "source": "TGFB1",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNF",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.03"
+    },
+    {
+      "source": "ENO4",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENO4 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD28",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD28 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.03"
+    },
+    {
+      "source": "PCLAF",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCLAF is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD5",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD5 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL6",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.03"
+    },
+    {
+      "source": "CXCL8",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL2RG",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RG is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "SOD1",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD1 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "SELL",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELL is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD19",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD19 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "MUC5AC",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5AC is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADA",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADA is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTGS2",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "IGF1",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD8A",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "NOS2",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD79A",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "PF4",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PF4 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "MIF",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIF is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "TLR7",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR7 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCL5",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL5 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "AQP3",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP3 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "ISYNA1",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISYNA1 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD27",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD27 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD44",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "ICAM1",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD69",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD69 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "LTA",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTA is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "CLEC4D",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC4D is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "CASP1",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP1 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "CXCL1",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL1 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "FCER2",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCER2 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "MMP9",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "FASLG",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "MMP2",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL18",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCL17",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL17 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNA1",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "FAS",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TAC1",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAC1 is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "FXN",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FXN is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "ITGAL",
+      "target": "otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAL is associated with otitis media with effusion (OTITIS_MEDIA_WITH_EFFUSION). Open Targets association score 0.01"
+    }
+  ]
+}

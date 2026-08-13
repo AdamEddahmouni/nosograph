@@ -1,0 +1,490 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201320",
+      "target": "ATP4A",
+      "type": "TARGETS",
+      "description": "ESOMEPRAZOLE targets ATP4A."
+    },
+    {
+      "source": "GGTLC3",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "GGTLC3 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "FGF21",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF21 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "DPP4",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "DPP4 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HAMP",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "HAMP is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL18",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "FABP4",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "FABP4 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "TRAF6",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF6 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "ACE2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD36",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD36 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LATS2",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LATS2 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TRAF6",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF6 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TRAF6",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF6 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "CYP2E1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2E1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "PNPLA3",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PNPLA3 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.28"
+    },
+    {
+      "source": "GPT",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "GGTLC3",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGTLC3 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "GGT1",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGT1 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "HP",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HP is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "ICAM1",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "FGF21",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF21 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "FABP4",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FABP4 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "ACE2",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE2 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "SHBG",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHBG is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "SIRT1",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT1 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "AKT1",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "DUSP4",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DUSP4 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "APOE",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "PPARG",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKAA1",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA1 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKAA2",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA2 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "SIRT3",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT3 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "VNN1",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VNN1 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADIPOQ",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOQ is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "ATP4A",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP4A is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "AOC1",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOC1 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "LIPA",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPA is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "WBP2",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WBP2 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "HAMP",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAMP is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "SMARCD2",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCD2 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "AIP",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIP is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL18",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "DPP4",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPP4 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "LATS2",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LATS2 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "TLR4",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "INS",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "FNDC5",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FNDC5 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "MTARC1",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTARC1 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SNAI1",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNAI1 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "HSD17B6",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSD17B6 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "NNMT",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NNMT is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "AVP",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVP is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "PPARA",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARA is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "AOPEP",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOPEP is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CRP",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SYVN1",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYVN1 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "NAMPT",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAMPT is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "NT5E",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NT5E is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD36",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD36 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "HMGCS2",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCS2 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "GCG",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCG is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "GIP",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIP is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "C3",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "SPTBN1",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTBN1 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "TRAF6",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAF6 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "TFPI2",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFPI2 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "PAFAH1B1",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAFAH1B1 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CYP2E1",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2E1 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "FGF19",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF19 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLC27A4",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC27A4 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL6",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "GH1",
+      "target": "fatty liver disease (FATTY_LIVER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with fatty liver disease (FATTY_LIVER_DISEASE). Open Targets association score 0.02"
+    }
+  ]
+}

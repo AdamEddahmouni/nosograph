@@ -1,0 +1,562 @@
+{
+  "relationships": [
+    {
+      "source": "CCR5",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR5 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "TNFRSF21",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF21 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TNFRSF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MCOLN1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MCOLN1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13RA2",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13RA2 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL13RA2",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13RA2 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4R",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4R is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL5",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL5 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "STAT5B",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT5B is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFATC1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFATC2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "CD28",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD28 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL21R",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL21R is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TSHR",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TSHR is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTA",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTA is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF21",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF21 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF9",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF9 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFIH1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFIH1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "STAT5B",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT5B is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.71"
+    },
+    {
+      "source": "IL4",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.05"
+    },
+    {
+      "source": "AIRE",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIRE is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.05"
+    },
+    {
+      "source": "ABCB1",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB1 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.05"
+    },
+    {
+      "source": "CARD11",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL21R",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL21R is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFKB1",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.04"
+    },
+    {
+      "source": "EFS",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EFS is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFNG",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.04"
+    },
+    {
+      "source": "BIVM-ERCC5",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIVM-ERCC5 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.04"
+    },
+    {
+      "source": "ERCC5",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC5 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.04"
+    },
+    {
+      "source": "BIVM",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIVM is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.04"
+    },
+    {
+      "source": "CFTR",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFTR is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD40",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.04"
+    },
+    {
+      "source": "BCL6",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL6 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.04"
+    },
+    {
+      "source": "EPCAM",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPCAM is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.04"
+    },
+    {
+      "source": "FCGR2B",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2B is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.04"
+    },
+    {
+      "source": "FCGR2A",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2A is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.04"
+    },
+    {
+      "source": "FCGR2C",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2C is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL13",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXL1",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXL1 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.04"
+    },
+    {
+      "source": "TSHR",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSHR is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.04"
+    },
+    {
+      "source": "STAT6",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT6 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFATC1",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFATC1 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.04"
+    },
+    {
+      "source": "ASH1L",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASH1L is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL31RA",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL31RA is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.04"
+    },
+    {
+      "source": "GNAI2",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAI2 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNF",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.04"
+    },
+    {
+      "source": "LTA",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTA is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.04"
+    },
+    {
+      "source": "AICDA",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AICDA is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "MED1",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MED1 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL5",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL5 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNFRSF21",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF21 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "HOXC4",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXC4 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "FCER2",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCER2 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "FERMT1",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FERMT1 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFIH1",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFIH1 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "AP1M2",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AP1M2 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "TAX1BP1",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAX1BP1 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNFRSF9",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF9 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "FASLG",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "REL",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REL is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "MCOLN1",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCOLN1 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD28",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD28 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "ITPKB",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITPKB is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "TLX2",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLX2 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "LGALS3",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL13RA2",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13RA2 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "NFATC2",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFATC2 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "MUC5B",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5B is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "TREX1",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREX1 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "WIPF1",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WIPF1 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHGA",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHGA is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "PPIA",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIA is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "SMTN",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMTN is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "CXCR2",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR2 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "CCR5",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR5 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "CUX1",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUX1 is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZC3H12A",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZC3H12A is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL4R",
+      "target": "growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4R is associated with growth hormone insensitivity syndrome with immune dysregulation 2, autosomal dominant (GROWTH_HORMONE_INSENSITIVITY_SYNDROME_WITH_IMMUNE_DYSREGULATION_2_AUTOSOMAL_DOMINANT). Open Targets association score 0.03"
+    }
+  ]
+}

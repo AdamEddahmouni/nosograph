@@ -1,0 +1,46 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201129",
+      "target": "DNMT1",
+      "type": "TARGETS",
+      "description": "DECITABINE targets DNMT1."
+    },
+    {
+      "source": "CHEMBL1201129",
+      "target": "DNMT3A",
+      "type": "TARGETS",
+      "description": "DECITABINE targets DNMT3A."
+    },
+    {
+      "source": "CHEMBL3137343",
+      "target": "PDCD1",
+      "type": "TARGETS",
+      "description": "PEMBROLIZUMAB targets PDCD1."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "adult lymphoma (ADULT_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with adult lymphoma (ADULT_LYMPHOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "DNMT1",
+      "target": "adult lymphoma (ADULT_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT1 is associated with adult lymphoma (ADULT_LYMPHOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "DNMT3A",
+      "target": "adult lymphoma (ADULT_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT3A is associated with adult lymphoma (ADULT_LYMPHOMA). Open Targets association score 0.02"
+    }
+  ]
+}

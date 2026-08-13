@@ -1,0 +1,490 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1393",
+      "target": "NR3C2",
+      "type": "TARGETS",
+      "description": "SPIRONOLACTONE targets NR3C2."
+    },
+    {
+      "source": "CHEMBL135",
+      "target": "ESR1",
+      "type": "TARGETS",
+      "description": "ESTRADIOL targets ESR1."
+    },
+    {
+      "source": "FGF23",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF23 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ALOX5",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ALOX5 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL17A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL17A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ELN",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ELN is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK14",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK14 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "NR3C2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "NR3C2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL21R",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL21R is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TGM2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ACOXL",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACOXL is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.33"
+    },
+    {
+      "source": "IL21R",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL21R is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.21"
+    },
+    {
+      "source": "NR3C2",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C2 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "ESR1",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "FKBP5",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP5 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "FKBP4",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP4 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "DDIT4",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDIT4 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "NR3C1",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "SOD1",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD1 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "FERMT1",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FERMT1 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "ELN",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELN is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "KLHL24",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLHL24 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "GSR",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSR is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "KLK6",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK6 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOD2",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD2 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTOR",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "FST",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FST is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYSM1",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYSM1 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "KL",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KL is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKT1",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALOX5",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALOX5 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTEN",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "RALA",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RALA is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD44",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "VDR",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VDR is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "FOXO3",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXO3 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPK1",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDK1",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDK1 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP63",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPE65",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPE65 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "UVRAG",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UVRAG is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CKAP4",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CKAP4 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "POSTN",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POSTN is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGM2",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM2 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GH1",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "INS",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP53",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "FGF23",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF23 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GOT1",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOT1 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GNRH1",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRH1 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "FBLIM1",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBLIM1 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GGH",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGH is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC17A5",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A5 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GPT",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GOPC",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOPC is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TMEM201",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM201 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "COL17A1",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL17A1 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "AIMP2",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIMP2 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GRAP2",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRAP2 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "RNF19A",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF19A is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "POLDIP2",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLDIP2 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGF1",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPK14",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK14 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GRK5",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRK5 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRK",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRK is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "AHSA1",
+      "target": "skin atrophy (SKIN_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSA1 is associated with skin atrophy (SKIN_ATROPHY). Open Targets association score 0.00"
+    }
+  ]
+}

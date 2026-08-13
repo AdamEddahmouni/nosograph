@@ -1,0 +1,448 @@
+{
+  "relationships": [
+    {
+      "source": "BLK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BLK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "BMERB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "BMERB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TM6SF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TM6SF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATRAID",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRAID is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IRS1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "IRS1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL4 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CETP is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "RASIP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASIP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CD300LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD300LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "GALNT2",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GALNT2 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "PLTP",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLTP is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "LPA",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "ZPR1",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZPR1 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "CETP",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETP is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "CD300LG",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD300LG is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "APOB",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "FADS2",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS2 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "LIPC",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "APOA5",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "APOC3",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC3 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "CPT1A",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPT1A is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "NTAN1",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTAN1 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "PARN",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARN is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "APOE",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "PCSK9",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "FADS1",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS1 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "FTO",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FTO is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "IRS1",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRS1 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "BFAR",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BFAR is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "SLC22A3",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A3 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "DGAT2",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DGAT2 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "ANKRD55",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKRD55 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL4 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "TRIB1",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIB1 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "TAGLN",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAGLN is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "TM6SF2",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM6SF2 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "PLG",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLG is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "GCKR",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "PAFAH1B2",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAFAH1B2 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "BMERB1",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMERB1 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "GOLM2",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOLM2 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "MYRF",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYRF is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATRAID",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRAID is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.27"
+    },
+    {
+      "source": "MSRA",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSRA is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.27"
+    },
+    {
+      "source": "APOA1",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.27"
+    },
+    {
+      "source": "PCSK7",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK7 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.26"
+    },
+    {
+      "source": "PPP1R3B",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R3B is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.26"
+    },
+    {
+      "source": "JMJD1C",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JMJD1C is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.25"
+    },
+    {
+      "source": "PDXDC1",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDXDC1 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.24"
+    },
+    {
+      "source": "NYAP2",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NYAP2 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.23"
+    },
+    {
+      "source": "NOMO1",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOMO1 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.23"
+    },
+    {
+      "source": "RRN3",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RRN3 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.23"
+    },
+    {
+      "source": "LIPG",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPG is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.22"
+    },
+    {
+      "source": "RPGRIP1L",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPGRIP1L is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.21"
+    },
+    {
+      "source": "RAB11B",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB11B is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.20"
+    },
+    {
+      "source": "BUD13",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUD13 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.20"
+    },
+    {
+      "source": "SLC18A1",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC18A1 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.18"
+    },
+    {
+      "source": "RASIP1",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASIP1 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.18"
+    },
+    {
+      "source": "BLK",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLK is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.17"
+    },
+    {
+      "source": "USP3",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP3 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.17"
+    },
+    {
+      "source": "IGHMBP2",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGHMBP2 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.16"
+    },
+    {
+      "source": "APOC2",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC2 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.15"
+    },
+    {
+      "source": "MOGAT2",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MOGAT2 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.14"
+    },
+    {
+      "source": "NRBP1",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRBP1 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.13"
+    },
+    {
+      "source": "SLC22A5",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A5 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.13"
+    },
+    {
+      "source": "NPIPA5",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPIPA5 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.13"
+    },
+    {
+      "source": "NLRC5",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRC5 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.13"
+    },
+    {
+      "source": "SCGB1A1",
+      "target": "degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCGB1A1 is associated with degree of unsaturation measurement  (DEGREE_OF_UNSATURATION_MEASUREMENT). Open Targets association score 0.13"
+    }
+  ]
+}

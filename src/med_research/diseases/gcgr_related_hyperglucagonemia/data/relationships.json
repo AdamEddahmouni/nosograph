@@ -1,0 +1,478 @@
+{
+  "relationships": [
+    {
+      "source": "BAD",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BAD is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CACNA1E",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1E is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "KCNH6",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNH6 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "SCN5A",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "SCN5A is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TNFRSF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ABCC8",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC8 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "DPP4",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "DPP4 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GCK",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCK is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF1B",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1B is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "PDX1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PDX1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "MAPK13",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK13 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "THRA",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THRA is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "THRA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "THRA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFRSF9",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF9 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "ABCB4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ABCC8",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC8 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GCGR",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCGR is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.67"
+    },
+    {
+      "source": "PDX1",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDX1 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "MEN1",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CREBBP",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GCK",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCK is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CACNA1E",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1E is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PCSK2",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK2 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "PKHD1",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKHD1 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "INS",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "RIMS2",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIMS2 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "ABCC8",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC8 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "GPR68",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR68 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "SSTR5",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSTR5 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "FFAR1",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FFAR1 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "BAD",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAD is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "HMGA1",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGA1 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "DBH",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DBH is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "DPP4",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPP4 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "AKAP5",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKAP5 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "AIRE",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIRE is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "THRA",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THRA is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "KCNH6",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNH6 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PDZD2",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDZD2 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ERO1B",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERO1B is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SOX17",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX17 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ONECUT1",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ONECUT1 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SOX4",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX4 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "LEPR",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXA1",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXA1 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTEN",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CTSS",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSS is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CADPS2",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CADPS2 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "KMT2B",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2B is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNFRSF9",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF9 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "HNF1B",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1B is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ALX3",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALX3 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GLS2",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLS2 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRF1",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRF1 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "HIPK3",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIPK3 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "KCNB1",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNB1 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CTSB",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSB is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "RB1",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CHGB",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHGB is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CLOCK",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLOCK is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "VAMP4",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VAMP4 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "FEM1B",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FEM1B is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GEM",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GEM is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC8A1",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC8A1 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SCN5A",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN5A is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "WFS1",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WFS1 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "BICC1",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BICC1 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MAPK13",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK13 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PGR",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ANXA7",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANXA7 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ABCB4",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB4 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "FAM3B",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM3B is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GPR27",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR27 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PFKM",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PFKM is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "GHRL",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHRL is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PHPT1",
+      "target": "GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHPT1 is associated with GCGR-related hyperglucagonemia (GCGR_RELATED_HYPERGLUCAGONEMIA). Open Targets association score 0.04"
+    }
+  ]
+}

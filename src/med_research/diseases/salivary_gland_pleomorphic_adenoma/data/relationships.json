@@ -1,0 +1,478 @@
+{
+  "relationships": [
+    {
+      "source": "BAX",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BAX is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "FGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAML2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MAML2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ANAPC7",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ANAPC7 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "PLAG1",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAG1 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "HMGA2",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGA2 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CHCHD7",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHCHD7 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NFIB",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFIB is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CRTC1",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRTC1 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TCEA1",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCEA1 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "WIF1",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WIF1 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "LIFR",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIFR is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CRTC3",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRTC3 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MAML2",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAML2 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FHIT",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FHIT is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TP53",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "HRAS",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KRAS",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "GDF5",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF5 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "BRCA1",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "APEX1",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APEX1 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "COMP",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COMP is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS2",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EZR",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EZR is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGR1",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGR1 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACAN",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACAN is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MIB1",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIB1 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD44",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGF2",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF2 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "WT1",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC1",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC1 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDGFB",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFB is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VIM",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIM is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD24",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD24 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MOS",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MOS is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDGFA",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFA is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MKI67",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ISYNA1",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISYNA1 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ZNF146",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF146 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FGFR1",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGFB1",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ANAPC7",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANAPC7 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SCARA3",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCARA3 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "BCL2",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FGF1",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF1 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYC",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NF2",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NSG1",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSG1 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TCEAL1",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCEAL1 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GFAP",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KLK3",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK3 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NPEPPS",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPEPPS is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PROS1",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROS1 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSAT1",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSAT1 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP63",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "EGFR",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCND1",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "UVRAG",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UVRAG is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "BAX",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAX is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIGF",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIGF is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FXN",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FXN is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "HMGA1",
+      "target": "Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGA1 is associated with Salivary Gland Pleomorphic Adenoma (SALIVARY_GLAND_PLEOMORPHIC_ADENOMA). Open Targets association score 0.00"
+    }
+  ]
+}

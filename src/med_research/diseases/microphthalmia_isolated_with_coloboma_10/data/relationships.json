@@ -1,0 +1,424 @@
+{
+  "relationships": [
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "FGF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FOXF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FOXF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL4A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "BMP4",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP4 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "RELA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "JAG1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "JAG1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "LMX1B",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "LMX1B is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "NAT1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NAT1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "NAT2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NAT2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "RBP4",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBP4 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.64"
+    },
+    {
+      "source": "FFAR4",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FFAR4 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.45"
+    },
+    {
+      "source": "PAX6",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX6 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.10"
+    },
+    {
+      "source": "CRYGD",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYGD is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.09"
+    },
+    {
+      "source": "GJA8",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA8 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.08"
+    },
+    {
+      "source": "VSX2",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VSX2 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.08"
+    },
+    {
+      "source": "FOXC1",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.08"
+    },
+    {
+      "source": "FOXE3",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXE3 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.07"
+    },
+    {
+      "source": "MIP",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIP is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.07"
+    },
+    {
+      "source": "RAX",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAX is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.07"
+    },
+    {
+      "source": "GJE1",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJE1 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.07"
+    },
+    {
+      "source": "PITX2",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX2 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.07"
+    },
+    {
+      "source": "TRPM3",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPM3 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.07"
+    },
+    {
+      "source": "CRYAA",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYAA is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.07"
+    },
+    {
+      "source": "HESX1",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HESX1 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.07"
+    },
+    {
+      "source": "MITF",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MITF is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.07"
+    },
+    {
+      "source": "BMP4",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP4 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.06"
+    },
+    {
+      "source": "SOX2",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX2 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.06"
+    },
+    {
+      "source": "HSF4",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSF4 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.06"
+    },
+    {
+      "source": "COL4A1",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A1 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.06"
+    },
+    {
+      "source": "CRYGC",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYGC is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.06"
+    },
+    {
+      "source": "NECTIN3",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NECTIN3 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.06"
+    },
+    {
+      "source": "TMEM98",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM98 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.06"
+    },
+    {
+      "source": "LIM2",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIM2 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.05"
+    },
+    {
+      "source": "GNG12",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNG12 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXC2",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC2 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.05"
+    },
+    {
+      "source": "TYRP1",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYRP1 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.05"
+    },
+    {
+      "source": "SIPA1L3",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIPA1L3 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.05"
+    },
+    {
+      "source": "CRYBA1",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYBA1 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.05"
+    },
+    {
+      "source": "FREM2",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FREM2 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.05"
+    },
+    {
+      "source": "CRYGA",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYGA is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.05"
+    },
+    {
+      "source": "INTS15",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INTS15 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.05"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.05"
+    },
+    {
+      "source": "SOX1",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX1 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXF2",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXF2 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.05"
+    },
+    {
+      "source": "NECTIN1",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NECTIN1 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.05"
+    },
+    {
+      "source": "MSX2",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSX2 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.05"
+    },
+    {
+      "source": "JAG1",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAG1 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.05"
+    },
+    {
+      "source": "NIFK",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NIFK is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.05"
+    },
+    {
+      "source": "OTX2",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OTX2 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.05"
+    },
+    {
+      "source": "NRG1",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRG1 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.05"
+    },
+    {
+      "source": "NXN",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NXN is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.05"
+    },
+    {
+      "source": "LMX1B",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMX1B is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.05"
+    },
+    {
+      "source": "LGR4",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGR4 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.05"
+    },
+    {
+      "source": "MAB21L1",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAB21L1 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.05"
+    },
+    {
+      "source": "NAT2",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAT2 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.05"
+    },
+    {
+      "source": "NAT1",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAT1 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.05"
+    },
+    {
+      "source": "XPO4",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XPO4 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.04"
+    },
+    {
+      "source": "RELA",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELA is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.04"
+    },
+    {
+      "source": "ABHD17B",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABHD17B is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADSL",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADSL is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.04"
+    },
+    {
+      "source": "HIP1",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIP1 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.04"
+    },
+    {
+      "source": "RYBP",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYBP is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.04"
+    },
+    {
+      "source": "PXDN",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PXDN is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGF7",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF7 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.04"
+    },
+    {
+      "source": "GPNMB",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPNMB is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.04"
+    },
+    {
+      "source": "TSPYL5",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSPYL5 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRSS56",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRSS56 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.04"
+    },
+    {
+      "source": "UBE3B",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBE3B is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.04"
+    },
+    {
+      "source": "SDC4",
+      "target": "microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC4 is associated with microphthalmia, isolated, with coloboma 10 (MICROPHTHALMIA_ISOLATED_WITH_COLOBOMA_10). Open Targets association score 0.04"
+    }
+  ]
+}

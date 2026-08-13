@@ -1,0 +1,556 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201187",
+      "target": "CCR5",
+      "type": "TARGETS",
+      "description": "MARAVIROC targets CCR5."
+    },
+    {
+      "source": "CHEMBL1201187",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "TREATS",
+      "description": "MARAVIROC is phase 4 / marketed for complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)."
+    },
+    {
+      "source": "BCL2L11",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2L11 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CD209",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD209 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCR1",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR1 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCR5",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR5 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "FGB",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGB is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FGG",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGG is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C1QA",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QA is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "C4A",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C4A is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "C4B",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C4B is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "C4B_2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C4B_2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CFI",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CFI is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "COL4A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP10",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP10 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1R1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1R1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "TYK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "TYK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "ACE2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TLR1",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR1 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTA",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTA is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "APCS",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APCS is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CFI",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFI is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.78"
+    },
+    {
+      "source": "FGG",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGG is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.41"
+    },
+    {
+      "source": "FGB",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGB is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.36"
+    },
+    {
+      "source": "FGA",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGA is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.34"
+    },
+    {
+      "source": "TNF",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "APCS",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APCS is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LTA",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTA is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "STAT1",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT1 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "WT1",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ASH1L",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASH1L is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL4A3",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A3 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD1D",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD1D is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL4A1",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A1 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GPC3",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPC3 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFNG",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "FAS",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ACE2",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE2 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD4",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "C1QA",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1QA is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TREX1",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREX1 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "UMOD",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UMOD is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "B4GALT1",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B4GALT1 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD209",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD209 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CLEC4M",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC4M is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CA2",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA2 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "MMP10",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP10 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRPV3",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV3 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CRIM1",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRIM1 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "EFS",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EFS is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "BCL2L11",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2L11 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "WAS",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WAS is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "LGALS3",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "MMP9",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TYK2",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYK2 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD151",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD151 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "MST1R",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MST1R is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "CFTR",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFTR is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "CAMP",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMP is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "SFTPA1",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFTPA1 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "SFTPA2",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFTPA2 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GDNF",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDNF is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "FCGR2B",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2B is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "FCGR2C",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2C is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "FCGR2A",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2A is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GNE",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNE is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL1R1",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1R1 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "METRNL",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "METRNL is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "CCR1",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR1 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "CCR5",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR5 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GPR31",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR31 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "TLR1",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR1 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "FCGR1A",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR1A is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "CYBB",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYBB is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "POLB",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLB is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "MAGI2",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAGI2 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "CR2",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CR2 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL1B",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "C4B_2",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C4B_2 is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "C4B",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C4B is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "C4A",
+      "target": "complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C4A is associated with complement factor I deficiency (COMPLEMENT_FACTOR_I_DEFICIENCY). Open Targets association score 0.03"
+    }
+  ]
+}

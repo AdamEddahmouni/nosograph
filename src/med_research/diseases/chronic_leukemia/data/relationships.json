@@ -1,0 +1,598 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201583",
+      "target": "VEGFA",
+      "type": "TARGETS",
+      "description": "BEVACIZUMAB targets VEGFA."
+    },
+    {
+      "source": "CHEMBL1214827",
+      "target": "HSP90AB1",
+      "type": "TARGETS",
+      "description": "ONALESPIB targets HSP90AB1."
+    },
+    {
+      "source": "CHEMBL1421",
+      "target": "PDGFRB",
+      "type": "TARGETS",
+      "description": "DASATINIB targets PDGFRB."
+    },
+    {
+      "source": "CHEMBL1201560",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "TREATS",
+      "description": "PEGINTERFERON ALFA-2A is phase 4 / marketed for chronic leukemia (CHRONIC_LEUKEMIA)."
+    },
+    {
+      "source": "CHEMBL1201752",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "TREATS",
+      "description": "IXABEPILONE is phase 4 / marketed for chronic leukemia (CHRONIC_LEUKEMIA)."
+    },
+    {
+      "source": "CHEMBL1683590",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "TREATS",
+      "description": "ERIBULIN is phase 4 / marketed for chronic leukemia (CHRONIC_LEUKEMIA)."
+    },
+    {
+      "source": "CHEMBL1683590",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "TREATS",
+      "description": "ERIBULIN is phase 4 / marketed for chronic leukemia (CHRONIC_LEUKEMIA)."
+    },
+    {
+      "source": "CHEMBL1742992",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "TREATS",
+      "description": "BLINATUMOMAB is phase 4 / marketed for chronic leukemia (CHRONIC_LEUKEMIA)."
+    },
+    {
+      "source": "CHEMBL1789941",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "TREATS",
+      "description": "RUXOLITINIB is phase 4 / marketed for chronic leukemia (CHRONIC_LEUKEMIA)."
+    },
+    {
+      "source": "CHEMBL2110725",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "TREATS",
+      "description": "VINFLUNINE is phase 3 for chronic leukemia (CHRONIC_LEUKEMIA)."
+    },
+    {
+      "source": "CHEMBL225071",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "TREATS",
+      "description": "RALTITREXED is phase 4 / marketed for chronic leukemia (CHRONIC_LEUKEMIA)."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BIRC5",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BIRC5 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "XIAP",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "XIAP is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CCNA2",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCNA2 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATR",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATR is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CHEK1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "CHEK1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TFRC",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFRC is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "STAT5A",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT5A is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT5B",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT5B is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "GORASP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "GORASP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RELA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ABCB4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ABCC1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ABCC3",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC3 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP3A5",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP3A5 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GSTT1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTT1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB1 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TBC1D9",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D9 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ALB",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GFI1B",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFI1B is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCNA2",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCNA2 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ABCB4",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB4 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL2",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MKI67",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TFRC",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFRC is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "WLS",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WLS is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ABCC1",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC1 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MARCKSL1",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MARCKSL1 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTGS2",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATR",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATR is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHEK1",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHEK1 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRAME",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRAME is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VEGFA",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ABCC3",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC3 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FAS",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "STAT5A",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT5A is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "STAT5B",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT5B is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSF3",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SYT1",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYT1 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GORASP1",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GORASP1 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HSP90AB1",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSP90AB1 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RELA",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELA is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "WNK1",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNK1 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYC",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HSP90AA1",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSP90AA1 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BIRC5",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIRC5 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DIABLO",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DIABLO is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RBMS3",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBMS3 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL2",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PAK2",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAK2 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSMD9",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMD9 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFI27",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFI27 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAK16",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAK16 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "XIAP",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XIAP is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTBP1",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTBP1 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SRRM2",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRRM2 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYB",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYB is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZNRD2",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNRD2 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DCTN6",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCTN6 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CIB1",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIB1 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PNO1",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PNO1 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HGF",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TMED7",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMED7 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTEN",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSTT1",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTT1 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ETV6",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV6 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD8A",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD4",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD34",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSF2",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYP3A5",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP3A5 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NR3C1",
+      "target": "chronic leukemia (CHRONIC_LEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with chronic leukemia (CHRONIC_LEUKEMIA). Open Targets association score 0.00"
+    }
+  ]
+}

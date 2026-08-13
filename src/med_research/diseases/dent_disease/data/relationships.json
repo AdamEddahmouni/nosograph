@@ -1,0 +1,478 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL35",
+      "target": "SLC12A1",
+      "type": "TARGETS",
+      "description": "FUROSEMIDE targets SLC12A1."
+    },
+    {
+      "source": "CHEMBL2107830",
+      "target": "SLC5A2",
+      "type": "TARGETS",
+      "description": "EMPAGLIFLOZIN targets SLC5A2."
+    },
+    {
+      "source": "CHEMBL1072",
+      "target": "SLC12A1",
+      "type": "TARGETS",
+      "description": "BUMETANIDE targets SLC12A1."
+    },
+    {
+      "source": "CHEMBL1072",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "TREATS",
+      "description": "BUMETANIDE is phase 4 / marketed for Dent disease (DENT_DISEASE)."
+    },
+    {
+      "source": "SLC34A1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC34A1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "SLC3A1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC3A1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CFH",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CFH is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "COL4A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A4",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A4 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A5",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A5 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GCK",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCK is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INSR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INSR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "SLC2A9",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A9 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GLIS2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLIS2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFAIP2",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP2 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "CLCN5",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCN5 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.70"
+    },
+    {
+      "source": "OCRL",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OCRL is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.46"
+    },
+    {
+      "source": "UMOD",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UMOD is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "WT1",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "COL4A3",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A3 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "PHEX",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHEX is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "SLC12A1",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A1 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "COL4A4",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A4 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "MYO1E",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO1E is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "INS",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "COL4A5",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A5 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "TRPV5",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV5 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "CD2AP",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD2AP is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "SLC3A1",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC3A1 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "NPHS2",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHS2 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "SLC7A9",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC7A9 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRKDC",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKDC is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "AGXT",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGXT is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD151",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD151 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "CLCNKB",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCNKB is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "AKR1B1",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKR1B1 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "CLCNKA",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCNKA is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "GNE",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNE is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "MAGI2",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAGI2 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "LAMA5",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMA5 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "WHAMM",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WHAMM is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLC12A3",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A3 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "COL4A1",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A1 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "ACE",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "CCNI",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCNI is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLC34A1",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC34A1 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "MAS1",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAS1 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "GLIS2",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLIS2 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "RHPN1",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHPN1 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "NPHS1",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHS1 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "CFH",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFH is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "CASR",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASR is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "ATP6V1B1",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP6V1B1 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "CLDN2",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN2 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "GRHPR",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRHPR is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "PTGS2",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "ACTN4",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTN4 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "GCK",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCK is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLC14A2",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC14A2 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "INSR",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INSR is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "B4GALT1",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B4GALT1 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "MYO9A",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO9A is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "AQP2",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP2 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLC5A2",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC5A2 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "HPRT1",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPRT1 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "AQP11",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP11 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "ADCY6",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADCY6 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLC2A9",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A9 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "STK39",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK39 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "APRT",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APRT is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC16A10",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC16A10 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "CLU",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLU is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "HPX",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPX is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNFAIP2",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFAIP2 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC22A12",
+      "target": "Dent disease (DENT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A12 is associated with Dent disease (DENT_DISEASE). Open Targets association score 0.05"
+    }
+  ]
+}

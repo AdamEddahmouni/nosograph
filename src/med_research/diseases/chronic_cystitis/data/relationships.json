@@ -1,0 +1,538 @@
+{
+  "relationships": [
+    {
+      "source": "CASP1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "GTF2H4",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "GTF2H4 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IGF2R",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2R is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TIMP3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "CASP1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL5",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL5 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PIAS1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "PIAS1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "FABP1",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "FABP1 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "GORASP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "GORASP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RELA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "PTGS1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTBR",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBR is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "PIEZO1",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIEZO1 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "PPIG",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIG is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CREB1",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREB1 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLC8A1",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC8A1 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "LTBR",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTBR is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL6",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CALCA",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "NGF",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NGF is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTGS2",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "TLR4",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL5",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL5 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "MT-CO2",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO2 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CASP1",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP1 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "WNK1",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNK1 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "SYT1",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYT1 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "RELA",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELA is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GORASP1",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GORASP1 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGF",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGF is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADCYAP1",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADCYAP1 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSF3",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP2",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGF2R",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2R is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TIMP3",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP3 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NTRK1",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD34",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "FANCA",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "FXN",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FXN is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TLX2",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLX2 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "FAS",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD274",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTGS1",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS1 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MIF",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIF is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "EZH2",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EZH2 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GTF2H4",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GTF2H4 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TMEM132A",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM132A is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFKB2",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIAS1",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIAS1 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "FKBP4",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP4 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSIP1",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSIP1 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "LGALS1",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS1 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PMPCB",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMPCB is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "HADHA",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HADHA is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "FABP1",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FABP1 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NTRK2",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK2 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "RAC3",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAC3 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "BDNF",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BDNF is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGFR3",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MT-CO1",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO1 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD4",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSG5",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSG5 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCND1",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD8A",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRPV4",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV4 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "GAL",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAL is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "NLRP3",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MZB1",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MZB1 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGFB1",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ESR2",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR2 is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNC",
+      "target": "chronic cystitis (CHRONIC_CYSTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNC is associated with chronic cystitis (CHRONIC_CYSTITIS). Open Targets association score 0.00"
+    }
+  ]
+}

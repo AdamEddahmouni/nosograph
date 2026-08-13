@@ -349,6 +349,12 @@
       "description": "GRIN2B is a component of the GABA / Glutamate Signaling pathway."
     },
     {
+      "source": "GRIN2C",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2C is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
       "source": "PPARG",
       "target": "lipid-metabolism",
       "type": "PARTICIPATES_IN",
@@ -373,18 +379,6 @@
       "description": "NR3C2 is a component of the Renin-Angiotensin System pathway."
     },
     {
-      "source": "THRB",
-      "target": "serotonin-dopamine",
-      "type": "PARTICIPATES_IN",
-      "description": "THRB is a component of the Serotonin / Dopamine Signaling pathway."
-    },
-    {
-      "source": "HTR2A",
-      "target": "serotonin-dopamine",
-      "type": "PARTICIPATES_IN",
-      "description": "HTR2A is a component of the Serotonin / Dopamine Signaling pathway."
-    },
-    {
       "source": "IFNAR1",
       "target": "type1-ifn",
       "type": "PARTICIPATES_IN",
@@ -401,6 +395,18 @@
       "target": "type1-ifn",
       "type": "PARTICIPATES_IN",
       "description": "IRF5 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "THRB",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THRB is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "HTR2A",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTR2A is a component of the Serotonin / Dopamine Signaling pathway."
     },
     {
       "source": "CD226",
@@ -679,46 +685,16 @@
       "description": "GABRA2 is associated with cirrhosis of liver (LIVER_CIRRHOSIS). Open Targets association score 0.32"
     },
     {
-      "source": "ADRA2B",
-      "target": "cirrhosis of liver (LIVER_CIRRHOSIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ADRA2B is associated with cirrhosis of liver (LIVER_CIRRHOSIS). Open Targets association score 0.32"
-    },
-    {
       "source": "GABRA5",
       "target": "cirrhosis of liver (LIVER_CIRRHOSIS)",
       "type": "ASSOCIATED_WITH",
       "description": "GABRA5 is associated with cirrhosis of liver (LIVER_CIRRHOSIS). Open Targets association score 0.32"
     },
     {
-      "source": "GABRG3",
+      "source": "ADRA2B",
       "target": "cirrhosis of liver (LIVER_CIRRHOSIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "GABRG3 is associated with cirrhosis of liver (LIVER_CIRRHOSIS). Open Targets association score 0.32"
-    },
-    {
-      "source": "GABRA3",
-      "target": "cirrhosis of liver (LIVER_CIRRHOSIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GABRA3 is associated with cirrhosis of liver (LIVER_CIRRHOSIS). Open Targets association score 0.32"
-    },
-    {
-      "source": "GABRG1",
-      "target": "cirrhosis of liver (LIVER_CIRRHOSIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GABRG1 is associated with cirrhosis of liver (LIVER_CIRRHOSIS). Open Targets association score 0.32"
-    },
-    {
-      "source": "GABRG2",
-      "target": "cirrhosis of liver (LIVER_CIRRHOSIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GABRG2 is associated with cirrhosis of liver (LIVER_CIRRHOSIS). Open Targets association score 0.32"
-    },
-    {
-      "source": "ADRA2C",
-      "target": "cirrhosis of liver (LIVER_CIRRHOSIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ADRA2C is associated with cirrhosis of liver (LIVER_CIRRHOSIS). Open Targets association score 0.32"
+      "description": "ADRA2B is associated with cirrhosis of liver (LIVER_CIRRHOSIS). Open Targets association score 0.32"
     },
     {
       "source": "ADRA2A",
@@ -727,10 +703,40 @@
       "description": "ADRA2A is associated with cirrhosis of liver (LIVER_CIRRHOSIS). Open Targets association score 0.32"
     },
     {
+      "source": "GABRG2",
+      "target": "cirrhosis of liver (LIVER_CIRRHOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRG2 is associated with cirrhosis of liver (LIVER_CIRRHOSIS). Open Targets association score 0.32"
+    },
+    {
+      "source": "GABRG1",
+      "target": "cirrhosis of liver (LIVER_CIRRHOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRG1 is associated with cirrhosis of liver (LIVER_CIRRHOSIS). Open Targets association score 0.32"
+    },
+    {
       "source": "GABRA1",
       "target": "cirrhosis of liver (LIVER_CIRRHOSIS)",
       "type": "ASSOCIATED_WITH",
       "description": "GABRA1 is associated with cirrhosis of liver (LIVER_CIRRHOSIS). Open Targets association score 0.32"
+    },
+    {
+      "source": "GABRA3",
+      "target": "cirrhosis of liver (LIVER_CIRRHOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRA3 is associated with cirrhosis of liver (LIVER_CIRRHOSIS). Open Targets association score 0.32"
+    },
+    {
+      "source": "GABRG3",
+      "target": "cirrhosis of liver (LIVER_CIRRHOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRG3 is associated with cirrhosis of liver (LIVER_CIRRHOSIS). Open Targets association score 0.32"
+    },
+    {
+      "source": "ADRA2C",
+      "target": "cirrhosis of liver (LIVER_CIRRHOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2C is associated with cirrhosis of liver (LIVER_CIRRHOSIS). Open Targets association score 0.32"
     },
     {
       "source": "APOE",
@@ -841,6 +847,18 @@
       "description": "CA1 is associated with cirrhosis of liver (LIVER_CIRRHOSIS). Open Targets association score 0.26"
     },
     {
+      "source": "GRIN2A",
+      "target": "cirrhosis of liver (LIVER_CIRRHOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2A is associated with cirrhosis of liver (LIVER_CIRRHOSIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "GRIN1",
+      "target": "cirrhosis of liver (LIVER_CIRRHOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN1 is associated with cirrhosis of liver (LIVER_CIRRHOSIS). Open Targets association score 0.26"
+    },
+    {
       "source": "GRIN2B",
       "target": "cirrhosis of liver (LIVER_CIRRHOSIS)",
       "type": "ASSOCIATED_WITH",
@@ -853,16 +871,10 @@
       "description": "GABRA6 is associated with cirrhosis of liver (LIVER_CIRRHOSIS). Open Targets association score 0.26"
     },
     {
-      "source": "GRIN1",
+      "source": "GRIN2C",
       "target": "cirrhosis of liver (LIVER_CIRRHOSIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "GRIN1 is associated with cirrhosis of liver (LIVER_CIRRHOSIS). Open Targets association score 0.26"
-    },
-    {
-      "source": "GRIN2A",
-      "target": "cirrhosis of liver (LIVER_CIRRHOSIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GRIN2A is associated with cirrhosis of liver (LIVER_CIRRHOSIS). Open Targets association score 0.26"
+      "description": "GRIN2C is associated with cirrhosis of liver (LIVER_CIRRHOSIS). Open Targets association score 0.26"
     },
     {
       "source": "HTR2A",

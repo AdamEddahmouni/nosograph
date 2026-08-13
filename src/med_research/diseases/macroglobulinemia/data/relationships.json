@@ -1,0 +1,502 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1873475",
+      "target": "BTK",
+      "type": "TARGETS",
+      "description": "IBRUTINIB targets BTK."
+    },
+    {
+      "source": "CHEMBL1873475",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "TREATS",
+      "description": "IBRUTINIB is phase 4 / marketed for macroglobulinemia (MACROGLOBULINEMIA)."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BTK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BTK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "SYK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "SYK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CXCR4",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR4 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "ZNF804A",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF804A is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ADAM28",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM28 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL17A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL17A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL13RA1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13RA1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13RA1",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13RA1 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4R",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4R is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6R",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6R is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3C2B",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3C2B is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "MYD88",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MYD88 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "BTK",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTK is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.38"
+    },
+    {
+      "source": "MYD88",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYD88 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.19"
+    },
+    {
+      "source": "NBR1",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBR1 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MUC16",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC16 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MBP",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBP is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CXCR4",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR4 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "HCK",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HCK is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SCN3A",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN3A is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD40LG",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SESN1",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SESN1 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RNASE2",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNASE2 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "COL17A1",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL17A1 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD79A",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CLC",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLC is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MS4A3",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MS4A3 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SCPEP1",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCPEP1 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAG",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAG is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL13RA1",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13RA1 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DEFA4",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEFA4 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NT5E",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NT5E is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL4R",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4R is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKT1",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1A",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1A is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PI3",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PI3 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTOR",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AVP",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVP is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL2",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PROS1",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROS1 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "LAPTM5",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAPTM5 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6R",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6R is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CAT",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAT is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "P2RY14",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RY14 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTSG",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSG is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MPO",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPO is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CR2",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CR2 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HBB",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBB is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DEK",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEK is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PMAIP1",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMAIP1 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADK",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADK is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZNF146",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF146 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYOM2",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYOM2 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "OPN3",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OPN3 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GDI2",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDI2 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADAM28",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAM28 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NR4A2",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR4A2 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3C2B",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3C2B is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "LYZ",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYZ is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZNF804A",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF804A is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "HLA-DPB1",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DPB1 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "LTF",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTF is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "BACH2",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BACH2 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD44",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "HNRNPA2B1",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNRNPA2B1 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IMPDH2",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IMPDH2 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNF",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "HSD17B4",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSD17B4 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ARHGAP15",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP15 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MCM5",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCM5 is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SYK",
+      "target": "macroglobulinemia (MACROGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYK is associated with macroglobulinemia (MACROGLOBULINEMIA). Open Targets association score 0.00"
+    }
+  ]
+}

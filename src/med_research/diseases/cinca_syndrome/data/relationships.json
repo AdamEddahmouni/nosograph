@@ -1,0 +1,598 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201834",
+      "target": "IL1B",
+      "type": "TARGETS",
+      "description": "CANAKINUMAB targets IL1B."
+    },
+    {
+      "source": "CHEMBL1201570",
+      "target": "IL1R1",
+      "type": "TARGETS",
+      "description": "ANAKINRA targets IL1R1."
+    },
+    {
+      "source": "CHEMBL1201570",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "TREATS",
+      "description": "ANAKINRA is phase 4 / marketed for CINCA syndrome (CINCA_SYNDROME)."
+    },
+    {
+      "source": "CXCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "C9orf72",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C9orf72 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ALOX15",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ALOX15 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1R1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1R1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "MEFV",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "MEFV is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP12",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP12 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP2",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP2 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "TRAF3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "CD84",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD84 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL22RA2",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL22RA2 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "IRAK3",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IRAK3 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR1",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR1 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR3",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR3 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR6",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR6 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "LTA",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTA is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTB",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTB is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TRAF3",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF3 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNA21",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA21 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNA4",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA4 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNA6",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA6 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNAR2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNAR2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNB1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNB1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF3",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF3 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "NLRP12",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP12 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "NLRP2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ABCB4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.84"
+    },
+    {
+      "source": "IL1R1",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1R1 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.37"
+    },
+    {
+      "source": "IL1B",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NLRP12",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP12 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.23"
+    },
+    {
+      "source": "IFNAR2",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNAR2 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.23"
+    },
+    {
+      "source": "IFNA21",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA21 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.18"
+    },
+    {
+      "source": "IRAK3",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRAK3 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.18"
+    },
+    {
+      "source": "RAB27A",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB27A is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.18"
+    },
+    {
+      "source": "TRIM69",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM69 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.18"
+    },
+    {
+      "source": "TLR6",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR6 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.18"
+    },
+    {
+      "source": "CD163",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD163 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.18"
+    },
+    {
+      "source": "IFNA4",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA4 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.18"
+    },
+    {
+      "source": "TRAF3",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAF3 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.18"
+    },
+    {
+      "source": "TLR1",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR1 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.18"
+    },
+    {
+      "source": "IFNA6",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA6 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.18"
+    },
+    {
+      "source": "CD84",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD84 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.18"
+    },
+    {
+      "source": "IFI44L",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFI44L is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.18"
+    },
+    {
+      "source": "IL22RA2",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL22RA2 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.18"
+    },
+    {
+      "source": "LY9",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LY9 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.18"
+    },
+    {
+      "source": "IFNB1",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNB1 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.18"
+    },
+    {
+      "source": "IRF3",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF3 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.18"
+    },
+    {
+      "source": "NLRP2",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP2 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.18"
+    },
+    {
+      "source": "IFI44",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFI44 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.18"
+    },
+    {
+      "source": "TLR3",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR3 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.18"
+    },
+    {
+      "source": "IKZF1",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPTA1",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXP3",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNF",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "LTA",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTA is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "LTB",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTB is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CEBPE",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPE is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "BACH2",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BACH2 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CXCR2",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR2 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "C9orf72",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C9orf72 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFKB2",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TET2",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "JAK3",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ARPC1B",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARPC1B is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "AHSP",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSP is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SAMD9L",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAMD9L is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "DIAPH1",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DIAPH1 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ITGB2",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "COG6",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COG6 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GATA1",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA1 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RUNX1",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ALOX15",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALOX15 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "JAK2",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ANK1",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKAG1",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAG1 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKCH",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCH is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZFP36",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFP36 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TCIM",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCIM is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "NCKAP1L",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCKAP1L is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FZD9",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FZD9 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ABCB4",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB4 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "EPB41",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPB41 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MYB",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYB is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MEFV",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEFV is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ASAH1",
+      "target": "CINCA syndrome (CINCA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASAH1 is associated with CINCA syndrome (CINCA_SYNDROME). Open Targets association score 0.03"
+    }
+  ]
+}

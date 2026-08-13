@@ -13,6 +13,12 @@
       "description": "PREDNISOLONE targets NR3C1."
     },
     {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
       "source": "CCL3",
       "target": "chemokine-signaling",
       "type": "PARTICIPATES_IN",
@@ -101,18 +107,6 @@
       "target": "renin-angiotensin",
       "type": "PARTICIPATES_IN",
       "description": "AGTR1 is a component of the Renin-Angiotensin System pathway."
-    },
-    {
-      "source": "PTHLH",
-      "target": "serotonin-dopamine",
-      "type": "PARTICIPATES_IN",
-      "description": "PTHLH is a component of the Serotonin / Dopamine Signaling pathway."
-    },
-    {
-      "source": "PTH",
-      "target": "serotonin-dopamine",
-      "type": "PARTICIPATES_IN",
-      "description": "PTH is a component of the Serotonin / Dopamine Signaling pathway."
     },
     {
       "source": "CD4",
@@ -209,6 +203,18 @@
       "target": "xenobiotic-metabolism",
       "type": "PARTICIPATES_IN",
       "description": "CYP1A2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "PTHLH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTHLH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "PTH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTH is a component of the Serotonin / Dopamine Signaling pathway."
     },
     {
       "source": "RUNX2",
@@ -451,6 +457,12 @@
       "description": "TNF is associated with cryptogenic organizing pneumonia (ORGANIZING_PNEUMONIA). Open Targets association score 0.02"
     },
     {
+      "source": "FANCA",
+      "target": "cryptogenic organizing pneumonia (ORGANIZING_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with cryptogenic organizing pneumonia (ORGANIZING_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
       "source": "FAS",
       "target": "cryptogenic organizing pneumonia (ORGANIZING_PNEUMONIA)",
       "type": "ASSOCIATED_WITH",
@@ -463,22 +475,10 @@
       "description": "FXN is associated with cryptogenic organizing pneumonia (ORGANIZING_PNEUMONIA). Open Targets association score 0.02"
     },
     {
-      "source": "FANCA",
-      "target": "cryptogenic organizing pneumonia (ORGANIZING_PNEUMONIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "FANCA is associated with cryptogenic organizing pneumonia (ORGANIZING_PNEUMONIA). Open Targets association score 0.02"
-    },
-    {
       "source": "TGFB1",
       "target": "cryptogenic organizing pneumonia (ORGANIZING_PNEUMONIA)",
       "type": "ASSOCIATED_WITH",
       "description": "TGFB1 is associated with cryptogenic organizing pneumonia (ORGANIZING_PNEUMONIA). Open Targets association score 0.02"
-    },
-    {
-      "source": "CLEC7A",
-      "target": "cryptogenic organizing pneumonia (ORGANIZING_PNEUMONIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CLEC7A is associated with cryptogenic organizing pneumonia (ORGANIZING_PNEUMONIA). Open Targets association score 0.02"
     },
     {
       "source": "ACSBG2",
@@ -491,6 +491,12 @@
       "target": "cryptogenic organizing pneumonia (ORGANIZING_PNEUMONIA)",
       "type": "ASSOCIATED_WITH",
       "description": "GZMB is associated with cryptogenic organizing pneumonia (ORGANIZING_PNEUMONIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CLEC7A",
+      "target": "cryptogenic organizing pneumonia (ORGANIZING_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC7A is associated with cryptogenic organizing pneumonia (ORGANIZING_PNEUMONIA). Open Targets association score 0.02"
     },
     {
       "source": "TOMM5",
@@ -601,16 +607,22 @@
       "description": "HLA-C is associated with cryptogenic organizing pneumonia (ORGANIZING_PNEUMONIA). Open Targets association score 0.01"
     },
     {
-      "source": "PTH",
+      "source": "MKI67",
       "target": "cryptogenic organizing pneumonia (ORGANIZING_PNEUMONIA)",
       "type": "ASSOCIATED_WITH",
-      "description": "PTH is associated with cryptogenic organizing pneumonia (ORGANIZING_PNEUMONIA). Open Targets association score 0.01"
+      "description": "MKI67 is associated with cryptogenic organizing pneumonia (ORGANIZING_PNEUMONIA). Open Targets association score 0.01"
     },
     {
       "source": "CCL3",
       "target": "cryptogenic organizing pneumonia (ORGANIZING_PNEUMONIA)",
       "type": "ASSOCIATED_WITH",
       "description": "CCL3 is associated with cryptogenic organizing pneumonia (ORGANIZING_PNEUMONIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTH",
+      "target": "cryptogenic organizing pneumonia (ORGANIZING_PNEUMONIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTH is associated with cryptogenic organizing pneumonia (ORGANIZING_PNEUMONIA). Open Targets association score 0.01"
     },
     {
       "source": "ADGRF5",

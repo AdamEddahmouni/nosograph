@@ -1,0 +1,526 @@
+{
+  "relationships": [
+    {
+      "source": "CD19",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD19 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LYN",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LYN is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNFRSF21",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF21 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TNFRSF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IL13RA2",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13RA2 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13RA2",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13RA2 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ITGA2B",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA2B is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "RASGRP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASGRP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FCER1G",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "FCER1G is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFATC1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBIA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "CD40",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD83",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD83 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ICOS",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ICOS is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ICOSLG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ICOSLG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL21R",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL21R is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGA2B",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA2B is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFRSF21",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF21 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF9",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF9 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "WAS",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WAS is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.80"
+    },
+    {
+      "source": "CARD11",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXP3",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "GP1BB",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GP1BB is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "VWF",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD40",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "ST3GAL4",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST3GAL4 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "STAT6",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT6 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL21R",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL21R is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "WDR1",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR1 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "LYN",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYN is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "FCGR2A",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2A is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "FCGR2B",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2B is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "FCGR2C",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2C is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "FERMT3",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FERMT3 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFATC1",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFATC1 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "TREML1",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREML1 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "RAB27A",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB27A is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "RABGGTA",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RABGGTA is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "GP1BA",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GP1BA is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "HOXC4",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXC4 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "FCER1G",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCER1G is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "ITGA2B",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA2B is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL13RA2",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13RA2 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "MYH9",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH9 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNFRSF9",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF9 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "TUBB1",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB1 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "NIBAN3",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NIBAN3 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD19",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD19 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "BACH2",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BACH2 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "RANBP10",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RANBP10 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "MPL",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPL is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL4",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "ICOS",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICOS is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "CLIC1",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLIC1 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "RGS13",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RGS13 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "NSG1",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSG1 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "LAX1",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAX1 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "POU2AF1",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU2AF1 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "MPIG6B",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPIG6B is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "WIPF1",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WIPF1 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD83",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD83 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZC3H12A",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZC3H12A is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "FGA",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGA is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNFRSF21",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF21 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "TMEM163",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM163 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "AICDA",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AICDA is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADGRG3",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADGRG3 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "ICOSLG",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICOSLG is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "ERCC6L2",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC6L2 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "RASGRP1",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASGRP1 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "PDCD1",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "SH3BP2",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3BP2 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "NFKBIA",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIA is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "ITGB2",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "SH2D1A",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2D1A is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "TUBA4A",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBA4A is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "EPHX1",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHX1 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "FYB1",
+      "target": "thrombocytopenia 1 (THROMBOCYTOPENIA_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FYB1 is associated with thrombocytopenia 1 (THROMBOCYTOPENIA_1). Open Targets association score 0.03"
+    }
+  ]
+}

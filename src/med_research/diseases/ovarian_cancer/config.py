@@ -85,6 +85,7 @@ CAR_T_SCORES = {
         "PARP3": 4.0,
         "PDGFRA": 4.0,
         "PDGFRB": 4.0,
+        "PDPK1": 4.0,
         "PIK3CA": 4.0,
         "PMS2": 4.0,
         "POLA1": 4.0,

@@ -1,0 +1,532 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1278146",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "FAMITINIB targets KIT."
+    },
+    {
+      "source": "CHEMBL1336",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "SORAFENIB targets KIT."
+    },
+    {
+      "source": "CHEMBL2103851",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "AMUVATINIB targets KIT."
+    },
+    {
+      "source": "CHEMBL225071",
+      "target": "TYMS",
+      "type": "TARGETS",
+      "description": "RALTITREXED targets TYMS."
+    },
+    {
+      "source": "CHEMBL1201560",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "TREATS",
+      "description": "PEGINTERFERON ALFA-2A is phase 4 / marketed for large cell carcinoma (LARGE_CELL_CARCINOMA)."
+    },
+    {
+      "source": "CHEMBL1201752",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "TREATS",
+      "description": "IXABEPILONE is phase 4 / marketed for large cell carcinoma (LARGE_CELL_CARCINOMA)."
+    },
+    {
+      "source": "CHEMBL1683590",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "TREATS",
+      "description": "ERIBULIN is phase 4 / marketed for large cell carcinoma (LARGE_CELL_CARCINOMA)."
+    },
+    {
+      "source": "CHEMBL1683590",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "TREATS",
+      "description": "ERIBULIN is phase 4 / marketed for large cell carcinoma (LARGE_CELL_CARCINOMA)."
+    },
+    {
+      "source": "CHEMBL1742992",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "TREATS",
+      "description": "BLINATUMOMAB is phase 4 / marketed for large cell carcinoma (LARGE_CELL_CARCINOMA)."
+    },
+    {
+      "source": "CHEMBL1789941",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "TREATS",
+      "description": "RUXOLITINIB is phase 4 / marketed for large cell carcinoma (LARGE_CELL_CARCINOMA)."
+    },
+    {
+      "source": "CHEMBL2110725",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "TREATS",
+      "description": "VINFLUNINE is phase 3 for large cell carcinoma (LARGE_CELL_CARCINOMA)."
+    },
+    {
+      "source": "CHEMBL225071",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "TREATS",
+      "description": "RALTITREXED is phase 4 / marketed for large cell carcinoma (LARGE_CELL_CARCINOMA)."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "SLC2A3",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A3 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RASSF1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASSF1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "CDH2",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH2 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "USP7",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP7 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "EGFR",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MSLN",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSLN is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PAX8",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX8 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "KRAS",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDH1",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MET",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ENO2",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENO2 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "STK33",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK33 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "RASSF1",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASSF1 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TP53",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ERVW-1",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERVW-1 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFBR2",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBR2 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALK",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TTF1",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTF1 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KIT",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD8A",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NCAM1",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCAM1 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGF1",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSF3",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL11A",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL11A is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DKK2",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DKK2 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP2",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DKK1",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DKK1 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM5",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM5 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSG2",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSG2 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM7",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM7 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM3",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM3 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TYMS",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYMS is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD274",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ING5",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ING5 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC2A3",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A3 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD5",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD5 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGF1R",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1R is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NKX2-1",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-1 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDCD1",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TCEAL1",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCEAL1 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NSG1",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSG1 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP63",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CAV1",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAV1 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTLA4",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTLA4 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRT8",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT8 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BAG3",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAG3 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AFP",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRT7",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT7 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "S100A7",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A7 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYC",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "UVRAG",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UVRAG is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPE65",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPE65 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CKAP4",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CKAP4 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRPM7",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPM7 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "UCP3",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UCP3 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ANPEP",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANPEP is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RSPO4",
+      "target": "large cell carcinoma (LARGE_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO4 is associated with large cell carcinoma (LARGE_CELL_CARCINOMA). Open Targets association score 0.01"
+    }
+  ]
+}

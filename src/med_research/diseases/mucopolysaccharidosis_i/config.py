@@ -72,6 +72,7 @@ CAR_T_SCORES = {
         "FOXC2": 4.0,
         "FOXE3": 4.0,
         "GAL": 4.0,
+        "GALM": 4.0,
         "GALNS": 4.0,
         "GAS1": 4.0,
         "GH1": 4.0,

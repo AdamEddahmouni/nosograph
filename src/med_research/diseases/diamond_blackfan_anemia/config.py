@@ -40,6 +40,7 @@ CAR_T_SCORES = {
         "DNAJC21": 4.0,
         "DRD2": 4.0,
         "DRD3": 4.0,
+        "DRD4": 4.0,
         "DYSF": 4.0,
         "ERCC4": 4.0,
         "ERCC6L2": 4.0,

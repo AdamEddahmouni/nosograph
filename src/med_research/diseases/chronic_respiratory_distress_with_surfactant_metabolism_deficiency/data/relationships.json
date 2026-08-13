@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "ATF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ATF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TCF21",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF21 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ADAM17",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM17 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ADAMTSL2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTSL2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GAD1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GAD1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "DPP4",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "DPP4 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "BMP1",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP1 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "MAPK6",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK6 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK8IP3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK8IP3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "ACE2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "PTHLH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTHLH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TGFB3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "EPAS1",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "EPAS1 is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "LRP4",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP4 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT7B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT7B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP1A2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP1A2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SFTPC",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFTPC is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.71"
+    },
+    {
+      "source": "BMP1",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP1 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.12"
+    },
+    {
+      "source": "ABCA3",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA3 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "DPP4",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPP4 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "FSTL1",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSTL1 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "WFDC2",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WFDC2 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "TGFB3",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB3 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NDST1",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDST1 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "MCRIP1",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCRIP1 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NPAS3",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPAS3 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "MAN1A2",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAN1A2 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "RCN3",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RCN3 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFIB",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFIB is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TMTC3",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMTC3 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "LPCAT1",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPCAT1 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAPK8IP3",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK8IP3 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "STK40",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK40 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "NEDD4L",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEDD4L is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "EPAS1",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPAS1 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TMEM38B",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM38B is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADAM17",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAM17 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXF1",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXF1 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SFTPB",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFTPB is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLIT3",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLIT3 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADGRF5",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADGRF5 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "HSPA5",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPA5 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADRA2B",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2B is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRP4",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP4 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PHF14",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHF14 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ECEL1",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ECEL1 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TCF21",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF21 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "HCK",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HCK is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYP1A2",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP1A2 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADAMTSL2",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTSL2 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAPK6",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK6 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SNX5",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNX5 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ACE2",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE2 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PDPN",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDPN is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "FBXW8",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXW8 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "DHCR7",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHCR7 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "HOXA5",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA5 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNRC6C",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNRC6C is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GYG1",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GYG1 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "KIF5A",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF5A is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "COPA",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COPA is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "WNT7B",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT7B is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPAG17",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPAG17 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTHLH",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTHLH is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ROR1",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROR1 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTPN6",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN6 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ATF2",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATF2 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRRX1",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRRX1 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "NUBP1",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUBP1 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GAD1",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAD1 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ROBO1",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROBO1 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "NKX2-1",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-1 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "IGF1",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "IRX1",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRX1 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GIT1",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIT1 is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "POLB",
+      "target": "chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLB is associated with chronic respiratory distress with surfactant metabolism deficiency (CHRONIC_RESPIRATORY_DISTRESS_WITH_SURFACTANT_METABOLISM_DEFICIENCY). Open Targets association score 0.03"
+    }
+  ]
+}

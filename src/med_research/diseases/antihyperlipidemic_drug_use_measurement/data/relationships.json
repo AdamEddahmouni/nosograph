@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "CDKN2B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "SCARB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "SCARB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "IRF2BP2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF2BP2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ZNF266",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF266 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL1RN",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1RN is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL3 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CETP is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "HMGCR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HMGCR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "MRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "IRF2BP2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF2BP2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "WNT6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "NAT2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NAT2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "PCSK9",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "HP",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HP is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "SORT1",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORT1 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "PNPLA3",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PNPLA3 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "CELSR2",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR2 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "APOE",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "ASGR1",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASGR1 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "LCT",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCT is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "HNF1A",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "HMGCR",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCR is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "ABCA6",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA6 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "BNC2",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BNC2 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "TIMD4",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMD4 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "MYLIP",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYLIP is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "ABCA1",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "ASGR2",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASGR2 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "HPR",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPR is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "DNAH11",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH11 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "ABCG8",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG8 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "APOA5",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "FADS2",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS2 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "CETP",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETP is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL3 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "WDR72",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR72 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "IL1RN",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1RN is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "SCARB1",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCARB1 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "RTL9",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RTL9 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "DCPS",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCPS is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "GAS6",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAS6 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "ZPR1",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZPR1 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "LPA",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "MRAS",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRAS is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.27"
+    },
+    {
+      "source": "NAT2",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAT2 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.27"
+    },
+    {
+      "source": "MAGOH",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAGOH is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.25"
+    },
+    {
+      "source": "WNT6",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT6 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.24"
+    },
+    {
+      "source": "LDLR",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.24"
+    },
+    {
+      "source": "MAFB",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAFB is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.24"
+    },
+    {
+      "source": "TCF12",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF12 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.24"
+    },
+    {
+      "source": "TMPRSS11E",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS11E is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.23"
+    },
+    {
+      "source": "PDHB",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDHB is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.23"
+    },
+    {
+      "source": "HGFAC",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGFAC is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.23"
+    },
+    {
+      "source": "NPC1L1",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPC1L1 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.23"
+    },
+    {
+      "source": "HBS1L",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBS1L is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.22"
+    },
+    {
+      "source": "TRIB1",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIB1 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.22"
+    },
+    {
+      "source": "GC",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GC is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.22"
+    },
+    {
+      "source": "CITED2",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CITED2 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.22"
+    },
+    {
+      "source": "PPARA",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARA is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.21"
+    },
+    {
+      "source": "PRKAA2",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA2 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.21"
+    },
+    {
+      "source": "FAM20A",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM20A is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.21"
+    },
+    {
+      "source": "KLF14",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF14 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.21"
+    },
+    {
+      "source": "MEP1B",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEP1B is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.21"
+    },
+    {
+      "source": "ZNF266",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF266 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.21"
+    },
+    {
+      "source": "IRF2BP2",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF2BP2 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.21"
+    },
+    {
+      "source": "TRMU",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRMU is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.20"
+    },
+    {
+      "source": "CD177",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD177 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.20"
+    },
+    {
+      "source": "PPP1R3B",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R3B is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.19"
+    },
+    {
+      "source": "ABO",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABO is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.19"
+    },
+    {
+      "source": "CDKN2B",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2B is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.19"
+    },
+    {
+      "source": "RCHY1",
+      "target": "antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RCHY1 is associated with antihyperlipidemic drug use measurement (ANTIHYPERLIPIDEMIC_DRUG_USE_MEASUREMENT). Open Targets association score 0.19"
+    }
+  ]
+}

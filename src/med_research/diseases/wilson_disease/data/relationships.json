@@ -1,6 +1,18 @@
 {
   "relationships": [
     {
+      "source": "CHEMBL4297856",
+      "target": "PDCD1",
+      "type": "TARGETS",
+      "description": "ZIMBERELIMAB targets PDCD1."
+    },
+    {
+      "source": "CHEMBL4297843",
+      "target": "PDCD1",
+      "type": "TARGETS",
+      "description": "TORIPALIMAB targets PDCD1."
+    },
+    {
       "source": "CDK4",
       "target": "cell-cycle",
       "type": "PARTICIPATES_IN",
@@ -73,10 +85,28 @@
       "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
     },
     {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
       "source": "THOP1",
       "target": "serotonin-dopamine",
       "type": "PARTICIPATES_IN",
       "description": "THOP1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "IRF4",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF4 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
     },
     {
       "source": "VEGFA",
@@ -191,12 +221,6 @@
       "target": "tnf-signaling",
       "type": "PARTICIPATES_IN",
       "description": "TNF is a component of the TNF Signaling pathway."
-    },
-    {
-      "source": "IRF4",
-      "target": "type1-ifn",
-      "type": "PARTICIPATES_IN",
-      "description": "IRF4 is a component of the Type I Interferon Pathway pathway."
     },
     {
       "source": "NLRP3",
@@ -337,10 +361,10 @@
       "description": "RPL17 is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.01"
     },
     {
-      "source": "PCYT2",
+      "source": "CEACAM5",
       "target": "Wilson disease (WILSON_DISEASE)",
       "type": "ASSOCIATED_WITH",
-      "description": "PCYT2 is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.01"
+      "description": "CEACAM5 is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.01"
     },
     {
       "source": "MFSD11",
@@ -355,10 +379,10 @@
       "description": "MAGEA3 is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.01"
     },
     {
-      "source": "CEACAM5",
+      "source": "PCYT2",
       "target": "Wilson disease (WILSON_DISEASE)",
       "type": "ASSOCIATED_WITH",
-      "description": "CEACAM5 is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.01"
+      "description": "PCYT2 is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.01"
     },
     {
       "source": "GPC3",
@@ -409,16 +433,16 @@
       "description": "NTRK1 is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.01"
     },
     {
-      "source": "GSDMB",
-      "target": "Wilson disease (WILSON_DISEASE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GSDMB is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.01"
-    },
-    {
       "source": "CDKN2A",
       "target": "Wilson disease (WILSON_DISEASE)",
       "type": "ASSOCIATED_WITH",
       "description": "CDKN2A is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSDMB",
+      "target": "Wilson disease (WILSON_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.01"
     },
     {
       "source": "SMARCB1",
@@ -451,22 +475,40 @@
       "description": "SERPINA1 is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.00"
     },
     {
-      "source": "TRIM21",
-      "target": "Wilson disease (WILSON_DISEASE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "TRIM21 is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.00"
-    },
-    {
       "source": "ABCB1",
       "target": "Wilson disease (WILSON_DISEASE)",
       "type": "ASSOCIATED_WITH",
       "description": "ABCB1 is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.00"
     },
     {
+      "source": "TRIM21",
+      "target": "Wilson disease (WILSON_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM21 is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "FUT1",
+      "target": "Wilson disease (WILSON_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUT1 is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.00"
+    },
+    {
       "source": "SFRP4",
       "target": "Wilson disease (WILSON_DISEASE)",
       "type": "ASSOCIATED_WITH",
       "description": "SFRP4 is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYC",
+      "target": "Wilson disease (WILSON_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL6",
+      "target": "Wilson disease (WILSON_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.00"
     },
     {
       "source": "PLAGL1",
@@ -487,34 +529,16 @@
       "description": "MBP is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.00"
     },
     {
-      "source": "IL6",
+      "source": "EML4",
       "target": "Wilson disease (WILSON_DISEASE)",
       "type": "ASSOCIATED_WITH",
-      "description": "IL6 is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.00"
-    },
-    {
-      "source": "MYC",
-      "target": "Wilson disease (WILSON_DISEASE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "MYC is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.00"
-    },
-    {
-      "source": "FUT1",
-      "target": "Wilson disease (WILSON_DISEASE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "FUT1 is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.00"
+      "description": "EML4 is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.00"
     },
     {
       "source": "NBR1",
       "target": "Wilson disease (WILSON_DISEASE)",
       "type": "ASSOCIATED_WITH",
       "description": "NBR1 is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.00"
-    },
-    {
-      "source": "EML4",
-      "target": "Wilson disease (WILSON_DISEASE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "EML4 is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.00"
     },
     {
       "source": "PAX3",
@@ -529,16 +553,46 @@
       "description": "SSX2 is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.00"
     },
     {
-      "source": "GFAP",
+      "source": "IFNG",
       "target": "Wilson disease (WILSON_DISEASE)",
       "type": "ASSOCIATED_WITH",
-      "description": "GFAP is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.00"
+      "description": "IFNG is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDCD1",
+      "target": "Wilson disease (WILSON_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.00"
     },
     {
       "source": "HDAC9",
       "target": "Wilson disease (WILSON_DISEASE)",
       "type": "ASSOCIATED_WITH",
       "description": "HDAC9 is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SNCA",
+      "target": "Wilson disease (WILSON_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CREB3L1",
+      "target": "Wilson disease (WILSON_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREB3L1 is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "NTRK3",
+      "target": "Wilson disease (WILSON_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK3 is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GFAP",
+      "target": "Wilson disease (WILSON_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.00"
     },
     {
       "source": "ACBD6",
@@ -557,12 +611,6 @@
       "target": "Wilson disease (WILSON_DISEASE)",
       "type": "ASSOCIATED_WITH",
       "description": "TLE1 is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.00"
-    },
-    {
-      "source": "NTRK3",
-      "target": "Wilson disease (WILSON_DISEASE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NTRK3 is associated with Wilson disease (WILSON_DISEASE). Open Targets association score 0.00"
     },
     {
       "source": "ATP7B",

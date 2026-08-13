@@ -1,0 +1,460 @@
+{
+  "relationships": [
+    {
+      "source": "ATRAID",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRAID is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "SLC2A9",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A9 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL33",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL33 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CETP is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "COMT",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "COMT is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CYP26B1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP26B1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "NAT8",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NAT8 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SLCO1B1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLCO1B1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SULT2A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SULT2A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "UGT1A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "UGT1A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "UGT1A6",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "UGT1A6 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "UGT3A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "UGT3A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SLCO1B1",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLCO1B1 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "CPS1",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPS1 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "PYROXD2",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PYROXD2 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "SLC16A9",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC16A9 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "KLKB1",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLKB1 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "ACE",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "UGT1A1",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGT1A1 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "COMT",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COMT is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "ACY3",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACY3 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "NAT8",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAT8 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "CETP",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETP is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "AGXT2",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGXT2 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "ACADS",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACADS is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "ACADM",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACADM is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "FAAH",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAAH is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "ADA",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADA is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "GCKR",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "DDC",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDC is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "LIPC",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "PCSK9",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "SLC22A2",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A2 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "ASPG",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASPG is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "SORT1",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORT1 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "MCCC1",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCCC1 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "APOA5",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "PPM1K",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPM1K is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "SLC2A9",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A9 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "TMEM229B",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM229B is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "FADS1",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS1 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "PF4",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PF4 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "CYP26B1",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP26B1 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "ARG1",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARG1 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "APOB",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "PKD2L1",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKD2L1 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "SULT2A1",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SULT2A1 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "CELSR2",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR2 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "SLC22A16",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A16 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "AFMID",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFMID is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "UGT3A1",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGT3A1 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "HAO2",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAO2 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "CPT1A",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPT1A is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "ACADL",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACADL is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "MSRA",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSRA is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "CNDP2",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNDP2 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "GGT1",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGT1 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "ZPR1",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZPR1 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "CERS4",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CERS4 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "GLS2",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLS2 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "IL33",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL33 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "PTER",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTER is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "FOLH1",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOLH1 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "F12",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F12 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "MTNR1B",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTNR1B is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "ATRAID",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRAID is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "UGT1A6",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGT1A6 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "KYAT3",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KYAT3 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "ACSM2B",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACSM2B is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "LCT",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCT is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "TMPRSS11E",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS11E is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "SLC6A13",
+      "target": "serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A13 is associated with serum metabolite measurement (SERUM_METABOLITE_MEASUREMENT). Open Targets association score 0.39"
+    }
+  ]
+}

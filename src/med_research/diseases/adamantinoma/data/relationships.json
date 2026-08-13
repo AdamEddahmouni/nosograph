@@ -1,0 +1,484 @@
+{
+  "relationships": [
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "C12orf75",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C12orf75 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ZNF106",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF106 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ZNF226",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF226 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "HFE",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "HFE is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "HJV",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "HJV is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "TFR2",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFR2 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "ITGB3BP",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB3BP is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "PRELP",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "PRELP is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "PTH1R",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTH1R is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "ITGB3BP",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB3BP is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "LRP5",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP5 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "TP53",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "PSME2",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSME2 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PSME1",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSME1 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PSMB8",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMB8 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CASR",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASR is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "ITGB3BP",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB3BP is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "NKX3-1",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX3-1 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "STAT1",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT1 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "MMP9",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CXCR2",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR2 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "ID1",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ID1 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CAV2",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAV2 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRRG2",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRRG2 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "C1GALT1",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1GALT1 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZNF106",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF106 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SAE1",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAE1 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRRC28",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRC28 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CHCT1",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHCT1 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLITRK4",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLITRK4 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "LONRF3",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LONRF3 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "RAB9B",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB9B is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TBC1D12",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D12 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "BORCS6",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BORCS6 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "C12orf75",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C12orf75 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "GM2A",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GM2A is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NRSN2",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRSN2 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "MPI",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPI is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "GPC6",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPC6 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "GPD1",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPD1 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "HJV",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HJV is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "DNAH5",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH5 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SAMD9L",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAMD9L is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "KL",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KL is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TET1",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET1 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ART5",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ART5 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRP5",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP5 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "HFE",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HFE is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ENPP4",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENPP4 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "HLCS",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLCS is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SEC31B",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEC31B is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TF",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TFR2",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFR2 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTH1R",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTH1R is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NMRK2",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NMRK2 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CPN1",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPN1 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SUN3",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUN3 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CA4",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA4 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PIERCE2",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIERCE2 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PAQR6",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAQR6 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CACHD1",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACHD1 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FAM184B",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM184B is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRELP",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRELP is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NFYA",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFYA is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZNF226",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF226 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTH",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTH is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "REPS2",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REPS2 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "KCTD5",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCTD5 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TLDC2",
+      "target": "adamantinoma (ADAMANTINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLDC2 is associated with adamantinoma (ADAMANTINOMA). Open Targets association score 0.03"
+    }
+  ]
+}

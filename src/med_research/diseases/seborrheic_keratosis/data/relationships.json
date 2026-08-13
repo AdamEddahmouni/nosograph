@@ -1,0 +1,496 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BIRC6",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BIRC6 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CASP8",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP8 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "SYK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "SYK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "SMURF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SMURF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CHEK2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "CHEK2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PIAS1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "PIAS1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "GORASP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "GORASP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RELA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "LTBP1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SMAD3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "LTBP1",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP1 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "ABCC10",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC10 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.74"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.72"
+    },
+    {
+      "source": "TERT",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.50"
+    },
+    {
+      "source": "FLG",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLG is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.46"
+    },
+    {
+      "source": "CHEK2",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHEK2 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.39"
+    },
+    {
+      "source": "HRAS",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.37"
+    },
+    {
+      "source": "OCA2",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OCA2 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.35"
+    },
+    {
+      "source": "SAMD5",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAMD5 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.32"
+    },
+    {
+      "source": "TLCD5",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLCD5 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.30"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "KRAS",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "AKT1",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP63",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.25"
+    },
+    {
+      "source": "TTC27",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC27 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.21"
+    },
+    {
+      "source": "SMAD3",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD3 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.20"
+    },
+    {
+      "source": "EGFR",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.19"
+    },
+    {
+      "source": "NTRK3",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK3 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.18"
+    },
+    {
+      "source": "HIP1",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIP1 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.18"
+    },
+    {
+      "source": "BCOR",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCOR is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.18"
+    },
+    {
+      "source": "HOXC13",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXC13 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.18"
+    },
+    {
+      "source": "CAMTA1",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMTA1 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.18"
+    },
+    {
+      "source": "CD79A",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.18"
+    },
+    {
+      "source": "CASP8",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP8 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.18"
+    },
+    {
+      "source": "BCL9L",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL9L is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.18"
+    },
+    {
+      "source": "SYK",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYK is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.18"
+    },
+    {
+      "source": "PIAS1",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIAS1 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.16"
+    },
+    {
+      "source": "AJUBA",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AJUBA is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.15"
+    },
+    {
+      "source": "ARHGEF12",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGEF12 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.14"
+    },
+    {
+      "source": "LTBP1",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTBP1 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.11"
+    },
+    {
+      "source": "ABCC10",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC10 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.11"
+    },
+    {
+      "source": "NIN",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NIN is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "PRCC",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRCC is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "FAM131B",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM131B is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "CSMD3",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSMD3 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "ZNF318",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF318 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "CRIP3",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRIP3 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "IQCH",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IQCH is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "YIPF4",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YIPF4 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TTC28",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC28 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SKOR1",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SKOR1 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "BIRC6",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIRC6 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "LUM",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LUM is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "GDA",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDA is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CLPTM1L",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLPTM1L is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTGS2",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "HMGB1",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGB1 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "SMURF1",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMURF1 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "SMURF2",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMURF2 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ABCG2",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG2 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSDMB",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL2",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CKAP4",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CKAP4 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "UVRAG",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UVRAG is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPE65",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPE65 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOP53",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOP53 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GORASP1",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GORASP1 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "SYT1",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYT1 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "RELA",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELA is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "WNK1",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNK1 is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "HSPA1A",
+      "target": "seborrheic keratosis (SEBORRHEIC_KERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPA1A is associated with seborrheic keratosis (SEBORRHEIC_KERATOSIS). Open Targets association score 0.01"
+    }
+  ]
+}

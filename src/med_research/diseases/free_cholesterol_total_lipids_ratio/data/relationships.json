@@ -1,0 +1,472 @@
+{
+  "relationships": [
+    {
+      "source": "SLC39A8",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC39A8 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "SCARB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "SCARB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TM6SF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TM6SF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ZNF285",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF285 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL3 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL4 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CETP is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "HMGCR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HMGCR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CD300LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD300LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNFRSF13B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF13B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF13",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFB",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFB is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.73"
+    },
+    {
+      "source": "LDLR",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.72"
+    },
+    {
+      "source": "APOB",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.72"
+    },
+    {
+      "source": "APOC3",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC3 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.65"
+    },
+    {
+      "source": "LPL",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.60"
+    },
+    {
+      "source": "CETP",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETP is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.59"
+    },
+    {
+      "source": "SORT1",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORT1 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.58"
+    },
+    {
+      "source": "APOE",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.58"
+    },
+    {
+      "source": "LIPC",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.58"
+    },
+    {
+      "source": "CD300LG",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD300LG is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.58"
+    },
+    {
+      "source": "CELSR2",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR2 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.58"
+    },
+    {
+      "source": "HP",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HP is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.58"
+    },
+    {
+      "source": "APOA5",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.57"
+    },
+    {
+      "source": "APOH",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOH is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.57"
+    },
+    {
+      "source": "LIPG",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPG is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.57"
+    },
+    {
+      "source": "PLTP",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLTP is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.57"
+    },
+    {
+      "source": "FADS2",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS2 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.56"
+    },
+    {
+      "source": "LCAT",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCAT is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.56"
+    },
+    {
+      "source": "RSPO3",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO3 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.56"
+    },
+    {
+      "source": "LPA",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.55"
+    },
+    {
+      "source": "ABCA1",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.55"
+    },
+    {
+      "source": "ABCA6",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA6 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.55"
+    },
+    {
+      "source": "TRIB1",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIB1 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.55"
+    },
+    {
+      "source": "MTARC1",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTARC1 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.55"
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL4 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.55"
+    },
+    {
+      "source": "VEGFB",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFB is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.55"
+    },
+    {
+      "source": "TM6SF2",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM6SF2 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.55"
+    },
+    {
+      "source": "SLC22A1",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A1 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.55"
+    },
+    {
+      "source": "TNFSF13",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.55"
+    },
+    {
+      "source": "SERPINA1",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA1 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.54"
+    },
+    {
+      "source": "HMGCR",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCR is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.54"
+    },
+    {
+      "source": "GALNT2",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GALNT2 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.54"
+    },
+    {
+      "source": "CPT1A",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPT1A is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.54"
+    },
+    {
+      "source": "MLXIPL",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLXIPL is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.54"
+    },
+    {
+      "source": "ANKRD55",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKRD55 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.54"
+    },
+    {
+      "source": "ABCG8",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG8 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.54"
+    },
+    {
+      "source": "MAP3K1",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K1 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.53"
+    },
+    {
+      "source": "SCARB1",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCARB1 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.53"
+    },
+    {
+      "source": "TTC39B",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC39B is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.53"
+    },
+    {
+      "source": "ZPR1",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZPR1 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.53"
+    },
+    {
+      "source": "ABCG5",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG5 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.53"
+    },
+    {
+      "source": "APOA1",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.53"
+    },
+    {
+      "source": "GCKR",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.52"
+    },
+    {
+      "source": "STARD3",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STARD3 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.52"
+    },
+    {
+      "source": "NPFFR2",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPFFR2 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.52"
+    },
+    {
+      "source": "TIMD4",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMD4 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.52"
+    },
+    {
+      "source": "TRIM5",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM5 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.52"
+    },
+    {
+      "source": "FADS1",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS1 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.51"
+    },
+    {
+      "source": "HGFAC",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGFAC is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.51"
+    },
+    {
+      "source": "GPAM",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPAM is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.51"
+    },
+    {
+      "source": "PLG",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLG is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.51"
+    },
+    {
+      "source": "SLC39A8",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC39A8 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.51"
+    },
+    {
+      "source": "APOA2",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA2 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.51"
+    },
+    {
+      "source": "TNFRSF13B",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF13B is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.51"
+    },
+    {
+      "source": "USP24",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP24 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.50"
+    },
+    {
+      "source": "SIDT2",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIDT2 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.50"
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL3 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.50"
+    },
+    {
+      "source": "SLC22A2",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A2 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.50"
+    },
+    {
+      "source": "ZNF285",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF285 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.50"
+    },
+    {
+      "source": "ST3GAL4",
+      "target": "free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST3GAL4 is associated with free cholesterol:total lipids ratio (FREE_CHOLESTEROL_TOTAL_LIPIDS_RATIO). Open Targets association score 0.50"
+    }
+  ]
+}

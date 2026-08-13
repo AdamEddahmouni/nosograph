@@ -1,0 +1,580 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2L1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2L1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CASP14",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP14 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "TNFSF11",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF11 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "FGF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MMP1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP14",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP14 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "CASP14",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP14 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTHLH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTHLH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF1B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF1B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF11",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF11 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "HIF1A",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "HIF1A is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "ABCC11",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC11 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "LRIG3",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRIG3 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.23"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.18"
+    },
+    {
+      "source": "MYC",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.15"
+    },
+    {
+      "source": "SERHL2",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERHL2 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.09"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.04"
+    },
+    {
+      "source": "EGFR",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNF",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.03"
+    },
+    {
+      "source": "FGF7",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF7 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.03"
+    },
+    {
+      "source": "MKI67",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF11B is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNFSF11",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF11 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTHLH",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTHLH is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNFRSF1B",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF1B is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.03"
+    },
+    {
+      "source": "MT2A",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT2A is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL1A",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1A is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.02"
+    },
+    {
+      "source": "MMP9",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.02"
+    },
+    {
+      "source": "GSDMB",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL1B",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTEN",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.02"
+    },
+    {
+      "source": "AKT1",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.02"
+    },
+    {
+      "source": "EGF",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGF is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL6",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.02"
+    },
+    {
+      "source": "TP63",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.02"
+    },
+    {
+      "source": "CKAP4",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CKAP4 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.02"
+    },
+    {
+      "source": "UVRAG",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UVRAG is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.02"
+    },
+    {
+      "source": "RPE65",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPE65 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.02"
+    },
+    {
+      "source": "HBEGF",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBEGF is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.02"
+    },
+    {
+      "source": "MMP14",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP14 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.02"
+    },
+    {
+      "source": "ABCC11",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC11 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.02"
+    },
+    {
+      "source": "DEFB4B",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEFB4B is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "DEFB4A",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEFB4A is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CASP14",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP14 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERBB2",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "S100A7",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A7 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB1",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPP1",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPP1 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN2B",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2B is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "TMPRSS6",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS6 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTNR1B",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTNR1B is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "EREG",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EREG is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFA",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFA is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPK1",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGFR2",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "STAT3",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP1",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP1 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "LGALS8",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS8 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "TFAP2B",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFAP2B is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "EPHB2",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHB2 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFKB1",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "PAK2",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAK2 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSMD9",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMD9 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "GJA1",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA1 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "TMED7",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMED7 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZNRD2",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNRD2 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFI27",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFI27 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "DCTN6",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCTN6 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL2L1",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2L1 is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    },
+    {
+      "source": "HIF1A",
+      "target": "cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF1A is associated with cholesteatoma of middle ear (CHOLESTEATOMA_OF_MIDDLE_EAR). Open Targets association score 0.01"
+    }
+  ]
+}

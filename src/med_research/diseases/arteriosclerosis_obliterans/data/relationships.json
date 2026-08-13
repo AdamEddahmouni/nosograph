@@ -1,0 +1,532 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL495",
+      "target": "PTGER2",
+      "type": "TARGETS",
+      "description": "ALPROSTADIL targets PTGER2."
+    },
+    {
+      "source": "CHEMBL495",
+      "target": "PTGER1",
+      "type": "TARGETS",
+      "description": "ALPROSTADIL targets PTGER1."
+    },
+    {
+      "source": "ATG2B",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "ATG2B is a component of the Autophagy pathway."
+    },
+    {
+      "source": "TAF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TAF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C4A",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C4A is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TIMP1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL18",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELP",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELP is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "VCAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "VCAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "RAF1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RAF1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "PTH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "ATG2B",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ATG2B is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGER1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGER1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGER2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGER2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGIR",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGIR is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "MYD88",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MYD88 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "CYP2A6",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2A6 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "PTGER1",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGER1 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.07"
+    },
+    {
+      "source": "PTGER2",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGER2 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.07"
+    },
+    {
+      "source": "PLG",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLG is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNF",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.02"
+    },
+    {
+      "source": "ICAM1",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.02"
+    },
+    {
+      "source": "VEGFA",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP9",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "EDN1",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDN1 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL18",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACE",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "VIPR1",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIPR1 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TCN2",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCN2 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GCNT2",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCNT2 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD74",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD74 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "AGT",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TAF8",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAF8 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TIMP1",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP1 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "HMGB1",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGB1 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NTN1",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTN1 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "RHOA",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHOA is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADIPOQ",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOQ is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFKB1",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TPM1",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPM1 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKT1",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "HGF",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "SELP",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELP is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTCF",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTCF is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MFN2",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFN2 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "HSPB1",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPB1 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GAB1",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAB1 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "HSPB2",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPB2 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "APOE",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "HSPB3",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPB3 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "VCAM1",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VCAM1 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "LCN2",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN2 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "A2M",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "A2M is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOAT1",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOAT1 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "INS",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.01"
+    },
+    {
+      "source": "RAC1",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAC1 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PODXL",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PODXL is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.00"
+    },
+    {
+      "source": "RETN",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RETN is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALB",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTH",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTH is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.00"
+    },
+    {
+      "source": "RAF1",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAF1 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MB",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MB is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CSF3",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL6",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.00"
+    },
+    {
+      "source": "DNMT3B",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT3B is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.00"
+    },
+    {
+      "source": "COMP",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COMP is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATG2B",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATG2B is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYP2A6",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2A6 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CREG1",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREG1 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SERPIND1",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPIND1 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTGIR",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGIR is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.00"
+    },
+    {
+      "source": "EPO",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPO is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.00"
+    },
+    {
+      "source": "C3",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CSF1",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF1 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.00"
+    },
+    {
+      "source": "C4A",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C4A is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYD88",
+      "target": "arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYD88 is associated with arteriosclerosis obliterans (ARTERIOSCLEROSIS_OBLITERANS). Open Targets association score 0.00"
+    }
+  ]
+}

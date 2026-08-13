@@ -1,0 +1,448 @@
+{
+  "relationships": [
+    {
+      "source": "ADRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "ADRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "IGF2R",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2R is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TM6SF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TM6SF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATRAID",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRAID is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL3 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL4 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CETP is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "MAPKBP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPKBP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CD300LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD300LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "NAT2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NAT2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.66"
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL3 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.61"
+    },
+    {
+      "source": "APOA5",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.60"
+    },
+    {
+      "source": "LPL",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.59"
+    },
+    {
+      "source": "LPA",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "GALNT2",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GALNT2 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "RSPO3",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO3 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "CD300LG",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD300LG is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "PLTP",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLTP is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "MLXIPL",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLXIPL is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "COBLL1",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COBLL1 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "ANKRD55",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKRD55 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "PDE3B",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE3B is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "HGFAC",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGFAC is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "APOC1",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC1 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "SLC22A1",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A1 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "BAZ1B",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAZ1B is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "CETP",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETP is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "SLC22A2",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A2 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "TIMD4",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMD4 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "GCKR",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "ZPR1",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZPR1 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "IGF2R",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2R is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL4 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "GAS6",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAS6 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "L3MBTL3",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "L3MBTL3 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "RGS12",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RGS12 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "APOE",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "NECTIN2",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NECTIN2 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "GATA4",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA4 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "MAP3K1",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K1 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "ZC3H11B",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZC3H11B is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "PRAG1",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRAG1 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "MSRA",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSRA is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "APOC3",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC3 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "SORT1",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORT1 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "RAI1",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAI1 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "APOH",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOH is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "TM6SF2",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM6SF2 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "TRIB1",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIB1 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "PLA2G12A",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G12A is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "CELSR2",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR2 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "FADS2",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS2 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "PTPRB",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRB is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "STX1A",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STX1A is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "FDFT1",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FDFT1 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "PDE3A",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE3A is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "ATRAID",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRAID is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "PAFAH1B2",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAFAH1B2 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "NAT2",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAT2 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "TAGLN",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAGLN is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "MAPKBP1",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPKBP1 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "ADRB1",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB1 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "MAFF",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAFF is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "PLA2G6",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G6 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "ZNF142",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF142 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "MAFB",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAFB is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "SLC22A3",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A3 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "AFF1",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFF1 is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "CMIP",
+      "target": "phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMIP is associated with phospholipids in very large VLDL measurement  (PHOSPHOLIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.29"
+    }
+  ]
+}

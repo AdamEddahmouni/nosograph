@@ -1,0 +1,478 @@
+{
+  "relationships": [
+    {
+      "source": "BTK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BTK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "FGF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IGF2BP2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2BP2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ADAM19",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM19 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ADAMTS10",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS10 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ADAMTS17",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS17 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ADAMTSL3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTSL3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ADAMTSL4",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTSL4 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "LOXL1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "LOXL1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLIS3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLIS3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "IHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BMP2",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP2 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "BMP6",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP6 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "FGFR4",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR4 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "THSD4",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THSD4 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ANAPC4",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ANAPC4 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "AXIN2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "AXIN2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ADAMTS17",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS17 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.71"
+    },
+    {
+      "source": "ACAN",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACAN is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.71"
+    },
+    {
+      "source": "ZFAT",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFAT is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.67"
+    },
+    {
+      "source": "GATA5",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA5 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.64"
+    },
+    {
+      "source": "LCORL",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCORL is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.64"
+    },
+    {
+      "source": "ADAMTS10",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS10 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.62"
+    },
+    {
+      "source": "NPR2",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPR2 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.57"
+    },
+    {
+      "source": "NPNT",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPNT is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.57"
+    },
+    {
+      "source": "IGF2BP2",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2BP2 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.54"
+    },
+    {
+      "source": "TGFB2",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB2 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.54"
+    },
+    {
+      "source": "IGF1R",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1R is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.54"
+    },
+    {
+      "source": "L3MBTL3",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "L3MBTL3 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.54"
+    },
+    {
+      "source": "QSOX2",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "QSOX2 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.52"
+    },
+    {
+      "source": "GHSR",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHSR is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.52"
+    },
+    {
+      "source": "ADAMTSL4",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTSL4 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.52"
+    },
+    {
+      "source": "TNS1",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNS1 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.52"
+    },
+    {
+      "source": "FGF10",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF10 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.52"
+    },
+    {
+      "source": "ID4",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ID4 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.52"
+    },
+    {
+      "source": "EFEMP1",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EFEMP1 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.52"
+    },
+    {
+      "source": "ADAMTSL3",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTSL3 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.51"
+    },
+    {
+      "source": "RNF32",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF32 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.51"
+    },
+    {
+      "source": "PDE11A",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE11A is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.51"
+    },
+    {
+      "source": "THSD4",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THSD4 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.51"
+    },
+    {
+      "source": "HHIP",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HHIP is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.51"
+    },
+    {
+      "source": "ESR1",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.50"
+    },
+    {
+      "source": "ABHD15",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABHD15 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.49"
+    },
+    {
+      "source": "CABLES1",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CABLES1 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.49"
+    },
+    {
+      "source": "CENPW",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CENPW is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.49"
+    },
+    {
+      "source": "TET2",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.49"
+    },
+    {
+      "source": "ADRB2",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB2 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.49"
+    },
+    {
+      "source": "MFAP2",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFAP2 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.49"
+    },
+    {
+      "source": "DCBLD2",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCBLD2 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.49"
+    },
+    {
+      "source": "STC2",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STC2 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.49"
+    },
+    {
+      "source": "MECOM",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MECOM is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.48"
+    },
+    {
+      "source": "HMGA1",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGA1 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.48"
+    },
+    {
+      "source": "DMRT2",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMRT2 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.48"
+    },
+    {
+      "source": "NNT",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NNT is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.48"
+    },
+    {
+      "source": "SKI",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SKI is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.47"
+    },
+    {
+      "source": "GLIS3",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLIS3 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.47"
+    },
+    {
+      "source": "ADAM19",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAM19 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.47"
+    },
+    {
+      "source": "CEP120",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEP120 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.47"
+    },
+    {
+      "source": "LOXL1",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LOXL1 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.46"
+    },
+    {
+      "source": "BTK",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTK is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.46"
+    },
+    {
+      "source": "EBP",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EBP is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.46"
+    },
+    {
+      "source": "CDC123",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDC123 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.46"
+    },
+    {
+      "source": "PAPPA",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAPPA is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.46"
+    },
+    {
+      "source": "FGFR4",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR4 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.46"
+    },
+    {
+      "source": "GMPR2",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GMPR2 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.46"
+    },
+    {
+      "source": "SERPINA1",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA1 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.46"
+    },
+    {
+      "source": "JAZF1",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAZF1 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.46"
+    },
+    {
+      "source": "VRTN",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VRTN is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.45"
+    },
+    {
+      "source": "BMP6",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP6 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.45"
+    },
+    {
+      "source": "WHAMM",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WHAMM is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.45"
+    },
+    {
+      "source": "TBX3",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX3 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.45"
+    },
+    {
+      "source": "WWOX",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WWOX is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.45"
+    },
+    {
+      "source": "DENND2D",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DENND2D is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.45"
+    },
+    {
+      "source": "BMP2",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP2 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.44"
+    },
+    {
+      "source": "ANAPC4",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANAPC4 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.44"
+    },
+    {
+      "source": "AXIN2",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AXIN2 is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.44"
+    },
+    {
+      "source": "IHH",
+      "target": "forced expiratory volume (FORCED_EXPIRATORY_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IHH is associated with forced expiratory volume (FORCED_EXPIRATORY_VOLUME). Open Targets association score 0.44"
+    }
+  ]
+}

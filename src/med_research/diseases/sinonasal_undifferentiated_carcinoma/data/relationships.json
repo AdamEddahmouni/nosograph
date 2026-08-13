@@ -1,0 +1,478 @@
+{
+  "relationships": [
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ATR",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATR is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "LATS2",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LATS2 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNFRSF14",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF14 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "IDH2",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH2 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PAX7",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX7 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PAX3",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX3 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FOXO1",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXO1 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FLI1",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLI1 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "IDH1",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP53",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EWSR1",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EWSR1 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FOXL2",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXL2 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TSC1",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC1 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "U2AF1",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "U2AF1 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SPEN",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPEN is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PPM1D",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPM1D is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RB1",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATR",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATR is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ASXL1",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CREBBP",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CBLB",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBLB is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMARCB1",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCB1 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "MYC",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "KIT",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "EGFR",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "BRCA2",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MTOR",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "EP300",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EP300 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TSC2",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TNFRSF14",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF14 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KRAS",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ZRSR2",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZRSR2 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FBXW7",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXW7 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FGFR2",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "AKT1",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PRDM1",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM1 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "STAG2",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAG2 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "POLD1",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD1 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2A",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2A is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FOXA1",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXA1 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TERT",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "BAP1",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAP1 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ARID1A",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2D",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "LATS2",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LATS2 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PHOX2B",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHOX2B is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CUX1",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUX1 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SETD2",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD2 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "BCOR",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCOR is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ERBB4",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB4 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "GATA1",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA1 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "POLE",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NCOR1",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOR1 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "APC",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ARID2",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID2 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TET2",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "BRCA1",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RET",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MYOD1",
+      "target": "Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYOD1 is associated with Sinonasal Undifferentiated Carcinoma (SINONASAL_UNDIFFERENTIATED_CARCINOMA). Open Targets association score 0.18"
+    }
+  ]
+}

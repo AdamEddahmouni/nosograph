@@ -1,0 +1,424 @@
+{
+  "relationships": [
+    {
+      "source": "IGF2R",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2R is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ZDHHC14",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "ZDHHC14 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CETP is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "RASIP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASIP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "OPRM1",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "OPRM1 is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "LPA",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.72"
+    },
+    {
+      "source": "SLC22A2",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A2 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.67"
+    },
+    {
+      "source": "SLC22A3",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A3 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.62"
+    },
+    {
+      "source": "AGPAT4",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGPAT4 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.61"
+    },
+    {
+      "source": "MRPL18",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRPL18 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.59"
+    },
+    {
+      "source": "PLG",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLG is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.58"
+    },
+    {
+      "source": "APOE",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "MAP3K4",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K4 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "APOH",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOH is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "FNDC1",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FNDC1 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "IGF2R",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2R is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "SOD2",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD2 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "PLA2G12A",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G12A is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "CETP",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETP is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "ACAT2",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACAT2 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "ABCA6",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA6 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "MAS1",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAS1 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "PNLDC1",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PNLDC1 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "SLC22A1",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A1 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "TMEM181",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM181 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "SYTL3",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYTL3 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "RSPH3",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPH3 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "HP",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HP is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "APOB",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "CPS1",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPS1 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "CELSR2",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR2 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "SORT1",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORT1 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "TULP4",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TULP4 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "NOX3",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOX3 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "OPRM1",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OPRM1 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "GPCPD1",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPCPD1 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "HPR",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPR is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "NUDC",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUDC is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "SERAC1",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERAC1 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "PRKN",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKN is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "TCP1",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCP1 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "DSCAML1",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSCAML1 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "LPL",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "LDLR",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "PEMT",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PEMT is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "SNX9",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNX9 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "MAMSTR",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAMSTR is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.27"
+    },
+    {
+      "source": "PSRC1",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSRC1 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.27"
+    },
+    {
+      "source": "FAM20A",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM20A is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.27"
+    },
+    {
+      "source": "CHKA",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKA is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.25"
+    },
+    {
+      "source": "DYNLT1",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYNLT1 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.24"
+    },
+    {
+      "source": "TMC4",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMC4 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.22"
+    },
+    {
+      "source": "MSL2",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSL2 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.21"
+    },
+    {
+      "source": "PPP1R3B",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R3B is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.19"
+    },
+    {
+      "source": "ARID1B",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1B is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.19"
+    },
+    {
+      "source": "ZDHHC14",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZDHHC14 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.19"
+    },
+    {
+      "source": "LIPC",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.18"
+    },
+    {
+      "source": "RASIP1",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASIP1 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.17"
+    },
+    {
+      "source": "RGS17",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RGS17 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.16"
+    },
+    {
+      "source": "WTAP",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WTAP is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.16"
+    },
+    {
+      "source": "FUT2",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUT2 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.15"
+    },
+    {
+      "source": "PRMT7",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRMT7 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.14"
+    },
+    {
+      "source": "ADH1C",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADH1C is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.14"
+    },
+    {
+      "source": "NFE2L3",
+      "target": "lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L3 is associated with lipoprotein A measurement (LIPOPROTEIN_A_MEASUREMENT). Open Targets association score 0.14"
+    }
+  ]
+}

@@ -1,0 +1,472 @@
+{
+  "relationships": [
+    {
+      "source": "RUNX2",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "RUNX2 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "SOSTDC1",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "SOSTDC1 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "WNT10A",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT10A is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "ADAM23",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM23 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL17A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL17A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP14",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP14 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP20",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP20 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IL1R1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1R1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "ITGA11",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA11 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ALPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ALPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "RELT",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELT is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PTHLH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTHLH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "SLC6A3",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC6A3 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "ITGA11",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA11 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "LRP4",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP4 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT10A",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT10A is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP2E1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2E1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "LAMB3",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMB3 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.72"
+    },
+    {
+      "source": "COL17A1",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL17A1 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.52"
+    },
+    {
+      "source": "AMELY",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMELY is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.11"
+    },
+    {
+      "source": "AMELX",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMELX is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.11"
+    },
+    {
+      "source": "ENAM",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENAM is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.11"
+    },
+    {
+      "source": "PITX2",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX2 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.09"
+    },
+    {
+      "source": "SOSTDC1",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOSTDC1 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.09"
+    },
+    {
+      "source": "LRP4",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP4 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.09"
+    },
+    {
+      "source": "PAX9",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX9 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.09"
+    },
+    {
+      "source": "EDAR",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDAR is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.08"
+    },
+    {
+      "source": "SSUH2",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSUH2 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.08"
+    },
+    {
+      "source": "NECTIN1",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NECTIN1 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.08"
+    },
+    {
+      "source": "WNT10A",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT10A is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.08"
+    },
+    {
+      "source": "POSTN",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POSTN is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.08"
+    },
+    {
+      "source": "BCL11B",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL11B is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.08"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.07"
+    },
+    {
+      "source": "VWDE",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWDE is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.07"
+    },
+    {
+      "source": "MMP20",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP20 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.07"
+    },
+    {
+      "source": "AMTN",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMTN is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.07"
+    },
+    {
+      "source": "OSR2",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OSR2 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.07"
+    },
+    {
+      "source": "PTCH1",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.07"
+    },
+    {
+      "source": "LAMA5",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMA5 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.07"
+    },
+    {
+      "source": "RELT",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELT is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.07"
+    },
+    {
+      "source": "SLC24A4",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC24A4 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.07"
+    },
+    {
+      "source": "ALPL",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPL is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.07"
+    },
+    {
+      "source": "ODAPH",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ODAPH is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.07"
+    },
+    {
+      "source": "ACP4",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACP4 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.07"
+    },
+    {
+      "source": "SP6",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SP6 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.07"
+    },
+    {
+      "source": "AMBN",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMBN is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.06"
+    },
+    {
+      "source": "SPRY4",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPRY4 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.06"
+    },
+    {
+      "source": "WDR72",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR72 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.06"
+    },
+    {
+      "source": "RUNX2",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX2 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.06"
+    },
+    {
+      "source": "GREM2",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GREM2 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.06"
+    },
+    {
+      "source": "ITGA11",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA11 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.06"
+    },
+    {
+      "source": "NECTIN3",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NECTIN3 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.06"
+    },
+    {
+      "source": "FAM20A",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM20A is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLC6A3",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A3 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.06"
+    },
+    {
+      "source": "CABP5",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CABP5 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.06"
+    },
+    {
+      "source": "ADAM23",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAM23 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.06"
+    },
+    {
+      "source": "CYP2E1",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2E1 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.06"
+    },
+    {
+      "source": "KLHL25",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLHL25 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.06"
+    },
+    {
+      "source": "CPNE7",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPNE7 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.05"
+    },
+    {
+      "source": "MAST4",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAST4 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL1R1",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1R1 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTHLH",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTHLH is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFIC",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFIC is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.05"
+    },
+    {
+      "source": "CLCN7",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCN7 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.05"
+    },
+    {
+      "source": "ANTXR1",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANTXR1 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.05"
+    },
+    {
+      "source": "SATB2",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SATB2 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.05"
+    },
+    {
+      "source": "MMP14",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP14 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.05"
+    },
+    {
+      "source": "EDA",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDA is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.05"
+    },
+    {
+      "source": "NCOA3",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOA3 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.05"
+    },
+    {
+      "source": "FTL",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FTL is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.05"
+    },
+    {
+      "source": "PVR",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PVR is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.05"
+    },
+    {
+      "source": "KLK4",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK4 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNN",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNN is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPARC",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPARC is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.05"
+    },
+    {
+      "source": "SAMM50",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAMM50 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.05"
+    },
+    {
+      "source": "ANKS4B",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKS4B is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.05"
+    },
+    {
+      "source": "RLBP1",
+      "target": "amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RLBP1 is associated with amelogenesis imperfecta type 1A (AMELOGENESIS_IMPERFECTA_TYPE_1A). Open Targets association score 0.05"
+    }
+  ]
+}

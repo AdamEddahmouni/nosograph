@@ -1,0 +1,502 @@
+{
+  "relationships": [
+    {
+      "source": "RIPK1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "RIPK1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BTK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BTK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ZNF281",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF281 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CHEK2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "CHEK2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "SELENBP1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELENBP1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFRL1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFRL1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.37"
+    },
+    {
+      "source": "TP53",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "KRAS",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "NRAS",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERBB2",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "GOPC",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOPC is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "ROS1",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROS1 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "BTK",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTK is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "HRAS",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "FBXW7",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXW7 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "STAT3",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "CDH1",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "SELENBP1",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELENBP1 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "PLXNB1",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLXNB1 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "OVGP1",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OVGP1 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "EPHA5",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHA5 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD24",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD24 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTAP",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTAP is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "MDM2",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM2 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CALB2",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALB2 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "MSLN",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSLN is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "ESR1",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "DNMT1",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT1 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "RIPK1",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIPK1 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "MKI67",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "ELF3",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELF3 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSDMB",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "RALBP1",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RALBP1 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD40LG",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD34",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "UQCRFS1",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UQCRFS1 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP2",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZNF281",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF281 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRR1",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRR1 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "EPCAM",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPCAM is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZNF143",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF143 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHEK2",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHEK2 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "AGR3",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGR3 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGF1",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCDC54",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC54 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPA17",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPA17 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTGS2",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MT-CO2",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO2 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "EGFR",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MUC16",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC16 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "FGFRL1",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFRL1 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "STMN1",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STMN1 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "PGR",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRH2",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH2 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIEZO1",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIEZO1 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "ANXA2",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANXA2 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "EREG",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EREG is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTOV1",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTOV1 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MUC5B",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5B is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "TMEM37",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM37 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCND1",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "FOSL1",
+      "target": "Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOSL1 is associated with Borderline Ovarian Serous Tumor (BORDERLINE_OVARIAN_SEROUS_TUMOR). Open Targets association score 0.00"
+    }
+  ]
+}

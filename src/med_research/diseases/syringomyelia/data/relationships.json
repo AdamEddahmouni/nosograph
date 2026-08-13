@@ -1,0 +1,496 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL468",
+      "target": "CRBN",
+      "type": "TARGETS",
+      "description": "THALIDOMIDE targets CRBN."
+    },
+    {
+      "source": "CHEMBL468",
+      "target": "DDB1",
+      "type": "TARGETS",
+      "description": "THALIDOMIDE targets DDB1."
+    },
+    {
+      "source": "CHEMBL95889",
+      "target": "BHMT",
+      "type": "TARGETS",
+      "description": "BETAINE targets BHMT."
+    },
+    {
+      "source": "CHEMBL468",
+      "target": "RBX1",
+      "type": "TARGETS",
+      "description": "THALIDOMIDE targets RBX1."
+    },
+    {
+      "source": "CHEMBL95889",
+      "target": "BHMT2",
+      "type": "TARGETS",
+      "description": "BETAINE targets BHMT2."
+    },
+    {
+      "source": "CHEMBL468",
+      "target": "CUL4A",
+      "type": "TARGETS",
+      "description": "THALIDOMIDE targets CUL4A."
+    },
+    {
+      "source": "CACNA1A",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1A is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CXCR1",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR1 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "HEATR6",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "HEATR6 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL1A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "SMAD3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "EPAS1",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "EPAS1 is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "GSK3B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "GSK3B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP2U1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2U1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "DDB1",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDB1 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CUL4A",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUL4A is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CRBN",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRBN is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "BHMT",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BHMT is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL31",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL31 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "BHMT2",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BHMT2 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "RBX1",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBX1 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "SMAD3",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD3 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "AQP4",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP4 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SAA1",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAA1 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SAA2",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAA2 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TAC1",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAC1 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "FGFR2",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP9",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTPN11",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHGA",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHGA is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GJA1",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA1 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GH1",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VDR",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VDR is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VIM",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIM is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPG11",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPG11 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HEATR6",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEATR6 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ABCA1",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALB",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "COL1A1",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A1 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AVP",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVP is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDH2",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH2 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHDH",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHDH is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CACNA1A",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1A is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GFAP",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FZD6",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FZD6 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TF",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SUCO",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUCO is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC6A12",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A12 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "DNASE1",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNASE1 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "VANGL2",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VANGL2 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "EPAS1",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPAS1 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KIF1A",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF1A is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "VANGL1",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VANGL1 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCR1",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR1 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "DNASE1L3",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNASE1L3 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FOXJ1",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXJ1 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SETD2",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD2 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACTB",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTB is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GSK3B",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSK3B is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MFN2",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFN2 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NF1",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "RHOA",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHOA is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "LINGO1",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LINGO1 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "OBP2A",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OBP2A is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "VEGFA",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "BTD",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTD is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYP2U1",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2U1 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CP",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CP is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPIB",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIB is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "LAMC2",
+      "target": "syringomyelia (SYRINGOMYELIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMC2 is associated with syringomyelia (SYRINGOMYELIA). Open Targets association score 0.00"
+    }
+  ]
+}

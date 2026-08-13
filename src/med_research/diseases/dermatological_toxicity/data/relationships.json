@@ -1,0 +1,580 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1433",
+      "target": "MMP8",
+      "type": "TARGETS",
+      "description": "DOXYCYCLINE ANHYDROUS targets MMP8."
+    },
+    {
+      "source": "CHEMBL1200699",
+      "target": "MMP1",
+      "type": "TARGETS",
+      "description": "DOXYCYCLINE targets MMP1."
+    },
+    {
+      "source": "CHEMBL1433",
+      "target": "MMP13",
+      "type": "TARGETS",
+      "description": "DOXYCYCLINE ANHYDROUS targets MMP13."
+    },
+    {
+      "source": "CHEMBL1200699",
+      "target": "MMP8",
+      "type": "TARGETS",
+      "description": "DOXYCYCLINE targets MMP8."
+    },
+    {
+      "source": "CHEMBL1433",
+      "target": "MMP1",
+      "type": "TARGETS",
+      "description": "DOXYCYCLINE ANHYDROUS targets MMP1."
+    },
+    {
+      "source": "CHEMBL1200699",
+      "target": "MMP13",
+      "type": "TARGETS",
+      "description": "DOXYCYCLINE targets MMP13."
+    },
+    {
+      "source": "CHEMBL1433",
+      "target": "MMP7",
+      "type": "TARGETS",
+      "description": "DOXYCYCLINE ANHYDROUS targets MMP7."
+    },
+    {
+      "source": "CHEMBL1200699",
+      "target": "MMP7",
+      "type": "TARGETS",
+      "description": "DOXYCYCLINE targets MMP7."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCL4",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL4 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCL4L2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL4L2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL1",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL1 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP13",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP13 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP7",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP7 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP8",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP8 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K7",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K7 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KITLG",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KITLG is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "PIK3R1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTHFR",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFR is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "CYP19A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP19A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SLC10A4",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC10A4 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.24"
+    },
+    {
+      "source": "MMP8",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP8 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.09"
+    },
+    {
+      "source": "MMP7",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP7 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.09"
+    },
+    {
+      "source": "MMP13",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP13 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.09"
+    },
+    {
+      "source": "MMP1",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP1 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.09"
+    },
+    {
+      "source": "ZAR1",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZAR1 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.07"
+    },
+    {
+      "source": "ABCG2",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG2 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.04"
+    },
+    {
+      "source": "EGFR",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.04"
+    },
+    {
+      "source": "EREG",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EREG is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.04"
+    },
+    {
+      "source": "HGF",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.03"
+    },
+    {
+      "source": "AREG",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AREG is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.03"
+    },
+    {
+      "source": "CCL4L2",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL4L2 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.03"
+    },
+    {
+      "source": "KRAS",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CXCL8",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCL4",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL4 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIEZO1",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIEZO1 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ESR1",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "XRCC1",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XRCC1 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ANGPT2",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPT2 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL2",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGF",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGF is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "LIFR",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIFR is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS3",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NECTIN4",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NECTIN4 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNCA",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDCD1",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPATA2",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRH2",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH2 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PGR",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TMEM37",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM37 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD274",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD8A",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "BRAF",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD4",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCND1",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CALCA",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNF",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAP2K7",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K7 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TYMS",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYMS is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "INS",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "WT1",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNG",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MKI67",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD68",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD68 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPARA",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARA is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "KITLG",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KITLG is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1B",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP53",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYP19A1",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP19A1 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL1",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL1 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "HLA-B",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-B is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MTHFR",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFR is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "FCGR2A",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2A is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "BRCA1",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GPT",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATP12A",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP12A is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3R1",
+      "target": "dermatological toxicity (DERMATOLOGICAL_TOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R1 is associated with dermatological toxicity (DERMATOLOGICAL_TOXICITY). Open Targets association score 0.00"
+    }
+  ]
+}

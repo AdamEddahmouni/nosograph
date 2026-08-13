@@ -1,0 +1,394 @@
+{
+  "relationships": [
+    {
+      "source": "CDK12",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK12 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATR",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATR is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PLOD1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLOD1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR4",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR4 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "AXIN1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "AXIN1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LRP1B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP19A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP19A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GNAS",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAS is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "RB1",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "FLT3",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "CREBBP",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "LRP1B",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1B is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATM",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAP3K13",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K13 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "TSC2",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "AR",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2A",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2A is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAP2K2",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K2 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ASXL1",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "DNMT3A",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT3A is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ARID2",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID2 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "APC",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "POLE",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "FGFR4",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR4 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "PTPN11",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "CDK12",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK12 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "BCORL1",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCORL1 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2C",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "FGFR3",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "RNF43",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF43 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "TET2",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "GATA2",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA2 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "TP53",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ATR",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATR is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "BCL6",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL6 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "KDM5C",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM5C is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "AXIN1",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AXIN1 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2D",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "IKZF1",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "FUBP1",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUBP1 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "CIC",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIC is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "FAT1",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT1 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "PTCH1",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "MTOR",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "CSF1R",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF1R is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "CYP19A1",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP19A1 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPARA",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARA is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "HSD3B1",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSD3B1 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGFB1",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "PLOD1",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLOD1 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC5A2",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC5A2 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "GATA4",
+      "target": "Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA4 is associated with Testicular Leydig Cell Tumor (TESTICULAR_LEYDIG_CELL_TUMOR). Open Targets association score 0.00"
+    }
+  ]
+}

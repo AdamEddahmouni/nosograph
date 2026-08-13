@@ -1,0 +1,448 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "FANCD2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "FANCD2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INSR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INSR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PPARGC1A",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARGC1A is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ETFDH",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETFDH is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.83"
+    },
+    {
+      "source": "ETFA",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETFA is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.82"
+    },
+    {
+      "source": "ETFB",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETFB is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.81"
+    },
+    {
+      "source": "FLAD1",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLAD1 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.53"
+    },
+    {
+      "source": "C4orf46",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C4orf46 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.12"
+    },
+    {
+      "source": "HNF1A",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "HADHA",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HADHA is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "FAH",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAH is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOD2",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD2 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "PKD1",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKD1 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "SERAC1",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERAC1 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "INSR",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INSR is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "JUNB",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JUNB is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLC25A32",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A32 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CPT2",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPT2 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TLR4",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TEAD2",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TEAD2 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GHRL",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHRL is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "STUB1",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STUB1 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MCCC2",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCCC2 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "AMPD1",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMPD1 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPARG",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "AFP",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHKB",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKB is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CMPK1",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMPK1 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHKA",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKA is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSEN1",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSEN1 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUSK",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUSK is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "BRCA2",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "FANCD2",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCD2 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "RAPSN",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAPSN is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PHGDH",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHGDH is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SURF1",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SURF1 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "OTC",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OTC is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PGK1",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGK1 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ENO1",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENO1 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PGAM1",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGAM1 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "HMGCL",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCL is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "AMPD3",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMPD3 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL2",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOD1",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD1 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CPT1C",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPT1C is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SDHB",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDHB is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NLRP3",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SARDH",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SARDH is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SORD",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORD is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SDS",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDS is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "AASS",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AASS is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "EPHB2",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHB2 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CPT1B",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPT1B is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHKB-CPT1B",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKB-CPT1B is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPARGC1A",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARGC1A is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPK1",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CPT1A",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPT1A is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1B",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MXD1",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MXD1 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC22A5",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A5 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "INS",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "LPIN1",
+      "target": "multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPIN1 is associated with multiple acyl-CoA dehydrogenase deficiency (MULTIPLE_ACYL_COA_DEHYDROGENASE_DEFICIENCY). Open Targets association score 0.00"
+    }
+  ]
+}

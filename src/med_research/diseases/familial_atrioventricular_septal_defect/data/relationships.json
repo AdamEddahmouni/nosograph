@@ -1,0 +1,532 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL131",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "PREDNISOLONE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL1908360",
+      "target": "FKBP1A",
+      "type": "TARGETS",
+      "description": "EVEROLIMUS targets FKBP1A."
+    },
+    {
+      "source": "CHEMBL160",
+      "target": "PPIA",
+      "type": "TARGETS",
+      "description": "CYCLOSPORINE targets PPIA."
+    },
+    {
+      "source": "WNT1",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT1 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "CCL18",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL18 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL10",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL10 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "FOXF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FOXF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "NR2F2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NR2F2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL9A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL9A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ELN",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ELN is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "LOX",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "LOX is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "BMP5",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP5 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "BMPR1A",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMPR1A is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K7",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K7 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CRELD1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CRELD1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFATC1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNA17",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA17 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNA2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "LRP1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "GJA1",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA1 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.50"
+    },
+    {
+      "source": "SMARCAL1",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCAL1 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.43"
+    },
+    {
+      "source": "FOXP1",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP1 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.33"
+    },
+    {
+      "source": "TBX5",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX5 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.27"
+    },
+    {
+      "source": "PPIA",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIA is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.26"
+    },
+    {
+      "source": "NR3C1",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.26"
+    },
+    {
+      "source": "NR1D2",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1D2 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.26"
+    },
+    {
+      "source": "FKBP1A",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP1A is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.26"
+    },
+    {
+      "source": "CHD7",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD7 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.12"
+    },
+    {
+      "source": "ELN",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELN is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.12"
+    },
+    {
+      "source": "CRELD1",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRELD1 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.05"
+    },
+    {
+      "source": "LRP1",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.04"
+    },
+    {
+      "source": "BRAF",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.04"
+    },
+    {
+      "source": "VEGFA",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.03"
+    },
+    {
+      "source": "CXCL10",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL10 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZFPM2",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFPM2 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOX7",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX7 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.02"
+    },
+    {
+      "source": "PAX9",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX9 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.02"
+    },
+    {
+      "source": "IFNA1",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.02"
+    },
+    {
+      "source": "ACE",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.02"
+    },
+    {
+      "source": "TET2",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "BMPR1A",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMPR1A is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAP2K7",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K7 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "BMP5",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP5 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCN1",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCN1 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFATC1",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFATC1 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "COL2A1",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "COL9A1",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL9A1 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPK1",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "EPHB2",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHB2 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "MDM4",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM4 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "GBX2",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GBX2 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "GDF1",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF1 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "ECD",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ECD is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOX9",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX9 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "TAMM41",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAMM41 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "NHSL3",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NHSL3 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "HOXA1",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA1 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCL18",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL18 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "SHF",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHF is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTOR",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "DYRK1A",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYRK1A is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD68",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD68 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "PITX2",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX2 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDE9A",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE9A is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "LOX",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LOX is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "TTN",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTN is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "WNT1",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT1 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNA2",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA2 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNA17",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA17 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "FOXF2",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXF2 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGF",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGF is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYBB",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYBB is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "NKX2-5",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-5 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPI1",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPI1 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "GATA4",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA4 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "NR2F2",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR2F2 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "TCIM",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCIM is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    },
+    {
+      "source": "BLOC1S6",
+      "target": "familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLOC1S6 is associated with familial atrioventricular septal defect (FAMILIAL_ATRIOVENTRICULAR_SEPTAL_DEFECT). Open Targets association score 0.01"
+    }
+  ]
+}

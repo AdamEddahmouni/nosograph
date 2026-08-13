@@ -73,18 +73,6 @@
       "references": []
     },
     {
-      "id": "nfkb",
-      "name": "NF-κB Pathway",
-      "description": "Canonical and non-canonical NF-κB activation driving pro-inflammatory gene expression.",
-      "key_components": [
-        "NFATC3"
-      ],
-      "therapeutic_targets": [
-        "NFATC3"
-      ],
-      "references": []
-    },
-    {
       "id": "pi3k-akt-mtor",
       "name": "PI3K / AKT / mTOR Signaling",
       "description": "Growth and survival signaling through PI3K-AKT-mTOR; a major oncology and immunology target hub.",
@@ -152,11 +140,25 @@
       "description": "Canonical Wnt/β-catenin signaling controlling cell fate, proliferation, and tissue regeneration.",
       "key_components": [
         "LRP1B",
-        "WNT1"
+        "WNT1",
+        "LRP6"
       ],
       "therapeutic_targets": [
         "LRP1B",
-        "WNT1"
+        "WNT1",
+        "LRP6"
+      ],
+      "references": []
+    },
+    {
+      "id": "nfkb",
+      "name": "NF-κB Pathway",
+      "description": "Canonical and non-canonical NF-κB activation driving pro-inflammatory gene expression.",
+      "key_components": [
+        "NFATC3"
+      ],
+      "therapeutic_targets": [
+        "NFATC3"
       ],
       "references": []
     },

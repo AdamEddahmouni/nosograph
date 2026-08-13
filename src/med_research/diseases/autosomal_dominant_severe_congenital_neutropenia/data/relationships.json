@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "BTK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BTK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CSF2RB",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2RB is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IRF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "DPP4",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "DPP4 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL17RA",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17RA is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL5",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL5 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "CD47",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD47 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "IL17RA",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17RA is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "RORC",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "RORC is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR7",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR7 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IRF8",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "RIGI",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "RIGI is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "ELANE",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELANE is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.44"
+    },
+    {
+      "source": "GFI1",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFI1 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CLPB",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLPB is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SRP19",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRP19 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TCIRG1",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCIRG1 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CEBPE",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPE is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "DPP4",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPP4 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ITGB2",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SAMD9L",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAMD9L is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPI1",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPI1 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "IKZF1",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXP3",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKDC",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKDC is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "BACH2",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BACH2 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "COG6",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COG6 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TOM1L2",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOM1L2 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTPN6",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN6 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "GMDS",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GMDS is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FES",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FES is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "BTK",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTK is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CXCR2",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR2 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "RORC",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RORC is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CSF1",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF1 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "WIPF1",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WIPF1 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IRF8",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF8 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TLR7",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR7 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ARHGAP15",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP15 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CEBPA",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPA is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MAP3K14",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K14 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ARID4A",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID4A is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CSF2RB",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2RB is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SERPINB1",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINB1 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ABCG1",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG1 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SPTA1",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL17RA",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17RA is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MPO",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPO is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "LGALS3",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL5",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL5 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "GIT2",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIT2 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CSF3",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TGFB1",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNF",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD47",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD47 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PML",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PML is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "RIGI",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIGI is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "RAPH1",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAPH1 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MMP9",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "AKNA",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKNA is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CAMP",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMP is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "RAC2",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAC2 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CFTR",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFTR is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "KDELR1",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDELR1 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "GPR15",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR15 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TMEM127",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM127 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ASXL1",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "JDP2",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JDP2 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "N4BP1",
+      "target": "autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "N4BP1 is associated with autosomal dominant severe congenital neutropenia (AUTOSOMAL_DOMINANT_SEVERE_CONGENITAL_NEUTROPENIA). Open Targets association score 0.03"
+    }
+  ]
+}

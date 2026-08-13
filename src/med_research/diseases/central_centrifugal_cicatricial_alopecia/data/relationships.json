@@ -1,0 +1,586 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL38",
+      "target": "RARG",
+      "type": "TARGETS",
+      "description": "TRETINOIN targets RARG."
+    },
+    {
+      "source": "CHEMBL38",
+      "target": "RARB",
+      "type": "TARGETS",
+      "description": "TRETINOIN targets RARB."
+    },
+    {
+      "source": "CHEMBL940",
+      "target": "CACNA2D1",
+      "type": "TARGETS",
+      "description": "GABAPENTIN targets CACNA2D1."
+    },
+    {
+      "source": "CHEMBL1200666",
+      "target": "VDR",
+      "type": "TARGETS",
+      "description": "CALCIPOTRIENE targets VDR."
+    },
+    {
+      "source": "CHEMBL38",
+      "target": "RARA",
+      "type": "TARGETS",
+      "description": "TRETINOIN targets RARA."
+    },
+    {
+      "source": "CASP3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CACNA2D1",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA2D1 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "F2RL1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F2RL1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "RASSF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "RASSF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CCHCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CCHCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "COL1A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL1A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL3A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL3A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ELN",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ELN is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP7",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP7 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ITGA1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "RASSF9",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASSF9 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "ITGA1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PADI3",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PADI3 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.51"
+    },
+    {
+      "source": "GK5",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GK5 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.10"
+    },
+    {
+      "source": "HR",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HR is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "CNR2",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNR2 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CTSV",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSV is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CTSL",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSL is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "FA2H",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FA2H is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "KRT17",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT17 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "RASSF9",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASSF9 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CCHCR1",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCHCR1 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "EMD",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EMD is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CACNA2D1",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA2D1 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "VDR",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VDR is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "RARA",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RARA is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "RARG",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RARG is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "RARB",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RARB is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PPARG",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "KRT7",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT7 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "F2RL1",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F2RL1 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRT15",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT15 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD274",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CA9",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA9 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL13",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TFE3",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFE3 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MME",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MME is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NR1I2",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1I2 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC52A1",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC52A1 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SFRP2",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFRP2 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLMAP",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLMAP is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD44",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TPM2",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPM2 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MKI67",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD177",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD177 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGFB1",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ITGA1",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA1 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "DHRS9",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHRS9 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMP9",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ELN",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELN is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "WT1",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD4",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMP7",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP7 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMP1",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP1 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMP2",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDCD1",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CBX5",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBX5 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPL17",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SNCA",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CASP3",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP3 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPATA2",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SFRP1",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFRP1 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1B",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FN1",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FN1 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRTAP19-4",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRTAP19-4 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCND1",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KIT",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "COL1A2",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A2 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "COL1A1",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A1 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDGFB",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFB is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "COL3A1",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL3A1 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDC",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDC is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDGFC",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFC is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "DICER1",
+      "target": "central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DICER1 is associated with central centrifugal cicatricial alopecia (CENTRAL_CENTRIFUGAL_CICATRICIAL_ALOPECIA). Open Targets association score 0.00"
+    }
+  ]
+}

@@ -1,0 +1,520 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL269732",
+      "target": "FKBP1A",
+      "type": "TARGETS",
+      "description": "TACROLIMUS ANHYDROUS targets FKBP1A."
+    },
+    {
+      "source": "CHEMBL1201439",
+      "target": "IL2RA",
+      "type": "TARGETS",
+      "description": "BASILIXIMAB targets IL2RA."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CXCL16",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL16 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "F2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "F9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "HAVCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "PARP1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "PARP1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IL18",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "IL6R",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6R is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "IL6ST",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6ST is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGB3",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB3 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "FABP1",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "FABP1 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PDCD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "ITGB3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IL2RA",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RA is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "FKBP1A",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP1A is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "HAVCR1",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAVCR1 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "PPARA",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARA is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PARP1",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARP1 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "LCN2",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN2 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL18",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ICAM1",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDCD4",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD4 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6R",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6R is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTOR",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDH1",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "FHL2",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FHL2 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "HGF",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6ST",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6ST is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "B3GAT1",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B3GAT1 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "DBF4",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DBF4 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "BTD",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTD is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "FXYD4",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FXYD4 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYRIB",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYRIB is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHI3L1",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHI3L1 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL2",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB1",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ITGB3",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB3 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD79A",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CST3",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CST3 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "C3",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL6",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "DGKE",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DGKE is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PACS1",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PACS1 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "F9",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F9 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "KLF6",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF6 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTCH1",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADCYAP1R1",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADCYAP1R1 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SAP130",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAP130 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSMG1",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMG1 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADK",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADK is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGFA",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFA is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TAS2R38",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAS2R38 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "DUSP2",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DUSP2 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCDC6",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC6 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD63",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD63 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "RET",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "FABP1",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FABP1 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATP12A",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP12A is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CP",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CP is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "NLRX1",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRX1 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ARHGDIB",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGDIB is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL16",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL16 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP53",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "JAML",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAML is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CAV1",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAV1 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MME",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MME is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SDC1",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC1 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATP4A",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP4A is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "F2",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F2 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CPT2",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPT2 is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD40LG",
+      "target": "acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with acute kidney tubular necrosis (ACUTE_KIDNEY_TUBULAR_NECROSIS). Open Targets association score 0.00"
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "pathways": [
+    {
+      "id": "bcr-signaling",
+      "name": "B Cell Receptor Signaling",
+      "description": "BCR signal transduction controlling B cell survival, proliferation, and antibody production.",
+      "key_components": [
+        "CD79A"
+      ],
+      "therapeutic_targets": [
+        "CD79A"
+      ],
+      "references": []
+    },
+    {
+      "id": "chemokine-signaling",
+      "name": "Chemokine Signaling",
+      "description": "Chemokine-receptor interactions directing leukocyte migration and lymphoid organization.",
+      "key_components": [
+        "CXCL12",
+        "CXCR5"
+      ],
+      "therapeutic_targets": [
+        "CXCL12",
+        "CXCR5"
+      ],
+      "references": []
+    },
+    {
+      "id": "dna-repair",
+      "name": "DNA Repair",
+      "description": "Homologous recombination, mismatch repair, and base excision pathways preserving genome integrity.",
+      "key_components": [
+        "TP53"
+      ],
+      "therapeutic_targets": [
+        "TP53"
+      ],
+      "references": []
+    },
+    {
+      "id": "ecm-remodeling",
+      "name": "ECM Remodeling",
+      "description": "Matrix metalloproteinases and extracellular matrix turnover in tissue remodeling and fibrosis.",
+      "key_components": [
+        "MMP2",
+        "MMP9",
+        "TIMP1"
+      ],
+      "therapeutic_targets": [
+        "MMP2",
+        "MMP9",
+        "TIMP1"
+      ],
+      "references": []
+    },
+    {
+      "id": "hepcidin-iron",
+      "name": "Hepcidin / Iron Homeostasis",
+      "description": "Hepcidin-ferroportin axis regulating systemic iron balance.",
+      "key_components": [
+        "TFRC"
+      ],
+      "therapeutic_targets": [
+        "TFRC"
+      ],
+      "references": []
+    },
+    {
+      "id": "il1-inflammasome",
+      "name": "IL-1 / Inflammasome Pathway",
+      "description": "NLRP3 inflammasome assembly and IL-1β/IL-18 maturation; a driver of sterile inflammation.",
+      "key_components": [
+        "IL10",
+        "IL13",
+        "IL13RA1",
+        "IL17A",
+        "IL1A",
+        "IL1B",
+        "IL1RL1"
+      ],
+      "therapeutic_targets": [
+        "IL10",
+        "IL13",
+        "IL13RA1",
+        "IL17A",
+        "IL1A",
+        "IL1B",
+        "IL1RL1"
+      ],
+      "references": []
+    },
+    {
+      "id": "il4-il13",
+      "name": "IL-4 / IL-13 (Th2) Pathway",
+      "description": "Type 2 cytokine signaling driving allergic and eosinophilic inflammation.",
+      "key_components": [
+        "IL13",
+        "IL13RA1",
+        "IL33",
+        "IL4",
+        "STAT6"
+      ],
+      "therapeutic_targets": [
+        "IL13",
+        "IL13RA1",
+        "IL33",
+        "IL4",
+        "STAT6"
+      ],
+      "references": []
+    },
+    {
+      "id": "immune-checkpoint",
+      "name": "Immune Checkpoint Signaling",
+      "description": "Co-inhibitory receptor signaling (PD-1/CTLA-4/TIGIT/LAG-3) that restrains T cell responses.",
+      "key_components": [
+        "CTLA4",
+        "PDCD1"
+      ],
+      "therapeutic_targets": [
+        "CTLA4",
+        "PDCD1"
+      ],
+      "references": []
+    },
+    {
+      "id": "jak-stat",
+      "name": "JAK-STAT Signaling",
+      "description": "Cytokine receptor signaling through JAK kinases and STAT transcription factors; a hub for inflammatory and autoimmune disease pathways.",
+      "key_components": [
+        "STAT6"
+      ],
+      "therapeutic_targets": [
+        "STAT6"
+      ],
+      "references": []
+    },
+    {
+      "id": "lipid-metabolism",
+      "name": "Lipid Metabolism",
+      "description": "Cholesterol and lipid homeostasis; the therapeutic hub of cardiovascular disease.",
+      "key_components": [
+        "APOE"
+      ],
+      "therapeutic_targets": [
+        "APOE"
+      ],
+      "references": []
+    },
+    {
+      "id": "mapk-erk",
+      "name": "MAPK / ERK Signaling",
+      "description": "RAS-RAF-MEK-ERK cascade coupling growth factor receptors to proliferation and differentiation.",
+      "key_components": [
+        "MAPKAP1"
+      ],
+      "therapeutic_targets": [
+        "MAPKAP1"
+      ],
+      "references": []
+    },
+    {
+      "id": "serotonin-dopamine",
+      "name": "Serotonin / Dopamine Signaling",
+      "description": "Monoamine neurotransmission; the pharmacological hub of psychiatry.",
+      "key_components": [
+        "TH",
+        "THBS2"
+      ],
+      "therapeutic_targets": [
+        "TH",
+        "THBS2"
+      ],
+      "references": []
+    },
+    {
+      "id": "tcr-signaling",
+      "name": "T Cell Receptor Signaling",
+      "description": "TCR signal transduction and T cell activation; a therapeutic hub in autoimmunity.",
+      "key_components": [
+        "CD4",
+        "CD8A",
+        "CTLA4",
+        "ICOS"
+      ],
+      "therapeutic_targets": [
+        "CD4",
+        "CD8A",
+        "CTLA4",
+        "ICOS"
+      ],
+      "references": []
+    },
+    {
+      "id": "tgf-beta",
+      "name": "TGF-β Signaling",
+      "description": "Transforming growth factor beta signaling controlling fibrosis, immune tolerance, and tumor suppression.",
+      "key_components": [
+        "TGFB1"
+      ],
+      "therapeutic_targets": [
+        "TGFB1"
+      ],
+      "references": []
+    },
+    {
+      "id": "th17-il17",
+      "name": "Th17 / IL-17 Pathway",
+      "description": "Th17 differentiation and IL-17 family cytokine signaling driving neutrophil recruitment and autoimmunity.",
+      "key_components": [
+        "IL17A"
+      ],
+      "therapeutic_targets": [
+        "IL17A"
+      ],
+      "references": []
+    },
+    {
+      "id": "thyroid-hormone",
+      "name": "Thyroid Hormone Signaling",
+      "description": "Thyroid hormone synthesis, transport, and nuclear receptor signaling.",
+      "key_components": [
+        "PTGS2",
+        "TGFB1"
+      ],
+      "therapeutic_targets": [
+        "PTGS2",
+        "TGFB1"
+      ],
+      "references": []
+    },
+    {
+      "id": "tnf-signaling",
+      "name": "TNF Signaling",
+      "description": "Tumor necrosis factor receptor superfamily signaling; central to many autoimmune and inflammatory diseases.",
+      "key_components": [
+        "TNF",
+        "TNFRSF1A"
+      ],
+      "therapeutic_targets": [
+        "TNF",
+        "TNFRSF1A"
+      ],
+      "references": []
+    },
+    {
+      "id": "type1-ifn",
+      "name": "Type I Interferon Pathway",
+      "description": "IFN-α/β production and signaling through IFNAR; drives the interferon gene signature in autoimmune disease.",
+      "key_components": [
+        "IFNG"
+      ],
+      "therapeutic_targets": [
+        "IFNG"
+      ],
+      "references": []
+    },
+    {
+      "id": "xenobiotic-metabolism",
+      "name": "Xenobiotic Metabolism",
+      "description": "Cytochrome P450 and conjugating enzymes governing drug metabolism and toxicity.",
+      "key_components": [
+        "GSTK1",
+        "SLCO6A1",
+        "SULT2A1"
+      ],
+      "therapeutic_targets": [
+        "GSTK1",
+        "SLCO6A1",
+        "SULT2A1"
+      ],
+      "references": []
+    }
+  ]
+}

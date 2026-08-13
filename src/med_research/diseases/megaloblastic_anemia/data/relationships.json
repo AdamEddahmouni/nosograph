@@ -1,0 +1,472 @@
+{
+  "relationships": [
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TAF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TAF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CFI",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CFI is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HAMP",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "HAMP is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "TFRC",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFRC is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "MTHFD1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFD1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "MTHFR",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFR is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD320",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD320 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD36",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD36 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNFAIP1",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP1 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "GSTM1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CUBN",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUBN is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.55"
+    },
+    {
+      "source": "AMN",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMN is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TP53",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "INS",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TFRC",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFRC is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SCN2A",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN2A is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC19A2",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC19A2 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DHFR",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHFR is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TCN2",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCN2 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ENG",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENG is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "UNG",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UNG is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MPO",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPO is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTR",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTR is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTHFD1",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFD1 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD36",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD36 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TCEAL1",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCEAL1 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NSG1",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSG1 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TF",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PROS1",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROS1 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD8A",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD4",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SF3B1",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SF3B1 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DUT",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DUT is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD34",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRIM63",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM63 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HPRT1",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPRT1 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTRR",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTRR is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTHFR",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFR is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSTM1",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM1 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMADHC",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMADHC is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "EPO",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPO is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "VIPR1",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIPR1 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TCN1",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCN1 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACE",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEACAM7",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM7 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEACAM3",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM3 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSG2",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSG2 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD74",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD74 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GCNT2",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCNT2 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "EGFR",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TAF8",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAF8 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEACAM5",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM5 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMAA",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMAA is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FTCD",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FTCD is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NDUFB3",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFB3 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNFAIP1",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFAIP1 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMACHC",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMACHC is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "POLG",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLG is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SHMT2",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHMT2 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD320",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD320 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FOLR1",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOLR1 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CAD",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAD is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMUT",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMUT is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CBLIF",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBLIF is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GDF15",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF15 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "HAMP",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAMP is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CFI",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFI is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "HBA2",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBA2 is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "UMPS",
+      "target": "megaloblastic anemia (MEGALOBLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UMPS is associated with megaloblastic anemia (MEGALOBLASTIC_ANEMIA). Open Targets association score 0.00"
+    }
+  ]
+}

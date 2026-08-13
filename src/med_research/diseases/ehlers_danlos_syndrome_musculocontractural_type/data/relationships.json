@@ -1,0 +1,544 @@
+{
+  "relationships": [
+    {
+      "source": "XIAP",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "XIAP is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CDK2",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK2 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "E2F7",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "E2F7 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CXCL13",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL13 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "E2F7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "E2F7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IGF2BP1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2BP1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "NUF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NUF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "YTHDF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "YTHDF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "HAVCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MMP1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "PLOD1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLOD1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL11",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL11 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "HAVCR2",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR2 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CTHRC1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "CTHRC1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "YTHDF2",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "YTHDF2 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD47",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD47 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SLC5A5",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC5A5 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "ISG15",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "ISG15 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "CHST14",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHST14 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.81"
+    },
+    {
+      "source": "DSE",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSE is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.64"
+    },
+    {
+      "source": "PLOD1",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLOD1 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.57"
+    },
+    {
+      "source": "ABCD1",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCD1 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.34"
+    },
+    {
+      "source": "DCLRE1C",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCLRE1C is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.27"
+    },
+    {
+      "source": "CREB3L1",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREB3L1 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.10"
+    },
+    {
+      "source": "KAT5",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KAT5 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.09"
+    },
+    {
+      "source": "CD44",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.09"
+    },
+    {
+      "source": "SOX2",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX2 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.09"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.09"
+    },
+    {
+      "source": "GABPA",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABPA is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.09"
+    },
+    {
+      "source": "STAT3",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.09"
+    },
+    {
+      "source": "ICAM1",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.09"
+    },
+    {
+      "source": "HAVCR2",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAVCR2 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.08"
+    },
+    {
+      "source": "TGFB1",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.08"
+    },
+    {
+      "source": "CD274",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.08"
+    },
+    {
+      "source": "AKT1",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.08"
+    },
+    {
+      "source": "VWF",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.08"
+    },
+    {
+      "source": "FOLH1",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOLH1 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.08"
+    },
+    {
+      "source": "XIAP",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XIAP is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.08"
+    },
+    {
+      "source": "IGF2BP1",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2BP1 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.08"
+    },
+    {
+      "source": "IL11",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL11 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.08"
+    },
+    {
+      "source": "PROM1",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROM1 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.08"
+    },
+    {
+      "source": "MMP1",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP1 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.08"
+    },
+    {
+      "source": "ASPM",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASPM is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.08"
+    },
+    {
+      "source": "BRD4",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRD4 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.08"
+    },
+    {
+      "source": "CD47",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD47 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.08"
+    },
+    {
+      "source": "CTHRC1",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTHRC1 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.08"
+    },
+    {
+      "source": "EIF5A2",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF5A2 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.08"
+    },
+    {
+      "source": "PWAR5",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PWAR5 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.08"
+    },
+    {
+      "source": "TLR4",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.08"
+    },
+    {
+      "source": "YTHDF2",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YTHDF2 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.08"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.08"
+    },
+    {
+      "source": "MADD",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MADD is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.08"
+    },
+    {
+      "source": "BRAF",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.08"
+    },
+    {
+      "source": "HOXD9",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD9 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.08"
+    },
+    {
+      "source": "BUB1",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUB1 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.07"
+    },
+    {
+      "source": "TXNIP",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TXNIP is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.07"
+    },
+    {
+      "source": "UHRF1",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UHRF1 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.07"
+    },
+    {
+      "source": "NSUN2",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSUN2 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.07"
+    },
+    {
+      "source": "EZH2",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EZH2 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.07"
+    },
+    {
+      "source": "GLO1",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLO1 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.07"
+    },
+    {
+      "source": "CDK2",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK2 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.07"
+    },
+    {
+      "source": "USP22",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP22 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.07"
+    },
+    {
+      "source": "BRMS1",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRMS1 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.07"
+    },
+    {
+      "source": "SH2B3",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2B3 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.07"
+    },
+    {
+      "source": "RBX1",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBX1 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.07"
+    },
+    {
+      "source": "KDM1A",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM1A is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.07"
+    },
+    {
+      "source": "SETMAR",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETMAR is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.07"
+    },
+    {
+      "source": "OVOL2",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OVOL2 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.07"
+    },
+    {
+      "source": "NUF2",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUF2 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.07"
+    },
+    {
+      "source": "ISG15",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISG15 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.07"
+    },
+    {
+      "source": "AMFR",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMFR is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.07"
+    },
+    {
+      "source": "UBR1",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBR1 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.07"
+    },
+    {
+      "source": "ANO1",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANO1 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.07"
+    },
+    {
+      "source": "E2F7",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "E2F7 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.07"
+    },
+    {
+      "source": "SLC5A5",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC5A5 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.07"
+    },
+    {
+      "source": "XPO1",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XPO1 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.07"
+    },
+    {
+      "source": "KPNA2",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KPNA2 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.07"
+    },
+    {
+      "source": "CXCL13",
+      "target": "Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL13 is associated with Ehlers-Danlos syndrome, musculocontractural type (EHLERS_DANLOS_SYNDROME_MUSCULOCONTRACTURAL_TYPE). Open Targets association score 0.07"
+    }
+  ]
+}

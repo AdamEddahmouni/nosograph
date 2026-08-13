@@ -1,0 +1,544 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201827",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "PANITUMUMAB targets EGFR."
+    },
+    {
+      "source": "CHEMBL939",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "GEFITINIB targets EGFR."
+    },
+    {
+      "source": "CHEMBL428647",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "TREATS",
+      "description": "PACLITAXEL is phase 4 / marketed for Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)."
+    },
+    {
+      "source": "CHEMBL1200721",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "TREATS",
+      "description": "ESTRAMUSTINE PHOSPHATE SODIUM is phase 4 / marketed for Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)."
+    },
+    {
+      "source": "CHEMBL409",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "TREATS",
+      "description": "BICALUTAMIDE is phase 4 / marketed for Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)."
+    },
+    {
+      "source": "BIRC5",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BIRC5 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "AURKA",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "AURKA is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RAD51",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "RAD51 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ALOX5",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ALOX5 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "SOCS1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "SOCS1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "SOCS3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "SOCS3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "LAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "GSTM5",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM5 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ERBB2",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "STAT3",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TP53",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTGS2",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "BRAF",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDH1",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MT-CO2",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO2 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOCS3",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOCS3 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRAS",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOCS1",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOCS1 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TAGLN2",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAGLN2 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BIRC5",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIRC5 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "COX7A2",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COX7A2 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKT1",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC7A5",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC7A5 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RAD51",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD51 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ANPEP",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANPEP is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGFR",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "S100A10",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A10 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPARG",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "S100A2",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A2 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HPGDS",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPGDS is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "S100A4",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A4 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VEGFA",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYC",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPK1",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EPHB2",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHB2 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GHRL",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHRL is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NEU1",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEU1 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NEURL1",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEURL1 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "OGG1",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OGG1 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SDF4",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDF4 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CETN1",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETN1 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADIPOQ",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOQ is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "XRCC1",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XRCC1 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERCC2",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC2 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PCNA",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNA is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALOX5",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALOX5 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC5AC",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5AC is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRT7",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT7 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLA2G4A",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G4A is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KAT5",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KAT5 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLA2G2A",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G2A is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLA2G10",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G10 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MGMT",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MGMT is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AURKA",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AURKA is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "S100A8",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A8 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT20",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT20 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "LIAT1",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIAT1 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PYY",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PYY is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GSTM5",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM5 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD274",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "LAT",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAT is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNF",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATP4A",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP4A is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATP12A",
+      "target": "Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP12A is associated with Barrett adenocarcinoma (BARRETT_ADENOCARCINOMA). Open Targets association score 0.00"
+    }
+  ]
+}

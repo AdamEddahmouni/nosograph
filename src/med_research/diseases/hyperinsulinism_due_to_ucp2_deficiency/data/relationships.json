@@ -1,0 +1,478 @@
+{
+  "relationships": [
+    {
+      "source": "SLC39A8",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC39A8 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "KCNH6",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNH6 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "C11orf86",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C11orf86 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C1QTNF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C1QTNF9B",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9B is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C1QTNF9",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "C1QTNF9B",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9B is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MASP1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "MASP1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "THRA",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THRA is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "THRA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "THRA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR5",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR5 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "C1QTNF9",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "C1QTNF9B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "HIF1AN",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "HIF1AN is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP27A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP27A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "UCP2",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UCP2 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.37"
+    },
+    {
+      "source": "LEPR",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "LEP",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NOS3",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "INS",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NPY1R",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPY1R is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "MC4R",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MC4R is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PPARA",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARA is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "KCNH6",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNH6 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "THRA",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THRA is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TCF7L2",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF7L2 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "POMC",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CPE",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPE is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SNAP25",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNAP25 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "MC2R",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MC2R is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKAG2",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAG2 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "IRS2",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRS2 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCDC80",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC80 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PCSK2",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK2 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "NMU",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NMU is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SEC61A1",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEC61A1 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "RAPGEF3",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAPGEF3 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SORBS2",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORBS2 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC39A8",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC39A8 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SCG5",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCG5 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "PCK1",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCK1 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "TLR5",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR5 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ALKBH7",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALKBH7 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "CLOCK",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLOCK is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "CYB5R4",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYB5R4 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ALMS1",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALMS1 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ARNT2",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARNT2 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ANKRD26",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKRD26 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "P2RY14",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RY14 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GPR61",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR61 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ATXN2",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATXN2 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "C11orf86",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C11orf86 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "CES1",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CES1 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRLH",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRLH is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "HIF1AN",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF1AN is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "BRS3",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRS3 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "HINT2",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HINT2 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GHR",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHR is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "CYP27A1",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP27A1 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "CLIC5",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLIC5 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "C1QTNF9B",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1QTNF9B is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "C1QTNF9",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1QTNF9 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "DBH",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DBH is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "BRD2",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRD2 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "KMT2B",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2B is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ITPRID2",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITPRID2 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "MASP1",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MASP1 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ENHO",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENHO is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GUCY2C",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GUCY2C is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZEB1",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "HADHB",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HADHB is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHRM3",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHRM3 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "NUCKS1",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUCKS1 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "RIMS2",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIMS2 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ARV1",
+      "target": "hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARV1 is associated with hyperinsulinism due to UCP2 deficiency (HYPERINSULINISM_DUE_TO_UCP2_DEFICIENCY). Open Targets association score 0.03"
+    }
+  ]
+}

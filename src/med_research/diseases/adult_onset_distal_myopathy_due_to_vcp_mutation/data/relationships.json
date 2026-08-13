@@ -1,0 +1,418 @@
+{
+  "relationships": [
+    {
+      "source": "ZNF106",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF106 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MATR3",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MATR3 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL13A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL13A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL6A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL6A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL6A3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL6A3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ITGA7",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA7 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELENON",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELENON is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "APOBEC2",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOBEC2 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ITGA7",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA7 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "VCP",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VCP is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.38"
+    },
+    {
+      "source": "DMD",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMD is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "RYR1",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYR1 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "LAMA2",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMA2 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "GAA",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAA is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "LARGE1",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LARGE1 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYH4",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH4 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "DYSF",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYSF is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "SCN8A",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN8A is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "DNM2",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM2 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "MTM1",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTM1 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "SCN4A",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN4A is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL13A1",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL13A1 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "SCYL1",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCYL1 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "DNAJB4",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAJB4 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "COQ8A",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COQ8A is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL6A3",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL6A3 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "GMPPA",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GMPPA is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "AGRN",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGRN is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL6A1",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL6A1 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "ANK1",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "MORC2",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MORC2 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "STIM1",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STIM1 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "CHKB",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKB is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "HIP1",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIP1 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "MDGA2",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDGA2 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZNF106",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF106 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHCHD10",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHCHD10 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "SELENON",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELENON is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "SACS",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SACS is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "SGCG",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCG is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "FLNC",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLNC is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "CISD2",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CISD2 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "ASNSD1",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASNSD1 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "ETV1",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV1 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "ITGA7",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA7 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "FKRP",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKRP is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "NDRG1",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDRG1 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "LAMC1",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMC1 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "KLHL31",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLHL31 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "IGHMBP2",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGHMBP2 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "HSPB8",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPB8 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "MYBPC1",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYBPC1 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "SGCA",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCA is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "DMPK",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMPK is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "FHL1",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FHL1 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "SYNM",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYNM is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "CAPN3",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAPN3 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "GARS1",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GARS1 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "SHC1",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHC1 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "APOBEC2",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOBEC2 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "STAC3",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAC3 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "AFG3L2",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFG3L2 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "CFL2",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFL2 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "DES",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DES is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "HEXB",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEXB is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "GAN",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAN is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "TPP1",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPP1 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "MATR3",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MATR3 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "EGR3",
+      "target": "adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGR3 is associated with adult-onset distal myopathy due to VCP mutation (ADULT_ONSET_DISTAL_MYOPATHY_DUE_TO_VCP_MUTATION). Open Targets association score 0.03"
+    }
+  ]
+}

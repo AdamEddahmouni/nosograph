@@ -1,0 +1,430 @@
+{
+  "relationships": [
+    {
+      "source": "SCARB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "SCARB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TM6SF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TM6SF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "GATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ECHDC1",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "ECHDC1 is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "ACE2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP27A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP27A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "DGAT1",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DGAT1 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.69"
+    },
+    {
+      "source": "APOE",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "TM6SF2",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM6SF2 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "SAR1B",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAR1B is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "RAB8A",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB8A is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "AP1M2",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AP1M2 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "APC",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LPL",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LIPG",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPG is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CFTR",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFTR is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PLAGL2",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAGL2 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "DENND5B",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DENND5B is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "YIPF6",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YIPF6 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SCARB1",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCARB1 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "TLX2",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLX2 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "APOA1",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ACE2",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE2 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "GATM",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATM is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LDLR",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NR1H4",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1H4 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LCAT",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCAT is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SOAT2",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOAT2 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CLDN15",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN15 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "KIF13B",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF13B is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "LIPC",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "AP2A2",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AP2A2 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC51A",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC51A is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "EPCAM",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPCAM is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CEBPA",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPA is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC10A2",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC10A2 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "AGR2",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGR2 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC26A3",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC26A3 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "APOC4-APOC2",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC4-APOC2 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "APOC2",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC2 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "MLXIPL",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLXIPL is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRP6",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP6 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "MYO5B",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO5B is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "AMPD2",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMPD2 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ECHDC1",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ECHDC1 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "AQP3",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP3 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXL1",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXL1 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GPR39",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR39 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TVP23B",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TVP23B is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TVP23C-CDRT4",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TVP23C-CDRT4 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TVP23C",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TVP23C is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "HPRT1",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPRT1 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ATP4A",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP4A is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "USP33",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP33 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "OR9G4",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OR9G4 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ABCA1",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GPA33",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPA33 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "NUAK2",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUAK2 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "INPP5D",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INPP5D is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "OSBPL8",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OSBPL8 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "USH1C",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USH1C is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SCP2",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCP2 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYP27A1",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP27A1 is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ALPG",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPG is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ALPP",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPP is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ALPI",
+      "target": "congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPI is associated with congenital diarrhea 7 with exudative enteropathy (CONGENITAL_DIARRHEA_7_WITH_EXUDATIVE_ENTEROPATHY). Open Targets association score 0.04"
+    }
+  ]
+}

@@ -1,0 +1,514 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL941",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "IMATINIB targets KIT."
+    },
+    {
+      "source": "CHEMBL1642",
+      "target": "PDGFRB",
+      "type": "TARGETS",
+      "description": "IMATINIB MESYLATE targets PDGFRB."
+    },
+    {
+      "source": "CHEMBL941",
+      "target": "PDGFRB",
+      "type": "TARGETS",
+      "description": "IMATINIB targets PDGFRB."
+    },
+    {
+      "source": "CHEMBL1642",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "IMATINIB MESYLATE targets KIT."
+    },
+    {
+      "source": "CHEMBL1201577",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "CETUXIMAB targets EGFR."
+    },
+    {
+      "source": "BIRC3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BIRC3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "IRF4",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF4 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "AXIN1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "AXIN1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LRP1B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "KMT2D",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.31"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "KIT",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP53",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RB1",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "HRAS",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EGFR",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID1A",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "APC",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KRAS",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERCC2",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC2 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BCORL1",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCORL1 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NOTCH2",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH2 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NTRK1",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BCL3",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL3 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "DDX10",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDX10 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ALK",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ASXL1",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MLLT10",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLLT10 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ETNK1",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETNK1 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SF3B1",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SF3B1 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FAT1",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT1 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "HNF1A",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SDHA",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDHA is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ZFHX3",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFHX3 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "LPP",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPP is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR2",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PRDM16",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM16 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RAD50",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD50 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATM",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SALL4",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SALL4 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "DNMT3A",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT3A is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SPEN",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPEN is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ZNF521",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF521 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NFKB2",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "IRF4",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF4 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2C",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NCOR1",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOR1 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FLT3",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CBLB",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBLB is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "POLQ",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLQ is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "AXIN1",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AXIN1 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "LZTR1",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LZTR1 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EP300",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EP300 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KDM6A",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM6A is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "IKZF1",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTPRC",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TSC1",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC1 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FAT4",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT4 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERCC3",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC3 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "DDR2",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDR2 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CSF3R",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3R is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ROS1",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROS1 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "LRP1B",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1B is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "POLE",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "AFF3",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFF3 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BIRC3",
+      "target": "Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIRC3 is associated with Eccrine Porocarcinoma (ECCRINE_POROCARCINOMA). Open Targets association score 0.28"
+    }
+  ]
+}

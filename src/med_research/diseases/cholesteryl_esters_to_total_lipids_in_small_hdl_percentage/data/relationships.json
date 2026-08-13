@@ -1,0 +1,442 @@
+{
+  "relationships": [
+    {
+      "source": "ATRAID",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRAID is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53BP1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53BP1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ADAMTS10",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS10 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL3 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL4 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ANGPTL8",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL8 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "TNFSF13",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "NAT2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NAT2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "LIPC",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.67"
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL3 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.59"
+    },
+    {
+      "source": "LCAT",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCAT is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.52"
+    },
+    {
+      "source": "LIPG",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPG is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.51"
+    },
+    {
+      "source": "APOA5",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.51"
+    },
+    {
+      "source": "LPL",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.50"
+    },
+    {
+      "source": "SORT1",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORT1 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.46"
+    },
+    {
+      "source": "ZPR1",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZPR1 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.45"
+    },
+    {
+      "source": "GPIHBP1",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPIHBP1 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.45"
+    },
+    {
+      "source": "APOC3",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC3 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.44"
+    },
+    {
+      "source": "SHROOM3",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHROOM3 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.44"
+    },
+    {
+      "source": "CELSR2",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR2 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.44"
+    },
+    {
+      "source": "APOB",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.43"
+    },
+    {
+      "source": "APOE",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.43"
+    },
+    {
+      "source": "LPA",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.42"
+    },
+    {
+      "source": "GCKR",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.41"
+    },
+    {
+      "source": "MLXIPL",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLXIPL is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.41"
+    },
+    {
+      "source": "TNFSF13",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.39"
+    },
+    {
+      "source": "PINX1",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PINX1 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.39"
+    },
+    {
+      "source": "PLG",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLG is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.38"
+    },
+    {
+      "source": "PLTP",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLTP is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.37"
+    },
+    {
+      "source": "ADAMTS10",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS10 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.36"
+    },
+    {
+      "source": "PLA2G12A",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G12A is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.36"
+    },
+    {
+      "source": "TRIB1",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIB1 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.34"
+    },
+    {
+      "source": "SDC1",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC1 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.34"
+    },
+    {
+      "source": "PCSK6",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK6 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.34"
+    },
+    {
+      "source": "CLEC10A",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC10A is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.34"
+    },
+    {
+      "source": "ATRAID",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRAID is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.33"
+    },
+    {
+      "source": "NAT2",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAT2 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.33"
+    },
+    {
+      "source": "TP53BP1",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53BP1 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.33"
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL4 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.32"
+    },
+    {
+      "source": "HNF1A",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.32"
+    },
+    {
+      "source": "BAZ1B",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAZ1B is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.32"
+    },
+    {
+      "source": "ABCA1",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.31"
+    },
+    {
+      "source": "GPN1",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPN1 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.31"
+    },
+    {
+      "source": "RNF111",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF111 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.30"
+    },
+    {
+      "source": "STAG1",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAG1 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.30"
+    },
+    {
+      "source": "VTN",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VTN is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.30"
+    },
+    {
+      "source": "PON3",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PON3 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.29"
+    },
+    {
+      "source": "PAFAH1B2",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAFAH1B2 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.28"
+    },
+    {
+      "source": "AFF1",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFF1 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.28"
+    },
+    {
+      "source": "FRMD5",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FRMD5 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.28"
+    },
+    {
+      "source": "APOA1",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.27"
+    },
+    {
+      "source": "ZNF112",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF112 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.27"
+    },
+    {
+      "source": "MSL2",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSL2 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.27"
+    },
+    {
+      "source": "TMEM97",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM97 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.26"
+    },
+    {
+      "source": "PPP1R3B",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R3B is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.26"
+    },
+    {
+      "source": "ANGPTL8",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL8 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.25"
+    },
+    {
+      "source": "PON1",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PON1 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.25"
+    },
+    {
+      "source": "PSRC1",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSRC1 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.24"
+    },
+    {
+      "source": "MSRA",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSRA is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.23"
+    },
+    {
+      "source": "PCCB",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCCB is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.22"
+    },
+    {
+      "source": "BUD13",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUD13 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.22"
+    },
+    {
+      "source": "ACAA2",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACAA2 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.20"
+    },
+    {
+      "source": "ZFAND2A",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFAND2A is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.19"
+    },
+    {
+      "source": "SPATA31H1",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA31H1 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.19"
+    },
+    {
+      "source": "SLC18A1",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC18A1 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.19"
+    },
+    {
+      "source": "MTTP",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTTP is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.19"
+    },
+    {
+      "source": "GAPDHS",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAPDHS is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.18"
+    },
+    {
+      "source": "BCL3",
+      "target": "cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL3 is associated with cholesteryl esters to total lipids in small HDL percentage  (CHOLESTERYL_ESTERS_TO_TOTAL_LIPIDS_IN_SMALL_HDL_PERCENTAGE). Open Targets association score 0.17"
+    }
+  ]
+}

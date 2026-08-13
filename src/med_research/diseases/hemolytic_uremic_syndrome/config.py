@@ -53,6 +53,7 @@ CAR_T_SCORES = {
         "CFHR3": 4.0,
         "CFHR5": 4.0,
         "CFI": 4.0,
+        "CGA": 4.0,
         "CHUK": 4.0,
         "CLCN5": 4.0,
         "COL2A1": 4.0,

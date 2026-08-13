@@ -1,0 +1,502 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1536",
+      "target": "VDR",
+      "type": "TARGETS",
+      "description": "ERGOCALCIFEROL targets VDR."
+    },
+    {
+      "source": "CHEMBL3707326",
+      "target": "FGF23",
+      "type": "TARGETS",
+      "description": "BUROSUMAB targets FGF23."
+    },
+    {
+      "source": "CHEMBL846",
+      "target": "VDR",
+      "type": "TARGETS",
+      "description": "CALCITRIOL targets VDR."
+    },
+    {
+      "source": "CHEMBL3707326",
+      "target": "FGF23",
+      "type": "TARGETS",
+      "description": "BUROSUMAB targets FGF23."
+    },
+    {
+      "source": "CHEMBL1536",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "TREATS",
+      "description": "ERGOCALCIFEROL is phase 4 / marketed for autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)."
+    },
+    {
+      "source": "SLC34A1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC34A1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "SLC34A2",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC34A2 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "SQSTM1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SQSTM1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "SOST",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "SOST is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "SOSTDC1",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "SOSTDC1 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "TNFRSF11A",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11A is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "CDKL2",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKL2 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "FGF23",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF23 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SMOC2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SMOC2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "HFE",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "HFE is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL6ST",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6ST is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ALPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ALPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "NOTCH3",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH3 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11A",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11A is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LRP5",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP5 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ABCB4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP27B1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP27B1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "FGF23",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF23 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.76"
+    },
+    {
+      "source": "PHEX",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHEX is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.28"
+    },
+    {
+      "source": "DMP1",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMP1 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.06"
+    },
+    {
+      "source": "VDR",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VDR is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.06"
+    },
+    {
+      "source": "UMOD",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UMOD is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.06"
+    },
+    {
+      "source": "ATP6V1H",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP6V1H is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.06"
+    },
+    {
+      "source": "ALPL",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPL is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CYP27B1",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP27B1 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.05"
+    },
+    {
+      "source": "TRPV5",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV5 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.05"
+    },
+    {
+      "source": "LRRK1",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRK1 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.05"
+    },
+    {
+      "source": "SOST",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOST is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CLCN5",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCN5 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ABCB4",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB4 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.05"
+    },
+    {
+      "source": "TCIRG1",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCIRG1 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC5A2",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC5A2 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.05"
+    },
+    {
+      "source": "PHOSPHO1",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHOSPHO1 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC12A1",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A1 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.05"
+    },
+    {
+      "source": "GCM2",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCM2 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC34A1",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC34A1 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.04"
+    },
+    {
+      "source": "NOTCH2",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH2 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SNX10",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNX10 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFITM5",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFITM5 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.04"
+    },
+    {
+      "source": "INPP4B",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INPP4B is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ANO5",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANO5 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL6ST",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6ST is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IBSP",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IBSP is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRP5",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP5 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CREB3L1",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREB3L1 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZBTB40",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB40 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.04"
+    },
+    {
+      "source": "KCNK1",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNK1 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.04"
+    },
+    {
+      "source": "FAM20C",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM20C is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CSF1",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF1 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "NOTCH3",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH3 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "HFE",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HFE is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOSTDC1",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOSTDC1 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNFRSF11A",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF11A is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CALCB",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCB is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CALCA",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "AMELY",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMELY is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "AMELX",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMELX is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC34A2",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC34A2 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SQSTM1",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SQSTM1 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "KCTD1",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCTD1 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CLEC11A",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC11A is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDKL2",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKL2 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "GREM2",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GREM2 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "AKR1A1",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKR1A1 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CRTAP",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRTAP is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TF",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ENPP4",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENPP4 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD68",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD68 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SMOC2",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMOC2 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CLCNKA",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCNKA is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CLCNKB",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCNKB is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "NOTUM",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTUM is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PPARD",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARD is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CEBPB",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPB is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CLEC2D",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC2D is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SBNO2",
+      "target": "autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SBNO2 is associated with autosomal dominant hypophosphatemic rickets (AUTOSOMAL_DOMINANT_HYPOPHOSPHATEMIC_RICKETS). Open Targets association score 0.03"
+    }
+  ]
+}

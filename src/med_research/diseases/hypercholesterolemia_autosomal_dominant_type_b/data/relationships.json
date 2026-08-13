@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "SCARB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "SCARB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCL15",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL15 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCL15-CCL14",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL15-CCL14 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "PHF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "PHF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TM6SF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TM6SF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C4BPA",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C4BPA is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "FLVCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "FLVCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOBEC1",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOBEC1 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLRAP1",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLRAP1 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ECHDC1",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "ECHDC1 is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "TNFSF4",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF4 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "MGST1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "MGST1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.81"
+    },
+    {
+      "source": "LDLR",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.36"
+    },
+    {
+      "source": "AMPD1",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMPD1 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.15"
+    },
+    {
+      "source": "APOE",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.10"
+    },
+    {
+      "source": "SCARB1",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCARB1 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.07"
+    },
+    {
+      "source": "LIPG",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPG is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.06"
+    },
+    {
+      "source": "TNFSF4",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF4 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.06"
+    },
+    {
+      "source": "APOA1",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.06"
+    },
+    {
+      "source": "APOC3",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC3 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.05"
+    },
+    {
+      "source": "CT45A8",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CT45A8 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.05"
+    },
+    {
+      "source": "CT45A1",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CT45A1 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.05"
+    },
+    {
+      "source": "CT45A5",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CT45A5 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.05"
+    },
+    {
+      "source": "SAGE1",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAGE1 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.05"
+    },
+    {
+      "source": "CT45A9",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CT45A9 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.05"
+    },
+    {
+      "source": "CT45A2",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CT45A2 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.05"
+    },
+    {
+      "source": "CT45A6",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CT45A6 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.05"
+    },
+    {
+      "source": "CT45A10",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CT45A10 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.05"
+    },
+    {
+      "source": "CT45A7",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CT45A7 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.05"
+    },
+    {
+      "source": "CT45A3",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CT45A3 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.05"
+    },
+    {
+      "source": "LPL",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.05"
+    },
+    {
+      "source": "PDZK1",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDZK1 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.05"
+    },
+    {
+      "source": "LDLRAP1",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLRAP1 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.05"
+    },
+    {
+      "source": "LIPC",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.05"
+    },
+    {
+      "source": "KIF13B",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF13B is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.05"
+    },
+    {
+      "source": "PHF8",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHF8 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.05"
+    },
+    {
+      "source": "ABCA1",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.05"
+    },
+    {
+      "source": "LCAT",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCAT is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.05"
+    },
+    {
+      "source": "SAR1B",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAR1B is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.05"
+    },
+    {
+      "source": "HPN",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPN is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.05"
+    },
+    {
+      "source": "TM6SF2",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM6SF2 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.05"
+    },
+    {
+      "source": "APOC2",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC2 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "APOC4-APOC2",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC4-APOC2 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "APOBEC1",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOBEC1 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "ECHDC1",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ECHDC1 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC10A3",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC10A3 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "PCSK9",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "REG1B",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REG1B is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "FLVCR2",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLVCR2 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "REG3G",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REG3G is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "AP2A2",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AP2A2 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "PON2",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PON2 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "NR1H4",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1H4 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "UBIAD1",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBIAD1 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "APOA5",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "GPIHBP1",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPIHBP1 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "SREBF1",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SREBF1 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCL15-CCL14",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL15-CCL14 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "ARMC10",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARMC10 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAP3K10",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K10 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "C4BPA",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C4BPA is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZNF175",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF175 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "KIAA1958",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIAA1958 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "ARV1",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARV1 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "RBM14",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM14 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "POM121L2",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POM121L2 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "RBM14-RBM4",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM14-RBM4 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "METTL22",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "METTL22 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCL15",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL15 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "CACNG3",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNG3 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    },
+    {
+      "source": "MGST1",
+      "target": "hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MGST1 is associated with hypercholesterolemia, autosomal dominant, type B (HYPERCHOLESTEROLEMIA_AUTOSOMAL_DOMINANT_TYPE_B). Open Targets association score 0.04"
+    }
+  ]
+}

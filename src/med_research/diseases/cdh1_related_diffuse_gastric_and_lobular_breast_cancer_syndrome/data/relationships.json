@@ -1,0 +1,448 @@
+{
+  "relationships": [
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "WASF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "WASF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PDX1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PDX1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL18",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "SMAD4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "PRTG",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PRTG is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "GSK3B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "GSK3B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT9B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT9B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CDH1",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.79"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "OCLN",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OCLN is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "AIRE",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIRE is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "ESRP1",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESRP1 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SRC",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRC is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "GOLGB1",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOLGB1 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "APC",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "OCA2",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OCA2 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TBX10",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX10 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "GAST",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAST is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRDM16",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM16 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "RNF43",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF43 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SMAD4",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD4 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "AP2B1",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AP2B1 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TGFB3",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB3 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CA9",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA9 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ZEB1",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "STK11",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SOX2",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX2 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TFF1",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFF1 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC9A4",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC9A4 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ATP4A",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP4A is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXL1",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXL1 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FIGN",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FIGN is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CRAMP1",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRAMP1 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "MSX1",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSX1 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "DCN",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCN is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TTC7A",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC7A is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TES",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TES is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "KCNE2",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNE2 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "HRH2",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRH2 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "IQGAP1",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IQGAP1 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPDEF",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPDEF is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGFR2",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PDX1",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDX1 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "EFNB1",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EFNB1 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC26A9",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC26A9 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SST",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SST is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC9A2",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC9A2 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TP63",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ATP4B",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP4B is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FZD2",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FZD2 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRTG",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRTG is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLMAP",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLMAP is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FUT7",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUT7 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "HYAL2",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HYAL2 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL18",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GATA3",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXP3",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PGAP2",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGAP2 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "VSIG1",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VSIG1 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFKB2",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "WNT9B",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT9B is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GSK3B",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSK3B is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SIRT1",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT1 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "DNASE1L2",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNASE1L2 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RUFY3",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUFY3 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "WASF2",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WASF2 is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RNF144A",
+      "target": "CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF144A is associated with CDH1-related diffuse gastric and lobular breast cancer syndrome (CDH1_RELATED_DIFFUSE_GASTRIC_AND_LOBULAR_BREAST_CANCER_SYNDROME). Open Targets association score 0.04"
+    }
+  ]
+}

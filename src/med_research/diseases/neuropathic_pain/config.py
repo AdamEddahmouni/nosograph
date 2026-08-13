@@ -27,11 +27,13 @@ GWAS_SEARCH_TERMS = ["neuropathic pain", "neuropathic"]
 CAR_T_SCORES = {
     "Uncategorized": {
         "ACHE": 4.0,
+        "ADORA1": 4.0,
         "ADORA2A": 4.0,
         "ADRA2A": 4.0,
         "ADRA2B": 4.0,
         "ADRA2C": 4.0,
         "ADRB2": 4.0,
+        "AGTR1": 4.0,
         "ALDH5A1": 4.0,
         "ANGPT1": 4.0,
         "ATP4A": 4.0,
@@ -64,6 +66,7 @@ CAR_T_SCORES = {
         "CCR2": 4.0,
         "CHRNA4": 4.0,
         "CNR1": 4.0,
+        "EREG": 4.0,
         "FAAH": 4.0,
         "GRIN1": 4.0,
         "GRIN2A": 4.0,
@@ -207,6 +210,7 @@ DRUG_INDUCED_LUPUS_RISK = DRUG_SAFETY_RISK
 SCREENING_PROFILE = {
     "strategy_id": "neuropathic_pain-screening-v1",
     "pathway_keywords": [
+        "angiotensin",
         "cardiac",
         "cascade",
         "channel",
@@ -216,9 +220,9 @@ SCREENING_PROFILE = {
         "dopamine",
         "gaba",
         "glutamate",
-        "hormone",
     ],
     "mechanism_keywords": [
+        "angiotensin",
         "cardiac",
         "cascade",
         "channel",
@@ -228,7 +232,6 @@ SCREENING_PROFILE = {
         "dopamine",
         "gaba",
         "glutamate",
-        "hormone",
     ],
     "reference_drug_ids": [
         "CHEMBL1059",

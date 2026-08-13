@@ -1,0 +1,442 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL3301587",
+      "target": "CD274",
+      "type": "TARGETS",
+      "description": "DURVALUMAB targets CD274."
+    },
+    {
+      "source": "BIRC5",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BIRC5 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFATC1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "REG4",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REG4 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.07"
+    },
+    {
+      "source": "ERBB2",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.03"
+    },
+    {
+      "source": "DKK3",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DKK3 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.03"
+    },
+    {
+      "source": "KRAS",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.02"
+    },
+    {
+      "source": "MUC5AC",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5AC is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.02"
+    },
+    {
+      "source": "MUC16",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC16 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.02"
+    },
+    {
+      "source": "AGR2",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGR2 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "STAT3",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC2",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC2 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "NBR1",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBR1 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLK1",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLK1 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "TFF1",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFF1 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "SFRP4",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFRP4 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "DACT1",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DACT1 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "WFDC2",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WFDC2 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDX2",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDX2 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "NTRK3",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK3 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "DPEP1",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPEP1 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKRA",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKRA is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "PAX8",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX8 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "BRCA1",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRT7",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT7 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "ESR1",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "ABCB1",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB1 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "JMJD6",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JMJD6 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "TBC1D9",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D9 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALDH2",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDH2 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "FAS",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRT20",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT20 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM5",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM5 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "LIAT1",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIAT1 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "ARID1A",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC1",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC1 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "TKTL2",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TKTL2 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "MXI1",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MXI1 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAD2L1",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAD2L1 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "SRC",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRC is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "SIRT1",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT1 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "NFATC1",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFATC1 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "BIRC5",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIRC5 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PGR",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIEZO1",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIEZO1 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "TMEM37",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM37 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "EREG",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EREG is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRH2",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH2 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "SATB2",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SATB2 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CSN1S1",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSN1S1 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPL17",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "FXN",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FXN is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNF",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "FANCA",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "HYAL1",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HYAL1 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "EPCAM",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPCAM is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "BRAF",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSG2",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSG2 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD274",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEACAM7",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM7 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEACAM3",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM3 is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "MET",
+      "target": "mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with mucinous ovarian cancer (MUCINOUS_OVARIAN_CANCER). Open Targets association score 0.00"
+    }
+  ]
+}

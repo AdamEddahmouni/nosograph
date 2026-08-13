@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL2403108",
+      "target": "EML4",
+      "type": "TARGETS",
+      "description": "CERITINIB targets EML4."
+    },
+    {
+      "source": "CHEMBL2403108",
+      "target": "ALK",
+      "type": "TARGETS",
+      "description": "CERITINIB targets ALK."
+    },
+    {
+      "source": "CHEMBL601719",
+      "target": "EML4",
+      "type": "TARGETS",
+      "description": "CRIZOTINIB targets EML4."
+    },
+    {
+      "source": "CHEMBL601719",
+      "target": "ALK",
+      "type": "TARGETS",
+      "description": "CRIZOTINIB targets ALK."
+    },
+    {
+      "source": "BIRC3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BIRC3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "SYK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "SYK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CHEK2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "CHEK2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "LCK",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LCK is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "HIF1A",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "HIF1A is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "AXIN1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "AXIN1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "TPM4",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPM4 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.37"
+    },
+    {
+      "source": "ALK",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "TPM3",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPM3 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "PPFIBP1",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPFIBP1 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATM",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "MYC",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "KAT6B",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KAT6B is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "NOTCH2",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH2 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "NSD2",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSD2 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "MYCN",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYCN is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "AMER1",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMER1 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ATF1",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATF1 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "BIRC3",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIRC3 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "KAT6A",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KAT6A is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "MEN1",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ETV6",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV6 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "LCK",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCK is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "KDR",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "UBR5",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBR5 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "NTRK3",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK3 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2C",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "PTPRK",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRK is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "CHEK2",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHEK2 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "SYK",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYK is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "DICER1",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DICER1 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "POLE",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "TERT",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "HIF1A",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF1A is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "SPOP",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPOP is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "JAK2",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "CLTC",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLTC is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ARID1A",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "HLF",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLF is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "AXIN1",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AXIN1 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ABL1",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABL1 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ERG",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERG is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ARNT",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARNT is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "TPR",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPR is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "KIT",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "TSC2",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "TRRAP",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRRAP is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "BRCA1",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "HSP90AA1",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSP90AA1 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "EML4",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EML4 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "TOP1",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOP1 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "SMARCD1",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCD1 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "NIN",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NIN is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "AFF1",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFF1 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "EPHA7",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHA7 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "PTPRD",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRD is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "ACSL3",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACSL3 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "NUP214",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUP214 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "PMS1",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMS1 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "NCOA1",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOA1 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "SEPTIN9",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEPTIN9 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "MYH11",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH11 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "TCF12",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF12 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "NUMA1",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUMA1 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "FN1",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FN1 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPP1",
+      "target": "Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPP1 is associated with Lung Inflammatory Myofibroblastic Tumor (LUNG_INFLAMMATORY_MYOFIBROBLASTIC_TUMOR). Open Targets association score 0.00"
+    }
+  ]
+}

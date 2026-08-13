@@ -1,0 +1,478 @@
+{
+  "relationships": [
+    {
+      "source": "BIRC5",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BIRC5 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BECN1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "BECN1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CCNA2",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCNA2 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TIMP1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RAF1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RAF1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD36",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD36 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "LRP1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "PTPN11",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.34"
+    },
+    {
+      "source": "IDH1",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.10"
+    },
+    {
+      "source": "ATRX",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "IDH2",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH2 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "WT1",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.08"
+    },
+    {
+      "source": "PICK1",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PICK1 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.07"
+    },
+    {
+      "source": "TP53",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.05"
+    },
+    {
+      "source": "NES",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NES is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCND1",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "PROM1",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROM1 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "BIRC5",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIRC5 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "MKI67",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "BECN1",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BECN1 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "CPEB4",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPEB4 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "MPG",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPG is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "LRP1",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "KCNJ10",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNJ10 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "VEGFA",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "ENG",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENG is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "PLAU",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAU is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "OLIG2",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OLIG2 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "ENPP1",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENPP1 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "RAC1",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAC1 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "TIMP1",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP1 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "NOS3",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "GJA1",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA1 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNF",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "MMP2",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL1B",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "TYMP",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYMP is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "FASLG",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "GFAP",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "MET",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCNA2",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCNA2 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "FAT1",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT1 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "NF1",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNC",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNC is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "ELAVL1",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELAVL1 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "CSPG4",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSPG4 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD36",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD36 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "GAST",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAST is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "PGR",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "S100A4",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A4 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "UBE2C",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBE2C is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "SETD2",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD2 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "EGFR",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "PODXL",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PODXL is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "RAF1",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAF1 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "AKT1",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "ABCA1",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "FLT3",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "PEA15",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PEA15 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "PRAP1",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRAP1 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "PDPN",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDPN is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "EZH2",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EZH2 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "PCNA",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNA is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "HGF",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "NCAM1",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCAM1 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "ESR1",
+      "target": "astrocytic tumor (ASTROCYTIC_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with astrocytic tumor (ASTROCYTIC_TUMOR). Open Targets association score 0.02"
+    }
+  ]
+}

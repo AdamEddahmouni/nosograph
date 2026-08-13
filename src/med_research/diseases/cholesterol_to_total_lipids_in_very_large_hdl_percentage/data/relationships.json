@@ -1,0 +1,442 @@
+{
+  "relationships": [
+    {
+      "source": "SCARB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "SCARB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "SBF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SBF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ZNF285",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF285 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "ITGA1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL3 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ANGPTL8",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL8 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CETP is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ITGA1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFSF13",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LIPC",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.68"
+    },
+    {
+      "source": "SCARB1",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCARB1 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.60"
+    },
+    {
+      "source": "PLTP",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLTP is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.60"
+    },
+    {
+      "source": "CETP",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETP is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.56"
+    },
+    {
+      "source": "ASGR1",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASGR1 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.53"
+    },
+    {
+      "source": "LIPG",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPG is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.52"
+    },
+    {
+      "source": "GPIHBP1",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPIHBP1 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.48"
+    },
+    {
+      "source": "JAZF1",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAZF1 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.47"
+    },
+    {
+      "source": "ZPR1",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZPR1 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.47"
+    },
+    {
+      "source": "SORT1",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORT1 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.45"
+    },
+    {
+      "source": "CELSR2",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR2 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.44"
+    },
+    {
+      "source": "APOE",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.43"
+    },
+    {
+      "source": "APOA2",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA2 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.43"
+    },
+    {
+      "source": "TNFSF13",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.42"
+    },
+    {
+      "source": "SBF2",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SBF2 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.42"
+    },
+    {
+      "source": "ST3GAL4",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST3GAL4 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.41"
+    },
+    {
+      "source": "ASGR2",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASGR2 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.39"
+    },
+    {
+      "source": "HNF1A",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.38"
+    },
+    {
+      "source": "APOA5",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.35"
+    },
+    {
+      "source": "CLEC10A",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC10A is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.34"
+    },
+    {
+      "source": "NECTIN2",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NECTIN2 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.34"
+    },
+    {
+      "source": "FADS2",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS2 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.34"
+    },
+    {
+      "source": "ABCA1",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.34"
+    },
+    {
+      "source": "CPOX",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPOX is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.34"
+    },
+    {
+      "source": "ZNF285",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF285 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.33"
+    },
+    {
+      "source": "PELO",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PELO is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.32"
+    },
+    {
+      "source": "ANKRD35",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKRD35 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.32"
+    },
+    {
+      "source": "ITGA1",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA1 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.32"
+    },
+    {
+      "source": "PLG",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLG is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.32"
+    },
+    {
+      "source": "TAGLN",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAGLN is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.31"
+    },
+    {
+      "source": "MTX2",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTX2 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.31"
+    },
+    {
+      "source": "LDLR",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.31"
+    },
+    {
+      "source": "LPL",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.31"
+    },
+    {
+      "source": "RNF111",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF111 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.30"
+    },
+    {
+      "source": "LPA",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.30"
+    },
+    {
+      "source": "STAG1",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAG1 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.30"
+    },
+    {
+      "source": "PON3",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PON3 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.30"
+    },
+    {
+      "source": "PSRC1",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSRC1 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.30"
+    },
+    {
+      "source": "DOCK7",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK7 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.29"
+    },
+    {
+      "source": "TMPRSS11E",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS11E is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.29"
+    },
+    {
+      "source": "PON1",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PON1 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.28"
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL3 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.28"
+    },
+    {
+      "source": "PON2",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PON2 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.27"
+    },
+    {
+      "source": "PCSK7",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK7 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.26"
+    },
+    {
+      "source": "SDC1",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC1 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.26"
+    },
+    {
+      "source": "ANGPTL8",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL8 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.26"
+    },
+    {
+      "source": "ZFAND2A",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFAND2A is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.24"
+    },
+    {
+      "source": "NBPF15",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBPF15 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.23"
+    },
+    {
+      "source": "PCP4L1",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCP4L1 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.23"
+    },
+    {
+      "source": "ST3GAL6",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST3GAL6 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.23"
+    },
+    {
+      "source": "ACAA2",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACAA2 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.22"
+    },
+    {
+      "source": "PCCB",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCCB is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.19"
+    },
+    {
+      "source": "FADS1",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS1 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.18"
+    },
+    {
+      "source": "GAPDHS",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAPDHS is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.17"
+    },
+    {
+      "source": "BCL3",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL3 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.17"
+    },
+    {
+      "source": "C12orf43",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C12orf43 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.17"
+    },
+    {
+      "source": "AQP9",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP9 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.17"
+    },
+    {
+      "source": "NR1I3",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1I3 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.15"
+    },
+    {
+      "source": "BUD13",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUD13 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.15"
+    },
+    {
+      "source": "NDUFS2",
+      "target": "cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS2 is associated with cholesterol to total lipids in very large HDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_VERY_LARGE_HDL_PERCENTAGE). Open Targets association score 0.15"
+    }
+  ]
+}

@@ -1,0 +1,562 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201583",
+      "target": "VEGFA",
+      "type": "TARGETS",
+      "description": "BEVACIZUMAB targets VEGFA."
+    },
+    {
+      "source": "CHEMBL1278146",
+      "target": "FLT4",
+      "type": "TARGETS",
+      "description": "FAMITINIB targets FLT4."
+    },
+    {
+      "source": "CHEMBL1278146",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "FAMITINIB targets KIT."
+    },
+    {
+      "source": "CHEMBL1336",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "SORAFENIB targets KIT."
+    },
+    {
+      "source": "CHEMBL2103851",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "AMUVATINIB targets KIT."
+    },
+    {
+      "source": "CHEMBL2110732",
+      "target": "ERBB2",
+      "type": "TARGETS",
+      "description": "DACOMITINIB ANHYDROUS targets ERBB2."
+    },
+    {
+      "source": "CHEMBL3039525",
+      "target": "KDR",
+      "type": "TARGETS",
+      "description": "GOLVATINIB targets KDR."
+    },
+    {
+      "source": "CHEMBL1201560",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "TREATS",
+      "description": "PEGINTERFERON ALFA-2A is phase 4 / marketed for vascular cancer (VASCULAR_CANCER)."
+    },
+    {
+      "source": "CHEMBL1201752",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "TREATS",
+      "description": "IXABEPILONE is phase 4 / marketed for vascular cancer (VASCULAR_CANCER)."
+    },
+    {
+      "source": "CHEMBL1683590",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "TREATS",
+      "description": "ERIBULIN is phase 4 / marketed for vascular cancer (VASCULAR_CANCER)."
+    },
+    {
+      "source": "CHEMBL1683590",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "TREATS",
+      "description": "ERIBULIN is phase 4 / marketed for vascular cancer (VASCULAR_CANCER)."
+    },
+    {
+      "source": "CHEMBL1742992",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "TREATS",
+      "description": "BLINATUMOMAB is phase 4 / marketed for vascular cancer (VASCULAR_CANCER)."
+    },
+    {
+      "source": "CHEMBL1789941",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "TREATS",
+      "description": "RUXOLITINIB is phase 4 / marketed for vascular cancer (VASCULAR_CANCER)."
+    },
+    {
+      "source": "CHEMBL2110725",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "TREATS",
+      "description": "VINFLUNINE is phase 3 for vascular cancer (VASCULAR_CANCER)."
+    },
+    {
+      "source": "CHEMBL225071",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "TREATS",
+      "description": "RALTITREXED is phase 4 / marketed for vascular cancer (VASCULAR_CANCER)."
+    },
+    {
+      "source": "KCNQ1",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNQ1 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "KCNQ5",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNQ5 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TNFRSF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "THEM6",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THEM6 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNFRSF8",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF8 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.02"
+    },
+    {
+      "source": "PRH2",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH2 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "TMEM37",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM37 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "PGR",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERBB2",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "ESR1",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "EREG",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EREG is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIEZO1",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIEZO1 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "PECAM1",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PECAM1 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "KDR",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM7",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM7 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM5",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM5 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSG2",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSG2 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM3",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM3 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "SUFU",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUFU is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD34",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "FLI1",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLI1 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERG",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERG is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "WWTR1",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WWTR1 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "MKI67",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNFRSF8",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF8 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "MET",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "VEGFA",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "ME2",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ME2 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "KCNQ1",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNQ1 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "KCNQ5",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNQ5 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "AFP",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALB",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "ROCK1",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROCK1 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "ROCK2",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROCK2 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "FLT4",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD274",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL6",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "RNF180",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF180 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "LRIG1",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRIG1 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACTA2",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTA2 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "FGA",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGA is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "DCHS1",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCHS1 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PCDHGB4",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCDHGB4 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "FBL",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBL is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "THEM6",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THEM6 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP53",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "AOX1",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOX1 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPE65",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPE65 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "UVRAG",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UVRAG is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CKAP4",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CKAP4 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP63",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRDX2",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDX2 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTEN",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CAMTA1",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMTA1 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "FOXM1",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXM1 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "GJA1",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA1 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "S100B",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100B is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "KIT",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "NOS2",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "ISYNA1",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISYNA1 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    },
+    {
+      "source": "S100A1",
+      "target": "vascular cancer (VASCULAR_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A1 is associated with vascular cancer (VASCULAR_CANCER). Open Targets association score 0.00"
+    }
+  ]
+}

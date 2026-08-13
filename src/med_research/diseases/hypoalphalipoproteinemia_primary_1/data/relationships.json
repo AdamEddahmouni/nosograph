@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "SCARB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "SCARB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TM6SF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TM6SF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ELN",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ELN is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "HMGCR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HMGCR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLRAP1",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLRAP1 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "VLDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "VLDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ECHDC1",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "ECHDC1 is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "IL21R",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL21R is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "NFASC",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NFASC is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF4",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF4 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ABCA1",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.75"
+    },
+    {
+      "source": "APOA1",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.20"
+    },
+    {
+      "source": "APOE",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.10"
+    },
+    {
+      "source": "LDLR",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.09"
+    },
+    {
+      "source": "APOC2",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC2 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.07"
+    },
+    {
+      "source": "APOC4-APOC2",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC4-APOC2 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.07"
+    },
+    {
+      "source": "LPL",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.07"
+    },
+    {
+      "source": "SCARB1",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCARB1 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.07"
+    },
+    {
+      "source": "IGFBP1",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGFBP1 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "LIPG",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPG is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "LCAT",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCAT is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "TM6SF2",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM6SF2 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "SAR1B",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAR1B is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "LRP6",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP6 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "LEP",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "NR1H4",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1H4 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "ECHDC1",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ECHDC1 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "KLF15",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF15 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "ORM1",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ORM1 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "ORM2",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ORM2 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "TRA2B",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRA2B is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNFSF4",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF4 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "ALDOC",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDOC is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "GPIHBP1",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPIHBP1 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "LDLRAP1",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLRAP1 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "LIPC",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "OSBPL8",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OSBPL8 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "AQP9",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP9 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "APOB",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "APOA5",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADCY10",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADCY10 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "ECSCR",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ECSCR is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "VLDLR",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VLDLR is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "ELN",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELN is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "APOC1",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC1 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL21R",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL21R is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "RUNX1T1",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1T1 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "PON3",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PON3 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "PADI4",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PADI4 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "TMC1",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMC1 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "PPME1",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPME1 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "MTRF1",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTRF1 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZRANB3",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZRANB3 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "HMGCR",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCR is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFASC",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFASC is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCNQ",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCNQ is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "KIF18B",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF18B is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "RCOR2",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RCOR2 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL25",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL25 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "NOS3",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "LMF1",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMF1 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCDC18",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC18 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "CEBPA",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPA is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "LIPE",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPE is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "TLR4",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "AMPD2",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMPD2 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "TXNIP",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TXNIP is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "SCP2",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCP2 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "APC",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "SDC2",
+      "target": "hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC2 is associated with hypoalphalipoproteinemia, primary, 1 (HYPOALPHALIPOPROTEINEMIA_PRIMARY_1). Open Targets association score 0.04"
+    }
+  ]
+}

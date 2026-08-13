@@ -1418,6 +1418,107 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
     white-space: nowrap; flex-shrink: 0;
 }
 
+/* ── Multi-Disease Comparison & Enhanced Graph Controls ──────────── */
+.multi-disease-comparison-shell {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin-bottom: 32px;
+    overflow: hidden;
+}
+.multi-disease-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+.multi-disease-label {
+    font-size: 0.84rem;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+.multi-disease-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    background: var(--surface2);
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+.multi-disease-checkboxes label {
+    font-size: 0.82rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.multi-disease-body {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px;
+}
+.matrix-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    font-size: 0.82rem;
+}
+.matrix-table th, .matrix-table td {
+    padding: 10px 12px;
+    text-align: center;
+    border: 1px solid var(--border);
+}
+.matrix-table th {
+    background: var(--surface);
+    font-weight: 700;
+    color: var(--text);
+}
+.matrix-cell {
+    font-weight: 600;
+    border-radius: 4px;
+}
+.matrix-cell.high { background: rgba(74, 222, 128, 0.2); color: #4ade80; }
+.matrix-cell.medium { background: rgba(251, 191, 36, 0.2); color: #fbbf24; }
+.matrix-cell.low { background: rgba(96, 165, 250, 0.15); color: #60a5fa; }
+
+.kg-edge-filters {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.kg-sub-label {
+    font-size: 0.76rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+.kg-filter-sm {
+    font-size: 0.76rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.kg-extra-controls {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 0.76rem;
+}
+.btn.active-overlay {
+    background: var(--primary);
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(129, 140, 248, 0.5);
+}
+
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes popIn {
     from { opacity: 0; transform: scale(0.96) translateY(6px); }

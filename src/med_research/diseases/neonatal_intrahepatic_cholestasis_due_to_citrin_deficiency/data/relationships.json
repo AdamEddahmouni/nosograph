@@ -1,0 +1,520 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL121",
+      "target": "PPARG",
+      "type": "TARGETS",
+      "description": "ROSIGLITAZONE targets PPARG."
+    },
+    {
+      "source": "SCARB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "SCARB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "C1QTNF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TM6SF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TM6SF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C1QTNF2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "PGRMC1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "PGRMC1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "G6PC1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "G6PC1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF4A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF4A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL3 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "C1QTNF2",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF2 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ABCB11",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB11 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ABCB4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ABCC2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP27A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP27A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP8B1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP8B1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SLCO1B1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLCO1B1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SLCO1B3",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLCO1B3 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SLCO1B3-SLCO1B7",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLCO1B3-SLCO1B7 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SLC25A13",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A13 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.78"
+    },
+    {
+      "source": "ABCB4",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB4 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "ABCC2",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC2 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "FAH",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAH is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "NR1H4",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1H4 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "LRP6",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP6 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "LDLR",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "HNF1A",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "ABCB11",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB11 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "LEP",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "ATP8B1",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP8B1 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "SPTA1",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "ORM1",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ORM1 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "ORM2",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ORM2 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "APOB",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "SCP2",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCP2 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "ANK1",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "PEMT",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PEMT is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "ILRUN",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ILRUN is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "APC",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL3 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "APOA1",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "G6PC1",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "G6PC1 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "HNF4A",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF4A is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "HSD17B13",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSD17B13 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CEBPA",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPA is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "MC4R",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MC4R is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "ENTPD5",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENTPD5 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "SCARB1",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCARB1 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "NADK2",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NADK2 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "LMF1",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMF1 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLC10A2",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC10A2 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "ACOX1",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACOX1 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "TM6SF2",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM6SF2 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "PEX1",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PEX1 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CYP27A1",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP27A1 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "FECH",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FECH is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "GPAM",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPAM is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLCO1B3-SLCO1B7",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLCO1B3-SLCO1B7 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLCO1B1",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLCO1B1 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLCO1B3",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLCO1B3 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "HADHA",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HADHA is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "GPI",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPI is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SAR1B",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAR1B is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "TXNIP",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TXNIP is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "BHMT",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BHMT is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "C1QTNF2",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1QTNF2 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PON3",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PON3 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ARG1",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARG1 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LPL",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ABCG2",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG2 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PPARG",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CYP8B1",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP8B1 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ABCG5",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG5 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "APOC1",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC1 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PGRMC1",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGRMC1 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SOAT2",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOAT2 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "APOE",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SOX17",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX17 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CES1",
+      "target": "neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CES1 is associated with neonatal intrahepatic cholestasis due to citrin deficiency (NEONATAL_INTRAHEPATIC_CHOLESTASIS_DUE_TO_CITRIN_DEFICIENCY). Open Targets association score 0.05"
+    }
+  ]
+}

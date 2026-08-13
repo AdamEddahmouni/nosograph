@@ -1,0 +1,496 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL482968",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "ENMD-2076 targets KIT."
+    },
+    {
+      "source": "CHEMBL477772",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "PAZOPANIB targets KIT."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ASPSCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "ASPSCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATR",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATR is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MLH1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MLH1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "RAD51B",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "RAD51B is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K4",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K4 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "HIF1A",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "HIF1A is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "FUS",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUS is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NUTM2B",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUTM2B is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ATF1",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATF1 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "EWSR1",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EWSR1 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "DDIT3",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDIT3 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CREB3L1",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREB3L1 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "YWHAE",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YWHAE is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "RB1",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NF1",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MUTYH",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUTYH is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FANCA",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID1B",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1B is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRCA2",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ZFHX3",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFHX3 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SSX2",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSX2 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "AKT1",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TFE3",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFE3 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NPM1",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPM1 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP53",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CBL",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBL is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KIT",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "POLE",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERBB4",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB4 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "STAT6",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT6 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SS18",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SS18 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CREB3L2",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREB3L2 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "APC",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATM",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ASPSCR1",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASPSCR1 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TET2",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EGFR",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SSX1",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSX1 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2D",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ALK",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EP300",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EP300 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTEN",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP63",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTPRD",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRD is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ATR",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATR is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FANCC",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCC is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "BRCA1",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MLH1",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLH1 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "EXT2",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EXT2 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MSI2",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSI2 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CUX1",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUX1 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PALB2",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PALB2 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "EIF3E",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF3E is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PTPRK",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRK is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CDH11",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH11 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FHIT",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FHIT is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MAP2K4",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K4 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RAD51B",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD51B is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "DNMT3A",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT3A is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "HIF1A",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF1A is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "REL",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REL is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "GATA2",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA2 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "AR",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PRDM16",
+      "target": "mixed liposarcoma (MIXED_LIPOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM16 is associated with mixed liposarcoma (MIXED_LIPOSARCOMA). Open Targets association score 0.18"
+    }
+  ]
+}

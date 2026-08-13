@@ -31,16 +31,22 @@
       "description": "HYDROXYUREA targets RRM1."
     },
     {
-      "source": "CCL2",
-      "target": "chemokine-signaling",
-      "type": "PARTICIPATES_IN",
-      "description": "CCL2 is a component of the Chemokine Signaling pathway."
-    },
-    {
       "source": "CYP4F2",
       "target": "coagulation",
       "type": "PARTICIPATES_IN",
       "description": "CYP4F2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SREBF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SREBF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IL12B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL12B is a component of the IL-1 / Inflammasome Pathway pathway."
     },
     {
       "source": "PPARG",
@@ -53,12 +59,6 @@
       "target": "opioid-signaling",
       "type": "PARTICIPATES_IN",
       "description": "POMC is a component of the Opioid Signaling pathway."
-    },
-    {
-      "source": "RENBP",
-      "target": "renin-angiotensin",
-      "type": "PARTICIPATES_IN",
-      "description": "RENBP is a component of the Renin-Angiotensin System pathway."
     },
     {
       "source": "DRD2",
@@ -91,6 +91,18 @@
       "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
     },
     {
+      "source": "RORA",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "RORA is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL12B",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL12B is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
       "source": "GSK3B",
       "target": "wnt-signaling",
       "type": "PARTICIPATES_IN",
@@ -107,6 +119,18 @@
       "target": "xenobiotic-metabolism",
       "type": "PARTICIPATES_IN",
       "description": "CYP4F2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "RENBP",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "RENBP is a component of the Renin-Angiotensin System pathway."
     },
     {
       "source": "SLC38A8",
@@ -131,12 +155,6 @@
       "target": "nfkb",
       "type": "PARTICIPATES_IN",
       "description": "RELN is a component of the NF-κB Pathway pathway."
-    },
-    {
-      "source": "RORA",
-      "target": "th17-il17",
-      "type": "PARTICIPATES_IN",
-      "description": "RORA is a component of the Th17 / IL-17 Pathway pathway."
     },
     {
       "source": "ABCD1",
@@ -223,16 +241,16 @@
       "description": "CD34 is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.02"
     },
     {
-      "source": "CD1C",
-      "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CD1C is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.02"
-    },
-    {
       "source": "CD1A",
       "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
       "type": "ASSOCIATED_WITH",
       "description": "CD1A is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD1C",
+      "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD1C is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.02"
     },
     {
       "source": "GFAP",
@@ -241,16 +259,16 @@
       "description": "GFAP is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.02"
     },
     {
-      "source": "PRKAA2",
-      "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PRKAA2 is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.02"
-    },
-    {
       "source": "PRKAB1",
       "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
       "type": "ASSOCIATED_WITH",
       "description": "PRKAB1 is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "PRKAA2",
+      "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA2 is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.02"
     },
     {
       "source": "PRKAA1",
@@ -271,16 +289,16 @@
       "description": "ACOX1 is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.02"
     },
     {
-      "source": "DBP",
-      "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "DBP is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.02"
-    },
-    {
       "source": "SIRT1",
       "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
       "type": "ASSOCIATED_WITH",
       "description": "SIRT1 is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "DBP",
+      "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DBP is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.02"
     },
     {
       "source": "GABPA",
@@ -307,16 +325,16 @@
       "description": "GSK3B is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.01"
     },
     {
-      "source": "ACSBG1",
-      "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ACSBG1 is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.01"
-    },
-    {
       "source": "ACBD5",
       "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
       "type": "ASSOCIATED_WITH",
       "description": "ACBD5 is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACSBG1",
+      "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACSBG1 is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.01"
     },
     {
       "source": "ELOVL1",
@@ -343,46 +361,10 @@
       "description": "ADA is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.01"
     },
     {
-      "source": "SERPINA1",
-      "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SERPINA1 is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.01"
-    },
-    {
-      "source": "CYP4F2",
-      "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CYP4F2 is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.01"
-    },
-    {
-      "source": "L1CAM",
-      "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "L1CAM is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.01"
-    },
-    {
-      "source": "HLA-A",
-      "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "HLA-A is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.01"
-    },
-    {
-      "source": "CD8A",
-      "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CD8A is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.01"
-    },
-    {
       "source": "SPR",
       "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
       "type": "ASSOCIATED_WITH",
       "description": "SPR is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.01"
-    },
-    {
-      "source": "ADM",
-      "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ADM is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.01"
     },
     {
       "source": "OMG",
@@ -395,6 +377,42 @@
       "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
       "type": "ASSOCIATED_WITH",
       "description": "PIPOX is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADM",
+      "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADM is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD8A",
+      "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SERPINA1",
+      "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA1 is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP4F2",
+      "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4F2 is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "HLA-A",
+      "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-A is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "L1CAM",
+      "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "L1CAM is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.01"
     },
     {
       "source": "NR0B1",
@@ -427,16 +445,16 @@
       "description": "PPARD is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.00"
     },
     {
-      "source": "ABCC1",
-      "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ABCC1 is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.00"
-    },
-    {
       "source": "CALD1",
       "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
       "type": "ASSOCIATED_WITH",
       "description": "CALD1 is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ABCC1",
+      "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC1 is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.00"
     },
     {
       "source": "SNCA",
@@ -463,10 +481,40 @@
       "description": "CAT is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.00"
     },
     {
+      "source": "AMH",
+      "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMH is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "KDM2A",
+      "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM2A is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SREBF2",
+      "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SREBF2 is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL12B",
+      "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL12B is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
       "source": "PACS1",
       "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
       "type": "ASSOCIATED_WITH",
       "description": "PACS1 is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MERTK",
+      "target": "adrenoleukodystrophy (ADRENOLEUKODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MERTK is associated with adrenoleukodystrophy (ADRENOLEUKODYSTROPHY). Open Targets association score 0.00"
     },
     {
       "source": "CCL2",

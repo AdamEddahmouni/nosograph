@@ -1,0 +1,520 @@
+{
+  "relationships": [
+    {
+      "source": "MS4A1",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MS4A1 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCL5",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL5 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL10",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL10 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C5AR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C5AR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CFI",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CFI is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ALOX5",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ALOX5 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP10",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP10 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TIMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HAMP",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "HAMP is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ARAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "ARAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TPO",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TPO is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "ADA",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADA is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "A2M",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "A2M is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CRP",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "S100B",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100B is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "MPO",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPO is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GFAP",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALOX5",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALOX5 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP2",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "DEFA1",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEFA1 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "SAA1",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAA1 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "SAA2",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAA2 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRTN3",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRTN3 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "OCA2",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OCA2 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCL10",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL10 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCL5",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL5 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAP3K20",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K20 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ARAF",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARAF is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ART4",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ART4 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "A4GALT",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "A4GALT is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALB",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "C5AR1",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C5AR1 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CALCA",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCL8",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "UROD",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UROD is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP9",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CAT",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAT is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "C5",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C5 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "NFKB1",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TPO",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPO is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD4",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCL2",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL2 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "FCGR1A",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR1A is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "INS",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD40LG",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "NCAPG2",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCAPG2 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "APP",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APP is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MS4A1",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MS4A1 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT20",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT20 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CSF2",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "LAMC2",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMC2 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOD1",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD1 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "F3",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F3 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "F5",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F5 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMP3",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP3 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CTNND1",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNND1 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "BCAR1",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCAR1 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ENSG00000288534",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENSG00000288534 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CSE1L",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSE1L is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CFI",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFI is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNG",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TIMP2",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP2 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL2RA",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RA is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MOG",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MOG is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMP10",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP10 is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "HAMP",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAMP is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "AOPEP",
+      "target": "infectious meningitis (INFECTIOUS_MENINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOPEP is associated with infectious meningitis (INFECTIOUS_MENINGITIS). Open Targets association score 0.00"
+    }
+  ]
+}

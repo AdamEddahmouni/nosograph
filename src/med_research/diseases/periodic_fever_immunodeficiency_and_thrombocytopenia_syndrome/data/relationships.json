@@ -1,0 +1,502 @@
+{
+  "relationships": [
+    {
+      "source": "LYN",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LYN is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "C9orf72",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C9orf72 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CSF2RB",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2RB is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "DPP4",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "DPP4 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "NLRP1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "RASGRP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASGRP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RELB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "THEMIS",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THEMIS is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "LAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "THEMIS",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "THEMIS is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "RORC",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "RORC is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "LTA",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTA is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTB",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTB is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IRF4",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF4 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "NLRP1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WDR1",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR1 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.67"
+    },
+    {
+      "source": "IKZF1",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PRKDC",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKDC is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "TNF",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "NFKB2",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "LTA",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTA is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "FOXP3",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "JAK3",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "RAG2",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG2 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PTPRC",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "LTB",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTB is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "WAS",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WAS is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PTPN6",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN6 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "DCLRE1C",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCLRE1C is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "RAG1",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG1 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL7",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPI1",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPI1 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CEBPE",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPE is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTPN2",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN2 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "RORC",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RORC is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TET2",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CARD11",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL2RG",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RG is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "LAT",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAT is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "LYN",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYN is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "DCK",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCK is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "DPP4",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPP4 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ITGB2",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FNIP1",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FNIP1 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL7R",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7R is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ASXL1",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "IRF4",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF4 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FLT3",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "BLNK",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLNK is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "POLE3",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE3 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ABL1",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABL1 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FES",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FES is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "RUNX1",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PGM3",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGM3 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "NKX2-3",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-3 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CSF2RB",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2RB is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "THEMIS",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THEMIS is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SH2B3",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2B3 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CLEC10A",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC10A is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CXCR2",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR2 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SGPL1",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGPL1 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "RASGRP1",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASGRP1 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "RELB",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELB is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "INPP5D",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INPP5D is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "C9orf72",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C9orf72 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "DOCK2",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK2 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FLT3LG",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3LG is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "XRCC5",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XRCC5 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPTA1",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ATP11C",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP11C is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "RAC2",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAC2 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SAMD9L",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAMD9L is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "MAP3K14",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K14 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "NLRP1",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP1 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "VAV1",
+      "target": "periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VAV1 is associated with periodic fever, immunodeficiency, and thrombocytopenia syndrome (PERIODIC_FEVER_IMMUNODEFICIENCY_AND_THROMBOCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    }
+  ]
+}

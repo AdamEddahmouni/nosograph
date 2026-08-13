@@ -1,0 +1,472 @@
+{
+  "relationships": [
+    {
+      "source": "TCF21",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF21 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ADAM17",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM17 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ADAMTSL2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTSL2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "DPP4",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "DPP4 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "BMPR2",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMPR2 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "MAPK6",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK6 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK8IP3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK8IP3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PTHLH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTHLH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "TH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "LTBP4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "PTGES3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGES3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "LTBP4",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP4 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "EPAS1",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "EPAS1 is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "LRP4",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP4 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT7B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT7B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP1A2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP1A2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SFTPB",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFTPB is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.76"
+    },
+    {
+      "source": "ABCA3",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA3 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.14"
+    },
+    {
+      "source": "SFTPC",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFTPC is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.13"
+    },
+    {
+      "source": "MCRIP1",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCRIP1 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "MAN1A2",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAN1A2 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "TGFB3",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB3 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "NDST1",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDST1 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "RCN3",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RCN3 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "EPAS1",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPAS1 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "WFDC2",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WFDC2 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "LPCAT1",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPCAT1 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "NFIB",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFIB is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "FSTL1",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSTL1 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "STK40",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK40 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "TMEM38B",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM38B is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "ADAM17",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAM17 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "HSPA5",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPA5 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADRA2B",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2B is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "NEDD4L",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEDD4L is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "NKX2-1",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-1 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "ECEL1",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ECEL1 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "WNT7B",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT7B is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "MAPK8IP3",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK8IP3 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "NPAS3",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPAS3 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "DPP4",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPP4 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "ROBO1",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROBO1 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "IGF1",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "NR3C1",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXF1",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXF1 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTHLH",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTHLH is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXA5",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA5 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "BMPR2",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMPR2 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "LTBP4",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTBP4 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTGES3",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGES3 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "TMTC3",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMTC3 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "VAMP5",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VAMP5 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "SNX5",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNX5 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "PHF14",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHF14 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADAMTSL2",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTSL2 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYP1A2",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP1A2 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRP4",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP4 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "HCK",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HCK is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "TCF21",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF21 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "KIF5A",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF5A is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNRC6C",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNRC6C is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "DHCR7",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHCR7 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAPK6",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK6 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "ATP23",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP23 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "FBXW8",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXW8 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "PDPN",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDPN is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "NUBP1",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUBP1 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "TLX3",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLX3 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "ROR1",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROR1 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRRX1",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRRX1 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLIT3",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLIT3 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPAG17",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPAG17 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "TH",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TH is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "PDGFA",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFA is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "GYG1",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GYG1 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "GIT1",
+      "target": "surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIT1 is associated with surfactant metabolism dysfunction, pulmonary, 1 (SURFACTANT_METABOLISM_DYSFUNCTION_PULMONARY_1). Open Targets association score 0.04"
+    }
+  ]
+}

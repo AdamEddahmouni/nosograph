@@ -1,0 +1,544 @@
+{
+  "relationships": [
+    {
+      "source": "BTK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BTK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD19",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD19 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LYN",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LYN is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CACNA1A",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1A is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CACNA1G",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1G is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "C9orf72",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C9orf72 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD40",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ICOS",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ICOS is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL21R",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL21R is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTA",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTA is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTB",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTB is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF4",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF4 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "SAMD9L",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAMD9L is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.77"
+    },
+    {
+      "source": "CARD11",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SPTA1",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "LYN",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYN is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "JAK3",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL2RG",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RG is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "NFKB2",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ANK1",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SPPL2A",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPPL2A is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "LAT",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAT is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTPN22",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "IFNG",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "LTA",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTA is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "REL",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REL is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "IKZF1",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FASLG",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TET2",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ICOS",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICOS is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "GRID2",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRID2 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPI1",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPI1 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRKDC",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKDC is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "WAS",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WAS is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD40",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNF",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL2RB",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RB is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ITGB2",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SH2D1A",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2D1A is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "POU2AF1",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU2AF1 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "STK4",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK4 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "UNC5C",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UNC5C is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "BLNK",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLNK is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD19",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD19 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "LTB",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTB is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CR2",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CR2 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CACNA1A",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1A is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "LMBR1L",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMBR1L is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "BACH2",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BACH2 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "DCK",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCK is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FLT3LG",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3LG is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TP53",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "RAG2",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG2 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "HPRT1",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPRT1 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ASXL1",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYB",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYB is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "HEPH",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEPH is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "STAT6",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT6 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CNTNAP1",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNTNAP1 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "RAG1",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG1 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CACNA1G",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1G is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFKB1",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "INPP5D",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INPP5D is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZFPM1",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFPM1 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "BCL3",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL3 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PLD4",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLD4 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "JAK2",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "BTK",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTK is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "C9orf72",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C9orf72 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL21R",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL21R is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "IRF4",
+      "target": "ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF4 is associated with ataxia-pancytopenia syndrome (ATAXIA_PANCYTOPENIA_SYNDROME). Open Targets association score 0.05"
+    }
+  ]
+}

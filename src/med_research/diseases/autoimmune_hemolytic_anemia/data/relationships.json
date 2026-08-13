@@ -385,6 +385,12 @@
       "description": "TNF is a component of the TNF Signaling pathway."
     },
     {
+      "source": "NMNAT3",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NMNAT3 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
       "source": "C1S",
       "target": "autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA)",
       "type": "ASSOCIATED_WITH",
@@ -445,16 +451,16 @@
       "description": "FCGR2B is associated with autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA). Open Targets association score 0.26"
     },
     {
-      "source": "PPIA",
-      "target": "autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PPIA is associated with autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA). Open Targets association score 0.26"
-    },
-    {
       "source": "TNFRSF13C",
       "target": "autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA)",
       "type": "ASSOCIATED_WITH",
       "description": "TNFRSF13C is associated with autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA). Open Targets association score 0.26"
+    },
+    {
+      "source": "PPIA",
+      "target": "autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIA is associated with autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA). Open Targets association score 0.26"
     },
     {
       "source": "BTK",
@@ -487,18 +493,6 @@
       "description": "CD52 is associated with autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA). Open Targets association score 0.07"
     },
     {
-      "source": "FCER1G",
-      "target": "autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "FCER1G is associated with autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA). Open Targets association score 0.07"
-    },
-    {
-      "source": "PSMB5",
-      "target": "autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PSMB5 is associated with autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA). Open Targets association score 0.07"
-    },
-    {
       "source": "IL33",
       "target": "autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA)",
       "type": "ASSOCIATED_WITH",
@@ -509,6 +503,18 @@
       "target": "autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA)",
       "type": "ASSOCIATED_WITH",
       "description": "FKBP1A is associated with autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "FCER1G",
+      "target": "autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCER1G is associated with autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PSMB5",
+      "target": "autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMB5 is associated with autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA). Open Targets association score 0.07"
     },
     {
       "source": "EPO",
@@ -523,16 +529,16 @@
       "description": "KIT is associated with autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA). Open Targets association score 0.06"
     },
     {
-      "source": "HBA1",
-      "target": "autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "HBA1 is associated with autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA). Open Targets association score 0.06"
-    },
-    {
       "source": "HBA2",
       "target": "autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA)",
       "type": "ASSOCIATED_WITH",
       "description": "HBA2 is associated with autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "HBA1",
+      "target": "autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBA1 is associated with autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA). Open Targets association score 0.06"
     },
     {
       "source": "CD40LG",
@@ -541,10 +547,10 @@
       "description": "CD40LG is associated with autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA). Open Targets association score 0.06"
     },
     {
-      "source": "PDCD1",
+      "source": "RPL17-C18orf32",
       "target": "autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA)",
       "type": "ASSOCIATED_WITH",
-      "description": "PDCD1 is associated with autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
+      "description": "RPL17-C18orf32 is associated with autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
     },
     {
       "source": "SPATA2",
@@ -553,10 +559,10 @@
       "description": "SPATA2 is associated with autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
     },
     {
-      "source": "RPL17-C18orf32",
+      "source": "PDCD1",
       "target": "autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA)",
       "type": "ASSOCIATED_WITH",
-      "description": "RPL17-C18orf32 is associated with autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
+      "description": "PDCD1 is associated with autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
     },
     {
       "source": "SNCA",
@@ -571,12 +577,6 @@
       "description": "DNM2 is associated with autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
     },
     {
-      "source": "HEPH",
-      "target": "autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "HEPH is associated with autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
-    },
-    {
       "source": "GPC4",
       "target": "autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA)",
       "type": "ASSOCIATED_WITH",
@@ -587,6 +587,12 @@
       "target": "autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA)",
       "type": "ASSOCIATED_WITH",
       "description": "SAP30BP is associated with autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "HEPH",
+      "target": "autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEPH is associated with autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
     },
     {
       "source": "IKZF1",
@@ -737,6 +743,12 @@
       "target": "autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA)",
       "type": "ASSOCIATED_WITH",
       "description": "EPB41 is associated with autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NMNAT3",
+      "target": "autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NMNAT3 is associated with autoimmune hemolytic anemia (AUTOIMMUNE_HEMOLYTIC_ANEMIA). Open Targets association score 0.03"
     },
     {
       "source": "PRKAG1",

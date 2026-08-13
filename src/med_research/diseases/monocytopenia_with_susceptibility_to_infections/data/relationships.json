@@ -1,0 +1,484 @@
+{
+  "relationships": [
+    {
+      "source": "BTK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BTK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD79B",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79B is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LYN",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LYN is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "C9orf72",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C9orf72 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IRF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "NCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "NCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IRF1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF4",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF4 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF8",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "GATA2",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA2 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.81"
+    },
+    {
+      "source": "JAK3",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.07"
+    },
+    {
+      "source": "SPI1",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPI1 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.06"
+    },
+    {
+      "source": "IKZF1",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.06"
+    },
+    {
+      "source": "SAMD9L",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAMD9L is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRKDC",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKDC is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.06"
+    },
+    {
+      "source": "DCLRE1C",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCLRE1C is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.06"
+    },
+    {
+      "source": "PTPRC",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.06"
+    },
+    {
+      "source": "RAG2",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG2 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.06"
+    },
+    {
+      "source": "DOCK2",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK2 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.06"
+    },
+    {
+      "source": "TET2",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.06"
+    },
+    {
+      "source": "NFKB2",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.06"
+    },
+    {
+      "source": "CSF3",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.06"
+    },
+    {
+      "source": "RAG1",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG1 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.06"
+    },
+    {
+      "source": "BACH2",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BACH2 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.06"
+    },
+    {
+      "source": "RAC2",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAC2 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.06"
+    },
+    {
+      "source": "ATP11C",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP11C is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ASXL1",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "RUNX1",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "WAS",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WAS is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "BLNK",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLNK is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "STK4",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK4 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "IRF8",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF8 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "SIPA1",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIPA1 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "LYN",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYN is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ATM",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTPN6",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN6 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "RAD50",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD50 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FNIP1",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FNIP1 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYB",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYB is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CARD11",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CEBPE",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPE is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FLT3LG",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3LG is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNF",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "IRF1",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF1 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPTA1",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "GFI1",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFI1 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "BTK",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTK is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD79B",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79B is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "COG6",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COG6 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ANK1",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL7R",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7R is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "SERPINB2",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINB2 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ARID4A",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID4A is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ITGAM",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAM is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "INPP5D",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INPP5D is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FHIT",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FHIT is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXP3",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "NCKAP1L",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCKAP1L is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "IRF4",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF4 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ARHGAP15",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP15 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL6",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ARPC1B",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARPC1B is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD79A",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "DCK",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCK is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "NCR1",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCR1 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "KIT",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "C9orf72",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C9orf72 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "TCF3",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF3 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    },
+    {
+      "source": "POLE3",
+      "target": "monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE3 is associated with monocytopenia with susceptibility to infections (MONOCYTOPENIA_WITH_SUSCEPTIBILITY_TO_INFECTIONS). Open Targets association score 0.05"
+    }
+  ]
+}

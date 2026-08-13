@@ -1,0 +1,454 @@
+{
+  "relationships": [
+    {
+      "source": "CASP8",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP8 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "SLC39A8",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC39A8 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "WNT10A",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT10A is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "DEF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "DEF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SBF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SBF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ELN",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ELN is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "LOX",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "LOX is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "LOXL1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "LOXL1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "KIDINS220",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "KIDINS220 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "KITLG",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KITLG is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "CRELD2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CRELD2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "IRF4",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF4 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "WNT10A",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT10A is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ACYP1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ACYP1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "OCA2",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OCA2 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "IRF4",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF4 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "SLC45A2",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC45A2 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "EDAR",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDAR is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "BNC2",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BNC2 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "MLLT3",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLLT3 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "MFAP4",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFAP4 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "SLC39A8",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC39A8 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "FMN1",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMN1 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "ARAP2",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARAP2 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "ELN",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELN is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "DEF8",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEF8 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "ZEB2",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB2 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "MFSD12",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFSD12 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "AKAP12",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKAP12 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "WNT10A",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT10A is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "PAX1",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX1 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "EN1",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EN1 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "LOXL1",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LOXL1 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "KIDINS220",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIDINS220 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "MRPS22",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRPS22 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "LOX",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LOX is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "JAZF1",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAZF1 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "PLXNA1",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLXNA1 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "NDFIP2",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDFIP2 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "DOCK8",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK8 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "KITLG",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KITLG is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "SHC4",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHC4 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "NFIC",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFIC is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "ZBTB20",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB20 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "CCDC138",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC138 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "RALY",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RALY is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.27"
+    },
+    {
+      "source": "TRPS1",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPS1 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.27"
+    },
+    {
+      "source": "FOCAD",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOCAD is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.27"
+    },
+    {
+      "source": "PPARG",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.27"
+    },
+    {
+      "source": "SRPK2",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRPK2 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.27"
+    },
+    {
+      "source": "CDC42EP3",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDC42EP3 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.26"
+    },
+    {
+      "source": "MYH11",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH11 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.26"
+    },
+    {
+      "source": "PEX3",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PEX3 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.26"
+    },
+    {
+      "source": "SYNE2",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYNE2 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.25"
+    },
+    {
+      "source": "PKP1",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKP1 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.25"
+    },
+    {
+      "source": "ACYP1",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACYP1 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.24"
+    },
+    {
+      "source": "CRELD2",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRELD2 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.24"
+    },
+    {
+      "source": "ZHX3",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZHX3 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.24"
+    },
+    {
+      "source": "CHRNA5",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHRNA5 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.23"
+    },
+    {
+      "source": "ARL15",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARL15 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.23"
+    },
+    {
+      "source": "LIMK1",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIMK1 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.22"
+    },
+    {
+      "source": "PREP",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PREP is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.22"
+    },
+    {
+      "source": "PAX3",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX3 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.21"
+    },
+    {
+      "source": "SLC25A13",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A13 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.21"
+    },
+    {
+      "source": "EFEMP1",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EFEMP1 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.21"
+    },
+    {
+      "source": "TWIST2",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TWIST2 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.21"
+    },
+    {
+      "source": "LHX8",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHX8 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.21"
+    },
+    {
+      "source": "MC1R",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MC1R is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.20"
+    },
+    {
+      "source": "FADS1",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS1 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.20"
+    },
+    {
+      "source": "BHLHE22",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BHLHE22 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.20"
+    },
+    {
+      "source": "GSDMC",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMC is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.20"
+    },
+    {
+      "source": "KLHL6",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLHL6 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.19"
+    },
+    {
+      "source": "CASP8",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP8 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.18"
+    },
+    {
+      "source": "SBF2",
+      "target": "skin aging measurement (SKIN_AGING_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SBF2 is associated with skin aging measurement (SKIN_AGING_MEASUREMENT). Open Targets association score 0.18"
+    }
+  ]
+}

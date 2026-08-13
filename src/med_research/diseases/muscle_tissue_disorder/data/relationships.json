@@ -1,0 +1,460 @@
+{
+  "relationships": [
+    {
+      "source": "CCNA1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCNA1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TM7SF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TM7SF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MATR3",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MATR3 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL6A3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL6A3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "SELENON",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELENON is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELENOS",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELENOS is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "RPS6KA1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "RPS6KA1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFRSF12A",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF12A is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "ANO5",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANO5 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.14"
+    },
+    {
+      "source": "LAMA2",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMA2 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.11"
+    },
+    {
+      "source": "INS",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "COL6A3",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL6A3 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "RYR1",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYR1 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "RNF5",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF5 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "MSTN",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSTN is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNFRSF12A",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF12A is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "ANGPT1",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPT1 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "MB",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MB is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "FHL1",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FHL1 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "TTN",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTN is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPS6KA1",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPS6KA1 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD160",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD160 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "SGCD",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCD is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "B3GAT1",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B3GAT1 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "PITX2",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX2 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCNA1",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCNA1 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHKA",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKA is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHKB",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKB is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "CMPK1",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMPK1 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "FXR1",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FXR1 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "PNO1",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PNO1 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "RBMS3",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBMS3 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMPX",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMPX is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "SRRM2",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRRM2 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTBP1",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTBP1 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYH3",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH3 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAK16",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAK16 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRYAB",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYAB is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "ANKRD2",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKRD2 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "SELENON",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELENON is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYOD1",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYOD1 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMP9",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "MCAT",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCAT is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "BDNF",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BDNF is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "MCPH1",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCPH1 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "MATR3",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MATR3 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00 | Open Targets association score 0.00"
+    },
+    {
+      "source": "CD40LG",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC16A1",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC16A1 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CARM1",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARM1 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "TM7SF2",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM7SF2 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PROKR1",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROKR1 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "VEGFA",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "AKT1",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "DNAJA3",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAJA3 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGFB1",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "HGF",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "SELENOS",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELENOS is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "HLA-DRA",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DRA is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYOF",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYOF is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "NR3C1",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "SNCB",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCB is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC25A16",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A16 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDLIM5",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDLIM5 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYC",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPT",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPT is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGFB3",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB3 is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "ILK",
+      "target": "muscle tissue disorder (MUSCLE_TISSUE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ILK is associated with muscle tissue disorder (MUSCLE_TISSUE_DISORDER). Open Targets association score 0.00"
+    }
+  ]
+}

@@ -1,0 +1,484 @@
+{
+  "relationships": [
+    {
+      "source": "SQSTM1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SQSTM1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "SCARB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "SCARB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "C11orf86",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C11orf86 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TM6SF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TM6SF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "G6PC1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "G6PC1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GCK",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCK is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL3 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "FABP3",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "FABP3 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ABCB11",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB11 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ABCB4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ABCC2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP27A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP27A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "PHKA2",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHKA2 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.82"
+    },
+    {
+      "source": "G6PC1",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "G6PC1 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.06"
+    },
+    {
+      "source": "ABCB4",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB4 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.05"
+    },
+    {
+      "source": "LDLR",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.05"
+    },
+    {
+      "source": "NR1H4",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1H4 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.05"
+    },
+    {
+      "source": "LEP",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.05"
+    },
+    {
+      "source": "SCARB1",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCARB1 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.05"
+    },
+    {
+      "source": "APOE",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.05"
+    },
+    {
+      "source": "CEBPA",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPA is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.05"
+    },
+    {
+      "source": "LRP6",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP6 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.05"
+    },
+    {
+      "source": "SCP2",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCP2 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.05"
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL3 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.05"
+    },
+    {
+      "source": "LPL",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.05"
+    },
+    {
+      "source": "APOA1",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.05"
+    },
+    {
+      "source": "GYS2",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GYS2 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.05"
+    },
+    {
+      "source": "CYP27A1",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP27A1 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.05"
+    },
+    {
+      "source": "ABCG5",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG5 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.05"
+    },
+    {
+      "source": "PYGL",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PYGL is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.05"
+    },
+    {
+      "source": "PPARG",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.05"
+    },
+    {
+      "source": "PPARA",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARA is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.05"
+    },
+    {
+      "source": "TM6SF2",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM6SF2 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.05"
+    },
+    {
+      "source": "PHKB",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHKB is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.05"
+    },
+    {
+      "source": "GPAM",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPAM is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.05"
+    },
+    {
+      "source": "CES1",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CES1 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "OCA2",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OCA2 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "WDFY2",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDFY2 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "TXNIP",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TXNIP is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "GCK",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCK is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "FABP3",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FABP3 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC27A5",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC27A5 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "APOB",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "ILRUN",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ILRUN is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "SQSTM1",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SQSTM1 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "ORM1",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ORM1 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "ORM2",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ORM2 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "AGL",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGL is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "ABCB11",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB11 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "C11orf86",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C11orf86 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "GLMP",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLMP is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "KMT2B",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2B is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "BMAL1",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMAL1 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "LEPR",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "APOC1",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC1 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "ENTPD5",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENTPD5 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "SEC61A1",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEC61A1 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "PPP1R3C",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R3C is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "GPI",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPI is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "GNMT",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNMT is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "SIRT3",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT3 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "SOAT2",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOAT2 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "NPC1L1",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPC1L1 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "ABCC2",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC2 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "PEMT",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PEMT is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "ACSL5",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACSL5 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "PCSK9",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "CES2",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CES2 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "ATP8B1",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP8B1 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC10A2",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC10A2 is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "APC",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    },
+    {
+      "source": "MC4R",
+      "target": "glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MC4R is associated with glycogen storage disease IXa1 (GLYCOGEN_STORAGE_DISEASE_IXA1). Open Targets association score 0.04"
+    }
+  ]
+}

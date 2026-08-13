@@ -1,0 +1,70 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL4303201",
+      "target": "KDR",
+      "type": "TARGETS",
+      "description": "CATEQUENTINIB targets KDR."
+    },
+    {
+      "source": "CHEMBL4303201",
+      "target": "PDGFRB",
+      "type": "TARGETS",
+      "description": "CATEQUENTINIB targets PDGFRB."
+    },
+    {
+      "source": "CHEMBL4303201",
+      "target": "FLT4",
+      "type": "TARGETS",
+      "description": "CATEQUENTINIB targets FLT4."
+    },
+    {
+      "source": "CHEMBL4303201",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "CATEQUENTINIB targets KIT."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "PDGFRB",
+      "target": "brainstem cancer (BRAINSTEM_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with brainstem cancer (BRAINSTEM_CANCER). Open Targets association score 0.07"
+    },
+    {
+      "source": "KIT",
+      "target": "brainstem cancer (BRAINSTEM_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with brainstem cancer (BRAINSTEM_CANCER). Open Targets association score 0.07"
+    },
+    {
+      "source": "FLT4",
+      "target": "brainstem cancer (BRAINSTEM_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with brainstem cancer (BRAINSTEM_CANCER). Open Targets association score 0.07"
+    },
+    {
+      "source": "KDR",
+      "target": "brainstem cancer (BRAINSTEM_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with brainstem cancer (BRAINSTEM_CANCER). Open Targets association score 0.07"
+    },
+    {
+      "source": "ACVR1",
+      "target": "brainstem cancer (BRAINSTEM_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACVR1 is associated with brainstem cancer (BRAINSTEM_CANCER). Open Targets association score 0.00"
+    }
+  ]
+}

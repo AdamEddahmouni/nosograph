@@ -1,0 +1,520 @@
+{
+  "relationships": [
+    {
+      "source": "BLK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BLK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCR6",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR6 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "ZNF774",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF774 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "RAD51B",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "RAD51B is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "IL12RB2",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL12RB2 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "PSTPIP1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "PSTPIP1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "STAT4",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT4 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "TYK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "TYK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "RASGRP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASGRP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKBIE",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIE is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP3 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "CD28",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD28 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD83",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD83 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ICOSLG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ICOSLG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCR6",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR6 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL12RB2",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL12RB2 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP3 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF4",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF4 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNGR2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNGR2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF5",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF5 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "SYNGR1",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYNGR1 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.51"
+    },
+    {
+      "source": "RPLP1",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPLP1 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.48"
+    },
+    {
+      "source": "CCR6",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR6 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.47"
+    },
+    {
+      "source": "PTPN2",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN2 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.46"
+    },
+    {
+      "source": "IRF5",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF5 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.46"
+    },
+    {
+      "source": "TNFSF4",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF4 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.46"
+    },
+    {
+      "source": "NFKBIE",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIE is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.45"
+    },
+    {
+      "source": "CD40",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.45"
+    },
+    {
+      "source": "FCGR2A",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2A is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.45"
+    },
+    {
+      "source": "PTPN22",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.45"
+    },
+    {
+      "source": "BLK",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLK is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.44"
+    },
+    {
+      "source": "AARS2",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AARS2 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.44"
+    },
+    {
+      "source": "PADI4",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PADI4 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.44"
+    },
+    {
+      "source": "GATA3",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.44"
+    },
+    {
+      "source": "ARID5B",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID5B is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.43"
+    },
+    {
+      "source": "AIRE",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIRE is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.43"
+    },
+    {
+      "source": "RUNX1",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.43"
+    },
+    {
+      "source": "RASGRP1",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASGRP1 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.43"
+    },
+    {
+      "source": "TYK2",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYK2 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.43"
+    },
+    {
+      "source": "MACIR",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MACIR is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.42"
+    },
+    {
+      "source": "RNASET2",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNASET2 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.42"
+    },
+    {
+      "source": "IL2RA",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RA is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.41"
+    },
+    {
+      "source": "TTC34",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC34 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.41"
+    },
+    {
+      "source": "ETS1",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETS1 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.41"
+    },
+    {
+      "source": "PLCL2",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCL2 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.41"
+    },
+    {
+      "source": "AFF3",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFF3 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.41"
+    },
+    {
+      "source": "ETV7",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV7 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.41"
+    },
+    {
+      "source": "MAGI3",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAGI3 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.40"
+    },
+    {
+      "source": "PRKCQ",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCQ is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.40"
+    },
+    {
+      "source": "RTKN2",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RTKN2 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.40"
+    },
+    {
+      "source": "TCTE1",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCTE1 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.39"
+    },
+    {
+      "source": "MMEL1",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMEL1 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.38"
+    },
+    {
+      "source": "TEC",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TEC is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.38"
+    },
+    {
+      "source": "ANKRD55",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKRD55 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.38"
+    },
+    {
+      "source": "CD28",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD28 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.38"
+    },
+    {
+      "source": "TXNDC11",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TXNDC11 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "TREH",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREH is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "IL12RB2",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL12RB2 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.36"
+    },
+    {
+      "source": "EOMES",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EOMES is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.36"
+    },
+    {
+      "source": "PHTF1",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHTF1 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.36"
+    },
+    {
+      "source": "SUOX",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUOX is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.36"
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFAIP3 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.36"
+    },
+    {
+      "source": "NAB1",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAB1 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.36"
+    },
+    {
+      "source": "ICOSLG",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICOSLG is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.36"
+    },
+    {
+      "source": "WDFY4",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDFY4 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.35"
+    },
+    {
+      "source": "PLD4",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLD4 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.35"
+    },
+    {
+      "source": "RAD51B",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD51B is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.34"
+    },
+    {
+      "source": "REL",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REL is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.34"
+    },
+    {
+      "source": "STAT4",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT4 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.34"
+    },
+    {
+      "source": "CD83",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD83 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.34"
+    },
+    {
+      "source": "CTLA4",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTLA4 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.33"
+    },
+    {
+      "source": "PLCL1",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCL1 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.33"
+    },
+    {
+      "source": "CCN4",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCN4 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.33"
+    },
+    {
+      "source": "IFNGR2",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNGR2 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.32"
+    },
+    {
+      "source": "ZFP36L1",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFP36L1 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.32"
+    },
+    {
+      "source": "DAP",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAP is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.31"
+    },
+    {
+      "source": "SPRED2",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPRED2 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.31"
+    },
+    {
+      "source": "ZNF774",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF774 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.31"
+    },
+    {
+      "source": "FCRL3",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCRL3 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.31"
+    },
+    {
+      "source": "PSTPIP1",
+      "target": "anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSTPIP1 is associated with anti-citrullinated protein antibody seropositivity (ANTI_CITRULLINATED_PROTEIN_ANTIBODY_SEROPOSITIVITY). Open Targets association score 0.31"
+    }
+  ]
+}

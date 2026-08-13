@@ -1,0 +1,502 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL2105395",
+      "target": "ESR2",
+      "type": "TARGETS",
+      "description": "OSPEMIFENE targets ESR2."
+    },
+    {
+      "source": "CHEMBL2105395",
+      "target": "ESR1",
+      "type": "TARGETS",
+      "description": "OSPEMIFENE targets ESR1."
+    },
+    {
+      "source": "CHEMBL3185958",
+      "target": "ESR1",
+      "type": "TARGETS",
+      "description": "CLOMIPHENE CITRATE targets ESR1."
+    },
+    {
+      "source": "CHEMBL2355051",
+      "target": "ESR1",
+      "type": "TARGETS",
+      "description": "CLOMIPHENE targets ESR1."
+    },
+    {
+      "source": "BAX",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BAX is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "PLOD1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLOD1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "ACE2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "TGM2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TPO",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TPO is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNB1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNB1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP19A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP19A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP19A1",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP19A1 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "PLOD1",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLOD1 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "GH1",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "PRL",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRL is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "TGM2",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM2 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "GGH",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGH is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "BRD2",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRD2 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "HP",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HP is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "KISS1",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KISS1 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNB1",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNB1 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "INS",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "ABO",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABO is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "PNPLA7",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PNPLA7 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "SHBG",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHBG is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "PGR",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "LHB",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHB is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "NBR1",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBR1 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPPB",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPB is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC16",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC16 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "LHCGR",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHCGR is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "ESR2",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR2 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKR1B1",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKR1B1 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "GNRH1",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRH1 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALB",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRPM3",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPM3 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "BAX",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAX is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "TAC4",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAC4 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADRB2",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB2 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "BCL2",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "TRPM5",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPM5 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "GHRL",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHRL is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "EPHA7",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHA7 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACE2",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE2 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "AMH",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMH is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "TPO",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPO is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PLXNA3",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLXNA3 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "GDF15",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF15 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTEN",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "APC",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "LIPN",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPN is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "POMC",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "POR",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POR is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CX3CL1",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CX3CL1 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDH2",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH2 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "ESR1",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "VEGFA",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "KDR",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "MKI67",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "TRPV4",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV4 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "TRPM4",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPM4 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "KIT",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1B",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CSK",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSK is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "TRPV6",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV6 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "TRPV5",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV5 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "EPCAM",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPCAM is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOD1",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD1 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL6",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "BCHE",
+      "target": "Menstrual disorder (MENSTRUAL_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCHE is associated with Menstrual disorder (MENSTRUAL_DISORDER). Open Targets association score 0.00"
+    }
+  ]
+}

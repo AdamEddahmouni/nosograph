@@ -1,0 +1,472 @@
+{
+  "relationships": [
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CXCR6",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR6 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH6",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH6 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GLUL",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GLUL is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "GORASP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "GORASP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RELA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "SMAD4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "MEN1",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "TP53",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "PTEN",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "BAP1",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAP1 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "RB1",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MSH2",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH2 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTCH1",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CUL9",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUL9 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "RINT1",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RINT1 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "MCM9",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCM9 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NF1",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CXCR6",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR6 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NDRG2",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDRG2 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NBN",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBN is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FBXO4",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXO4 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "HELQ",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HELQ is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "HTATIP2",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTATIP2 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SMARCB1",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCB1 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ATM",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "STK11",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NF2",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPTBN1",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTBN1 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SMAD4",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD4 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "BUB1",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUB1 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ATAD5",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATAD5 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FZR1",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FZR1 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SAV1",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAV1 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "COP1",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COP1 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FANCF",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCF is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SIRT2",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT2 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MSH6",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH6 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "DCLRE1A",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCLRE1A is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "INHA",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INHA is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "DND1",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DND1 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "AQP4",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP4 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PAX6",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX6 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TRPS1",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPS1 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TERT",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RELA",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELA is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MME",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MME is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "YAP1",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YAP1 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NHERF1",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NHERF1 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLAGL1",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAGL1 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MKI67",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTPN11",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIEZO1",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIEZO1 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MIB1",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIB1 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "APC",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GLUL",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLUL is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYCN",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYCN is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "WNK1",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNK1 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SYT1",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYT1 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GORASP1",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GORASP1 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD34",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ZIC1",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZIC1 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOX11",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX11 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "EGFR",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "S100A1",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A1 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "RP1",
+      "target": "Subependymoma (SUBEPENDYMOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RP1 is associated with Subependymoma (SUBEPENDYMOMA). Open Targets association score 0.00"
+    }
+  ]
+}

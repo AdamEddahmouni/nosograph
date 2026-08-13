@@ -1,0 +1,490 @@
+{
+  "relationships": [
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2C",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2C is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "E2F1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "E2F1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MLH1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MLH1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53BP2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53BP2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "INSM1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INSM1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "NEIL1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NEIL1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC22D3",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC22D3 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CYP11B2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP11B2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "DRD2",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "DRD2 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "THRB",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THRB is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "THRB",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "THRB is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TSHR",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TSHR is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "WNT4",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT4 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP11B1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP11B1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP11B2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP11B2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.80"
+    },
+    {
+      "source": "MEN1",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.07"
+    },
+    {
+      "source": "TP53",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.06"
+    },
+    {
+      "source": "RB1",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.05"
+    },
+    {
+      "source": "RET",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.05"
+    },
+    {
+      "source": "NF1",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTEN",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.05"
+    },
+    {
+      "source": "THRB",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THRB is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.05"
+    },
+    {
+      "source": "HTATIP2",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTATIP2 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.05"
+    },
+    {
+      "source": "TRIM62",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM62 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.05"
+    },
+    {
+      "source": "LHX3",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHX3 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.05"
+    },
+    {
+      "source": "CDC73",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDC73 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNK1",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNK1 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.05"
+    },
+    {
+      "source": "NKX2-1",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-1 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "BGLAP",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BGLAP is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "LZTS1",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LZTS1 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "LHCGR",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHCGR is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRL",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRL is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "DRD2",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DRD2 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "NF2",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "INSM1",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INSM1 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "TP73",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP73 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPTBN1",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTBN1 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "PCYT1B",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCYT1B is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "FSHR",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSHR is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "ANXA1",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANXA1 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "HIC1",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIC1 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "PROP1",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROP1 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYP11B1",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP11B1 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYP11B2",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP11B2 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "WNT4",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT4 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRDM2",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM2 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "E2F1",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "E2F1 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "GCGR",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCGR is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "PCSK2",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK2 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "KRAS",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "RINT1",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RINT1 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "NOG",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOG is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "MLH1",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLH1 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRLR",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRLR is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "TPX2",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPX2 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDKN2C",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2C is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "IGSF1",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGSF1 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.04"
+    },
+    {
+      "source": "SYTL4",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYTL4 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "HSD17B3",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSD17B3 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "TSC22D3",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC22D3 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "MET",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "TP53BP2",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53BP2 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "NEIL1",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEIL1 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "GNRH1",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRH1 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "PHEX",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHEX is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "PITX2",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX2 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "CPE",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPE is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "ONECUT1",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ONECUT1 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "CRH",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRH is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "GCM2",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCM2 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "TSHR",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSHR is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "IRS2",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRS2 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "TRIM37",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM37 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.03"
+    },
+    {
+      "source": "BAP1",
+      "target": "multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAP1 is associated with multiple endocrine neoplasia type 4 (MULTIPLE_ENDOCRINE_NEOPLASIA_TYPE_4). Open Targets association score 0.03"
+    }
+  ]
+}

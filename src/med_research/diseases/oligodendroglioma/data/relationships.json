@@ -1,0 +1,484 @@
+{
+  "relationships": [
+    {
+      "source": "BAX",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BAX is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2C",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2C is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "STAT5B",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT5B is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3R1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "AXIN2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "AXIN2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "IDH1",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.40"
+    },
+    {
+      "source": "IDH2",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH2 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.40"
+    },
+    {
+      "source": "CIC",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIC is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "FUBP1",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUBP1 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ATRX",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.31"
+    },
+    {
+      "source": "TP53",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "EGFR",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATM",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRAF",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDKN2C",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2C is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTEN",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FBXW7",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXW7 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NF1",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KRAS",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID1A",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NRAS",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID1B",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1B is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SETD2",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD2 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CREBBP",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3R1",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R1 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ZFHX3",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFHX3 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID2",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID2 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KDM6A",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM6A is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CSF3R",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3R is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "ETV1",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV1 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "MYC",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "BAX",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAX is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "FGFR1",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "MET",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "KIAA1549",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIAA1549 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "MYCN",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYCN is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "CDH1",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "ERG",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERG is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "PTCH1",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "FAT1",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT1 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "DAXX",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAXX is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "H3-3B",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3-3B is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "STAT5B",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT5B is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "H3-3A",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3-3A is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "ASXL1",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "BRCA1",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "FANCA",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PPARG",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KLF4",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF4 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "POU2AF1",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU2AF1 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MITF",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MITF is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TLX1",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLX1 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "GNAS",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAS is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RAD50",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD50 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RPL22",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL22 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ERCC4",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC4 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TLX3",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLX3 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MUC16",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC16 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "AXIN2",
+      "target": "oligodendroglioma (OLIGODENDROGLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AXIN2 is associated with oligodendroglioma (OLIGODENDROGLIOMA). Open Targets association score 0.18"
+    }
+  ]
+}

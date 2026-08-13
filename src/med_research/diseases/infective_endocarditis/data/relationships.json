@@ -337,16 +337,16 @@
       "description": "NPPB is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
     },
     {
-      "source": "SELE",
-      "target": "infective endocarditis (INFECTIVE_ENDOCARDITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SELE is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
-    },
-    {
       "source": "CXCL8",
       "target": "infective endocarditis (INFECTIVE_ENDOCARDITIS)",
       "type": "ASSOCIATED_WITH",
       "description": "CXCL8 is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "SELE",
+      "target": "infective endocarditis (INFECTIVE_ENDOCARDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELE is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
     },
     {
       "source": "SAR1A",
@@ -415,6 +415,12 @@
       "description": "CD40LG is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
     },
     {
+      "source": "IL1B",
+      "target": "infective endocarditis (INFECTIVE_ENDOCARDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
+    },
+    {
       "source": "GLRX5",
       "target": "infective endocarditis (INFECTIVE_ENDOCARDITIS)",
       "type": "ASSOCIATED_WITH",
@@ -427,34 +433,10 @@
       "description": "TREM1 is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
     },
     {
-      "source": "IL1B",
+      "source": "UTRN",
       "target": "infective endocarditis (INFECTIVE_ENDOCARDITIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "IL1B is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
-    },
-    {
-      "source": "MUL1",
-      "target": "infective endocarditis (INFECTIVE_ENDOCARDITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "MUL1 is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
-    },
-    {
-      "source": "DAPK2",
-      "target": "infective endocarditis (INFECTIVE_ENDOCARDITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "DAPK2 is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
-    },
-    {
-      "source": "AVP",
-      "target": "infective endocarditis (INFECTIVE_ENDOCARDITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "AVP is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
-    },
-    {
-      "source": "DNM1L",
-      "target": "infective endocarditis (INFECTIVE_ENDOCARDITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "DNM1L is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
+      "description": "UTRN is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
     },
     {
       "source": "DAPK3",
@@ -463,16 +445,22 @@
       "description": "DAPK3 is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
     },
     {
-      "source": "ZGPAT",
+      "source": "SLC11A1",
       "target": "infective endocarditis (INFECTIVE_ENDOCARDITIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "ZGPAT is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
+      "description": "SLC11A1 is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
     },
     {
-      "source": "UTRN",
+      "source": "DAPK2",
       "target": "infective endocarditis (INFECTIVE_ENDOCARDITIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "UTRN is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
+      "description": "DAPK2 is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUL1",
+      "target": "infective endocarditis (INFECTIVE_ENDOCARDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUL1 is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
     },
     {
       "source": "LGALS3",
@@ -481,10 +469,22 @@
       "description": "LGALS3 is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
     },
     {
-      "source": "CRMP1",
+      "source": "ADM",
       "target": "infective endocarditis (INFECTIVE_ENDOCARDITIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "CRMP1 is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
+      "description": "ADM is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "DNM1L",
+      "target": "infective endocarditis (INFECTIVE_ENDOCARDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM1L is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "RELA",
+      "target": "infective endocarditis (INFECTIVE_ENDOCARDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELA is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
     },
     {
       "source": "ABCB6",
@@ -493,10 +493,22 @@
       "description": "ABCB6 is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
     },
     {
-      "source": "SLC11A1",
+      "source": "CRMP1",
       "target": "infective endocarditis (INFECTIVE_ENDOCARDITIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "SLC11A1 is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
+      "description": "CRMP1 is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "AVP",
+      "target": "infective endocarditis (INFECTIVE_ENDOCARDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVP is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZGPAT",
+      "target": "infective endocarditis (INFECTIVE_ENDOCARDITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZGPAT is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
     },
     {
       "source": "DENR",
@@ -509,18 +521,6 @@
       "target": "infective endocarditis (INFECTIVE_ENDOCARDITIS)",
       "type": "ASSOCIATED_WITH",
       "description": "CST3 is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
-    },
-    {
-      "source": "ADM",
-      "target": "infective endocarditis (INFECTIVE_ENDOCARDITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ADM is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
-    },
-    {
-      "source": "RELA",
-      "target": "infective endocarditis (INFECTIVE_ENDOCARDITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "RELA is associated with infective endocarditis (INFECTIVE_ENDOCARDITIS). Open Targets association score 0.01"
     },
     {
       "source": "PIK3C2A",

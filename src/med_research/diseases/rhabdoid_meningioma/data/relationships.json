@@ -1,0 +1,478 @@
+{
+  "relationships": [
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CRLF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CRLF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TRAF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CHEK2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "CHEK2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "TRAF7",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF7 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "IKBKB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "IKBKB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "SMAD4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TRAF7",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF7 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LRP1B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "BAP1",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAP1 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "BRAF",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP53",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "AKT1",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TSC2",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTPRT",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRT is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NUP98",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUP98 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "LPP",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPP is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KNL1",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KNL1 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SETD2",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD2 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "HIP1",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIP1 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NCOR2",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOR2 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "LRP1B",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1B is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRCA2",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FAT1",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT1 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRCA1",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SDHD",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDHD is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CRLF2",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRLF2 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "AFF4",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFF4 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CHEK2",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHEK2 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NSD3",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSD3 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2C",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "P2RY8",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RY8 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TCF7L2",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF7L2 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KAT6A",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KAT6A is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MET",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ABL1",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABL1 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "DNM2",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM2 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RANBP2",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RANBP2 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "IKBKB",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKBKB is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAP3K13",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K13 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMARCB1",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCB1 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "SMARCE1",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCE1 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "KLF4",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF4 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "EZH2",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EZH2 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "BLM",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLM is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RSPO2",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO2 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KAT6B",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KAT6B is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2A",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2A is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PML",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PML is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "EWSR1",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EWSR1 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CREB3L2",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREB3L2 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SMAD4",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD4 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ARHGEF12",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGEF12 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NBEA",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBEA is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TRRAP",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRRAP is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CBFA2T3",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBFA2T3 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CBFB",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBFB is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PTCH1",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "LRIG3",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRIG3 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ARHGAP35",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP35 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TRAF7",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAF7 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CDH17",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH17 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RET",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ASXL2",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL2 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RGPD3",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RGPD3 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "GPHN",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPHN is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CNTNAP2",
+      "target": "Rhabdoid Meningioma (RHABDOID_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNTNAP2 is associated with Rhabdoid Meningioma (RHABDOID_MENINGIOMA). Open Targets association score 0.18"
+    }
+  ]
+}

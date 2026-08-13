@@ -1,0 +1,538 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201593",
+      "target": "PLAT",
+      "type": "TARGETS",
+      "description": "ALTEPLASE targets PLAT."
+    },
+    {
+      "source": "CHEMBL1201585",
+      "target": "ERBB2",
+      "type": "TARGETS",
+      "description": "TRASTUZUMAB targets ERBB2."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "FGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TNFSF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL18A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL18A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "BMP2",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP2 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL1A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL5",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL5 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL22",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL22 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "BTG3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "BTG3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR7",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR7 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF10",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF10 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "SERPINA11",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA11 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.27"
+    },
+    {
+      "source": "PLAT",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAT is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.26"
+    },
+    {
+      "source": "NLRP3",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.26"
+    },
+    {
+      "source": "NPPB",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPB is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.07"
+    },
+    {
+      "source": "EGFR",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.07"
+    },
+    {
+      "source": "ERBB2",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.04"
+    },
+    {
+      "source": "CRP",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.03"
+    },
+    {
+      "source": "RPL17",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.03"
+    },
+    {
+      "source": "FNDC5",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FNDC5 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.03"
+    },
+    {
+      "source": "KRAS",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.03"
+    },
+    {
+      "source": "ALK",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.03"
+    },
+    {
+      "source": "BMP2",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP2 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.03"
+    },
+    {
+      "source": "MUC16",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC16 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.03"
+    },
+    {
+      "source": "NBR1",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBR1 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNF",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.03"
+    },
+    {
+      "source": "EML4",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EML4 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADA",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADA is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL6",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "MET",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNNI3",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNI3 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "IFNG",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD4",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "PDCD1",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "SPATA2",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "SNCA",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "CEACAM5",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM5 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "ALB",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.02"
+    },
+    {
+      "source": "VEGFA",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNFSF10",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF10 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF11B is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "INVS",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INVS is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "COL18A1",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL18A1 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CPB1",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPB1 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "MB",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MB is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "RNPC3",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNPC3 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "HPS1",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPS1 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD8A",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPT",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGF2",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF2 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNNT2",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNT2 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1B",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACADVL",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACADVL is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM3",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM3 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSG2",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSG2 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM7",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM7 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHKB",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKB is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CMPK1",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMPK1 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHKA",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKA is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL2",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPPA",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPA is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL22",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL22 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "AVP",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVP is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL5",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL5 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1A",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1A is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "FLT3",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TLR7",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR7 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "IDH1",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    },
+    {
+      "source": "BTG3",
+      "target": "pericardial effusion (PERICARDIAL_EFFUSION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTG3 is associated with pericardial effusion (PERICARDIAL_EFFUSION). Open Targets association score 0.01"
+    }
+  ]
+}

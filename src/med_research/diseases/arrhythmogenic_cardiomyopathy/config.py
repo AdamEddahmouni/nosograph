@@ -94,6 +94,7 @@ CAR_T_SCORES = {
         "SCN4B": 4.0,
         "SCN5A": 4.0,
         "SDCBP2": 4.0,
+        "SERPINF1": 4.0,
         "SETD2": 4.0,
         "SORBS2": 4.0,
         "STRN": 4.0,

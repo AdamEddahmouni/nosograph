@@ -1,0 +1,598 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL723",
+      "target": "ADRB2",
+      "type": "TARGETS",
+      "description": "CARVEDILOL targets ADRB2."
+    },
+    {
+      "source": "CHEMBL1201583",
+      "target": "VEGFA",
+      "type": "TARGETS",
+      "description": "BEVACIZUMAB targets VEGFA."
+    },
+    {
+      "source": "CHEMBL1230065",
+      "target": "MAPK14",
+      "type": "TARGETS",
+      "description": "BMS-582949 targets MAPK14."
+    },
+    {
+      "source": "CHEMBL4298199",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "TREATS",
+      "description": "IDECABTAGENE VICLEUCEL is phase 4 / marketed for capillary hemangioma (CAPILLARY_HEMANGIOMA)."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BIRC5",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BIRC5 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CDKN1C",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1C is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CXCL14",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL14 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "FGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "SLC2A1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ICAM3",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM3 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT5A",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT5A is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT5B",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT5B is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK14",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK14 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "AKT3",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT3 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "REN",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "REN is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "THBS1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THBS1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TGFBI",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBI is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBI",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBI is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "FLT1",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "FLT1 is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "GNA11",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNA11 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "GNAQ",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAQ is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ARID1B",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1B is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.34"
+    },
+    {
+      "source": "KRAS",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRAF",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NF1",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "HRAS",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "AKT3",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT3 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.27"
+    },
+    {
+      "source": "FLT4",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "NRAS",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "APC",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2C",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FGFR3",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "AMER1",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMER1 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CIC",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIC is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NPC1",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPC1 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.12"
+    },
+    {
+      "source": "SLC2A1",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A1 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "VEGFA",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ANXA1",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANXA1 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FOXF1",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXF1 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FANCA",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FXN",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FXN is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FASLG",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FAS",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SERPINF1",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINF1 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CCN1",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCN1 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "VIRMA",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIRMA is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SOX18",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX18 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADRB2",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB2 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "KDR",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ICAM3",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM3 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "FLT1",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT1 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "LYVE1",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYVE1 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "BCL2",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MAPK14",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK14 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TGFBI",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBI is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PROM1",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROM1 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GH1",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NUS1",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUS1 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "REN",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REN is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCL14",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL14 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYTIP",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYTIP is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RRBP1",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RRBP1 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EPB41",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPB41 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP9",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "OTUB1",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OTUB1 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGF2",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF2 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGF2",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN1C",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1C is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKT1",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AFP",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "STAT3",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "THBS1",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THBS1 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BIRC5",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIRC5 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "STAT1",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT1 is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "STAT5A",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT5A is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "STAT5B",
+      "target": "capillary hemangioma (CAPILLARY_HEMANGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT5B is associated with capillary hemangioma (CAPILLARY_HEMANGIOMA). Open Targets association score 0.01"
+    }
+  ]
+}

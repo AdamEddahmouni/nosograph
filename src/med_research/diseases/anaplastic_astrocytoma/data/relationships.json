@@ -1,0 +1,598 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL547",
+      "target": "RARA",
+      "type": "TARGETS",
+      "description": "ISOTRETINOIN targets RARA."
+    },
+    {
+      "source": "CHEMBL553",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "ERLOTINIB targets EGFR."
+    },
+    {
+      "source": "CHEMBL24828",
+      "target": "ERBB3",
+      "type": "TARGETS",
+      "description": "VANDETANIB targets ERBB3."
+    },
+    {
+      "source": "CHEMBL1079742",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "ERLOTINIB HYDROCHLORIDE targets EGFR."
+    },
+    {
+      "source": "CHEMBL24828",
+      "target": "RET",
+      "type": "TARGETS",
+      "description": "VANDETANIB targets RET."
+    },
+    {
+      "source": "CHEMBL1079742",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "ERLOTINIB HYDROCHLORIDE targets EGFR."
+    },
+    {
+      "source": "CHEMBL1200485",
+      "target": "KDR",
+      "type": "TARGETS",
+      "description": "SORAFENIB TOSYLATE targets KDR."
+    },
+    {
+      "source": "CHEMBL535",
+      "target": "PDGFRA",
+      "type": "TARGETS",
+      "description": "SUNITINIB targets PDGFRA."
+    },
+    {
+      "source": "CHEMBL124660",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "TANDUTINIB targets KIT."
+    },
+    {
+      "source": "CHEMBL1567",
+      "target": "RET",
+      "type": "TARGETS",
+      "description": "SUNITINIB MALATE targets RET."
+    },
+    {
+      "source": "CHEMBL502835",
+      "target": "FGFR1",
+      "type": "TARGETS",
+      "description": "NINTEDANIB targets FGFR1."
+    },
+    {
+      "source": "CHEMBL502835",
+      "target": "KDR",
+      "type": "TARGETS",
+      "description": "NINTEDANIB targets KDR."
+    },
+    {
+      "source": "CHEMBL553",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "ERLOTINIB targets EGFR."
+    },
+    {
+      "source": "BTK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BTK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "FANCD2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "FANCD2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3R1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.52"
+    },
+    {
+      "source": "ATRX",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.45"
+    },
+    {
+      "source": "IDH1",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.39"
+    },
+    {
+      "source": "FGFR1",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.39"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "H3C2",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C2 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "H3-3A",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3-3A is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "GSR",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSR is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.33"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.31"
+    },
+    {
+      "source": "KIT",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.31"
+    },
+    {
+      "source": "KDR",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.31"
+    },
+    {
+      "source": "RET",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "EGFR",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "MET",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "ERBB3",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB3 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "FGFR2",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "FGFR3",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "ERBB4",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB4 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "BRAF",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "IDH2",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH2 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "RARA",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RARA is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "PTEN",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BCOR",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCOR is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SETD2",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD2 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDH1",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NF1",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RB1",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TERT",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "AKT1",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EP300",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EP300 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KRAS",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ROS1",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROS1 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ALK",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FANCA",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TSC2",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FANCD2",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCD2 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CBL",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBL is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3R1",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R1 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BTK",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTK is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CREBBP",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRCA2",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "POLD1",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD1 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATM",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "APC",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTPN11",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NTRK3",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK3 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRCA1",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "POLE",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ACVR1",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACVR1 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SPEN",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPEN is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NOTCH2",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH2 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SETBP1",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETBP1 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MECOM",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MECOM is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "HIP1",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIP1 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARHGAP26",
+      "target": "anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP26 is associated with anaplastic astrocytoma (ANAPLASTIC_ASTROCYTOMA). Open Targets association score 0.28"
+    }
+  ]
+}

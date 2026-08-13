@@ -1,0 +1,424 @@
+{
+  "relationships": [
+    {
+      "source": "SLC4A1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC4A1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "HAMP",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "HAMP is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "TFRC",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFRC is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "SOCS1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "SOCS1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "EPAS1",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "EPAS1 is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "HIF1A",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "HIF1A is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VHL",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VHL is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.79"
+    },
+    {
+      "source": "CEP120",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEP120 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.27"
+    },
+    {
+      "source": "EPAS1",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPAS1 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "RUNX1",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "HEPH",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEPH is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "AHSP",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSP is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "EPOR",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPOR is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "KIT",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TMCC2",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMCC2 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPTA1",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ANK1",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADD2",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADD2 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "VHLL",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VHLL is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRFN2",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRFN2 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "JAK2",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "BPGM",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BPGM is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKG1",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKG1 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "GPALPP1",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPALPP1 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ERG",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERG is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FERMT3",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FERMT3 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "STEAP3",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STEAP3 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZSWIM1",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZSWIM1 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TTC7A",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC7A is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MYO1E",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO1E is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CLEC10A",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC10A is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CBFB",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBFB is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TFRC",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFRC is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "HMGB3",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGB3 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADD1",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADD1 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TSPAN33",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSPAN33 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC4A1",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC4A1 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "UCP1",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UCP1 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPR3",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPR3 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRKAA1",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA1 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPPA",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPA is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SMAP1",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAP1 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "RGS5",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RGS5 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "LCN2",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN2 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PHKG2",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHKG2 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "KCNN4",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNN4 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "EDN1",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDN1 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOCS1",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOCS1 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VEGFA",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HIF1A",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF1A is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKN",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKN is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CBLL2",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBLL2 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HAMP",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAMP is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUL1",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUL1 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EPO",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPO is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACO1",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACO1 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGLN1",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGLN1 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDC",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDC is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "APOB",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHGA",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHGA is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "HBA1",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBA1 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPY",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPY is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PAH",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAH is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "HBA2",
+      "target": "Chuvash polycythemia (CHUVASH_POLYCYTHEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBA2 is associated with Chuvash polycythemia (CHUVASH_POLYCYTHEMIA). Open Targets association score 0.00"
+    }
+  ]
+}

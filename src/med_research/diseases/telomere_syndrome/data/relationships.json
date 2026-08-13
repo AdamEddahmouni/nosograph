@@ -1,0 +1,544 @@
+{
+  "relationships": [
+    {
+      "source": "CDC25A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDC25A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ARHGEF25",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ARHGEF25 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IGF2BP3",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2BP3 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "KIF20A",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "KIF20A is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SERPINE1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SERPINE1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TNFSF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "HAVCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "PARP1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "PARP1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "IL1RL1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1RL1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL33",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL33 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "HAVCR2",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR2 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "LAG3",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "LAG3 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "SPDL1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "SPDL1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "TIGIT",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "TIGIT is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "RENBP",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "RENBP is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFSF10",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF10 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "EPAS1",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "EPAS1 is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "HIF1A",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "HIF1A is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "SULT2A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SULT2A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "TERT",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.50"
+    },
+    {
+      "source": "RTEL1",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RTEL1 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.45"
+    },
+    {
+      "source": "PARN",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARN is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.42"
+    },
+    {
+      "source": "ACTRT3",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTRT3 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.33"
+    },
+    {
+      "source": "AKT1",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "PLAUR",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAUR is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "NME1",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NME1 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "METTL3",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "METTL3 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "TROAP",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TROAP is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "SULT2A1",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SULT2A1 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "SDCBP2",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDCBP2 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "KIFC1",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIFC1 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL1RL1",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1RL1 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL33",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL33 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "RPL17",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PLAU",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAU is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRAP1",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRAP1 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD8A",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "LAG3",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAG3 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL6",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "GSDMB",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CDC25A",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDC25A is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CFLAR",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFLAR is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "RCC1",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RCC1 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "EGFR",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PARP1",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARP1 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SERPINE1",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINE1 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "HIF1A",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF1A is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "EPAS1",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPAS1 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "RENBP",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RENBP is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "RBP4",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBP4 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SUGP1",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUGP1 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PDCD1",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPARC",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPARC is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPATA2",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SNCA",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IGF2BP3",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2BP3 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD4",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNFSF10",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF10 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TGFB1",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "MKNK1",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKNK1 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "MUC1",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC1 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "KLRK1",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLRK1 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "KIF20A",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF20A is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPDL1",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPDL1 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CSPG4",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSPG4 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "WT1",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TP53",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ARHGEF25",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGEF25 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "LRRC15",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRC15 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHI3L1",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHI3L1 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDH1",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "VEGFA",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TF",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZNF141",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF141 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "HAVCR2",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAVCR2 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRMT5",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRMT5 is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TIGIT",
+      "target": "telomere syndrome (TELOMERE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIGIT is associated with telomere syndrome (TELOMERE_SYNDROME). Open Targets association score 0.03"
+    }
+  ]
+}

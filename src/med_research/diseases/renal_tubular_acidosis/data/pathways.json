@@ -1,6 +1,18 @@
 {
   "pathways": [
     {
+      "id": "bone-remodeling",
+      "name": "Bone Remodeling",
+      "description": "RANK-RANKL-OPG axis and osteoclast/osteoblast balance governing skeletal homeostasis.",
+      "key_components": [
+        "TNFSF11"
+      ],
+      "therapeutic_targets": [
+        "TNFSF11"
+      ],
+      "references": []
+    },
+    {
       "id": "coagulation",
       "name": "Coagulation Cascade",
       "description": "Plasma coagulation factors and fibrinolysis; a hub for cardiovascular and thrombotic disease.",
@@ -85,6 +97,20 @@
       "references": []
     },
     {
+      "id": "notch-signaling",
+      "name": "Notch Signaling",
+      "description": "Notch receptor signaling regulating cell fate decisions and immune development.",
+      "key_components": [
+        "JAG1",
+        "NOTCH2"
+      ],
+      "therapeutic_targets": [
+        "JAG1",
+        "NOTCH2"
+      ],
+      "references": []
+    },
+    {
       "id": "renin-angiotensin",
       "name": "Renin-Angiotensin System",
       "description": "Renin-angiotensin-aldosterone axis controlling blood pressure and fluid balance.",
@@ -131,10 +157,12 @@
       "name": "TNF Signaling",
       "description": "Tumor necrosis factor receptor superfamily signaling; central to many autoimmune and inflammatory diseases.",
       "key_components": [
-        "TNF"
+        "TNF",
+        "TNFSF11"
       ],
       "therapeutic_targets": [
-        "TNF"
+        "TNF",
+        "TNFSF11"
       ],
       "references": []
     },

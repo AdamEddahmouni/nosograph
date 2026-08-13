@@ -1,0 +1,490 @@
+{
+  "relationships": [
+    {
+      "source": "CCND3",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND3 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CXCR4",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR4 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "FANCD2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "FANCD2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "FGFR4",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR4 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "IKBKB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "IKBKB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBIE",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIE is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP3 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "BTG2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "BTG2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "MYD88",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MYD88 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP3 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF14",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF14 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "P2RY8",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RY8 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFAIP3 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SFRP4",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFRP4 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MYD88",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYD88 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAP2K1",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K1 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ALK",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NPM1",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPM1 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "IKBKB",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKBKB is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NF1",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FAS",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TET2",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "STAT3",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID1A",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FOXO1",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXO1 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "DDX3X",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDX3X is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP53",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "B2M",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B2M is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CARD11",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FAT4",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT4 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MYC",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR4",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR4 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CLTC",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLTC is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CCND3",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND3 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CREBBP",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "HGF",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BCL10",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL10 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "CXCR4",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR4 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "DNMT3A",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT3A is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "IKZF3",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF3 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PRDM1",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM1 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CDH11",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH11 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "JAK2",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KDM6A",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM6A is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FANCD2",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCD2 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RARA",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RARA is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ZRSR2",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZRSR2 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "AKT1",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TP63",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "IRS4",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRS4 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FAT1",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT1 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "DDR2",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDR2 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NFKBIE",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIE is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FBXO11",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXO11 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NTRK2",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK2 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TNFRSF14",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF14 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "POLD1",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD1 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RET",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TRRAP",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRRAP is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "BTG2",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTG2 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TBL1XR1",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBL1XR1 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TRIM24",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM24 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PPM1D",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPM1D is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RPL22",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL22 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "IDH1",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FUBP1",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUBP1 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "HLA-A",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-A is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CDH1",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "HOXA11",
+      "target": "Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA11 is associated with Gastric Diffuse Large B-Cell Lymphoma (GASTRIC_DIFFUSE_LARGE_B_CELL_LYMPHOMA). Open Targets association score 0.18"
+    }
+  ]
+}

@@ -90,6 +90,7 @@ CAR_T_SCORES = {
         "NMNAT3": 4.0,
         "NRP1": 4.0,
         "OPN1LW": 4.0,
+        "PAG1": 4.0,
         "PCBP4": 4.0,
         "PDIK1L": 4.0,
         "PICALM": 4.0,

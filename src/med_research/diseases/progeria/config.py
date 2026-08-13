@@ -91,6 +91,7 @@ CAR_T_SCORES = {
         "PLXND1": 4.0,
         "PML": 4.0,
         "PPP1R13L": 4.0,
+        "RABGEF1": 4.0,
         "RAP1A": 4.0,
         "RB1": 4.0,
         "REST": 4.0,

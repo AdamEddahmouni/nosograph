@@ -1,13 +1,18 @@
 """System API router — health checks, platform stats, disease registry."""
 
+import logging
 from datetime import datetime
 from importlib.metadata import version
+from pathlib import Path
 from typing import Any
 
+import redis
 from fastapi import APIRouter, Query
+from fastapi.responses import JSONResponse
 
 from med_research.diseases.base import Disease
 from med_research.pipeline.gateway import pipeline_gateway
+from med_research.web.config import CELERY_BROKER_URL, WORKSPACE_DB_PATH
 from med_research.web.dependencies import (
     get_candidates,
     get_kg_drugs,
@@ -22,9 +27,11 @@ from med_research.web.models import (
     HealthResponse,
     PipelineModulesResponse,
     PlatformStats,
+    ReadyResponse,
 )
 
 router = APIRouter(tags=["System"])
+logger = logging.getLogger(__name__)
 
 
 @router.get("/api/health", response_model=HealthResponse)
@@ -35,6 +42,80 @@ async def health() -> dict[str, Any]:
         "version": version("med-research"),
         "timestamp": datetime.now().isoformat(),
     }
+
+
+def _check_redis() -> dict[str, str]:
+    try:
+        client = redis.Redis.from_url(
+            CELERY_BROKER_URL,
+            socket_connect_timeout=1.0,
+            socket_timeout=1.0,
+        )
+        client.ping()
+        return {"status": "ok"}
+    except (redis.RedisError, OSError, ConnectionError) as exc:
+        return {"status": "error", "detail": str(exc)}
+
+
+def _check_celery() -> dict[str, str]:
+    try:
+        from med_research.web.tasks.analysis_tasks import celery_app
+
+        conn = celery_app.connection()
+        conn.ensure_connection(max_retries=1, timeout=1.0)
+        conn.release()
+        return {"status": "ok"}
+    except Exception as exc:
+        return {"status": "error", "detail": str(exc)}
+
+
+def _check_workspace_db() -> dict[str, str]:
+    db_path = Path(WORKSPACE_DB_PATH)
+    if not db_path.exists():
+        return {"status": "degraded", "detail": f"Database not found at {db_path}"}
+    if not db_path.is_file():
+        return {"status": "error", "detail": f"Workspace path is not a file: {db_path}"}
+    try:
+        db_path.stat()
+        return {"status": "ok"}
+    except OSError as exc:
+        return {"status": "error", "detail": str(exc)}
+
+
+def _check_knowledge_graph() -> dict[str, str]:
+    try:
+        graph = get_knowledge_graph()
+        if graph.number_of_nodes() == 0:
+            return {"status": "degraded", "detail": "Knowledge graph has no nodes"}
+        return {"status": "ok"}
+    except Exception as exc:
+        logger.warning("Readiness KG check failed: %s", exc)
+        return {"status": "error", "detail": str(exc)}
+
+
+@router.get("/api/ready", response_model=ReadyResponse)
+async def ready() -> JSONResponse | dict[str, Any]:
+    """Readiness probe — verifies Redis, Celery, workspace DB, and KG preload."""
+    components = {
+        "redis": _check_redis(),
+        "celery": _check_celery(),
+        "workspace_db": _check_workspace_db(),
+        "knowledge_graph": _check_knowledge_graph(),
+    }
+    overall = "ok"
+    if any(component["status"] == "error" for component in components.values()):
+        overall = "error"
+    elif any(component["status"] == "degraded" for component in components.values()):
+        overall = "degraded"
+
+    payload = {
+        "status": overall,
+        "version": version("med-research"),
+        "timestamp": datetime.now().isoformat(),
+        "components": components,
+    }
+    status_code = 200 if overall == "ok" else 503
+    return JSONResponse(status_code=status_code, content=payload)
 
 
 @router.get("/api/system/diseases", response_model=DiseasesResponse)

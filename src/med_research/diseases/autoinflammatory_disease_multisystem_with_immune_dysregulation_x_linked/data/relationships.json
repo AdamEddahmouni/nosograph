@@ -1,0 +1,562 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2L11",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2L11 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BTK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BTK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LYN",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LYN is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCR6",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR6 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCR7",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR7 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "C9orf72",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C9orf72 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6ST",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6ST is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "RASGRP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASGRP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "TRAF3IP2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF3IP2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RELB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "TNIP1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "TNIP1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "ICOS",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ICOS is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCR6",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR6 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "RORC",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "RORC is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TLR7",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR7 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF1A",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF1A is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TRAF3IP2",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF3IP2 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFIH1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFIH1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNGR1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNGR1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "DOCK11",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK11 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.72"
+    },
+    {
+      "source": "C9orf72",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C9orf72 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.07"
+    },
+    {
+      "source": "FASLG",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.07"
+    },
+    {
+      "source": "LYN",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYN is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.07"
+    },
+    {
+      "source": "FAS",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.07"
+    },
+    {
+      "source": "FOXP3",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.06"
+    },
+    {
+      "source": "TNF",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.06"
+    },
+    {
+      "source": "TNIP1",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNIP1 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.06"
+    },
+    {
+      "source": "TREX1",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREX1 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL2",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.06"
+    },
+    {
+      "source": "LAT",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAT is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.06"
+    },
+    {
+      "source": "AIRE",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIRE is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.06"
+    },
+    {
+      "source": "WAS",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WAS is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.06"
+    },
+    {
+      "source": "PTPN22",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.06"
+    },
+    {
+      "source": "TRAF3IP2",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAF3IP2 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.06"
+    },
+    {
+      "source": "TLR7",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR7 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.06"
+    },
+    {
+      "source": "IFNG",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "BCL2L11",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2L11 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL6ST",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6ST is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL2RB",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RB is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTPN6",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN6 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRKCD",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCD is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFKB2",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "BTK",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTK is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "FCGR2A",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2A is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "FCGR2B",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2B is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "FCGR2C",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2C is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "RASGRP1",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASGRP1 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD274",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "POLB",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLB is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFKB1",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "WIPF1",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WIPF1 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "REL",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REL is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "IFNGR1",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNGR1 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "IFIH1",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFIH1 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNFRSF1A",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF1A is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZC3H12A",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZC3H12A is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "ICOS",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICOS is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "FFAR2",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FFAR2 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "GPR132",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR132 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.05"
+    },
+    {
+      "source": "RELB",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELB is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTPRC",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "FEN1",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FEN1 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "BCL6",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL6 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAN2A1",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAN2A1 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "GIMAP1-GIMAP5",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP1-GIMAP5 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "GIMAP5",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP5 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "DUSP22",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DUSP22 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "IKZF3",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF3 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL17A",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCR7",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR7 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "RORC",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RORC is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD59",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD59 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCR6",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR6 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "TANK",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TANK is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "ASH1L",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASH1L is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "HLA-DQB2",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DQB2 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "HLA-DQB1",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DQB1 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.04"
+    },
+    {
+      "source": "CXCR2",
+      "target": "autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR2 is associated with autoinflammatory disease, multisystem, with immune dysregulation, X-linked (AUTOINFLAMMATORY_DISEASE_MULTISYSTEM_WITH_IMMUNE_DYSREGULATION_X_LINKED). Open Targets association score 0.04"
+    }
+  ]
+}

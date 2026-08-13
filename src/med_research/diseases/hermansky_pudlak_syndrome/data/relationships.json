@@ -1,0 +1,514 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL957",
+      "target": "EDNRB",
+      "type": "TARGETS",
+      "description": "BOSENTAN targets EDNRB."
+    },
+    {
+      "source": "CHEMBL1336",
+      "target": "RET",
+      "type": "TARGETS",
+      "description": "SORAFENIB targets RET."
+    },
+    {
+      "source": "CHEMBL1336",
+      "target": "FLT1",
+      "type": "TARGETS",
+      "description": "SORAFENIB targets FLT1."
+    },
+    {
+      "source": "CHEMBL1336",
+      "target": "BRAF",
+      "type": "TARGETS",
+      "description": "SORAFENIB targets BRAF."
+    },
+    {
+      "source": "CHEMBL1336",
+      "target": "RAF1",
+      "type": "TARGETS",
+      "description": "SORAFENIB targets RAF1."
+    },
+    {
+      "source": "CHEMBL1336",
+      "target": "FLT4",
+      "type": "TARGETS",
+      "description": "SORAFENIB targets FLT4."
+    },
+    {
+      "source": "CHEMBL1444",
+      "target": "CYP19A1",
+      "type": "TARGETS",
+      "description": "LETROZOLE targets CYP19A1."
+    },
+    {
+      "source": "CHEMBL1336",
+      "target": "FLT3",
+      "type": "TARGETS",
+      "description": "SORAFENIB targets FLT3."
+    },
+    {
+      "source": "CHEMBL1336",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "SORAFENIB targets KIT."
+    },
+    {
+      "source": "CHEMBL1336",
+      "target": "KDR",
+      "type": "TARGETS",
+      "description": "SORAFENIB targets KDR."
+    },
+    {
+      "source": "CHEMBL957",
+      "target": "EDNRA",
+      "type": "TARGETS",
+      "description": "BOSENTAN targets EDNRA."
+    },
+    {
+      "source": "CHEMBL1336",
+      "target": "PDGFRB",
+      "type": "TARGETS",
+      "description": "SORAFENIB targets PDGFRB."
+    },
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ITGA2B",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA2B is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGB3",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB3 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RAF1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RAF1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RASGRP2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASGRP2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "PIK3C2A",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3C2A is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "ITGA2B",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA2B is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGB3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "FLT1",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "FLT1 is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "CYP19A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP19A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "HPS1",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPS1 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.83"
+    },
+    {
+      "source": "HPS5",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPS5 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.79"
+    },
+    {
+      "source": "HPS6",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPS6 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.70"
+    },
+    {
+      "source": "HPS3",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPS3 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.69"
+    },
+    {
+      "source": "HPS4",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPS4 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.68"
+    },
+    {
+      "source": "AP3B1",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AP3B1 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.66"
+    },
+    {
+      "source": "DTNBP1",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DTNBP1 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.62"
+    },
+    {
+      "source": "BLOC1S3",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLOC1S3 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.60"
+    },
+    {
+      "source": "BLOC1S6",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLOC1S6 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.59"
+    },
+    {
+      "source": "CP",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CP is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.51"
+    },
+    {
+      "source": "AP3D1",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AP3D1 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.50"
+    },
+    {
+      "source": "BLOC1S5",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLOC1S5 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.46"
+    },
+    {
+      "source": "MARK4",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MARK4 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.38"
+    },
+    {
+      "source": "ETV6",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV6 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.27"
+    },
+    {
+      "source": "EDNRB",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRB is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "RAF1",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAF1 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "FLT1",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT1 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "RET",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "KIT",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "FLT3",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "FLT4",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "CYP19A1",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP19A1 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "EDNRA",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRA is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "BRAF",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "KDR",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "VWF",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "VPS33A",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VPS33A is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "BLOC1S5-TXNDC5",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLOC1S5-TXNDC5 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "RAB27A",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB27A is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "BLOC1S4",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLOC1S4 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYH9",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH9 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FERMT3",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FERMT3 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ITGB3",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB3 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TYR",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYR is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GP1BB",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GP1BB is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC24A5",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC24A5 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ITGA2B",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA2B is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGA",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGA is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RABGGTA",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RABGGTA is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RANBP10",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RANBP10 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RAB38",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB38 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CLIC1",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLIC1 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MINK1",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MINK1 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ABCG5",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG5 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "LYST",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYST is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TMEM163",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM163 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC7A11",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC7A11 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "AGBL4",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGBL4 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "P2RY12",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RY12 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "INPP5D",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INPP5D is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MPIG6B",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPIG6B is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "NBEAL2",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBEAL2 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "WDR1",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR1 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MITF",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MITF is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "STIM1",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STIM1 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PIK3C2A",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3C2A is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TUBB1",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB1 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TREML1",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREML1 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "RASGRP2",
+      "target": "Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASGRP2 is associated with Hermansky-Pudlak syndrome (HERMANSKY_PUDLAK_SYNDROME). Open Targets association score 0.03"
+    }
+  ]
+}

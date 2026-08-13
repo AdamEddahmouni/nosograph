@@ -1,18 +1,6 @@
 {
   "pathways": [
     {
-      "id": "cell-cycle",
-      "name": "Cell Cycle Regulation",
-      "description": "Cyclin-CDK machinery controlling cell division; a backbone of oncology target discovery.",
-      "key_components": [
-        "CDK13"
-      ],
-      "therapeutic_targets": [
-        "CDK13"
-      ],
-      "references": []
-    },
-    {
       "id": "chemokine-signaling",
       "name": "Chemokine Signaling",
       "description": "Chemokine-receptor interactions directing leukocyte migration and lymphoid organization.",
@@ -31,12 +19,14 @@
       "key_components": [
         "FGF10",
         "FGF9",
-        "TNFRSF8"
+        "TNFRSF8",
+        "TERF2IP"
       ],
       "therapeutic_targets": [
         "FGF10",
         "FGF9",
-        "TNFRSF8"
+        "TNFRSF8",
+        "TERF2IP"
       ],
       "references": []
     },
@@ -191,6 +181,18 @@
       ],
       "therapeutic_targets": [
         "TNFRSF8"
+      ],
+      "references": []
+    },
+    {
+      "id": "cell-cycle",
+      "name": "Cell Cycle Regulation",
+      "description": "Cyclin-CDK machinery controlling cell division; a backbone of oncology target discovery.",
+      "key_components": [
+        "CDK13"
+      ],
+      "therapeutic_targets": [
+        "CDK13"
       ],
       "references": []
     },

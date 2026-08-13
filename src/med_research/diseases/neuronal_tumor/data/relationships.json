@@ -1,0 +1,490 @@
+{
+  "relationships": [
+    {
+      "source": "SQSTM1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SQSTM1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "E2F1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "E2F1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "GTF2H1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "GTF2H1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IGF2BP2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2BP2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP13",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP13 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "SELENOP",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELENOP is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "THY1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THY1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "EPAS1",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "EPAS1 is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT3A",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT3A is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "FOXO3",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXO3 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "FUT4",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUT4 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "TMPRSS6",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS6 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "LUM",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LUM is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "THY1",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THY1 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP13",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP13 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "BRAF",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYCN",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYCN is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "RBFOX3",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBFOX3 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "BDNF",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BDNF is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD34",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP9",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "APBB1",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APBB1 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZBTB38",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB38 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "INA",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INA is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "PROM1",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROM1 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP2",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "UCHL1",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UCHL1 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHCHD2",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHCHD2 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "DLK1",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLK1 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "DEPP1",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEPP1 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYC",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALK",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "NTRK1",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "TAFA1",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAFA1 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "E2F1",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "E2F1 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "NLRP3",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "NUP62",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUP62 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "DCTN4",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCTN4 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MTOR",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "GSAP",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSAP is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "GTF2H1",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GTF2H1 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "KHDRBS1",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KHDRBS1 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "ARID3B",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID3B is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "WNT3A",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT3A is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTEN",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "VAV3",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VAV3 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "BRCA2",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "SQSTM1",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SQSTM1 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGF2BP2",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2BP2 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "ENO2",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENO2 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "NGF",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NGF is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "IDH1",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "SELENOP",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELENOP is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "FTMT",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FTMT is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MDK",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDK is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "RET",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "FGF1",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF1 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "IDH2",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH2 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "NF1",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "GFAP",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "TSC1",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC1 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "REST",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REST is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "EPAS1",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPAS1 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "SYP",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYP is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "GAS7",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAS7 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "SRC",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRC is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "VEGFA",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "RB1",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "NUP214",
+      "target": "neuronal tumor (NEURONAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUP214 is associated with neuronal tumor (NEURONAL_TUMOR). Open Targets association score 0.00"
+    }
+  ]
+}

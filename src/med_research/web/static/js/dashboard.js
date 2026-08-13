@@ -2095,7 +2095,11 @@ function applyKGNodeFilters() {
     kgNodes.clear();
     kgNodes.add([...visibleIds].map(id => nodeMap[id]));
 
-    // Edges between visible nodes only
+    // Edges between visible nodes only (filtered by edge types as well)
+    const edgeChecks = document.querySelectorAll('.kg-edge-filters input[data-edge-type]');
+    const visibleEdges = {};
+    for (const ec of edgeChecks) visibleEdges[ec.dataset.edgeType.toLowerCase()] = ec.checked;
+
     const visEdges = [];
     for (const el of kgRawElements) {
         const d = el.data || {};
@@ -2104,6 +2108,8 @@ function applyKGNodeFilters() {
         if (from !== undefined && to !== undefined) {
             if (visibleIds.has(from) && visibleIds.has(to)) {
                 const type = d.type || 'UNKNOWN';
+                const typeLower = type.toLowerCase();
+                if (visibleEdges[typeLower] === false) continue;
                 visEdges.push({
                     id: d.id || `${from}--${to}--${type}`,
                     from, to, type,
@@ -2121,9 +2127,196 @@ function applyKGNodeFilters() {
     if (kgNetwork) kgNetwork.fit({ animation: true });
 }
 
+let kgPhysicsEnabled = true;
+let kgCentralityActive = false;
+let kgCommunityActive = false;
+
+function toggleKGPhysics() {
+    if (!kgNetwork) return;
+    kgPhysicsEnabled = !kgPhysicsEnabled;
+    kgNetwork.setOptions({ physics: { enabled: kgPhysicsEnabled } });
+    const btn = document.getElementById('kg-physics-toggle');
+    if (btn) {
+        btn.textContent = kgPhysicsEnabled ? '⏸ Pause Physics' : '▶ Resume Physics';
+        btn.classList.toggle('active-overlay', !kgPhysicsEnabled);
+    }
+}
+
+async function toggleKGCentrality() {
+    if (!kgNetwork || !kgNodes) return;
+    kgCentralityActive = !kgCentralityActive;
+    const btn = document.getElementById('kg-centrality-toggle');
+    if (btn) btn.classList.toggle('active-overlay', kgCentralityActive);
+
+    if (!kgCentralityActive) {
+        applyKGNodeFilters();
+        return;
+    }
+
+    const disease = getActiveDisease();
+    try {
+        const data = await apiFetch(`/api/kg/centrality?disease=${encodeURIComponent(disease)}&metric=betweenness&top_n=30`);
+        const scores = data.scores || {};
+        kgNodes.forEach(n => {
+            const val = scores[n.id] || scores[n.label] || 0;
+            const size = 15 + Math.min(val * 400, 35);
+            kgNodes.update({ id: n.id, size, font: { size: val > 0.05 ? 16 : 13 } });
+        });
+    } catch (e) {
+        console.error('Centrality fetch failed:', e);
+    }
+}
+
+async function toggleKGCommunities() {
+    if (!kgNetwork || !kgNodes) return;
+    kgCommunityActive = !kgCommunityActive;
+    const btn = document.getElementById('kg-community-toggle');
+    if (btn) btn.classList.toggle('active-overlay', kgCommunityActive);
+
+    if (!kgCommunityActive) {
+        applyKGNodeFilters();
+        return;
+    }
+
+    const disease = getActiveDisease();
+    try {
+        const data = await apiFetch(`/api/kg/communities?disease=${encodeURIComponent(disease)}`);
+        const communities = data.communities || {};
+        const colors = ['#f43f5e', '#3b82f6', '#10b981', '#f59e0b', '#8b5cf6', '#ec4899', '#06b6d4'];
+        kgNodes.forEach(n => {
+            const commId = communities[n.id] !== undefined ? communities[n.id] : 0;
+            const col = colors[commId % colors.length];
+            kgNodes.update({
+                id: n.id,
+                color: { background: col, border: col, highlight: { background: '#ffffff', border: '#ffffff' } }
+            });
+        });
+    } catch (e) {
+        console.error('Community fetch failed:', e);
+    }
+}
+
+function exportKGCanvasImage() {
+    const canvas = document.querySelector('#kg-canvas canvas');
+    if (!canvas) return;
+    const url = canvas.toDataURL('image/png');
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `knowledge_graph_${getActiveDisease()}.png`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+}
+
+async function expand2HopNeighbors(nodeId) {
+    if (!nodeId || !kgNodes || !kgEdges) return;
+    const disease = getActiveDisease();
+    try {
+        const data = await apiFetch(`/api/kg/neighbors/${encodeURIComponent(nodeId)}?hops=2&disease=${encodeURIComponent(disease)}`);
+        const neighbors = data.neighbors || [];
+        const relationships = data.relationships || [];
+
+        neighbors.forEach(node => {
+            if (!kgNodes.get(node.id)) {
+                const type = node.type || 'unknown';
+                const color = KG_TYPE_COLORS[type] || '#787890';
+                kgNodes.add({
+                    id: node.id,
+                    label: node.label || node.id,
+                    type,
+                    color: { background: color, border: color, highlight: { background: '#ffffff', border: '#ffffff' } },
+                    font: { color: '#d0d0dc', size: 13 },
+                    shape: type === 'drug' ? 'box' : type === 'pathway' ? 'diamond' : 'dot',
+                    title: node.label || node.id,
+                });
+            }
+        });
+
+        relationships.forEach(rel => {
+            const relId = rel.id || `${rel.source}--${rel.target}--${rel.type}`;
+            if (!kgEdges.get(relId)) {
+                const type = rel.type || 'UNKNOWN';
+                kgEdges.add({
+                    id: relId,
+                    from: rel.source,
+                    to: rel.target,
+                    type,
+                    color: { color: KG_EDGE_COLORS[type] || '#3a3a4a', opacity: 0.7 },
+                    arrows: { to: { enabled: true, scaleFactor: 0.5 } },
+                    width: 1.5,
+                    title: type,
+                });
+            }
+        });
+
+        if (kgNetwork) {
+            kgNetwork.selectNodes([nodeId]);
+            kgNetwork.fit({ animation: true });
+        }
+    } catch (e) {
+        console.error('Failed to expand neighbors:', e);
+    }
+}
+
+async function runMultiDiseaseComparison() {
+    const resultDiv = document.getElementById('multi-disease-result');
+    if (!resultDiv) return;
+
+    const checkboxes = document.querySelectorAll('#multi-disease-selector input[type="checkbox"]:checked');
+    const selectedDiseases = Array.from(checkboxes).map(cb => cb.value);
+
+    if (selectedDiseases.length < 2) {
+        resultDiv.innerHTML = `<p class="condition-comparison-placeholder" style="color:#f87171;">Please select at least 2 diseases to compare.</p>`;
+        return;
+    }
+
+    resultDiv.innerHTML = `<p class="condition-comparison-placeholder"><span class="spinner"></span> Calculating multi-disease pairwise similarity matrix and shared target overlap…</p>`;
+
+    try {
+        const [simData, drugsData] = await Promise.all([
+            apiFetch('/api/cross-disease/similarity'),
+            apiFetch('/api/cross-disease/drugs?top=15')
+        ]);
+
+        const allDiseases = simData.diseases || [];
+        const rawMatrix = simData.similarity || [];
+        const drugs = drugsData.drugs || [];
+
+        const selectedIndices = selectedDiseases.map(id => allDiseases.indexOf(id)).filter(i => i !== -1);
+        const labels = selectedIndices.map(i => allDiseases[i].toUpperCase());
+
+        let tableHtml = `<table class="matrix-table"><thead><tr><th>Disease</th>`;
+        labels.forEach(l => { tableHtml += `<th>${l}</th>`; });
+        tableHtml += `</tr></thead><tbody>`;
+
+        selectedIndices.forEach((rIdx, i) => {
+            tableHtml += `<tr><th>${labels[i]}</th>`;
+            selectedIndices.forEach((cIdx, j) => {
+                const val = (rawMatrix[rIdx] && rawMatrix[rIdx][cIdx] !== undefined) ? rawMatrix[rIdx][cIdx] : (i === j ? 1.0 : 0.0);
+                const scoreStr = (val * 100).toFixed(1) + '%';
+                const cls = val >= 0.7 ? 'high' : val >= 0.4 ? 'medium' : 'low';
+                tableHtml += `<td class="matrix-cell ${cls}">${scoreStr}</td>`;
+            });
+            tableHtml += `</tr>`;
+        });
+        tableHtml += `</tbody></table>`;
+
+        let drugsHtml = `<div style="margin-top:20px;"><h4>💊 Top Multi-Disease Drug Candidates</h4><div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;">`;
+        drugs.slice(0, 10).forEach(d => {
+            drugsHtml += `<div class="kg-rel" style="background:var(--surface);padding:8px 12px;border-radius:8px;border:1px solid var(--border);"><strong>${escapeHtml(d.name || d.id)}</strong> <span class="rel-type" style="margin-left:6px;">${(d.score || d.disease_count || 0)}</span></div>`;
+        });
+        drugsHtml += `</div></div>`;
+
+        resultDiv.innerHTML = `<div><h3>📊 Pairwise Jaccard Similarity Matrix</h3>${tableHtml}${drugsHtml}</div>`;
+    } catch (e) {
+        resultDiv.innerHTML = `<p class="condition-comparison-placeholder" style="color:#f87171;">⚠️ ${escapeHtml(e.message)}</p>`;
+    }
+}
+
 function setupKGControls() {
     const search = document.getElementById('kg-search');
     const checks = document.querySelectorAll('.kg-filter input[data-type]');
+    const edgeChecks = document.querySelectorAll('.kg-edge-filters input[data-edge-type]');
     if (search) {
         search.addEventListener('input', () => {
             const q = search.value.trim().toLowerCase();
@@ -2148,12 +2341,14 @@ function setupKGControls() {
     for (const c of checks) {
         c.addEventListener('change', applyKGNodeFilters);
     }
+    for (const ec of edgeChecks) {
+        ec.addEventListener('change', applyKGNodeFilters);
+    }
 }
 
 function resetKGExplorer() {
     const search = document.getElementById('kg-search');
     if (search) search.value = '';
-    // Restore node colors (search dims non-matches) and refit
     if (kgNetwork && kgNodes) {
         kgNodes.forEach(n => {
             kgNodes.update({ id: n.id, color: { background: KG_TYPE_COLORS[n.type] || '#787890', border: KG_TYPE_COLORS[n.type] || '#787890', highlight: { background: '#ffffff', border: '#ffffff' } } });
@@ -2534,6 +2729,7 @@ function renderKGDetail(panel, d) {
         ${fields.join('')}
         ${incoming ? `<div class="kg-section"><h5>⬅ Incoming (${d.incoming.length})</h5>${incoming}</div>` : ''}
         ${outgoing ? `<div class="kg-section"><h5>➡ Outgoing (${d.outgoing.length})</h5>${outgoing}</div>` : ''}
+        <button type="button" class="btn btn-primary btn-sm" style="margin-top:14px;width:100%;" data-action="kg-expand-neighbors" data-node-id="${escapeHtml(d.id)}">🔍 Expand 2-Hop Subgraph</button>
     `;
 }
 
@@ -3302,6 +3498,12 @@ function setupDashboardActions() {
             case 'disease-manager-prune': void runPrunePreview(); break;
             case 'disease-manager-restore': void previewRestore(Number(control.dataset.backupIndex)); break;
             case 'kg-reset': resetKGExplorer(); break;
+            case 'kg-toggle-physics': toggleKGPhysics(); break;
+            case 'kg-toggle-centrality': void toggleKGCentrality(); break;
+            case 'kg-toggle-communities': void toggleKGCommunities(); break;
+            case 'kg-export-png': exportKGCanvasImage(); break;
+            case 'kg-expand-neighbors': void expand2HopNeighbors(control.dataset.nodeId); break;
+            case 'run-multi-disease-comparison': void runMultiDiseaseComparison(); break;
             case 'compare-with-condition': {
                 const curie = control.dataset.conditionCurie;
                 if (curie) openConditionComparison(curie, '', control.dataset.conditionLabel || curie, '');

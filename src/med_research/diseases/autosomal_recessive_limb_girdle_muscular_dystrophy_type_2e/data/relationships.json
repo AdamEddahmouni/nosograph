@@ -1,0 +1,418 @@
+{
+  "relationships": [
+    {
+      "source": "C10orf71",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C10orf71 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL13A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL13A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL6A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL6A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL6A3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL6A3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ITGA7",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA7 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELENON",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELENON is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MRGPRD",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "MRGPRD is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "ITGA7",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA7 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "SGCB",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCB is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.81"
+    },
+    {
+      "source": "LRRC66",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRC66 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.12"
+    },
+    {
+      "source": "DMD",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMD is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.08"
+    },
+    {
+      "source": "SGCG",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCG is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.07"
+    },
+    {
+      "source": "SGCA",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCA is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.07"
+    },
+    {
+      "source": "SGCD",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCD is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.07"
+    },
+    {
+      "source": "DES",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DES is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.07"
+    },
+    {
+      "source": "DYSF",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYSF is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.07"
+    },
+    {
+      "source": "LAMA2",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMA2 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.07"
+    },
+    {
+      "source": "CAPN3",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAPN3 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.07"
+    },
+    {
+      "source": "CAV3",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAV3 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.07"
+    },
+    {
+      "source": "RYR1",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYR1 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.06"
+    },
+    {
+      "source": "LARGE1",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LARGE1 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.06"
+    },
+    {
+      "source": "MYBPC3",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYBPC3 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.06"
+    },
+    {
+      "source": "GAA",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAA is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.06"
+    },
+    {
+      "source": "LMNA",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNA is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.06"
+    },
+    {
+      "source": "TTN",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTN is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.06"
+    },
+    {
+      "source": "DNAJB4",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAJB4 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.06"
+    },
+    {
+      "source": "ITGA7",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA7 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.06"
+    },
+    {
+      "source": "XIRP1",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XIRP1 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.06"
+    },
+    {
+      "source": "RBM20",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM20 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.06"
+    },
+    {
+      "source": "LMOD2",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMOD2 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.06"
+    },
+    {
+      "source": "MYOZ2",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYOZ2 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLC6A6",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A6 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.05"
+    },
+    {
+      "source": "SCN4A",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN4A is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.05"
+    },
+    {
+      "source": "SELENON",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELENON is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYH4",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH4 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.05"
+    },
+    {
+      "source": "MTM1",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTM1 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.05"
+    },
+    {
+      "source": "DNM2",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM2 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.05"
+    },
+    {
+      "source": "CSRP3",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSRP3 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.05"
+    },
+    {
+      "source": "C10orf71",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C10orf71 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.05"
+    },
+    {
+      "source": "LDB3",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDB3 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.05"
+    },
+    {
+      "source": "PDLIM5",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDLIM5 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.05"
+    },
+    {
+      "source": "SYNM",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYNM is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNNC1",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNC1 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.05"
+    },
+    {
+      "source": "CAP2",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAP2 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYL2",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYL2 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.05"
+    },
+    {
+      "source": "MRGPRD",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRGPRD is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYH6",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH6 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL6A1",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL6A1 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.05"
+    },
+    {
+      "source": "ALPK3",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPK3 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.05"
+    },
+    {
+      "source": "DMPK",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMPK is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL6A3",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL6A3 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.05"
+    },
+    {
+      "source": "MT-CO1",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO1 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.05"
+    },
+    {
+      "source": "BIN1",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIN1 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.05"
+    },
+    {
+      "source": "SCN8A",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN8A is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.05"
+    },
+    {
+      "source": "TRIM32",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM32 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.05"
+    },
+    {
+      "source": "PPP1R13L",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R13L is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.05"
+    },
+    {
+      "source": "IGHMBP2",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGHMBP2 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.05"
+    },
+    {
+      "source": "NEB",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEB is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.04"
+    },
+    {
+      "source": "PABPN1",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PABPN1 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.04"
+    },
+    {
+      "source": "CHKB",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKB is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNNT1",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNT1 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.04"
+    },
+    {
+      "source": "A1CF",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "A1CF is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRRC10",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRC10 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.04"
+    },
+    {
+      "source": "DTNA",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DTNA is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.04"
+    },
+    {
+      "source": "TLN2",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLN2 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL13A1",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL13A1 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.04"
+    },
+    {
+      "source": "KRAS",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.04"
+    },
+    {
+      "source": "IRX4",
+      "target": "autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRX4 is associated with autosomal recessive limb-girdle muscular dystrophy type 2E (AUTOSOMAL_RECESSIVE_LIMB_GIRDLE_MUSCULAR_DYSTROPHY_TYPE_2E). Open Targets association score 0.04"
+    }
+  ]
+}

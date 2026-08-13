@@ -15,6 +15,7 @@ authors = [
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Topic :: Scientific/Engineering :: Bio-Informatics",
@@ -59,7 +60,10 @@ all = [
 med-research = "med_research.cli:main"
 
 [project.urls]
-Repository = "https://github.com/medical-research"
+Homepage = "https://github.com/AdamEddahmouni/med-research"
+Repository = "https://github.com/AdamEddahmouni/med-research"
+Documentation = "https://github.com/AdamEddahmouni/med-research#readme"
+Issues = "https://github.com/AdamEddahmouni/med-research/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]

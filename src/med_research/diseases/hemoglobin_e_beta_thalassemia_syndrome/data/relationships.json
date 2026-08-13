@@ -1,0 +1,442 @@
+{
+  "relationships": [
+    {
+      "source": "WEE1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "WEE1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "NHERF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NHERF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PHF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "PHF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SLC4A1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC4A1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "COL4A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GCK",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCK is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "SLC40A1",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC40A1 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "TFR2",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFR2 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "TFRC",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFRC is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL6ST",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6ST is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "KITLG",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KITLG is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "HBB",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBB is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.46"
+    },
+    {
+      "source": "HBA1",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBA1 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "HBA2",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBA2 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "HEPH",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEPH is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "RHBDF1",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHBDF1 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "KIT",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "ANK1",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "TMPRSS6",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS6 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "AHSP",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSP is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "TFRC",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFRC is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "SPTA1",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "STEAP3",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STEAP3 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "EXOC6",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EXOC6 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "SLC4A1",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC4A1 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "TFR2",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFR2 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "EPOR",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPOR is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "KITLG",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KITLG is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "IREB2",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IREB2 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "SLC40A1",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC40A1 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "GATA1",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA1 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "PPP1R15A",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R15A is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "HBZ",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBZ is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "DNM2",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM2 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "EPS15",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPS15 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "COL4A1",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A1 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "TENM1",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TENM1 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "EPO",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPO is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "EPB41",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPB41 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "CPOX",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPOX is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PICALM",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PICALM is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "TENT5C",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TENT5C is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "SPTB",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTB is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PROM2",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROM2 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL6ST",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6ST is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "KLF1",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF1 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PHF8",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHF8 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "TF",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "CES2",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CES2 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "WEE1",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WEE1 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "ATP11C",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP11C is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "ZFPM1",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFPM1 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "LDHA",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDHA is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "MSN",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSN is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "TPI1",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPI1 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "NHERF2",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NHERF2 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "BNIP3L",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BNIP3L is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "STARD13",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STARD13 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLC11A2",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC11A2 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "IKZF1",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "KCNE2",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNE2 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "GCK",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCK is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ANTXR2",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANTXR2 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PLS3",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLS3 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "RETNLB",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RETNLB is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "NEFH",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEFH is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "INTS9",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INTS9 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TEX2",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TEX2 is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "MPL",
+      "target": "hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPL is associated with hemoglobin E-beta-thalassemia syndrome (HEMOGLOBIN_E_BETA_THALASSEMIA_SYNDROME). Open Targets association score 0.06"
+    }
+  ]
+}

@@ -19,6 +19,18 @@ class HealthResponse(BaseModel):
     timestamp: str = Field(default_factory=lambda: datetime.now().isoformat())
 
 
+class ComponentStatus(BaseModel):
+    status: str
+    detail: str | None = None
+
+
+class ReadyResponse(BaseModel):
+    status: str
+    version: str = Field(default_factory=lambda: package_version("med-research"))
+    timestamp: str = Field(default_factory=lambda: datetime.now().isoformat())
+    components: dict[str, ComponentStatus]
+
+
 class JobStatus(BaseModel):
     job_id: str
     status: str  # PENDING, STARTED, SUCCESS, FAILURE

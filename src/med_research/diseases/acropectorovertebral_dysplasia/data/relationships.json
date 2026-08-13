@@ -1,0 +1,454 @@
+{
+  "relationships": [
+    {
+      "source": "CDK20",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK20 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MTF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "MTF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL1A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "IHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "SMOC1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SMOC1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BMP5",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP5 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "BMPR1B",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMPR1B is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "JAG2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "JAG2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "FBN2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "FBN2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "GSK3B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "GSK3B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LRP4",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP4 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "HOXD11",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD11 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "HOXD13",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD13 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "SFRP2",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFRP2 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "HOXA11",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA11 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "FGFR1",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GDF5",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF5 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "FMN1",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMN1 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PAX1",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX1 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "NPR3",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPR3 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "HOXA13",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA13 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PHC2",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHC2 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "LRP6",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP6 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "FBN2",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBN2 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "RPL38",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL38 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "EN1",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EN1 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "LRP4",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP4 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "PITX1",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX1 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "PORCN",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PORCN is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "MTF2",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTF2 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "GLI3",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "EVX2",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EVX2 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "KMT2A",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2A is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "TULP3",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TULP3 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "MESP2",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MESP2 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ROR2",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROR2 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "HES7",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HES7 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CDX1",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDX1 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXD12",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD12 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CDK20",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK20 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SALL1",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SALL1 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MLLT3",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLLT3 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SMOC1",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMOC1 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "BMP5",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP5 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "FLNB",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLNB is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXC4",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXC4 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "JAG2",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAG2 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MAP3K4",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K4 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "VANGL2",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VANGL2 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "BMPR1B",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMPR1B is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TWIST1",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TWIST1 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TBXT",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBXT is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ASPH",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASPH is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXD9",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD9 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MEOX1",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEOX1 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXB4",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXB4 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "LMBR1",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMBR1 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL1A1",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A1 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GAS1",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAS1 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "RAB23",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB23 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GSK3B",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSK3B is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TBX6",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX6 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "IHH",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IHH is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GRHL2",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRHL2 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "FREM2",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FREM2 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "LFNG",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LFNG is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GNAI3",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAI3 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTK7",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTK7 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL2A1",
+      "target": "Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with Acropectorovertebral dysplasia (ACROPECTOROVERTEBRAL_DYSPLASIA). Open Targets association score 0.04"
+    }
+  ]
+}

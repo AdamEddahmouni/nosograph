@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "SCARB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "SCARB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TM6SF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TM6SF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PGRMC1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "PGRMC1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GCK",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCK is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF4A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF4A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PPARGC1B",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARGC1B is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PIK3C2G",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3C2G is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ABCB11",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB11 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ABCB4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ABCC2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP27A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP27A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP7A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP7A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP7A1",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP7A1 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.37"
+    },
+    {
+      "source": "LDLR",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "APOE",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "APOB",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LEPR",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NR1H4",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1H4 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ABCB4",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB4 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LEP",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SCP2",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCP2 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SCARB1",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCARB1 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "MC4R",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MC4R is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PCTP",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCTP is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRP6",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP6 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SOX17",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX17 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ORM1",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ORM1 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ORM2",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ORM2 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "HSD17B13",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSD17B13 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PON3",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PON3 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "HMGCS2",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCS2 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PEX11A",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PEX11A is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "APC",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PPARA",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARA is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ACOX1",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACOX1 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "APOC1",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC1 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TM6SF2",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM6SF2 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SOAT2",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOAT2 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "MTTP",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTTP is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PGRMC1",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGRMC1 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PEMT",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PEMT is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLA2G12B",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G12B is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "DNAJC7",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAJC7 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYP27A1",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP27A1 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GNA11",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNA11 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CPT1C",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPT1C is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "OCA2",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OCA2 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "BHMT",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BHMT is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ABCB11",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB11 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "LGALS3",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC10A2",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC10A2 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SIRT7",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT7 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "AMFR",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMFR is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "HNF4A",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF4A is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GCK",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCK is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ILRUN",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ILRUN is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "STARD10",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STARD10 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ABCC2",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC2 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "NEU2",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEU2 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "WDFY2",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDFY2 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPC1L1",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPC1L1 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "PIK3C2G",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3C2G is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "SIRT3",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT3 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "BCO1",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCO1 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "HADHA",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HADHA is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GPBAR1",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPBAR1 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "SIDT2",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIDT2 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "PEX1",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PEX1 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "PPARGC1B",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARGC1B is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "SAR1B",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAR1B is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "FHIP2B",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FHIP2B is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ABCG1",
+      "target": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG1 is associated with hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency (HYPERCHOLESTEROLEMIA_DUE_TO_CHOLESTEROL_7ALPHA_HYDROXYLASE_DEFICIENCY). Open Targets association score 0.03"
+    }
+  ]
+}

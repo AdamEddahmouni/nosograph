@@ -1,0 +1,574 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL131",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "PREDNISOLONE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL1456",
+      "target": "IMPDH2",
+      "type": "TARGETS",
+      "description": "MYCOPHENOLATE MOFETIL targets IMPDH2."
+    },
+    {
+      "source": "CHEMBL1456",
+      "target": "IMPDH1",
+      "type": "TARGETS",
+      "description": "MYCOPHENOLATE MOFETIL targets IMPDH1."
+    },
+    {
+      "source": "CHEMBL1504",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "TRIAMCINOLONE ACETONIDE targets NR3C1."
+    },
+    {
+      "source": "ATG5",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "ATG5 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "ATG7",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "ATG7 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CCL20",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL20 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCR6",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR6 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCR7",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR7 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ADAM8",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM8 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "HFE",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "HFE is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL33",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL33 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1I1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1I1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "CCR6",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR6 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ATG5",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ATG5 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ATG7",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ATG7 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1I1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1I1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.12"
+    },
+    {
+      "source": "IL10",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.11"
+    },
+    {
+      "source": "IL6",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.10"
+    },
+    {
+      "source": "CXCL8",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.10"
+    },
+    {
+      "source": "IGF1",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.10"
+    },
+    {
+      "source": "CD34",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.10"
+    },
+    {
+      "source": "IL17A",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.10"
+    },
+    {
+      "source": "IL1B",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.10"
+    },
+    {
+      "source": "NR3C1",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.10"
+    },
+    {
+      "source": "CD4",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.10"
+    },
+    {
+      "source": "SOD1",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD1 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.09"
+    },
+    {
+      "source": "MMP9",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.09"
+    },
+    {
+      "source": "TGFB1I1",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1I1 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.09"
+    },
+    {
+      "source": "CHI3L1",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHI3L1 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.09"
+    },
+    {
+      "source": "IGFBP2",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGFBP2 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.09"
+    },
+    {
+      "source": "ADAM8",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAM8 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.09"
+    },
+    {
+      "source": "CD8A",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.09"
+    },
+    {
+      "source": "POSTN",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POSTN is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.09"
+    },
+    {
+      "source": "ESR1",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.09"
+    },
+    {
+      "source": "TP53",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.09"
+    },
+    {
+      "source": "IFNA1",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.09"
+    },
+    {
+      "source": "LCN2",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN2 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "NOS1",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS1 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "NPY",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPY is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "CFTR",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFTR is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "CCL20",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL20 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "GAL",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAL is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "CCR6",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR6 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "RUNX1",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "PPARG",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "MIF",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIF is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "MAPK1",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "HFE",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HFE is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "CRP",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "FUT1",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUT1 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "IL34",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL34 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "ATG5",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATG5 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "EPHB2",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHB2 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "HP",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HP is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "LGALS1",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS1 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "GCG",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCG is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "MBP",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBP is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "CCR7",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR7 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "MAPT",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPT is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "REG1A",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REG1A is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "LEP",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "IL9",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL9 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "ATF6",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATF6 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "ORAI1",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ORAI1 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "MECOM",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MECOM is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.08"
+    },
+    {
+      "source": "TGFB1",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.07"
+    },
+    {
+      "source": "ESR2",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR2 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.07"
+    },
+    {
+      "source": "IMPDH1",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IMPDH1 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.07"
+    },
+    {
+      "source": "IMPDH2",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IMPDH2 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.07"
+    },
+    {
+      "source": "PRSS1",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRSS1 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.07"
+    },
+    {
+      "source": "IFNG",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.07"
+    },
+    {
+      "source": "VSTM2A",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VSTM2A is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.07"
+    },
+    {
+      "source": "ATG7",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATG7 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.07"
+    },
+    {
+      "source": "ABL1",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABL1 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL33",
+      "target": "mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL33 is associated with mucous membrane pemphigoid (MUCOUS_MEMBRANE_PEMPHIGOID). Open Targets association score 0.07"
+    }
+  ]
+}

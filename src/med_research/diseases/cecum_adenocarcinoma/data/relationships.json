@@ -1,0 +1,472 @@
+{
+  "relationships": [
+    {
+      "source": "BAX",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BAX is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MLH1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MLH1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH6",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH6 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "IL6ST",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6ST is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RAF1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RAF1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "SMAD2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SMAD3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SMAD4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "B2M",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B2M is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FBXO11",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXO11 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ARID1A",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "GNAS",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAS is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FAT4",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT4 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NCOR1",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOR1 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NCOR2",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOR2 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "BCL9L",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL9L is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MSH6",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH6 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "IL6ST",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6ST is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "RNF43",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF43 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KMT2D",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "BAX",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAX is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TP53",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ACVR2A",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACVR2A is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TGFBR2",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBR2 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MTOR",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TENT5C",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TENT5C is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SMAD4",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD4 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "POLE",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SOX2",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX2 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "BCORL1",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCORL1 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "AMER1",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMER1 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "APC",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "BCOR",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCOR is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NFKB2",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "EP300",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EP300 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FLCN",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLCN is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MAF",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAF is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FBXW7",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXW7 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MYOD1",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYOD1 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SMAD2",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD2 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FANCC",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCC is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SMAD3",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD3 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ATM",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "RECQL4",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RECQL4 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CIC",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIC is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "AR",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDX2",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDX2 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MLH1",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLH1 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "P2RY8",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RY8 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTPRC",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TET1",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET1 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FOXP1",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP1 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NUP98",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUP98 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "REL",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REL is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "POU5F1",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU5F1 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RAF1",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAF1 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BAP1",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAP1 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RPL10",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL10 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TBX3",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX3 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "POU2AF1",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU2AF1 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CREB1",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREB1 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MYC",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NRG1",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRG1 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SETD2",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD2 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MDM4",
+      "target": "cecum adenocarcinoma (CECUM_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM4 is associated with cecum adenocarcinoma (CECUM_ADENOCARCINOMA). Open Targets association score 0.28"
+    }
+  ]
+}

@@ -13,22 +13,6 @@
       "references": []
     },
     {
-      "id": "coagulation",
-      "name": "Coagulation Cascade",
-      "description": "Plasma coagulation factors and fibrinolysis; a hub for cardiovascular and thrombotic disease.",
-      "key_components": [
-        "C9orf72",
-        "MEF2C",
-        "NF2"
-      ],
-      "therapeutic_targets": [
-        "C9orf72",
-        "MEF2C",
-        "NF2"
-      ],
-      "references": []
-    },
-    {
       "id": "dna-repair",
       "name": "DNA Repair",
       "description": "Homologous recombination, mismatch repair, and base excision pathways preserving genome integrity.",
@@ -47,14 +31,26 @@
       "references": []
     },
     {
-      "id": "hedgehog",
-      "name": "Hedgehog Signaling",
-      "description": "Hedgehog morphogen signaling governing embryonic patterning and stem cell maintenance.",
+      "id": "il4-il13",
+      "name": "IL-4 / IL-13 (Th2) Pathway",
+      "description": "Type 2 cytokine signaling driving allergic and eosinophilic inflammation.",
       "key_components": [
-        "PTCH1"
+        "STAT6"
       ],
       "therapeutic_targets": [
-        "PTCH1"
+        "STAT6"
+      ],
+      "references": []
+    },
+    {
+      "id": "jak-stat",
+      "name": "JAK-STAT Signaling",
+      "description": "Cytokine receptor signaling through JAK kinases and STAT transcription factors; a hub for inflammatory and autoimmune disease pathways.",
+      "key_components": [
+        "STAT6"
+      ],
+      "therapeutic_targets": [
+        "STAT6"
       ],
       "references": []
     },
@@ -79,10 +75,12 @@
       "name": "NF-κB Pathway",
       "description": "Canonical and non-canonical NF-κB activation driving pro-inflammatory gene expression.",
       "key_components": [
-        "NFATC2"
+        "NFATC2",
+        "TNFAIP3"
       ],
       "therapeutic_targets": [
-        "NFATC2"
+        "NFATC2",
+        "TNFAIP3"
       ],
       "references": []
     },
@@ -97,6 +95,18 @@
       "therapeutic_targets": [
         "JAGN1",
         "NOTCH1"
+      ],
+      "references": []
+    },
+    {
+      "id": "pi3k-akt-mtor",
+      "name": "PI3K / AKT / mTOR Signaling",
+      "description": "Growth and survival signaling through PI3K-AKT-mTOR; a major oncology and immunology target hub.",
+      "key_components": [
+        "TSC1"
+      ],
+      "therapeutic_targets": [
+        "TSC1"
       ],
       "references": []
     },
@@ -133,6 +143,46 @@
       ],
       "therapeutic_targets": [
         "MYD88"
+      ],
+      "references": []
+    },
+    {
+      "id": "tnf-signaling",
+      "name": "TNF Signaling",
+      "description": "Tumor necrosis factor receptor superfamily signaling; central to many autoimmune and inflammatory diseases.",
+      "key_components": [
+        "TNFAIP3"
+      ],
+      "therapeutic_targets": [
+        "TNFAIP3"
+      ],
+      "references": []
+    },
+    {
+      "id": "coagulation",
+      "name": "Coagulation Cascade",
+      "description": "Plasma coagulation factors and fibrinolysis; a hub for cardiovascular and thrombotic disease.",
+      "key_components": [
+        "C9orf72",
+        "MEF2C",
+        "NF2"
+      ],
+      "therapeutic_targets": [
+        "C9orf72",
+        "MEF2C",
+        "NF2"
+      ],
+      "references": []
+    },
+    {
+      "id": "hedgehog",
+      "name": "Hedgehog Signaling",
+      "description": "Hedgehog morphogen signaling governing embryonic patterning and stem cell maintenance.",
+      "key_components": [
+        "PTCH1"
+      ],
+      "therapeutic_targets": [
+        "PTCH1"
       ],
       "references": []
     },

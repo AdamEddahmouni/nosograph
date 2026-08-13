@@ -1,0 +1,436 @@
+{
+  "relationships": [
+    {
+      "source": "CDK20",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK20 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "KIF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "KIF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53BP2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53BP2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ADAMTS6",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS6 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COLGALT1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COLGALT1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GAD1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GAD1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "MTHFD1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFD1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "SMAD7",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD7 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "LRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "NAT8",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NAT8 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "NAT8B",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NAT8B is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GRHL2",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRHL2 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CDK20",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK20 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "RPL38",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL38 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PAX3",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX3 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPECC1L-ADORA2A",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPECC1L-ADORA2A is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPECC1L",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPECC1L is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADAMTS6",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS6 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PGAP2",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGAP2 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "IFT25",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT25 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SHROOM3",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHROOM3 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TCTN2",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCTN2 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TRAPPC10",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAPPC10 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TP53BP2",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53BP2 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZIC3",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZIC3 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CARM1",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARM1 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SALL4",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SALL4 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "MYH10",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH10 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "B9D1",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B9D1 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRP6",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP6 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PCSK5",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK5 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFT57",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT57 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GRHL3",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRHL3 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TFAP2A",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFAP2A is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "KDM6A",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM6A is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "LUZP1",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LUZP1 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "KIF7",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF7 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRICKLE1",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRICKLE1 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PDS5A",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDS5A is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SUFU",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUFU is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FLNA",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLNA is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTK7",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTK7 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFT172",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT172 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "DNM2",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM2 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ALX1",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALX1 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TBC1D32",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D32 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TULP3",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TULP3 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "NOG",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOG is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GLI3",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CCDC160",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC160 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC7A7",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC7A7 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SMAD7",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD7 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "AMT",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMT is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GLDC",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLDC is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SHOX2",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHOX2 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "JARID2",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JARID2 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GAD1",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAD1 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FLRT3",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLRT3 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SALL1",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SALL1 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ESRP1",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESRP1 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MTHFD1",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFD1 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "QRICH1",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "QRICH1 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SKI",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SKI is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "OVOL2",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OVOL2 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOX4",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX4 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFT88",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT88 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "COLGALT1",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COLGALT1 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TLL1",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLL1 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "NAT8",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAT8 is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "NAT8B",
+      "target": "dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAT8B is associated with dysraphism-cleft lip/palate-limb reduction defects syndrome (DYSRAPHISM_CLEFT_LIP_PALATE_LIMB_REDUCTION_DEFECTS_SYNDROME). Open Targets association score 0.03"
+    }
+  ]
+}

@@ -1,0 +1,562 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL118",
+      "target": "PTGS2",
+      "type": "TARGETS",
+      "description": "CELECOXIB targets PTGS2."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BIRC5",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BIRC5 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CASP3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "MAP1LC3A",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP1LC3A is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "ARHGEF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ARHGEF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK14",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK14 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD83",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD83 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR2",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR2 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "STAT3",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "NFKB1",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTEN",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TP53",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "EGFR",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "BIRC5",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIRC5 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "BZW2",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BZW2 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCNT2",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCNT2 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CASP3",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP3 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ASCC1",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASCC1 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ARHGEF7",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGEF7 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD40",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSDMB",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKT1",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TMC8",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMC8 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL2",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MKI67",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AIM2",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIM2 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1B",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZNRD2",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNRD2 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DCTN6",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCTN6 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSMD9",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMD9 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "OGFOD1",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OGFOD1 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TMED7",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMED7 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PAK2",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAK2 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFI27",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFI27 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIN1",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIN1 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCND1",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TLR4",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD83",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD83 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD1A",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD1A is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPK14",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK14 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSNK2A2",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSNK2A2 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MT-CO2",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO2 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAP1LC3A",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP1LC3A is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RBP1",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBP1 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEBPB",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPB is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NGFR",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NGFR is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "VEGFA",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD4",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL8",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL6",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "EGF",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGF is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PCNA",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNA is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FOXM1",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXM1 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NOS2",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGFB1",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYRIB",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYRIB is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "WNK2",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNK2 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NSG1",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSG1 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TCEAL1",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCEAL1 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMP9",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMP2",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CKAP4",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CKAP4 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP63",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TLR2",
+      "target": "larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR2 is associated with larynx squamous papilloma (LARYNX_SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    }
+  ]
+}

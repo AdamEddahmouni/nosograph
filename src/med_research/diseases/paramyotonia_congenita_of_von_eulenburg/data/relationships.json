@@ -1,0 +1,490 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL17",
+      "target": "CA1",
+      "type": "TARGETS",
+      "description": "DICHLORPHENAMIDE targets CA1."
+    },
+    {
+      "source": "CHEMBL17",
+      "target": "CA12",
+      "type": "TARGETS",
+      "description": "DICHLORPHENAMIDE targets CA12."
+    },
+    {
+      "source": "CHEMBL1404",
+      "target": "SCN4A",
+      "type": "TARGETS",
+      "description": "RANOLAZINE targets SCN4A."
+    },
+    {
+      "source": "CHEMBL17",
+      "target": "CA4",
+      "type": "TARGETS",
+      "description": "DICHLORPHENAMIDE targets CA4."
+    },
+    {
+      "source": "CHEMBL1404",
+      "target": "SCN5A",
+      "type": "TARGETS",
+      "description": "RANOLAZINE targets SCN5A."
+    },
+    {
+      "source": "CHEMBL17",
+      "target": "CA2",
+      "type": "TARGETS",
+      "description": "DICHLORPHENAMIDE targets CA2."
+    },
+    {
+      "source": "BAX",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BAX is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "SCN5A",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "SCN5A is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDK4",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK4 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53BP1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53BP1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL19A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL19A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "PGF",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "PGF is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "SCN4A",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN4A is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.84"
+    },
+    {
+      "source": "CA2",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA2 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.26"
+    },
+    {
+      "source": "CA4",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA4 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.26"
+    },
+    {
+      "source": "CA1",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA1 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.26"
+    },
+    {
+      "source": "CA12",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA12 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.26"
+    },
+    {
+      "source": "RANBP2",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RANBP2 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.12"
+    },
+    {
+      "source": "DMD",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMD is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.06"
+    },
+    {
+      "source": "CLCN1",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCN1 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.06"
+    },
+    {
+      "source": "LIMCH1",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIMCH1 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.06"
+    },
+    {
+      "source": "TNNT1",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNT1 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.06"
+    },
+    {
+      "source": "MYBPC2",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYBPC2 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.06"
+    },
+    {
+      "source": "MBNL2",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBNL2 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.05"
+    },
+    {
+      "source": "KBTBD13",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KBTBD13 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.05"
+    },
+    {
+      "source": "TARDBP",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TARDBP is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.05"
+    },
+    {
+      "source": "STRIT1",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STRIT1 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYBPC3",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYBPC3 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.05"
+    },
+    {
+      "source": "CASQ1",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASQ1 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.05"
+    },
+    {
+      "source": "ERBB2",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.05"
+    },
+    {
+      "source": "RXRG",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RXRG is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYLK",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYLK is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.05"
+    },
+    {
+      "source": "ATP2A3",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP2A3 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.05"
+    },
+    {
+      "source": "HMOX2",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMOX2 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.05"
+    },
+    {
+      "source": "SCN8A",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN8A is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.05"
+    },
+    {
+      "source": "ATP2A1",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP2A1 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL19A1",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL19A1 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.04"
+    },
+    {
+      "source": "RYR1",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYR1 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.04"
+    },
+    {
+      "source": "SCN5A",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN5A is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.04"
+    },
+    {
+      "source": "IRAG1",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRAG1 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKG1",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKG1 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.04"
+    },
+    {
+      "source": "OLR1",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OLR1 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.03"
+    },
+    {
+      "source": "NEBL",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEBL is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.03"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.03"
+    },
+    {
+      "source": "SRL",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRL is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.03"
+    },
+    {
+      "source": "PKN1",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKN1 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPR2",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPR2 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.03"
+    },
+    {
+      "source": "DUSP8",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DUSP8 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.03"
+    },
+    {
+      "source": "SGCG",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCG is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.03"
+    },
+    {
+      "source": "PCNA",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNA is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.02"
+    },
+    {
+      "source": "FASLG",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.02"
+    },
+    {
+      "source": "EGFR",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.01"
+    },
+    {
+      "source": "LGALS3",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPTB",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTB is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRT19",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT19 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.01"
+    },
+    {
+      "source": "BAX",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAX is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.01"
+    },
+    {
+      "source": "BRAF",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC1",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC1 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53BP1",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53BP1 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.01"
+    },
+    {
+      "source": "PGF",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGF is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCNL2",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCNL2 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCND1",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.01"
+    },
+    {
+      "source": "MKI67",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL2",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.01"
+    },
+    {
+      "source": "NCAM1",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCAM1 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.00"
+    },
+    {
+      "source": "SCN9A",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN9A is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDK4",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK4 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.00"
+    },
+    {
+      "source": "CKAP4",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CKAP4 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP63",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.00"
+    },
+    {
+      "source": "MIB1",
+      "target": "paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIB1 is associated with paramyotonia congenita of Von Eulenburg (PARAMYOTONIA_CONGENITA_OF_VON_EULENBURG). Open Targets association score 0.00"
+    }
+  ]
+}

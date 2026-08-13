@@ -26,6 +26,7 @@ GWAS_SEARCH_TERMS = ["Aortic stenosis", "Aortic"]
 # ── CAR-T Scoring Tables (used by car_t_predictor/predictor.py) ──────────
 CAR_T_SCORES = {
     "Uncategorized": {
+        "ABCC3": 4.0,
         "ACTR2": 4.0,
         "ADAM10": 4.0,
         "ADAMTSL4": 4.0,
@@ -171,11 +172,11 @@ SCREENING_PROFILE = {
         "coagulation",
         "hormone",
         "lipid",
-        "mapk",
         "metabolism",
         "mtor",
         "notch",
         "pi3k",
+        "remodeling",
     ],
     "mechanism_keywords": [
         "angiotensin",
@@ -183,11 +184,11 @@ SCREENING_PROFILE = {
         "coagulation",
         "hormone",
         "lipid",
-        "mapk",
         "metabolism",
         "mtor",
         "notch",
         "pi3k",
+        "remodeling",
     ],
     "reference_drug_ids": [
         "CHEMBL5314348",

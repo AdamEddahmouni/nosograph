@@ -1,0 +1,526 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1743058",
+      "target": "APP",
+      "type": "TARGETS",
+      "description": "PONEZUMAB targets APP."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SERPINE1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SERPINE1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "PLOD2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLOD2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TIMP3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TIMP4",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP4 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD28",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD28 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD36",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD36 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "PRNP",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRNP is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.65"
+    },
+    {
+      "source": "APOE",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.56"
+    },
+    {
+      "source": "APP",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APP is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.36"
+    },
+    {
+      "source": "HDAC9",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC9 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.31"
+    },
+    {
+      "source": "CST3",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CST3 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.26"
+    },
+    {
+      "source": "APOC1",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC1 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.20"
+    },
+    {
+      "source": "AOPEP",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOPEP is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "MAPT",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPT is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "NECTIN2",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NECTIN2 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.10"
+    },
+    {
+      "source": "CLU",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLU is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.10"
+    },
+    {
+      "source": "AQP4",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP4 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.10"
+    },
+    {
+      "source": "MMP9",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.10"
+    },
+    {
+      "source": "NEFL",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEFL is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "TIMP3",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP3 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "ACTA1",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTA1 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "GFAP",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "TREM2",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREM2 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "PECAM1",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PECAM1 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "TGFBR2",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBR2 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "SAA1",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAA1 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "CHI3L1",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHI3L1 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "SMN1",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMN1 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "LIF",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIF is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "SAA2",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAA2 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "TIMP4",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP4 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL6",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "STAT3",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "SUCLA2",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUCLA2 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CRP",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CXCL8",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CP",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CP is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "PLAU",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAU is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "PLOD2",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLOD2 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNF",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD4",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "TGFB1",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "EGFR",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ALB",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "APOA1",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "TYR",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYR is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PIMREG",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIMREG is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD28",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD28 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "FCGR2A",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2A is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD36",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD36 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRAP1",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRAP1 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ACE",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CSF2",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "APOD",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOD is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPP1",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPP1 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "MSI1",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSI1 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADGRA2",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADGRA2 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD8A",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SERPINE1",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINE1 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "USP18",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP18 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GRIK1",
+      "target": "cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIK1 is associated with cerebral amyloid angiopathy (CEREBRAL_AMYLOID_ANGIOPATHY). Open Targets association score 0.04"
+    }
+  ]
+}

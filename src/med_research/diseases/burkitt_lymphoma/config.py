@@ -53,6 +53,7 @@ CAR_T_SCORES = {
         "FOXO3": 4.0,
         "FOXP1": 4.0,
         "HLA-A": 4.0,
+        "HMGA2": 4.0,
         "ID3": 4.0,
         "JAK2": 4.0,
         "KDM6A": 4.0,

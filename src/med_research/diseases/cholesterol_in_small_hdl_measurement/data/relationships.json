@@ -1,0 +1,478 @@
+{
+  "relationships": [
+    {
+      "source": "CCND2",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND2 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ARHGEF28",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ARHGEF28 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SBF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SBF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TM6SF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TM6SF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATRAID",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRAID is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF4A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF4A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "ITGA1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL3 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CETP is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "MAPKAPK5",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPKAPK5 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CD300LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD300LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ITGA1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFSF13",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "GSTM1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GSTM4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "LCAT",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCAT is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.63"
+    },
+    {
+      "source": "APOB",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.59"
+    },
+    {
+      "source": "ABCA1",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.57"
+    },
+    {
+      "source": "ASGR1",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASGR1 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.55"
+    },
+    {
+      "source": "LIPC",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.55"
+    },
+    {
+      "source": "APOA1",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "LIPG",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPG is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL3 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "LPL",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "APOA2",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA2 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "CETP",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETP is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "CD300LG",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD300LG is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "HGFAC",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGFAC is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "PLTP",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLTP is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "CPOX",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPOX is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "APOC4",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC4 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "TNFSF13",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "GNMT",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNMT is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "SBF2",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SBF2 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "GCKR",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "ARHGEF28",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGEF28 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "MSL2",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSL2 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "MIF",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIF is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "APOE",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "HNF4A",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF4A is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "ASGR2",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASGR2 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "ADM",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADM is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "TM6SF2",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM6SF2 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "CTSB",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSB is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "CLEC10A",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC10A is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "DOK7",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOK7 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "PGS1",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGS1 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "CERS2",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CERS2 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "NEB",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEB is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "DLG4",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLG4 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "TRIB1",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIB1 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "GSTM4",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM4 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "DVL2",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DVL2 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "MINDY1",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MINDY1 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "SIK3",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIK3 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "ITGA1",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA1 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATRAID",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRAID is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAPKAPK5",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPKAPK5 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.27"
+    },
+    {
+      "source": "PCCB",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCCB is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.27"
+    },
+    {
+      "source": "UBE2L3",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBE2L3 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.26"
+    },
+    {
+      "source": "CHCHD10",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHCHD10 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.26"
+    },
+    {
+      "source": "PPM1G",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPM1G is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.26"
+    },
+    {
+      "source": "CCND2",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND2 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.25"
+    },
+    {
+      "source": "GSTM1",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM1 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.25"
+    },
+    {
+      "source": "UVRAG",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UVRAG is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.25"
+    },
+    {
+      "source": "PLA2G12A",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G12A is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.24"
+    },
+    {
+      "source": "PPP1R3B",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R3B is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.24"
+    },
+    {
+      "source": "DOCK7",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK7 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.24"
+    },
+    {
+      "source": "ANXA9",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANXA9 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.23"
+    },
+    {
+      "source": "RGS12",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RGS12 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.23"
+    },
+    {
+      "source": "NR2C2AP",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR2C2AP is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.23"
+    },
+    {
+      "source": "GOLPH3L",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOLPH3L is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.22"
+    },
+    {
+      "source": "RTN4RL1",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RTN4RL1 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.22"
+    },
+    {
+      "source": "PBX4",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBX4 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.22"
+    },
+    {
+      "source": "CLDN7",
+      "target": "cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN7 is associated with cholesterol in small HDL measurement  (CHOLESTEROL_IN_SMALL_HDL_MEASUREMENT). Open Targets association score 0.20"
+    }
+  ]
+}

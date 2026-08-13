@@ -1,0 +1,508 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL44657",
+      "target": "TOP2A",
+      "type": "TARGETS",
+      "description": "ETOPOSIDE targets TOP2A."
+    },
+    {
+      "source": "CHEMBL44657",
+      "target": "TOP2B",
+      "type": "TARGETS",
+      "description": "ETOPOSIDE targets TOP2B."
+    },
+    {
+      "source": "CHEMBL481",
+      "target": "TOP1",
+      "type": "TARGETS",
+      "description": "IRINOTECAN targets TOP1."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ACKR3",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ACKR3 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR6",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR6 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "TP53BP1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53BP1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "SLC2A1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "TOP1",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOP1 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.07"
+    },
+    {
+      "source": "TOP2B",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOP2B is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.07"
+    },
+    {
+      "source": "TOP2A",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOP2A is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.07"
+    },
+    {
+      "source": "MKI67",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.03"
+    },
+    {
+      "source": "SSTR2",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSTR2 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD44",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.02"
+    },
+    {
+      "source": "IFNG",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.02"
+    },
+    {
+      "source": "SYP",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYP is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.02"
+    },
+    {
+      "source": "RPL17",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.02"
+    },
+    {
+      "source": "VEGFA",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.02"
+    },
+    {
+      "source": "MBOAT4",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBOAT4 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHGA",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHGA is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTGS2",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFI27",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFI27 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC2A1",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A1 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSMD9",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMD9 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "TMED7",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMED7 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "PAK2",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAK2 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "DCTN6",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCTN6 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZNRD2",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNRD2 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "MGMT",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MGMT is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTOR",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "LAT",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAT is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC7A5",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC7A5 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD274",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "PGR",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDX2",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDX2 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "POMC",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "ENO2",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENO2 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "GHRL",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHRL is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGFR",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "MT-CO2",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO2 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPATA2",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNCA",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDCD1",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "TEK",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TEK is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "IMP3",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IMP3 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "LPAR2",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPAR2 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGF1R",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1R is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADRA2B",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2B is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "NKX2-2",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-2 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "CLU",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLU is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACKR3",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACKR3 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "H2AX",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H2AX is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "STAT3",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53BP1",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53BP1 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "HK2",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HK2 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "HK1",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HK1 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCR6",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR6 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPT",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "BRS3",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRS3 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "EDNRA",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRA is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "DCLK1",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCLK1 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "SSTR4",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSTR4 is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADRA1A",
+      "target": "digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA1A is associated with digestive system neuroendocrine tumor, grade 1/2 (DIGESTIVE_SYSTEM_NEUROENDOCRINE_TUMOR_GRADE_1_2). Open Targets association score 0.01"
+    }
+  ]
+}

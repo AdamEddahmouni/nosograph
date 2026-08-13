@@ -1,0 +1,544 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1358",
+      "target": "ESR1",
+      "type": "TARGETS",
+      "description": "FULVESTRANT targets ESR1."
+    },
+    {
+      "source": "CHEMBL189963",
+      "target": "CDK6",
+      "type": "TARGETS",
+      "description": "PALBOCICLIB targets CDK6."
+    },
+    {
+      "source": "CASP8",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP8 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDK6",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK6 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CHEK2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "CHEK2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH6",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH6 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "RAD51B",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "RAD51B is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFATC2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBIE",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIE is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "LATS2",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LATS2 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "GATA3",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ARID1A",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ESR1",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "CDK6",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK6 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "EGFR",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERBB2",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRCA2",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PLAG1",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAG1 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "STAT3",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "LATS2",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LATS2 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "AR",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR2",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRCA1",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PALB2",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PALB2 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NF1",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "HGF",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MET",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CHEK2",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHEK2 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTEN",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RAD51B",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD51B is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATM",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FOXA1",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXA1 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CCND1",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR1",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "WT1",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRIP1",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRIP1 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "AKT1",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PAX5",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX5 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MSH6",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH6 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FOXO1",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXO1 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MTOR",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CIC",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIC is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FAT1",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT1 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "GATA1",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA1 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CALR",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALR is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERCC3",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC3 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CLTC",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLTC is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CAMTA1",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMTA1 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NFKBIE",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIE is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FLT4",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RAD50",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD50 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTCH1",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SF3B1",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SF3B1 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CASP8",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP8 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NFATC2",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFATC2 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MED12",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MED12 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ZFHX3",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFHX3 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ETV6",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV6 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "STK11",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "APC",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NRG1",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRG1 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MRTFA",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRTFA is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "H3C2",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C2 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RUNX1",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FES",
+      "target": "female breast carcinoma (FEMALE_BREAST_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FES is associated with female breast carcinoma (FEMALE_BREAST_CARCINOMA). Open Targets association score 0.28"
+    }
+  ]
+}

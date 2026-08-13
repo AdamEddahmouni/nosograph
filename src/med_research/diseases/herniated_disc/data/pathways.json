@@ -1,6 +1,58 @@
 {
   "pathways": [
     {
+      "id": "cardiac-ion-channel",
+      "name": "Cardiac Ion Channel / Conduction",
+      "description": "Voltage-gated sodium, potassium, and calcium channels governing cardiac excitability.",
+      "key_components": [
+        "CACNA1A",
+        "CACNA1B",
+        "CACNA1C",
+        "CACNA1D",
+        "CACNA1E",
+        "CACNA1F",
+        "CACNA1G",
+        "CACNA1H",
+        "CACNA1I",
+        "CACNA1S",
+        "CACNA2D1",
+        "CACNA2D2",
+        "CACNA2D3",
+        "CACNA2D4",
+        "SCN5A"
+      ],
+      "therapeutic_targets": [
+        "CACNA1A",
+        "CACNA1B",
+        "CACNA1C",
+        "CACNA1D",
+        "CACNA1E",
+        "CACNA1F",
+        "CACNA1G",
+        "CACNA1H",
+        "CACNA1I",
+        "CACNA1S",
+        "CACNA2D1",
+        "CACNA2D2",
+        "CACNA2D3",
+        "CACNA2D4",
+        "SCN5A"
+      ],
+      "references": []
+    },
+    {
+      "id": "cell-cycle",
+      "name": "Cell Cycle Regulation",
+      "description": "Cyclin-CDK machinery controlling cell division; a backbone of oncology target discovery.",
+      "key_components": [
+        "ADRB1"
+      ],
+      "therapeutic_targets": [
+        "ADRB1"
+      ],
+      "references": []
+    },
+    {
       "id": "coagulation",
       "name": "Coagulation Cascade",
       "description": "Plasma coagulation factors and fibrinolysis; a hub for cardiovascular and thrombotic disease.",
@@ -109,46 +161,6 @@
       "therapeutic_targets": [
         "WNT7B",
         "WNT2"
-      ],
-      "references": []
-    },
-    {
-      "id": "cardiac-ion-channel",
-      "name": "Cardiac Ion Channel / Conduction",
-      "description": "Voltage-gated sodium, potassium, and calcium channels governing cardiac excitability.",
-      "key_components": [
-        "CACNA1A",
-        "CACNA1B",
-        "CACNA1C",
-        "CACNA1D",
-        "CACNA1E",
-        "CACNA1F",
-        "CACNA1G",
-        "CACNA1H",
-        "CACNA1I",
-        "CACNA1S",
-        "CACNA2D1",
-        "CACNA2D2",
-        "CACNA2D3",
-        "CACNA2D4",
-        "SCN5A"
-      ],
-      "therapeutic_targets": [
-        "CACNA1A",
-        "CACNA1B",
-        "CACNA1C",
-        "CACNA1D",
-        "CACNA1E",
-        "CACNA1F",
-        "CACNA1G",
-        "CACNA1H",
-        "CACNA1I",
-        "CACNA1S",
-        "CACNA2D1",
-        "CACNA2D2",
-        "CACNA2D3",
-        "CACNA2D4",
-        "SCN5A"
       ],
       "references": []
     }

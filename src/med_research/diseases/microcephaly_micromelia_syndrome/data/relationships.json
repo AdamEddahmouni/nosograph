@@ -1,0 +1,454 @@
+{
+  "relationships": [
+    {
+      "source": "FGF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL11A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL11A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLI2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "IHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "SMOC1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SMOC1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BMP5",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP5 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PTH1R",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTH1R is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "PTHLH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTHLH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "WNT5A",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT5A is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "DONSON",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DONSON is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.70"
+    },
+    {
+      "source": "COL2A1",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "NABP2",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NABP2 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ROR2",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROR2 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "GLI3",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SATB2",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SATB2 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CILK1",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CILK1 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGF18",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF18 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GLI2",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI2 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "EVC2",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EVC2 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PKDCC",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKDCC is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "BPNT2",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BPNT2 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGFR3",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGF9",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF9 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PITX1",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX1 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZEB1",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PHEX",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHEX is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGFR1",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RYK",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYK is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RSPO2",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO2 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCN2",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCN2 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IHH",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IHH is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "BMP5",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP5 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PDS5B",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDS5B is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "EVC",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EVC is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TMEM107",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM107 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RPL38",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL38 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "WDR19",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR19 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "WBP11",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WBP11 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFT172",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT172 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRRX1",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRRX1 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SMPD3",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMPD3 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOX9",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX9 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "WNT5A",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT5A is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "HOXD12",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD12 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GPC6",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPC6 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTHLH",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTHLH is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FLNB",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLNB is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "XYLT1",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XYLT1 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFITM5",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFITM5 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SC5D",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SC5D is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC10A7",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC10A7 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPR2",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPR2 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FGFR2",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTH1R",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTH1R is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFT140",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT140 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SFN",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFN is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOX11",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX11 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "POSTN",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POSTN is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "INPP5E",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INPP5E is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GATA3",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SMOC1",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMOC1 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TENT5A",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TENT5A is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ANO6",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANO6 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "EYA1",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EYA1 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FOXC1",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PGAP1",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGAP1 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRDM16",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM16 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "COL11A1",
+      "target": "microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL11A1 is associated with microcephaly-micromelia syndrome (MICROCEPHALY_MICROMELIA_SYNDROME). Open Targets association score 0.03"
+    }
+  ]
+}

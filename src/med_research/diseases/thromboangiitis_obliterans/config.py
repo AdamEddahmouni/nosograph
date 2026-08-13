@@ -84,6 +84,7 @@ CAR_T_SCORES = {
         "PLAAT3": 4.0,
         "PLXND1": 4.0,
         "PPARG": 4.0,
+        "PRKAA1": 4.0,
         "PRKAA2": 4.0,
         "PRKAB1": 4.0,
         "PRKCG": 4.0,

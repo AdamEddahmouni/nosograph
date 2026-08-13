@@ -1,0 +1,60 @@
+{
+  "pathways": [
+    {
+      "id": "cell-cycle",
+      "name": "Cell Cycle Regulation",
+      "description": "Cyclin-CDK machinery controlling cell division; a backbone of oncology target discovery.",
+      "key_components": [
+        "CDK2",
+        "CDK4",
+        "CDK6",
+        "CDKN2A"
+      ],
+      "therapeutic_targets": [
+        "CDK2",
+        "CDK4",
+        "CDK6",
+        "CDKN2A"
+      ],
+      "references": []
+    },
+    {
+      "id": "dna-repair",
+      "name": "DNA Repair",
+      "description": "Homologous recombination, mismatch repair, and base excision pathways preserving genome integrity.",
+      "key_components": [
+        "CHEK1"
+      ],
+      "therapeutic_targets": [
+        "CHEK1"
+      ],
+      "references": []
+    },
+    {
+      "id": "immune-checkpoint",
+      "name": "Immune Checkpoint Signaling",
+      "description": "Co-inhibitory receptor signaling (PD-1/CTLA-4/TIGIT/LAG-3) that restrains T cell responses.",
+      "key_components": [
+        "CD274",
+        "PDCD1"
+      ],
+      "therapeutic_targets": [
+        "CD274",
+        "PDCD1"
+      ],
+      "references": []
+    },
+    {
+      "id": "mapk-erk",
+      "name": "MAPK / ERK Signaling",
+      "description": "RAS-RAF-MEK-ERK cascade coupling growth factor receptors to proliferation and differentiation.",
+      "key_components": [
+        "EGFR"
+      ],
+      "therapeutic_targets": [
+        "EGFR"
+      ],
+      "references": []
+    }
+  ]
+}

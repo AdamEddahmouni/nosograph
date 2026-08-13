@@ -1,0 +1,478 @@
+{
+  "relationships": [
+    {
+      "source": "SQSTM1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SQSTM1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "KCNH6",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNH6 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "C11orf86",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C11orf86 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "G6PC1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "G6PC1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GCK",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCK is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF4A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF4A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INSR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INSR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PPARGC1A",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARGC1A is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "AKT2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "HTR2C",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTR2C is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "THRA",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THRA is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "THRA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "THRA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.45"
+    },
+    {
+      "source": "HNF4A",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF4A is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.34"
+    },
+    {
+      "source": "LEPR",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "LEP",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "ALMS1",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALMS1 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "MC4R",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MC4R is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "TCF7L2",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF7L2 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NOS3",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NPY1R",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPY1R is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CPE",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPE is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "THRA",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THRA is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "POMC",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "IRS2",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRS2 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRLH",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRLH is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "AGL",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGL is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SIM1",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIM1 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZEB1",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "INS",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "BRS3",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRS3 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PPARG",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CES1",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CES1 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "GCGR",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCGR is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "HTR2C",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTR2C is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "RAPGEF3",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAPGEF3 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKAR2B",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAR2B is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PPARA",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARA is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "KMT2B",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2B is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "INSR",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INSR is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SNAP25",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNAP25 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "KCNH6",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNH6 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CEBPA",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPA is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "C3",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "KBTBD2",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KBTBD2 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "G6PC1",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "G6PC1 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "AKT2",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT2 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "MC2R",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MC2R is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "LCN2",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN2 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "LDLR",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ANK2",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK2 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "DNAJB9",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAJB9 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "NMU",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NMU is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GCK",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCK is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PDZD2",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDZD2 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ARNT2",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARNT2 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PPARGC1A",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARGC1A is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCDC80",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC80 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CREBBP",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "C11orf86",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C11orf86 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SQSTM1",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SQSTM1 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PCK1",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCK1 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GNAS",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAS is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SORBS2",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORBS2 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADIPOR2",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOR2 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ITPRID2",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITPRID2 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ENHO",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENHO is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GHR",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHR is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "NUCKS1",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUCKS1 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ALKBH7",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALKBH7 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKAG2",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAG2 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GPR61",
+      "target": "hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR61 is associated with hyperinsulinism due to HNF1A deficiency (HYPERINSULINISM_DUE_TO_HNF1A_DEFICIENCY). Open Targets association score 0.04"
+    }
+  ]
+}

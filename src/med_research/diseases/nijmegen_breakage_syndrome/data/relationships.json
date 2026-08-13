@@ -1,0 +1,508 @@
+{
+  "relationships": [
+    {
+      "source": "BIRC5",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BIRC5 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "AURKA",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "AURKA is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CXCL12",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL12 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR4",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR4 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATR",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATR is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PARP1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "PARP1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GCK",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCK is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF4A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF4A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INSM1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INSM1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GLI1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR3",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR3 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "NBN",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBN is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.82"
+    },
+    {
+      "source": "GCK",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCK is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.27"
+    },
+    {
+      "source": "TP53",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.12"
+    },
+    {
+      "source": "MYCN",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYCN is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.12"
+    },
+    {
+      "source": "ALK",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.12"
+    },
+    {
+      "source": "MYC",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.11"
+    },
+    {
+      "source": "CD276",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD276 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.11"
+    },
+    {
+      "source": "NTRK1",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.11"
+    },
+    {
+      "source": "FOXO3",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXO3 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.11"
+    },
+    {
+      "source": "CD274",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "PARP1",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARP1 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "TNF",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "EZH2",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EZH2 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "CXCR4",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR4 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "SOX11",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX11 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "NFKB1",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "YAP1",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YAP1 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "VEGFA",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "RPL17",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "NCL",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCL is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "IL6",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "IGF1R",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1R is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "KIT",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "RET",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "ATM",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "CD8A",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "BIRC5",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIRC5 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "EHMT2",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EHMT2 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "MIF",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIF is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "YY1AP1",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YY1AP1 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "ADRB3",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB3 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "INSM1",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INSM1 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "CHD5",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD5 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "DLX6",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLX6 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "TF",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "MZF1",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MZF1 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "NEO1",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEO1 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "TGFB1",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "BRD4",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRD4 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "AKT1",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "HNF4A",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF4A is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "USP7",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP7 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "GPC2",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPC2 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "SRCIN1",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRCIN1 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "PAG1",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAG1 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "CHL1",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHL1 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "GLI1",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI1 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "ADRB2",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB2 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "ATR",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATR is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "TLR3",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR3 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "NDRG1",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDRG1 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "MTOR",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "AURKA",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AURKA is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "CD55",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD55 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "EIF4EBP1",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF4EBP1 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "FANCA",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "EWSR1",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EWSR1 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "ASCL1",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASCL1 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "CXCL12",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL12 is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "KDM1A",
+      "target": "Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM1A is associated with Nijmegen breakage syndrome (NIJMEGEN_BREAKAGE_SYNDROME). Open Targets association score 0.09"
+    }
+  ]
+}

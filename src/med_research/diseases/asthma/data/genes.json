@@ -1,30 +1,34 @@
 {
-  "disease_id": "asthma",
-  "disease_name": "Chronic Airway Inflammation (Asthma)",
   "genes": [
     {
-      "id": "IL5",
-      "symbol": "IL5",
-      "name": "Interleukin 5",
-      "category": "Type 2 Immune Signaling",
-      "association_score": 0.94,
-      "odds_ratio": 2.2,
-      "disease_evidence": "Primary cytokine regulating eosinophil differentiation and survival.",
-      "gwas_pvalue": 1e-65,
-      "chromosome": "unknown",
-      "function": "unknown"
+      "id": "FLG",
+      "name": "filaggrin",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.73",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
     },
     {
-      "id": "TSLP",
-      "symbol": "TSLP",
-      "name": "Thymic Stromal Lymphopoietin",
-      "category": "Epidermal Barrier Function",
-      "association_score": 0.92,
-      "odds_ratio": 2.0,
-      "disease_evidence": "Upstream epithelial alarmin initiating airway Type 2 cascade.",
-      "gwas_pvalue": 1e-55,
-      "chromosome": "unknown",
-      "function": "unknown"
+      "id": "ADORA1",
+      "name": "adenosine A1 receptor",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.73",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "IL33",
+      "name": "interleukin 33",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.71",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
     },
     {
       "id": "IL4R",
@@ -33,10 +37,574 @@
       "category": "Type 2 Immune Signaling",
       "association_score": 0.9,
       "odds_ratio": 1.9,
-      "disease_evidence": "Receptor subunit mediating IgE class switching and mucus hypersecretion.",
+      "disease_evidence": "Receptor subunit mediating IgE class switching and mucus hypersecretion. | Open Targets association score 0.68",
       "gwas_pvalue": 1e-50,
       "chromosome": "unknown",
       "function": "unknown"
+    },
+    {
+      "id": "IL13",
+      "name": "interleukin 13",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.68",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "TSLP",
+      "symbol": "TSLP",
+      "name": "Thymic Stromal Lymphopoietin",
+      "category": "Epidermal Barrier Function",
+      "association_score": 0.92,
+      "odds_ratio": 2.0,
+      "disease_evidence": "Upstream epithelial alarmin initiating airway Type 2 cascade. | Open Targets association score 0.67",
+      "gwas_pvalue": 1e-55,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "IL5",
+      "symbol": "IL5",
+      "name": "Interleukin 5",
+      "category": "Type 2 Immune Signaling",
+      "association_score": 0.94,
+      "odds_ratio": 2.2,
+      "disease_evidence": "Primary cytokine regulating eosinophil differentiation and survival. | Open Targets association score 0.62",
+      "gwas_pvalue": 1e-65,
+      "chromosome": "unknown",
+      "function": "unknown"
+    },
+    {
+      "id": "ADRB2",
+      "name": "adrenoceptor beta 2",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.61",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "NR3C1",
+      "name": "nuclear receptor subfamily 3 group C member 1",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.61",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "CYSLTR1",
+      "name": "cysteinyl leukotriene receptor 1",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.61",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "CHRM3",
+      "name": "cholinergic receptor muscarinic 3",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.60",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "PDE4B",
+      "name": "phosphodiesterase 4B",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.60",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "PDE4A",
+      "name": "phosphodiesterase 4A",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.60",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "PDE4D",
+      "name": "phosphodiesterase 4D",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.60",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "PDE4C",
+      "name": "phosphodiesterase 4C",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.60",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "PDE3B",
+      "name": "phosphodiesterase 3B",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.60",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "PDE3A",
+      "name": "phosphodiesterase 3A",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.60",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "ADORA3",
+      "name": "adenosine A3 receptor",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.60",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "ADORA2A",
+      "name": "adenosine A2a receptor",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.60",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "ADORA2B",
+      "name": "adenosine A2b receptor",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.60",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "ADRA1A",
+      "name": "adrenoceptor alpha 1A",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.60",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "ADRA1D",
+      "name": "adrenoceptor alpha 1D",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.60",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "ADRA2B",
+      "name": "adrenoceptor alpha 2B",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.60",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "ADRB1",
+      "name": "adrenoceptor beta 1",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.60",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "ADRA1B",
+      "name": "adrenoceptor alpha 1B",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.60",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "ADRB3",
+      "name": "adrenoceptor beta 3",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.60",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "ADRA2A",
+      "name": "adrenoceptor alpha 2A",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.60",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "ADRA2C",
+      "name": "adrenoceptor alpha 2C",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.60",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "IL1RL1",
+      "name": "interleukin 1 receptor like 1",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.59",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "IL5RA",
+      "name": "interleukin 5 receptor subunit alpha",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.59",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "TLR1",
+      "name": "toll like receptor 1",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.58",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "LPP",
+      "name": "LIM domain containing preferred translocation partner in lipoma",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.58",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "GATA3",
+      "name": "GATA binding protein 3",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.57",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "TNFRSF8",
+      "name": "TNF receptor superfamily member 8",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.57",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "D2HGDH",
+      "name": "D-2-hydroxyglutarate dehydrogenase",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.57",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "RUNX1",
+      "name": "RUNX family transcription factor 1",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.57",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "OTULINL",
+      "name": "OTU deubiquitinase with linear linkage specificity like",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.57",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "BACH2",
+      "name": "BTB domain and CNC homolog 2",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.56",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "IL7R",
+      "name": "interleukin 7 receptor",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.56",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "CARD11",
+      "name": "caspase recruitment domain family member 11",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.56",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "IL2RA",
+      "name": "interleukin 2 receptor subunit alpha",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.56",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "ALOX5",
+      "name": "arachidonate 5-lipoxygenase",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.56",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "CHI3L1",
+      "name": "chitinase 3 like 1",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.56",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "NPNT",
+      "name": "nephronectin",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.55",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "GLB1",
+      "name": "galactosidase beta 1",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.55",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "TNFSF4",
+      "name": "TNF superfamily member 4",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.55",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "ID2",
+      "name": "inhibitor of DNA binding 2",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.55",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "IL6",
+      "name": "interleukin 6",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.54",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "SUOX",
+      "name": "sulfite oxidase",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.54",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "PRKCQ",
+      "name": "protein kinase C theta",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.54",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "IRF1",
+      "name": "interferon regulatory factor 1",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.54",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "PTPRC",
+      "name": "protein tyrosine phosphatase receptor type C",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.53",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "APOE",
+      "name": "apolipoprotein E",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.53",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "IL21R",
+      "name": "interleukin 21 receptor",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.53",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "SMAD3",
+      "name": "SMAD family member 3",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.52",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "IRAG1",
+      "name": "inositol 1,4,5-triphosphate receptor associated 1",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.52",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "STAT6",
+      "name": "signal transducer and activator of transcription 6",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.52",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "WDR36",
+      "name": "WD repeat domain 36",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.52",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "RAD51B",
+      "name": "RAD51 paralog B",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.51",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "RORA",
+      "name": "RAR related orphan receptor A",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.51",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
     },
     {
       "id": "ADAM33",

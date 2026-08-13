@@ -1,0 +1,40 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201825",
+      "target": "VEGFA",
+      "type": "TARGETS",
+      "description": "RANIBIZUMAB targets VEGFA."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "ABCC6",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC6 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "angioid streaks (ANGIOID_STREAKS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with angioid streaks (ANGIOID_STREAKS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ABCC6",
+      "target": "angioid streaks (ANGIOID_STREAKS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC6 is associated with angioid streaks (ANGIOID_STREAKS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDA",
+      "target": "angioid streaks (ANGIOID_STREAKS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDA is associated with angioid streaks (ANGIOID_STREAKS). Open Targets association score 0.00"
+    }
+  ]
+}

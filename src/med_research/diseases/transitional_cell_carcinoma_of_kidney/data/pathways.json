@@ -1,0 +1,86 @@
+{
+  "pathways": [
+    {
+      "id": "dna-repair",
+      "name": "DNA Repair",
+      "description": "Homologous recombination, mismatch repair, and base excision pathways preserving genome integrity.",
+      "key_components": [
+        "MSH6",
+        "TP53"
+      ],
+      "therapeutic_targets": [
+        "MSH6",
+        "TP53"
+      ],
+      "references": []
+    },
+    {
+      "id": "immune-checkpoint",
+      "name": "Immune Checkpoint Signaling",
+      "description": "Co-inhibitory receptor signaling (PD-1/CTLA-4/TIGIT/LAG-3) that restrains T cell responses.",
+      "key_components": [
+        "CD274",
+        "PDCD1"
+      ],
+      "therapeutic_targets": [
+        "CD274",
+        "PDCD1"
+      ],
+      "references": []
+    },
+    {
+      "id": "mapk-erk",
+      "name": "MAPK / ERK Signaling",
+      "description": "RAS-RAF-MEK-ERK cascade coupling growth factor receptors to proliferation and differentiation.",
+      "key_components": [
+        "BRAF",
+        "FGFR3",
+        "HRAS",
+        "KRAS"
+      ],
+      "therapeutic_targets": [
+        "BRAF",
+        "FGFR3",
+        "HRAS",
+        "KRAS"
+      ],
+      "references": []
+    },
+    {
+      "id": "pi3k-akt-mtor",
+      "name": "PI3K / AKT / mTOR Signaling",
+      "description": "Growth and survival signaling through PI3K-AKT-mTOR; a major oncology and immunology target hub.",
+      "key_components": [
+        "PIK3CA"
+      ],
+      "therapeutic_targets": [
+        "PIK3CA"
+      ],
+      "references": []
+    },
+    {
+      "id": "thyroid-hormone",
+      "name": "Thyroid Hormone Signaling",
+      "description": "Thyroid hormone synthesis, transport, and nuclear receptor signaling.",
+      "key_components": [
+        "PTGER3"
+      ],
+      "therapeutic_targets": [
+        "PTGER3"
+      ],
+      "references": []
+    },
+    {
+      "id": "wnt-signaling",
+      "name": "Wnt Signaling",
+      "description": "Canonical Wnt/β-catenin signaling controlling cell fate, proliferation, and tissue regeneration.",
+      "key_components": [
+        "CTNNB1"
+      ],
+      "therapeutic_targets": [
+        "CTNNB1"
+      ],
+      "references": []
+    }
+  ]
+}

@@ -103,6 +103,7 @@ CAR_T_SCORES = {
         "NDC1": 4.0,
         "NPPA": 4.0,
         "OGA": 4.0,
+        "PKD2L1": 4.0,
         "PKP3": 4.0,
         "PPARGC1A": 4.0,
         "PPIG": 4.0,

@@ -1,0 +1,448 @@
+{
+  "relationships": [
+    {
+      "source": "WNT1",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT1 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "CACNA1A",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1A is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CACNA1G",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1G is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CACNA2D2",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA2D2 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "KCNA1",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNA1 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CCR10",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR10 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCR10",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR10 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ADAM22",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM22 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "RELN",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "RELN is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "SIL1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "SIL1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "RELN",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELN is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AGTPBP1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGTPBP1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "RORA",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "RORA is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "WNT1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "POLR3B",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLR3B is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.73"
+    },
+    {
+      "source": "CACNA1A",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1A is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.08"
+    },
+    {
+      "source": "TUBB4A",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB4A is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.08"
+    },
+    {
+      "source": "GRID2",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRID2 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.07"
+    },
+    {
+      "source": "RELN",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELN is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.07"
+    },
+    {
+      "source": "UNC5C",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UNC5C is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.06"
+    },
+    {
+      "source": "TPP1",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPP1 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.06"
+    },
+    {
+      "source": "PLP1",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLP1 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.06"
+    },
+    {
+      "source": "RORA",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RORA is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.06"
+    },
+    {
+      "source": "ATP8A2",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP8A2 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.06"
+    },
+    {
+      "source": "QKI",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "QKI is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.06"
+    },
+    {
+      "source": "SIL1",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIL1 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.06"
+    },
+    {
+      "source": "SPTBN2",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTBN2 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.06"
+    },
+    {
+      "source": "CNTNAP1",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNTNAP1 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.06"
+    },
+    {
+      "source": "ZIC1",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZIC1 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.06"
+    },
+    {
+      "source": "CACNA1G",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1G is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRKCG",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCG is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.06"
+    },
+    {
+      "source": "PMP22",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMP22 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.06"
+    },
+    {
+      "source": "ZNF423",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF423 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.05"
+    },
+    {
+      "source": "CERS1",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CERS1 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.05"
+    },
+    {
+      "source": "GDF1",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF1 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRNP",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRNP is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.05"
+    },
+    {
+      "source": "PSAP",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSAP is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.05"
+    },
+    {
+      "source": "KCNJ6",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNJ6 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.05"
+    },
+    {
+      "source": "CACNA2D2",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA2D2 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYO5A",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO5A is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.05"
+    },
+    {
+      "source": "MBP",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBP is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.05"
+    },
+    {
+      "source": "TMEM176B",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM176B is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.05"
+    },
+    {
+      "source": "ANK3",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK3 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.05"
+    },
+    {
+      "source": "DAB1",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAB1 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.05"
+    },
+    {
+      "source": "SUN1",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUN1 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.05"
+    },
+    {
+      "source": "MPZ",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPZ is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.05"
+    },
+    {
+      "source": "NEUROD2",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEUROD2 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.05"
+    },
+    {
+      "source": "RREB1",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RREB1 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.04"
+    },
+    {
+      "source": "KIF14",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF14 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.04"
+    },
+    {
+      "source": "ARCN1",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARCN1 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.04"
+    },
+    {
+      "source": "CANX",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CANX is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.04"
+    },
+    {
+      "source": "WNT1",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT1 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.04"
+    },
+    {
+      "source": "CSTB",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSTB is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.04"
+    },
+    {
+      "source": "DNM1",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM1 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.04"
+    },
+    {
+      "source": "MYH10",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH10 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.04"
+    },
+    {
+      "source": "INPP4A",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INPP4A is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC12A6",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A6 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.04"
+    },
+    {
+      "source": "EN1",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EN1 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.04"
+    },
+    {
+      "source": "CHP1",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHP1 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLCB4",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCB4 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.04"
+    },
+    {
+      "source": "NEUROD4",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEUROD4 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.04"
+    },
+    {
+      "source": "STARD9",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STARD9 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZIC4",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZIC4 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRIM2",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM2 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.04"
+    },
+    {
+      "source": "MORC2",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MORC2 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAP1A",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP1A is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.04"
+    },
+    {
+      "source": "AGTPBP1",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGTPBP1 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.04"
+    },
+    {
+      "source": "KCNA1",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNA1 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.04"
+    },
+    {
+      "source": "ANKFY1",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKFY1 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.04"
+    },
+    {
+      "source": "CA8",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA8 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.04"
+    },
+    {
+      "source": "ATXN7",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATXN7 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC9A1",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC9A1 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCR10",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR10 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADAM22",
+      "target": "Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAM22 is associated with Charcot-Marie-Tooth disease, demyelinating, IIA 1I (CHARCOT_MARIE_TOOTH_DISEASE_DEMYELINATING_IIA_1I). Open Targets association score 0.04"
+    }
+  ]
+}

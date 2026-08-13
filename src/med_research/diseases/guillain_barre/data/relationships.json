@@ -212,6 +212,12 @@
     },
     {
       "source": "CHEMBL284348",
+      "target": "KCNA5",
+      "type": "TARGETS",
+      "description": "DALFAMPRIDINE targets KCNA5."
+    },
+    {
+      "source": "CHEMBL284348",
       "target": "KCNG1",
       "type": "TARGETS",
       "description": "DALFAMPRIDINE targets KCNG1."
@@ -305,6 +311,12 @@
       "target": "cardiac-ion-channel",
       "type": "PARTICIPATES_IN",
       "description": "KCNQ5 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "KCNA5",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNA5 is a component of the Cardiac Ion Channel / Conduction pathway."
     },
     {
       "source": "CXCL8",
@@ -595,16 +607,16 @@
       "description": "CHKA is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.08"
     },
     {
-      "source": "PRKAA1",
-      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PRKAA1 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.08"
-    },
-    {
       "source": "PRKAB1",
       "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
       "type": "ASSOCIATED_WITH",
       "description": "PRKAB1 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.08"
+    },
+    {
+      "source": "PRKAA1",
+      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA1 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.08"
     },
     {
       "source": "PRKAA2",
@@ -631,16 +643,16 @@
       "description": "FAS is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.08"
     },
     {
-      "source": "FANCA",
-      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "FANCA is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
-    },
-    {
       "source": "FXN",
       "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
       "type": "ASSOCIATED_WITH",
       "description": "FXN is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
+    },
+    {
+      "source": "FANCA",
+      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
     },
     {
       "source": "IL36G",
@@ -691,6 +703,108 @@
       "description": "ICAM1 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
     },
     {
+      "source": "KCNA5",
+      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNA5 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
+    },
+    {
+      "source": "KCNC1",
+      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNC1 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
+    },
+    {
+      "source": "KCNH1",
+      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNH1 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
+    },
+    {
+      "source": "RNF123",
+      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF123 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
+    },
+    {
+      "source": "KCNS2",
+      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNS2 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
+    },
+    {
+      "source": "KCNA3",
+      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNA3 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
+    },
+    {
+      "source": "KCNS3",
+      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNS3 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
+    },
+    {
+      "source": "KCND3",
+      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCND3 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
+    },
+    {
+      "source": "KCNF1",
+      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNF1 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
+    },
+    {
+      "source": "KCNQ5",
+      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNQ5 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
+    },
+    {
+      "source": "KCNB2",
+      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNB2 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
+    },
+    {
+      "source": "KCND2",
+      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCND2 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
+    },
+    {
+      "source": "KCNH3",
+      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNH3 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
+    },
+    {
+      "source": "KCNH4",
+      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNH4 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
+    },
+    {
+      "source": "KCNA4",
+      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNA4 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
+    },
+    {
+      "source": "KCNG3",
+      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNG3 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
+    },
+    {
+      "source": "HMGA2",
+      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGA2 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
+    },
+    {
       "source": "KCNH5",
       "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
       "type": "ASSOCIATED_WITH",
@@ -721,12 +835,6 @@
       "description": "KCNG2 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
     },
     {
-      "source": "KCNS2",
-      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "KCNS2 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
-    },
-    {
       "source": "KCND1",
       "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
       "type": "ASSOCIATED_WITH",
@@ -737,12 +845,6 @@
       "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
       "type": "ASSOCIATED_WITH",
       "description": "KCNQ3 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
-    },
-    {
-      "source": "KCND3",
-      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "KCND3 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
     },
     {
       "source": "KCNG4",
@@ -763,24 +865,6 @@
       "description": "KCNV1 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
     },
     {
-      "source": "KCNA3",
-      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "KCNA3 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
-    },
-    {
-      "source": "KCNH3",
-      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "KCNH3 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
-    },
-    {
-      "source": "RNF123",
-      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "RNF123 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
-    },
-    {
       "source": "KCNA2",
       "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
       "type": "ASSOCIATED_WITH",
@@ -791,12 +875,6 @@
       "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
       "type": "ASSOCIATED_WITH",
       "description": "KCNC3 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
-    },
-    {
-      "source": "KCND2",
-      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "KCND2 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
     },
     {
       "source": "PMP22",
@@ -877,34 +955,10 @@
       "description": "CD14 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.08"
     },
     {
-      "source": "KCNC1",
-      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "KCNC1 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
-    },
-    {
-      "source": "KCNA4",
-      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "KCNA4 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
-    },
-    {
-      "source": "KCNH1",
-      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "KCNH1 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
-    },
-    {
       "source": "KCNH6",
       "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
       "type": "ASSOCIATED_WITH",
       "description": "KCNH6 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
-    },
-    {
-      "source": "KCNH4",
-      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "KCNH4 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
     },
     {
       "source": "KCNG1",
@@ -913,40 +967,10 @@
       "description": "KCNG1 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
     },
     {
-      "source": "KCNB2",
-      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "KCNB2 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
-    },
-    {
       "source": "SAA2",
       "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
       "type": "ASSOCIATED_WITH",
       "description": "SAA2 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
-    },
-    {
-      "source": "KCNQ5",
-      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "KCNQ5 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
-    },
-    {
-      "source": "KCNS3",
-      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "KCNS3 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
-    },
-    {
-      "source": "KCNG3",
-      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "KCNG3 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
-    },
-    {
-      "source": "KCNF1",
-      "target": "Guillain-Barre syndrome (GUILLAIN_BARRE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "KCNF1 is associated with Guillain-Barre syndrome (GUILLAIN_BARRE). Open Targets association score 0.07"
     },
     {
       "source": "KCNS1",

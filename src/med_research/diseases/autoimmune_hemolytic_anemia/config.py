@@ -65,6 +65,7 @@ CAR_T_SCORES = {
         "KIT": 4.0,
         "LDHA": 4.0,
         "MS4A1": 4.0,
+        "NMNAT3": 4.0,
         "NR3C1": 4.0,
         "PDCD1": 4.0,
         "PICALM": 4.0,

@@ -1,0 +1,520 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL413",
+      "target": "FKBP1A",
+      "type": "TARGETS",
+      "description": "SIROLIMUS targets FKBP1A."
+    },
+    {
+      "source": "CHEMBL2103883",
+      "target": "MPL",
+      "type": "TARGETS",
+      "description": "AVATROMBOPAG targets MPL."
+    },
+    {
+      "source": "CHEMBL461101",
+      "target": "MPL",
+      "type": "TARGETS",
+      "description": "ELTROMBOPAG targets MPL."
+    },
+    {
+      "source": "CHEMBL2103883",
+      "target": "MPL",
+      "type": "TARGETS",
+      "description": "AVATROMBOPAG targets MPL."
+    },
+    {
+      "source": "CHEMBL18442",
+      "target": "CXCR4",
+      "type": "TARGETS",
+      "description": "PLERIXAFOR targets CXCR4."
+    },
+    {
+      "source": "CXCR4",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR4 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "F2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "F7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL4A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGA2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGA2B",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA2B is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGB3",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB3 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELP",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELP is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "MRGPRX1",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "MRGPRX1 is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "MRGPRX3",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "MRGPRX3 is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "MRGPRX4",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "MRGPRX4 is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "THBD",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THBD is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "THPO",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THPO is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "ITGA2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGA2B",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA2B is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGB3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "FYB1",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FYB1 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.37"
+    },
+    {
+      "source": "SRC",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRC is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.37"
+    },
+    {
+      "source": "ACTB",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTB is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.37"
+    },
+    {
+      "source": "MPIG6B",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPIG6B is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.37"
+    },
+    {
+      "source": "ABCG5",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG5 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.37"
+    },
+    {
+      "source": "AP3D1",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AP3D1 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.37"
+    },
+    {
+      "source": "KDSR",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDSR is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.37"
+    },
+    {
+      "source": "SLFN14",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLFN14 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.37"
+    },
+    {
+      "source": "CDC42",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDC42 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.37"
+    },
+    {
+      "source": "ABCG8",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG8 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.37"
+    },
+    {
+      "source": "TPM4",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPM4 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.19"
+    },
+    {
+      "source": "MPL",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPL is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "FKBP1A",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP1A is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "RUNX1",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "MYH9",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH9 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "GATA1",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA1 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CXCR4",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR4 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "FLI1",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLI1 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "TREML1",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREML1 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "VWF",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLAU",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAU is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "F7",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F7 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ITGA2B",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA2B is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZFPM1",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFPM1 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ITGB3",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB3 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "GP6",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GP6 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYH10",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH10 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "EPO",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPO is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "THPO",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THPO is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SELP",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELP is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TLN1",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLN1 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "EIF3G",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF3G is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TET2",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKG1",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKG1 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDE5A",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE5A is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "COL4A2",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A2 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "COL4A1",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A1 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "THBD",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THBD is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "HNF1A",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NR4A3",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR4A3 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "GFI1B",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFI1B is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP7A",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP7A is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MVK",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MVK is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MDK",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDK is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NBEAL2",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBEAL2 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ITGA2",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA2 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "WAS",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WAS is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GP1BA",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GP1BA is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "F2",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F2 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "P2RY12",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RY12 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ICAM1",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACHE",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACHE is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNF",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GPBAR1",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPBAR1 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "NMUR1",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NMUR1 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MRGPRX3",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRGPRX3 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "LPAR3",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPAR3 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MRGPRX4",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRGPRX4 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MRGPRX1",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRGPRX1 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GPR151",
+      "target": "blood platelet disease (BLOOD_PLATELET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR151 is associated with blood platelet disease (BLOOD_PLATELET_DISEASE). Open Targets association score 0.00"
+    }
+  ]
+}

@@ -11,8 +11,8 @@
       "category": ""
     },
     {
-      "id": "ATP12A",
-      "name": "ATPase H+/K+ transporting non-gastric alpha2 subunit",
+      "id": "ATP4A",
+      "name": "ATPase H+/K+ transporting subunit alpha",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.03",
@@ -21,8 +21,8 @@
       "category": ""
     },
     {
-      "id": "ATP4A",
-      "name": "ATPase H+/K+ transporting subunit alpha",
+      "id": "ATP12A",
+      "name": "ATPase H+/K+ transporting non-gastric alpha2 subunit",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.03",
@@ -81,6 +81,16 @@
       "category": ""
     },
     {
+      "id": "SPATA2",
+      "name": "spermatogenesis associated 2",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.01",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
       "id": "RPL17-C18orf32",
       "name": "RPL17-C18orf32 readthrough",
       "chromosome": "",
@@ -103,16 +113,6 @@
     {
       "id": "PDCD1",
       "name": "programmed cell death 1",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.01",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "SPATA2",
-      "name": "spermatogenesis associated 2",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.01",
@@ -221,8 +221,8 @@
       "category": ""
     },
     {
-      "id": "HLA-C",
-      "name": "major histocompatibility complex, class I, C",
+      "id": "LTF",
+      "name": "lactotransferrin",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.00",
@@ -241,8 +241,18 @@
       "category": ""
     },
     {
-      "id": "LTF",
-      "name": "lactotransferrin",
+      "id": "HLA-C",
+      "name": "major histocompatibility complex, class I, C",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.00",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "CCL2",
+      "name": "C-C motif chemokine ligand 2",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.00",
@@ -271,8 +281,8 @@
       "category": ""
     },
     {
-      "id": "CCL2",
-      "name": "C-C motif chemokine ligand 2",
+      "id": "MMP9",
+      "name": "matrix metallopeptidase 9",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.00",
@@ -291,68 +301,8 @@
       "category": ""
     },
     {
-      "id": "MMP9",
-      "name": "matrix metallopeptidase 9",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.00",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
       "id": "ACE",
       "name": "angiotensin I converting enzyme",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.00",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "F11R",
-      "name": "F11 receptor",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.00",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "CHGA",
-      "name": "chromogranin A",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.00",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "CCR2",
-      "name": "C-C motif chemokine receptor 2",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.00",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "C4A",
-      "name": "complement C4A (Chido/Rodgers blood group)",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.00",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "GNRH1",
-      "name": "gonadotropin releasing hormone 1",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.00",
@@ -371,8 +321,48 @@
       "category": ""
     },
     {
-      "id": "LYZ",
-      "name": "lysozyme",
+      "id": "CHGA",
+      "name": "chromogranin A",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.00",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "F11R",
+      "name": "F11 receptor",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.00",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "CCR2",
+      "name": "C-C motif chemokine receptor 2",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.00",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "ASAH1",
+      "name": "N-acylsphingosine amidohydrolase 1",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.00",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "C4A",
+      "name": "complement C4A (Chido/Rodgers blood group)",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.00",
@@ -391,8 +381,18 @@
       "category": ""
     },
     {
-      "id": "ASAH1",
-      "name": "N-acylsphingosine amidohydrolase 1",
+      "id": "GNRH1",
+      "name": "gonadotropin releasing hormone 1",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.00",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "LYZ",
+      "name": "lysozyme",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.00",

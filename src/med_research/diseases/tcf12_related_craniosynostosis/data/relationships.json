@@ -1,0 +1,370 @@
+{
+  "relationships": [
+    {
+      "source": "SLC39A13",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC39A13 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "RUNX2",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "RUNX2 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "WNT10A",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT10A is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ALPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ALPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RPS6KA3",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "RPS6KA3 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "WNT10A",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT10A is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "TCF12",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF12 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.79"
+    },
+    {
+      "source": "TWIST1",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TWIST1 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "FREM1",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FREM1 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "HOXD13",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD13 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGFR2",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "AMELY",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMELY is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "AMELX",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMELX is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "DMP1",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMP1 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ENAM",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENAM is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXA13",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA13 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SP6",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SP6 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PAX9",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX9 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ANTXR1",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANTXR1 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "EDAR",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDAR is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGFR3",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGFR1",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IBSP",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IBSP is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ERF",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERF is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ALPL",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPL is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "GREM2",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GREM2 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SSUH2",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSUH2 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "RPS6KA3",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPS6KA3 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "HOXD12",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD12 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "RUNX2",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX2 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC39A13",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC39A13 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "WNT10A",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT10A is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "BCL11B",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL11B is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SFRP2",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFRP2 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CTSK",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSK is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "MSX1",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSX1 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TBX4",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX4 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "NFIC",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFIC is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "EVX2",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EVX2 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "MUC16",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC16 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SESN2",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SESN2 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "NBR1",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBR1 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "KL",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KL is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGFB1",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD274",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRP",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL10",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "BRCA1",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNF",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRKAA2",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA2 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRKAA1",
+      "target": "TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA1 is associated with TCF12-related craniosynostosis (TCF12_RELATED_CRANIOSYNOSTOSIS). Open Targets association score 0.00"
+    }
+  ]
+}

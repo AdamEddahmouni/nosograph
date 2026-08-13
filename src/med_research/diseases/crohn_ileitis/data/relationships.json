@@ -1,0 +1,598 @@
+{
+  "relationships": [
+    {
+      "source": "RIPK1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "RIPK1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "ATG16L1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "ATG16L1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CCR7",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR7 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "F2RL1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F2RL1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TNFRSF25",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF25 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1RL1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1RL1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL33",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL33 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL5",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL5 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "MADCAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "MADCAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELPLG",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELPLG is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "FABP2",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "FABP2 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "SELPLG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SELPLG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL22",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL22 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL23A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL23A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ATG16L1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ATG16L1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR2",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR2 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR9",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR9 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF12A",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF12A is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF1A",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF1A is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF25",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF25 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF12",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF12 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "SULT2A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SULT2A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "INPP5D",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INPP5D is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.10"
+    },
+    {
+      "source": "ERN1",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERN1 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "XPNPEP1",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XPNPEP1 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "NOD2",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOD2 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL1RL1",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1RL1 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNFRSF12A",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF12A is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ATG16L1",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATG16L1 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "SELPLG",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELPLG is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "PHB1",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHB1 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD4",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL22",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL22 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNF",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "RIPK1",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIPK1 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADCYAP1",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADCYAP1 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MZB1",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MZB1 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "FABP2",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FABP2 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "P2RX7",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RX7 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TMEM201",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM201 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "MPO",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPO is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TLR2",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR2 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNFRSF25",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF25 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CSF3",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNFRSF1A",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF1A is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SULT2A1",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SULT2A1 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SDCBP2",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDCBP2 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TLR9",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR9 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD44",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CFLAR",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFLAR is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCR7",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR7 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "EGLN2",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGLN2 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "F2RL1",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F2RL1 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "MIF",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIF is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "SERPINA1",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA1 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IFNG",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "GH1",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "HSF1",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSF1 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "TRPV1",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV1 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "TLR4",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "FLT3LG",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3LG is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL33",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL33 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL5",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL5 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "RETNLB",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RETNLB is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "MMP2",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL10",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "MADCAM1",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MADCAM1 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "ITGAM",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAM is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "ICAM1",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "ISG20",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISG20 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL2RA",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RA is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD8A",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNFSF12",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF12 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "ERN2",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERN2 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL23A",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL23A is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL37",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL37 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CSF2",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "FOXP3",
+      "target": "Crohn ileitis (CROHN_ILEITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with Crohn ileitis (CROHN_ILEITIS). Open Targets association score 0.02"
+    }
+  ]
+}

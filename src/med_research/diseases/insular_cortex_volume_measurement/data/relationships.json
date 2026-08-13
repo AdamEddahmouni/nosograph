@@ -1,0 +1,394 @@
+{
+  "relationships": [
+    {
+      "source": "CDK6",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK6 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "C20orf203",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C20orf203 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IGF2BP1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2BP1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "RNF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "RNF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATR",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATR is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "SHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "STH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "STH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "FASTKD5",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASTKD5 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "CENPW",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CENPW is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "ENPP2",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENPP2 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "KIAA1614",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIAA1614 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "DNMT3B",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT3B is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "SHH",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHH is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "TMEM167A",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM167A is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "VCAN",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VCAN is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "GLI3",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "COMMD7",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COMMD7 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "BRINP1",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRINP1 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "UBOX5",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBOX5 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "MRTFA",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRTFA is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.27"
+    },
+    {
+      "source": "NLK",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLK is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.26"
+    },
+    {
+      "source": "SNTB1",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNTB1 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.26"
+    },
+    {
+      "source": "HMGA2",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGA2 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.26"
+    },
+    {
+      "source": "RNF7",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF7 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.25"
+    },
+    {
+      "source": "CALCOCO2",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCOCO2 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.25"
+    },
+    {
+      "source": "INHBA",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INHBA is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.23"
+    },
+    {
+      "source": "CEP57",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEP57 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.23"
+    },
+    {
+      "source": "SAMD9",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAMD9 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.23"
+    },
+    {
+      "source": "XRN1",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XRN1 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.22"
+    },
+    {
+      "source": "ATL3",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATL3 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.22"
+    },
+    {
+      "source": "IGF2BP1",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2BP1 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.22"
+    },
+    {
+      "source": "GPATCH8",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPATCH8 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.21"
+    },
+    {
+      "source": "FAM76B",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM76B is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.20"
+    },
+    {
+      "source": "CDC27",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDC27 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.20"
+    },
+    {
+      "source": "XRCC4",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XRCC4 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.15"
+    },
+    {
+      "source": "TNRC6B",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNRC6B is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.15"
+    },
+    {
+      "source": "CDK6",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK6 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.15"
+    },
+    {
+      "source": "GRIP1",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIP1 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.13"
+    },
+    {
+      "source": "KANSL1",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KANSL1 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "PLS1",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLS1 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.10"
+    },
+    {
+      "source": "MTMR2",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTMR2 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.07"
+    },
+    {
+      "source": "TFDP2",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFDP2 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.07"
+    },
+    {
+      "source": "SSH2",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSH2 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.07"
+    },
+    {
+      "source": "GK5",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GK5 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.07"
+    },
+    {
+      "source": "PPP2R3A",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP2R3A is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.06"
+    },
+    {
+      "source": "ATP1B3",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP1B3 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.06"
+    },
+    {
+      "source": "MSL2",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSL2 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.05"
+    },
+    {
+      "source": "RBM33",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM33 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.05"
+    },
+    {
+      "source": "RSPO3",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO3 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.05"
+    },
+    {
+      "source": "EFCAB5",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EFCAB5 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.04"
+    },
+    {
+      "source": "ATR",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATR is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.04"
+    },
+    {
+      "source": "RNF32",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF32 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.04"
+    },
+    {
+      "source": "STH",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STH is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPPL2C",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPPL2C is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.04"
+    },
+    {
+      "source": "SGSM3",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGSM3 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.03"
+    },
+    {
+      "source": "TTLL6",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTLL6 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.03"
+    },
+    {
+      "source": "MAPT",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPT is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.03"
+    },
+    {
+      "source": "CRHR1",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRHR1 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.03"
+    },
+    {
+      "source": "C20orf203",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C20orf203 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.03"
+    },
+    {
+      "source": "OXT",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OXT is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.03"
+    },
+    {
+      "source": "FASTKD5",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASTKD5 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.02"
+    },
+    {
+      "source": "PLAAT3",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAAT3 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.02"
+    },
+    {
+      "source": "LRRC37A2",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRC37A2 is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.02"
+    },
+    {
+      "source": "FAM133B",
+      "target": "insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM133B is associated with insular cortex volume measurement (INSULAR_CORTEX_VOLUME_MEASUREMENT). Open Targets association score 0.02"
+    }
+  ]
+}

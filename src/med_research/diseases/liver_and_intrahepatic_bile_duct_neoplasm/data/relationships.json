@@ -1,0 +1,520 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1289601",
+      "target": "KDR",
+      "type": "TARGETS",
+      "description": "LENVATINIB targets KDR."
+    },
+    {
+      "source": "CHEMBL1289601",
+      "target": "FLT4",
+      "type": "TARGETS",
+      "description": "LENVATINIB targets FLT4."
+    },
+    {
+      "source": "CHEMBL1289601",
+      "target": "FLT1",
+      "type": "TARGETS",
+      "description": "LENVATINIB targets FLT1."
+    },
+    {
+      "source": "SQSTM1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SQSTM1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "GTF2H1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "GTF2H1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IGF2BP2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2BP2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TNFSF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "SLC1A5",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC1A5 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "RORC",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "RORC is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFSF10",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF10 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNB1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNB1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "FLT1",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "FLT1 is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "CLDN14",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN14 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.34"
+    },
+    {
+      "source": "TP53",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.20"
+    },
+    {
+      "source": "EGFR",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.19"
+    },
+    {
+      "source": "MYC",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.11"
+    },
+    {
+      "source": "YAP1",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YAP1 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.09"
+    },
+    {
+      "source": "RPL17",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.09"
+    },
+    {
+      "source": "TGFB1",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.09"
+    },
+    {
+      "source": "AKT1",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.09"
+    },
+    {
+      "source": "MTOR",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.08"
+    },
+    {
+      "source": "PDCD1",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.08"
+    },
+    {
+      "source": "SPATA2",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.08"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.08"
+    },
+    {
+      "source": "SNCA",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.08"
+    },
+    {
+      "source": "CD44",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.08"
+    },
+    {
+      "source": "IFNB1",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNB1 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.08"
+    },
+    {
+      "source": "KDR",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.08"
+    },
+    {
+      "source": "SMR3B",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMR3B is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.08"
+    },
+    {
+      "source": "FLT1",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT1 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.07"
+    },
+    {
+      "source": "PTP4A3",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTP4A3 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.07"
+    },
+    {
+      "source": "CBX7",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBX7 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.07"
+    },
+    {
+      "source": "NDRG2",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDRG2 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.07"
+    },
+    {
+      "source": "MAF1",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAF1 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.07"
+    },
+    {
+      "source": "FLT4",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.07"
+    },
+    {
+      "source": "SCRIB",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCRIB is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.07"
+    },
+    {
+      "source": "ORM2",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ORM2 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.07"
+    },
+    {
+      "source": "CD8A",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.07"
+    },
+    {
+      "source": "FGR",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGR is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.07"
+    },
+    {
+      "source": "NCOA2",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOA2 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.07"
+    },
+    {
+      "source": "PROM1",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROM1 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.07"
+    },
+    {
+      "source": "LGR5",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGR5 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.07"
+    },
+    {
+      "source": "USP16",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP16 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.07"
+    },
+    {
+      "source": "RORC",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RORC is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.06"
+    },
+    {
+      "source": "YY1AP1",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YY1AP1 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.06"
+    },
+    {
+      "source": "ORM1",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ORM1 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.06"
+    },
+    {
+      "source": "MSLN",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSLN is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.06"
+    },
+    {
+      "source": "MET",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.05"
+    },
+    {
+      "source": "IGFBP3",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGFBP3 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNFSF10",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF10 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD274",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.05"
+    },
+    {
+      "source": "AR",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.05"
+    },
+    {
+      "source": "STAT3",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPHK1",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPHK1 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.05"
+    },
+    {
+      "source": "KRT18",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT18 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.05"
+    },
+    {
+      "source": "KRT19",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT19 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.05"
+    },
+    {
+      "source": "ALB",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.05"
+    },
+    {
+      "source": "PCK1",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCK1 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC1A5",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC1A5 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.05"
+    },
+    {
+      "source": "SQSTM1",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SQSTM1 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL6",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.05"
+    },
+    {
+      "source": "GTF2H1",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GTF2H1 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.05"
+    },
+    {
+      "source": "NUP62",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUP62 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.05"
+    },
+    {
+      "source": "IGF2BP2",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2BP2 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.05"
+    },
+    {
+      "source": "DCTN4",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCTN4 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.05"
+    },
+    {
+      "source": "KHDRBS1",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KHDRBS1 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.05"
+    },
+    {
+      "source": "MED1",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MED1 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.05"
+    },
+    {
+      "source": "AXL",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AXL is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.04"
+    },
+    {
+      "source": "NSUN7",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSUN7 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRIM71",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM71 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.04"
+    },
+    {
+      "source": "WWTR1",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WWTR1 is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.04"
+    },
+    {
+      "source": "TAFAZZIN",
+      "target": "liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAFAZZIN is associated with liver and intrahepatic bile duct neoplasm (LIVER_AND_INTRAHEPATIC_BILE_DUCT_NEOPLASM). Open Targets association score 0.04"
+    }
+  ]
+}

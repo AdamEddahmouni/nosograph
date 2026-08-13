@@ -1,0 +1,460 @@
+{
+  "relationships": [
+    {
+      "source": "SCARB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "SCARB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TM6SF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TM6SF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ZNF285",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF285 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PARP10",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "PARP10 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL4 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CETP is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "HMGCR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HMGCR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "TDRD15",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "TDRD15 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TNFSF13",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "GSTM1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GSTM4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.69"
+    },
+    {
+      "source": "PCSK9",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.69"
+    },
+    {
+      "source": "APOB",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.69"
+    },
+    {
+      "source": "CETP",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETP is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.59"
+    },
+    {
+      "source": "LPL",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.54"
+    },
+    {
+      "source": "SLC22A1",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A1 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.51"
+    },
+    {
+      "source": "LIPG",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPG is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.49"
+    },
+    {
+      "source": "GALNT2",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GALNT2 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.49"
+    },
+    {
+      "source": "ABCG8",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG8 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.49"
+    },
+    {
+      "source": "RSPO3",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO3 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.48"
+    },
+    {
+      "source": "MAP3K1",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K1 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.47"
+    },
+    {
+      "source": "TIMD4",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMD4 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.46"
+    },
+    {
+      "source": "COBLL1",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COBLL1 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.46"
+    },
+    {
+      "source": "SORT1",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORT1 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.46"
+    },
+    {
+      "source": "CELSR2",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR2 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.45"
+    },
+    {
+      "source": "APOA5",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.44"
+    },
+    {
+      "source": "APOE",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.43"
+    },
+    {
+      "source": "TRPS1",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPS1 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.43"
+    },
+    {
+      "source": "HP",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HP is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.43"
+    },
+    {
+      "source": "TRIM5",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM5 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.43"
+    },
+    {
+      "source": "SCARB1",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCARB1 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.42"
+    },
+    {
+      "source": "ABCA6",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA6 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.42"
+    },
+    {
+      "source": "TNFSF13",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.42"
+    },
+    {
+      "source": "MYLIP",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYLIP is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.42"
+    },
+    {
+      "source": "ST3GAL4",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST3GAL4 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.41"
+    },
+    {
+      "source": "ZNF285",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF285 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.41"
+    },
+    {
+      "source": "ZPR1",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZPR1 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.41"
+    },
+    {
+      "source": "TOP1",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOP1 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.39"
+    },
+    {
+      "source": "HPR",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPR is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.39"
+    },
+    {
+      "source": "HMGCR",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCR is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.38"
+    },
+    {
+      "source": "ASGR1",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASGR1 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.37"
+    },
+    {
+      "source": "APOC3",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC3 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.37"
+    },
+    {
+      "source": "TET2",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.37"
+    },
+    {
+      "source": "ABCA8",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA8 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.35"
+    },
+    {
+      "source": "ANKRD55",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKRD55 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.34"
+    },
+    {
+      "source": "ACP2",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACP2 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.34"
+    },
+    {
+      "source": "PAFAH1B2",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAFAH1B2 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.34"
+    },
+    {
+      "source": "DNAH11",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH11 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.34"
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL4 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.33"
+    },
+    {
+      "source": "APOA1",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.33"
+    },
+    {
+      "source": "GSTM1",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM1 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.33"
+    },
+    {
+      "source": "MAFB",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAFB is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.33"
+    },
+    {
+      "source": "UEVLD",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UEVLD is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.33"
+    },
+    {
+      "source": "MACO1",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MACO1 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.32"
+    },
+    {
+      "source": "TM6SF2",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM6SF2 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.32"
+    },
+    {
+      "source": "SBNO1",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SBNO1 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.31"
+    },
+    {
+      "source": "DCPS",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCPS is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.31"
+    },
+    {
+      "source": "TRIB1",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIB1 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.30"
+    },
+    {
+      "source": "ZHX3",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZHX3 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.30"
+    },
+    {
+      "source": "GSTM4",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM4 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.30"
+    },
+    {
+      "source": "VTN",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VTN is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.30"
+    },
+    {
+      "source": "PON3",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PON3 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.30"
+    },
+    {
+      "source": "TDRD15",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TDRD15 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.29"
+    },
+    {
+      "source": "USP24",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP24 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.29"
+    },
+    {
+      "source": "PARP10",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARP10 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.28"
+    },
+    {
+      "source": "AP3S2",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AP3S2 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.28"
+    },
+    {
+      "source": "ABCA1",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.28"
+    },
+    {
+      "source": "SIK3",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIK3 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.28"
+    },
+    {
+      "source": "MSL2",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSL2 is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.28"
+    },
+    {
+      "source": "MISFA",
+      "target": "apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MISFA is associated with apolipoprotein B to apolipoprotein A1 ratio  (APOLIPOPROTEIN_B_TO_APOLIPOPROTEIN_A1_RATIO). Open Targets association score 0.28"
+    }
+  ]
+}

@@ -1,0 +1,436 @@
+{
+  "relationships": [
+    {
+      "source": "RHBDF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "RHBDF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CCHCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CCHCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "COL17A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL17A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "PTCH2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "ZDHHC13",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "ZDHHC13 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "ZDHHC21",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "ZDHHC21 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "KITLG",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KITLG is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "IKBKG",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "IKBKG is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBIZ",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIZ is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RELB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "GJA1",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA1 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.73"
+    },
+    {
+      "source": "ST14",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST14 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "HR",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HR is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "EGFR",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "NSDHL",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSDHL is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "SCD",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCD is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "DSG4",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSG4 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "DSG3",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSG3 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "TMEM79",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM79 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "FOXN1",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXN1 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "HOXC13",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXC13 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CTSV",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSV is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CTSL",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSL is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "GSDMA",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMA is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "C8orf44-SGK3",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C8orf44-SGK3 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "SGK3",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGK3 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "MITF",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MITF is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "EDA",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDA is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRSS8",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRSS8 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "MPZL3",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPZL3 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "SPINK5",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPINK5 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZDHHC21",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZDHHC21 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTCH2",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH2 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PKP3",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKP3 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "KIT",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC45A2",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC45A2 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "RHBDF2",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHBDF2 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "IKBKG",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKBKG is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFKBIZ",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIZ is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "KITLG",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KITLG is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "AP3B1",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AP3B1 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "LYST",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYST is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD109",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD109 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TYR",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYR is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SUFU",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUFU is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TRPV3",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV3 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "DSC1",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSC1 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CCHCR1",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCHCR1 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SOX18",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX18 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "LRIG1",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRIG1 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TAL1",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAL1 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MC1R",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MC1R is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GNAQ",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAQ is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "KRT71",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT71 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ASIP",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASIP is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GRHL1",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRHL1 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TUFT1",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUFT1 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "KRT2",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT2 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "KRT25",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT25 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "AWAT2",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AWAT2 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "KRT17",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT17 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL17A1",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL17A1 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SOX21",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX21 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "LBR",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LBR is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "MYO5A",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO5A is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "KRT10",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT10 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "RELB",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELB is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ASS1",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASS1 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "KRT76",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT76 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZDHHC13",
+      "target": "autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZDHHC13 is associated with autosomal dominant palmoplantar keratoderma and congenital alopecia (AUTOSOMAL_DOMINANT_PALMOPLANTAR_KERATODERMA_AND_CONGENITAL_ALOPECIA). Open Targets association score 0.04"
+    }
+  ]
+}

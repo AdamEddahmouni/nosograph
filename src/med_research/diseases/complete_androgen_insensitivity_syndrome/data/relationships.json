@@ -1,0 +1,448 @@
+{
+  "relationships": [
+    {
+      "source": "CDK4",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK4 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MSH5",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH5 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH5-SAPCD1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH5-SAPCD1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL1A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "DHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "DHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "KITLG",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KITLG is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "YTHDC2",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "YTHDC2 is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "DRD2",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "DRD2 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "YTHDC2",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "YTHDC2 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "LRP2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "MSH5-SAPCD1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH5-SAPCD1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP19A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP19A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "AR",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.46"
+    },
+    {
+      "source": "ESR1",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "GNRHR",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRHR is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "FSHR",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSHR is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "LHCGR",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHCGR is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "KISS1R",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KISS1R is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "KISS1",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KISS1 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "KIT",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRL",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRL is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "FANCL",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCL is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "EGR1",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGR1 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "AFP",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "GNRH1",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRH1 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "DHH",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHH is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "INHBA",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INHBA is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TAF4B",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAF4B is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "YTHDC2",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YTHDC2 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPO11",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPO11 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CYP19A1",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP19A1 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FKBP4",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP4 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPATA22",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA22 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "LEP",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CGB5",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB5 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CENPB",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CENPB is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CGB2",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB2 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CGB3",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB3 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CGB1",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB1 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CGB7",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB7 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "LHB",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHB is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CGB8",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB8 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "LHX9",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHX9 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CHST8",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHST8 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "KITLG",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KITLG is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FSHB",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSHB is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "DRD2",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DRD2 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PGR",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CFTR",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFTR is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SGPL1",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGPL1 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "DND1",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DND1 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SIX5",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIX5 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NHLH2",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NHLH2 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CGA",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGA is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NR2C2",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR2C2 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "HSD17B3",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSD17B3 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "MSH5-SAPCD1",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH5-SAPCD1 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "MSH5",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH5 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "DMC1",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMC1 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZGLP1",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZGLP1 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDK4",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK4 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL1A1",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A1 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ANKRD31",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKRD31 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRP2",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP2 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRDM7",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM7 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRDM9",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM9 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "HOXA10",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA10 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKAA1",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA1 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADRA1B",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA1B is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RAD21L1",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD21L1 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "HSD17B1",
+      "target": "complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSD17B1 is associated with complete androgen insensitivity syndrome (COMPLETE_ANDROGEN_INSENSITIVITY_SYNDROME). Open Targets association score 0.04"
+    }
+  ]
+}

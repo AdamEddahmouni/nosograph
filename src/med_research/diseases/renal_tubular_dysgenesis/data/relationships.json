@@ -1,0 +1,532 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1336",
+      "target": "RET",
+      "type": "TARGETS",
+      "description": "SORAFENIB targets RET."
+    },
+    {
+      "source": "CHEMBL18442",
+      "target": "CXCR4",
+      "type": "TARGETS",
+      "description": "PLERIXAFOR targets CXCR4."
+    },
+    {
+      "source": "CHEMBL1951143",
+      "target": "AGTR1",
+      "type": "TARGETS",
+      "description": "FIMASARTAN targets AGTR1."
+    },
+    {
+      "source": "CHEMBL1072",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "TREATS",
+      "description": "BUMETANIDE is phase 4 / marketed for renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)."
+    },
+    {
+      "source": "CXCR4",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR4 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "TCF21",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF21 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ADAMTS18",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS18 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "SLC2A9",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A9 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GLIS2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLIS2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BMP4",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP4 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "ITGA3",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA3 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "MAPK7",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK7 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGTR1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGTR1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "REN",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "REN is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "LTBP1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "ITGA3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGER1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGER1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "LTBP1",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP1 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "WNT7B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT7B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP4A11",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4A11 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP4A22",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4A22 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP4F11",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4F11 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP4F12",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4F12 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "NAT8",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NAT8 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "NAT8B",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NAT8B is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "REN",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REN is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.75"
+    },
+    {
+      "source": "AGTR1",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGTR1 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.75"
+    },
+    {
+      "source": "AGT",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.74"
+    },
+    {
+      "source": "ACE",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.73"
+    },
+    {
+      "source": "EBF3",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EBF3 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.33"
+    },
+    {
+      "source": "PKD1",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKD1 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "CYP4A11",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4A11 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYP4A22",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4A22 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL4A1",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A1 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PDE1A",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE1A is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "WWTR1",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WWTR1 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "EPHB4",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHB4 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "LTBP1",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTBP1 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLXND1",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLXND1 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYP4F12",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4F12 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYP4F11",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4F11 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PKD2",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKD2 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "NEK8",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEK8 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CRIM1",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRIM1 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "LIN7C",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIN7C is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPHS1",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHS1 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CNTRL",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNTRL is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "MAPK7",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK7 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ITGA3",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA3 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CELSR1",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR1 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "UMOD",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UMOD is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "DOCK1",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK1 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PODXL",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PODXL is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "NKX2-1",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-1 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TCF21",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF21 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "FRYL",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FRYL is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "RET",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "VANGL2",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VANGL2 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "AQP2",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP2 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLIT3",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLIT3 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC2A9",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A9 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTGER1",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGER1 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNS1",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNS1 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "GDNF",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDNF is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "WNK1",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNK1 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADAMTS18",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS18 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLIT2",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLIT2 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "BMP4",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP4 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CXCR4",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR4 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFT140",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT140 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CC2D2A",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CC2D2A is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "WNT7B",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT7B is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "BICC1",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BICC1 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "DNAH11",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH11 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "MITF",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MITF is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZBTB14",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB14 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CLDN2",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN2 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "NAT8",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAT8 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "NAT8B",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAT8B is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CTSA",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSA is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "QRICH1",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "QRICH1 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "GLIS2",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLIS2 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPHP3",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHP3 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPHP3-ACAD11",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHP3-ACAD11 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "BAG6",
+      "target": "renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAG6 is associated with renal tubular dysgenesis (RENAL_TUBULAR_DYSGENESIS). Open Targets association score 0.03"
+    }
+  ]
+}

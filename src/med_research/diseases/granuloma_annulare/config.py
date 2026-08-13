@@ -44,6 +44,7 @@ CAR_T_SCORES = {
         "CTBS": 4.0,
         "CTLA4": 4.0,
         "CXCR3": 4.0,
+        "ETFA": 4.0,
         "ETV6": 4.0,
         "F13A1": 4.0,
         "GLI1": 4.0,

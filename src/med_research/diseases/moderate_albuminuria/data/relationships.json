@@ -1,0 +1,478 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1168",
+      "target": "ACE",
+      "type": "TARGETS",
+      "description": "RAMIPRIL targets ACE."
+    },
+    {
+      "source": "CHEMBL1200622",
+      "target": "VDR",
+      "type": "TARGETS",
+      "description": "PARICALCITOL targets VDR."
+    },
+    {
+      "source": "CHEMBL429910",
+      "target": "SLC5A2",
+      "type": "TARGETS",
+      "description": "DAPAGLIFLOZIN targets SLC5A2."
+    },
+    {
+      "source": "CHEMBL1017",
+      "target": "AGTR1",
+      "type": "TARGETS",
+      "description": "TELMISARTAN targets AGTR1."
+    },
+    {
+      "source": "SBF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SBF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATRAID",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRAID is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "GATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL4A3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A4",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A4 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GRM7",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRM7 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "MAPKBP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPKBP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RASIP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASIP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGTR1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGTR1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "NR3C2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "NR3C2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "TSHR",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TSHR is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "CYP1A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP1A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP1A2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP1A2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CUBN",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUBN is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.53"
+    },
+    {
+      "source": "COL4A3",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A3 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.51"
+    },
+    {
+      "source": "NYAP2",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NYAP2 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.42"
+    },
+    {
+      "source": "CWC27",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CWC27 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.41"
+    },
+    {
+      "source": "NR3C2",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C2 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.39"
+    },
+    {
+      "source": "LRMDA",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRMDA is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ADO",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADO is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.36"
+    },
+    {
+      "source": "LTK",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTK is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.34"
+    },
+    {
+      "source": "ATRAID",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRAID is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.33"
+    },
+    {
+      "source": "CPS1",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPS1 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.33"
+    },
+    {
+      "source": "FMN1",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMN1 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.31"
+    },
+    {
+      "source": "SPHKAP",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPHKAP is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.31"
+    },
+    {
+      "source": "ARL15",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARL15 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.30"
+    },
+    {
+      "source": "TSHR",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSHR is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.29"
+    },
+    {
+      "source": "COL4A4",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A4 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.29"
+    },
+    {
+      "source": "LPA",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TRIB1",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIB1 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "AHR",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHR is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "HOXA13",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA13 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.27"
+    },
+    {
+      "source": "GCKR",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.27"
+    },
+    {
+      "source": "TENM2",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TENM2 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.27"
+    },
+    {
+      "source": "SBF2",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SBF2 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.26"
+    },
+    {
+      "source": "GRM7",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRM7 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.26"
+    },
+    {
+      "source": "ACE",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.26"
+    },
+    {
+      "source": "VDR",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VDR is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.26"
+    },
+    {
+      "source": "AGTR1",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGTR1 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.26"
+    },
+    {
+      "source": "CCT2",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCT2 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.25"
+    },
+    {
+      "source": "MUC1",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC1 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.25"
+    },
+    {
+      "source": "FRG1",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FRG1 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.24"
+    },
+    {
+      "source": "FUT1",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUT1 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.24"
+    },
+    {
+      "source": "RASIP1",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASIP1 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.22"
+    },
+    {
+      "source": "BAHCC1",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAHCC1 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.21"
+    },
+    {
+      "source": "SCYGR5",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCYGR5 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.21"
+    },
+    {
+      "source": "CYP1A1",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP1A1 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.20"
+    },
+    {
+      "source": "AFG2B",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFG2B is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.19"
+    },
+    {
+      "source": "FOXD2",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXD2 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.18"
+    },
+    {
+      "source": "WIPF3",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WIPF3 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MAMSTR",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAMSTR is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NDUFS4",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS4 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.17"
+    },
+    {
+      "source": "COPRS",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COPRS is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.17"
+    },
+    {
+      "source": "EXOC1L",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EXOC1L is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.17"
+    },
+    {
+      "source": "MFF",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFF is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.16"
+    },
+    {
+      "source": "SHROOM3",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHROOM3 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.16"
+    },
+    {
+      "source": "RSU1",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSU1 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.16"
+    },
+    {
+      "source": "CYP1A2",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP1A2 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.15"
+    },
+    {
+      "source": "ZFP36L1",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFP36L1 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.15"
+    },
+    {
+      "source": "SREK1IP1",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SREK1IP1 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.12"
+    },
+    {
+      "source": "GATM",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATM is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.12"
+    },
+    {
+      "source": "MAPKBP1",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPKBP1 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.12"
+    },
+    {
+      "source": "GGCX",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGCX is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.12"
+    },
+    {
+      "source": "SNX17",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNX17 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.12"
+    },
+    {
+      "source": "MUC7",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC7 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.11"
+    },
+    {
+      "source": "RAPGEF5",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAPGEF5 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.11"
+    },
+    {
+      "source": "ICA1L",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICA1L is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.11"
+    },
+    {
+      "source": "EGR2",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGR2 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.10"
+    },
+    {
+      "source": "C15orf48",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C15orf48 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.10"
+    },
+    {
+      "source": "HOXA11",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA11 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "FRS2",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FRS2 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "MAT2A",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAT2A is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "SLC5A2",
+      "target": "albuminuria (MODERATE_ALBUMINURIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC5A2 is associated with albuminuria (MODERATE_ALBUMINURIA). Open Targets association score 0.08"
+    }
+  ]
+}

@@ -1,0 +1,448 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL63",
+      "target": "PDE4A",
+      "type": "TARGETS",
+      "description": "ROLIPRAM targets PDE4A."
+    },
+    {
+      "source": "CHEMBL193240",
+      "target": "PDE4A",
+      "type": "TARGETS",
+      "description": "ROFLUMILAST targets PDE4A."
+    },
+    {
+      "source": "GAD1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GAD1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "SLC1A4",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC1A4 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "INSR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INSR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTGDS",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGDS is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "AVP",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVP is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC26A4",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC26A4 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.02"
+    },
+    {
+      "source": "AQP1",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP1 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADCY1",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADCY1 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.01"
+    },
+    {
+      "source": "RAPGEF3",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAPGEF3 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MINDY4",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MINDY4 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.01"
+    },
+    {
+      "source": "AQP7",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP7 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TJP1",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TJP1 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NDP",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDP is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADD1",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADD1 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC1A4",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC1A4 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NLRP3",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.01"
+    },
+    {
+      "source": "AQP5",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP5 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.01"
+    },
+    {
+      "source": "HSPA1A",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPA1A is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.01"
+    },
+    {
+      "source": "HSPA4",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPA4 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.01"
+    },
+    {
+      "source": "AQP2",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP2 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.01"
+    },
+    {
+      "source": "FPR2",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FPR2 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ICAM1",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTGDS",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGDS is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "AQP8",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP8 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPOX",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPOX is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "AQP4",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP4 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "AVPR2",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVPR2 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MET",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "HSPA4L",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPA4L is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CP",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CP is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "NOS2",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALDH7A1",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDH7A1 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PEDS1",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PEDS1 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "GJB2",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJB2 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEACAM8",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM8 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "GAD1",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAD1 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ISYNA1",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISYNA1 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "RAPGEF4",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAPGEF4 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDE4A",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE4A is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "EFS",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EFS is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SGK1",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGK1 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD8A",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "EDN1",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDN1 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "LIPG",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPG is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SIK1",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIK1 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "KCNJ10",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNJ10 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOX10",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX10 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ANXA1",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANXA1 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDE5A",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE5A is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "DNAJC14",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAJC14 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TBCEL",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBCEL is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD4",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "DOT1L",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOT1L is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "DIAPH1",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DIAPH1 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "FGFR1",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1B",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "GLS",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLS is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPP1R3B",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R3B is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "LIPF",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPF is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "INSR",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INSR is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "HRH1",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRH1 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MLLT3",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLLT3 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    },
+    {
+      "source": "WFS1",
+      "target": "endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WFS1 is associated with endolymphatic hydrops (ENDOLYMPHATIC_HYDROPS). Open Targets association score 0.00"
+    }
+  ]
+}

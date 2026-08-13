@@ -1,0 +1,430 @@
+{
+  "relationships": [
+    {
+      "source": "ADAMTS3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF4A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF4A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CETP is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "HMGCR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HMGCR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ABCB11",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB11 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.54"
+    },
+    {
+      "source": "APOB",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.51"
+    },
+    {
+      "source": "PCSK9",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.50"
+    },
+    {
+      "source": "FADS2",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS2 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.48"
+    },
+    {
+      "source": "LIPC",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.45"
+    },
+    {
+      "source": "APOE",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.45"
+    },
+    {
+      "source": "ABCG8",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG8 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.43"
+    },
+    {
+      "source": "SLC22A1",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A1 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.41"
+    },
+    {
+      "source": "LIPG",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPG is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.40"
+    },
+    {
+      "source": "SORT1",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORT1 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.37"
+    },
+    {
+      "source": "SERPINA1",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA1 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.37"
+    },
+    {
+      "source": "APOH",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOH is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.36"
+    },
+    {
+      "source": "PKN3",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKN3 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.36"
+    },
+    {
+      "source": "TIMD4",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMD4 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.36"
+    },
+    {
+      "source": "HMGCR",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCR is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.36"
+    },
+    {
+      "source": "TRPS1",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPS1 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.35"
+    },
+    {
+      "source": "ABCA6",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA6 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.35"
+    },
+    {
+      "source": "APOA5",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.35"
+    },
+    {
+      "source": "MTARC1",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTARC1 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.35"
+    },
+    {
+      "source": "HNF1A",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.35"
+    },
+    {
+      "source": "DNAH11",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH11 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.35"
+    },
+    {
+      "source": "SSBP3",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSBP3 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.34"
+    },
+    {
+      "source": "PLTP",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLTP is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.34"
+    },
+    {
+      "source": "USP24",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP24 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.34"
+    },
+    {
+      "source": "CELSR2",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR2 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.34"
+    },
+    {
+      "source": "EPGN",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPGN is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.34"
+    },
+    {
+      "source": "ABCA1",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.34"
+    },
+    {
+      "source": "CETP",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETP is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.33"
+    },
+    {
+      "source": "MAFB",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAFB is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.33"
+    },
+    {
+      "source": "TMPRSS11E",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS11E is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.33"
+    },
+    {
+      "source": "TRIM5",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM5 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.33"
+    },
+    {
+      "source": "GPAM",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPAM is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.33"
+    },
+    {
+      "source": "ADAMTS3",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS3 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.33"
+    },
+    {
+      "source": "LPA",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.33"
+    },
+    {
+      "source": "HNF4A",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF4A is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.32"
+    },
+    {
+      "source": "ABO",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABO is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.32"
+    },
+    {
+      "source": "MYLIP",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYLIP is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.32"
+    },
+    {
+      "source": "PPARG",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.32"
+    },
+    {
+      "source": "KDF1",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDF1 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.32"
+    },
+    {
+      "source": "SLC22A3",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A3 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.32"
+    },
+    {
+      "source": "ABCB11",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB11 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.31"
+    },
+    {
+      "source": "SDC1",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC1 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.30"
+    },
+    {
+      "source": "ZNF682",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF682 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.30"
+    },
+    {
+      "source": "NPC1L1",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPC1L1 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.30"
+    },
+    {
+      "source": "NPFFR2",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPFFR2 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.29"
+    },
+    {
+      "source": "AQP9",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP9 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.29"
+    },
+    {
+      "source": "DYNC2LI1",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYNC2LI1 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.29"
+    },
+    {
+      "source": "PLG",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLG is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.29"
+    },
+    {
+      "source": "FAF1",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAF1 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.29"
+    },
+    {
+      "source": "OSBPL9",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OSBPL9 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.28"
+    },
+    {
+      "source": "ST3GAL4",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST3GAL4 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.28"
+    },
+    {
+      "source": "ZPR1",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZPR1 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.28"
+    },
+    {
+      "source": "DHX38",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHX38 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.27"
+    },
+    {
+      "source": "MAU2",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAU2 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.27"
+    },
+    {
+      "source": "SUGP1",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUGP1 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.27"
+    },
+    {
+      "source": "SPTY2D1",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTY2D1 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.27"
+    },
+    {
+      "source": "TMEM61",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM61 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.26"
+    },
+    {
+      "source": "NYNRIN",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NYNRIN is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.26"
+    },
+    {
+      "source": "N4BP2L2",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "N4BP2L2 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.26"
+    },
+    {
+      "source": "SH2B3",
+      "target": "total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2B3 is associated with total cholesterol in IDL (TOTAL_CHOLESTEROL_IN_IDL). Open Targets association score 0.25"
+    }
+  ]
+}

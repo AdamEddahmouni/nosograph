@@ -1,0 +1,502 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "FGF23",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF23 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL18",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "NR3C2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "NR3C2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "PTH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL21",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL21 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL21R",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL21R is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "PTGDR",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGDR is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGM2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF1A",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF1A is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF15",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF15 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "CYP1A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP1A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP1A2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP1A2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "IL18",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFNG",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTH",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTH is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNFSF15",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF15 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADCYAP1",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADCYAP1 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "MZB1",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MZB1 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "LIF",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIF is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "ISYNA1",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISYNA1 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS2",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "AHR",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHR is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRL",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRL is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CAT",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAT is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP1A1",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP1A1 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "FERMT3",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FERMT3 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTGDR",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGDR is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "REEP5",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REEP5 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TFDP1",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFDP1 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL4",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP1A2",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP1A2 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD8A",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD4",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL7",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGFBP6",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGFBP6 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "DUSP2",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DUSP2 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSMG1",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMG1 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADCYAP1R1",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADCYAP1R1 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPINK5",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPINK5 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "KLF6",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF6 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD44",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNFRSF1A",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF1A is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TYR",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYR is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPP1",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPP1 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL2",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "OSM",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OSM is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "HFM1",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HFM1 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TBX21",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX21 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TAAR1",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAAR1 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL11",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL11 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL10",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL21",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL21 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL21R",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL21R is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ESR1",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NR3C2",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C2 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYBB",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYBB is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NR3C1",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSR",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSR is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGF23",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF23 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GH1",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "LEP",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GGH",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGH is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGM2",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM2 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "FASLG",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERBB2",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "VEGFA",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL2",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ZEB1",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "FOXN1",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXN1 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TRERF1",
+      "target": "thymus atrophy (THYMUS_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRERF1 is associated with thymus atrophy (THYMUS_ATROPHY). Open Targets association score 0.00"
+    }
+  ]
+}

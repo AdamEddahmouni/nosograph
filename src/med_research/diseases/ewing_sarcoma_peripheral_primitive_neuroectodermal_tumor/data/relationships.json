@@ -1,0 +1,616 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1336",
+      "target": "KDR",
+      "type": "TARGETS",
+      "description": "SORAFENIB targets KDR."
+    },
+    {
+      "source": "CHEMBL109480",
+      "target": "HSP90AB1",
+      "type": "TARGETS",
+      "description": "TANESPIMYCIN targets HSP90AB1."
+    },
+    {
+      "source": "CHEMBL1200485",
+      "target": "RET",
+      "type": "TARGETS",
+      "description": "SORAFENIB TOSYLATE targets RET."
+    },
+    {
+      "source": "CHEMBL1200485",
+      "target": "FLT1",
+      "type": "TARGETS",
+      "description": "SORAFENIB TOSYLATE targets FLT1."
+    },
+    {
+      "source": "CHEMBL1336",
+      "target": "FLT4",
+      "type": "TARGETS",
+      "description": "SORAFENIB targets FLT4."
+    },
+    {
+      "source": "CHEMBL1336",
+      "target": "RAF1",
+      "type": "TARGETS",
+      "description": "SORAFENIB targets RAF1."
+    },
+    {
+      "source": "CHEMBL1200485",
+      "target": "BRAF",
+      "type": "TARGETS",
+      "description": "SORAFENIB TOSYLATE targets BRAF."
+    },
+    {
+      "source": "CHEMBL1200485",
+      "target": "RAF1",
+      "type": "TARGETS",
+      "description": "SORAFENIB TOSYLATE targets RAF1."
+    },
+    {
+      "source": "CHEMBL109480",
+      "target": "HSP90AA1",
+      "type": "TARGETS",
+      "description": "TANESPIMYCIN targets HSP90AA1."
+    },
+    {
+      "source": "CHEMBL1200485",
+      "target": "FLT3",
+      "type": "TARGETS",
+      "description": "SORAFENIB TOSYLATE targets FLT3."
+    },
+    {
+      "source": "CHEMBL481",
+      "target": "TOP1",
+      "type": "TARGETS",
+      "description": "IRINOTECAN targets TOP1."
+    },
+    {
+      "source": "CHEMBL1743001",
+      "target": "IGF1R",
+      "type": "TARGETS",
+      "description": "CIXUTUMUMAB targets IGF1R."
+    },
+    {
+      "source": "CHEMBL1200485",
+      "target": "PDGFRB",
+      "type": "TARGETS",
+      "description": "SORAFENIB TOSYLATE targets PDGFRB."
+    },
+    {
+      "source": "CHEMBL1336",
+      "target": "FLT1",
+      "type": "TARGETS",
+      "description": "SORAFENIB targets FLT1."
+    },
+    {
+      "source": "CHEMBL1336",
+      "target": "FLT3",
+      "type": "TARGETS",
+      "description": "SORAFENIB targets FLT3."
+    },
+    {
+      "source": "CHEMBL1336",
+      "target": "BRAF",
+      "type": "TARGETS",
+      "description": "SORAFENIB targets BRAF."
+    },
+    {
+      "source": "CHEMBL1336",
+      "target": "RET",
+      "type": "TARGETS",
+      "description": "SORAFENIB targets RET."
+    },
+    {
+      "source": "CHEMBL3989514",
+      "target": "TOP1",
+      "type": "TARGETS",
+      "description": "IRINOTECAN HYDROCHLORIDE targets TOP1."
+    },
+    {
+      "source": "CHEMBL1336",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "SORAFENIB targets KIT."
+    },
+    {
+      "source": "CHEMBL1336",
+      "target": "PDGFRB",
+      "type": "TARGETS",
+      "description": "SORAFENIB targets PDGFRB."
+    },
+    {
+      "source": "CHEMBL1200485",
+      "target": "KDR",
+      "type": "TARGETS",
+      "description": "SORAFENIB TOSYLATE targets KDR."
+    },
+    {
+      "source": "CHEMBL1200485",
+      "target": "FLT4",
+      "type": "TARGETS",
+      "description": "SORAFENIB TOSYLATE targets FLT4."
+    },
+    {
+      "source": "CHEMBL1200485",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "SORAFENIB TOSYLATE targets KIT."
+    },
+    {
+      "source": "CCNE1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCNE1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "PARP4",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "PARP4 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL8A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL8A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL13RA2",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13RA2 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13RA2",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13RA2 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K6",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K6 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK6",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK6 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RAF1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RAF1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "ACER2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACER2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD82",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD82 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "FLT1",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "FLT1 is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "EWSR1",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EWSR1 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.37"
+    },
+    {
+      "source": "FLI1",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLI1 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.37"
+    },
+    {
+      "source": "WT1",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.37"
+    },
+    {
+      "source": "ERG",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERG is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "FOXO1",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXO1 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "PAX3",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX3 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "KIT",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "FLT3",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "RET",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "FLT4",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "KDR",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "TOP1",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOP1 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "FLT1",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT1 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "BRAF",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "RAF1",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAF1 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "IGF1R",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1R is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "HSP90AA1",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSP90AA1 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "HSP90AB1",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSP90AB1 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "PDGFC",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFC is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "TP53",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "MFSD11",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFSD11 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "PCYT2",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCYT2 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "HDGF",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDGF is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "ID2",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ID2 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "DKK1",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DKK1 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "LIPI",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPI is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "PARP4",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARP4 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSR",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSR is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD59",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD59 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "NR3C1",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAP2K6",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K6 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CLIC4",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLIC4 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP1",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP1 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCNE1",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCNE1 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "COL8A1",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL8A1 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "STAG2",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAG2 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERBB2",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "FOXR2",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXR2 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "DKK2",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DKK2 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCOR",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCOR is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "SMARCB1",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCB1 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "EPO",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPO is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "TCEAL1",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCEAL1 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD82",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD82 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "NSG1",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSG1 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC12A9",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A9 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPK6",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK6 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "OSMR",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OSMR is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "GYPA",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GYPA is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "RFTN1",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RFTN1 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "STX1A",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STX1A is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACER2",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACER2 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAP3K6",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K6 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "CA9",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA9 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL13RA2",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13RA2 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "NEU1",
+      "target": "Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEU1 is associated with Ewing sarcoma/peripheral primitive neuroectodermal tumor (EWING_SARCOMA_PERIPHERAL_PRIMITIVE_NEUROECTODERMAL_TUMOR). Open Targets association score 0.00"
+    }
+  ]
+}

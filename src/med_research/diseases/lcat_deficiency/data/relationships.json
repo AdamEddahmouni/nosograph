@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "SLC4A1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC4A1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "SLC4A11",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC4A11 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "SLC4A5",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC4A5 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "COL18A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL18A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A4",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A4 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A5",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A5 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GLIS2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLIS2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "STAT4",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT4 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PIK3C2A",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3C2A is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "TNFAIP2",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP2 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "ABCC2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "LCAT",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCAT is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.79"
+    },
+    {
+      "source": "SLC12A4",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A4 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.33"
+    },
+    {
+      "source": "UMOD",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UMOD is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "APOE",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CLCN5",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCN5 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC12A1",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A1 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC4A11",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC4A11 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPTA1",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LDLR",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL4A4",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A4 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL4A5",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A5 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "KCTD1",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCTD1 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "AQP11",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP11 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL4A3",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A3 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "RRM2B",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RRM2B is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "AGT",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "AGXT",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGXT is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "NPHS2",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHS2 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAS1",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAS1 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "LAMB2",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMB2 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL4A1",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A1 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCNI",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCNI is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD2AP",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD2AP is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADCY6",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADCY6 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDC42",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDC42 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC14A1",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC14A1 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "LIN7C",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIN7C is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "MYO1E",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO1E is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "HPX",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPX is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CLCNKB",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCNKB is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CLCNKA",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCNKA is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "WHAMM",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WHAMM is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "HP",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HP is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GUCA2B",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GUCA2B is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "LAMA5",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMA5 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC4A1",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC4A1 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "TMEM174",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM174 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "EPB41",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPB41 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "HPR",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPR is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC4A5",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC4A5 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "APRT",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APRT is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC28A1",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC28A1 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "HK1",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HK1 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "STAT4",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT4 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GLIS2",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLIS2 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "C1GALT1",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1GALT1 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GRHPR",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRHPR is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "FOXE3",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXE3 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "MAGI2",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAGI2 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "POU3F3",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU3F3 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRKAG1",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAG1 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "COL18A1",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL18A1 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "INS",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "AGPAT1",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGPAT1 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNFAIP2",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFAIP2 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "KCNK5",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNK5 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ABCC2",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC2 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC5A2",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC5A2 is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "PIK3C2A",
+      "target": "LCAT deficiency (LCAT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3C2A is associated with LCAT deficiency (LCAT_DEFICIENCY). Open Targets association score 0.03"
+    }
+  ]
+}

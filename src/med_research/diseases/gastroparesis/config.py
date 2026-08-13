@@ -46,6 +46,7 @@ CAR_T_SCORES = {
         "CHRNB4": 4.0,
         "CNR1": 4.0,
         "CNTN3": 4.0,
+        "CRH": 4.0,
         "CRKL": 4.0,
         "DAD1": 4.0,
         "DIO2": 4.0,

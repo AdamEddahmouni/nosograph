@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "IRF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TNFRSF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "HAVCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "HAVCR2",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR2 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K7",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K7 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CD33",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD33 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNFRSF8",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF8 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IRF8",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "GSTM1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CLU",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLU is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "EZH2",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EZH2 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "BRAF",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "TIMD4",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMD4 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZBTB46",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB46 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD274",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "NCAM1",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCAM1 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD4",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "AR",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "JMJD6",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JMJD6 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "TPM3",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPM3 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "NOS2",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "NOS1",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS1 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "NTRK1",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "HAVCR2",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAVCR2 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD1A",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD1A is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "AXL",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AXL is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "CR2",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CR2 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEBPB",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPB is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPI1",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPI1 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "CR1",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CR1 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "SNCA",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDCD1",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPATA2",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "LYVE1",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYVE1 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "NF1",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MLANA",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLANA is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "PMEL",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMEL is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "STAT3",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "EGFR",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPK3",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK3 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "GSTM1",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM1 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYC",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL3RA",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL3RA is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00 | Open Targets association score 0.00"
+    },
+    {
+      "source": "DES",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DES is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "EPHB2",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHB2 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD33",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD33 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "SMN1",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMN1 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD68",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD68 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "S100A1",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A1 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "DNTT",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNTT is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAP2K7",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K7 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTPRC",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEBPA",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPA is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "PAX5",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX5 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "FBXO4",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXO4 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPK1",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNFRSF8",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF8 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD163",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD163 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "S100B",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100B is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "FSCN1",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSCN1 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "VIM",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIM is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "IKZF1",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "IRF8",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF8 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "ETV3",
+      "target": "dendritic cell tumor (DENDRITIC_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV3 is associated with dendritic cell tumor (DENDRITIC_CELL_TUMOR). Open Targets association score 0.00"
+    }
+  ]
+}

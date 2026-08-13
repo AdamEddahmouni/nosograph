@@ -1,0 +1,586 @@
+{
+  "relationships": [
+    {
+      "source": "CCR1",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR1 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "RHBDF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "RHBDF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C4A",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C4A is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "C4B",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C4B is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "C4B_2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C4B_2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "DPP4",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "DPP4 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4R",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4R is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "TYK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "TYK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "IKBKE",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "IKBKE is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RELB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "ACE2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "IL21R",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL21R is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL22",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL22 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "MYD88",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MYD88 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTA",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTA is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTB",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTB is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFAIP8L2",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP8L2 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF1A",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF1A is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNAR1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNAR1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "NLRP1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ABCB4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "IL21R",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL21R is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.73"
+    },
+    {
+      "source": "AIRE",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIRE is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "IFNG",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "DPP4",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPP4 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ACE2",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE2 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "LGALS3",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL4",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXP3",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "BCL6",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL6 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CR2",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CR2 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL13",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFKB1",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "REL",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REL is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TGFB1",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL25",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL25 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "EFS",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EFS is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNF",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ABCB4",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB4 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "NLRP1",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP1 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL22",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL22 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CFTR",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFTR is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SH2D1A",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2D1A is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCR2",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR2 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "JCHAIN",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JCHAIN is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "KLRC1",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLRC1 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "KLRC4",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLRC4 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNFRSF1A",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF1A is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "MYD88",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYD88 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RELB",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELB is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ABCB1",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB1 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GPR132",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR132 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RC3H1",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RC3H1 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "LTB",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTB is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTX3",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTX3 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL4R",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4R is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RHBDF2",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHBDF2 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "LEPR",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GBP3",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GBP3 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GBP2",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GBP2 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GBP1",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GBP1 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLAU",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAU is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RAG2",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG2 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL2RA",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RA is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "DUSP1",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DUSP1 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNFAIP8L2",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFAIP8L2 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CLEC7A",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC7A is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "BPIFA1",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BPIFA1 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TYK2",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYK2 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FASLG",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "USP13",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP13 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD1D",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD1D is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "LTA",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTA is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "C4A",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C4A is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "C4B_2",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C4B_2 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "C4B",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C4B is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "DUSP22",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DUSP22 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ARIH2",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARIH2 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFNAR1",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNAR1 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IKBKE",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKBKE is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCR1",
+      "target": "cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR1 is associated with cryptosporidiosis-chronic cholangitis-liver disease syndrome (CRYPTOSPORIDIOSIS_CHRONIC_CHOLANGITIS_LIVER_DISEASE_SYNDROME). Open Targets association score 0.04"
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+{
+  "relationships": [
+    {
+      "source": "CDKN1C",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1C is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "FGF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "KIF24",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "KIF24 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLI2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BMP4",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP4 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "BMP5",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP5 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FRAS1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FRAS1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PTHLH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTHLH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "C2CD3",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "C2CD3 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT7A",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT7A is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "DYNC2H1",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYNC2H1 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.87"
+    },
+    {
+      "source": "C2CD3",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C2CD3 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.50"
+    },
+    {
+      "source": "DYNC2I1",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYNC2I1 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.47"
+    },
+    {
+      "source": "DYNC2I2",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYNC2I2 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.42"
+    },
+    {
+      "source": "NEK1",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEK1 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.33"
+    },
+    {
+      "source": "BBS10",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BBS10 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.33"
+    },
+    {
+      "source": "DYNLT2B",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYNLT2B is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.33"
+    },
+    {
+      "source": "KIF24",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF24 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.33"
+    },
+    {
+      "source": "DYNC1H1",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYNC1H1 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.30"
+    },
+    {
+      "source": "FAM98C",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM98C is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.26"
+    },
+    {
+      "source": "TMEM256",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM256 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.26"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.06"
+    },
+    {
+      "source": "GLI3",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.05"
+    },
+    {
+      "source": "BMP5",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP5 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL2A1",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.05"
+    },
+    {
+      "source": "PHEX",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHEX is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.05"
+    },
+    {
+      "source": "GDF5",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF5 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXD13",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD13 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "SOX9",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX9 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDKN1C",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1C is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "FMN1",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMN1 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "PITX1",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX1 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "ROR2",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROR2 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGFR3",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "PCSK5",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK5 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTHLH",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTHLH is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFT172",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT172 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "OCLN",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OCLN is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGFR1",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "SCLT1",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCLT1 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "PORCN",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PORCN is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "INPP5E",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INPP5E is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "FRAS1",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FRAS1 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "RSPO2",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO2 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "EVC",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EVC is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "TTC21B",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC21B is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "GLI2",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI2 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "TENT5A",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TENT5A is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "CPLANE1",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPLANE1 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGF9",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF9 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "DYM",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYM is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "TMEM216",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM216 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "NABP2",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NABP2 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "MKS1",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKS1 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "BPNT2",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BPNT2 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "ACAN",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACAN is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.03"
+    },
+    {
+      "source": "HOXC10",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXC10 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.03"
+    },
+    {
+      "source": "CILK1",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CILK1 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.03"
+    },
+    {
+      "source": "WDPCP",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDPCP is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.03"
+    },
+    {
+      "source": "SMPD3",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMPD3 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.03"
+    },
+    {
+      "source": "GREM1",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GREM1 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.03"
+    },
+    {
+      "source": "POSTN",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POSTN is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.03"
+    },
+    {
+      "source": "HOXD12",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD12 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.03"
+    },
+    {
+      "source": "WBP11",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WBP11 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.03"
+    },
+    {
+      "source": "DZIP1L",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DZIP1L is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.03"
+    },
+    {
+      "source": "HOXA11",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA11 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.03"
+    },
+    {
+      "source": "PKDCC",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKDCC is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.03"
+    },
+    {
+      "source": "LRP6",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP6 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.03"
+    },
+    {
+      "source": "BMP4",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP4 is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.03"
+    },
+    {
+      "source": "WNT7A",
+      "target": "asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT7A is associated with asphyxiating thoracic dystrophy 3 (ASPHYXIATING_THORACIC_DYSTROPHY_3). Open Targets association score 0.03"
+    }
+  ]
+}

@@ -1,0 +1,514 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201621",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "TREATS",
+      "description": "SOMATROPIN is phase 4 / marketed for Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)."
+    },
+    {
+      "source": "CHEMBL650",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "TREATS",
+      "description": "METHYLPREDNISOLONE is phase 4 / marketed for Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)."
+    },
+    {
+      "source": "CHEMBL389621",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "TREATS",
+      "description": "HYDROCORTISONE is phase 4 / marketed for Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)."
+    },
+    {
+      "source": "CHEMBL635",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "TREATS",
+      "description": "PREDNISONE is phase 4 / marketed for Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BIRC5",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BIRC5 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ACKR3",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ACKR3 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "IGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "DLL3",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "DLL3 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "REN",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "REN is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "PTH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "TH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "EPAS1",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "EPAS1 is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "HIF1A",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "HIF1A is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VHL",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VHL is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NF1",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EPAS1",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPAS1 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP53",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "RET",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "HRAS",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CARS1",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARS1 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2C",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "DGCR8",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DGCR8 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "MKI67",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SCG2",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCG2 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CHGA",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHGA is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ENO2",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENO2 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDH2",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH2 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTGS2",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "VEGFA",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SOD2",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD2 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZNF367",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF367 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL2",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "LGALS3",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HSP90AB1",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSP90AB1 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HSP90AA1",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSP90AA1 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VIP",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIP is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDK1",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDK1 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNAI1",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNAI1 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BIRC5",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIRC5 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "POMC",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGF1R",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1R is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGF2",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "REN",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REN is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KIT",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTEN",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPY",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPY is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TH",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TH is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FH",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FH is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "STAT3",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATRX",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HIF1A",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF1A is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NME1",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NME1 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PROS1",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROS1 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PNMT",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PNMT is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MT-CO2",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO2 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CGA",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGA is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SDHB",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDHB is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SEMG2",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEMG2 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACKR3",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACKR3 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "POU4F1",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU4F1 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "VIPR1",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIPR1 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "EDNRB",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRB is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "EDNRA",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRA is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MCAT",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCAT is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC16A1",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC16A1 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MCPH1",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCPH1 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTH",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTH is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PAM",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAM is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ERBB2",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "QPCT",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "QPCT is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GJA8",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA8 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "DLL3",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLL3 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SEZ6",
+      "target": "Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEZ6 is associated with Malignant Adrenal Gland Pheochromocytoma (MALIGNANT_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    }
+  ]
+}

@@ -45,6 +45,7 @@ CAR_T_SCORES = {
         "CXCL10": 4.0,
         "DCPS": 4.0,
         "EGFR": 4.0,
+        "ETFA": 4.0,
         "FOXP3": 4.0,
         "GAL": 4.0,
         "GALNS": 4.0,

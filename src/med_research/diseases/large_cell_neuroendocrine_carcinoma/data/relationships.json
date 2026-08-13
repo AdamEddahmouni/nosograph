@@ -1,0 +1,550 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL2108738",
+      "target": "PDCD1",
+      "type": "TARGETS",
+      "description": "NIVOLUMAB targets PDCD1."
+    },
+    {
+      "source": "CHEMBL1789844",
+      "target": "CTLA4",
+      "type": "TARGETS",
+      "description": "IPILIMUMAB targets CTLA4."
+    },
+    {
+      "source": "CHEMBL2103868",
+      "target": "KDR",
+      "type": "TARGETS",
+      "description": "CABOZANTINIB S-MALATE targets KDR."
+    },
+    {
+      "source": "CHEMBL2103868",
+      "target": "MET",
+      "type": "TARGETS",
+      "description": "CABOZANTINIB S-MALATE targets MET."
+    },
+    {
+      "source": "CHEMBL2105695",
+      "target": "TPH2",
+      "type": "TARGETS",
+      "description": "TELOTRISTAT ETHYL targets TPH2."
+    },
+    {
+      "source": "CHEMBL3301587",
+      "target": "CD274",
+      "type": "TARGETS",
+      "description": "DURVALUMAB targets CD274."
+    },
+    {
+      "source": "CHEMBL2105717",
+      "target": "KDR",
+      "type": "TARGETS",
+      "description": "CABOZANTINIB targets KDR."
+    },
+    {
+      "source": "CHEMBL2105695",
+      "target": "TPH1",
+      "type": "TARGETS",
+      "description": "TELOTRISTAT ETHYL targets TPH1."
+    },
+    {
+      "source": "CHEMBL2105717",
+      "target": "MET",
+      "type": "TARGETS",
+      "description": "CABOZANTINIB targets MET."
+    },
+    {
+      "source": "CACNA1C",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1C is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "DLL3",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "DLL3 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TPH1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "TPH1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TPH2",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "TPH2 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "TPH1",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPH1 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.26"
+    },
+    {
+      "source": "TPH2",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPH2 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.26"
+    },
+    {
+      "source": "TP53",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "BRAF",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "BRCA1",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "IDH2",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH2 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "APC",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "ARID1A",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "TSC1",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC1 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "BCOR",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCOR is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KDR",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.10"
+    },
+    {
+      "source": "MET",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.10"
+    },
+    {
+      "source": "DLL3",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLL3 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "CD274",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "PDCD1",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "LGALS9",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS9 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "CTLA4",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTLA4 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "YAP1",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YAP1 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "ALK",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "SCGN",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCGN is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYC",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "RPL17",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDH1",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "MKI67",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDH2",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH2 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CALCA",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "UROD",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UROD is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MSI1",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSI1 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "EGFR",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "RB1",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ALDH1A1",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDH1A1 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NCAM1",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCAM1 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "STING1",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STING1 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NAPSA",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAPSA is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOX11",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX11 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MGMT",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MGMT is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TYMS",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYMS is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CGA",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGA is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NTRK2",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK2 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDX2",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDX2 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "KRT7",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT7 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ASCL1",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASCL1 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "KIT",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "HSPB3",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPB3 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "HSPB2",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPB2 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "HSPB1",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPB1 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TBXAS1",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBXAS1 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TBXT",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBXT is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CACNA1C",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1C is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD44",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TTF1",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTF1 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SYNM",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYNM is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "FYN",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FYN is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SNCA",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SPATA2",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ERBB2",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTEN",
+      "target": "large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with large cell neuroendocrine carcinoma (LARGE_CELL_NEUROENDOCRINE_CARCINOMA). Open Targets association score 0.02"
+    }
+  ]
+}

@@ -1,0 +1,472 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL2107354",
+      "target": "NOD2",
+      "type": "TARGETS",
+      "description": "MIFAMURTIDE targets NOD2."
+    },
+    {
+      "source": "CHEMBL2107354",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "TREATS",
+      "description": "MIFAMURTIDE is phase 4 / marketed for bone osteosarcoma (BONE_OSTEOSARCOMA)."
+    },
+    {
+      "source": "RUNX2",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "RUNX2 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RASSF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "RASSF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATR",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATR is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CHEK2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "CHEK2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BMP1",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP1 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RASSF8",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASSF8 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "LRP1B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CHEK2",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHEK2 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.69"
+    },
+    {
+      "source": "TP53",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.61"
+    },
+    {
+      "source": "RB1",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.55"
+    },
+    {
+      "source": "ATRX",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.39"
+    },
+    {
+      "source": "NOD2",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOD2 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "H3-3A",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3-3A is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2C",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAP2K1",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K1 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MAX",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAX is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TRRAP",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRRAP is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FOXL2",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXL2 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CNOT3",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNOT3 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MYCL",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYCL is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PLAG1",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAG1 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ROS1",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROS1 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "BAP1",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAP1 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NUTM1",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUTM1 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NTRK2",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK2 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PAX3",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX3 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ZNF521",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF521 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "LRP1B",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1B is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "REEP2",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REEP2 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TSC2",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.11"
+    },
+    {
+      "source": "PRCC",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRCC is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "CLIP1",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLIP1 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "PTPRD",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRD is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "MUC16",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC16 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "GPHN",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPHN is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "CTNNA2",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNA2 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "DCAF12L2",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCAF12L2 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "PCM1",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCM1 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "RPL17",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD274",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PGPEP1",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGPEP1 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPATA2",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDCD1",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGFR1",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BMP1",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP1 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRCP",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRCP is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNCA",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RUNX2",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX2 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYO1D",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO1D is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCDC124",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC124 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALB",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BMAL1",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMAL1 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IMMT",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IMMT is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATR",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATR is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "H2BC21",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H2BC21 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PER3",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PER3 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "S1PR1",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S1PR1 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ERCC6",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC6 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CLSPN",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLSPN is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ANO10",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANO10 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TRIP12",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIP12 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "UTRN",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UTRN is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "H2BC12L",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H2BC12L is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "RASSF8",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASSF8 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "BMI1",
+      "target": "bone osteosarcoma (BONE_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMI1 is associated with bone osteosarcoma (BONE_OSTEOSARCOMA). Open Targets association score 0.00"
+    }
+  ]
+}

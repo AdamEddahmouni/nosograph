@@ -1,0 +1,556 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201576",
+      "target": "MS4A1",
+      "type": "TARGETS",
+      "description": "RITUXIMAB targets MS4A1."
+    },
+    {
+      "source": "CHEMBL2105759",
+      "target": "JAK2",
+      "type": "TARGETS",
+      "description": "BARICITINIB targets JAK2."
+    },
+    {
+      "source": "CHEMBL635",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "PREDNISONE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL2105759",
+      "target": "JAK1",
+      "type": "TARGETS",
+      "description": "BARICITINIB targets JAK1."
+    },
+    {
+      "source": "CHEMBL34259",
+      "target": "DHFR",
+      "type": "TARGETS",
+      "description": "METHOTREXATE targets DHFR."
+    },
+    {
+      "source": "CHEMBL650",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "METHYLPREDNISOLONE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL160",
+      "target": "PPIA",
+      "type": "TARGETS",
+      "description": "CYCLOSPORINE targets PPIA."
+    },
+    {
+      "source": "MS4A1",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MS4A1 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "SIGLEC1",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "SIGLEC1 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "HLA-DRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "HLA-DRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL10",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL10 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL11",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL11 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "IRF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PLSCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "PLSCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "PARP12",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "PARP12 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "IRF7",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF7 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "IFIH1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFIH1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF7",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF7 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "ISG15",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "ISG15 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "MX1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "MX1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "OAS1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "OAS1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "OAS2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "OAS2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "ZNF326",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF326 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.35"
+    },
+    {
+      "source": "NR3C1",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.32"
+    },
+    {
+      "source": "PPIA",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIA is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "DHFR",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHFR is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "MRPS9",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRPS9 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.18"
+    },
+    {
+      "source": "BARHL2",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BARHL2 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.17"
+    },
+    {
+      "source": "ADRA2B",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2B is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "MS4A1",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MS4A1 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "JAK1",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK1 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "JAK2",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "SIGLEC1",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIGLEC1 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "IFIH1",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFIH1 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ISG15",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISG15 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "IFIT3",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFIT3 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "LRRC8D",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRC8D is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "MX1",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MX1 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "RSAD2",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSAD2 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "GBP1",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GBP1 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFI44L",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFI44L is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZNF644",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF644 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFI44",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFI44 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MORC3",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MORC3 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "VWF",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ICAM1",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFI27",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFI27 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFNA1",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CMPK2",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMPK2 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "STAT1",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT1 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CXCL11",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL11 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "XAF1",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XAF1 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PGR",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRH2",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH2 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TMEM37",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM37 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL6",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PSMB8",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMB8 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFIT2",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFIT2 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFIT1",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFIT1 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PARP12",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARP12 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "GDF15",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF15 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PLSCR1",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLSCR1 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "KIR3DL2",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIR3DL2 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SRCIN1",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRCIN1 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CCL2",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL2 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TRIM22",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM22 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD14",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD14 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFITM1",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFITM1 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "OAS1",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OAS1 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "OAS2",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OAS2 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CXCL10",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL10 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL10",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IRF7",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF7 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "HERC6",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HERC6 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "HERC5",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HERC5 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "AHSG",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSG is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "MMRN1",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMRN1 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "UBE2L6",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBE2L6 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "MYH8",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH8 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "GBP2",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GBP2 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TRIM21",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM21 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "HLA-DRB1",
+      "target": "juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DRB1 is associated with juvenile dermatomyositis (JUVENILE_DERMATOMYOSITIS). Open Targets association score 0.03"
+    }
+  ]
+}

@@ -1,0 +1,562 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL2028663",
+      "target": "BRAF",
+      "type": "TARGETS",
+      "description": "DABRAFENIB targets BRAF."
+    },
+    {
+      "source": "CASP8",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP8 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CDK12",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK12 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CHEK2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "CHEK2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR4",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR4 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "AXIN1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "AXIN1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.46"
+    },
+    {
+      "source": "BRAF",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.40"
+    },
+    {
+      "source": "PAX8",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX8 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "NRAS",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "HRAS",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "STRN",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STRN is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NCOA4",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOA4 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CCDC6",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC6 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "RPL5",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL5 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "EGFR",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "AKT1",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "PTEN",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "ERBB2",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SRC",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRC is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ALK",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RET",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MTOR",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PPARG",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KDR",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CASP8",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP8 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KRAS",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TERT",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MET",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NBN",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBN is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ABL1",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABL1 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR4",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR4 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "XPO1",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XPO1 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "IDH1",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDK12",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK12 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TBX3",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX3 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SH2B3",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2B3 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NF1",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP63",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "HGF",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMARCB1",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCB1 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TSC1",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC1 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RBM10",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM10 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATM",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TGFBR2",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBR2 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RB1",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MSH2",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH2 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR1",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NF2",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "AXIN1",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AXIN1 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "APC",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NSD3",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSD3 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "AR",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "STK11",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CHEK2",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHEK2 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RECQL4",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RECQL4 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTCH1",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NTRK3",
+      "target": "Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK3 is associated with Thyroid Gland Undifferentiated (Anaplastic) Carcinoma (THYROID_GLAND_UNDIFFERENTIATED_ANAPLASTIC_CARCINOMA). Open Targets association score 0.28"
+    }
+  ]
+}

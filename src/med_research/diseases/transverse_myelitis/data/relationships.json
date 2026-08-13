@@ -121,12 +121,6 @@
       "description": "HLA-DRB1 is a component of the Cell Cycle Regulation pathway."
     },
     {
-      "source": "CXCL13",
-      "target": "chemokine-signaling",
-      "type": "PARTICIPATES_IN",
-      "description": "CXCL13 is a component of the Chemokine Signaling pathway."
-    },
-    {
       "source": "CSF2",
       "target": "coagulation",
       "type": "PARTICIPATES_IN",
@@ -233,6 +227,12 @@
       "target": "xenobiotic-metabolism",
       "type": "PARTICIPATES_IN",
       "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CXCL13",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL13 is a component of the Chemokine Signaling pathway."
     },
     {
       "source": "KCNA1",
@@ -445,6 +445,18 @@
       "description": "BTD is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.01"
     },
     {
+      "source": "GSTM1",
+      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM1 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRIM21",
+      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM21 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.01"
+    },
+    {
       "source": "LRBA",
       "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
       "type": "ASSOCIATED_WITH",
@@ -463,22 +475,16 @@
       "description": "CALR is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.01"
     },
     {
-      "source": "GSTM1",
-      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GSTM1 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.01"
-    },
-    {
-      "source": "TRIM21",
-      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "TRIM21 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.01"
-    },
-    {
       "source": "ALB",
       "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
       "type": "ASSOCIATED_WITH",
       "description": "ALB is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRDX5",
+      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDX5 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
     },
     {
       "source": "HLA-DRB1",
@@ -493,28 +499,22 @@
       "description": "CD58 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
     },
     {
-      "source": "PRDX5",
-      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PRDX5 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
-    },
-    {
       "source": "MBP",
       "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
       "type": "ASSOCIATED_WITH",
       "description": "MBP is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
     },
     {
+      "source": "WT1",
+      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
+    },
+    {
       "source": "NF1",
       "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
       "type": "ASSOCIATED_WITH",
       "description": "NF1 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
-    },
-    {
-      "source": "CMC1",
-      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CMC1 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
     },
     {
       "source": "GRID2",
@@ -529,22 +529,22 @@
       "description": "CRP is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
     },
     {
-      "source": "WT1",
+      "source": "CMC1",
       "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "WT1 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
-    },
-    {
-      "source": "RPL17",
-      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "RPL17 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
+      "description": "CMC1 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
     },
     {
       "source": "FBXW7",
       "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
       "type": "ASSOCIATED_WITH",
       "description": "FBXW7 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPL17",
+      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
     },
     {
       "source": "ACLY",
@@ -559,6 +559,12 @@
       "description": "CD40LG is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
     },
     {
+      "source": "FASLG",
+      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
+    },
+    {
       "source": "MMP9",
       "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
       "type": "ASSOCIATED_WITH",
@@ -571,22 +577,28 @@
       "description": "MMP2 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
     },
     {
+      "source": "ENO2",
+      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENO2 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
+    },
+    {
       "source": "LAMC2",
       "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
       "type": "ASSOCIATED_WITH",
       "description": "LAMC2 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
     },
     {
-      "source": "PVR",
-      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PVR is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
-    },
-    {
       "source": "YWHAQ",
       "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
       "type": "ASSOCIATED_WITH",
       "description": "YWHAQ is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PVR",
+      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PVR is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
     },
     {
       "source": "CSF2",
@@ -601,88 +613,10 @@
       "description": "YWHAG is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
     },
     {
-      "source": "ENO2",
-      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ENO2 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
-    },
-    {
-      "source": "FASLG",
-      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "FASLG is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
-    },
-    {
       "source": "ATM",
       "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
       "type": "ASSOCIATED_WITH",
       "description": "ATM is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
-    },
-    {
-      "source": "SPATA2",
-      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SPATA2 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
-    },
-    {
-      "source": "IFNB1",
-      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "IFNB1 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
-    },
-    {
-      "source": "IL2",
-      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "IL2 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
-    },
-    {
-      "source": "CTLA4",
-      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CTLA4 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
-    },
-    {
-      "source": "KRT20",
-      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "KRT20 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
-    },
-    {
-      "source": "PROS1",
-      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PROS1 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
-    },
-    {
-      "source": "CXCL13",
-      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CXCL13 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
-    },
-    {
-      "source": "TG",
-      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "TG is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
-    },
-    {
-      "source": "AMPH",
-      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "AMPH is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
-    },
-    {
-      "source": "MS4A1",
-      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "MS4A1 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
-    },
-    {
-      "source": "HLA-DRB5",
-      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "HLA-DRB5 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
     },
     {
       "source": "LGI1",
@@ -697,16 +631,10 @@
       "description": "VEGFA is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
     },
     {
-      "source": "HLA-DRA",
+      "source": "PDCD1",
       "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "HLA-DRA is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
-    },
-    {
-      "source": "PRTN3",
-      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PRTN3 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
+      "description": "PDCD1 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
     },
     {
       "source": "EOMES",
@@ -715,10 +643,82 @@
       "description": "EOMES is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
     },
     {
-      "source": "PDCD1",
+      "source": "PROS1",
       "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "PDCD1 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
+      "description": "PROS1 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNB1",
+      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNB1 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPATA2",
+      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "HLA-DRB5",
+      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DRB5 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "HLA-DRA",
+      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DRA is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PF4",
+      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PF4 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "AMPH",
+      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMPH is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRTN3",
+      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRTN3 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TG",
+      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TG is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MS4A1",
+      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MS4A1 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CTLA4",
+      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTLA4 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT20",
+      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT20 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
     },
     {
       "source": "SNCA",
@@ -727,10 +727,16 @@
       "description": "SNCA is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
     },
     {
-      "source": "PF4",
+      "source": "IL2",
       "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "PF4 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
+      "description": "IL2 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL13",
+      "target": "transverse myelitis (TRANSVERSE_MYELITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL13 is associated with transverse myelitis (TRANSVERSE_MYELITIS). Open Targets association score 0.00"
     },
     {
       "source": "NR3C1",

@@ -1,0 +1,484 @@
+{
+  "relationships": [
+    {
+      "source": "BAX",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BAX is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BCL2L1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2L1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TERF2IP",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TERF2IP is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MSH3",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH3 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GRIN1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN2A",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2A is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "SLC1A2",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC1A2 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ABCC1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.37"
+    },
+    {
+      "source": "IDH1",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "KIAA1549",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIAA1549 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "FAM131B",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM131B is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "FGFR1",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "RNF5",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF5 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSPG4",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSPG4 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL2",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "BAX",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAX is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL2L1",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2L1 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDH1",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF11B is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC1A2",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC1A2 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "NF1",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTPN11",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "GAST",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAST is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "LGALS3",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "OLIG2",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OLIG2 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "IDH2",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH2 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "NTRK2",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK2 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPK3",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK3 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "GRIN1",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN1 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MKI67",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "GRIN2A",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2A is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "RAP1A",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAP1A is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAP2K1",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K1 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "FN1",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FN1 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "BDNF",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BDNF is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "TERF2IP",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERF2IP is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "RABGEF1",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RABGEF1 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD34",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "GFAP",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAP2",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "NF2",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "NTSR1",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTSR1 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MVP",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MVP is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "ABCB1",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB1 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTEN",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD9",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD9 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "DCX",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCX is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "TBC1D9",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D9 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MDM4",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM4 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MSH3",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH3 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MEN1",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "ABCC1",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC1 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD99",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD99 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00 | Open Targets association score 0.00"
+    },
+    {
+      "source": "SCGN",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCGN is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD68",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD68 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MTOR",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "TACC1",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TACC1 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "SYP",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYP is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "SST",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SST is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "GSR",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSR is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHGA",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHGA is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "EPHB2",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHB2 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "PGP",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGP is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "EP300",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EP300 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MKRN1",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKRN1 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "GIT2",
+      "target": "dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIT2 is associated with dysembryoplastic neuroepithelial tumor (DYSEMBRYOPLASTIC_NEUROEPITHELIAL_TUMOR). Open Targets association score 0.00"
+    }
+  ]
+}

@@ -79,6 +79,7 @@ CAR_T_SCORES = {
         "PPP2R1A": 4.0,
         "PPP2R1B": 4.0,
         "PPP2R5A": 4.0,
+        "PPP2R5B": 4.0,
         "PPP2R5C": 4.0,
         "PPP2R5E": 4.0,
         "PRIM1": 4.0,

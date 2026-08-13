@@ -109,6 +109,7 @@ CAR_T_SCORES = {
         "PSMD6": 4.0,
         "PSMD7": 4.0,
         "PSMD8": 4.0,
+        "RAPGEF5": 4.0,
         "RBX1": 4.0,
         "RPL17": 4.0,
         "RPL17-C18orf32": 4.0,

@@ -1,0 +1,496 @@
+{
+  "relationships": [
+    {
+      "source": "COPG2",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COPG2 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "HCN1",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "HCN1 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "COL11A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL11A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL27A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL27A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COLGALT2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COLGALT2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLIS3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLIS3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BMP5",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP5 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "BMP6",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP6 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL11",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL11 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K6",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K6 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFATC1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PIK3R1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "LTBP3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SMAD3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "LTBP3",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP3 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF13B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF13B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LMX1B",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "LMX1B is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "PKD1",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKD1 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.59"
+    },
+    {
+      "source": "APC",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.57"
+    },
+    {
+      "source": "COLGALT2",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COLGALT2 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.51"
+    },
+    {
+      "source": "TNFRSF13B",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF13B is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.46"
+    },
+    {
+      "source": "TNC",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNC is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.44"
+    },
+    {
+      "source": "ASTN2",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASTN2 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.43"
+    },
+    {
+      "source": "ECRG4",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ECRG4 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.43"
+    },
+    {
+      "source": "ZC3H11B",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZC3H11B is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.42"
+    },
+    {
+      "source": "FTO",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FTO is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.41"
+    },
+    {
+      "source": "RAB28",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB28 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.40"
+    },
+    {
+      "source": "GLIS3",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLIS3 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.40"
+    },
+    {
+      "source": "SOX5",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX5 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.40"
+    },
+    {
+      "source": "MAP2K6",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K6 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.37"
+    },
+    {
+      "source": "NFATC1",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFATC1 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.36"
+    },
+    {
+      "source": "CHST3",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHST3 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.36"
+    },
+    {
+      "source": "FES",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FES is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.36"
+    },
+    {
+      "source": "TMEM119",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM119 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.36"
+    },
+    {
+      "source": "TACC3",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TACC3 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.36"
+    },
+    {
+      "source": "FGFR3",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.36"
+    },
+    {
+      "source": "HCN1",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HCN1 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.35"
+    },
+    {
+      "source": "ABCG8",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG8 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.35"
+    },
+    {
+      "source": "ESR1",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.35"
+    },
+    {
+      "source": "EDNRA",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRA is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.35"
+    },
+    {
+      "source": "COL11A1",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL11A1 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.35"
+    },
+    {
+      "source": "LMX1B",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMX1B is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.34"
+    },
+    {
+      "source": "CXADR",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXADR is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.34"
+    },
+    {
+      "source": "VEGFA",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.34"
+    },
+    {
+      "source": "ATP9A",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP9A is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.34"
+    },
+    {
+      "source": "GASK1A",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GASK1A is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.34"
+    },
+    {
+      "source": "PAX1",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX1 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.33"
+    },
+    {
+      "source": "HHIP",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HHIP is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.33"
+    },
+    {
+      "source": "PTPRC",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.33"
+    },
+    {
+      "source": "ANKFN1",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKFN1 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.33"
+    },
+    {
+      "source": "PIK3R1",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R1 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.33"
+    },
+    {
+      "source": "PGS1",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGS1 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.33"
+    },
+    {
+      "source": "FILIP1",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FILIP1 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.33"
+    },
+    {
+      "source": "RGMA",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RGMA is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.33"
+    },
+    {
+      "source": "IL11",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL11 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.32"
+    },
+    {
+      "source": "SMAD3",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD3 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.32"
+    },
+    {
+      "source": "TGFA",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFA is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.32"
+    },
+    {
+      "source": "TEAD1",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TEAD1 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.32"
+    },
+    {
+      "source": "BMP5",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP5 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.32"
+    },
+    {
+      "source": "JAZF1",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAZF1 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.31"
+    },
+    {
+      "source": "STON1",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STON1 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.31"
+    },
+    {
+      "source": "MRPS30",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRPS30 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.31"
+    },
+    {
+      "source": "PAPPA",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAPPA is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.31"
+    },
+    {
+      "source": "COL27A1",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL27A1 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.31"
+    },
+    {
+      "source": "TLN2",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLN2 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.31"
+    },
+    {
+      "source": "STARD13",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STARD13 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.30"
+    },
+    {
+      "source": "ITM2A",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITM2A is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.30"
+    },
+    {
+      "source": "EPHB2",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHB2 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.30"
+    },
+    {
+      "source": "LDLR",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.30"
+    },
+    {
+      "source": "SMARCAL1",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCAL1 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.29"
+    },
+    {
+      "source": "LTBP3",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTBP3 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.29"
+    },
+    {
+      "source": "TBX15",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX15 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.29"
+    },
+    {
+      "source": "COPG2",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COPG2 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.29"
+    },
+    {
+      "source": "FIBIN",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FIBIN is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAEA",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAEA is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.28"
+    },
+    {
+      "source": "NFU1",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFU1 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.28"
+    },
+    {
+      "source": "BMP6",
+      "target": "medical procedure (MEDICAL_PROCEDURE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP6 is associated with medical procedure (MEDICAL_PROCEDURE). Open Targets association score 0.28"
+    }
+  ]
+}

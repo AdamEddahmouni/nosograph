@@ -1,0 +1,472 @@
+{
+  "relationships": [
+    {
+      "source": "FGF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FGF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "KIF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "KIF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLI2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "IHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BMP5",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP5 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "BMPR1B",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMPR1B is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FRAS1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FRAS1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CHUK",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CHUK is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "LRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT5A",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT5A is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP51A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP51A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "HMGB1",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGB1 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.42"
+    },
+    {
+      "source": "ROR2",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROR2 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL2A1",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXD13",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD13 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGFR2",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GLI3",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRICKLE1",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRICKLE1 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GDF5",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF5 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "WNT5A",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT5A is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PHEX",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHEX is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGFR3",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXC1",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PITX1",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX1 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGF9",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF9 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TP63",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NABP2",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NABP2 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "GLI2",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI2 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PCSK5",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK5 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TBX15",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX15 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PDS5B",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDS5B is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZEB1",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "RSPO2",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO2 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "BMP5",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP5 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGF10",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF10 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ALX4",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALX4 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TENT5A",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TENT5A is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SOX11",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX11 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHUK",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHUK is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SMPD3",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMPD3 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SFN",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFN is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFT172",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT172 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CILK1",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CILK1 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRRX1",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRRX1 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "POSTN",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POSTN is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "WDR19",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR19 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TGFB2",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB2 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CYP51A1",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP51A1 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "HOXD12",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD12 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "BMPR1B",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMPR1B is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FREM1",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FREM1 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IHH",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IHH is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "LRRK1",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRK1 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "EYA1",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EYA1 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "RPL38",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL38 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "EVC",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EVC is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPR2",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPR2 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC10A7",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC10A7 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CPLANE1",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPLANE1 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "LRP6",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP6 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOX9",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX9 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FRAS1",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FRAS1 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ALKBH1",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALKBH1 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TMEM107",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM107 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTPN11",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MKS1",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKS1 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CCN2",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCN2 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "DYM",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYM is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "KIF7",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF7 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SFRP2",
+      "target": "brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFRP2 is associated with brachyphalangy, polydactyly, and tibial aplasia/hypoplasia (BRACHYPHALANGY_POLYDACTYLY_AND_TIBIAL_APLASIA_HYPOPLASIA). Open Targets association score 0.03"
+    }
+  ]
+}

@@ -1,0 +1,436 @@
+{
+  "relationships": [
+    {
+      "source": "NEIL1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NEIL1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "SOCS2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "SOCS2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "ACE2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGTR1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGTR1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "DRD5",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "DRD5 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TGM2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "CYP4A11",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4A11 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP4A22",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4A22 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GSTP1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTP1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "MTTP",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTTP is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.45"
+    },
+    {
+      "source": "MC4R",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MC4R is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.08"
+    },
+    {
+      "source": "LEPR",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.08"
+    },
+    {
+      "source": "LEP",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.07"
+    },
+    {
+      "source": "NPR1",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPR1 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.07"
+    },
+    {
+      "source": "ALMS1",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALMS1 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRKG1",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKG1 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.06"
+    },
+    {
+      "source": "SPIN4",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPIN4 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.06"
+    },
+    {
+      "source": "TRPC1",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPC1 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.06"
+    },
+    {
+      "source": "POMC",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.06"
+    },
+    {
+      "source": "AGTR1",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGTR1 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.06"
+    },
+    {
+      "source": "KSR2",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KSR2 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.06"
+    },
+    {
+      "source": "NOS3",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.05"
+    },
+    {
+      "source": "SOCS2",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOCS2 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.05"
+    },
+    {
+      "source": "PDC",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDC is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPRN",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPRN is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.05"
+    },
+    {
+      "source": "HPRT1",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPRT1 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.05"
+    },
+    {
+      "source": "GPR37L1",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR37L1 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.05"
+    },
+    {
+      "source": "ACE2",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE2 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.05"
+    },
+    {
+      "source": "DRD5",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DRD5 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.05"
+    },
+    {
+      "source": "CORIN",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CORIN is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.05"
+    },
+    {
+      "source": "ARHGAP42",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP42 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.05"
+    },
+    {
+      "source": "NEIL1",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEIL1 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.05"
+    },
+    {
+      "source": "GNRH1",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRH1 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.05"
+    },
+    {
+      "source": "KDM3A",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM3A is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.05"
+    },
+    {
+      "source": "MC3R",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MC3R is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.05"
+    },
+    {
+      "source": "BDNF",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BDNF is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.05"
+    },
+    {
+      "source": "CYP4A11",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4A11 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.05"
+    },
+    {
+      "source": "CYP4A22",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4A22 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.05"
+    },
+    {
+      "source": "KCNK6",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNK6 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.05"
+    },
+    {
+      "source": "KCNJ8",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNJ8 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.05"
+    },
+    {
+      "source": "AR",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    },
+    {
+      "source": "RCN2",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RCN2 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    },
+    {
+      "source": "PPARG",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDH1",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    },
+    {
+      "source": "MRAP2",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRAP2 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    },
+    {
+      "source": "CLOCK",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLOCK is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXP2",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP2 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    },
+    {
+      "source": "ARNT2",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARNT2 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    },
+    {
+      "source": "MFRP",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFRP is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    },
+    {
+      "source": "TGM2",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM2 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    },
+    {
+      "source": "SMARCA2",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA2 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    },
+    {
+      "source": "NDUFAF6",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFAF6 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC6A9",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A9 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAGI2",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAGI2 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    },
+    {
+      "source": "TTC21B",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC21B is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    },
+    {
+      "source": "LIN9",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIN9 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    },
+    {
+      "source": "TUB",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUB is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADRA1D",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA1D is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    },
+    {
+      "source": "ACE",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    },
+    {
+      "source": "EDN1",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDN1 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZC3H4",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZC3H4 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    },
+    {
+      "source": "NPB",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPB is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    },
+    {
+      "source": "GSTP1",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTP1 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    },
+    {
+      "source": "SIRT3",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT3 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRRK2",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRK2 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    },
+    {
+      "source": "NEDD4L",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEDD4L is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    },
+    {
+      "source": "NCALD",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCALD is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAP3K15",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K15 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    },
+    {
+      "source": "IGF1",
+      "target": "metabolic syndrome X (METABOLIC_SYNDROME_X)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with metabolic syndrome X (METABOLIC_SYNDROME_X). Open Targets association score 0.04"
+    }
+  ]
+}

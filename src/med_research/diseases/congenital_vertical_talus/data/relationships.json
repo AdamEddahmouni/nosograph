@@ -1,0 +1,436 @@
+{
+  "relationships": [
+    {
+      "source": "CDK20",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK20 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "PROC",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "PROC is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL11A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL11A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLI2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BMPR1B",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMPR1B is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "JAG2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "JAG2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "MTHFR",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFR is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "LRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "HOXD10",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD10 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.54"
+    },
+    {
+      "source": "GDF5",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF5 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.07"
+    },
+    {
+      "source": "FMN1",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMN1 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.07"
+    },
+    {
+      "source": "HOXA11",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA11 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.07"
+    },
+    {
+      "source": "TBX4",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX4 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.06"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.06"
+    },
+    {
+      "source": "HOXD13",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD13 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.06"
+    },
+    {
+      "source": "ZIC2",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZIC2 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.06"
+    },
+    {
+      "source": "HOXA13",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA13 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "PAX3",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX3 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "LRP6",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP6 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "EPYC",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPYC is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "TULP3",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TULP3 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "DEAF1",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEAF1 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFT57",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT57 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "STK11",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MMP3",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP3 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "BMPR1B",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMPR1B is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "GDF6",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF6 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TENT5A",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TENT5A is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDK20",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK20 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "NOG",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOG is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "RAB23",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB23 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "JAG2",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAG2 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "COL11A1",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL11A1 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "VANGL2",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VANGL2 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOX8",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX8 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "LMO4",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMO4 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "MATN3",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MATN3 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "DYNC2I2",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYNC2I2 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "INTU",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INTU is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TCTN2",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCTN2 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC25A32",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A32 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "B9D1",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B9D1 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CFL1",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFL1 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZEB1",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "MAP3K4",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K4 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TCOF1",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCOF1 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SALL1",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SALL1 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "GLI2",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI2 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "FOXP4",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP4 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "GRHL2",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRHL2 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFT122",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT122 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "NLRP3",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.02"
+    },
+    {
+      "source": "GPX3",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPX3 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CRP",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.02"
+    },
+    {
+      "source": "MTHFR",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFR is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "SERPIND1",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPIND1 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CLDN5",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN5 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALB",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PROS1",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROS1 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "JAK2",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PROC",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROC is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRH2",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH2 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSAP",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSAP is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRH1",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH1 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CBS",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBS is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYCS",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYCS is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "C3",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "F5",
+      "target": "congenital vertical talus (CONGENITAL_VERTICAL_TALUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F5 is associated with congenital vertical talus (CONGENITAL_VERTICAL_TALUS). Open Targets association score 0.01"
+    }
+  ]
+}

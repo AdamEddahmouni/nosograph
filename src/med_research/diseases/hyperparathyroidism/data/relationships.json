@@ -103,6 +103,12 @@
       "description": "ZNF106 is a component of the Coagulation Cascade pathway."
     },
     {
+      "source": "TGIF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TGIF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
       "source": "HNF4A",
       "target": "glucose-metabolism",
       "type": "PARTICIPATES_IN",
@@ -173,6 +179,12 @@
       "target": "thyroid-hormone",
       "type": "PARTICIPATES_IN",
       "description": "PTGER2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGIF2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGIF2 is a component of the Thyroid Hormone Signaling pathway."
     },
     {
       "source": "ATG5",
@@ -373,40 +385,10 @@
       "description": "TBC1D12 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.05"
     },
     {
-      "source": "BORCS6",
+      "source": "ZNF106",
       "target": "hyperparathyroidism (HYPERPARATHYROIDISM)",
       "type": "ASSOCIATED_WITH",
-      "description": "BORCS6 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.05"
-    },
-    {
-      "source": "RAB9B",
-      "target": "hyperparathyroidism (HYPERPARATHYROIDISM)",
-      "type": "ASSOCIATED_WITH",
-      "description": "RAB9B is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.05"
-    },
-    {
-      "source": "C1GALT1",
-      "target": "hyperparathyroidism (HYPERPARATHYROIDISM)",
-      "type": "ASSOCIATED_WITH",
-      "description": "C1GALT1 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.05"
-    },
-    {
-      "source": "CHCT1",
-      "target": "hyperparathyroidism (HYPERPARATHYROIDISM)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CHCT1 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.05"
-    },
-    {
-      "source": "LRRC28",
-      "target": "hyperparathyroidism (HYPERPARATHYROIDISM)",
-      "type": "ASSOCIATED_WITH",
-      "description": "LRRC28 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.05"
-    },
-    {
-      "source": "SAE1",
-      "target": "hyperparathyroidism (HYPERPARATHYROIDISM)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SAE1 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.05"
+      "description": "ZNF106 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.05"
     },
     {
       "source": "SLITRK4",
@@ -415,16 +397,46 @@
       "description": "SLITRK4 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.05"
     },
     {
+      "source": "RAB9B",
+      "target": "hyperparathyroidism (HYPERPARATHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB9B is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.05"
+    },
+    {
+      "source": "SAE1",
+      "target": "hyperparathyroidism (HYPERPARATHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAE1 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.05"
+    },
+    {
+      "source": "BORCS6",
+      "target": "hyperparathyroidism (HYPERPARATHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BORCS6 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.05"
+    },
+    {
+      "source": "LRRC28",
+      "target": "hyperparathyroidism (HYPERPARATHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRC28 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.05"
+    },
+    {
+      "source": "CHCT1",
+      "target": "hyperparathyroidism (HYPERPARATHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHCT1 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.05"
+    },
+    {
       "source": "LONRF3",
       "target": "hyperparathyroidism (HYPERPARATHYROIDISM)",
       "type": "ASSOCIATED_WITH",
       "description": "LONRF3 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.05"
     },
     {
-      "source": "ZNF106",
+      "source": "C1GALT1",
       "target": "hyperparathyroidism (HYPERPARATHYROIDISM)",
       "type": "ASSOCIATED_WITH",
-      "description": "ZNF106 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.05"
+      "description": "C1GALT1 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.05"
     },
     {
       "source": "HFE",
@@ -445,16 +457,16 @@
       "description": "HNF4A is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.04"
     },
     {
-      "source": "NRSN2",
-      "target": "hyperparathyroidism (HYPERPARATHYROIDISM)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NRSN2 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.04"
-    },
-    {
       "source": "GM2A",
       "target": "hyperparathyroidism (HYPERPARATHYROIDISM)",
       "type": "ASSOCIATED_WITH",
       "description": "GM2A is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "NRSN2",
+      "target": "hyperparathyroidism (HYPERPARATHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRSN2 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.04"
     },
     {
       "source": "GPC6",
@@ -511,16 +523,16 @@
       "description": "GPD1 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.04"
     },
     {
-      "source": "HLCS",
-      "target": "hyperparathyroidism (HYPERPARATHYROIDISM)",
-      "type": "ASSOCIATED_WITH",
-      "description": "HLCS is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.04"
-    },
-    {
       "source": "SEC31B",
       "target": "hyperparathyroidism (HYPERPARATHYROIDISM)",
       "type": "ASSOCIATED_WITH",
       "description": "SEC31B is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "HLCS",
+      "target": "hyperparathyroidism (HYPERPARATHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLCS is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.04"
     },
     {
       "source": "CPEB4",
@@ -535,22 +547,34 @@
       "description": "PTH1R is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.04"
     },
     {
+      "source": "S100A16",
+      "target": "hyperparathyroidism (HYPERPARATHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A16 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.04"
+    },
+    {
       "source": "SHANK3",
       "target": "hyperparathyroidism (HYPERPARATHYROIDISM)",
       "type": "ASSOCIATED_WITH",
       "description": "SHANK3 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.04"
     },
     {
-      "source": "KCTD5",
+      "source": "TGIF2",
       "target": "hyperparathyroidism (HYPERPARATHYROIDISM)",
       "type": "ASSOCIATED_WITH",
-      "description": "KCTD5 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.04"
+      "description": "TGIF2 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.04"
     },
     {
-      "source": "S100A16",
+      "source": "C2CD2",
       "target": "hyperparathyroidism (HYPERPARATHYROIDISM)",
       "type": "ASSOCIATED_WITH",
-      "description": "S100A16 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.04"
+      "description": "C2CD2 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "TMEM254",
+      "target": "hyperparathyroidism (HYPERPARATHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM254 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.04"
     },
     {
       "source": "CCDC78",
@@ -559,16 +583,16 @@
       "description": "CCDC78 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.04"
     },
     {
+      "source": "KCTD5",
+      "target": "hyperparathyroidism (HYPERPARATHYROIDISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCTD5 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.04"
+    },
+    {
       "source": "REPS2",
       "target": "hyperparathyroidism (HYPERPARATHYROIDISM)",
       "type": "ASSOCIATED_WITH",
       "description": "REPS2 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.04"
-    },
-    {
-      "source": "TMEM254",
-      "target": "hyperparathyroidism (HYPERPARATHYROIDISM)",
-      "type": "ASSOCIATED_WITH",
-      "description": "TMEM254 is associated with hyperparathyroidism (HYPERPARATHYROIDISM). Open Targets association score 0.04"
     },
     {
       "source": "APOL1",

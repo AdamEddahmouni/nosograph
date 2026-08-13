@@ -1,0 +1,574 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL160",
+      "target": "PPIA",
+      "type": "TARGETS",
+      "description": "CYCLOSPORINE targets PPIA."
+    },
+    {
+      "source": "CHEMBL1201567",
+      "target": "CSF3R",
+      "type": "TARGETS",
+      "description": "FILGRASTIM targets CSF3R."
+    },
+    {
+      "source": "CHEMBL461101",
+      "target": "MPL",
+      "type": "TARGETS",
+      "description": "ELTROMBOPAG targets MPL."
+    },
+    {
+      "source": "HLA-DRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "HLA-DRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "LILRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "LILRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CXCL12",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL12 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "TERF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TERF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TERF2IP",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TERF2IP is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "HAVCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "HAVCR2",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR2 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "VCAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "VCAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "STAT5B",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT5B is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "KITLG",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KITLG is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "CD28",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD28 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL23R",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL23R is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TPO",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TPO is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GSTK1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTK1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GSTM1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GSTT1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTT1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SLCO6A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLCO6A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "THPO",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THPO is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "MPL",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPL is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.26"
+    },
+    {
+      "source": "PPIA",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIA is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.26"
+    },
+    {
+      "source": "DDX41",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDX41 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.20"
+    },
+    {
+      "source": "TET2",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.10"
+    },
+    {
+      "source": "CSF3R",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3R is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "TNF",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TERF1",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERF1 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "RAP1A",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAP1A is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TERF2IP",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERF2IP is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL23R",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL23R is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RABGEF1",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RABGEF1 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSF3",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TBPL1",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBPL1 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TERF2",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERF2 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNG",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "WT1",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRF1",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRF1 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HLA-DRB1",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DRB1 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ECI2",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ECI2 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HLA-A",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-A is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD4",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HPGDS",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPGDS is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL2RA",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RA is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HLA-B",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-B is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MSN",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSN is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FOXP3",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ISG20",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISG20 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSTM1",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM1 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFKB1",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FLT3",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "S100A9",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A9 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "S100A8",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A8 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VCAM1",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VCAM1 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GAR1",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAR1 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SBDS",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SBDS is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSTT1",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTT1 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "LILRB1",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LILRB1 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HLA-G",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-G is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VDR",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VDR is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EPHX1",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHX1 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "STAT5B",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT5B is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP53",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KITLG",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KITLG is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GATA2",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA2 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TERT",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD8A",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ERCC6L",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC6L is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ABCB1",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB1 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLCO6A1",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLCO6A1 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "HGF",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GSTK1",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTK1 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "AFP",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TPO",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPO is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SAA2",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAA2 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SAA1",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAA1 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD160",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD160 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "HAVCR2",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAVCR2 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL12",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL12 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD28",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD28 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KLRK1",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLRK1 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CTLA4",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTLA4 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "THPO",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THPO is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGFB1",
+      "target": "acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with acquired aplastic anemia (ACQUIRED_APLASTIC_ANEMIA). Open Targets association score 0.00"
+    }
+  ]
+}

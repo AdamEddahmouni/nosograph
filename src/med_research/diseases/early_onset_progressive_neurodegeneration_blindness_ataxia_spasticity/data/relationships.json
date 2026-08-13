@@ -1,0 +1,586 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN2C",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN2C."
+    },
+    {
+      "source": "CHEMBL2151572",
+      "target": "CHRNA7",
+      "type": "TARGETS",
+      "description": "ENCENICLINE targets CHRNA7."
+    },
+    {
+      "source": "CHEMBL636",
+      "target": "ACHE",
+      "type": "TARGETS",
+      "description": "RIVASTIGMINE targets ACHE."
+    },
+    {
+      "source": "CHEMBL636",
+      "target": "BCHE",
+      "type": "TARGETS",
+      "description": "RIVASTIGMINE targets BCHE."
+    },
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN2D",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN2D."
+    },
+    {
+      "source": "CHEMBL502",
+      "target": "ACHE",
+      "type": "TARGETS",
+      "description": "DONEPEZIL targets ACHE."
+    },
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN1",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN1."
+    },
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN3A",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN3A."
+    },
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN2A",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN2A."
+    },
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN3B",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN3B."
+    },
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN2B",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN2B."
+    },
+    {
+      "source": "CACNA1C",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1C is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CACNA1D",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1D is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "F2RL1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F2RL1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TNFSF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GRIN1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN2A",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2A is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN2B",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2B is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN2C",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2C is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN2D",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2D is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN3A",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN3A is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN3B",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN3B is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRM4",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRM4 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "DPP4",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "DPP4 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GLP1R",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GLP1R is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD36",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD36 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF10",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF10 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ENG",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENG is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.16"
+    },
+    {
+      "source": "NIFK",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NIFK is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.09"
+    },
+    {
+      "source": "CACNA1C",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1C is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.07"
+    },
+    {
+      "source": "TYMS",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYMS is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.07"
+    },
+    {
+      "source": "TBXAS1",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBXAS1 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.07"
+    },
+    {
+      "source": "TBXT",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBXT is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.07"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.06"
+    },
+    {
+      "source": "ACHE",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACHE is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.05"
+    },
+    {
+      "source": "GRIN1",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN1 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.04"
+    },
+    {
+      "source": "BCHE",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCHE is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GRIN2B",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2B is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GRIN2A",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2A is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GRIN2D",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2D is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GRIN3A",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN3A is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GRIN3B",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN3B is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GRIN2C",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2C is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CHRNA7",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHRNA7 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.04"
+    },
+    {
+      "source": "LPAR1",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPAR1 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNF",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ATF4",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATF4 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.03"
+    },
+    {
+      "source": "CGAS",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGAS is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CGA",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGA is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "NLRP3",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CACNA1D",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1D is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "GABPA",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABPA is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "MTDH",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTDH is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD36",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD36 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "AQP4",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP4 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "IGF1",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "VEGFA",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "PIEZO1",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIEZO1 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "MTOR",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "PROM1",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROM1 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "APOE",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "RPL17",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "BDNF",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BDNF is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "FPR2",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FPR2 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "GFAP",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "MMP9",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TREM1",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREM1 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "HMGB1",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGB1 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "AIM2",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIM2 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TGFB1",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "DPP4",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPP4 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "GLP1R",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLP1R is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "MPZ",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPZ is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "RPLP0",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPLP0 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "AOPEP",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOPEP is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "ZEB1",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "STING1",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STING1 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNFSF10",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF10 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "KEAP1",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KEAP1 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TMEM97",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM97 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TP53",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "F2RL1",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F2RL1 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "GRM4",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRM4 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "PLB1",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLB1 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "PSEN1",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSEN1 is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CRHBP",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRHBP is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "YWHAZ",
+      "target": "central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YWHAZ is associated with central nervous system disease (EARLY_ONSET_PROGRESSIVE_NEURODEGENERATION_BLINDNESS_ATAXIA_SPASTICITY). Open Targets association score 0.01"
+    }
+  ]
+}

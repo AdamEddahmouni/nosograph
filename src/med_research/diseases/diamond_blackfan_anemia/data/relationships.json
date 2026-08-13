@@ -97,6 +97,12 @@
       "description": "FLUDARABINE PHOSPHATE targets PRIM2."
     },
     {
+      "source": "CHEMBL422",
+      "target": "DRD4",
+      "type": "TARGETS",
+      "description": "TRIFLUOPERAZINE targets DRD4."
+    },
+    {
       "source": "CHEMBL1096882",
       "target": "POLD2",
       "type": "TARGETS",
@@ -209,6 +215,12 @@
       "target": "serotonin-dopamine",
       "type": "PARTICIPATES_IN",
       "description": "HTR2C is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "DRD4",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "DRD4 is a component of the Serotonin / Dopamine Signaling pathway."
     },
     {
       "source": "TGFB1",
@@ -445,46 +457,10 @@
       "description": "NLK is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.09"
     },
     {
-      "source": "IMPDH1",
+      "source": "POLA1",
       "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
       "type": "ASSOCIATED_WITH",
-      "description": "IMPDH1 is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
-    },
-    {
-      "source": "PRIM1",
-      "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PRIM1 is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
-    },
-    {
-      "source": "POLD3",
-      "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "POLD3 is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
-    },
-    {
-      "source": "CSF3R",
-      "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CSF3R is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
-    },
-    {
-      "source": "POLA2",
-      "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "POLA2 is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
-    },
-    {
-      "source": "RRM1",
-      "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "RRM1 is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
-    },
-    {
-      "source": "IMPDH2",
-      "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "IMPDH2 is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
+      "description": "POLA1 is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
     },
     {
       "source": "POLE3",
@@ -493,10 +469,16 @@
       "description": "POLE3 is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
     },
     {
-      "source": "PRIM2",
+      "source": "RRM1",
       "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
       "type": "ASSOCIATED_WITH",
-      "description": "PRIM2 is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
+      "description": "RRM1 is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "IMPDH1",
+      "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IMPDH1 is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
     },
     {
       "source": "POLD2",
@@ -505,34 +487,16 @@
       "description": "POLD2 is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
     },
     {
-      "source": "POLA1",
+      "source": "POLD3",
       "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
       "type": "ASSOCIATED_WITH",
-      "description": "POLA1 is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
+      "description": "POLD3 is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
     },
     {
-      "source": "DHFR",
+      "source": "IMPDH2",
       "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
       "type": "ASSOCIATED_WITH",
-      "description": "DHFR is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
-    },
-    {
-      "source": "POLE",
-      "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "POLE is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
-    },
-    {
-      "source": "POLD1",
-      "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "POLD1 is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
-    },
-    {
-      "source": "POLD4",
-      "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "POLD4 is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
+      "description": "IMPDH2 is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
     },
     {
       "source": "POLE2",
@@ -541,10 +505,58 @@
       "description": "POLE2 is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
     },
     {
+      "source": "PRIM2",
+      "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRIM2 is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "POLD4",
+      "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD4 is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "POLE",
+      "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "POLA2",
+      "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLA2 is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "POLD1",
+      "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD1 is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
+    },
+    {
       "source": "FKBP1A",
       "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
       "type": "ASSOCIATED_WITH",
       "description": "FKBP1A is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PRIM1",
+      "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRIM1 is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CSF3R",
+      "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3R is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "DHFR",
+      "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHFR is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.07"
     },
     {
       "source": "TGFB1",
@@ -571,28 +583,34 @@
       "description": "DYSF is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.04"
     },
     {
-      "source": "DRD2",
-      "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "DRD2 is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.04"
-    },
-    {
-      "source": "DRD3",
-      "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "DRD3 is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.04"
-    },
-    {
       "source": "HTR2A",
       "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
       "type": "ASSOCIATED_WITH",
       "description": "HTR2A is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.04"
     },
     {
+      "source": "DRD4",
+      "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DRD4 is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "DRD2",
+      "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DRD2 is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.04"
+    },
+    {
       "source": "HTR2C",
       "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
       "type": "ASSOCIATED_WITH",
       "description": "HTR2C is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "DRD3",
+      "target": "anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DRD3 is associated with anemia (phenotype) (DIAMOND_BLACKFAN_ANEMIA). Open Targets association score 0.04"
     },
     {
       "source": "FANCA",

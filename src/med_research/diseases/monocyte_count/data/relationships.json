@@ -1,0 +1,496 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2A1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2A1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "ACKR1",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ACKR1 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL12",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL12 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR4",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR4 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "IRF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CX3CR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CX3CR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "IL17RA",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17RA is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "ITGA4",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA4 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGAL",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAL is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELL",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELL is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "PIK3AP1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3AP1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "IL17RA",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17RA is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGA4",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA4 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGAL",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAL is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGR1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGR1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFRSF13B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF13B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF13B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF14",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF14 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IRF8",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IL17RA",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17RA is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.72"
+    },
+    {
+      "source": "FLT3",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.71"
+    },
+    {
+      "source": "S1PR4",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S1PR4 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.70"
+    },
+    {
+      "source": "MPO",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPO is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.70"
+    },
+    {
+      "source": "CXCR4",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR4 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.67"
+    },
+    {
+      "source": "TNFRSF13B",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF13B is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.66"
+    },
+    {
+      "source": "CCR2",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR2 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.65"
+    },
+    {
+      "source": "ARHGAP25",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP25 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.64"
+    },
+    {
+      "source": "IRF8",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF8 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.62"
+    },
+    {
+      "source": "TET2",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.60"
+    },
+    {
+      "source": "S1PR2",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S1PR2 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.59"
+    },
+    {
+      "source": "ITGA4",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA4 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.58"
+    },
+    {
+      "source": "TNFSF13B",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13B is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.58"
+    },
+    {
+      "source": "CSF1R",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF1R is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.57"
+    },
+    {
+      "source": "ACKR1",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACKR1 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.57"
+    },
+    {
+      "source": "CXCL12",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL12 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.56"
+    },
+    {
+      "source": "LYZ",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYZ is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.56"
+    },
+    {
+      "source": "GPR35",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR35 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.56"
+    },
+    {
+      "source": "ACOXL",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACOXL is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.56"
+    },
+    {
+      "source": "LPAR1",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPAR1 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.56"
+    },
+    {
+      "source": "PLEK",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLEK is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.56"
+    },
+    {
+      "source": "NOSTRIN",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOSTRIN is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.56"
+    },
+    {
+      "source": "TREML2",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREML2 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.56"
+    },
+    {
+      "source": "SH2B3",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2B3 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.56"
+    },
+    {
+      "source": "SELL",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELL is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.55"
+    },
+    {
+      "source": "S1PR3",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S1PR3 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.55"
+    },
+    {
+      "source": "BCL2A1",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2A1 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.55"
+    },
+    {
+      "source": "ERG",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERG is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.55"
+    },
+    {
+      "source": "CFAP184",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFAP184 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.55"
+    },
+    {
+      "source": "RPN1",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPN1 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.55"
+    },
+    {
+      "source": "RUNX1",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.55"
+    },
+    {
+      "source": "TNFSF14",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF14 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.55"
+    },
+    {
+      "source": "PIK3AP1",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3AP1 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.55"
+    },
+    {
+      "source": "ACVRL1",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACVRL1 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.54"
+    },
+    {
+      "source": "GGT5",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGT5 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.54"
+    },
+    {
+      "source": "DCAF12",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCAF12 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.54"
+    },
+    {
+      "source": "SPRED2",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPRED2 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.54"
+    },
+    {
+      "source": "KDELR2",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDELR2 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.54"
+    },
+    {
+      "source": "RREB1",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RREB1 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.54"
+    },
+    {
+      "source": "PTGR1",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGR1 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.54"
+    },
+    {
+      "source": "RIN3",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIN3 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.54"
+    },
+    {
+      "source": "STXBP6",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STXBP6 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.54"
+    },
+    {
+      "source": "KLF6",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF6 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.54"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.54"
+    },
+    {
+      "source": "OSER1",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OSER1 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.54"
+    },
+    {
+      "source": "PLCB1",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCB1 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.54"
+    },
+    {
+      "source": "TSPAN32",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSPAN32 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.54"
+    },
+    {
+      "source": "EHD3",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EHD3 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.54"
+    },
+    {
+      "source": "EHD4",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EHD4 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.54"
+    },
+    {
+      "source": "NFE2",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.54"
+    },
+    {
+      "source": "SVEP1",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SVEP1 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.53"
+    },
+    {
+      "source": "BEND3",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BEND3 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.53"
+    },
+    {
+      "source": "P2RY2",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RY2 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.53"
+    },
+    {
+      "source": "ITGAL",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAL is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.53"
+    },
+    {
+      "source": "FNBP1L",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FNBP1L is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.53"
+    },
+    {
+      "source": "ID2",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ID2 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.53"
+    },
+    {
+      "source": "KIT",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.53"
+    },
+    {
+      "source": "CX3CR1",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CX3CR1 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.53"
+    },
+    {
+      "source": "PRKCE",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCE is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.53"
+    },
+    {
+      "source": "GCNT2",
+      "target": "monocyte count (MONOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCNT2 is associated with monocyte count (MONOCYTE_COUNT). Open Targets association score 0.53"
+    }
+  ]
+}

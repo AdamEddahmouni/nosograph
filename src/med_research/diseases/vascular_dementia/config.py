@@ -73,6 +73,7 @@ CAR_T_SCORES = {
         "POLG": 4.0,
         "PRNP": 4.0,
         "PSEN2": 4.0,
+        "SAA1": 4.0,
         "SAA2": 4.0,
         "SLC20A2": 4.0,
         "SMAD4": 4.0,

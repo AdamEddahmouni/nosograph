@@ -1,0 +1,406 @@
+{
+  "relationships": [
+    {
+      "source": "BAX",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BAX is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "MAP1LC3B",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP1LC3B is a component of the Autophagy pathway."
+    },
+    {
+      "source": "SQSTM1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SQSTM1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "MTHFR",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFR is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "POLG",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLG is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.77"
+    },
+    {
+      "source": "RRM2B",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RRM2B is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.64"
+    },
+    {
+      "source": "TYMP",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYMP is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.62"
+    },
+    {
+      "source": "SCO2",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCO2 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.48"
+    },
+    {
+      "source": "POLGARF",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLGARF is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.44"
+    },
+    {
+      "source": "EDAR",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDAR is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.40"
+    },
+    {
+      "source": "LIG3",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIG3 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.37"
+    },
+    {
+      "source": "FANCI",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCI is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.15"
+    },
+    {
+      "source": "FOXP3",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "LAMP1",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMP1 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TMPO",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPO is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "LCN1",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN1 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "S1PR1",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S1PR1 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "PSMA6",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMA6 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SQSTM1",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SQSTM1 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "KIT",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "LAMP2",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMP2 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NDUFS4",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS4 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NDUFS3",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS3 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SURF1",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SURF1 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRIP10",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIP10 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NDUFB8",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFB8 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SERPINA1",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA1 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPS27A",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPS27A is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MT-ND5",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-ND5 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "UBB",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBB is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CS",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CS is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "UBC",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBC is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "UBA52",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBA52 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADRA1D",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA1D is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "INS",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SERPINA7",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA7 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "UPP1",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UPP1 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "BAX",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAX is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "DGUOK",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DGUOK is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "VDAC1",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VDAC1 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "DPYS",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPYS is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PINK1",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PINK1 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATP5PF",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP5PF is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "UPB1",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UPB1 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CTSD",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSD is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRKN",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKN is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NDUFS2",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS2 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "BNIP3L",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BNIP3L is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATP5MC1",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP5MC1 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATP5MC2",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP5MC2 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATP5F1A",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP5F1A is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CTSA",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSA is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAP1LC3B",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP1LC3B is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALB",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP53",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADA",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADA is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MTHFR",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFR is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "FIG4",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FIG4 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NR2E3",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR2E3 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GJB1",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJB1 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TK2",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TK2 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TWNK",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TWNK is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NPTX2",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPTX2 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRKG1",
+      "target": "mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKG1 is associated with mitochondrial neurogastrointestinal encephalomyopathy (MITOCHONDRIAL_NEUROGASTROINTESTINAL_ENCEPHALOMYOPATHY). Open Targets association score 0.00"
+    }
+  ]
+}

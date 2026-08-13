@@ -1,0 +1,526 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL456",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "TREATS",
+      "description": "ETHACRYNIC ACID is phase 4 / marketed for impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)."
+    },
+    {
+      "source": "F10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FGF23",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF23 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SERPINF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SERPINF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "HAVCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "SERPING1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "SERPING1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ADAMTS13",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS13 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP7",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP7 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ANGPTL8",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL8 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CETP is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "FABP1",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "FABP1 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "FABP4",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "FABP4 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "REN",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "REN is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP3A5",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP3A5 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "PKD1",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKD1 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.18"
+    },
+    {
+      "source": "UMOD",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UMOD is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.14"
+    },
+    {
+      "source": "NIPBL",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NIPBL is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.12"
+    },
+    {
+      "source": "LCN2",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN2 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "NPPB",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPB is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "VWF",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "CST3",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CST3 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "CD14",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD14 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADAMTS13",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS13 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "MIF",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIF is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "FABP1",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FABP1 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CRP",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "TGFB1",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "GDF15",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF15 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "LGALS3",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "BRD2",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRD2 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADIPOQ",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOQ is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ACE",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD4",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ASAH1",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASAH1 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL34",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL34 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "HAVCR1",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAVCR1 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CBLN1",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBLN1 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "REN",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REN is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CNR2",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNR2 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLC5A2",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC5A2 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "SERPING1",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPING1 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CETP",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETP is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ANGPTL8",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL8 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ACP5",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACP5 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "PLCB1",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCB1 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ALB",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL6",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "FGF23",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF23 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "SIRT1",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT1 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ANGPT1",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPT1 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CYP3A5",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP3A5 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "RETN",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RETN is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "MMP7",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP7 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "PON2",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PON2 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "VEGFA",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "FABP4",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FABP4 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "GHRL",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHRL is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "TLR4",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CALCA",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "UROD",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UROD is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNF",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "RNASE1",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNASE1 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ABCB1",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB1 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "PLAT",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAT is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CORIN",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CORIN is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "INS",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "F10",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F10 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "SERPINF2",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINF2 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "HLA-G",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-G is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CALR",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALR is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "IGF1",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "EPHA2",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHA2 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "RO60",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RO60 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRIM21",
+      "target": "impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM21 is associated with impaired renal function disease (IMPAIRED_RENAL_FUNCTION_DISEASE). Open Targets association score 0.01"
+    }
+  ]
+}

@@ -31,6 +31,12 @@
       "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
     },
     {
+      "source": "FBN1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "FBN1 is a component of the TGF-β Signaling pathway."
+    },
+    {
       "source": "TPO",
       "target": "thyroid-hormone",
       "type": "PARTICIPATES_IN",
@@ -313,16 +319,16 @@
       "description": "SLC22A2 is associated with systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY). Open Targets association score 0.01"
     },
     {
+      "source": "CHKB",
+      "target": "systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKB is associated with systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
       "source": "PAH",
       "target": "systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY)",
       "type": "ASSOCIATED_WITH",
       "description": "PAH is associated with systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY). Open Targets association score 0.01"
-    },
-    {
-      "source": "CHKA",
-      "target": "systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CHKA is associated with systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY). Open Targets association score 0.01"
     },
     {
       "source": "CMPK1",
@@ -331,34 +337,10 @@
       "description": "CMPK1 is associated with systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY). Open Targets association score 0.01"
     },
     {
-      "source": "CHKB",
+      "source": "CHKA",
       "target": "systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY)",
       "type": "ASSOCIATED_WITH",
-      "description": "CHKB is associated with systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY). Open Targets association score 0.01"
-    },
-    {
-      "source": "SLC16A1",
-      "target": "systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SLC16A1 is associated with systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY). Open Targets association score 0.01"
-    },
-    {
-      "source": "MCAT",
-      "target": "systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "MCAT is associated with systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY). Open Targets association score 0.01"
-    },
-    {
-      "source": "HMGCL",
-      "target": "systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "HMGCL is associated with systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY). Open Targets association score 0.01"
-    },
-    {
-      "source": "ATP5F1E",
-      "target": "systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ATP5F1E is associated with systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY). Open Targets association score 0.01"
+      "description": "CHKA is associated with systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY). Open Targets association score 0.01"
     },
     {
       "source": "MCPH1",
@@ -367,16 +349,40 @@
       "description": "MCPH1 is associated with systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY). Open Targets association score 0.01"
     },
     {
-      "source": "CHPT1",
+      "source": "MCAT",
       "target": "systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY)",
       "type": "ASSOCIATED_WITH",
-      "description": "CHPT1 is associated with systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY). Open Targets association score 0.01"
+      "description": "MCAT is associated with systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC16A1",
+      "target": "systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC16A1 is associated with systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP5F1E",
+      "target": "systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP5F1E is associated with systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "HMGCL",
+      "target": "systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCL is associated with systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY). Open Targets association score 0.01"
     },
     {
       "source": "CPT1A",
       "target": "systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY)",
       "type": "ASSOCIATED_WITH",
       "description": "CPT1A is associated with systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHPT1",
+      "target": "systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHPT1 is associated with systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY). Open Targets association score 0.01"
     },
     {
       "source": "LPIN1",
@@ -415,22 +421,46 @@
       "description": "ACADL is associated with systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY). Open Targets association score 0.00"
     },
     {
-      "source": "LEP",
-      "target": "systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "LEP is associated with systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY). Open Targets association score 0.00"
-    },
-    {
       "source": "NPPB",
       "target": "systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY)",
       "type": "ASSOCIATED_WITH",
       "description": "NPPB is associated with systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY). Open Targets association score 0.00"
     },
     {
+      "source": "LEP",
+      "target": "systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
       "source": "TMLHE",
       "target": "systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY)",
       "type": "ASSOCIATED_WITH",
       "description": "TMLHE is associated with systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMACHC",
+      "target": "systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMACHC is associated with systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "FBN1",
+      "target": "systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBN1 is associated with systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTPN11",
+      "target": "systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NEXN",
+      "target": "systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEXN is associated with systemic primary carnitine deficiency disease (CARNITINE_DEFICIENCY). Open Targets association score 0.00"
     },
     {
       "source": "HMGCS2",

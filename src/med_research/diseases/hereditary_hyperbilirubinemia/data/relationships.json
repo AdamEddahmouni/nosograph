@@ -1,0 +1,532 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL240597",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "TREATS",
+      "description": "CHENODIOL is phase 4 / marketed for hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)."
+    },
+    {
+      "source": "GGTLC3",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "GGTLC3 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "SLC35A2",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC35A2 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "F2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HAMP",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "HAMP is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "GORASP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "GORASP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RELA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PIK3C2A",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3C2A is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "ABCC2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GSTM1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SLCO1B1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLCO1B1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "UGT1A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "UGT1A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "UGT1A10",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "UGT1A10 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "UGT1A3",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "UGT1A3 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "UGT1A4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "UGT1A4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "UGT1A5",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "UGT1A5 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "UGT1A6",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "UGT1A6 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "UGT1A7",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "UGT1A7 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "UGT1A8",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "UGT1A8 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "UGT1A9",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "UGT1A9 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "HAMP",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAMP is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "G6PD",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "G6PD is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "UGT1A1",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGT1A1 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "BLVRA",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLVRA is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "UGT1A7",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGT1A7 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "UGT1A4",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGT1A4 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "UGT1A8",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGT1A8 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "UGT1A6",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGT1A6 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "UGT1A10",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGT1A10 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GPT",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GOT1",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOT1 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLC17A5",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A5 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLCO1B1",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLCO1B1 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "OXT",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OXT is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GUSB",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GUSB is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALB",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPPB",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPB is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FOXA2",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXA2 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ABCC2",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC2 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KLHL1",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLHL1 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SYCE1L",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYCE1L is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AFP",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL2",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC35A2",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC35A2 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ABO",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABO is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "UGT1A3",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGT1A3 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "UGGT1",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGGT1 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "UGT1A9",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGT1A9 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "UGT1A5",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGT1A5 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL13",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RALA",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RALA is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HPGDS",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPGDS is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSAP",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSAP is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRH1",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH1 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRH2",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH2 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RHD",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHD is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DDX21",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDX21 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RHCE",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHCE is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GGT1",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGT1 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GGTLC3",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGTLC3 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSTM1",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM1 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HMOX1",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMOX1 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GGTLC1",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGTLC1 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNF",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "RELA",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELA is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GORASP1",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GORASP1 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL6",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "WNK1",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNK1 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "STK11",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SYT1",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYT1 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNG",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "HDGFL2",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDGFL2 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NFKB1",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1B",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "F2",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F2 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CNBP",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNBP is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3C2A",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3C2A is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SERPINA1",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA1 is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "INS",
+      "target": "hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with hereditary hyperbilirubinemia (HEREDITARY_HYPERBILIRUBINEMIA). Open Targets association score 0.00"
+    }
+  ]
+}

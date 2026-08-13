@@ -1,0 +1,568 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2L11",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2L11 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "LYN",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LYN is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCR6",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR6 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "C9orf72",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C9orf72 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IRF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IL15",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL15 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "MEFV",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "MEFV is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "SOCS1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "SOCS1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RELB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "TNIP1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "TNIP1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "ICOS",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ICOS is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ZAP70",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ZAP70 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCR6",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR6 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "RORC",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "RORC is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "MYD88",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MYD88 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "UNC93B1",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "UNC93B1 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTA",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTA is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTB",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTB is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFAIP8L2",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP8L2 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF12",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF12 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF12-TNFSF13",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF12-TNFSF13 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF8",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "SP110",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SP110 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.70"
+    },
+    {
+      "source": "SP140",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SP140 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.55"
+    },
+    {
+      "source": "NFKB2",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "LAT",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAT is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "IKZF1",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL2RG",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RG is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "FOXP3",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "JAK3",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL2",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFKB1",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "RELB",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELB is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "RAG2",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG2 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "GIMAP1-GIMAP5",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP1-GIMAP5 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "GIMAP5",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP5 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CARD11",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "LTA",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTA is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "LTB",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTB is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "IFNG",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNF",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FAS",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRKDC",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKDC is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "REL",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REL is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYD88",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYD88 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTPN22",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "C9orf72",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C9orf72 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTPRC",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "BCL6",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL6 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CLEC4D",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC4D is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNIP1",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNIP1 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ANK1",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL25",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL25 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNFAIP8L2",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFAIP8L2 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ICOS",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICOS is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "POU2AF1",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU2AF1 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RORC",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RORC is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPTA1",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CLEC6A",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC6A is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZAP70",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZAP70 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TET2",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CEBPE",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPE is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ABL1",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABL1 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NCKAP1L",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCKAP1L is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "MEFV",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEFV is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "BCL2L11",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2L11 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "LYN",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYN is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IRF8",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF8 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ASAH1",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASAH1 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL15",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL15 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "STAT6",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT6 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SAMD9L",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAMD9L is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNFSF12",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF12 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNFSF12-TNFSF13",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF12-TNFSF13 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SNRNP40",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNRNP40 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "LIF",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIF is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "UNC93B1",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UNC93B1 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SOCS1",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOCS1 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRF1",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRF1 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCR6",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR6 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "KLRC4",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLRC4 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "KLRC1",
+      "target": "hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLRC1 is associated with hepatic veno-occlusive disease-immunodeficiency syndrome (HEPATIC_VENO_OCCLUSIVE_DISEASE_IMMUNODEFICIENCY_SYNDROME). Open Targets association score 0.04"
+    }
+  ]
+}

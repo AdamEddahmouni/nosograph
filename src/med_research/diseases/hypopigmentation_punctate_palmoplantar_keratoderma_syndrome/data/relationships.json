@@ -1,0 +1,418 @@
+{
+  "relationships": [
+    {
+      "source": "SQSTM1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SQSTM1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CXCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL3",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL3 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "RHBDF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "RHBDF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "CARD14",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD14 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "IKBKG",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "IKBKG is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBIZ",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIZ is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RELB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "ACER1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACER1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "CYP26B1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP26B1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ENPP1",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENPP1 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.80"
+    },
+    {
+      "source": "ST14",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST14 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "NSDHL",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSDHL is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "LRIG1",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRIG1 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "DSG4",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSG4 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPINK5",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPINK5 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "KRT10",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT10 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CTSV",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSV is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CTSL",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSL is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "RHBDF2",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHBDF2 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "MPZL3",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPZL3 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "IKBKG",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKBKG is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FLG",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLG is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SCD",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCD is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "GSDMA",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMA is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "HR",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HR is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "KRT2",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT2 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC27A4",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC27A4 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "KRT1",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT1 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ABCA12",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA12 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GRHL1",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRHL1 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "KLK11",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK11 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXN1",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXN1 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDSN",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDSN is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PKP3",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKP3 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TMEM79",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM79 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFKBIZ",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIZ is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TUFT1",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUFT1 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CST6",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CST6 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "DSC1",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSC1 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "DMKN",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMKN is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRPV3",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV3 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "LMNA",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNA is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NIPAL4",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NIPAL4 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SQSTM1",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SQSTM1 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "KRT9",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT9 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "KRT36",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT36 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ITGB2",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "LBR",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LBR is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GPX8",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPX8 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CES2",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CES2 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PNPLA1",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PNPLA1 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CARD14",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD14 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "RELB",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELB is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CLDN1",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN1 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TTC7A",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC7A is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "KLF4",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF4 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GJB6",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJB6 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CYP26B1",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP26B1 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "KRT76",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT76 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ACER1",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACER1 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SNAP29",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNAP29 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CXCL8",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL2",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL2 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL3",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL3 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "EGR1",
+      "target": "hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGR1 is associated with hypopigmentation-punctate palmoplantar keratoderma syndrome (HYPOPIGMENTATION_PUNCTATE_PALMOPLANTAR_KERATODERMA_SYNDROME). Open Targets association score 0.00"
+    }
+  ]
+}

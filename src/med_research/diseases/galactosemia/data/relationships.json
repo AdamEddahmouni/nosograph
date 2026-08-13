@@ -271,12 +271,6 @@
       "description": "CASP3 is a component of the Apoptosis pathway."
     },
     {
-      "source": "MKI67",
-      "target": "cell-cycle",
-      "type": "PARTICIPATES_IN",
-      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
-    },
-    {
       "source": "FGF9",
       "target": "coagulation",
       "type": "PARTICIPATES_IN",
@@ -415,6 +409,12 @@
       "description": "UGT8 is a component of the Xenobiotic Metabolism pathway."
     },
     {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
       "source": "SLC4A11",
       "target": "complement",
       "type": "PARTICIPATES_IN",
@@ -547,12 +547,6 @@
       "description": "AKR1B1 is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.01"
     },
     {
-      "source": "ACHE",
-      "target": "galactosemia (GALACTOSEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ACHE is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.01"
-    },
-    {
       "source": "TSHR",
       "target": "galactosemia (GALACTOSEMIA)",
       "type": "ASSOCIATED_WITH",
@@ -565,10 +559,22 @@
       "description": "DUOX2 is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.01"
     },
     {
+      "source": "ACHE",
+      "target": "galactosemia (GALACTOSEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACHE is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.01"
+    },
+    {
       "source": "BMP15",
       "target": "galactosemia (GALACTOSEMIA)",
       "type": "ASSOCIATED_WITH",
       "description": "BMP15 is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FMO5",
+      "target": "galactosemia (GALACTOSEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMO5 is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.01"
     },
     {
       "source": "VEGFA",
@@ -587,12 +593,6 @@
       "target": "galactosemia (GALACTOSEMIA)",
       "type": "ASSOCIATED_WITH",
       "description": "MTOR is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.01"
-    },
-    {
-      "source": "FMO5",
-      "target": "galactosemia (GALACTOSEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "FMO5 is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.01"
     },
     {
       "source": "GDF9",
@@ -661,24 +661,6 @@
       "description": "IL1B is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.01"
     },
     {
-      "source": "CASP1",
-      "target": "galactosemia (GALACTOSEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CASP1 is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.01"
-    },
-    {
-      "source": "UGT8",
-      "target": "galactosemia (GALACTOSEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "UGT8 is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.01"
-    },
-    {
-      "source": "EIF2A",
-      "target": "galactosemia (GALACTOSEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "EIF2A is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.01"
-    },
-    {
       "source": "DUOXA2",
       "target": "galactosemia (GALACTOSEMIA)",
       "type": "ASSOCIATED_WITH",
@@ -697,16 +679,34 @@
       "description": "IGBP1 is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.01"
     },
     {
-      "source": "PRRT2",
+      "source": "EIF2A",
       "target": "galactosemia (GALACTOSEMIA)",
       "type": "ASSOCIATED_WITH",
-      "description": "PRRT2 is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.01"
+      "description": "EIF2A is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CASP1",
+      "target": "galactosemia (GALACTOSEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP1 is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "UGT8",
+      "target": "galactosemia (GALACTOSEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGT8 is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.01"
     },
     {
       "source": "PRKCB",
       "target": "galactosemia (GALACTOSEMIA)",
       "type": "ASSOCIATED_WITH",
       "description": "PRKCB is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRRT2",
+      "target": "galactosemia (GALACTOSEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRRT2 is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.01"
     },
     {
       "source": "PRKCA",
@@ -721,6 +721,12 @@
       "description": "BCAR1 is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.01"
     },
     {
+      "source": "CTNND1",
+      "target": "galactosemia (GALACTOSEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNND1 is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.01"
+    },
+    {
       "source": "ENSG00000288534",
       "target": "galactosemia (GALACTOSEMIA)",
       "type": "ASSOCIATED_WITH",
@@ -731,12 +737,6 @@
       "target": "galactosemia (GALACTOSEMIA)",
       "type": "ASSOCIATED_WITH",
       "description": "CSE1L is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.01"
-    },
-    {
-      "source": "CTNND1",
-      "target": "galactosemia (GALACTOSEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CTNND1 is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.01"
     },
     {
       "source": "ALB",
@@ -781,22 +781,40 @@
       "description": "INS is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.00"
     },
     {
-      "source": "GLB1",
-      "target": "galactosemia (GALACTOSEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GLB1 is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.00"
-    },
-    {
       "source": "LCT",
       "target": "galactosemia (GALACTOSEMIA)",
       "type": "ASSOCIATED_WITH",
       "description": "LCT is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.00"
     },
     {
+      "source": "GLB1",
+      "target": "galactosemia (GALACTOSEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLB1 is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.00"
+    },
+    {
       "source": "OTC",
       "target": "galactosemia (GALACTOSEMIA)",
       "type": "ASSOCIATED_WITH",
       "description": "OTC is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FXN",
+      "target": "galactosemia (GALACTOSEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FXN is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAP1B",
+      "target": "galactosemia (GALACTOSEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP1B is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "LEPR",
+      "target": "galactosemia (GALACTOSEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.00"
     },
     {
       "source": "MKI67",
@@ -1109,12 +1127,6 @@
       "target": "galactosemia (GALACTOSEMIA)",
       "type": "ASSOCIATED_WITH",
       "description": "GNG12 is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.07"
-    },
-    {
-      "source": "LEPR",
-      "target": "galactosemia (GALACTOSEMIA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "LEPR is associated with galactosemia (GALACTOSEMIA). Open Targets association score 0.07"
     },
     {
       "source": "ATP8B1",

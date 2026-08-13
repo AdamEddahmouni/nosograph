@@ -1,0 +1,580 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL45",
+      "target": "MTNR1B",
+      "type": "TARGETS",
+      "description": "MELATONIN targets MTNR1B."
+    },
+    {
+      "source": "CHEMBL1042",
+      "target": "VDR",
+      "type": "TARGETS",
+      "description": "CHOLECALCIFEROL targets VDR."
+    },
+    {
+      "source": "CHEMBL2109330",
+      "target": "CD14",
+      "type": "TARGETS",
+      "description": "IC14 targets CD14."
+    },
+    {
+      "source": "CHEMBL45",
+      "target": "MTNR1A",
+      "type": "TARGETS",
+      "description": "MELATONIN targets MTNR1A."
+    },
+    {
+      "source": "CHEMBL1536",
+      "target": "VDR",
+      "type": "TARGETS",
+      "description": "ERGOCALCIFEROL targets VDR."
+    },
+    {
+      "source": "CD209",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD209 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "EIF2AK4",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EIF2AK4 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MBL2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "MBL2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MMP3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "BMP2K",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP2K is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL18",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP12",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP12 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "CD38",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD38 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TLR2",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR2 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR6",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR6 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "NLRP12",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP12 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "IVNS1ABP",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IVNS1ABP is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.12"
+    },
+    {
+      "source": "PTPN11",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.12"
+    },
+    {
+      "source": "TNF",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.11"
+    },
+    {
+      "source": "CD40LG",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.11"
+    },
+    {
+      "source": "CD79A",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.11"
+    },
+    {
+      "source": "CD8A",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "CRP",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "CMA1",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMA1 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "IL10",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "VDR",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VDR is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "TLR2",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR2 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "IFNG",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "IFNA1",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "GOT1",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOT1 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "SLC17A5",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A5 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "HMGB1",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGB1 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "GPT",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "MBL2",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBL2 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "CD209",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD209 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "CD163",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD163 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "KRAS",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "IL17A",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "STAT1",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT1 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "CD14",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD14 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "IL18",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "GABPA",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABPA is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "STAT2",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT2 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "DDX41",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDX41 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "VEGFA",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "MICB",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MICB is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "ANXA1",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANXA1 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "PCSK9",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "MIF",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIF is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "MMP3",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP3 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "CD38",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD38 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "C5",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C5 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "CLEC5A",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC5A is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "PLCE1",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCE1 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "CR1",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CR1 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "ANG",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANG is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "H2AC12",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H2AC12 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "H2AC4",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H2AC4 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "H2AC8",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H2AC8 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "CR2",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CR2 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "BMP2K",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP2K is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "MTNR1B",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTNR1B is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "MTNR1A",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTNR1A is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "CLINT1",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLINT1 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "EIF2AK4",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF2AK4 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "NLRP12",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP12 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "NFKB1",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "LGALS1",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS1 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "PF4",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PF4 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "CD4",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "NOS2",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "HLA-A",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-A is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "HPSE",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPSE is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "TLR4",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "TLR6",
+      "target": "dengue disease (DENGUE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR6 is associated with dengue disease (DENGUE_DISEASE). Open Targets association score 0.07"
+    }
+  ]
+}

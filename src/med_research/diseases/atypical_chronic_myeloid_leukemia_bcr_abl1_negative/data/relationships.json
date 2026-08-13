@@ -1,0 +1,418 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1789941",
+      "target": "JAK2",
+      "type": "TARGETS",
+      "description": "RUXOLITINIB targets JAK2."
+    },
+    {
+      "source": "CHEMBL3622820",
+      "target": "JAK1",
+      "type": "TARGETS",
+      "description": "ITACITINIB targets JAK1."
+    },
+    {
+      "source": "SRSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SRSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "JAK1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K7",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K7 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KLHDC1",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KLHDC1 is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "SMAD9",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD9 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "ABCC3",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC3 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GSTM1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "TET2",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.36"
+    },
+    {
+      "source": "SRSF2",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRSF2 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.34"
+    },
+    {
+      "source": "ASXL1",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.33"
+    },
+    {
+      "source": "RUNX1",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.33"
+    },
+    {
+      "source": "MFSD11",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFSD11 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.33"
+    },
+    {
+      "source": "SETBP1",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETBP1 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CSF3R",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3R is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.02"
+    },
+    {
+      "source": "JAK2",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ETNK1",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETNK1 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCR",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCR is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ABL1",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABL1 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHP1",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHP1 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TMED2",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMED2 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NRSN1",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRSN1 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TPPP",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPPP is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD9",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD9 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CBL",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBL is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRAS",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "FGFR1",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CALR",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALR is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PCM1",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCM1 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "IDH2",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH2 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "IDH1",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MPL",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPL is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MTTP",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTTP is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "NRAS",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "LPL",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "WT1",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SF3B1",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SF3B1 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYGB",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYGB is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOAT1",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOAT1 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "EZH2",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EZH2 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "JAK1",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK1 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ETV6",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV6 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAP2K7",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K7 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHORDC1",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHORDC1 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "HBG2",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBG2 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CBLB",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBLB is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ABCC3",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC3 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "KLHDC1",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLHDC1 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GSTM1",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM1 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "DUSP1",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DUSP1 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "HOOK1",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOOK1 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "RYK",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYK is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "NCAM1",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCAM1 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPN1",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPN1 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GNAQ",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAQ is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "HBG1",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBG1 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SMAD9",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD9 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "NPM1",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPM1 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    },
+    {
+      "source": "DNAH9",
+      "target": "atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH9 is associated with atypical chronic myeloid leukemia, BCR-ABL1 negative (ATYPICAL_CHRONIC_MYELOID_LEUKEMIA_BCR_ABL1_NEGATIVE). Open Targets association score 0.00"
+    }
+  ]
+}

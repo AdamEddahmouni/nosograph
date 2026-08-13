@@ -1,0 +1,562 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1738797",
+      "target": "RET",
+      "type": "TARGETS",
+      "description": "ALECTINIB targets RET."
+    },
+    {
+      "source": "CHEMBL359744",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "TREATS",
+      "description": "DOXORUBICIN HYDROCHLORIDE is phase 4 / marketed for familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CXCR6",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR6 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "IRF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TNFRSF21",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF21 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "HAVCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53BP1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53BP1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL5",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL5 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "HAVCR2",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR2 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "LAG3",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "LAG3 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "SMAD2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF21",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF21 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IRF9",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF9 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "MX1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "MX1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "SMARCB1",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCB1 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.73"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.56"
+    },
+    {
+      "source": "CXCR6",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR6 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "PTCH1",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.07"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.07"
+    },
+    {
+      "source": "RB1",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.06"
+    },
+    {
+      "source": "TP53",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.06"
+    },
+    {
+      "source": "MEN1",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.05"
+    },
+    {
+      "source": "BUB1",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUB1 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRDM2",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM2 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "POMC",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "RET",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "NF1",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "AIP",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIP is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "HTATIP2",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTATIP2 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "RINT1",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RINT1 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "CUL9",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUL9 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "NDRG2",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDRG2 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "NF2",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRKAR1A",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAR1A is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFITM10",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFITM10 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "ID1",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ID1 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD4",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD8A",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCR",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCR is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL13",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD69",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD69 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "NCR3",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCR3 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMARCE1",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCE1 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53BP1",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53BP1 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CP",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CP is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNRPD1",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNRPD1 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNRPD2",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNRPD2 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL5",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL5 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CH25H",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CH25H is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD44",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "KLRK1",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLRK1 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "GZMB",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GZMB is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNCG",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCG is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "LAG3",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAG3 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "HAVCR2",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAVCR2 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MX1",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MX1 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1B",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFITM3",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFITM3 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRP",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNFRSF21",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF21 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD101",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD101 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "SMAD2",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD2 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "IRF9",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF9 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL4",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "DICER1",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DICER1 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "NFKB1",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "TLR4",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "SMARCA1",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA1 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "BUB1B",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUB1B is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "CAD",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAD is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "AKT1",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL17A",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPARA",
+      "target": "familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARA is associated with familial rhabdoid tumor (FAMILIAL_RHABDOID_TUMOR). Open Targets association score 0.00"
+    }
+  ]
+}

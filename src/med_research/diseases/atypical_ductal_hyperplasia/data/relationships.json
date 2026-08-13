@@ -1,0 +1,496 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1399",
+      "target": "CYP19A1",
+      "type": "TARGETS",
+      "description": "ANASTROZOLE targets CYP19A1."
+    },
+    {
+      "source": "CHEMBL2007641",
+      "target": "ERBB2",
+      "type": "TARGETS",
+      "description": "PERTUZUMAB targets ERBB2."
+    },
+    {
+      "source": "CHEMBL1201585",
+      "target": "ERBB2",
+      "type": "TARGETS",
+      "description": "TRASTUZUMAB targets ERBB2."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK14",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK14 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TGFA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "IRF5",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF5 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "CYP19A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP19A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTEN",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KRAS",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ERBB2",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ESR1",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCND1",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MKI67",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KMT2A",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2A is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AVP",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVP is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC5AC",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5AC is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ANXA8",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANXA8 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEACAM5",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM5 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSG2",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSG2 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SKP2",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SKP2 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGFA",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFA is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NEU1",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEU1 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NEURL1",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEURL1 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEACAM7",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM7 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "S100A6",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A6 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "RB1",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEACAM3",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM3 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "AKT1",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "BRCA1",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "EREG",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EREG is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIEZO1",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIEZO1 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IRF5",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF5 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "HDLBP",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDLBP is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "POLDIP2",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLDIP2 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAP3K8",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K8 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GRAP2",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRAP2 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACTB",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTB is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "AIMP2",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIMP2 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "RNF19A",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF19A is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NUCKS1",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUCKS1 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPK1",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRK",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRK is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPK14",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK14 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ANXA1",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANXA1 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "AHSA1",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSA1 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NR4A1",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR4A1 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYP19A1",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP19A1 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT5",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT5 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP53",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PROM1",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROM1 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ZNRD2",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNRD2 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "BCL2",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "VEGFA",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "DCTN6",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCTN6 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CIB1",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIB1 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TMED7",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMED7 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFI27",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFI27 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PAK2",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAK2 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FOXP1",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP1 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSMD9",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMD9 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "HSP90AB1",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSP90AB1 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "HSP90AA1",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSP90AA1 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GSN",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSN is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMP1",
+      "target": "atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP1 is associated with atypical ductal hyperplasia (ATYPICAL_DUCTAL_HYPERPLASIA). Open Targets association score 0.00"
+    }
+  ]
+}

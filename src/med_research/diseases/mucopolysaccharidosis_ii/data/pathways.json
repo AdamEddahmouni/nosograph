@@ -21,12 +21,14 @@
       "key_components": [
         "ADAM17",
         "COL2A1",
-        "MMP2"
+        "MMP2",
+        "TIMP2"
       ],
       "therapeutic_targets": [
         "ADAM17",
         "COL2A1",
-        "MMP2"
+        "MMP2",
+        "TIMP2"
       ],
       "references": []
     },
@@ -55,20 +57,6 @@
       "references": []
     },
     {
-      "id": "tgf-beta",
-      "name": "TGF-β Signaling",
-      "description": "Transforming growth factor beta signaling controlling fibrosis, immune tolerance, and tumor suppression.",
-      "key_components": [
-        "FBN1",
-        "TGFB2"
-      ],
-      "therapeutic_targets": [
-        "FBN1",
-        "TGFB2"
-      ],
-      "references": []
-    },
-    {
       "id": "tlr-signaling",
       "name": "TLR / Innate Sensing",
       "description": "Endosomal and surface Toll-like receptor signaling driving innate immune activation.",
@@ -91,6 +79,32 @@
       "therapeutic_targets": [
         "FAS",
         "TNF"
+      ],
+      "references": []
+    },
+    {
+      "id": "xenobiotic-metabolism",
+      "name": "Xenobiotic Metabolism",
+      "description": "Cytochrome P450 and conjugating enzymes governing drug metabolism and toxicity.",
+      "key_components": [
+        "NAT10"
+      ],
+      "therapeutic_targets": [
+        "NAT10"
+      ],
+      "references": []
+    },
+    {
+      "id": "tgf-beta",
+      "name": "TGF-β Signaling",
+      "description": "Transforming growth factor beta signaling controlling fibrosis, immune tolerance, and tumor suppression.",
+      "key_components": [
+        "FBN1",
+        "TGFB2"
+      ],
+      "therapeutic_targets": [
+        "FBN1",
+        "TGFB2"
       ],
       "references": []
     },

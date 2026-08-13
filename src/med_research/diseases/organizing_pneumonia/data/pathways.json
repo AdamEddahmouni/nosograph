@@ -1,6 +1,18 @@
 {
   "pathways": [
     {
+      "id": "cell-cycle",
+      "name": "Cell Cycle Regulation",
+      "description": "Cyclin-CDK machinery controlling cell division; a backbone of oncology target discovery.",
+      "key_components": [
+        "MKI67"
+      ],
+      "therapeutic_targets": [
+        "MKI67"
+      ],
+      "references": []
+    },
+    {
       "id": "chemokine-signaling",
       "name": "Chemokine Signaling",
       "description": "Chemokine-receptor interactions directing leukocyte migration and lymphoid organization.",
@@ -101,20 +113,6 @@
       "references": []
     },
     {
-      "id": "serotonin-dopamine",
-      "name": "Serotonin / Dopamine Signaling",
-      "description": "Monoamine neurotransmission; the pharmacological hub of psychiatry.",
-      "key_components": [
-        "PTHLH",
-        "PTH"
-      ],
-      "therapeutic_targets": [
-        "PTHLH",
-        "PTH"
-      ],
-      "references": []
-    },
-    {
       "id": "tcr-signaling",
       "name": "T Cell Receptor Signaling",
       "description": "TCR signal transduction and T cell activation; a therapeutic hub in autoimmunity.",
@@ -203,6 +201,20 @@
       ],
       "therapeutic_targets": [
         "CYP1A2"
+      ],
+      "references": []
+    },
+    {
+      "id": "serotonin-dopamine",
+      "name": "Serotonin / Dopamine Signaling",
+      "description": "Monoamine neurotransmission; the pharmacological hub of psychiatry.",
+      "key_components": [
+        "PTHLH",
+        "PTH"
+      ],
+      "therapeutic_targets": [
+        "PTHLH",
+        "PTH"
       ],
       "references": []
     },

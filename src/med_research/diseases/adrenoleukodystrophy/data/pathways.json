@@ -1,26 +1,28 @@
 {
   "pathways": [
     {
-      "id": "chemokine-signaling",
-      "name": "Chemokine Signaling",
-      "description": "Chemokine-receptor interactions directing leukocyte migration and lymphoid organization.",
-      "key_components": [
-        "CCL2"
-      ],
-      "therapeutic_targets": [
-        "CCL2"
-      ],
-      "references": []
-    },
-    {
       "id": "coagulation",
       "name": "Coagulation Cascade",
       "description": "Plasma coagulation factors and fibrinolysis; a hub for cardiovascular and thrombotic disease.",
       "key_components": [
-        "CYP4F2"
+        "CYP4F2",
+        "SREBF2"
       ],
       "therapeutic_targets": [
-        "CYP4F2"
+        "CYP4F2",
+        "SREBF2"
+      ],
+      "references": []
+    },
+    {
+      "id": "il1-inflammasome",
+      "name": "IL-1 / Inflammasome Pathway",
+      "description": "NLRP3 inflammasome assembly and IL-1β/IL-18 maturation; a driver of sterile inflammation.",
+      "key_components": [
+        "IL12B"
+      ],
+      "therapeutic_targets": [
+        "IL12B"
       ],
       "references": []
     },
@@ -45,18 +47,6 @@
       ],
       "therapeutic_targets": [
         "POMC"
-      ],
-      "references": []
-    },
-    {
-      "id": "renin-angiotensin",
-      "name": "Renin-Angiotensin System",
-      "description": "Renin-angiotensin-aldosterone axis controlling blood pressure and fluid balance.",
-      "key_components": [
-        "RENBP"
-      ],
-      "therapeutic_targets": [
-        "RENBP"
       ],
       "references": []
     },
@@ -91,6 +81,20 @@
       "references": []
     },
     {
+      "id": "th17-il17",
+      "name": "Th17 / IL-17 Pathway",
+      "description": "Th17 differentiation and IL-17 family cytokine signaling driving neutrophil recruitment and autoimmunity.",
+      "key_components": [
+        "RORA",
+        "IL12B"
+      ],
+      "therapeutic_targets": [
+        "RORA",
+        "IL12B"
+      ],
+      "references": []
+    },
+    {
       "id": "wnt-signaling",
       "name": "Wnt Signaling",
       "description": "Canonical Wnt/β-catenin signaling controlling cell fate, proliferation, and tissue regeneration.",
@@ -113,6 +117,30 @@
       "therapeutic_targets": [
         "ABCC1",
         "CYP4F2"
+      ],
+      "references": []
+    },
+    {
+      "id": "chemokine-signaling",
+      "name": "Chemokine Signaling",
+      "description": "Chemokine-receptor interactions directing leukocyte migration and lymphoid organization.",
+      "key_components": [
+        "CCL2"
+      ],
+      "therapeutic_targets": [
+        "CCL2"
+      ],
+      "references": []
+    },
+    {
+      "id": "renin-angiotensin",
+      "name": "Renin-Angiotensin System",
+      "description": "Renin-angiotensin-aldosterone axis controlling blood pressure and fluid balance.",
+      "key_components": [
+        "RENBP"
+      ],
+      "therapeutic_targets": [
+        "RENBP"
       ],
       "references": []
     },
@@ -161,18 +189,6 @@
       ],
       "therapeutic_targets": [
         "RELN"
-      ],
-      "references": []
-    },
-    {
-      "id": "th17-il17",
-      "name": "Th17 / IL-17 Pathway",
-      "description": "Th17 differentiation and IL-17 family cytokine signaling driving neutrophil recruitment and autoimmunity.",
-      "key_components": [
-        "RORA"
-      ],
-      "therapeutic_targets": [
-        "RORA"
       ],
       "references": []
     }

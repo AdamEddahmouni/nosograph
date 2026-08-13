@@ -1,0 +1,258 @@
+{
+  "pathways": [
+    {
+      "id": "chemokine-signaling",
+      "name": "Chemokine Signaling",
+      "description": "Chemokine-receptor interactions directing leukocyte migration and lymphoid organization.",
+      "key_components": [
+        "CXCL10"
+      ],
+      "therapeutic_targets": [
+        "CXCL10"
+      ],
+      "references": []
+    },
+    {
+      "id": "coagulation",
+      "name": "Coagulation Cascade",
+      "description": "Plasma coagulation factors and fibrinolysis; a hub for cardiovascular and thrombotic disease.",
+      "key_components": [
+        "IKZF2"
+      ],
+      "therapeutic_targets": [
+        "IKZF2"
+      ],
+      "references": []
+    },
+    {
+      "id": "gaba-glutamate",
+      "name": "GABA / Glutamate Signaling",
+      "description": "Principal inhibitory and excitatory neurotransmitter signaling in the CNS.",
+      "key_components": [
+        "GAD2"
+      ],
+      "therapeutic_targets": [
+        "GAD2"
+      ],
+      "references": []
+    },
+    {
+      "id": "il1-inflammasome",
+      "name": "IL-1 / Inflammasome Pathway",
+      "description": "NLRP3 inflammasome assembly and IL-1β/IL-18 maturation; a driver of sterile inflammation.",
+      "key_components": [
+        "IL17A",
+        "IL17F",
+        "IL17RA",
+        "NLRP5"
+      ],
+      "therapeutic_targets": [
+        "IL17A",
+        "IL17F",
+        "IL17RA",
+        "NLRP5"
+      ],
+      "references": []
+    },
+    {
+      "id": "il4-il13",
+      "name": "IL-4 / IL-13 (Th2) Pathway",
+      "description": "Type 2 cytokine signaling driving allergic and eosinophilic inflammation.",
+      "key_components": [
+        "GATA3"
+      ],
+      "therapeutic_targets": [
+        "GATA3"
+      ],
+      "references": []
+    },
+    {
+      "id": "immune-checkpoint",
+      "name": "Immune Checkpoint Signaling",
+      "description": "Co-inhibitory receptor signaling (PD-1/CTLA-4/TIGIT/LAG-3) that restrains T cell responses.",
+      "key_components": [
+        "CTLA4"
+      ],
+      "therapeutic_targets": [
+        "CTLA4"
+      ],
+      "references": []
+    },
+    {
+      "id": "jak-stat",
+      "name": "JAK-STAT Signaling",
+      "description": "Cytokine receptor signaling through JAK kinases and STAT transcription factors; a hub for inflammatory and autoimmune disease pathways.",
+      "key_components": [
+        "STAT1"
+      ],
+      "therapeutic_targets": [
+        "STAT1"
+      ],
+      "references": []
+    },
+    {
+      "id": "nfkb",
+      "name": "NF-κB Pathway",
+      "description": "Canonical and non-canonical NF-κB activation driving pro-inflammatory gene expression.",
+      "key_components": [
+        "NFKB1",
+        "RELB"
+      ],
+      "therapeutic_targets": [
+        "NFKB1",
+        "RELB"
+      ],
+      "references": []
+    },
+    {
+      "id": "serotonin-dopamine",
+      "name": "Serotonin / Dopamine Signaling",
+      "description": "Monoamine neurotransmission; the pharmacological hub of psychiatry.",
+      "key_components": [
+        "PTH",
+        "TH"
+      ],
+      "therapeutic_targets": [
+        "PTH",
+        "TH"
+      ],
+      "references": []
+    },
+    {
+      "id": "tcr-signaling",
+      "name": "T Cell Receptor Signaling",
+      "description": "TCR signal transduction and T cell activation; a therapeutic hub in autoimmunity.",
+      "key_components": [
+        "CD4",
+        "CD40LG",
+        "CTLA4"
+      ],
+      "therapeutic_targets": [
+        "CD4",
+        "CD40LG",
+        "CTLA4"
+      ],
+      "references": []
+    },
+    {
+      "id": "tgf-beta",
+      "name": "TGF-β Signaling",
+      "description": "Transforming growth factor beta signaling controlling fibrosis, immune tolerance, and tumor suppression.",
+      "key_components": [
+        "TGFB1"
+      ],
+      "therapeutic_targets": [
+        "TGFB1"
+      ],
+      "references": []
+    },
+    {
+      "id": "th17-il17",
+      "name": "Th17 / IL-17 Pathway",
+      "description": "Th17 differentiation and IL-17 family cytokine signaling driving neutrophil recruitment and autoimmunity.",
+      "key_components": [
+        "IL17A",
+        "IL17F",
+        "IL17RA",
+        "IL22",
+        "IL23A"
+      ],
+      "therapeutic_targets": [
+        "IL17A",
+        "IL17F",
+        "IL17RA",
+        "IL22",
+        "IL23A"
+      ],
+      "references": []
+    },
+    {
+      "id": "thyroid-hormone",
+      "name": "Thyroid Hormone Signaling",
+      "description": "Thyroid hormone synthesis, transport, and nuclear receptor signaling.",
+      "key_components": [
+        "TGFB1",
+        "TGM1",
+        "TGM2",
+        "TGM4"
+      ],
+      "therapeutic_targets": [
+        "TGFB1",
+        "TGM1",
+        "TGM2",
+        "TGM4"
+      ],
+      "references": []
+    },
+    {
+      "id": "tnf-signaling",
+      "name": "TNF Signaling",
+      "description": "Tumor necrosis factor receptor superfamily signaling; central to many autoimmune and inflammatory diseases.",
+      "key_components": [
+        "FASN"
+      ],
+      "therapeutic_targets": [
+        "FASN"
+      ],
+      "references": []
+    },
+    {
+      "id": "type1-ifn",
+      "name": "Type I Interferon Pathway",
+      "description": "IFN-α/β production and signaling through IFNAR; drives the interferon gene signature in autoimmune disease.",
+      "key_components": [
+        "IFNA1",
+        "IFNA17",
+        "IFNA2",
+        "IFNA4",
+        "IFNA8",
+        "IFNG",
+        "IFNL1",
+        "STAT1"
+      ],
+      "therapeutic_targets": [
+        "IFNA1",
+        "IFNA17",
+        "IFNA2",
+        "IFNA4",
+        "IFNA8",
+        "IFNG",
+        "IFNL1",
+        "STAT1"
+      ],
+      "references": []
+    },
+    {
+      "id": "wnt-signaling",
+      "name": "Wnt Signaling",
+      "description": "Canonical Wnt/β-catenin signaling controlling cell fate, proliferation, and tissue regeneration.",
+      "key_components": [
+        "CTNNB1",
+        "NLRP5"
+      ],
+      "therapeutic_targets": [
+        "CTNNB1",
+        "NLRP5"
+      ],
+      "references": []
+    },
+    {
+      "id": "xenobiotic-metabolism",
+      "name": "Xenobiotic Metabolism",
+      "description": "Cytochrome P450 and conjugating enzymes governing drug metabolism and toxicity.",
+      "key_components": [
+        "CYP11A1",
+        "CYP17A1",
+        "CYP1A2",
+        "CYP2A6"
+      ],
+      "therapeutic_targets": [
+        "CYP11A1",
+        "CYP17A1",
+        "CYP1A2",
+        "CYP2A6"
+      ],
+      "references": []
+    }
+  ]
+}

@@ -26,6 +26,12 @@
     },
     {
       "source": "CHEMBL220492",
+      "target": "GABRA6",
+      "type": "TARGETS",
+      "description": "TOPIRAMATE targets GABRA6."
+    },
+    {
+      "source": "CHEMBL220492",
       "target": "GABRG3",
       "type": "TARGETS",
       "description": "TOPIRAMATE targets GABRG3."
@@ -41,6 +47,12 @@
       "target": "GRIA2",
       "type": "TARGETS",
       "description": "TOPIRAMATE targets GRIA2."
+    },
+    {
+      "source": "CHEMBL220492",
+      "target": "CA4",
+      "type": "TARGETS",
+      "description": "TOPIRAMATE targets CA4."
     },
     {
       "source": "CHEMBL1509",
@@ -152,6 +164,12 @@
     },
     {
       "source": "CHEMBL220492",
+      "target": "GABRA4",
+      "type": "TARGETS",
+      "description": "TOPIRAMATE targets GABRA4."
+    },
+    {
+      "source": "CHEMBL220492",
       "target": "GABRB1",
       "type": "TARGETS",
       "description": "TOPIRAMATE targets GABRB1."
@@ -173,6 +191,12 @@
       "target": "GRIK3",
       "type": "TARGETS",
       "description": "TOPIRAMATE targets GRIK3."
+    },
+    {
+      "source": "CHEMBL220492",
+      "target": "SCN7A",
+      "type": "TARGETS",
+      "description": "TOPIRAMATE targets SCN7A."
     },
     {
       "source": "CHEMBL1201222",
@@ -205,16 +229,40 @@
       "description": "TOPIRAMATE targets SCN11A."
     },
     {
+      "source": "CHEMBL220492",
+      "target": "GRIK4",
+      "type": "TARGETS",
+      "description": "TOPIRAMATE targets GRIK4."
+    },
+    {
+      "source": "CHEMBL220492",
+      "target": "GABRG2",
+      "type": "TARGETS",
+      "description": "TOPIRAMATE targets GABRG2."
+    },
+    {
       "source": "CHEMBL1509",
       "target": "NR3C2",
       "type": "TARGETS",
       "description": "DROSPIRENONE targets NR3C2."
     },
     {
+      "source": "CHEMBL220492",
+      "target": "GABRA5",
+      "type": "TARGETS",
+      "description": "TOPIRAMATE targets GABRA5."
+    },
+    {
       "source": "CHEMBL1201222",
       "target": "SLC18A2",
       "type": "TARGETS",
       "description": "LISDEXAMFETAMINE targets SLC18A2."
+    },
+    {
+      "source": "CHEMBL220492",
+      "target": "SCN3A",
+      "type": "TARGETS",
+      "description": "TOPIRAMATE targets SCN3A."
     },
     {
       "source": "CHEMBL1201178",
@@ -257,12 +305,6 @@
       "target": "DRD2",
       "type": "TARGETS",
       "description": "OLANZAPINE targets DRD2."
-    },
-    {
-      "source": "SCN5A",
-      "target": "cardiac-ion-channel",
-      "type": "PARTICIPATES_IN",
-      "description": "SCN5A is a component of the Cardiac Ion Channel / Conduction pathway."
     },
     {
       "source": "GABRB1",
@@ -335,6 +377,24 @@
       "target": "gaba-glutamate",
       "type": "PARTICIPATES_IN",
       "description": "GRIA4 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GABRA4",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GABRA4 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GABRA5",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GABRA5 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GABRA6",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GABRA6 is a component of the GABA / Glutamate Signaling pathway."
     },
     {
       "source": "IL1B",
@@ -419,6 +479,12 @@
       "target": "serotonin-dopamine",
       "type": "PARTICIPATES_IN",
       "description": "TPH1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "SCN5A",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "SCN5A is a component of the Cardiac Ion Channel / Conduction pathway."
     },
     {
       "source": "PLOD1",
@@ -517,12 +583,6 @@
       "description": "SLC6A3 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.09"
     },
     {
-      "source": "SLC18A2",
-      "target": "bulimia nervosa (EATING_DISORDER_BN)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SLC18A2 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.09"
-    },
-    {
       "source": "ESR1",
       "target": "bulimia nervosa (EATING_DISORDER_BN)",
       "type": "ASSOCIATED_WITH",
@@ -533,6 +593,12 @@
       "target": "bulimia nervosa (EATING_DISORDER_BN)",
       "type": "ASSOCIATED_WITH",
       "description": "PGR is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.09"
+    },
+    {
+      "source": "SLC18A2",
+      "target": "bulimia nervosa (EATING_DISORDER_BN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC18A2 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.09"
     },
     {
       "source": "GNRHR",
@@ -565,16 +631,16 @@
       "description": "MC4R is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.07"
     },
     {
-      "source": "EIF2AK4",
-      "target": "bulimia nervosa (EATING_DISORDER_BN)",
-      "type": "ASSOCIATED_WITH",
-      "description": "EIF2AK4 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.07"
-    },
-    {
       "source": "GRPR",
       "target": "bulimia nervosa (EATING_DISORDER_BN)",
       "type": "ASSOCIATED_WITH",
       "description": "GRPR is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.07"
+    },
+    {
+      "source": "EIF2AK4",
+      "target": "bulimia nervosa (EATING_DISORDER_BN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF2AK4 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.07"
     },
     {
       "source": "HSD11B1",
@@ -583,10 +649,10 @@
       "description": "HSD11B1 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.07"
     },
     {
-      "source": "TUBA3E",
+      "source": "TUBA3D",
       "target": "bulimia nervosa (EATING_DISORDER_BN)",
       "type": "ASSOCIATED_WITH",
-      "description": "TUBA3E is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.07"
+      "description": "TUBA3D is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.07"
     },
     {
       "source": "VEGFD",
@@ -595,28 +661,28 @@
       "description": "VEGFD is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.07"
     },
     {
-      "source": "TUBA3D",
-      "target": "bulimia nervosa (EATING_DISORDER_BN)",
-      "type": "ASSOCIATED_WITH",
-      "description": "TUBA3D is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.07"
-    },
-    {
       "source": "TUBA3C",
       "target": "bulimia nervosa (EATING_DISORDER_BN)",
       "type": "ASSOCIATED_WITH",
       "description": "TUBA3C is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.07"
     },
     {
-      "source": "SDC3",
+      "source": "TUBA3E",
       "target": "bulimia nervosa (EATING_DISORDER_BN)",
       "type": "ASSOCIATED_WITH",
-      "description": "SDC3 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.07"
+      "description": "TUBA3E is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.07"
     },
     {
       "source": "IL18",
       "target": "bulimia nervosa (EATING_DISORDER_BN)",
       "type": "ASSOCIATED_WITH",
       "description": "IL18 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.07"
+    },
+    {
+      "source": "SDC3",
+      "target": "bulimia nervosa (EATING_DISORDER_BN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC3 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.07"
     },
     {
       "source": "MC3R",
@@ -643,6 +709,18 @@
       "description": "CRHBP is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.05"
     },
     {
+      "source": "ASIP",
+      "target": "bulimia nervosa (EATING_DISORDER_BN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASIP is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.05"
+    },
+    {
+      "source": "ME1",
+      "target": "bulimia nervosa (EATING_DISORDER_BN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ME1 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.05"
+    },
+    {
       "source": "GJA1",
       "target": "bulimia nervosa (EATING_DISORDER_BN)",
       "type": "ASSOCIATED_WITH",
@@ -655,28 +733,22 @@
       "description": "PHF21A is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.05"
     },
     {
-      "source": "ME1",
-      "target": "bulimia nervosa (EATING_DISORDER_BN)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ME1 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.05"
-    },
-    {
-      "source": "ASIP",
-      "target": "bulimia nervosa (EATING_DISORDER_BN)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ASIP is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.05"
-    },
-    {
       "source": "GPR83",
       "target": "bulimia nervosa (EATING_DISORDER_BN)",
       "type": "ASSOCIATED_WITH",
       "description": "GPR83 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.05"
     },
     {
-      "source": "DHX9",
+      "source": "SAP130",
       "target": "bulimia nervosa (EATING_DISORDER_BN)",
       "type": "ASSOCIATED_WITH",
-      "description": "DHX9 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.05"
+      "description": "SAP130 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.05"
+    },
+    {
+      "source": "DYNLT2B",
+      "target": "bulimia nervosa (EATING_DISORDER_BN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYNLT2B is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.05"
     },
     {
       "source": "CALCA",
@@ -691,22 +763,16 @@
       "description": "CALCB is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.05"
     },
     {
+      "source": "DHX9",
+      "target": "bulimia nervosa (EATING_DISORDER_BN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHX9 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.05"
+    },
+    {
       "source": "FRRS1",
       "target": "bulimia nervosa (EATING_DISORDER_BN)",
       "type": "ASSOCIATED_WITH",
       "description": "FRRS1 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.05"
-    },
-    {
-      "source": "SAP130",
-      "target": "bulimia nervosa (EATING_DISORDER_BN)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SAP130 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.05"
-    },
-    {
-      "source": "DYNLT2B",
-      "target": "bulimia nervosa (EATING_DISORDER_BN)",
-      "type": "ASSOCIATED_WITH",
-      "description": "DYNLT2B is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.05"
     },
     {
       "source": "GHRL",
@@ -727,10 +793,136 @@
       "description": "SCN2A is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
     },
     {
+      "source": "GRIK1",
+      "target": "bulimia nervosa (EATING_DISORDER_BN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIK1 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
+    },
+    {
+      "source": "GABRG3",
+      "target": "bulimia nervosa (EATING_DISORDER_BN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRG3 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
+    },
+    {
+      "source": "GABRA4",
+      "target": "bulimia nervosa (EATING_DISORDER_BN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRA4 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
+    },
+    {
+      "source": "GABRP",
+      "target": "bulimia nervosa (EATING_DISORDER_BN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRP is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
+    },
+    {
+      "source": "GRIA1",
+      "target": "bulimia nervosa (EATING_DISORDER_BN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIA1 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
+    },
+    {
+      "source": "GABRA6",
+      "target": "bulimia nervosa (EATING_DISORDER_BN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRA6 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
+    },
+    {
+      "source": "GABRB1",
+      "target": "bulimia nervosa (EATING_DISORDER_BN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRB1 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
+    },
+    {
+      "source": "SCN3A",
+      "target": "bulimia nervosa (EATING_DISORDER_BN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN3A is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
+    },
+    {
+      "source": "SCN8A",
+      "target": "bulimia nervosa (EATING_DISORDER_BN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN8A is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
+    },
+    {
+      "source": "GRIK3",
+      "target": "bulimia nervosa (EATING_DISORDER_BN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIK3 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
+    },
+    {
+      "source": "GRIA4",
+      "target": "bulimia nervosa (EATING_DISORDER_BN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIA4 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
+    },
+    {
+      "source": "GABRA3",
+      "target": "bulimia nervosa (EATING_DISORDER_BN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRA3 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
+    },
+    {
+      "source": "SCN7A",
+      "target": "bulimia nervosa (EATING_DISORDER_BN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN7A is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
+    },
+    {
+      "source": "GRIK4",
+      "target": "bulimia nervosa (EATING_DISORDER_BN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIK4 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
+    },
+    {
       "source": "GABRG1",
       "target": "bulimia nervosa (EATING_DISORDER_BN)",
       "type": "ASSOCIATED_WITH",
       "description": "GABRG1 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
+    },
+    {
+      "source": "GABRG2",
+      "target": "bulimia nervosa (EATING_DISORDER_BN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRG2 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
+    },
+    {
+      "source": "GABRE",
+      "target": "bulimia nervosa (EATING_DISORDER_BN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRE is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
+    },
+    {
+      "source": "GABRA2",
+      "target": "bulimia nervosa (EATING_DISORDER_BN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRA2 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
+    },
+    {
+      "source": "SCN1A",
+      "target": "bulimia nervosa (EATING_DISORDER_BN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN1A is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
+    },
+    {
+      "source": "CA4",
+      "target": "bulimia nervosa (EATING_DISORDER_BN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA4 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
+    },
+    {
+      "source": "SCN11A",
+      "target": "bulimia nervosa (EATING_DISORDER_BN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN11A is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
+    },
+    {
+      "source": "GABRA5",
+      "target": "bulimia nervosa (EATING_DISORDER_BN)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRA5 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
     },
     {
       "source": "GABRD",
@@ -751,12 +943,6 @@
       "description": "GABRB3 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
     },
     {
-      "source": "GRIA4",
-      "target": "bulimia nervosa (EATING_DISORDER_BN)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GRIA4 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
-    },
-    {
       "source": "CA2",
       "target": "bulimia nervosa (EATING_DISORDER_BN)",
       "type": "ASSOCIATED_WITH",
@@ -769,40 +955,10 @@
       "description": "SCN4A is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
     },
     {
-      "source": "GABRB1",
-      "target": "bulimia nervosa (EATING_DISORDER_BN)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GABRB1 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
-    },
-    {
-      "source": "SCN1A",
-      "target": "bulimia nervosa (EATING_DISORDER_BN)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SCN1A is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
-    },
-    {
       "source": "GRIA3",
       "target": "bulimia nervosa (EATING_DISORDER_BN)",
       "type": "ASSOCIATED_WITH",
       "description": "GRIA3 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
-    },
-    {
-      "source": "SCN8A",
-      "target": "bulimia nervosa (EATING_DISORDER_BN)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SCN8A is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
-    },
-    {
-      "source": "GABRP",
-      "target": "bulimia nervosa (EATING_DISORDER_BN)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GABRP is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
-    },
-    {
-      "source": "GABRG3",
-      "target": "bulimia nervosa (EATING_DISORDER_BN)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GABRG3 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
     },
     {
       "source": "SCN5A",
@@ -815,48 +971,6 @@
       "target": "bulimia nervosa (EATING_DISORDER_BN)",
       "type": "ASSOCIATED_WITH",
       "description": "GRIA2 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
-    },
-    {
-      "source": "GRIK1",
-      "target": "bulimia nervosa (EATING_DISORDER_BN)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GRIK1 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
-    },
-    {
-      "source": "GABRA3",
-      "target": "bulimia nervosa (EATING_DISORDER_BN)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GABRA3 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
-    },
-    {
-      "source": "GABRA2",
-      "target": "bulimia nervosa (EATING_DISORDER_BN)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GABRA2 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
-    },
-    {
-      "source": "GRIK3",
-      "target": "bulimia nervosa (EATING_DISORDER_BN)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GRIK3 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
-    },
-    {
-      "source": "SCN11A",
-      "target": "bulimia nervosa (EATING_DISORDER_BN)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SCN11A is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
-    },
-    {
-      "source": "GRIA1",
-      "target": "bulimia nervosa (EATING_DISORDER_BN)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GRIA1 is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
-    },
-    {
-      "source": "GABRE",
-      "target": "bulimia nervosa (EATING_DISORDER_BN)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GABRE is associated with bulimia nervosa (EATING_DISORDER_BN). Open Targets association score 0.04"
     },
     {
       "source": "OPRM1",

@@ -1,0 +1,58 @@
+{
+  "pathways": [
+    {
+      "id": "coagulation",
+      "name": "Coagulation Cascade",
+      "description": "Plasma coagulation factors and fibrinolysis; a hub for cardiovascular and thrombotic disease.",
+      "key_components": [
+        "RASSF7"
+      ],
+      "therapeutic_targets": [
+        "RASSF7"
+      ],
+      "references": []
+    },
+    {
+      "id": "dna-repair",
+      "name": "DNA Repair",
+      "description": "Homologous recombination, mismatch repair, and base excision pathways preserving genome integrity.",
+      "key_components": [
+        "CHEK2"
+      ],
+      "therapeutic_targets": [
+        "CHEK2"
+      ],
+      "references": []
+    },
+    {
+      "id": "mapk-erk",
+      "name": "MAPK / ERK Signaling",
+      "description": "RAS-RAF-MEK-ERK cascade coupling growth factor receptors to proliferation and differentiation.",
+      "key_components": [
+        "HRAS",
+        "RASSF7"
+      ],
+      "therapeutic_targets": [
+        "HRAS",
+        "RASSF7"
+      ],
+      "references": []
+    },
+    {
+      "id": "xenobiotic-metabolism",
+      "name": "Xenobiotic Metabolism",
+      "description": "Cytochrome P450 and conjugating enzymes governing drug metabolism and toxicity.",
+      "key_components": [
+        "ABCC1",
+        "UGT2A1",
+        "UGT2A2"
+      ],
+      "therapeutic_targets": [
+        "ABCC1",
+        "UGT2A1",
+        "UGT2A2"
+      ],
+      "references": []
+    }
+  ]
+}

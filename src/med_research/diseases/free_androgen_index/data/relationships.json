@@ -1,0 +1,436 @@
+{
+  "relationships": [
+    {
+      "source": "SERPINF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SERPINF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GLIS3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLIS3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "THOP1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THOP1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CYP19A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP19A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GSTA1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTA1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GSTM1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GSTM4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SLCO1B1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLCO1B1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "UGT2B15",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "UGT2B15 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SHBG",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHBG is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.54"
+    },
+    {
+      "source": "SERPINA1",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA1 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.53"
+    },
+    {
+      "source": "HGFAC",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGFAC is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.53"
+    },
+    {
+      "source": "ZBTB10",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB10 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.50"
+    },
+    {
+      "source": "SLCO1B1",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLCO1B1 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.49"
+    },
+    {
+      "source": "ZNF652",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF652 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.47"
+    },
+    {
+      "source": "APOH",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOH is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.45"
+    },
+    {
+      "source": "FKBP4",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP4 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.45"
+    },
+    {
+      "source": "NR1H4",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1H4 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.45"
+    },
+    {
+      "source": "CUX2",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUX2 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.43"
+    },
+    {
+      "source": "PDE3A",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE3A is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.43"
+    },
+    {
+      "source": "ANKRD55",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKRD55 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.42"
+    },
+    {
+      "source": "HNF1A",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.42"
+    },
+    {
+      "source": "GSTM1",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM1 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.41"
+    },
+    {
+      "source": "NR2F6",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR2F6 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.41"
+    },
+    {
+      "source": "GCKR",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.41"
+    },
+    {
+      "source": "SERTAD2",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERTAD2 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.41"
+    },
+    {
+      "source": "GRAMD1B",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRAMD1B is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.41"
+    },
+    {
+      "source": "SDC1",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC1 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.40"
+    },
+    {
+      "source": "PRMT6",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRMT6 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.40"
+    },
+    {
+      "source": "SLC22A3",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A3 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.40"
+    },
+    {
+      "source": "UGT2B15",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGT2B15 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.40"
+    },
+    {
+      "source": "THOP1",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THOP1 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.39"
+    },
+    {
+      "source": "BMAL1",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMAL1 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.39"
+    },
+    {
+      "source": "TFEB",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFEB is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.39"
+    },
+    {
+      "source": "PPARG",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.38"
+    },
+    {
+      "source": "WDR72",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR72 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.38"
+    },
+    {
+      "source": "SERPINF2",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINF2 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.37"
+    },
+    {
+      "source": "GSTM4",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM4 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.37"
+    },
+    {
+      "source": "BRI3",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRI3 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.37"
+    },
+    {
+      "source": "SLC16A9",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC16A9 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.36"
+    },
+    {
+      "source": "SLC22A11",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A11 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.36"
+    },
+    {
+      "source": "CPS1",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPS1 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.36"
+    },
+    {
+      "source": "SOX1",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX1 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.35"
+    },
+    {
+      "source": "HPN",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPN is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.35"
+    },
+    {
+      "source": "HLX",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLX is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.35"
+    },
+    {
+      "source": "ONECUT1",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ONECUT1 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.35"
+    },
+    {
+      "source": "PNPLA3",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PNPLA3 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.35"
+    },
+    {
+      "source": "GLIS3",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLIS3 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.35"
+    },
+    {
+      "source": "B3GNT2",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B3GNT2 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.35"
+    },
+    {
+      "source": "GPR139",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR139 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.35"
+    },
+    {
+      "source": "POR",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POR is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.35"
+    },
+    {
+      "source": "RSPO3",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO3 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.35"
+    },
+    {
+      "source": "BORCS7",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BORCS7 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.35"
+    },
+    {
+      "source": "FMO3",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMO3 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.35"
+    },
+    {
+      "source": "CYP19A1",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP19A1 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.35"
+    },
+    {
+      "source": "ABCA8",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA8 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.34"
+    },
+    {
+      "source": "GSTA1",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTA1 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.34"
+    },
+    {
+      "source": "GREB1",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GREB1 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.34"
+    },
+    {
+      "source": "HLF",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLF is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.34"
+    },
+    {
+      "source": "SH3BP2",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3BP2 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.34"
+    },
+    {
+      "source": "ZFPM2",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFPM2 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.34"
+    },
+    {
+      "source": "CMIP",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMIP is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.34"
+    },
+    {
+      "source": "PTPRG",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRG is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.34"
+    },
+    {
+      "source": "PKN3",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKN3 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.34"
+    },
+    {
+      "source": "PDE2A",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE2A is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.34"
+    },
+    {
+      "source": "ORM1",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ORM1 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.34"
+    },
+    {
+      "source": "EPHA2",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHA2 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.34"
+    },
+    {
+      "source": "P2RY2",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RY2 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.34"
+    },
+    {
+      "source": "TACR3",
+      "target": "free androgen index (FREE_ANDROGEN_INDEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TACR3 is associated with free androgen index (FREE_ANDROGEN_INDEX). Open Targets association score 0.34"
+    }
+  ]
+}

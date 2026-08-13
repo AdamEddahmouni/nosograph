@@ -1,0 +1,520 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1289926",
+      "target": "KDR",
+      "type": "TARGETS",
+      "description": "AXITINIB targets KDR."
+    },
+    {
+      "source": "SYK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "SYK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCND2",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND2 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDK12",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK12 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDK6",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK6 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TRAF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "FANCD2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "FANCD2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RAF1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RAF1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "TRAF7",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF7 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "SMAD2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SMAD3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TRAF7",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF7 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "AXIN1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "AXIN1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LRP1B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NRAS",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MET",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "AKT1",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CCND1",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KDR",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CDK6",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK6 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NF1",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ERBB3",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB3 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "DICER1",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DICER1 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MSH2",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH2 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KMT2C",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FCRL4",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCRL4 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SMAD2",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD2 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TERT",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "GNA11",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNA11 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "POLQ",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLQ is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TP63",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PAX5",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX5 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PREX2",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PREX2 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FGFR2",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "BRCA1",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NTRK1",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MAP2K2",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K2 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TRRAP",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRRAP is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FANCD2",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCD2 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ERCC4",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC4 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "DAXX",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAXX is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PHOX2B",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHOX2B is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CREB1",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREB1 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "RAC1",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAC1 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PRDM1",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM1 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CUX1",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUX1 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "IL7R",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7R is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KNL1",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KNL1 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "RAF1",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAF1 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "AXIN1",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AXIN1 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ARID1B",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1B is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PPP6C",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP6C is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CCND2",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND2 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MYB",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYB is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SYK",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYK is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ESR1",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ARHGAP35",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP35 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ERBB2",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "AFDN",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFDN is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "LZTR1",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LZTR1 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FANCF",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCF is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MAP2K1",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K1 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MDM4",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM4 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "LRP1B",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1B is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "BCL11A",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL11A is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SMAD3",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD3 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FGFR1",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ROS1",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROS1 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CDK12",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK12 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TRAF7",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAF7 is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SUFU",
+      "target": "superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUFU is associated with superficial spreading melanoma (SUPERFICIAL_SPREADING_MELANOMA). Open Targets association score 0.37"
+    }
+  ]
+}

@@ -1,0 +1,514 @@
+{
+  "relationships": [
+    {
+      "source": "BIRC5",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BIRC5 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CXCL12",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL12 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR4",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR4 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "IGF2BP2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2BP2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "ERAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "ERAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "FASN",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASN is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "SEMA3C",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEMA3C is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.35"
+    },
+    {
+      "source": "TENT5A",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TENT5A is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.34"
+    },
+    {
+      "source": "CNTNAP5",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNTNAP5 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.29"
+    },
+    {
+      "source": "TOMM40",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOMM40 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.23"
+    },
+    {
+      "source": "AR",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "KLK3",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK3 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "PROS1",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROS1 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "PLAG1",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAG1 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "NPEPPS",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPEPPS is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "PSAT1",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSAT1 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "FOLH1",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOLH1 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "ERG",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERG is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "PTEN",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "TGFB1",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "CDH1",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "EZH2",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EZH2 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "METTL3",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "METTL3 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "STAT3",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "TP53",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "SPOP",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPOP is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "MTOR",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.12"
+    },
+    {
+      "source": "NFKB1",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "MYC",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "TMPRSS2",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS2 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "EGFR",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "CAV1",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAV1 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "HMOX1",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMOX1 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "CXCR4",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR4 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "BIRC5",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIRC5 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "FASN",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASN is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "CD44",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "ESR1",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "GDF15",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF15 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "NR2C2",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR2C2 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "NR3C1",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "IL1B",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "GSR",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSR is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "IL6",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "CXCL8",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "AKT1",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "BCR",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCR is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "ERAS",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERAS is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "ERAL1",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERAL1 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "FOXA1",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXA1 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "CDH2",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH2 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "CD274",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "IGF1",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "KHDRBS1",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KHDRBS1 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "LDHA",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDHA is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "PSIP1",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSIP1 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "CXCL12",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL12 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "DAB2IP",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAB2IP is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "IL10",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "IGF2BP2",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2BP2 is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "FTO",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FTO is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "GABPA",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABPA is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with posterior cortical atrophy (POSTERIOR_CORTICAL_ATROPHY). Open Targets association score 0.11"
+    }
+  ]
+}

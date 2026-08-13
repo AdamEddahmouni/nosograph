@@ -1,0 +1,436 @@
+{
+  "relationships": [
+    {
+      "source": "SQSTM1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SQSTM1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "C1QTNF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C1QTNF9B",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9B is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C1QTNF9",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "C1QTNF9B",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9B is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "DRD2",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "DRD2 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "C1QTNF9",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "C1QTNF9B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "CYP19A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP19A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "LEPR",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.73"
+    },
+    {
+      "source": "LEPROT",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPROT is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.17"
+    },
+    {
+      "source": "LEP",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "GNRHR",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRHR is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "FSHR",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSHR is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "LHCGR",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHCGR is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "KISS1R",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KISS1R is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "IRS2",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRS2 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRLH",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRLH is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRL",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRL is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "ESR1",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "SIM1",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIM1 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "POMC",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "MC4R",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MC4R is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "OTP",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OTP is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CPE",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPE is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CYP19A1",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP19A1 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NHLH2",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NHLH2 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CRTC1",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRTC1 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZEB1",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "AR",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "GNRH1",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRH1 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "BRS3",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRS3 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "BDNF",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BDNF is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CGB3",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB3 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LHB",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHB is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CGB7",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB7 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CGB2",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB2 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CGB8",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB8 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CGB1",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB1 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CGB5",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB5 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "WFS1",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WFS1 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "MAGEL2",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAGEL2 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "KISS1",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KISS1 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SNAP25",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNAP25 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "HSD17B3",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSD17B3 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ALK",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NR5A1",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR5A1 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "DRD2",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DRD2 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "BGLAP",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BGLAP is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "INS",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ARNT2",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARNT2 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "C1QTNF9",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1QTNF9 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "C1QTNF9B",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1QTNF9B is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "EGR1",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGR1 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NPEPPS",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPEPPS is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "AGPAT1",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGPAT1 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "MARK2",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MARK2 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "GPR61",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR61 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SQSTM1",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SQSTM1 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "GPR26",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR26 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "TAC3",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAC3 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NPY1R",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPY1R is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "UBB",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBB is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NOS2",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "BBIP1",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BBIP1 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PROP1",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROP1 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LHX3",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHX3 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "RAI1",
+      "target": "obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAI1 is associated with obesity due to leptin receptor gene deficiency (OBESITY_DUE_TO_LEPTIN_RECEPTOR_GENE_DEFICIENCY). Open Targets association score 0.05"
+    }
+  ]
+}

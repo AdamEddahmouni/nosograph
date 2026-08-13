@@ -1,0 +1,544 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL923",
+      "target": "FDPS",
+      "type": "TARGETS",
+      "description": "RISEDRONIC ACID targets FDPS."
+    },
+    {
+      "source": "CHEMBL846",
+      "target": "VDR",
+      "type": "TARGETS",
+      "description": "CALCITRIOL targets VDR."
+    },
+    {
+      "source": "CHEMBL1201284",
+      "target": "CASR",
+      "type": "TARGETS",
+      "description": "CINACALCET targets CASR."
+    },
+    {
+      "source": "SOST",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "SOST is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "TNFSF11",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF11 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "CCL27",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL27 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "FGF23",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF23 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TRAF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C1QL1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QL1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ATRNL1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRNL1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL1A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "LOX",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "LOX is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "BMP7",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP7 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL10RB",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10RB is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "SIL1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "SIL1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "TRAF2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PTH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TDRD7",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "TDRD7 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGM2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF11",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF11 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TRAF2",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF2 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "CYP27A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP27A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "NAT10",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NAT10 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "VDR",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VDR is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "CASR",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASR is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "PTH",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTH is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "FDPS",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FDPS is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGF23",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF23 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TGFB1",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "PSME3",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSME3 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF11B is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "BMP7",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP7 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CALCA",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GH1",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "BGLAP",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BGLAP is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACP5",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACP5 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOST",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOST is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "FNDC5",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FNDC5 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "LEP",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PHOSPHO1",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHOSPHO1 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "DKK1",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DKK1 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNFSF11",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF11 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "COL1A2",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A2 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPPC",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPC is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKCA",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCA is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRRT2",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRRT2 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKCB",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCB is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKCG",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCG is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "LOX",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LOX is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRAF2",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAF2 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD40LG",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TDRD7",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TDRD7 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SCYL1",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCYL1 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRRAP",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRRAP is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGF1",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NAT10",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAT10 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLPI",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLPI is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALPP",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPP is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ASRGL1",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASRGL1 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCL27",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL27 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDLIM3",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDLIM3 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATRNL1",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRNL1 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CALM3",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALM3 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CALM1",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALM1 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CALM2",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALM2 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "KL",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KL is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTRH1",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTRH1 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "AHSG",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSG is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGFBP5",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGFBP5 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MGP",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MGP is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SIL1",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIL1 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PHB2",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHB2 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL10RB",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10RB is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYP27A1",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP27A1 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CAMKMT",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMKMT is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRIT1",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRIT1 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRH",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRH is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PHEX",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHEX is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "C1QL1",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1QL1 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGM2",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM2 is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GGH",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGH is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "LDLR",
+      "target": "renal osteodystrophy (RENAL_OSTEODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with renal osteodystrophy (RENAL_OSTEODYSTROPHY). Open Targets association score 0.00"
+    }
+  ]
+}

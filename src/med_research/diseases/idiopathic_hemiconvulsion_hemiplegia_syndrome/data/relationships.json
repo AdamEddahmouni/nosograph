@@ -1,0 +1,442 @@
+{
+  "relationships": [
+    {
+      "source": "FGF21",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF21 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FGF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "POU6F2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "POU6F2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ADAMTS4",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS4 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "PLOD1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLOD1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "SLC2A1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "TGM2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "CYP19A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP19A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SOX10",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX10 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "SOX2",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX2 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "POMC",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "IGF1",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PLOD1",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLOD1 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "DLG2",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLG2 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLXNA1",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLXNA1 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CGB5",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB5 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CGA",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGA is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GNRH1",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRH1 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "POU6F2",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU6F2 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GJA1",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA1 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHD7",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD7 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "NRP1",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRP1 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GNRHR",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRHR is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "KISS1R",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KISS1R is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FGFR1",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "NRP2",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRP2 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "BGLAP",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BGLAP is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "GH1",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "GGH",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGH is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "TGM2",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM2 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNF",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "AMH",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMH is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "SEMA3A",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEMA3A is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLIT2",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLIT2 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "PROKR2",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROKR2 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "SOX11",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX11 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL1B",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "PRL",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRL is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "WDR11",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR11 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "SMCHD1",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMCHD1 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "BRD2",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRD2 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "KISS1",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KISS1 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "ANOS1",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANOS1 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "NDN",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDN is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "TACR3",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TACR3 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADAMTS4",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS4 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "VEGFA",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "AFP",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ARHGAP35",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP35 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "NSMF",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSMF is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ARHGAP5",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP5 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SEMA6A",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEMA6A is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SEMA3B",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEMA3B is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGF8",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF8 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "LEP",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRH",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRH is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGF17",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF17 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPRY4",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPRY4 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SERPINA4",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA4 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLXNB1",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLXNB1 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDON",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDON is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "VDR",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VDR is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGF21",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF21 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP19A1",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP19A1 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC2A1",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A1 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPT",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC17A5",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A5 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "GOT1",
+      "target": "idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOT1 is associated with idiopathic hemiconvulsion-hemiplegia syndrome (IDIOPATHIC_HEMICONVULSION_HEMIPLEGIA_SYNDROME). Open Targets association score 0.01"
+    }
+  ]
+}

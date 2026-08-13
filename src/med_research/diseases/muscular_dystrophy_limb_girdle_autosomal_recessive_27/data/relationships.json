@@ -1,0 +1,418 @@
+{
+  "relationships": [
+    {
+      "source": "C10orf71",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C10orf71 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL13A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL13A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL6A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL6A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL6A3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL6A3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ITGA7",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA7 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELENON",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELENON is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "NFATC3",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC3 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "JAG2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "JAG2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "ITGA7",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA7 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "JAG2",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAG2 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.75"
+    },
+    {
+      "source": "DMD",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMD is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.07"
+    },
+    {
+      "source": "DES",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DES is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.07"
+    },
+    {
+      "source": "LAMA2",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMA2 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.07"
+    },
+    {
+      "source": "RYR1",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYR1 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.07"
+    },
+    {
+      "source": "GAA",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAA is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.07"
+    },
+    {
+      "source": "SGCG",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCG is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.06"
+    },
+    {
+      "source": "SGCA",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCA is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.06"
+    },
+    {
+      "source": "DYSF",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYSF is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.06"
+    },
+    {
+      "source": "DNAJB4",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAJB4 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.06"
+    },
+    {
+      "source": "LMNA",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNA is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.06"
+    },
+    {
+      "source": "NEB",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEB is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.06"
+    },
+    {
+      "source": "CAV3",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAV3 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.06"
+    },
+    {
+      "source": "SCN4A",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN4A is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.06"
+    },
+    {
+      "source": "DNM2",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM2 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.06"
+    },
+    {
+      "source": "MTM1",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTM1 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.05"
+    },
+    {
+      "source": "ITGA7",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA7 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.05"
+    },
+    {
+      "source": "LARGE1",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LARGE1 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL6A3",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL6A3 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.05"
+    },
+    {
+      "source": "DMPK",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMPK is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.05"
+    },
+    {
+      "source": "SGCD",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCD is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.05"
+    },
+    {
+      "source": "CAPN3",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAPN3 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.05"
+    },
+    {
+      "source": "LDB3",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDB3 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL6A1",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL6A1 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYH4",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH4 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.05"
+    },
+    {
+      "source": "SYNM",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYNM is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.05"
+    },
+    {
+      "source": "XIRP1",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XIRP1 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYBPC3",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYBPC3 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.05"
+    },
+    {
+      "source": "SGCB",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCB is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.05"
+    },
+    {
+      "source": "CASQ2",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASQ2 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.05"
+    },
+    {
+      "source": "RBM20",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM20 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.05"
+    },
+    {
+      "source": "VCP",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VCP is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.05"
+    },
+    {
+      "source": "CSRP3",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSRP3 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.05"
+    },
+    {
+      "source": "ACTA1",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTA1 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL13A1",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL13A1 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNNT1",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNT1 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.05"
+    },
+    {
+      "source": "LMOD2",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMOD2 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.05"
+    },
+    {
+      "source": "MSTN",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSTN is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.05"
+    },
+    {
+      "source": "LMOD3",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMOD3 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.05"
+    },
+    {
+      "source": "TRIM32",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM32 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.04"
+    },
+    {
+      "source": "ASNSD1",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASNSD1 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.04"
+    },
+    {
+      "source": "SELENON",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELENON is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.04"
+    },
+    {
+      "source": "PABPN1",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PABPN1 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.04"
+    },
+    {
+      "source": "TTN",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTN is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNNC1",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNC1 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.04"
+    },
+    {
+      "source": "DSG2",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSG2 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.04"
+    },
+    {
+      "source": "MYOZ2",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYOZ2 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.04"
+    },
+    {
+      "source": "SRPK3",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRPK3 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.04"
+    },
+    {
+      "source": "EMD",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EMD is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.04"
+    },
+    {
+      "source": "KLHL40",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLHL40 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFATC3",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFATC3 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.04"
+    },
+    {
+      "source": "CHD4",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD4 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC6A6",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A6 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.04"
+    },
+    {
+      "source": "FKRP",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKRP is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.04"
+    },
+    {
+      "source": "CAP2",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAP2 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.04"
+    },
+    {
+      "source": "C10orf71",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C10orf71 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.04"
+    },
+    {
+      "source": "IGHMBP2",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGHMBP2 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.04"
+    },
+    {
+      "source": "MBNL2",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBNL2 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.04"
+    },
+    {
+      "source": "BARX2",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BARX2 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAGEL2",
+      "target": "muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAGEL2 is associated with muscular dystrophy, limb-girdle, autosomal recessive 27 (MUSCULAR_DYSTROPHY_LIMB_GIRDLE_AUTOSOMAL_RECESSIVE_27). Open Targets association score 0.04"
+    }
+  ]
+}

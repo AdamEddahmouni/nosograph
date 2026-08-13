@@ -1,0 +1,496 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL121",
+      "target": "PPARG",
+      "type": "TARGETS",
+      "description": "ROSIGLITAZONE targets PPARG."
+    },
+    {
+      "source": "HLA-DRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "HLA-DRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "FGF21",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF21 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SERPINE1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SERPINE1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MMP14",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP14 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GAD1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GAD1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GLP1R",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GLP1R is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INSR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INSR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "KCNJ11",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNJ11 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "SLC2A4",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A4 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "SOCS1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "SOCS1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "ANGPTL8",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL8 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "AKT2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "AGTR1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGTR1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "TGM2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "INSR",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INSR is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.34"
+    },
+    {
+      "source": "HNF1A",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.12"
+    },
+    {
+      "source": "INS",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IGF1",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GH1",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GLP1R",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLP1R is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGM2",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM2 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GGH",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGH is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLIN1",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLIN1 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALB",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CASR",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASR is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GNAI1",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAI1 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGF21",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF21 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKAA1",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA1 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKAA2",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA2 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GCG",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCG is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPARG",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "BDNF",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BDNF is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "EHMT1",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EHMT1 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ZGLP1",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZGLP1 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TBC1D4",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D4 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRP",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALMS1",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALMS1 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "HSD11B1",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSD11B1 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "FOXO1",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXO1 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SMC5",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMC5 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "GAD1",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAD1 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PCYT2",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCYT2 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPP1R3A",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R3A is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPP1CC",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1CC is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "GPT",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCL2",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL2 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "LMNA",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNA is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNF",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "AKT2",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT2 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "LEP",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADIPOQ",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOQ is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "NEU3",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEU3 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGFBP3",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGFBP3 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "KCNJ11",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNJ11 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SREBF1",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SREBF1 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPARA",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARA is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOCS1",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOCS1 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC2A4",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A4 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "HMOX1",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMOX1 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ANGPTL8",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL8 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SIRT6",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT6 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMP2",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "AGTR1",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGTR1 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "GHR",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHR is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "HLA-DRB1",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DRB1 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CAVIN1",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAVIN1 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "RBM45",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM45 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SERPINE1",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINE1 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTS",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTS is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "FAS",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMP14",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP14 is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "B2M",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B2M is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "REG1A",
+      "target": "insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REG1A is associated with insulin-resistant diabetes mellitus (INSULIN_RESISTANT_DIABETES_MELLITUS). Open Targets association score 0.00"
+    }
+  ]
+}

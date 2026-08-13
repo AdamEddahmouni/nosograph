@@ -1,0 +1,532 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL2105395",
+      "target": "ESR1",
+      "type": "TARGETS",
+      "description": "OSPEMIFENE targets ESR1."
+    },
+    {
+      "source": "CHEMBL3185958",
+      "target": "ESR1",
+      "type": "TARGETS",
+      "description": "CLOMIPHENE CITRATE targets ESR1."
+    },
+    {
+      "source": "CHEMBL2355051",
+      "target": "ESR1",
+      "type": "TARGETS",
+      "description": "CLOMIPHENE targets ESR1."
+    },
+    {
+      "source": "BIRC5",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BIRC5 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CASP3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CDK1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CXCL13",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL13 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CD46",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CD46 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ADAMTS1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "GORASP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "GORASP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RELA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD46",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD46 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR3",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR3 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF13B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "DLGAP1",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLGAP1 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.24"
+    },
+    {
+      "source": "TNFSF13B",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13B is associated with salpingitis (SALPINGITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNF",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with salpingitis (SALPINGITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD79A",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with salpingitis (SALPINGITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "NBR1",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBR1 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC16",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC16 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TLR3",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR3 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "EIF3K",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF3K is associated with salpingitis (SALPINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GNRH1",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRH1 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with salpingitis (SALPINGITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CALCA",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1B",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD14",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD14 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PCYT1A",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCYT1A is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CASP3",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP3 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHGA",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHGA is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL8",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL13",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL13 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD40LG",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "COX5A",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COX5A is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CPNE4",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPNE4 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "UCN",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UCN is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "COX8A",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COX8A is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CPOX",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPOX is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "RANBP2",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RANBP2 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TLR4",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CSRP3",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSRP3 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "GORASP1",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GORASP1 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGFB1",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "KLHL1",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLHL1 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MUC2",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC2 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MARCKSL1",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MARCKSL1 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "DEFA5",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEFA5 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "WNK1",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNK1 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "RELA",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELA is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SYT1",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYT1 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "HSPA14",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPA14 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "HSPD1",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPD1 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNG",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "BIRC5",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIRC5 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADM",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADM is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CAPG",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAPG is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CA2",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA2 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "EGFR",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDK1",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK1 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ANXA2",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANXA2 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOD1",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD1 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD46",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD46 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ESR1",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MOGAT1",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MOGAT1 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADAMTS1",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS1 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SMN1",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMN1 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "VTN",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VTN is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD8A",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "VSIG4",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VSIG4 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "FN1",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FN1 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "HK2",
+      "target": "salpingitis (SALPINGITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HK2 is associated with salpingitis (SALPINGITIS). Open Targets association score 0.00"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "pathways": [
+    {
+      "id": "coagulation",
+      "name": "Coagulation Cascade",
+      "description": "Plasma coagulation factors and fibrinolysis; a hub for cardiovascular and thrombotic disease.",
+      "key_components": [
+        "PLAT",
+        "SERPINE1"
+      ],
+      "therapeutic_targets": [
+        "PLAT",
+        "SERPINE1"
+      ],
+      "references": []
+    },
+    {
+      "id": "complement",
+      "name": "Complement Cascade",
+      "description": "Classical, lectin, and alternative complement pathways for opsonization, lysis, and immune complex clearance.",
+      "key_components": [
+        "MBL2"
+      ],
+      "therapeutic_targets": [
+        "MBL2"
+      ],
+      "references": []
+    },
+    {
+      "id": "il1-inflammasome",
+      "name": "IL-1 / Inflammasome Pathway",
+      "description": "NLRP3 inflammasome assembly and IL-1β/IL-18 maturation; a driver of sterile inflammation.",
+      "key_components": [
+        "IL13",
+        "IL18"
+      ],
+      "therapeutic_targets": [
+        "IL13",
+        "IL18"
+      ],
+      "references": []
+    },
+    {
+      "id": "il4-il13",
+      "name": "IL-4 / IL-13 (Th2) Pathway",
+      "description": "Type 2 cytokine signaling driving allergic and eosinophilic inflammation.",
+      "key_components": [
+        "IL13"
+      ],
+      "therapeutic_targets": [
+        "IL13"
+      ],
+      "references": []
+    },
+    {
+      "id": "mapk-erk",
+      "name": "MAPK / ERK Signaling",
+      "description": "RAS-RAF-MEK-ERK cascade coupling growth factor receptors to proliferation and differentiation.",
+      "key_components": [
+        "MAPK1",
+        "MAPK14",
+        "MAPK8"
+      ],
+      "therapeutic_targets": [
+        "MAPK1",
+        "MAPK14",
+        "MAPK8"
+      ],
+      "references": []
+    },
+    {
+      "id": "tcr-signaling",
+      "name": "T Cell Receptor Signaling",
+      "description": "TCR signal transduction and T cell activation; a therapeutic hub in autoimmunity.",
+      "key_components": [
+        "PLAT"
+      ],
+      "therapeutic_targets": [
+        "PLAT"
+      ],
+      "references": []
+    }
+  ]
+}

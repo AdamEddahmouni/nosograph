@@ -1,0 +1,448 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL578",
+      "target": "ACE",
+      "type": "TARGETS",
+      "description": "ENALAPRIL targets ACE."
+    },
+    {
+      "source": "CHEMBL79",
+      "target": "SCN5A",
+      "type": "TARGETS",
+      "description": "LIDOCAINE targets SCN5A."
+    },
+    {
+      "source": "CACNA1C",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1C is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "HCN1",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "HCN1 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "HCN4",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "HCN4 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "RYR2",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "RYR2 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "SCN5A",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "SCN5A is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "C10orf71",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C10orf71 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ADAMTS19",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS19 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MRGPRD",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "MRGPRD is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "TH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "TH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "ABCC9",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC9 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "LMOD2",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMOD2 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.66"
+    },
+    {
+      "source": "SCN5A",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN5A is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.08"
+    },
+    {
+      "source": "DES",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DES is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.08"
+    },
+    {
+      "source": "RBM20",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM20 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.07"
+    },
+    {
+      "source": "RYR2",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYR2 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.07"
+    },
+    {
+      "source": "TBX5",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX5 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.07"
+    },
+    {
+      "source": "NKX2-5",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-5 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.07"
+    },
+    {
+      "source": "CASQ2",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASQ2 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.07"
+    },
+    {
+      "source": "GJA1",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA1 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.07"
+    },
+    {
+      "source": "MYH6",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH6 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.06"
+    },
+    {
+      "source": "GJA5",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA5 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.06"
+    },
+    {
+      "source": "DSG2",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSG2 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.06"
+    },
+    {
+      "source": "TBX3",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX3 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.06"
+    },
+    {
+      "source": "LMNA",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNA is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.06"
+    },
+    {
+      "source": "CAP2",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAP2 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.06"
+    },
+    {
+      "source": "NEXN",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEXN is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.06"
+    },
+    {
+      "source": "EGFR",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.06"
+    },
+    {
+      "source": "MYBPC3",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYBPC3 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.06"
+    },
+    {
+      "source": "PPP1R13L",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R13L is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.06"
+    },
+    {
+      "source": "CSRP3",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSRP3 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.06"
+    },
+    {
+      "source": "ACE",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "XIRP1",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XIRP1 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "MECP2",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MECP2 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC8A1",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC8A1 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "ERBB2",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "SGCD",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCD is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "HCN1",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HCN1 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "TTN",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTN is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "KCNE5",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNE5 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "RUNX1",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "SP4",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SP4 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNNC1",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNC1 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADAMTS19",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS19 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "CACNA1C",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1C is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "C10orf71",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C10orf71 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "DMD",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMD is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "SOX4",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX4 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "HNRNPA1L2",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNRNPA1L2 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "HNRNPA1",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNRNPA1 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "OBSCN",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OBSCN is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "ABCC9",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC9 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "TH",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TH is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "MRGPRD",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRGPRD is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "HEXIM1",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEXIM1 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "NOS3",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "CHD4",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD4 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "HCN4",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HCN4 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "CTSL",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSL is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "CTSV",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSV is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "CALM1",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALM1 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "AKAP10",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKAP10 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "LEMD2",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEMD2 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "CAMK2N1",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMK2N1 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYPN",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYPN is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "GJC1",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJC1 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "EMD",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EMD is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "FKBP1B",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP1B is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "LAMP2",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMP2 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.05"
+    },
+    {
+      "source": "ANK2",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK2 is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.04"
+    },
+    {
+      "source": "HRC",
+      "target": "cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRC is associated with cardiomyopathy, dilated, 2G (CARDIOMYOPATHY_DILATED_2G). Open Targets association score 0.04"
+    }
+  ]
+}

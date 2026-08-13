@@ -1,0 +1,592 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1908360",
+      "target": "FKBP1A",
+      "type": "TARGETS",
+      "description": "EVEROLIMUS targets FKBP1A."
+    },
+    {
+      "source": "CHEMBL888",
+      "target": "RRM1",
+      "type": "TARGETS",
+      "description": "GEMCITABINE targets RRM1."
+    },
+    {
+      "source": "CHEMBL888",
+      "target": "POLD4",
+      "type": "TARGETS",
+      "description": "GEMCITABINE targets POLD4."
+    },
+    {
+      "source": "CHEMBL888",
+      "target": "POLE3",
+      "type": "TARGETS",
+      "description": "GEMCITABINE targets POLE3."
+    },
+    {
+      "source": "CHEMBL888",
+      "target": "POLD1",
+      "type": "TARGETS",
+      "description": "GEMCITABINE targets POLD1."
+    },
+    {
+      "source": "CHEMBL888",
+      "target": "PRIM2",
+      "type": "TARGETS",
+      "description": "GEMCITABINE targets PRIM2."
+    },
+    {
+      "source": "CHEMBL888",
+      "target": "POLE2",
+      "type": "TARGETS",
+      "description": "GEMCITABINE targets POLE2."
+    },
+    {
+      "source": "CHEMBL34259",
+      "target": "DHFR",
+      "type": "TARGETS",
+      "description": "METHOTREXATE targets DHFR."
+    },
+    {
+      "source": "CHEMBL888",
+      "target": "POLE",
+      "type": "TARGETS",
+      "description": "GEMCITABINE targets POLE."
+    },
+    {
+      "source": "CHEMBL1282",
+      "target": "TLR7",
+      "type": "TARGETS",
+      "description": "IMIQUIMOD targets TLR7."
+    },
+    {
+      "source": "CHEMBL888",
+      "target": "POLD3",
+      "type": "TARGETS",
+      "description": "GEMCITABINE targets POLD3."
+    },
+    {
+      "source": "CHEMBL359744",
+      "target": "TOP2A",
+      "type": "TARGETS",
+      "description": "DOXORUBICIN HYDROCHLORIDE targets TOP2A."
+    },
+    {
+      "source": "CHEMBL888",
+      "target": "POLD2",
+      "type": "TARGETS",
+      "description": "GEMCITABINE targets POLD2."
+    },
+    {
+      "source": "CHEMBL888",
+      "target": "PRIM1",
+      "type": "TARGETS",
+      "description": "GEMCITABINE targets PRIM1."
+    },
+    {
+      "source": "CHEMBL888",
+      "target": "POLA2",
+      "type": "TARGETS",
+      "description": "GEMCITABINE targets POLA2."
+    },
+    {
+      "source": "CHEMBL2103839",
+      "target": "MTOR",
+      "type": "TARGETS",
+      "description": "RIDAFOROLIMUS targets MTOR."
+    },
+    {
+      "source": "CHEMBL888",
+      "target": "POLA1",
+      "type": "TARGETS",
+      "description": "GEMCITABINE targets POLA1."
+    },
+    {
+      "source": "CHEMBL3137343",
+      "target": "PDCD1",
+      "type": "TARGETS",
+      "description": "PEMBROLIZUMAB targets PDCD1."
+    },
+    {
+      "source": "CHEMBL359744",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "TREATS",
+      "description": "DOXORUBICIN HYDROCHLORIDE is phase 4 / marketed for bone sarcoma (BONE_SARCOMA)."
+    },
+    {
+      "source": "ACKR3",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ACKR3 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL12",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL12 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR4",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR4 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TNFSF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "HNF4A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF4A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "NFATC2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TLR7",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR7 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNFSF10",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF10 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "GSK3B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "GSK3B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT3A",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT3A is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "TOP2A",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOP2A is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MTOR",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.26"
+    },
+    {
+      "source": "EWSR1",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EWSR1 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "DDIT3",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDIT3 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "GNAQ",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAQ is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "H3-3A",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3-3A is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NSD1",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSD1 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "PDCD1",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "FKBP1A",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP1A is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "DHFR",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHFR is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "EPHA2",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHA2 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "POLA1",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLA1 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "POLE2",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE2 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "RRM1",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RRM1 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "POLE",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRIM1",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRIM1 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "POLD1",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD1 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "POLE3",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE3 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "POLD4",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD4 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRIM2",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRIM2 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "POLD3",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD3 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TLR7",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR7 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "POLD2",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD2 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "POLA2",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLA2 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CNGB1",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNGB1 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "LRRC32",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRC32 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD274",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "VHL",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VHL is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNFSF10",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF10 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IGF1",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GSK3B",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSK3B is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IGF1R",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1R is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "LRP6",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP6 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TP53",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CXCR4",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR4 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ERBB2",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "RPL17",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MYC",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SATB2",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SATB2 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDH1",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FZD5",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FZD5 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTLA4",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTLA4 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TBX3",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX3 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FEZF1",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FEZF1 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACKR3",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACKR3 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "WNT3A",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT3A is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FZD1",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FZD1 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFATC2",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFATC2 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCOR",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCOR is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCL12",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL12 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSF2",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERBB4",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB4 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSF3",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VEGFA",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NTRK1",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "LDHA",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDHA is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HNF4A",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF4A is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PROM1",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROM1 is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALB",
+      "target": "bone sarcoma (BONE_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with bone sarcoma (BONE_SARCOMA). Open Targets association score 0.01"
+    }
+  ]
+}

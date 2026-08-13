@@ -1,0 +1,580 @@
+{
+  "relationships": [
+    {
+      "source": "BTK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BTK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD209",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD209 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LYN",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LYN is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PLCG2",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLCG2 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4R",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4R is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBIA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RELB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "TNIP1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "TNIP1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "ICOS",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ICOS is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "RORC",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "RORC is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "MYD88",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MYD88 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR7",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR7 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTA",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTA is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTB",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTB is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF1A",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF1A is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "BTK",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTK is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.38"
+    },
+    {
+      "source": "TNF",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "NFKB2",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "RAG2",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG2 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "REL",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REL is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CARD11",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "FASLG",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "NFKB1",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "JAK3",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL2",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "LGALS3",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "FAS",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "LYN",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYN is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "LTA",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTA is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "IKZF1",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "PTPRC",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "BCL6",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL6 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRKDC",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKDC is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXP3",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL2RG",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RG is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "LAT",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAT is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "LTB",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTB is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CEBPE",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPE is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "RELB",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELB is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "IFNG",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL13",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL4",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SH2D1A",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2D1A is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ITGB2",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTPN6",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN6 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MAP3K14",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K14 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CR2",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CR2 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNIP1",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNIP1 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CLEC4D",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC4D is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "IRF1",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF1 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYD88",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYD88 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTPN22",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL4R",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4R is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "BCL10",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL10 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL25",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL25 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "AICDA",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AICDA is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "RORC",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RORC is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MMP9",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CLEC4M",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC4M is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD209",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD209 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "JCHAIN",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JCHAIN is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNFRSF1A",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF1A is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "RAC2",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAC2 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPTA1",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TLR7",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR7 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPNS2",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPNS2 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPPL2A",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPPL2A is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRF1",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRF1 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ICOS",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICOS is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "POU2AF1",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU2AF1 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFKBIA",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIA is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLCG2",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCG2 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD274",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SH3BP2",
+      "target": "Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3BP2 is associated with Bruton-type agammaglobulinemia (BRUTON_TYPE_AGAMMAGLOBULINEMIA). Open Targets association score 0.04"
+    }
+  ]
+}

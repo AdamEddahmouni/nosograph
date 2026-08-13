@@ -1,6 +1,12 @@
 {
   "relationships": [
     {
+      "source": "CHEMBL2095222",
+      "target": "LAMB2",
+      "type": "TARGETS",
+      "description": "OCRIPLASMIN targets LAMB2."
+    },
+    {
       "source": "CHEMBL1201825",
       "target": "VEGFA",
       "type": "TARGETS",
@@ -293,6 +299,12 @@
       "target": "COL18A1",
       "type": "TARGETS",
       "description": "OCRIPLASMIN targets COL18A1."
+    },
+    {
+      "source": "CHEMBL2095222",
+      "target": "COL4A4",
+      "type": "TARGETS",
+      "description": "OCRIPLASMIN targets COL4A4."
     },
     {
       "source": "CHEMBL2095222",
@@ -649,6 +661,12 @@
       "description": "COL6A6 is a component of the ECM Remodeling pathway."
     },
     {
+      "source": "COL4A4",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A4 is a component of the ECM Remodeling pathway."
+    },
+    {
       "source": "IL6R",
       "target": "il6-signaling",
       "type": "PARTICIPATES_IN",
@@ -811,16 +829,16 @@
       "description": "PRKCB is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.26"
     },
     {
-      "source": "PGR",
-      "target": "diabetic macular edema (MACULAR_EDEMA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PGR is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.09"
-    },
-    {
       "source": "AR",
       "target": "diabetic macular edema (MACULAR_EDEMA)",
       "type": "ASSOCIATED_WITH",
       "description": "AR is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "PGR",
+      "target": "diabetic macular edema (MACULAR_EDEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.09"
     },
     {
       "source": "PTPRB",
@@ -901,22 +919,16 @@
       "description": "AGTR1 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
     },
     {
-      "source": "COL27A1",
+      "source": "COL4A5",
       "target": "diabetic macular edema (MACULAR_EDEMA)",
       "type": "ASSOCIATED_WITH",
-      "description": "COL27A1 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
+      "description": "COL4A5 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
     },
     {
-      "source": "COL4A6",
+      "source": "COL5A2",
       "target": "diabetic macular edema (MACULAR_EDEMA)",
       "type": "ASSOCIATED_WITH",
-      "description": "COL4A6 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
-    },
-    {
-      "source": "COL11A2",
-      "target": "diabetic macular edema (MACULAR_EDEMA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "COL11A2 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
+      "description": "COL5A2 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
     },
     {
       "source": "LAMA3",
@@ -925,34 +937,10 @@
       "description": "LAMA3 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
     },
     {
-      "source": "COL6A5",
-      "target": "diabetic macular edema (MACULAR_EDEMA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "COL6A5 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
-    },
-    {
       "source": "COL4A2",
       "target": "diabetic macular edema (MACULAR_EDEMA)",
       "type": "ASSOCIATED_WITH",
       "description": "COL4A2 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
-    },
-    {
-      "source": "COL18A1",
-      "target": "diabetic macular edema (MACULAR_EDEMA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "COL18A1 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
-    },
-    {
-      "source": "COL4A3",
-      "target": "diabetic macular edema (MACULAR_EDEMA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "COL4A3 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
-    },
-    {
-      "source": "COL1A2",
-      "target": "diabetic macular edema (MACULAR_EDEMA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "COL1A2 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
     },
     {
       "source": "COL2A1",
@@ -961,64 +949,10 @@
       "description": "COL2A1 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
     },
     {
-      "source": "LAMB1",
+      "source": "COL11A2",
       "target": "diabetic macular edema (MACULAR_EDEMA)",
       "type": "ASSOCIATED_WITH",
-      "description": "LAMB1 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
-    },
-    {
-      "source": "COL28A1",
-      "target": "diabetic macular edema (MACULAR_EDEMA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "COL28A1 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
-    },
-    {
-      "source": "COL6A1",
-      "target": "diabetic macular edema (MACULAR_EDEMA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "COL6A1 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
-    },
-    {
-      "source": "EPOR",
-      "target": "diabetic macular edema (MACULAR_EDEMA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "EPOR is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
-    },
-    {
-      "source": "COL15A1",
-      "target": "diabetic macular edema (MACULAR_EDEMA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "COL15A1 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
-    },
-    {
-      "source": "COL4A5",
-      "target": "diabetic macular edema (MACULAR_EDEMA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "COL4A5 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
-    },
-    {
-      "source": "CHRNB4",
-      "target": "diabetic macular edema (MACULAR_EDEMA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CHRNB4 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
-    },
-    {
-      "source": "COL1A1",
-      "target": "diabetic macular edema (MACULAR_EDEMA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "COL1A1 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
-    },
-    {
-      "source": "LAMA4",
-      "target": "diabetic macular edema (MACULAR_EDEMA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "LAMA4 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
-    },
-    {
-      "source": "COL5A1",
-      "target": "diabetic macular edema (MACULAR_EDEMA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "COL5A1 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
+      "description": "COL11A2 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
     },
     {
       "source": "LAMA1",
@@ -1033,10 +967,58 @@
       "description": "LAMA5 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
     },
     {
+      "source": "LAMB2",
+      "target": "diabetic macular edema (MACULAR_EDEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMB2 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "COL4A6",
+      "target": "diabetic macular edema (MACULAR_EDEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A6 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "TLR3",
+      "target": "diabetic macular edema (MACULAR_EDEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR3 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "COL4A4",
+      "target": "diabetic macular edema (MACULAR_EDEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A4 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "LAMA4",
+      "target": "diabetic macular edema (MACULAR_EDEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMA4 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
+    },
+    {
       "source": "COL3A1",
       "target": "diabetic macular edema (MACULAR_EDEMA)",
       "type": "ASSOCIATED_WITH",
       "description": "COL3A1 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "COL6A1",
+      "target": "diabetic macular edema (MACULAR_EDEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL6A1 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "COL6A5",
+      "target": "diabetic macular edema (MACULAR_EDEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL6A5 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "ADRB2",
+      "target": "diabetic macular edema (MACULAR_EDEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB2 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
     },
     {
       "source": "COL6A6",
@@ -1045,22 +1027,112 @@
       "description": "COL6A6 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
     },
     {
-      "source": "COL11A1",
+      "source": "LAMB1",
       "target": "diabetic macular edema (MACULAR_EDEMA)",
       "type": "ASSOCIATED_WITH",
-      "description": "COL11A1 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
+      "description": "LAMB1 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
     },
     {
-      "source": "COL5A2",
+      "source": "COL1A2",
       "target": "diabetic macular edema (MACULAR_EDEMA)",
       "type": "ASSOCIATED_WITH",
-      "description": "COL5A2 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
+      "description": "COL1A2 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "LAMA2",
+      "target": "diabetic macular edema (MACULAR_EDEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMA2 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "COL28A1",
+      "target": "diabetic macular edema (MACULAR_EDEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL28A1 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "COL18A1",
+      "target": "diabetic macular edema (MACULAR_EDEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL18A1 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CHRNB4",
+      "target": "diabetic macular edema (MACULAR_EDEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHRNB4 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "COL4A3",
+      "target": "diabetic macular edema (MACULAR_EDEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A3 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "COL15A1",
+      "target": "diabetic macular edema (MACULAR_EDEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL15A1 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "COL1A1",
+      "target": "diabetic macular edema (MACULAR_EDEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A1 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "HTR4",
+      "target": "diabetic macular edema (MACULAR_EDEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTR4 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "LAMC1",
+      "target": "diabetic macular edema (MACULAR_EDEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMC1 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
     },
     {
       "source": "COL4A1",
       "target": "diabetic macular edema (MACULAR_EDEMA)",
       "type": "ASSOCIATED_WITH",
       "description": "COL4A1 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "COL6A2",
+      "target": "diabetic macular edema (MACULAR_EDEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL6A2 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "COL11A1",
+      "target": "diabetic macular edema (MACULAR_EDEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL11A1 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "LAMC3",
+      "target": "diabetic macular edema (MACULAR_EDEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMC3 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "COL27A1",
+      "target": "diabetic macular edema (MACULAR_EDEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL27A1 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "EPOR",
+      "target": "diabetic macular edema (MACULAR_EDEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPOR is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "COL5A1",
+      "target": "diabetic macular edema (MACULAR_EDEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL5A1 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
     },
     {
       "source": "COL6A3",
@@ -1093,18 +1165,6 @@
       "description": "LAMB4 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
     },
     {
-      "source": "LAMC1",
-      "target": "diabetic macular edema (MACULAR_EDEMA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "LAMC1 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
-    },
-    {
-      "source": "TLR3",
-      "target": "diabetic macular edema (MACULAR_EDEMA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "TLR3 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
-    },
-    {
       "source": "APOL1",
       "target": "diabetic macular edema (MACULAR_EDEMA)",
       "type": "ASSOCIATED_WITH",
@@ -1115,12 +1175,6 @@
       "target": "diabetic macular edema (MACULAR_EDEMA)",
       "type": "ASSOCIATED_WITH",
       "description": "ANKLE1 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.19"
-    },
-    {
-      "source": "ADRB2",
-      "target": "diabetic macular edema (MACULAR_EDEMA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ADRB2 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.18"
     },
     {
       "source": "BABAM1",
@@ -1213,22 +1267,10 @@
       "description": "BCR is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
     },
     {
-      "source": "COL6A2",
-      "target": "diabetic macular edema (MACULAR_EDEMA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "COL6A2 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
-    },
-    {
       "source": "ABL1",
       "target": "diabetic macular edema (MACULAR_EDEMA)",
       "type": "ASSOCIATED_WITH",
       "description": "ABL1 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
-    },
-    {
-      "source": "HTR4",
-      "target": "diabetic macular edema (MACULAR_EDEMA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "HTR4 is associated with diabetic macular edema (MACULAR_EDEMA). Open Targets association score 0.07"
     },
     {
       "source": "CHRNA3",

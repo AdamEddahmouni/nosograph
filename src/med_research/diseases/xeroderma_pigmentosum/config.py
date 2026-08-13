@@ -28,6 +28,7 @@ CAR_T_SCORES = {
     "Uncategorized": {
         "ACP2": 4.0,
         "ADAM17": 4.0,
+        "ARNT": 4.0,
         "ATM": 4.0,
         "ATR": 4.0,
         "AWAT2": 4.0,
@@ -108,6 +109,7 @@ CAR_T_SCORES = {
         "PPP1R13L": 4.0,
         "PRKDC": 4.0,
         "PRSS56": 4.0,
+        "PTBP2": 4.0,
         "PXDN": 4.0,
         "ROCK1": 4.0,
         "RPL17": 4.0,

@@ -113,6 +113,15 @@ class TestSystemEndpoints:
         resp = client.get("/api/stats")
         assert resp.json()["candidates"] >= 20
 
+    def test_ready_returns_component_status(self, client):
+        resp = client.get("/api/ready")
+        data = resp.json()
+        assert "status" in data
+        assert "components" in data
+        for component in ("redis", "celery", "workspace_db", "knowledge_graph"):
+            assert component in data["components"]
+            assert "status" in data["components"][component]
+
 
 class TestDiseasesRegistry:
     """Tests for GET /api/system/diseases (dynamic disease registry)."""
@@ -1665,3 +1674,69 @@ class TestAPIHardening:
             headers={"Content-Type": "application/json", "Content-Length": str(10 * 1024 * 1024 + 1)},
         )
         assert resp.status_code == 413
+
+    def test_job_get_requires_api_key_when_configured(self, client, monkeypatch):
+        import med_research.web.middleware as mw
+
+        monkeypatch.setattr(mw, "API_KEY", "test-secret")
+        job_id = "00000000-0000-0000-0000-000000000099"
+        resp = client.get(f"/api/jobs/{job_id}")
+        assert resp.status_code == 401
+
+    def test_job_get_accepts_api_key_when_configured(self, client, monkeypatch):
+        import med_research.web.middleware as mw
+
+        monkeypatch.setattr(mw, "API_KEY", "test-secret")
+        job_id = "00000000-0000-0000-0000-000000000099"
+        with patch("med_research.web.routers.jobs.AsyncResult") as mock_result:
+            mock_result.return_value.state = "PENDING"
+            resp = client.get(
+                f"/api/jobs/{job_id}",
+                headers={"X-API-Key": "test-secret"},
+            )
+        assert resp.status_code == 200
+
+    def test_websocket_rejects_missing_api_key(self, client, monkeypatch):
+        import med_research.web.api_key as api_key_mod
+
+        monkeypatch.setattr(api_key_mod, "API_KEY", "test-secret")
+        job_id = "00000000-0000-0000-0000-000000000099"
+        with pytest.raises(WebSocketDisconnect):
+            with client.websocket_connect(f"/api/jobs/{job_id}/ws") as ws:
+                ws.receive_json()
+
+    def test_websocket_accepts_api_key_query_param(self, client, monkeypatch):
+        import med_research.web.api_key as api_key_mod
+
+        monkeypatch.setattr(api_key_mod, "API_KEY", "test-secret")
+        job_id = "00000000-0000-0000-0000-000000000099"
+        with patch("med_research.web.routers.jobs.AsyncResult") as mock_result:
+            mock_result.return_value.state = "SUCCESS"
+            mock_result.return_value.result = {"ok": True}
+            with client.websocket_connect(
+                f"/api/jobs/{job_id}/ws?api_key=test-secret"
+            ) as ws:
+                message = ws.receive_json()
+        assert message["status"] == "SUCCESS"
+
+    def test_openapi_defaults_disabled_when_debug_false(self, monkeypatch):
+        monkeypatch.setenv("DEBUG", "false")
+        monkeypatch.delenv("OPENAPI_ENABLED", raising=False)
+        import importlib
+
+        from med_research.web import config
+
+        importlib.reload(config)
+        assert config.OPENAPI_ENABLED is False
+
+    def test_internal_error_message_hidden_when_debug_false(self, monkeypatch):
+        import json
+
+        from med_research.exceptions import MedResearchError
+        from med_research.web import error_handlers
+
+        monkeypatch.setattr(error_handlers, "DEBUG", False)
+        response = error_handlers._error_response(500, MedResearchError("secret internal detail"))
+        payload = json.loads(response.body)
+        assert payload["detail"] == "An internal server error occurred."
+        assert "secret" not in payload["detail"]

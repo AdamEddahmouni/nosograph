@@ -1,0 +1,478 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL2108738",
+      "target": "PDCD1",
+      "type": "TARGETS",
+      "description": "NIVOLUMAB targets PDCD1."
+    },
+    {
+      "source": "CHEMBL1789844",
+      "target": "CTLA4",
+      "type": "TARGETS",
+      "description": "IPILIMUMAB targets CTLA4."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2C",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2C is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "POU3F2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "POU3F2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "INSM1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INSM1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "DRD2",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "DRD2 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "SLC6A3",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC6A3 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "THRB",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THRB is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "THRB",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "THRB is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TSHR",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TSHR is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT4",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT4 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PMS2",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMS2 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.27"
+    },
+    {
+      "source": "CTLA4",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTLA4 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PDCD1",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "LHX3",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHX3 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "DRD2",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DRD2 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "THRB",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THRB is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "PITX2",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX2 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "INSM1",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INSM1 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "PROP1",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROP1 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "MEN1",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GH1",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRL",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRL is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SOX3",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX3 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "POU1F1",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU1F1 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "NKX2-1",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-1 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TRH",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRH is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CSH1",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSH1 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CSH2",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSH2 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GH2",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH2 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CSHL1",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSHL1 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC6A3",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A3 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ESR1",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ANXA1",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANXA1 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "AR",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SYTL4",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYTL4 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NOG",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOG is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "WNT4",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT4 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "HMX2",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMX2 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "HMX3",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMX3 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SIM1",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIM1 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TLE5",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLE5 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SOX2",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX2 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ATCAY",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATCAY is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "IGSF1",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGSF1 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ARNT2",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARNT2 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PHF6",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHF6 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDKN2C",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2C is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CORT",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CORT is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "HES1",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HES1 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "OTP",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OTP is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TCF7L2",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF7L2 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SST",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SST is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TPST2",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPST2 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NBEA",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBEA is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "LHCGR",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHCGR is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "LHX4",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHX4 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "POMC",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "OTX2",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OTX2 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CGA",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGA is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "POU3F2",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU3F2 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SERP1",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERP1 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "LEP",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MRC1",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRC1 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NR5A1",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR5A1 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TRHR",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRHR is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PCYT1B",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCYT1B is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TSHR",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSHR is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPFFR1",
+      "target": "pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPFFR1 is associated with pituitary adenocarcinoma (PITUITARY_ADENOCARCINOMA). Open Targets association score 0.03"
+    }
+  ]
+}

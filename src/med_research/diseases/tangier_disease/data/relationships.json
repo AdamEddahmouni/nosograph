@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "LYN",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LYN is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CDK12",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK12 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "HEATR6",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "HEATR6 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ADAM17",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM17 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ELN",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ELN is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "BMP6",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP6 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL3 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "TNIP1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "TNIP1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "FTH1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "FTH1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "LRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ABCA1",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.84"
+    },
+    {
+      "source": "BMP6",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP6 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.65"
+    },
+    {
+      "source": "APOA1",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.38"
+    },
+    {
+      "source": "FTH1",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FTH1 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.16"
+    },
+    {
+      "source": "BEST1",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BEST1 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.12"
+    },
+    {
+      "source": "NIPSNAP3B",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NIPSNAP3B is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.12"
+    },
+    {
+      "source": "SPTA1",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "AWAT2",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AWAT2 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "AHSP",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSP is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "HK1",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HK1 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "LDLR",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRKAG1",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAG1 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC20A1",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC20A1 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "APOE",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "LYN",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYN is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZFPM1",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFPM1 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ABCG8",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG8 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "WDR27",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR27 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNIP1",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNIP1 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "KRT34",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT34 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "RUNX1",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADAM17",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAM17 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDK12",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK12 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "MUS81",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUS81 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "BAAT",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAAT is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ACSL5",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACSL5 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "GPR146",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR146 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "KCTD1",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCTD1 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "EPB41",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPB41 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ELN",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELN is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "LRP6",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP6 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "MYB",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYB is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "HEATR6",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEATR6 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPC1",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPC1 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ABCG1",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG1 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "LCAT",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCAT is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDC42",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDC42 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ASPG",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASPG is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLA2G7",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G7 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "APOA2",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA2 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1B",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPC2",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPC2 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ABCA4",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA4 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "APOB",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "INS",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL3 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "LPA",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNG",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "RHOA",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHOA is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC26A2",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC26A2 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "APOA4",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA4 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "RAC1",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAC1 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "RHOB",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHOB is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "RHOG",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHOG is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS1",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS1 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS2",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "LPL",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ABCG2",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG2 is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "AOPEP",
+      "target": "Tangier disease (TANGIER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOPEP is associated with Tangier disease (TANGIER_DISEASE). Open Targets association score 0.01"
+    }
+  ]
+}

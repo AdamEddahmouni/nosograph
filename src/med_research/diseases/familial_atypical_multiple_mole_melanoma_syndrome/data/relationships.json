@@ -1,0 +1,490 @@
+{
+  "relationships": [
+    {
+      "source": "BECN1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "BECN1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CDK4",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK4 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "EAF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EAF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "FANCD2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "FANCD2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MLH1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MLH1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH6",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH6 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53BP2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53BP2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.80"
+    },
+    {
+      "source": "CDK4",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK4 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.37"
+    },
+    {
+      "source": "TP53",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "MEN1",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "MET",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "NF2",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "KRAS",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "TRIM62",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM62 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "SMARCB1",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCB1 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "MLH1",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLH1 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PTEN",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "MSH2",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH2 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "DDB2",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDB2 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "RB1",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "BAP1",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAP1 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "TP73",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP73 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "APC",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "TNK1",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNK1 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "POLD1",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD1 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PRKAR1A",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAR1A is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "TSC2",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TSC1",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC1 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PTCH1",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ACTB",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTB is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CUL9",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUL9 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "MDM2",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM2 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "LZTS1",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LZTS1 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "HIC1",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIC1 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "FANCD2",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCD2 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TP53BP2",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53BP2 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRDM2",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM2 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "HTATIP2",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTATIP2 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SRPX",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRPX is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "BECN1",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BECN1 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "HPRT1",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPRT1 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "BRCA1",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TXNIP",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TXNIP is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PLK1",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLK1 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ATP2C1",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP2C1 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "MTF1",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTF1 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "NDRG2",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDRG2 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "MSH6",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH6 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CCDC80",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC80 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "EAF2",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EAF2 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FHIT",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FHIT is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CBX7",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBX7 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "DCLRE1A",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCLRE1A is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "STK11",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FBXO4",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXO4 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYH14",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH14 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "NF1",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRF1",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRF1 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTPRJ",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRJ is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "DPH1",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPH1 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "DGKD",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DGKD is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "MUS81",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUS81 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ROBO1",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROBO1 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ATM",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SAV1",
+      "target": "familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAV1 is associated with familial atypical multiple mole melanoma syndrome (FAMILIAL_ATYPICAL_MULTIPLE_MOLE_MELANOMA_SYNDROME). Open Targets association score 0.05"
+    }
+  ]
+}

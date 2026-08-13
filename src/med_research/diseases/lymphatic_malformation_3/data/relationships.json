@@ -1,0 +1,406 @@
+{
+  "relationships": [
+    {
+      "source": "CDKN1C",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1C is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ACKR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ACKR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "FGB",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGB is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ZNF260",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF260 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IL1RN",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1RN is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "CARD14",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD14 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGDR2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGDR2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGES",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGES is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGES2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGES2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "LTB4R2",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTB4R2 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFC",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFC is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "GJC2",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJC2 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.67"
+    },
+    {
+      "source": "CARD14",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD14 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.05"
+    },
+    {
+      "source": "MME",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MME is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.05"
+    },
+    {
+      "source": "FLG",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLG is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTGES",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGES is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTGES2",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGES2 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "TBXA2R",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBXA2R is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTGDR2",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGDR2 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "CNR1",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNR1 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGB",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGB is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "EWSR1",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EWSR1 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "SMARCD2",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCD2 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDKN1C",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1C is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "YWHAZ",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YWHAZ is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "LTB4R2",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTB4R2 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "GJB2",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJB2 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "ACKR2",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACKR2 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADM",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADM is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXP3",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "SHARPIN",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHARPIN is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "ALDH18A1",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDH18A1 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL1RN",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1RN is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRIM21",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM21 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "EREG",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EREG is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLGRKT",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLGRKT is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL36RN",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL36RN is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "SVEP1",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SVEP1 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "VEGFC",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFC is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "ARID1B",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1B is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "DNAL1",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAL1 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "CASQ2",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASQ2 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "PSEN1",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSEN1 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "EYA4",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EYA4 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "PIP5K1C",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIP5K1C is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "FZD4",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FZD4 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "TTL",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTL is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "CASR",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASR is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "GGNBP2",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGNBP2 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYRIB",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYRIB is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "ROCK1",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROCK1 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZNF260",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF260 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "TIE1",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIE1 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZNF503",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF503 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "XPO4",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XPO4 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLEC",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLEC is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "BAIAP2",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAIAP2 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "TMEM115",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM115 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "L3MBTL3",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "L3MBTL3 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.04"
+    },
+    {
+      "source": "FLT4",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.03"
+    },
+    {
+      "source": "ITGB2",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTPN14",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN14 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.03"
+    },
+    {
+      "source": "STAT6",
+      "target": "lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT6 is associated with lymphatic malformation 3 (LYMPHATIC_MALFORMATION_3). Open Targets association score 0.03"
+    }
+  ]
+}

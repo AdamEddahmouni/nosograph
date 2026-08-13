@@ -1,0 +1,550 @@
+{
+  "relationships": [
+    {
+      "source": "BTK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BTK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD19",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD19 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD22",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD22 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ADAMTS20",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS20 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL5RA",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL5RA is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "RASGRP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASGRP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "KITLG",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KITLG is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBID",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBID is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "LAMTOR2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "LAMTOR2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD28",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD28 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ICOS",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ICOS is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL21R",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL21R is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFRSF13C",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF13C is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LAMTOR2",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMTOR2 is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.70"
+    },
+    {
+      "source": "KIT",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.09"
+    },
+    {
+      "source": "MITF",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MITF is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.09"
+    },
+    {
+      "source": "CARD11",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "KITLG",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KITLG is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "HPS5",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPS5 is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "AP3B1",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AP3B1 is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "LYST",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYST is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "SH2D1A",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2D1A is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "TYR",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYR is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "SLC45A2",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC45A2 is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "CD19",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD19 is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "CR2",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CR2 is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "ASIP",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASIP is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "SPPL2A",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPPL2A is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "OCA2",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OCA2 is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "CD40",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40 is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "MC1R",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MC1R is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "RAC2",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAC2 is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "GNAQ",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAQ is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "EDA",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDA is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "REL",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REL is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "PAX3",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX3 is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "AICDA",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AICDA is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "JAK3",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL21R",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL21R is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "TYRP1",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYRP1 is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "ADAMTS20",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS20 is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "BACH2",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BACH2 is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "HPS6",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPS6 is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "MYO5A",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO5A is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "ICOS",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICOS is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "JCHAIN",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JCHAIN is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD79A",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "STK4",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK4 is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "STAT6",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT6 is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRKCB",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCB is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "TNFRSF13C",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF13C is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "ATP7A",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP7A is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD28",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD28 is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "RAB27A",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB27A is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "ITGAM",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAM is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRKDC",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKDC is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "BTK",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTK is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "HPS1",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPS1 is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "FLT3LG",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3LG is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "PAX5",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX5 is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "SOX10",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX10 is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL4",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "EDNRB",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRB is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL5RA",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL5RA is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "NFKB1",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "RAG1",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG1 is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "BLNK",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLNK is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD22",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD22 is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "ITGB2",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "RASGRP1",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASGRP1 is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "NFKBID",
+      "target": "primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBID is associated with primary immunodeficiency syndrome due to p14 deficiency (PRIMARY_IMMUNODEFICIENCY_SYNDROME_DUE_TO_P14_DEFICIENCY). Open Targets association score 0.06"
+    }
+  ]
+}

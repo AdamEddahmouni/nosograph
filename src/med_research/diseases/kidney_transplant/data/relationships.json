@@ -1,0 +1,658 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1742990",
+      "target": "CD86",
+      "type": "TARGETS",
+      "description": "BELATACEPT targets CD86."
+    },
+    {
+      "source": "CHEMBL1742990",
+      "target": "CD80",
+      "type": "TARGETS",
+      "description": "BELATACEPT targets CD80."
+    },
+    {
+      "source": "CHEMBL1201439",
+      "target": "IL2RA",
+      "type": "TARGETS",
+      "description": "BASILIXIMAB targets IL2RA."
+    },
+    {
+      "source": "CHEMBL413",
+      "target": "FKBP1A",
+      "type": "TARGETS",
+      "description": "SIROLIMUS targets FKBP1A."
+    },
+    {
+      "source": "CHEMBL1742990",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "TREATS",
+      "description": "BELATACEPT is phase 4 / marketed for kidney transplant (KIDNEY_TRANSPLANT)."
+    },
+    {
+      "source": "CHEMBL1742990",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "TREATS",
+      "description": "BELATACEPT is phase 4 / marketed for kidney transplant (KIDNEY_TRANSPLANT)."
+    },
+    {
+      "source": "CHEMBL1201439",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "TREATS",
+      "description": "BASILIXIMAB is phase 4 / marketed for kidney transplant (KIDNEY_TRANSPLANT)."
+    },
+    {
+      "source": "CHEMBL413",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "TREATS",
+      "description": "SIROLIMUS is phase 4 / marketed for kidney transplant (KIDNEY_TRANSPLANT)."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "CCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL10",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL10 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL9",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL9 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "FGF21",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF21 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FGF23",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF23 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TNFRSF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "HAVCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "HAVCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MMP3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "DPP4",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "DPP4 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL33",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL33 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "HAVCR2",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR2 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "FABP1",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "FABP1 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGTR1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGTR1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD28",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD28 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD80",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD80 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD86",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD86 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF8",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF8 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF13B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP3A4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP3A4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP3A5",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP3A5 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "UGT1A9",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "UGT1A9 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "UGT2B7",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "UGT2B7 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "IL2RA",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RA is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.37"
+    },
+    {
+      "source": "CD80",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD80 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.37"
+    },
+    {
+      "source": "CD86",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD86 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.37"
+    },
+    {
+      "source": "FKBP1A",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP1A is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.37"
+    },
+    {
+      "source": "FOXP3",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.02"
+    },
+    {
+      "source": "CYP3A4",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP3A4 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD4",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.02"
+    },
+    {
+      "source": "AGTR1",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGTR1 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.02"
+    },
+    {
+      "source": "AIF1",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIF1 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTGS2",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNF",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.02"
+    },
+    {
+      "source": "DPP4",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPP4 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "LGALS9",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS9 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "UGT1A9",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGT1A9 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD8A",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADIPOQ",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOQ is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "IDO1",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDO1 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP3A5",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP3A5 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGF23",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF23 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL2",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNFRSF8",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF8 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNFSF13B",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13B is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD28",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD28 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "ABCB1",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB1 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "NR1I2",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1I2 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "EPO",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPO is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "ISG20",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISG20 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF11B is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "KLK4",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK4 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCL10",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL10 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCL9",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL9 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL10",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTLA4",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTLA4 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP3",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP3 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "MT-CO2",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO2 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNG",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB1",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "HAVCR2",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAVCR2 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "UGT2B7",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGT2B7 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGF21",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF21 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "LEP",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPARC",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPARC is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL33",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL33 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "AGT",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "FCGR3A",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR3A is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "FABP1",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FABP1 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "CST3",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CST3 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCL8",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSF3",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "MICA",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MICA is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "B3GAT1",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B3GAT1 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "TLR4",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "HLA-C",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-C is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "TBC1D9",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D9 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "HAVCR1",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAVCR1 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL4",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCL2",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL2 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "IMPDH2",
+      "target": "kidney transplant (KIDNEY_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IMPDH2 is associated with kidney transplant (KIDNEY_TRANSPLANT). Open Targets association score 0.01"
+    }
+  ]
+}

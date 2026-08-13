@@ -1,0 +1,436 @@
+{
+  "relationships": [
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "IGF2R",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2R is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL4A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "TRAFD1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAFD1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "TDRD15",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "TDRD15 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TRAFD1",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAFD1 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "OAS1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "OAS1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "OAS2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "OAS2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "FLT1",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "FLT1 is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "CELSR2",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR2 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "HECTD4",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HECTD4 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "CUX2",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUX2 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "APOE",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "LPA",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "FLT1",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT1 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "SORT1",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORT1 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "MMAB",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMAB is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "PCSK9",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "MIA3",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIA3 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "RPH3A",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPH3A is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "KCTD10",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCTD10 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "COL4A2",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A2 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "EDNRA",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRA is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "LDLR",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "MYL2",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYL2 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "TRAFD1",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAFD1 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "MVK",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MVK is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "ABO",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABO is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "APOA5",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "COL4A1",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A1 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "ITPR3",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITPR3 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "FDX1",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FDX1 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "PTPN11",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "PSRC1",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSRC1 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "CDKN2B",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2B is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "TRIB1",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIB1 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "B9D2",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B9D2 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "MYO1H",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO1H is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.26"
+    },
+    {
+      "source": "BCAR1",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCAR1 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.25"
+    },
+    {
+      "source": "IGF2R",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2R is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.25"
+    },
+    {
+      "source": "TDRD15",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TDRD15 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.24"
+    },
+    {
+      "source": "PLG",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLG is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.21"
+    },
+    {
+      "source": "ATP2A2",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP2A2 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.21"
+    },
+    {
+      "source": "CCDC63",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC63 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.20"
+    },
+    {
+      "source": "ZPR1",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZPR1 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.19"
+    },
+    {
+      "source": "MEX3B",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEX3B is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.18"
+    },
+    {
+      "source": "OAS2",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OAS2 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.17"
+    },
+    {
+      "source": "TMEM91",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM91 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.17"
+    },
+    {
+      "source": "UBE3B",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBE3B is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.16"
+    },
+    {
+      "source": "SLC22A1",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A1 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.16"
+    },
+    {
+      "source": "PHACTR1",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHACTR1 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.16"
+    },
+    {
+      "source": "CFDP1",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFDP1 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.15"
+    },
+    {
+      "source": "PHETA1",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHETA1 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.11"
+    },
+    {
+      "source": "TGFB1",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.09"
+    },
+    {
+      "source": "OAS1",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OAS1 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.08"
+    },
+    {
+      "source": "GFOD1",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFOD1 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.05"
+    },
+    {
+      "source": "TBC1D7",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D7 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.05"
+    },
+    {
+      "source": "RPL6",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL6 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZBTB9",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB9 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.05"
+    },
+    {
+      "source": "BUD13",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUD13 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.03"
+    },
+    {
+      "source": "DTX1",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DTX1 is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.03"
+    },
+    {
+      "source": "RPL7A",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL7A is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.03"
+    },
+    {
+      "source": "TMEM170A",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM170A is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.02"
+    },
+    {
+      "source": "OBP2B",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OBP2B is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "aspirin use measurement (ASPIRIN_USE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with aspirin use measurement (ASPIRIN_USE_MEASUREMENT). Open Targets association score 0.02"
+    }
+  ]
+}

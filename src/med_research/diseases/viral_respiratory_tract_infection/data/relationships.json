@@ -1,0 +1,592 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201353",
+      "target": "HRH1",
+      "type": "TARGETS",
+      "description": "DEXCHLORPHENIRAMINE targets HRH1."
+    },
+    {
+      "source": "CHEMBL1590",
+      "target": "SLC6A2",
+      "type": "TARGETS",
+      "description": "PSEUDOEPHEDRINE targets SLC6A2."
+    },
+    {
+      "source": "CHEMBL1200927",
+      "target": "HRH1",
+      "type": "TARGETS",
+      "description": "DEXCHLORPHENIRAMINE MALEATE targets HRH1."
+    },
+    {
+      "source": "GGTLC3",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "GGTLC3 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCL5",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL5 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL10",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL10 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL11",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL11 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "TNFSF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "NCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "NCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "PARP1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "PARP1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL5",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL5 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "TSLP",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "TSLP is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGA4",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA4 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL22",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL22 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGA4",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA4 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGM2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR2",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR2 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR3",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR3 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR7",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR7 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF10",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF10 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNA17",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA17 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNB1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNB1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "MX1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "MX1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "RIGI",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "RIGI is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "HRH1",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRH1 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.32"
+    },
+    {
+      "source": "SLC6A2",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A2 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.26"
+    },
+    {
+      "source": "CD8A",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "EDN1",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDN1 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "ITGA4",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA4 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "EDNRB",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRB is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYSLTR1",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYSLTR1 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TSLP",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSLP is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNG",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "ICAM1",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CALCA",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "UROD",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UROD is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TLR7",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR7 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "PI3",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PI3 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPL17",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "NCR1",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCR1 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD79A",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "GGH",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGH is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT8",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT8 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "GH1",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL10",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL10 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGM2",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM2 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL6",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "EPRS1",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPRS1 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCL5",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL5 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "FCGR3A",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR3A is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "PARP1",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARP1 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "JTB",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JTB is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "NR1I2",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1I2 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "EDNRA",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRA is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "JAK1",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK1 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD4",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "GGTLC3",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGTLC3 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPATA2",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL22",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL22 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "SNCA",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "GGT1",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGT1 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDCD1",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNA1",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNF",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "TLR3",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR3 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "INS",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "RTL1",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RTL1 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL5",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL5 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "RIGI",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIGI is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "MX1",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MX1 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL8",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "MFSD11",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFSD11 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "TLR2",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR2 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL13",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "FCGR3B",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR3B is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "SAA2",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAA2 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "RNASE3",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNASE3 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "MUC5AC",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5AC is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNA17",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA17 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNFSF10",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF10 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNB1",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNB1 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL11",
+      "target": "viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL11 is associated with viral respiratory tract infection (VIRAL_RESPIRATORY_TRACT_INFECTION). Open Targets association score 0.00"
+    }
+  ]
+}

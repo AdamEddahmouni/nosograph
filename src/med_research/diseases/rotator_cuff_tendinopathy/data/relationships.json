@@ -7,6 +7,12 @@
       "description": "LIDOCAINE targets SCN8A."
     },
     {
+      "source": "CHEMBL2108709",
+      "target": "COL6A2",
+      "type": "TARGETS",
+      "description": "COLLAGENASE CLOSTRIDIUM HISTOLYTICUM targets COL6A2."
+    },
+    {
       "source": "CHEMBL256087",
       "target": "TRPA1",
       "type": "TARGETS",
@@ -209,6 +215,12 @@
       "target": "GHR",
       "type": "TARGETS",
       "description": "SOMATROPIN targets GHR."
+    },
+    {
+      "source": "CHEMBL2108709",
+      "target": "COL4A4",
+      "type": "TARGETS",
+      "description": "COLLAGENASE CLOSTRIDIUM HISTOLYTICUM targets COL4A4."
     },
     {
       "source": "CHEMBL698",
@@ -511,6 +523,30 @@
       "description": "MMP3 is a component of the ECM Remodeling pathway."
     },
     {
+      "source": "COL4A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A4",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A4 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A5",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A5 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL6A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL6A2 is a component of the ECM Remodeling pathway."
+    },
+    {
       "source": "IL17A",
       "target": "il1-inflammasome",
       "type": "PARTICIPATES_IN",
@@ -613,22 +649,16 @@
       "description": "CYP19A1 is a component of the Xenobiotic Metabolism pathway."
     },
     {
+      "source": "SCN1A",
+      "target": "Tendinopathy (ROTATOR_CUFF_TENDINOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN1A is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.48"
+    },
+    {
       "source": "SCN9A",
       "target": "Tendinopathy (ROTATOR_CUFF_TENDINOPATHY)",
       "type": "ASSOCIATED_WITH",
       "description": "SCN9A is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.48"
-    },
-    {
-      "source": "SCN7A",
-      "target": "Tendinopathy (ROTATOR_CUFF_TENDINOPATHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SCN7A is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.48"
-    },
-    {
-      "source": "SCN8A",
-      "target": "Tendinopathy (ROTATOR_CUFF_TENDINOPATHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SCN8A is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.48"
     },
     {
       "source": "SCN11A",
@@ -637,22 +667,10 @@
       "description": "SCN11A is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.48"
     },
     {
-      "source": "SCN4A",
-      "target": "Tendinopathy (ROTATOR_CUFF_TENDINOPATHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SCN4A is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.48"
-    },
-    {
       "source": "SCN5A",
       "target": "Tendinopathy (ROTATOR_CUFF_TENDINOPATHY)",
       "type": "ASSOCIATED_WITH",
       "description": "SCN5A is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.48"
-    },
-    {
-      "source": "SCN1A",
-      "target": "Tendinopathy (ROTATOR_CUFF_TENDINOPATHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SCN1A is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.48"
     },
     {
       "source": "SCN2A",
@@ -661,16 +679,34 @@
       "description": "SCN2A is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.48"
     },
     {
-      "source": "SCN3A",
+      "source": "SCN7A",
       "target": "Tendinopathy (ROTATOR_CUFF_TENDINOPATHY)",
       "type": "ASSOCIATED_WITH",
-      "description": "SCN3A is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.48"
+      "description": "SCN7A is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.48"
     },
     {
       "source": "SCN10A",
       "target": "Tendinopathy (ROTATOR_CUFF_TENDINOPATHY)",
       "type": "ASSOCIATED_WITH",
       "description": "SCN10A is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.48"
+    },
+    {
+      "source": "SCN4A",
+      "target": "Tendinopathy (ROTATOR_CUFF_TENDINOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN4A is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.48"
+    },
+    {
+      "source": "SCN3A",
+      "target": "Tendinopathy (ROTATOR_CUFF_TENDINOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN3A is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.48"
+    },
+    {
+      "source": "SCN8A",
+      "target": "Tendinopathy (ROTATOR_CUFF_TENDINOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN8A is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.48"
     },
     {
       "source": "PTGS2",
@@ -691,10 +727,10 @@
       "description": "PTGS1 is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.37"
     },
     {
-      "source": "TRPV1",
+      "source": "TRPM8",
       "target": "Tendinopathy (ROTATOR_CUFF_TENDINOPATHY)",
       "type": "ASSOCIATED_WITH",
-      "description": "TRPV1 is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.37"
+      "description": "TRPM8 is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.37"
     },
     {
       "source": "TRPA1",
@@ -703,10 +739,10 @@
       "description": "TRPA1 is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.37"
     },
     {
-      "source": "TRPM8",
+      "source": "TRPV1",
       "target": "Tendinopathy (ROTATOR_CUFF_TENDINOPATHY)",
       "type": "ASSOCIATED_WITH",
-      "description": "TRPM8 is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.37"
+      "description": "TRPV1 is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.37"
     },
     {
       "source": "IMMP2L",
@@ -931,6 +967,48 @@
       "description": "COL5A2 is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.04"
     },
     {
+      "source": "COL6A2",
+      "target": "Tendinopathy (ROTATOR_CUFF_TENDINOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL6A2 is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL4A5",
+      "target": "Tendinopathy (ROTATOR_CUFF_TENDINOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A5 is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL4A3",
+      "target": "Tendinopathy (ROTATOR_CUFF_TENDINOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A3 is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL28A1",
+      "target": "Tendinopathy (ROTATOR_CUFF_TENDINOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL28A1 is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL4A2",
+      "target": "Tendinopathy (ROTATOR_CUFF_TENDINOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A2 is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL4A6",
+      "target": "Tendinopathy (ROTATOR_CUFF_TENDINOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A6 is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL4A4",
+      "target": "Tendinopathy (ROTATOR_CUFF_TENDINOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A4 is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.04"
+    },
+    {
       "source": "COL6A6",
       "target": "Tendinopathy (ROTATOR_CUFF_TENDINOPATHY)",
       "type": "ASSOCIATED_WITH",
@@ -947,24 +1025,6 @@
       "target": "Tendinopathy (ROTATOR_CUFF_TENDINOPATHY)",
       "type": "ASSOCIATED_WITH",
       "description": "COL6A5 is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.04"
-    },
-    {
-      "source": "COL28A1",
-      "target": "Tendinopathy (ROTATOR_CUFF_TENDINOPATHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "COL28A1 is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.04"
-    },
-    {
-      "source": "COL4A3",
-      "target": "Tendinopathy (ROTATOR_CUFF_TENDINOPATHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "COL4A3 is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.04"
-    },
-    {
-      "source": "COL4A6",
-      "target": "Tendinopathy (ROTATOR_CUFF_TENDINOPATHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "COL4A6 is associated with Tendinopathy (ROTATOR_CUFF_TENDINOPATHY). Open Targets association score 0.04"
     },
     {
       "source": "COL5A3",

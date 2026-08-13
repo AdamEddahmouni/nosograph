@@ -25,12 +25,6 @@
       "description": "BLK is a component of the B Cell Receptor Signaling pathway."
     },
     {
-      "source": "KCNA1",
-      "target": "cardiac-ion-channel",
-      "type": "PARTICIPATES_IN",
-      "description": "KCNA1 is a component of the Cardiac Ion Channel / Conduction pathway."
-    },
-    {
       "source": "CCNA2",
       "target": "cell-cycle",
       "type": "PARTICIPATES_IN",
@@ -199,6 +193,12 @@
       "description": "ABCC8 is a component of the Xenobiotic Metabolism pathway."
     },
     {
+      "source": "KCNA1",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNA1 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
       "source": "CXCR3",
       "target": "chemokine-signaling",
       "type": "PARTICIPATES_IN",
@@ -277,16 +277,16 @@
       "description": "CEL is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.34"
     },
     {
-      "source": "MLKL",
-      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
-      "type": "ASSOCIATED_WITH",
-      "description": "MLKL is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.34"
-    },
-    {
       "source": "PTF1A",
       "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
       "type": "ASSOCIATED_WITH",
       "description": "PTF1A is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.34"
+    },
+    {
+      "source": "MLKL",
+      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLKL is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.34"
     },
     {
       "source": "RFX6",
@@ -349,16 +349,16 @@
       "description": "LMNA is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.01"
     },
     {
-      "source": "TTR",
-      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
-      "type": "ASSOCIATED_WITH",
-      "description": "TTR is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.01"
-    },
-    {
       "source": "BAD",
       "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
       "type": "ASSOCIATED_WITH",
       "description": "BAD is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.01"
+    },
+    {
+      "source": "TTR",
+      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTR is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.01"
     },
     {
       "source": "CD44",
@@ -379,46 +379,10 @@
       "description": "CRY1 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
     },
     {
-      "source": "RFX7",
+      "source": "SCG5",
       "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
       "type": "ASSOCIATED_WITH",
-      "description": "RFX7 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
-    },
-    {
-      "source": "SLC2A1",
-      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SLC2A1 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
-    },
-    {
-      "source": "EGFR",
-      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
-      "type": "ASSOCIATED_WITH",
-      "description": "EGFR is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
-    },
-    {
-      "source": "SCGN",
-      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SCGN is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
-    },
-    {
-      "source": "SCG3",
-      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SCG3 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
-    },
-    {
-      "source": "NEUROG2",
-      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NEUROG2 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
-    },
-    {
-      "source": "FOXA1",
-      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
-      "type": "ASSOCIATED_WITH",
-      "description": "FOXA1 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
+      "description": "SCG5 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
     },
     {
       "source": "LDLR",
@@ -427,28 +391,22 @@
       "description": "LDLR is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
     },
     {
-      "source": "ABCG2",
+      "source": "FOXA1",
       "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
       "type": "ASSOCIATED_WITH",
-      "description": "ABCG2 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
+      "description": "FOXA1 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
     },
     {
-      "source": "SCG5",
+      "source": "EGFR",
       "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
       "type": "ASSOCIATED_WITH",
-      "description": "SCG5 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
+      "description": "EGFR is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
     },
     {
-      "source": "SLC5A2",
+      "source": "RFX7",
       "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
       "type": "ASSOCIATED_WITH",
-      "description": "SLC5A2 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
-    },
-    {
-      "source": "TLE7",
-      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
-      "type": "ASSOCIATED_WITH",
-      "description": "TLE7 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
+      "description": "RFX7 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
     },
     {
       "source": "CHGA",
@@ -457,16 +415,58 @@
       "description": "CHGA is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
     },
     {
-      "source": "CCNA2",
+      "source": "ABCG2",
       "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
       "type": "ASSOCIATED_WITH",
-      "description": "CCNA2 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
+      "description": "ABCG2 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
     },
     {
       "source": "PPP1R15B",
       "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
       "type": "ASSOCIATED_WITH",
       "description": "PPP1R15B is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC2A1",
+      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A1 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC5A2",
+      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC5A2 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
+    },
+    {
+      "source": "NEUROG2",
+      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEUROG2 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
+    },
+    {
+      "source": "SCGN",
+      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCGN is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
+    },
+    {
+      "source": "TLE7",
+      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLE7 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
+    },
+    {
+      "source": "SCG3",
+      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCG3 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCNA2",
+      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCNA2 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
     },
     {
       "source": "GK",
@@ -487,16 +487,22 @@
       "description": "MTNR1B is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
     },
     {
+      "source": "PCK1",
+      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCK1 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
+    },
+    {
       "source": "NR2F2",
       "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
       "type": "ASSOCIATED_WITH",
       "description": "NR2F2 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
     },
     {
-      "source": "INSR",
+      "source": "EDIL3",
       "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
       "type": "ASSOCIATED_WITH",
-      "description": "INSR is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
+      "description": "EDIL3 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
     },
     {
       "source": "ADA",
@@ -505,16 +511,64 @@
       "description": "ADA is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
     },
     {
-      "source": "PCK1",
+      "source": "INSR",
       "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
       "type": "ASSOCIATED_WITH",
-      "description": "PCK1 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
+      "description": "INSR is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
     },
     {
-      "source": "EDIL3",
+      "source": "SYMPK",
       "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
       "type": "ASSOCIATED_WITH",
-      "description": "EDIL3 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
+      "description": "SYMPK is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
+    },
+    {
+      "source": "TCF7",
+      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF7 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRP",
+      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPHK1",
+      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPHK1 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGF2BP2",
+      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2BP2 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
+    },
+    {
+      "source": "PBK",
+      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBK is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
+    },
+    {
+      "source": "FOXM1",
+      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXM1 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
+    },
+    {
+      "source": "TBC1D4",
+      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D4 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
+    },
+    {
+      "source": "NUDT12",
+      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUDT12 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
     },
     {
       "source": "RYR1",
@@ -541,34 +595,10 @@
       "description": "EGF is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
     },
     {
-      "source": "IGF2BP2",
-      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
-      "type": "ASSOCIATED_WITH",
-      "description": "IGF2BP2 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
-    },
-    {
       "source": "TCF7L2",
       "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
       "type": "ASSOCIATED_WITH",
       "description": "TCF7L2 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
-    },
-    {
-      "source": "PBK",
-      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PBK is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
-    },
-    {
-      "source": "TCF7",
-      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
-      "type": "ASSOCIATED_WITH",
-      "description": "TCF7 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
-    },
-    {
-      "source": "TBC1D4",
-      "target": "maturity-onset diabetes of the young (TYPE3_DIABETES)",
-      "type": "ASSOCIATED_WITH",
-      "description": "TBC1D4 is associated with maturity-onset diabetes of the young (TYPE3_DIABETES). Open Targets association score 0.00"
     },
     {
       "source": "IGF2",

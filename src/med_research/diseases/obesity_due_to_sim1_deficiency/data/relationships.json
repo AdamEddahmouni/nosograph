@@ -1,0 +1,508 @@
+{
+  "relationships": [
+    {
+      "source": "SLC39A8",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC39A8 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "SQSTM1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SQSTM1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CACNA1B",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1B is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "C1QTNF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C1QTNF9B",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9B is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C1QTNF9",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "C1QTNF9B",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9B is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "TRPC4AP",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "TRPC4AP is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "TIMP3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GRM8",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRM8 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GLP1R",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GLP1R is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "NLRP6",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP6 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "OPRM1",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "OPRM1 is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "RPS6KA3",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "RPS6KA3 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "DRD3",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "DRD3 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "HTR2C",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTR2C is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "THRA",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THRA is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "THRA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "THRA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "C1QTNF9",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "C1QTNF9B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "NLRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "SIM1",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIM1 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.51"
+    },
+    {
+      "source": "LEPR",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "BRS3",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRS3 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "POMC",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRLH",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRLH is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NPY1R",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPY1R is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADRA1B",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA1B is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "MC4R",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MC4R is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "AVPR1A",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVPR1A is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TCF7L2",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF7L2 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKAA2",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA2 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "HTR2C",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTR2C is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ARNT2",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARNT2 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SQSTM1",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SQSTM1 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "DBH",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DBH is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "BECN2",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BECN2 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "FMR1",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMR1 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SNAP25",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNAP25 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRPC4AP",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPC4AP is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GPSM1",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPSM1 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "OTP",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OTP is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC39A8",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC39A8 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "TARDBP",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TARDBP is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "CACNA1B",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1B is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "TMPRSS2",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS2 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "OPRM1",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OPRM1 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "THRA",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THRA is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "DRD3",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DRD3 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GUCY2C",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GUCY2C is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "RTL4",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RTL4 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHRM3",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHRM3 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRLHR",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRLHR is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "C1QTNF9B",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1QTNF9B is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "C1QTNF9",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1QTNF9 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GPR26",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR26 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "NLRP6",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP6 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "RPS6KA3",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPS6KA3 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ALMS1",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALMS1 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "STXBP1",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STXBP1 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GRM8",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRM8 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ATP1A3",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP1A3 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "APPL1",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APPL1 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPY2R",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPY2R is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "NUCKS1",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUCKS1 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GLP1R",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLP1R is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "TRARG1",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRARG1 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "SSTR5",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSTR5 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "TIMP3",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP3 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "MYO3A",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO3A is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "PALD1",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PALD1 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "RAI1",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAI1 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "HDAC4",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC4 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "BDNF",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BDNF is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRKAG2",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAG2 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "WDTC1",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDTC1 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "EPM2AIP1",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPM2AIP1 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ITPRID2",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITPRID2 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "PLEKHN1",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLEKHN1 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "CSMD1",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSMD1 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZEB1",
+      "target": "obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with obesity due to SIM1 deficiency (OBESITY_DUE_TO_SIM1_DEFICIENCY). Open Targets association score 0.03"
+    }
+  ]
+}

@@ -1,0 +1,526 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL413",
+      "target": "FKBP1A",
+      "type": "TARGETS",
+      "description": "SIROLIMUS targets FKBP1A."
+    },
+    {
+      "source": "CHEMBL1908360",
+      "target": "FKBP1A",
+      "type": "TARGETS",
+      "description": "EVEROLIMUS targets FKBP1A."
+    },
+    {
+      "source": "CHEMBL477",
+      "target": "ADORA2A",
+      "type": "TARGETS",
+      "description": "ADENOSINE targets ADORA2A."
+    },
+    {
+      "source": "CHEMBL477",
+      "target": "ADORA2B",
+      "type": "TARGETS",
+      "description": "ADENOSINE targets ADORA2B."
+    },
+    {
+      "source": "CHEMBL870",
+      "target": "FDPS",
+      "type": "TARGETS",
+      "description": "ALENDRONIC ACID targets FDPS."
+    },
+    {
+      "source": "CHEMBL477",
+      "target": "ADORA3",
+      "type": "TARGETS",
+      "description": "ADENOSINE targets ADORA3."
+    },
+    {
+      "source": "CHEMBL477",
+      "target": "ADORA1",
+      "type": "TARGETS",
+      "description": "ADENOSINE targets ADORA1."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "APLN",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "APLN is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "C16orf82",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C16orf82 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FGF23",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF23 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "DPP4",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "DPP4 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "IL6ST",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6ST is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL3 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL4 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "FABP2",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "FABP2 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "CYP2A6",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2A6 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "FKBP1A",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP1A is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.32"
+    },
+    {
+      "source": "ADORA3",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADORA3 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "ADORA2B",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADORA2B is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "ADORA1",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADORA1 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "ADORA2A",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADORA2A is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "C8orf48",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C8orf48 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.17"
+    },
+    {
+      "source": "PCSK6",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK6 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.15"
+    },
+    {
+      "source": "TNNI3",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNI3 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "VWF",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "FDPS",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FDPS is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "TNIK",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNIK is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "APOB",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "ADIPOQ",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOQ is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "NPPB",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPB is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "DPP4",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPP4 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "APOA1",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNF",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYP2A6",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2A6 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTX3",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTX3 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD40LG",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PLD1",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLD1 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF11B is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CRP",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "RARRES2",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RARRES2 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHI3L1",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHI3L1 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "FABP2",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FABP2 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL32",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL32 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDH1",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ROMO1",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROMO1 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL6",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "JAM3",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAM3 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "VPS51",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VPS51 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "ANGPT2",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPT2 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "NPPA",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPA is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "DKK1",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DKK1 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "LPA",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL3 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "ICAM1",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "FBL",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBL is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL6ST",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6ST is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "APLN",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APLN is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "TLR4",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "PLA2G7",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G7 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "C16orf82",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C16orf82 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNNT1",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNT1 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "LEP",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD79A",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "AOPEP",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOPEP is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "PON1",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PON1 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "FGF23",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF23 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "DKK3",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DKK3 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "ACTA2",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTA2 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "LGALS9",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS9 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL1B",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL25",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL25 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL4 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "LCN2",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN2 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CTSS",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSS is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDH3",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH3 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "KLK1",
+      "target": "coronary stenosis (CORONARY_STENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK1 is associated with coronary stenosis (CORONARY_STENOSIS). Open Targets association score 0.02"
+    }
+  ]
+}

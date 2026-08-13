@@ -1,0 +1,63 @@
+name: Bug report
+description: Report incorrect behavior, crashes, or regressions
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Please include enough detail for us to reproduce the issue.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Commands, API calls, or UI steps that trigger the issue.
+      placeholder: |
+        1. Run `make test-offline`
+        2. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Python version, install method, and relevant env vars (redact secrets).
+      placeholder: |
+        - OS: Windows 11
+        - Python: 3.12
+        - Install: `make venv-sync`
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or stack traces
+      description: Paste relevant output (redact API keys and credentials).
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues before filing this report
+          required: true
+        - label: This is not a request to process patient or PHI data
+          required: true

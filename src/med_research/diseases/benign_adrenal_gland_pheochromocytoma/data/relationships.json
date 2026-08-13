@@ -1,0 +1,460 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BIRC6",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BIRC6 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RRAS2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RRAS2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PTHLH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTHLH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "EPAS1",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "EPAS1 is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NF1",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "VHL",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VHL is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EPAS1",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPAS1 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RET",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MET",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NSD3",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSD3 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "GPC3",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPC3 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "H3-3A",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3-3A is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATRX",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTPRK",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRK is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SMARCE1",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCE1 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CREBBP",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PTPN13",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN13 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2D",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ERBB3",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB3 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RRAS2",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RRAS2 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PALB2",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PALB2 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MLF1",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLF1 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "STAT3",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CHD4",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD4 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FGFR1",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ZCCHC8",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZCCHC8 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "BIRC6",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIRC6 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "ZEB1",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "MUC6",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC6 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "SEPTIN9",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEPTIN9 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "SIX2",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIX2 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "ERBB2",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MKI67",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HPSE",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPSE is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPY",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPY is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPT",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDH1",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ENO2",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENO2 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHGA",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHGA is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYC",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NME1",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NME1 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "INHBB",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INHBB is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTHLH",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTHLH is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP53",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "VEGFA",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "BCL2",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PCSK1",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK1 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MDM2",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM2 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFI27",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFI27 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC16A1",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC16A1 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDH2",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH2 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TWIST1",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TWIST1 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "DCTN6",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCTN6 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT16",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT16 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTGS2",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TMED7",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMED7 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TBPL2",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBPL2 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCND1",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SNAI1",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNAI1 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MCPH1",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCPH1 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PKD1",
+      "target": "Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKD1 is associated with Benign Adrenal Gland Pheochromocytoma (BENIGN_ADRENAL_GLAND_PHEOCHROMOCYTOMA). Open Targets association score 0.00"
+    }
+  ]
+}

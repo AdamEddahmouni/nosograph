@@ -1,0 +1,424 @@
+{
+  "relationships": [
+    {
+      "source": "IGF2R",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2R is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATRAID",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRAID is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CETP is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "TDRD15",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "TDRD15 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CYP2W1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2W1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.66"
+    },
+    {
+      "source": "LPA",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.48"
+    },
+    {
+      "source": "LIPC",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.48"
+    },
+    {
+      "source": "APOH",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOH is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.47"
+    },
+    {
+      "source": "CETP",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETP is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.46"
+    },
+    {
+      "source": "SORT1",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORT1 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.46"
+    },
+    {
+      "source": "CELSR2",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR2 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.43"
+    },
+    {
+      "source": "PNPLA3",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PNPLA3 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.43"
+    },
+    {
+      "source": "PLTP",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLTP is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.42"
+    },
+    {
+      "source": "APOE",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.41"
+    },
+    {
+      "source": "APOC1",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC1 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.39"
+    },
+    {
+      "source": "CYP2W1",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2W1 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.39"
+    },
+    {
+      "source": "PCSK9",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.37"
+    },
+    {
+      "source": "ZFAND2A",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFAND2A is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.36"
+    },
+    {
+      "source": "ZPR1",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZPR1 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.35"
+    },
+    {
+      "source": "TRIB1",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIB1 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.35"
+    },
+    {
+      "source": "GCKR",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.34"
+    },
+    {
+      "source": "NECTIN2",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NECTIN2 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.34"
+    },
+    {
+      "source": "APOA5",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.33"
+    },
+    {
+      "source": "GPR146",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR146 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.31"
+    },
+    {
+      "source": "SLC22A3",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A3 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.30"
+    },
+    {
+      "source": "TDRD15",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TDRD15 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.30"
+    },
+    {
+      "source": "ATRAID",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRAID is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.27"
+    },
+    {
+      "source": "IGF2R",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2R is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.25"
+    },
+    {
+      "source": "LPL",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.24"
+    },
+    {
+      "source": "FNDC4",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FNDC4 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.23"
+    },
+    {
+      "source": "NRBP1",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRBP1 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.22"
+    },
+    {
+      "source": "SLC22A2",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A2 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.22"
+    },
+    {
+      "source": "NPEPPS",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPEPPS is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.21"
+    },
+    {
+      "source": "SLC22A1",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A1 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.20"
+    },
+    {
+      "source": "APOC3",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC3 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.19"
+    },
+    {
+      "source": "CHLSN",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHLSN is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.19"
+    },
+    {
+      "source": "ABO",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABO is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.17"
+    },
+    {
+      "source": "NFE2L3",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L3 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.16"
+    },
+    {
+      "source": "SLC18A1",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC18A1 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.15"
+    },
+    {
+      "source": "PSRC1",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSRC1 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.14"
+    },
+    {
+      "source": "APOC2",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC2 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.12"
+    },
+    {
+      "source": "BAZ1B",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAZ1B is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.11"
+    },
+    {
+      "source": "CTSA",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSA is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.11"
+    },
+    {
+      "source": "ZNF335",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF335 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.10"
+    },
+    {
+      "source": "AQP9",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP9 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.10"
+    },
+    {
+      "source": "ASGR1",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASGR1 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.08"
+    },
+    {
+      "source": "MLXIPL",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLXIPL is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.08"
+    },
+    {
+      "source": "KRTCAP3",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRTCAP3 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.06"
+    },
+    {
+      "source": "BUD13",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUD13 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.06"
+    },
+    {
+      "source": "EFCAB13",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EFCAB13 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.06"
+    },
+    {
+      "source": "IFT172",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT172 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.05"
+    },
+    {
+      "source": "COX19",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COX19 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.05"
+    },
+    {
+      "source": "TBL2",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBL2 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SAMM50",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAMM50 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.03"
+    },
+    {
+      "source": "KPNB1",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KPNB1 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.03"
+    },
+    {
+      "source": "GPER1",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPER1 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CBX3",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBX3 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.03"
+    },
+    {
+      "source": "HNRNPA2B1",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNRNPA2B1 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.03"
+    },
+    {
+      "source": "OBP2B",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OBP2B is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CLPTM1",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLPTM1 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SNX17",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNX17 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADAP1",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAP1 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.02"
+    },
+    {
+      "source": "PLG",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLG is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CEP112",
+      "target": "cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEP112 is associated with cholesterol to total lipids in chylomicrons and extremely large VLDL percentage  (CHOLESTEROL_TO_TOTAL_LIPIDS_IN_CHYLOMICRONS_AND_EXTREMELY_LARGE_VLDL_PERCENTAGE). Open Targets association score 0.02"
+    }
+  ]
+}

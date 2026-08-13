@@ -1,0 +1,490 @@
+{
+  "relationships": [
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "FGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SMURF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SMURF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ITGB4",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB4 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NOTCH3",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH3 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGB4",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB4 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.44"
+    },
+    {
+      "source": "HRAS",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.37"
+    },
+    {
+      "source": "FGFR3",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.37"
+    },
+    {
+      "source": "KRAS",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.19"
+    },
+    {
+      "source": "CCN2",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCN2 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.07"
+    },
+    {
+      "source": "CD4",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.07"
+    },
+    {
+      "source": "DSG3",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSG3 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.07"
+    },
+    {
+      "source": "SDC4",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC4 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.07"
+    },
+    {
+      "source": "ITGB4",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB4 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.06"
+    },
+    {
+      "source": "MUC5B",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5B is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.06"
+    },
+    {
+      "source": "ANXA1",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANXA1 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.05"
+    },
+    {
+      "source": "HR",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HR is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.05"
+    },
+    {
+      "source": "AHSG",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSG is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.05"
+    },
+    {
+      "source": "KSR1",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KSR1 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRSS8",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRSS8 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL6",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.04"
+    },
+    {
+      "source": "WDR5",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR5 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.03"
+    },
+    {
+      "source": "FPR2",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FPR2 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.03"
+    },
+    {
+      "source": "ALB",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.03"
+    },
+    {
+      "source": "CRP",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.03"
+    },
+    {
+      "source": "MMP9",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.03"
+    },
+    {
+      "source": "SAA2",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAA2 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.03"
+    },
+    {
+      "source": "SAA1",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAA1 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.03"
+    },
+    {
+      "source": "GFAP",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.02"
+    },
+    {
+      "source": "CALCA",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.02"
+    },
+    {
+      "source": "UROD",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UROD is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD40LG",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.02"
+    },
+    {
+      "source": "KMT2A",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2A is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTX3",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTX3 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.02"
+    },
+    {
+      "source": "FGF2",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF2 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL17A",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.02"
+    },
+    {
+      "source": "SMURF2",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMURF2 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.02"
+    },
+    {
+      "source": "HSH2D",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSH2D is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.02"
+    },
+    {
+      "source": "DLX5",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLX5 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.02"
+    },
+    {
+      "source": "CXCL8",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.02"
+    },
+    {
+      "source": "GNAI3",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAI3 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.02"
+    },
+    {
+      "source": "HOXC8",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXC8 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL32",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL32 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.02"
+    },
+    {
+      "source": "ALCAM",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALCAM is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.02"
+    },
+    {
+      "source": "SNRNP200",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNRNP200 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "RETNLB",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RETNLB is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "DSG2",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSG2 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOTCH3",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH3 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD8A",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "HES1",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HES1 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "MB",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MB is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "TUG1",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUG1 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "EZH2",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EZH2 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "FOXO1",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXO1 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC17A5",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A5 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "GOT1",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOT1 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFIC",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFIC is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB1",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPP1CB",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1CB is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "DLX3",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLX3 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLIT3",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLIT3 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "GATA3",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHKA",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKA is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHKB",
+      "target": "Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKB is associated with Syringocystadenoma Papilliferum (SYRINGOCYSTADENOMA_PAPILLIFERUM). Open Targets association score 0.01"
+    }
+  ]
+}

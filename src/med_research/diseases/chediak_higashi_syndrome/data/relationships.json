@@ -1,0 +1,448 @@
+{
+  "relationships": [
+    {
+      "source": "CTLA4",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ITGA2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SOCS1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "SOCS1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RELB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "LAMTOR2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "LAMTOR2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ITGA2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LYST",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYST is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.83"
+    },
+    {
+      "source": "ANK1",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IKZF1",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPTA1",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CEBPE",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPE is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SAMD9L",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAMD9L is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ITGB2",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPNS2",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPNS2 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "COG6",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COG6 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ARID4A",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID4A is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SMAP1",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAP1 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "RELB",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELB is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SNRNP40",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNRNP40 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "BLOC1S4",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLOC1S4 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "DIAPH1",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DIAPH1 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GBA1",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GBA1 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "RUNX1",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CBL",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBL is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "NCKAP1L",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCKAP1L is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "NFKB2",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ASXL1",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOCS1",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOCS1 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "DPH6",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPH6 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GIMAP5",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP5 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GIMAP1-GIMAP5",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP1-GIMAP5 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "RAG1",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG1 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ACTB",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTB is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRF1",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRF1 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "B3GAT1",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B3GAT1 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "CTSG",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSG is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "AP3B1",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AP3B1 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "VPS13B",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VPS13B is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADA",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADA is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "LAMP1",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMP1 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD8A",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTSD",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSD is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ITGA2",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA2 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "MPO",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPO is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSF3",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL2",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ELANE",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELANE is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "UNC13D",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UNC13D is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYBA",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYBA is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD4",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKCB",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCB is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKCA",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCA is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRRT2",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRRT2 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKCG",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCG is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "STX11",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STX11 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTLA4",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTLA4 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYH9",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH9 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "STXBP2",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STXBP2 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TYR",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYR is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "LAMTOR2",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMTOR2 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "UBA1",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBA1 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TYRP1",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYRP1 is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "GUSB",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GUSB is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNG",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SDCBP",
+      "target": "Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDCBP is associated with Chediak-Higashi syndrome (CHEDIAK_HIGASHI_SYNDROME). Open Targets association score 0.01"
+    }
+  ]
+}

@@ -1,0 +1,502 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL3989514",
+      "target": "TOP1",
+      "type": "TARGETS",
+      "description": "IRINOTECAN HYDROCHLORIDE targets TOP1."
+    },
+    {
+      "source": "CHEMBL1773",
+      "target": "TYMS",
+      "type": "TARGETS",
+      "description": "CAPECITABINE targets TYMS."
+    },
+    {
+      "source": "CHEMBL481",
+      "target": "TOP1",
+      "type": "TARGETS",
+      "description": "IRINOTECAN targets TOP1."
+    },
+    {
+      "source": "CHEMBL185",
+      "target": "TYMS",
+      "type": "TARGETS",
+      "description": "FLUOROURACIL targets TYMS."
+    },
+    {
+      "source": "CHEMBL1201585",
+      "target": "ERBB2",
+      "type": "TARGETS",
+      "description": "TRASTUZUMAB targets ERBB2."
+    },
+    {
+      "source": "ZNF74",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF74 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MLH1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MLH1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH6",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH6 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GLIPR1L1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLIPR1L1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "GLIPR1L2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLIPR1L2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "THAP2",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THAP2 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TPH2",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "TPH2 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "SMAD4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "FERMT2",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FERMT2 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.32"
+    },
+    {
+      "source": "KIF16B",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF16B is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.31"
+    },
+    {
+      "source": "KCNC2",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNC2 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "TYMS",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYMS is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "LGR5",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGR5 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.26"
+    },
+    {
+      "source": "TMEM19",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM19 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.15"
+    },
+    {
+      "source": "TRHDE",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRHDE is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.15"
+    },
+    {
+      "source": "MACROD2",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MACROD2 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.12"
+    },
+    {
+      "source": "ELK3",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELK3 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "TOP1",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOP1 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "ZNF74",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF74 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "SNRPB2",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNRPB2 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "OTOR",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OTOR is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "KCNMB4",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNMB4 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "RAB21",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB21 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "GLIPR1L2",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLIPR1L2 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "THAP2",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THAP2 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZFC3H1",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFC3H1 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CAPS2",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAPS2 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYRFL",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYRFL is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TSPAN8",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSPAN8 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTPRR",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRR is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "RAB3IP",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB3IP is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ERBB2",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "GLIPR1L1",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLIPR1L1 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TBC1D15",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D15 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TPH2",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPH2 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTPRB",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRB is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ATXN7L3B",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATXN7L3B is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CNOT2",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNOT2 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NOX1",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOX1 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "KRAS",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMAD4",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD4 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC5AC",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5AC is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ARID1A",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATM",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MSH2",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH2 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MLH1",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLH1 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CA9",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA9 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MSH6",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH6 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FSCN1",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSCN1 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGF1",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PMS2",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMS2 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDO1",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDO1 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRT7",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT7 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BRAF",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGF1R",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1R is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PHIP",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHIP is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTOR",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MRC1",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRC1 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD8A",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "APC",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDCD1",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SATB2",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SATB2 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "RHOA",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHOA is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPATA2",
+      "target": "small intestine carcinoma (SMALL_INTESTINE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with small intestine carcinoma (SMALL_INTESTINE_CARCINOMA). Open Targets association score 0.00"
+    }
+  ]
+}

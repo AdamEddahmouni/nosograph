@@ -1,0 +1,604 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1680",
+      "target": "SSTR4",
+      "type": "TARGETS",
+      "description": "OCTREOTIDE targets SSTR4."
+    },
+    {
+      "source": "CHEMBL1657",
+      "target": "RARB",
+      "type": "TARGETS",
+      "description": "TAZAROTENE targets RARB."
+    },
+    {
+      "source": "CHEMBL572881",
+      "target": "FLT1",
+      "type": "TARGETS",
+      "description": "MOTESANIB targets FLT1."
+    },
+    {
+      "source": "CHEMBL572881",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "MOTESANIB targets KIT."
+    },
+    {
+      "source": "CHEMBL1657",
+      "target": "RARA",
+      "type": "TARGETS",
+      "description": "TAZAROTENE targets RARA."
+    },
+    {
+      "source": "CHEMBL1657",
+      "target": "RARG",
+      "type": "TARGETS",
+      "description": "TAZAROTENE targets RARG."
+    },
+    {
+      "source": "CHEMBL572881",
+      "target": "FLT4",
+      "type": "TARGETS",
+      "description": "MOTESANIB targets FLT4."
+    },
+    {
+      "source": "CHEMBL572881",
+      "target": "PDGFRB",
+      "type": "TARGETS",
+      "description": "MOTESANIB targets PDGFRB."
+    },
+    {
+      "source": "CHEMBL1680",
+      "target": "SSTR1",
+      "type": "TARGETS",
+      "description": "OCTREOTIDE targets SSTR1."
+    },
+    {
+      "source": "CHEMBL3707227",
+      "target": "CD274",
+      "type": "TARGETS",
+      "description": "ATEZOLIZUMAB targets CD274."
+    },
+    {
+      "source": "CHEMBL2146883",
+      "target": "MAP2K1",
+      "type": "TARGETS",
+      "description": "COBIMETINIB targets MAP2K1."
+    },
+    {
+      "source": "CHEMBL2146883",
+      "target": "MAP2K2",
+      "type": "TARGETS",
+      "description": "COBIMETINIB targets MAP2K2."
+    },
+    {
+      "source": "CHEMBL1680",
+      "target": "SSTR2",
+      "type": "TARGETS",
+      "description": "OCTREOTIDE targets SSTR2."
+    },
+    {
+      "source": "CHEMBL1680",
+      "target": "SSTR5",
+      "type": "TARGETS",
+      "description": "OCTREOTIDE targets SSTR5."
+    },
+    {
+      "source": "CHEMBL572881",
+      "target": "KDR",
+      "type": "TARGETS",
+      "description": "MOTESANIB targets KDR."
+    },
+    {
+      "source": "CHEMBL1680",
+      "target": "SSTR3",
+      "type": "TARGETS",
+      "description": "OCTREOTIDE targets SSTR3."
+    },
+    {
+      "source": "CHEMBL572881",
+      "target": "PDGFRA",
+      "type": "TARGETS",
+      "description": "MOTESANIB targets PDGFRA."
+    },
+    {
+      "source": "CHEMBL572881",
+      "target": "RET",
+      "type": "TARGETS",
+      "description": "MOTESANIB targets RET."
+    },
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MSH2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "HNF1B",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1B is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "MAP2K1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "REN",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "REN is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "NTHL1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "NTHL1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD38",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD38 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "FLT1",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "FLT1 is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "AXIN2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "AXIN2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "RET",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "KIT",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "FLT4",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "RARG",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RARG is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "MAP2K2",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K2 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "SSTR5",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSTR5 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "CD274",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "RARB",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RARB is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "SSTR4",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSTR4 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "SSTR1",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSTR1 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "FLT1",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT1 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "MAP2K1",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K1 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "KDR",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "SSTR2",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSTR2 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "RARA",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RARA is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "SSTR3",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSTR3 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "NTHL1",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTHL1 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTEN",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "MEN1",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "FH",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FH is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "TP53",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "SDHB",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDHB is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "BAP1",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAP1 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "AXIN2",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AXIN2 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "NF1",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNS1",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNS1 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "REN",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REN is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SORD",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORD is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SDS",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDS is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SARDH",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SARDH is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "AASS",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AASS is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "FLCN",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLCN is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "MSH2",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH2 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "TSC1",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC1 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "TSC2",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "DICER1",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DICER1 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CALCA",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "VHL",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VHL is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "NF2",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "DKK1",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DKK1 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CREBBP",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "TBCE",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBCE is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ASCL1",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASCL1 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD38",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD38 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "MSR1",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSR1 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "HNF1B",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1B is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "GH1",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "POT1",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POT1 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CIC",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIC is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD34",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "TESC",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TESC is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC12A3",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A3 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "MUTYH",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUTYH is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "POLD1",
+      "target": "neoplastic syndrome (NEOPLASTIC_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD1 is associated with neoplastic syndrome (NEOPLASTIC_SYNDROME). Open Targets association score 0.00"
+    }
+  ]
+}

@@ -71,6 +71,7 @@ CAR_T_SCORES = {
         "HSD17B13": 4.0,
         "IFNA1": 4.0,
         "IFNA17": 4.0,
+        "IFNA2": 4.0,
         "IFNAR1": 4.0,
         "IFNAR2": 4.0,
         "IFNL3": 4.0,

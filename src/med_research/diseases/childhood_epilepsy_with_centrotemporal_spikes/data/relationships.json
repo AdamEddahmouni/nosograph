@@ -1,0 +1,580 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL108",
+      "target": "SCN9A",
+      "type": "TARGETS",
+      "description": "CARBAMAZEPINE targets SCN9A."
+    },
+    {
+      "source": "CHEMBL1201754",
+      "target": "SCN2A",
+      "type": "TARGETS",
+      "description": "RUFINAMIDE targets SCN2A."
+    },
+    {
+      "source": "CHEMBL16",
+      "target": "SCN9A",
+      "type": "TARGETS",
+      "description": "PHENYTOIN targets SCN9A."
+    },
+    {
+      "source": "CHEMBL220492",
+      "target": "SCN1A",
+      "type": "TARGETS",
+      "description": "TOPIRAMATE targets SCN1A."
+    },
+    {
+      "source": "CHEMBL3989949",
+      "target": "GABRG2",
+      "type": "TARGETS",
+      "description": "CENOBAMATE targets GABRG2."
+    },
+    {
+      "source": "CHEMBL452",
+      "target": "GABRG2",
+      "type": "TARGETS",
+      "description": "CLONAZEPAM targets GABRG2."
+    },
+    {
+      "source": "CHEMBL58323",
+      "target": "SCN9A",
+      "type": "TARGETS",
+      "description": "LACOSAMIDE targets SCN9A."
+    },
+    {
+      "source": "CHEMBL58323",
+      "target": "SCN9A",
+      "type": "TARGETS",
+      "description": "LACOSAMIDE targets SCN9A."
+    },
+    {
+      "source": "CHEMBL750",
+      "target": "SCN9A",
+      "type": "TARGETS",
+      "description": "ZONISAMIDE targets SCN9A."
+    },
+    {
+      "source": "CHEMBL918",
+      "target": "SCN2A",
+      "type": "TARGETS",
+      "description": "PHENACEMIDE targets SCN2A."
+    },
+    {
+      "source": "CHEMBL16",
+      "target": "SCN1A",
+      "type": "TARGETS",
+      "description": "PHENYTOIN targets SCN1A."
+    },
+    {
+      "source": "CHEMBL220492",
+      "target": "GABRA1",
+      "type": "TARGETS",
+      "description": "TOPIRAMATE targets GABRA1."
+    },
+    {
+      "source": "CHEMBL742",
+      "target": "GRIN2A",
+      "type": "TARGETS",
+      "description": "KETAMINE targets GRIN2A."
+    },
+    {
+      "source": "CHEMBL1068",
+      "target": "SCN9A",
+      "type": "TARGETS",
+      "description": "OXCARBAZEPINE targets SCN9A."
+    },
+    {
+      "source": "CHEMBL1068",
+      "target": "SCN2A",
+      "type": "TARGETS",
+      "description": "OXCARBAZEPINE targets SCN2A."
+    },
+    {
+      "source": "CHEMBL1201754",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "TREATS",
+      "description": "RUFINAMIDE is phase 4 / marketed for childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)."
+    },
+    {
+      "source": "CHEMBL3989949",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "TREATS",
+      "description": "CENOBAMATE is phase 4 / marketed for childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)."
+    },
+    {
+      "source": "CHEMBL452",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "TREATS",
+      "description": "CLONAZEPAM is phase 4 / marketed for childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)."
+    },
+    {
+      "source": "CHEMBL452",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "TREATS",
+      "description": "CLONAZEPAM is phase 4 / marketed for childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)."
+    },
+    {
+      "source": "CHEMBL918",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "TREATS",
+      "description": "PHENACEMIDE is phase 4 / marketed for childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)."
+    },
+    {
+      "source": "CHEMBL1094",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "TREATS",
+      "description": "FELBAMATE is phase 4 / marketed for childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)."
+    },
+    {
+      "source": "CHEMBL1214124",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "TREATS",
+      "description": "PERAMPANEL is phase 4 / marketed for childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)."
+    },
+    {
+      "source": "CHEMBL220492",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "TREATS",
+      "description": "TOPIRAMATE is phase 4 / marketed for childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)."
+    },
+    {
+      "source": "SLC32A1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC32A1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "KCNA2",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNA2 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "KCNQ2",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNQ2 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "KCNQ3",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNQ3 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "RYR2",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "RYR2 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "RELN",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "RELN is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GABRA1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GABRA1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN2A",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2A is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRM7",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRM7 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "SLC2A1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "RELN",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELN is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AKT3",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT3 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "SZT2",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SZT2 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.53"
+    },
+    {
+      "source": "GRIN2A",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2A is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.52"
+    },
+    {
+      "source": "DEPDC5",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEPDC5 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.52"
+    },
+    {
+      "source": "RELN",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELN is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.51"
+    },
+    {
+      "source": "CNTNAP2",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNTNAP2 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.50"
+    },
+    {
+      "source": "SCN9A",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN9A is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.49"
+    },
+    {
+      "source": "KCNQ3",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNQ3 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.47"
+    },
+    {
+      "source": "RBFOX1",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBFOX1 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.47"
+    },
+    {
+      "source": "CHD2",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD2 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.47"
+    },
+    {
+      "source": "GABRG2",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRG2 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.46"
+    },
+    {
+      "source": "CPA6",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPA6 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.45"
+    },
+    {
+      "source": "ASAH1",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASAH1 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.45"
+    },
+    {
+      "source": "STRADA",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STRADA is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.45"
+    },
+    {
+      "source": "WWOX",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WWOX is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.45"
+    },
+    {
+      "source": "PRICKLE1",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRICKLE1 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.45"
+    },
+    {
+      "source": "SPTAN1",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTAN1 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.42"
+    },
+    {
+      "source": "SCN2A",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN2A is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.42"
+    },
+    {
+      "source": "SCARB2",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCARB2 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.42"
+    },
+    {
+      "source": "SCN1A",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN1A is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.35"
+    },
+    {
+      "source": "TBC1D24",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D24 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.34"
+    },
+    {
+      "source": "SCN1B",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN1B is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.34"
+    },
+    {
+      "source": "SLC2A1",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A1 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.33"
+    },
+    {
+      "source": "PLCB1",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCB1 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.33"
+    },
+    {
+      "source": "IER3IP1",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IER3IP1 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.33"
+    },
+    {
+      "source": "RBFOX3",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBFOX3 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.33"
+    },
+    {
+      "source": "GRIN1",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN1 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.33"
+    },
+    {
+      "source": "SLC6A1",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A1 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.33"
+    },
+    {
+      "source": "CSTB",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSTB is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.33"
+    },
+    {
+      "source": "PCDH19",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCDH19 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.33"
+    },
+    {
+      "source": "PRICKLE2",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRICKLE2 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.33"
+    },
+    {
+      "source": "EPM2A",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPM2A is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.33"
+    },
+    {
+      "source": "KCNT1",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNT1 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.33"
+    },
+    {
+      "source": "SNIP1",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNIP1 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.33"
+    },
+    {
+      "source": "KCNQ2",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNQ2 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.09"
+    },
+    {
+      "source": "AP3B2",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AP3B2 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.08"
+    },
+    {
+      "source": "CELF4",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELF4 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.08"
+    },
+    {
+      "source": "AKT3",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT3 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.07"
+    },
+    {
+      "source": "LGI1",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGI1 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.07"
+    },
+    {
+      "source": "CHRNA4",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHRNA4 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.07"
+    },
+    {
+      "source": "DNM1",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM1 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.06"
+    },
+    {
+      "source": "GABRA1",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRA1 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.06"
+    },
+    {
+      "source": "UBE3A",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBE3A is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.06"
+    },
+    {
+      "source": "FOSB",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOSB is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.06"
+    },
+    {
+      "source": "KDM1A",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM1A is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.05"
+    },
+    {
+      "source": "NRCAM",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRCAM is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.05"
+    },
+    {
+      "source": "KCNC2",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNC2 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.05"
+    },
+    {
+      "source": "RYR2",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYR2 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.05"
+    },
+    {
+      "source": "KCNJ6",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNJ6 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.05"
+    },
+    {
+      "source": "HNRNPH2",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNRNPH2 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADGRV1",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADGRV1 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.05"
+    },
+    {
+      "source": "CNTN5",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNTN5 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC32A1",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC32A1 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.05"
+    },
+    {
+      "source": "GABBR1",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABBR1 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC9A1",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC9A1 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.05"
+    },
+    {
+      "source": "GRM7",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRM7 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.05"
+    },
+    {
+      "source": "SYN1",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYN1 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZFP14",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFP14 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.05"
+    },
+    {
+      "source": "DGKE",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DGKE is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.04"
+    },
+    {
+      "source": "KCNA2",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNA2 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.04"
+    },
+    {
+      "source": "SENP2",
+      "target": "childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SENP2 is associated with childhood epilepsy with centrotemporal spikes (CHILDHOOD_EPILEPSY_WITH_CENTROTEMPORAL_SPIKES). Open Targets association score 0.04"
+    }
+  ]
+}

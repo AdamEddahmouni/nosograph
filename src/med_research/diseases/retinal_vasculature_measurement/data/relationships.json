@@ -1,0 +1,484 @@
+{
+  "relationships": [
+    {
+      "source": "FADD",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "FADD is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "FOXF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FOXF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MEF2C",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "MEF2C is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CD46",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CD46 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "COL4A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RASIP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASIP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HTRA3",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTRA3 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD46",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD46 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LTBP2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "LTBP2",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP2 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IRF4",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF4 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "FLT1",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "FLT1 is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "ANAPC1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ANAPC1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT7B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT7B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP1A2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP1A2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "OCA2",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OCA2 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.55"
+    },
+    {
+      "source": "LHFPL2",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHFPL2 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "MEF2C",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEF2C is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "DAAM2",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAAM2 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "GNB3",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNB3 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "WNT7B",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT7B is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "IRF4",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF4 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "TNS1",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNS1 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "ERG",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERG is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "NKX6-1",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX6-1 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "ANO1",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANO1 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "COL4A2",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A2 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "CRIP1",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRIP1 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "PDE3A",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE3A is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "FLT1",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT1 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "SLC12A9",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A9 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "COL4A1",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A1 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "PAWR",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAWR is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "HK1",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HK1 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "RASIP1",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASIP1 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "TEAD1",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TEAD1 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "SH2B3",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2B3 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "WDR72",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR72 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "PLEKHG1",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLEKHG1 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "HTRA3",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTRA3 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "TREML2",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREML2 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "RLBP1",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RLBP1 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "ACP1",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACP1 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "NCKAP5",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCKAP5 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "NIBAN2",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NIBAN2 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "PFN2",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PFN2 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "CYP1A2",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP1A2 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "FGFR1",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "FOXP4",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP4 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "RSPO2",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO2 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "DENND3",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DENND3 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "RNLS",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNLS is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "USP53",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP53 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "ANAPC1",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANAPC1 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "PALLD",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PALLD is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "ERBB4",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB4 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "MECOM",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MECOM is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "FARP2",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FARP2 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "LMOD1",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMOD1 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "TSPAN10",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSPAN10 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "TGFBR3",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBR3 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "FADD",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADD is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "SH3YL1",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3YL1 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "TRIL",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIL is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "ADO",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADO is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "SYNPO2",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYNPO2 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "CD46",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD46 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "HSPG2",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPG2 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "LTBP2",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTBP2 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "C1orf54",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1orf54 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "PDGFB",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFB is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "DAAM1",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAAM1 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "ACTN4",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTN4 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "FOXF2",
+      "target": "retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXF2 is associated with retinal vasculature measurement (RETINAL_VASCULATURE_MEASUREMENT). Open Targets association score 0.35"
+    }
+  ]
+}

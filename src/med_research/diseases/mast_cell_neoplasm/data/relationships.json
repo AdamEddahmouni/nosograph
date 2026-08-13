@@ -1,0 +1,526 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1200485",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "SORAFENIB TOSYLATE targets KIT."
+    },
+    {
+      "source": "CHEMBL1201129",
+      "target": "DNMT3A",
+      "type": "TARGETS",
+      "description": "DECITABINE targets DNMT3A."
+    },
+    {
+      "source": "CHEMBL3186011",
+      "target": "TP53",
+      "type": "TARGETS",
+      "description": "EPRENETAPOPT targets TP53."
+    },
+    {
+      "source": "CHEMBL1336",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "SORAFENIB targets KIT."
+    },
+    {
+      "source": "CHEMBL1789941",
+      "target": "JAK2",
+      "type": "TARGETS",
+      "description": "RUXOLITINIB targets JAK2."
+    },
+    {
+      "source": "BAX",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BAX is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "MCL1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "MCL1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BECN1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "BECN1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "SRSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SRSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELP",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELP is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.38"
+    },
+    {
+      "source": "ASXL1",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "TET2",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "EZH2",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EZH2 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "SRSF2",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRSF2 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "DNMT3A",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT3A is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "CBL",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBL is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "IKZF1",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "ROS1",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROS1 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "RUNX1",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "SF3B1",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SF3B1 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "JAK2",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "KAT6B",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KAT6B is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.28"
+    },
+    {
+      "source": "NPM1",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPM1 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.18"
+    },
+    {
+      "source": "CDH11",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH11 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.18"
+    },
+    {
+      "source": "NRAS",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.18"
+    },
+    {
+      "source": "IDH2",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH2 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.18"
+    },
+    {
+      "source": "EPHA7",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHA7 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.09"
+    },
+    {
+      "source": "PTGS2",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "ABCB1",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB1 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "VEGFA",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "MT-CO2",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO2 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "BECN1",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BECN1 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "MKI67",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "CHI3L1",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHI3L1 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDH1",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "ICAM1",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "NSG1",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSG1 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "TCEAL1",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCEAL1 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD274",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "TMED7",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMED7 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFI27",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFI27 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSMD9",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMD9 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "DCTN6",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCTN6 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "PAK2",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAK2 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZNRD2",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNRD2 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL3",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL3 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "TBC1D9",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D9 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "ESR1",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLP2",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLP2 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "PCNA",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNA is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP9",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "BAX",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAX is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "CADM1",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CADM1 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "NTRK1",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "CMA1",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMA1 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "SELP",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELP is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "HSP90AB1",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSP90AB1 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "MCL1",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCL1 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL31",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL31 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP1",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP1 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "MDM2",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM2 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP2",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "HSP90AA1",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSP90AA1 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "PGP",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGP is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKT1",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNG",
+      "target": "Mast Cell Neoplasm (MAST_CELL_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with Mast Cell Neoplasm (MAST_CELL_NEOPLASM). Open Targets association score 0.01"
+    }
+  ]
+}

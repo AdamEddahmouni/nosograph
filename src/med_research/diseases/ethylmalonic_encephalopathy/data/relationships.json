@@ -1,0 +1,508 @@
+{
+  "relationships": [
+    {
+      "source": "BTK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BTK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CACNA2D2",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA2D2 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "KCNQ2",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNQ2 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CDKL5",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKL5 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCL26",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL26 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCR3",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR3 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "ARHGEF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ARHGEF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "GATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GABRA1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GABRA1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GABRB3",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GABRB3 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN2A",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2A is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "SLC2A4RG",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A4RG is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL18",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL5",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL5 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "TSLP",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "TSLP is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "ETHE1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "ETHE1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "SMAD7",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD7 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "ETHE1",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETHE1 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.84"
+    },
+    {
+      "source": "ZNF575",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF575 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.57"
+    },
+    {
+      "source": "WNK4",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNK4 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL5",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL5 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCL26",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL26 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "DNM1",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM1 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "VEGFA",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD4",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CACNA2D2",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA2D2 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMAD7",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD7 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GABRB3",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRB3 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRPV1",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV1 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGF12",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF12 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC2A4RG",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A4RG is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ARHGEF2",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGEF2 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "YWHAG",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YWHAG is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "KCNQ2",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNQ2 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLCB1",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCB1 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SEMA5A",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEMA5A is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "DYNC1H1",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYNC1H1 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TSLP",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSLP is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCR3",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR3 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB1",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "POLG",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLG is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SCN1A",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN1A is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKL5",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKL5 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GATM",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATM is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "BTK",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTK is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "FLG",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLG is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SCN2A",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN2A is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRIM8",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM8 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP4A",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP4A is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP12A",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP12A is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SCN8A",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN8A is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL13",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTGS2",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SQOR",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SQOR is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL18",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SYNGAP1",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYNGAP1 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SCN9A",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN9A is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "POSTN",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POSTN is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TUBB4A",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB4A is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "LPCAT2",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPCAT2 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "LPCAT1",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPCAT1 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CELSR3",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR3 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDH1",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TLR4",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ISYNA1",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISYNA1 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GPHN",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPHN is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "HP",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HP is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "HMGB1",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGB1 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NOS2",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTPRC",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD99",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD99 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.00 | Open Targets association score 0.00"
+    },
+    {
+      "source": "GRIN2A",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2A is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GABRA1",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRA1 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "RTP1",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RTP1 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NSF",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSF is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHD2",
+      "target": "ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD2 is associated with ethylmalonic encephalopathy (ETHYLMALONIC_ENCEPHALOPATHY). Open Targets association score 0.00"
+    }
+  ]
+}

@@ -1,0 +1,568 @@
+{
+  "relationships": [
+    {
+      "source": "CASP1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "PLCG2",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLCG2 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "SYK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "SYK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "RUNX2",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "RUNX2 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "TNFRSF11A",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11A is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "TNFSF11",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF11 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "WNT10A",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT10A is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TRAF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MMP20",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP20 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "CASP1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "ITGA11",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA11 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ALPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ALPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "TRAF2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFATC1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PTH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TDRD7",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "TDRD7 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "ITGA11",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA11 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "MYD88",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MYD88 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11A",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11A is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF11",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF11 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TRAF2",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF2 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT10A",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT10A is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "SH3BP2",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3BP2 is associated with cherubism (CHERUBISM). Open Targets association score 0.80"
+    },
+    {
+      "source": "OGFRL1",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OGFRL1 is associated with cherubism (CHERUBISM). Open Targets association score 0.19"
+    },
+    {
+      "source": "AMELX",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMELX is associated with cherubism (CHERUBISM). Open Targets association score 0.06"
+    },
+    {
+      "source": "AMELY",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMELY is associated with cherubism (CHERUBISM). Open Targets association score 0.06"
+    },
+    {
+      "source": "ENAM",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENAM is associated with cherubism (CHERUBISM). Open Targets association score 0.05"
+    },
+    {
+      "source": "PAX9",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX9 is associated with cherubism (CHERUBISM). Open Targets association score 0.05"
+    },
+    {
+      "source": "PDE6B",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE6B is associated with cherubism (CHERUBISM). Open Targets association score 0.05"
+    },
+    {
+      "source": "SSUH2",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSUH2 is associated with cherubism (CHERUBISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGFR2",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with cherubism (CHERUBISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "RUNX2",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX2 is associated with cherubism (CHERUBISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "SP6",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SP6 is associated with cherubism (CHERUBISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "EDAR",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDAR is associated with cherubism (CHERUBISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "BCL11B",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL11B is associated with cherubism (CHERUBISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNN",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNN is associated with cherubism (CHERUBISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "DMP1",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMP1 is associated with cherubism (CHERUBISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "NECTIN1",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NECTIN1 is associated with cherubism (CHERUBISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "ALPL",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPL is associated with cherubism (CHERUBISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFIC",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFIC is associated with cherubism (CHERUBISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "AMBN",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMBN is associated with cherubism (CHERUBISM). Open Targets association score 0.03"
+    },
+    {
+      "source": "WNT10A",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT10A is associated with cherubism (CHERUBISM). Open Targets association score 0.03"
+    },
+    {
+      "source": "POSTN",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POSTN is associated with cherubism (CHERUBISM). Open Targets association score 0.03"
+    },
+    {
+      "source": "FAM20A",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM20A is associated with cherubism (CHERUBISM). Open Targets association score 0.03"
+    },
+    {
+      "source": "GREM2",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GREM2 is associated with cherubism (CHERUBISM). Open Targets association score 0.03"
+    },
+    {
+      "source": "GATA3",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with cherubism (CHERUBISM). Open Targets association score 0.03"
+    },
+    {
+      "source": "MMP20",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP20 is associated with cherubism (CHERUBISM). Open Targets association score 0.03"
+    },
+    {
+      "source": "CA6",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA6 is associated with cherubism (CHERUBISM). Open Targets association score 0.03"
+    },
+    {
+      "source": "ITGA11",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA11 is associated with cherubism (CHERUBISM). Open Targets association score 0.03"
+    },
+    {
+      "source": "ODAPH",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ODAPH is associated with cherubism (CHERUBISM). Open Targets association score 0.03"
+    },
+    {
+      "source": "CCND1",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with cherubism (CHERUBISM). Open Targets association score 0.03"
+    },
+    {
+      "source": "LZTFL1",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LZTFL1 is associated with cherubism (CHERUBISM). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNF",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with cherubism (CHERUBISM). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNFRSF11A",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF11A is associated with cherubism (CHERUBISM). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFATC1",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFATC1 is associated with cherubism (CHERUBISM). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNKS",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNKS is associated with cherubism (CHERUBISM). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYD88",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYD88 is associated with cherubism (CHERUBISM). Open Targets association score 0.01"
+    },
+    {
+      "source": "SYK",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYK is associated with cherubism (CHERUBISM). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLCG2",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCG2 is associated with cherubism (CHERUBISM). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACP5",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACP5 is associated with cherubism (CHERUBISM). Open Targets association score 0.01"
+    },
+    {
+      "source": "SCYL1",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCYL1 is associated with cherubism (CHERUBISM). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD40LG",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with cherubism (CHERUBISM). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRRAP",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRRAP is associated with cherubism (CHERUBISM). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRAF2",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAF2 is associated with cherubism (CHERUBISM). Open Targets association score 0.01"
+    },
+    {
+      "source": "TDRD7",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TDRD7 is associated with cherubism (CHERUBISM). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD68",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD68 is associated with cherubism (CHERUBISM). Open Targets association score 0.01"
+    },
+    {
+      "source": "CALCA",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with cherubism (CHERUBISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "NF1",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with cherubism (CHERUBISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1B",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with cherubism (CHERUBISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNK1",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNK1 is associated with cherubism (CHERUBISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF11B is associated with cherubism (CHERUBISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGFB1",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with cherubism (CHERUBISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNFSF11",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF11 is associated with cherubism (CHERUBISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "RNF146",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF146 is associated with cherubism (CHERUBISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTH",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTH is associated with cherubism (CHERUBISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "NLRP3",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with cherubism (CHERUBISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CBLL2",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBLL2 is associated with cherubism (CHERUBISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CASP1",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP1 is associated with cherubism (CHERUBISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "CALCR",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCR is associated with cherubism (CHERUBISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "USP6",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP6 is associated with cherubism (CHERUBISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "ABL1",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABL1 is associated with cherubism (CHERUBISM). Open Targets association score 0.00"
+    },
+    {
+      "source": "WWTR1",
+      "target": "cherubism (CHERUBISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WWTR1 is associated with cherubism (CHERUBISM). Open Targets association score 0.00"
+    }
+  ]
+}

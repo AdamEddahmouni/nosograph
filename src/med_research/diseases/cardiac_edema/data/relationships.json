@@ -1,0 +1,46 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1487",
+      "target": "HMGCR",
+      "type": "TARGETS",
+      "description": "ATORVASTATIN targets HMGCR."
+    },
+    {
+      "source": "CHEMBL344159",
+      "target": "AVPR2",
+      "type": "TARGETS",
+      "description": "TOLVAPTAN targets AVPR2."
+    },
+    {
+      "source": "HMGCR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HMGCR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AVPR2",
+      "target": "cardiac edema (CARDIAC_EDEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVPR2 is associated with cardiac edema (CARDIAC_EDEMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "HMGCR",
+      "target": "cardiac edema (CARDIAC_EDEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCR is associated with cardiac edema (CARDIAC_EDEMA). Open Targets association score 0.26"
+    },
+    {
+      "source": "AGT",
+      "target": "cardiac edema (CARDIAC_EDEMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with cardiac edema (CARDIAC_EDEMA). Open Targets association score 0.00"
+    }
+  ]
+}

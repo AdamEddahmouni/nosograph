@@ -1,0 +1,574 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201576",
+      "target": "MS4A1",
+      "type": "TARGETS",
+      "description": "RITUXIMAB targets MS4A1."
+    },
+    {
+      "source": "CHEMBL2109610",
+      "target": "IL2RB",
+      "type": "TARGETS",
+      "description": "HUMIK-BETA-1 targets IL2RB."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "MS4A1",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MS4A1 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "FEZF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FEZF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TERF2IP",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TERF2IP is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "HAVCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CHEK1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "CHEK1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TFRC",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFRC is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL18R1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18R1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "HAVCR2",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR2 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "RENBP",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "RENBP is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD3D",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD3D is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD3E",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD3E is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD3G",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD3G is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD83",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD83 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "GSK3B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "GSK3B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "MS4A1",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MS4A1 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL2RB",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RB is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "LAT",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAT is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL10",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD3G",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD3G is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNF",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "LGALS1",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS1 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL2",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKT1",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD4",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD8A",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "FEZF2",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FEZF2 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "GATA4",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA4 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP2",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "HAVCR2",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAVCR2 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SETD2",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD2 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFKB1",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "EBI3",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EBI3 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL18R1",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18R1 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CNTN2",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNTN2 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CAMKMT",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMKMT is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CALM1",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALM1 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CALM3",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALM3 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CALM2",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALM2 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRIT1",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRIT1 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRF1",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRF1 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNG",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERVW-1",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERVW-1 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "POLD4",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD4 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "POLE4",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE4 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD40LG",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD83",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD83 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "RAP1A",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAP1A is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "RABGEF1",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RABGEF1 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TERF2IP",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERF2IP is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSK3B",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSK3B is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD3D",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD3D is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD3E",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD3E is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHEK1",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHEK1 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "RENBP",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RENBP is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACTB",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTB is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKG1",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKG1 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "UBA52",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBA52 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "UBC",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBC is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPS27A",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPS27A is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "UBB",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBB is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL17A",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TXN",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TXN is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "VAC14",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VAC14 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "BDNF",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BDNF is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TFRC",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFRC is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRL",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRL is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOAT1",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOAT1 is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD79A",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Human T-lymphotropic virus 1 infectious disease (HUMAN_T_LYMPHOTROPIC_VIRUS_1_INFECTIOUS_DISEASE). Open Targets association score 0.01"
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "pathways": [
+    {
+      "id": "apoptosis",
+      "name": "Apoptosis",
+      "description": "Intrinsic and extrinsic programmed cell death; dysregulation contributes to autoimmunity and cancer.",
+      "key_components": [
+        "BAX",
+        "CASP3"
+      ],
+      "therapeutic_targets": [
+        "BAX",
+        "CASP3"
+      ],
+      "references": []
+    },
+    {
+      "id": "autophagy",
+      "name": "Autophagy",
+      "description": "Autophagosome formation and lysosomal degradation maintaining cellular and immune homeostasis.",
+      "key_components": [
+        "SLC33A1"
+      ],
+      "therapeutic_targets": [
+        "SLC33A1"
+      ],
+      "references": []
+    },
+    {
+      "id": "bone-remodeling",
+      "name": "Bone Remodeling",
+      "description": "RANK-RANKL-OPG axis and osteoclast/osteoblast balance governing skeletal homeostasis.",
+      "key_components": [
+        "TNFRSF11B"
+      ],
+      "therapeutic_targets": [
+        "TNFRSF11B"
+      ],
+      "references": []
+    },
+    {
+      "id": "chemokine-signaling",
+      "name": "Chemokine Signaling",
+      "description": "Chemokine-receptor interactions directing leukocyte migration and lymphoid organization.",
+      "key_components": [
+        "CXCL1",
+        "CXCL2",
+        "CXCL3",
+        "CXCL5",
+        "CXCR2"
+      ],
+      "therapeutic_targets": [
+        "CXCL1",
+        "CXCL2",
+        "CXCL3",
+        "CXCL5",
+        "CXCR2"
+      ],
+      "references": []
+    },
+    {
+      "id": "complement",
+      "name": "Complement Cascade",
+      "description": "Classical, lectin, and alternative complement pathways for opsonization, lysis, and immune complex clearance.",
+      "key_components": [
+        "CXCR2"
+      ],
+      "therapeutic_targets": [
+        "CXCR2"
+      ],
+      "references": []
+    },
+    {
+      "id": "dna-repair",
+      "name": "DNA Repair",
+      "description": "Homologous recombination, mismatch repair, and base excision pathways preserving genome integrity.",
+      "key_components": [
+        "ATM",
+        "PARP1"
+      ],
+      "therapeutic_targets": [
+        "ATM",
+        "PARP1"
+      ],
+      "references": []
+    },
+    {
+      "id": "ecm-remodeling",
+      "name": "ECM Remodeling",
+      "description": "Matrix metalloproteinases and extracellular matrix turnover in tissue remodeling and fibrosis.",
+      "key_components": [
+        "COL11A2"
+      ],
+      "therapeutic_targets": [
+        "COL11A2"
+      ],
+      "references": []
+    },
+    {
+      "id": "il1-inflammasome",
+      "name": "IL-1 / Inflammasome Pathway",
+      "description": "NLRP3 inflammasome assembly and IL-1β/IL-18 maturation; a driver of sterile inflammation.",
+      "key_components": [
+        "NLRP3"
+      ],
+      "therapeutic_targets": [
+        "NLRP3"
+      ],
+      "references": []
+    },
+    {
+      "id": "lipid-metabolism",
+      "name": "Lipid Metabolism",
+      "description": "Cholesterol and lipid homeostasis; the therapeutic hub of cardiovascular disease.",
+      "key_components": [
+        "APOE"
+      ],
+      "therapeutic_targets": [
+        "APOE"
+      ],
+      "references": []
+    },
+    {
+      "id": "mapk-erk",
+      "name": "MAPK / ERK Signaling",
+      "description": "RAS-RAF-MEK-ERK cascade coupling growth factor receptors to proliferation and differentiation.",
+      "key_components": [
+        "MAPK8"
+      ],
+      "therapeutic_targets": [
+        "MAPK8"
+      ],
+      "references": []
+    },
+    {
+      "id": "nfkb",
+      "name": "NF-κB Pathway",
+      "description": "Canonical and non-canonical NF-κB activation driving pro-inflammatory gene expression.",
+      "key_components": [
+        "CHUK",
+        "IKBKB",
+        "NFKB1"
+      ],
+      "therapeutic_targets": [
+        "CHUK",
+        "IKBKB",
+        "NFKB1"
+      ],
+      "references": []
+    },
+    {
+      "id": "notch-signaling",
+      "name": "Notch Signaling",
+      "description": "Notch receptor signaling regulating cell fate decisions and immune development.",
+      "key_components": [
+        "NOTCH1"
+      ],
+      "therapeutic_targets": [
+        "NOTCH1"
+      ],
+      "references": []
+    },
+    {
+      "id": "pi3k-akt-mtor",
+      "name": "PI3K / AKT / mTOR Signaling",
+      "description": "Growth and survival signaling through PI3K-AKT-mTOR; a major oncology and immunology target hub.",
+      "key_components": [
+        "AKT1",
+        "PIK3CA",
+        "PIK3CB",
+        "PIK3CD",
+        "PIK3CG",
+        "PTEN"
+      ],
+      "therapeutic_targets": [
+        "AKT1",
+        "PIK3CA",
+        "PIK3CB",
+        "PIK3CD",
+        "PIK3CG",
+        "PTEN"
+      ],
+      "references": []
+    },
+    {
+      "id": "renin-angiotensin",
+      "name": "Renin-Angiotensin System",
+      "description": "Renin-angiotensin-aldosterone axis controlling blood pressure and fluid balance.",
+      "key_components": [
+        "ACE",
+        "AGT",
+        "AGTR1",
+        "REN"
+      ],
+      "therapeutic_targets": [
+        "ACE",
+        "AGT",
+        "AGTR1",
+        "REN"
+      ],
+      "references": []
+    },
+    {
+      "id": "serotonin-dopamine",
+      "name": "Serotonin / Dopamine Signaling",
+      "description": "Monoamine neurotransmission; the pharmacological hub of psychiatry.",
+      "key_components": [
+        "MTHFR"
+      ],
+      "therapeutic_targets": [
+        "MTHFR"
+      ],
+      "references": []
+    },
+    {
+      "id": "tnf-signaling",
+      "name": "TNF Signaling",
+      "description": "Tumor necrosis factor receptor superfamily signaling; central to many autoimmune and inflammatory diseases.",
+      "key_components": [
+        "TNFRSF11B"
+      ],
+      "therapeutic_targets": [
+        "TNFRSF11B"
+      ],
+      "references": []
+    },
+    {
+      "id": "vegf-angiogenesis",
+      "name": "VEGF / Angiogenesis",
+      "description": "Vascular endothelial growth factor signaling driving angiogenesis and vascular permeability.",
+      "key_components": [
+        "HIF1A",
+        "VEGFA"
+      ],
+      "therapeutic_targets": [
+        "HIF1A",
+        "VEGFA"
+      ],
+      "references": []
+    },
+    {
+      "id": "wnt-signaling",
+      "name": "Wnt Signaling",
+      "description": "Canonical Wnt/β-catenin signaling controlling cell fate, proliferation, and tissue regeneration.",
+      "key_components": [
+        "NLRP3"
+      ],
+      "therapeutic_targets": [
+        "NLRP3"
+      ],
+      "references": []
+    }
+  ]
+}

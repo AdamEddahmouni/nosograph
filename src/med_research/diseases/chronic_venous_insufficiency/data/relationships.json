@@ -91,12 +91,6 @@
       "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
     },
     {
-      "source": "IL4",
-      "target": "il4-il13",
-      "type": "PARTICIPATES_IN",
-      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
-    },
-    {
       "source": "IL6",
       "target": "il6-signaling",
       "type": "PARTICIPATES_IN",
@@ -283,6 +277,12 @@
       "description": "CYP2A6 is a component of the Xenobiotic Metabolism pathway."
     },
     {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
       "source": "MKI67",
       "target": "cell-cycle",
       "type": "PARTICIPATES_IN",
@@ -343,22 +343,16 @@
       "description": "VCAM1 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
     },
     {
-      "source": "ITGAL",
-      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ITGAL is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
-    },
-    {
       "source": "ITGB2",
       "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
       "type": "ASSOCIATED_WITH",
       "description": "ITGB2 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
     },
     {
-      "source": "EGFR",
+      "source": "ITGAL",
       "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
       "type": "ASSOCIATED_WITH",
-      "description": "EGFR is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
+      "description": "ITGAL is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
     },
     {
       "source": "FGF2",
@@ -367,22 +361,28 @@
       "description": "FGF2 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
     },
     {
+      "source": "EGFR",
+      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
       "source": "SELL",
       "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
       "type": "ASSOCIATED_WITH",
       "description": "SELL is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
     },
     {
-      "source": "SELP",
-      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SELP is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
-    },
-    {
       "source": "KRT10",
       "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
       "type": "ASSOCIATED_WITH",
       "description": "KRT10 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SELP",
+      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELP is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
     },
     {
       "source": "TNF",
@@ -397,52 +397,10 @@
       "description": "MMP1 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
     },
     {
-      "source": "COL1A2",
+      "source": "PLAT",
       "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
       "type": "ASSOCIATED_WITH",
-      "description": "COL1A2 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
-    },
-    {
-      "source": "MTOR",
-      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "MTOR is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
-    },
-    {
-      "source": "AKT1",
-      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "AKT1 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
-    },
-    {
-      "source": "PIK3CD",
-      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PIK3CD is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
-    },
-    {
-      "source": "TIMP1",
-      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "TIMP1 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
-    },
-    {
-      "source": "SOD1",
-      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SOD1 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
-    },
-    {
-      "source": "MAPK8",
-      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "MAPK8 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
-    },
-    {
-      "source": "PIK3CG",
-      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PIK3CG is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
+      "description": "PLAT is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
     },
     {
       "source": "SERPINE1",
@@ -457,10 +415,40 @@
       "description": "AGT is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
     },
     {
+      "source": "PIK3CD",
+      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
       "source": "PIK3CB",
       "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
       "type": "ASSOCIATED_WITH",
       "description": "PIK3CB is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TIMP1",
+      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP1 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPK8",
+      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK8 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKT1",
+      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
     },
     {
       "source": "PIK3CA",
@@ -469,10 +457,22 @@
       "description": "PIK3CA is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
     },
     {
-      "source": "PLAT",
+      "source": "COL1A2",
       "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
       "type": "ASSOCIATED_WITH",
-      "description": "PLAT is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
+      "description": "COL1A2 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTOR",
+      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOD1",
+      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD1 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
     },
     {
       "source": "EDN1",
@@ -487,22 +487,16 @@
       "description": "CSF2 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.01"
     },
     {
-      "source": "PDGFRB",
-      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PDGFRB is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
-    },
-    {
       "source": "CHKB",
       "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
       "type": "ASSOCIATED_WITH",
       "description": "CHKB is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
     },
     {
-      "source": "KRT14",
+      "source": "CHKA",
       "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
       "type": "ASSOCIATED_WITH",
-      "description": "KRT14 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
+      "description": "CHKA is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
     },
     {
       "source": "CMPK1",
@@ -511,10 +505,16 @@
       "description": "CMPK1 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
     },
     {
-      "source": "CHKA",
+      "source": "KRT14",
       "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
       "type": "ASSOCIATED_WITH",
-      "description": "CHKA is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
+      "description": "KRT14 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
     },
     {
       "source": "ALB",
@@ -529,16 +529,16 @@
       "description": "MMP2 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
     },
     {
-      "source": "FBLN1",
-      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "FBLN1 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
-    },
-    {
       "source": "RAC1",
       "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
       "type": "ASSOCIATED_WITH",
       "description": "RAC1 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "FBLN1",
+      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBLN1 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
     },
     {
       "source": "PROS1",
@@ -547,16 +547,16 @@
       "description": "PROS1 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
     },
     {
-      "source": "PPIG",
-      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PPIG is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
-    },
-    {
       "source": "MMP9",
       "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
       "type": "ASSOCIATED_WITH",
       "description": "MMP9 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPIG",
+      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIG is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
     },
     {
       "source": "IL6",
@@ -565,16 +565,10 @@
       "description": "IL6 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
     },
     {
-      "source": "APOE",
+      "source": "CLDN5",
       "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
       "type": "ASSOCIATED_WITH",
-      "description": "APOE is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
-    },
-    {
-      "source": "CYP2A6",
-      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CYP2A6 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
+      "description": "CLDN5 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
     },
     {
       "source": "SELE",
@@ -589,46 +583,16 @@
       "description": "CLDN1 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
     },
     {
-      "source": "CLDN5",
-      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CLDN5 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
-    },
-    {
-      "source": "IL17A",
-      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "IL17A is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
-    },
-    {
       "source": "CD4",
       "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
       "type": "ASSOCIATED_WITH",
       "description": "CD4 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
     },
     {
-      "source": "COX8A",
+      "source": "CYP2A6",
       "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
       "type": "ASSOCIATED_WITH",
-      "description": "COX8A is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
-    },
-    {
-      "source": "COX5A",
-      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "COX5A is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
-    },
-    {
-      "source": "CPOX",
-      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CPOX is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
-    },
-    {
-      "source": "ELN",
-      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ELN is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
+      "description": "CYP2A6 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
     },
     {
       "source": "CD40LG",
@@ -643,10 +607,58 @@
       "description": "AOPEP is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
     },
     {
-      "source": "CAD",
+      "source": "COX5A",
       "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
       "type": "ASSOCIATED_WITH",
-      "description": "CAD is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
+      "description": "COX5A is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ELN",
+      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELN is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "APOE",
+      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CPOX",
+      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPOX is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL17A",
+      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "COX8A",
+      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COX8A is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACE",
+      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ENO4",
+      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENO4 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ISYNA1",
+      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISYNA1 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
     },
     {
       "source": "IL7",
@@ -655,16 +667,16 @@
       "description": "IL7 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
     },
     {
+      "source": "CAD",
+      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAD is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
+    },
+    {
       "source": "IL4",
       "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
       "type": "ASSOCIATED_WITH",
       "description": "IL4 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
-    },
-    {
-      "source": "ENO4",
-      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ENO4 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
     },
     {
       "source": "FTO",
@@ -833,12 +845,6 @@
       "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
       "type": "ASSOCIATED_WITH",
       "description": "IL10 is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
-    },
-    {
-      "source": "ACE",
-      "target": "chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ACE is associated with chronic venous insufficiency (CHRONIC_VENOUS_INSUFFICIENCY). Open Targets association score 0.00"
     },
     {
       "source": "INS",

@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "CASP3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CASP6",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP6 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "WNT1",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT1 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "CACNA1A",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1A is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "SLC1A2",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC1A2 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "FABP7",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "FABP7 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "MAPK8",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK8 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK9",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK9 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "SLC6A3",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC6A3 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LATS1",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LATS1 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "WNT1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "UGT8",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "UGT8 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GFAP",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.87"
+    },
+    {
+      "source": "CASP6",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP6 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "YAP1",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YAP1 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "STAT3",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "CSTB",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSTB is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "GABPA",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABPA is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "WNT1",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT1 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "NOS2",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "MYH10",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH10 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ISYNA1",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISYNA1 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "NEFL",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEFL is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "TUBB4A",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB4A is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "FOXE3",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXE3 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "YY1AP1",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YY1AP1 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CRYAB",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYAB is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ACTB",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTB is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "SMG1",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMG1 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "DMBX1",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMBX1 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ENPP2",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENPP2 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "PLEC",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLEC is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "TP53",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CSF1",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF1 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "FABP7",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FABP7 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "TARDBP",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TARDBP is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "MAPT",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPT is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "HSPB1",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPB1 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ENTPD2",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENTPD2 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "HSPB2",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPB2 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "HSPB3",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPB3 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SARM1",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SARM1 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "UGT8",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGT8 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "FMR1",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMR1 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SYNM",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYNM is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS1",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS1 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "GFER",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFER is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHI3L1",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHI3L1 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPK8",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK8 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPG7",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPG7 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPAST",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPAST is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "AIF1",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIF1 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC6A3",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A3 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATXN3",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATXN3 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRH",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRH is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATXN1",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATXN1 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "POLG",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLG is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CACNA1A",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1A is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPK9",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK9 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATXN2",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATXN2 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC1A2",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC1A2 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSF1R",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF1R is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "LAS1L",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAS1L is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "HDAC8",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC8 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "LATS1",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LATS1 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CASP3",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP3 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ITPR2",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITPR2 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "VIM",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIM is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "LGALS4",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS4 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD44",
+      "target": "Alexander disease (ALEXANDER_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with Alexander disease (ALEXANDER_DISEASE). Open Targets association score 0.00"
+    }
+  ]
+}

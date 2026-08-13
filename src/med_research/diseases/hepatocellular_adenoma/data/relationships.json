@@ -1,0 +1,514 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2A1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2A1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GLUL",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GLUL is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GLI1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "IL6ST",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6ST is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "JAK1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "ARAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "ARAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AKT2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "SLCO1B3",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLCO1B3 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.69"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "IL6ST",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6ST is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PRKACA",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKACA is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "DNAJB1",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAJB1 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "APC",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "STAT3",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP53",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "GNAS",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAS is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RHOA",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHOA is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CREBBP",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.20"
+    },
+    {
+      "source": "FOXL2",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXL2 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.20"
+    },
+    {
+      "source": "WT1",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "EGFR",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "REL",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REL is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "JAK1",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK1 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "MTOR",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "CD274",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "POLD1",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD1 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "BCORL1",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCORL1 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "IDH1",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "DNMT3A",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT3A is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ARHGAP35",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP35 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ERBB4",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB4 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "EP300",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EP300 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "HMGA2",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGA2 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TSC1",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC1 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FANCE",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCE is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KEAP1",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KEAP1 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CTCF",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTCF is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "DDR2",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDR2 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "STAT6",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT6 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PBRM1",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBRM1 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MITF",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MITF is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FAT1",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT1 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "C12orf43",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C12orf43 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.15"
+    },
+    {
+      "source": "GLI1",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI1 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "TOP1",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOP1 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "EPHA3",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHA3 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "ARAF",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARAF is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "CRP",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "AKT2",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT2 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GLUL",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLUL is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "KIT",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "HELQ",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HELQ is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "BCL2A1",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2A1 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "ESR1",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "AMH",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMH is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "TNF",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "GNRHR",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRHR is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "FMR1",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMR1 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL6",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "FANCA",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ERO1B",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERO1B is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLCO1B3",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLCO1B3 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PCYT1B",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCYT1B is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "AKAP5",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKAP5 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "HMGA1",
+      "target": "hepatocellular adenoma (HEPATOCELLULAR_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGA1 is associated with hepatocellular adenoma (HEPATOCELLULAR_ADENOMA). Open Targets association score 0.05"
+    }
+  ]
+}

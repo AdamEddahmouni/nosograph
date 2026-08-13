@@ -1,0 +1,616 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL118",
+      "target": "PTGS2",
+      "type": "TARGETS",
+      "description": "CELECOXIB targets PTGS2."
+    },
+    {
+      "source": "CHEMBL27",
+      "target": "ADRB2",
+      "type": "TARGETS",
+      "description": "PROPRANOLOL targets ADRB2."
+    },
+    {
+      "source": "CHEMBL3137343",
+      "target": "PDCD1",
+      "type": "TARGETS",
+      "description": "PEMBROLIZUMAB targets PDCD1."
+    },
+    {
+      "source": "CHEMBL1201583",
+      "target": "VEGFA",
+      "type": "TARGETS",
+      "description": "BEVACIZUMAB targets VEGFA."
+    },
+    {
+      "source": "CHEMBL27",
+      "target": "ADRB1",
+      "type": "TARGETS",
+      "description": "PROPRANOLOL targets ADRB1."
+    },
+    {
+      "source": "CHEMBL1201583",
+      "target": "VEGFA",
+      "type": "TARGETS",
+      "description": "BEVACIZUMAB targets VEGFA."
+    },
+    {
+      "source": "CHEMBL1042",
+      "target": "VDR",
+      "type": "TARGETS",
+      "description": "CHOLECALCIFEROL targets VDR."
+    },
+    {
+      "source": "ADRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "ADRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCND3",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND3 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2D",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2D is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCL1",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL1 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR3",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR3 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "F9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TCF7L1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL4R",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4R is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ITGA11",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA11 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGB3BP",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB3BP is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "DLL4",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "DLL4 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "IL23A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL23A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGA11",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA11 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGB3BP",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB3BP is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "TCF7L1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with papilloma (PAPILLOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "TP53",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with papilloma (PAPILLOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with papilloma (PAPILLOMA). Open Targets association score 0.21"
+    },
+    {
+      "source": "VEGFA",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with papilloma (PAPILLOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "PTGS2",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with papilloma (PAPILLOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "TGFB1",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with papilloma (PAPILLOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "KRT14",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT14 is associated with papilloma (PAPILLOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "ITGB3BP",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB3BP is associated with papilloma (PAPILLOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "PDCD1",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with papilloma (PAPILLOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "NF1",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with papilloma (PAPILLOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "IL23A",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL23A is associated with papilloma (PAPILLOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "MMP2",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with papilloma (PAPILLOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "F9",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F9 is associated with papilloma (PAPILLOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "REG1A",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REG1A is associated with papilloma (PAPILLOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CDKN2D",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2D is associated with papilloma (PAPILLOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CENPU",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CENPU is associated with papilloma (PAPILLOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "ADRB1",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB1 is associated with papilloma (PAPILLOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "MEIS1",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEIS1 is associated with papilloma (PAPILLOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "ADRB2",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB2 is associated with papilloma (PAPILLOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CD274",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with papilloma (PAPILLOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "TCF7L1",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF7L1 is associated with papilloma (PAPILLOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "ITGA11",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA11 is associated with papilloma (PAPILLOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CD8A",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with papilloma (PAPILLOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CCND1",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with papilloma (PAPILLOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD4",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with papilloma (PAPILLOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "RAC1",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAC1 is associated with papilloma (PAPILLOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CNR2",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNR2 is associated with papilloma (PAPILLOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "STING1",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STING1 is associated with papilloma (PAPILLOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CCND3",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND3 is associated with papilloma (PAPILLOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "SCRIB",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCRIB is associated with papilloma (PAPILLOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "DNMT1",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT1 is associated with papilloma (PAPILLOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "HRAS",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with papilloma (PAPILLOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "NANOG",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NANOG is associated with papilloma (PAPILLOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "LGALS7",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS7 is associated with papilloma (PAPILLOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTPN2",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN2 is associated with papilloma (PAPILLOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "P2RX7",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RX7 is associated with papilloma (PAPILLOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL4R",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4R is associated with papilloma (PAPILLOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "RARRES2",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RARRES2 is associated with papilloma (PAPILLOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "MT-CO2",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO2 is associated with papilloma (PAPILLOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "VDR",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VDR is associated with papilloma (PAPILLOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TGFA",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFA is associated with papilloma (PAPILLOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL27",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL27 is associated with papilloma (PAPILLOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTEN",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with papilloma (PAPILLOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCL1",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL1 is associated with papilloma (PAPILLOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD109",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD109 is associated with papilloma (PAPILLOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CXCR3",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR3 is associated with papilloma (PAPILLOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "GSDMB",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with papilloma (PAPILLOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "EGFR",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with papilloma (PAPILLOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFNG",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with papilloma (PAPILLOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "GRHL1",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRHL1 is associated with papilloma (PAPILLOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SAG",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAG is associated with papilloma (PAPILLOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "DLL4",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLL4 is associated with papilloma (PAPILLOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NT5C",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NT5C is associated with papilloma (PAPILLOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "AKT1",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with papilloma (PAPILLOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "KRT5",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT5 is associated with papilloma (PAPILLOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "KRT17",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT17 is associated with papilloma (PAPILLOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "RPL17",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with papilloma (PAPILLOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "AOPEP",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOPEP is associated with papilloma (PAPILLOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "APOE",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with papilloma (PAPILLOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NHERF1",
+      "target": "papilloma (PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NHERF1 is associated with papilloma (PAPILLOMA). Open Targets association score 0.03"
+    }
+  ]
+}

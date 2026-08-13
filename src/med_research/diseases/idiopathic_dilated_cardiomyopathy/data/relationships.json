@@ -1,0 +1,526 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL24",
+      "target": "ADRB1",
+      "type": "TARGETS",
+      "description": "ATENOLOL targets ADRB1."
+    },
+    {
+      "source": "CHEMBL578",
+      "target": "ACE",
+      "type": "TARGETS",
+      "description": "ENALAPRIL targets ACE."
+    },
+    {
+      "source": "CHEMBL13",
+      "target": "ADRB1",
+      "type": "TARGETS",
+      "description": "METOPROLOL targets ADRB1."
+    },
+    {
+      "source": "CHEMBL2051955",
+      "target": "TNNI3",
+      "type": "TARGETS",
+      "description": "LEVOSIMENDAN targets TNNI3."
+    },
+    {
+      "source": "CHEMBL471",
+      "target": "ADRB1",
+      "type": "TARGETS",
+      "description": "SOTALOL targets ADRB1."
+    },
+    {
+      "source": "APLN",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "APLN is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "PLN",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "PLN is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "ADRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "ADRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "HLA-DRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "HLA-DRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "ACE2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "NR3C2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "NR3C2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "REN",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "REN is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LRP1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "BOC",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BOC is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.18"
+    },
+    {
+      "source": "HLA-DRB1",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DRB1 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNF",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PSMB6",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMB6 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADRB1",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB1 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "ACE",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "BAG3",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAG3 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "B2M",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B2M is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "DES",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DES is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "NPPB",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPB is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "FASLG",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CTLA4",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTLA4 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "NPPA",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPA is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ASAH1",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASAH1 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNNI3",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNI3 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "B3GNTL1",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B3GNTL1 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "B3GALNT1",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B3GALNT1 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "B3GNT2",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B3GNT2 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADRB2",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB2 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "RETN",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RETN is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "HLA-DQA1",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DQA1 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "HLA-DQA2",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DQA2 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHRM2",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHRM2 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPY",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPY is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "VWF",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNNT2",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNT2 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "DNASE1",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNASE1 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "REN",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REN is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "LDB3",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDB3 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GH1",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TAC1",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAC1 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD4",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL10",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNNC1",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNC1 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYH14",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH14 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADM",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADM is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "DNASE1L3",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNASE1L3 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACE2",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE2 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDLIM3",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDLIM3 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "DMD",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMD is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCL2",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL2 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "RHOA",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHOA is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GDF15",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF15 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDLIM5",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDLIM5 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCND1",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "LRP1",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNC",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNC is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLN",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLN is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "APLN",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APLN is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ARG1",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARG1 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "BRCA1",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NR3C2",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C2 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP1",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP1 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTPRC",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CORT",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CORT is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SSTR2",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSTR2 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "FAS",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CFL2",
+      "target": "idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFL2 is associated with idiopathic dilated cardiomyopathy (IDIOPATHIC_DILATED_CARDIOMYOPATHY). Open Targets association score 0.01"
+    }
+  ]
+}

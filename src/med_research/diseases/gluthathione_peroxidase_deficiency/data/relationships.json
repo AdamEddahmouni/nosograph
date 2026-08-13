@@ -1,0 +1,430 @@
+{
+  "relationships": [
+    {
+      "source": "C1orf21",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C1orf21 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SLC4A1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC4A1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "SLC40A1",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC40A1 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "TFRC",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFRC is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL6ST",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6ST is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "KITLG",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KITLG is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "THOC7",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THOC7 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "ABCC2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GPX1",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPX1 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.19"
+    },
+    {
+      "source": "HBA1",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBA1 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "HBA2",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBA2 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "SPTA1",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "HEPH",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEPH is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "ANK1",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "KIT",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "AHSP",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSP is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "EXOC6",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EXOC6 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "ATP11C",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP11C is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "TFRC",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFRC is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "SLC4A1",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC4A1 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "RHBDF1",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHBDF1 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL6ST",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6ST is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "THOC7",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THOC7 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "GATA1",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA1 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "TMPRSS6",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS6 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "TPI1",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPI1 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "DOCK6",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK6 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "IREB2",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IREB2 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "KITLG",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KITLG is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "EPO",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPO is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "EPOR",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPOR is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "LDHA",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDHA is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "PICALM",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PICALM is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "PPP1R15A",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R15A is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "MRPL3",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRPL3 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "HBZ",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBZ is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "EPB41",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPB41 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "UBE2D1",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBE2D1 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "PKLR",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKLR is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "KLF1",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF1 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CPOX",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPOX is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "DNM2",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM2 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "GPC4",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPC4 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "IKZF1",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "C1orf21",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1orf21 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "TEX2",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TEX2 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "JAK2",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC40A1",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC40A1 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPTB",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTB is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NXN",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NXN is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "DNAJC13",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAJC13 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "BNIP3L",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BNIP3L is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "GATA2",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA2 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "FBXL5",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXL5 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "STARD13",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STARD13 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADD2",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADD2 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYB",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYB is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ABCC2",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC2 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "KCNB2",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNB2 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "UMOD",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UMOD is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "GALNT3",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GALNT3 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLBP",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLBP is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "MRPS18C",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRPS18C is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "AGBL4",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGBL4 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "XPO7",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XPO7 is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SRPRB",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRPRB is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with gluthathione peroxidase deficiency (GLUTHATHIONE_PEROXIDASE_DEFICIENCY). Open Targets association score 0.05"
+    }
+  ]
+}

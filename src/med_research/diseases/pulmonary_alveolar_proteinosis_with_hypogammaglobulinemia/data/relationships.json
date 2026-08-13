@@ -1,0 +1,580 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2L11",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2L11 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BTK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BTK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD19",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD19 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LYN",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LYN is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "POU2F2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "POU2F2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "IL6ST",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6ST is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ITGAL",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAL is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "RASGRP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASGRP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFATC2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD40",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ICOS",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ICOS is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ICOSLG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ICOSLG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL21R",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL21R is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGAL",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAL is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTA",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTA is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTB",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTB is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF13B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF13B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF13B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF4",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF4 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "OAS1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "OAS1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "OAS1",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OAS1 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.62"
+    },
+    {
+      "source": "CARD11",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "LTA",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTA is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PTPN22",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "TNF",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "NFKB2",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "ICOS",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICOS is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "JAK3",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "INPP5D",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INPP5D is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL2RG",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RG is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "SPPL2A",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPPL2A is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "REL",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REL is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "WAS",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WAS is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "LTB",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTB is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "SH2D1A",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2D1A is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "ITGB2",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD19",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD19 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "FASLG",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "PTPRC",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "NKX2-1",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-1 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "LAT",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAT is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "NR3C1",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "RAC2",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAC2 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD40",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRKDC",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKDC is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "BCL10",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL10 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "RASGRP1",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASGRP1 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "STK4",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK4 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "LYN",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYN is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL21R",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL21R is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CR2",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CR2 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "TNFSF13B",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13B is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "NFKB1",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "POU2AF1",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU2AF1 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL6ST",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6ST is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "IKZF1",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "ABCA3",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA3 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "RAG2",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG2 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "IRF4",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF4 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "ICOSLG",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICOSLG is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "PLD4",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLD4 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNFRSF13B",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF13B is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "RAG1",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG1 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "BTK",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTK is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "VAV1",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VAV1 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "LMBR1L",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMBR1L is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "BLNK",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLNK is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "BCL2L11",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2L11 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MAP3K14",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K14 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ITGAL",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAL is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PAX5",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX5 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFATC2",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFATC2 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "DCK",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCK is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "FAS",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "POU2F2",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU2F2 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD79A",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "EBF1",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EBF1 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "IFNG",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "BCL3",
+      "target": "pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL3 is associated with pulmonary alveolar proteinosis with hypogammaglobulinemia (PULMONARY_ALVEOLAR_PROTEINOSIS_WITH_HYPOGAMMAGLOBULINEMIA). Open Targets association score 0.05"
+    }
+  ]
+}

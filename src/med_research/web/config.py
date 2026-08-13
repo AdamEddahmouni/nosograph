@@ -10,6 +10,10 @@ REPO_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 HOST = os.environ.get("HOST", "0.0.0.0")
 PORT = int(os.environ.get("PORT", "8000"))
 DEBUG = os.environ.get("DEBUG", "false").lower() == "true"
+OPENAPI_ENABLED = os.environ.get(
+    "OPENAPI_ENABLED",
+    "true" if DEBUG else "false",
+).lower() == "true"
 
 # ── Researcher authentication ─────────────────────────────────────────────
 # ``local`` uses signed HttpOnly sessions issued by /api/auth/login. ``proxy``

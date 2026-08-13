@@ -57,6 +57,7 @@ CAR_T_SCORES = {
         "CX3CR1": 4.0,
         "CXCL8": 4.0,
         "CYSLTR1": 4.0,
+        "DUSP4": 4.0,
         "EGF": 4.0,
         "ERAL1": 4.0,
         "ERAS": 4.0,

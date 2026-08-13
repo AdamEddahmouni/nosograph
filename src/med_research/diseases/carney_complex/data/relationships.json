@@ -1,0 +1,460 @@
+{
+  "relationships": [
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2C",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2C is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "E2F1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "E2F1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MSH5",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH5 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH5-SAPCD1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH5-SAPCD1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "DHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "DHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "NEIL1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NEIL1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "KITLG",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KITLG is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "DRD2",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "DRD2 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "LATS1",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LATS1 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "MSH5-SAPCD1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH5-SAPCD1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP19A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP19A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "PRKAR1A",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAR1A is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.74"
+    },
+    {
+      "source": "PDE11A",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE11A is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.38"
+    },
+    {
+      "source": "MEN1",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.06"
+    },
+    {
+      "source": "FSHR",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSHR is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.06"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.05"
+    },
+    {
+      "source": "LHCGR",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHCGR is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.05"
+    },
+    {
+      "source": "CYP19A1",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP19A1 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.05"
+    },
+    {
+      "source": "MCM9",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCM9 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTEN",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.05"
+    },
+    {
+      "source": "ESR1",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.04"
+    },
+    {
+      "source": "KISS1R",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KISS1R is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.04"
+    },
+    {
+      "source": "INHA",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INHA is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRIM37",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM37 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.04"
+    },
+    {
+      "source": "LATS1",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LATS1 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPTBN1",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTBN1 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.04"
+    },
+    {
+      "source": "TP53",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.04"
+    },
+    {
+      "source": "NR0B1",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR0B1 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.04"
+    },
+    {
+      "source": "HELQ",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HELQ is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.04"
+    },
+    {
+      "source": "E2F1",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "E2F1 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.04"
+    },
+    {
+      "source": "GNRH1",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRH1 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.04"
+    },
+    {
+      "source": "KISS1",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KISS1 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRL",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRL is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDKN2C",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2C is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "GNRHR",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRHR is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "BRIP1",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRIP1 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "KIT",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "APC",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "FANCF",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCF is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "NHLH2",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NHLH2 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "ING2",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ING2 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "CGB7",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB7 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "LHB",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHB is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "CGB1",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB1 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "CGB8",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB8 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "CGB3",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB3 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "CGB2",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB2 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "CGB5",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB5 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "LEP",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "FOXO3",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXO3 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "FOXO3B",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXO3B is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "STAR",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAR is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "RAD50",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD50 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "MCM8",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCM8 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "HSD17B3",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSD17B3 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "XPA",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XPA is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "LHX3",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHX3 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "DRD2",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DRD2 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "RINT1",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RINT1 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "COP1",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COP1 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "CGA",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGA is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "KITLG",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KITLG is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "ACOX1",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACOX1 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPC1",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPC1 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "CFAP65",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFAP65 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "NEIL1",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEIL1 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "DHH",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHH is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "FANCL",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCL is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "EXO1",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EXO1 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "MSH5-SAPCD1",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH5-SAPCD1 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    },
+    {
+      "source": "MSH5",
+      "target": "Carney complex (CARNEY_COMPLEX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH5 is associated with Carney complex (CARNEY_COMPLEX). Open Targets association score 0.03"
+    }
+  ]
+}

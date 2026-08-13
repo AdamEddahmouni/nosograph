@@ -1,0 +1,520 @@
+{
+  "relationships": [
+    {
+      "source": "ATG16L1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "ATG16L1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "FGF21",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF21 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CFI",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CFI is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL1A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GRIA1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIA1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GLP1R",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GLP1R is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK8",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK8 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CARD9",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD9 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PTH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "ATG16L1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ATG16L1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "CYP3A5",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP3A5 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "NTRK3",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK3 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "ETV6",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV6 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "FUS",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUS is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "COL1A1",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A1 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PDGFB",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFB is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CREB3L1",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREB3L1 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CREB3L2",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREB3L2 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TP53",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.33"
+    },
+    {
+      "source": "SUFU",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUFU is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.26"
+    },
+    {
+      "source": "KLF4",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF4 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "GCG",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCG is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "NOD2",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOD2 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "FGF19",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF19 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PGM3",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGM3 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CRP",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD4",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MERTK",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MERTK is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CARD9",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD9 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "NR1H4",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1H4 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTH",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTH is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATG16L1",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATG16L1 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB1",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "STAT3",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RAC1",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAC1 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "REG4",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REG4 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GLP1R",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLP1R is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZGLP1",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZGLP1 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EHMT1",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EHMT1 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD79A",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "C3",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD40LG",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALB",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GRIA1",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIA1 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KLB",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLB is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCL2",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL2 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACHE",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACHE is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGFR3",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BRAF",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPK8",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK8 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOD1",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD1 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTCH1",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPARA",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARA is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NTRK1",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CFI",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFI is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CBLIF",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBLIF is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CAT",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAT is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NTS",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTS is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SIRT1",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT1 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VEGFA",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FOXO1",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXO1 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AIP",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIP is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EWSR1",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EWSR1 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGF21",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF21 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BGLAP",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BGLAP is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "LCN2",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN2 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP3A5",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP3A5 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EML4",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EML4 is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GHRL",
+      "target": "congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHRL is associated with congenital fibrosarcoma (CONGENITAL_FIBROSARCOMA). Open Targets association score 0.01"
+    }
+  ]
+}

@@ -1,0 +1,502 @@
+{
+  "relationships": [
+    {
+      "source": "BTK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BTK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD19",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD19 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCR7",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR7 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "IL15RA",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL15RA is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "RASGRP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASGRP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFATC1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBIA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD40",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ICOS",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ICOS is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LCK",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LCK is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL21R",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL21R is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF13C",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF13C is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF13B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CD55",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD55 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.46"
+    },
+    {
+      "source": "CARD11",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "SPPL2A",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPPL2A is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL2RG",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RG is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "NFKB2",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "PTPN22",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "LAT",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAT is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "LMBR1L",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMBR1L is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "POU2AF1",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU2AF1 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "BACH2",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BACH2 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "JAK3",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRKDC",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKDC is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "STK4",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK4 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "ZEB1",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "ICOS",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICOS is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD19",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD19 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL2",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "ATP11C",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP11C is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GIMAP5",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP5 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GIMAP1-GIMAP5",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP1-GIMAP5 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "WAS",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WAS is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "FASLG",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADGRG3",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADGRG3 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "COG6",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COG6 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "VAV1",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VAV1 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "RAG2",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG2 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "BLNK",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLNK is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "RAG1",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG1 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "LCK",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCK is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFATC1",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFATC1 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ARPC1B",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARPC1B is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ARHGEF1",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGEF1 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "RASGRP1",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASGRP1 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFKBIA",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIA is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD40",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNFSF13B",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13B is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ABCB1",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB1 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "BTK",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTK is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "NIBAN3",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NIBAN3 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MTOR",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL21R",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL21R is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SH3BP2",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3BP2 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "REL",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REL is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MAP3K14",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K14 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "RAC2",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAC2 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNFRSF13C",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF13C is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRKCH",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCH is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SOX18",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX18 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ETS1",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETS1 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXP3",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZC3H12C",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZC3H12C is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "FLT4",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CYLD",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYLD is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CCR7",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR7 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "BCL10",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL10 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL15RA",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL15RA is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ITFG2",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITFG2 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL2RA",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RA is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SNRNP40",
+      "target": "primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNRNP40 is associated with primary intestinal lymphangiectasia (PRIMARY_INTESTINAL_LYMPHANGIECTASIA). Open Targets association score 0.05"
+    }
+  ]
+}

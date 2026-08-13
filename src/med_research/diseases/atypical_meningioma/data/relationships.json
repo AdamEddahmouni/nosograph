@@ -1,0 +1,508 @@
+{
+  "relationships": [
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TRAF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CHEK2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "CHEK2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "SMO",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SMO is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "TRAF7",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF7 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TRAF7",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF7 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LRP1B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ROS1",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROS1 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PTPN13",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN13 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ERBB2",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MAP3K1",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K1 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SMO",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMO is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KDM6A",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM6A is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PREX2",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PREX2 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TRAF7",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAF7 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NOTCH2",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH2 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CHEK2",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHEK2 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CBL",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBL is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NF1",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NRG1",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRG1 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PRKAR1A",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAR1A is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MYB",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYB is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "APC",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "BRCA2",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ARHGEF12",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGEF12 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ERBB3",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB3 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "LZTR1",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LZTR1 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KMT2A",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2A is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "LRP1B",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1B is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "DDR2",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDR2 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ATRX",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TSC1",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC1 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SUFU",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUFU is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ARID2",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID2 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "AKT1",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SMARCB1",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCB1 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KMT2D",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TSC2",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MET",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TERT",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KMT2C",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FAT1",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT1 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "XPC",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XPC is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KLF4",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF4 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NF2",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ARID1B",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1B is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CDH1",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP53",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "IDH1",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMARCE1",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCE1 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ESR1",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "STAT6",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT6 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTEN",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KIT",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KDR",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MYCN",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYCN is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTPRK",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRK is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FUS",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUS is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP63",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERBB4",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB4 is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRAF",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "AFDN",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFDN is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SDHA",
+      "target": "Atypical Meningioma (ATYPICAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDHA is associated with Atypical Meningioma (ATYPICAL_MENINGIOMA). Open Targets association score 0.28"
+    }
+  ]
+}

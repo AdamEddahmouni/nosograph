@@ -1,0 +1,574 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL2108658",
+      "target": "CTLA4",
+      "type": "TARGETS",
+      "description": "TREMELIMUMAB targets CTLA4."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BIRC3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BIRC3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "MS4A1",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MS4A1 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PLCG2",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLCG2 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1C",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1C is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CXCL13",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL13 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR3",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR3 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR4",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR4 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "NFATC1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP3 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "CD28",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD28 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD86",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD86 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ICOS",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ICOS is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL22",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL22 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "MYD88",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MYD88 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP3 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF13",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFIH1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFIH1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNAR1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNAR1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFAIP3 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MYD88",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYD88 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FAS",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "S100A8",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A8 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL22",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL22 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NFATC1",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFATC1 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "BIRC3",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIRC3 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MALT1",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MALT1 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDKN1C",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1C is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD14",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD14 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "NFKB1",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "FOXP1",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP1 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CTLA4",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTLA4 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "HP",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HP is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GSDMB",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "BCL10",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL10 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TLR4",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IFNG",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "HSPD1",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPD1 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTGS2",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLCG2",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCG2 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOD2",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOD2 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CORO1A",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CORO1A is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CIB2",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIB2 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNFSF13",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FOXP3",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ANP32B",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANP32B is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD28",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD28 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ICOS",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICOS is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD40LG",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL2",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MKI67",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD86",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD86 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCL13",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL13 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HPGDS",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPGDS is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MICB",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MICB is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "OLFM4",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OLFM4 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FUT4",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUT4 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HLA-G",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-G is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GAST",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAST is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFIH1",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFIH1 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1B",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NANOG",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NANOG is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MT-CO2",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO2 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNAR1",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNAR1 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCR",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCR is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MS4A1",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MS4A1 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT20",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT20 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FLI1",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLI1 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ARID2",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID2 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "HECA",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HECA is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC12A3",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A3 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TET2",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCR4",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR4 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCR3",
+      "target": "Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR3 is associated with Gastric Mucosa-Associated Lymphoid Tissue Lymphoma (GASTRIC_MUCOSA_ASSOCIATED_LYMPHOID_TISSUE_LYMPHOMA). Open Targets association score 0.00"
+    }
+  ]
+}

@@ -1,0 +1,520 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL513",
+      "target": "GSR",
+      "type": "TARGETS",
+      "description": "CARMUSTINE targets GSR."
+    },
+    {
+      "source": "CHEMBL513",
+      "target": "glioma (GLIOMA)",
+      "type": "TREATS",
+      "description": "CARMUSTINE is phase 4 / marketed for glioma (GLIOMA)."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2C",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2C is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CXCR4",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR4 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "C2orf80",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C2orf80 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATR",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATR is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAML2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MAML2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "AKT3",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT3 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3R1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "IDH2",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH2 is associated with glioma (GLIOMA). Open Targets association score 0.67"
+    },
+    {
+      "source": "H3-3A",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3-3A is associated with glioma (GLIOMA). Open Targets association score 0.66"
+    },
+    {
+      "source": "H3-3B",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3-3B is associated with glioma (GLIOMA). Open Targets association score 0.62"
+    },
+    {
+      "source": "PTEN",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with glioma (GLIOMA). Open Targets association score 0.62"
+    },
+    {
+      "source": "TERT",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with glioma (GLIOMA). Open Targets association score 0.59"
+    },
+    {
+      "source": "NBN",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBN is associated with glioma (GLIOMA). Open Targets association score 0.54"
+    },
+    {
+      "source": "ERBB2",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with glioma (GLIOMA). Open Targets association score 0.50"
+    },
+    {
+      "source": "H3C2",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C2 is associated with glioma (GLIOMA). Open Targets association score 0.50"
+    },
+    {
+      "source": "PHLDB1",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHLDB1 is associated with glioma (GLIOMA). Open Targets association score 0.49"
+    },
+    {
+      "source": "IDH1",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with glioma (GLIOMA). Open Targets association score 0.49"
+    },
+    {
+      "source": "H3C3",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C3 is associated with glioma (GLIOMA). Open Targets association score 0.47"
+    },
+    {
+      "source": "H3C6",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C6 is associated with glioma (GLIOMA). Open Targets association score 0.47"
+    },
+    {
+      "source": "H3C11",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C11 is associated with glioma (GLIOMA). Open Targets association score 0.47"
+    },
+    {
+      "source": "H3C1",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C1 is associated with glioma (GLIOMA). Open Targets association score 0.47"
+    },
+    {
+      "source": "H3C8",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C8 is associated with glioma (GLIOMA). Open Targets association score 0.47"
+    },
+    {
+      "source": "H3C4",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C4 is associated with glioma (GLIOMA). Open Targets association score 0.47"
+    },
+    {
+      "source": "H3C10",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C10 is associated with glioma (GLIOMA). Open Targets association score 0.47"
+    },
+    {
+      "source": "H3C7",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C7 is associated with glioma (GLIOMA). Open Targets association score 0.47"
+    },
+    {
+      "source": "H3C12",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C12 is associated with glioma (GLIOMA). Open Targets association score 0.47"
+    },
+    {
+      "source": "GSR",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSR is associated with glioma (GLIOMA). Open Targets association score 0.47"
+    },
+    {
+      "source": "AKT3",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT3 is associated with glioma (GLIOMA). Open Targets association score 0.45"
+    },
+    {
+      "source": "TP53",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with glioma (GLIOMA). Open Targets association score 0.45"
+    },
+    {
+      "source": "BRCA2",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with glioma (GLIOMA). Open Targets association score 0.44"
+    },
+    {
+      "source": "EGFR",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with glioma (GLIOMA). Open Targets association score 0.43"
+    },
+    {
+      "source": "CDKN2B",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2B is associated with glioma (GLIOMA). Open Targets association score 0.41"
+    },
+    {
+      "source": "C2orf80",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C2orf80 is associated with glioma (GLIOMA). Open Targets association score 0.41"
+    },
+    {
+      "source": "ATRX",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with glioma (GLIOMA). Open Targets association score 0.40"
+    },
+    {
+      "source": "FUBP1",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUBP1 is associated with glioma (GLIOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "CIC",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIC is associated with glioma (GLIOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "NF1",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with glioma (GLIOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "DMBT1",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMBT1 is associated with glioma (GLIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "LZTR1",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LZTR1 is associated with glioma (GLIOMA). Open Targets association score 0.36"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with glioma (GLIOMA). Open Targets association score 0.35"
+    },
+    {
+      "source": "BRAF",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with glioma (GLIOMA). Open Targets association score 0.35"
+    },
+    {
+      "source": "FAM20C",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM20C is associated with glioma (GLIOMA). Open Targets association score 0.35"
+    },
+    {
+      "source": "MET",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with glioma (GLIOMA). Open Targets association score 0.35"
+    },
+    {
+      "source": "LRIG1",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRIG1 is associated with glioma (GLIOMA). Open Targets association score 0.34"
+    },
+    {
+      "source": "TCF7L2",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF7L2 is associated with glioma (GLIOMA). Open Targets association score 0.34"
+    },
+    {
+      "source": "GSDMC",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMC is associated with glioma (GLIOMA). Open Targets association score 0.34"
+    },
+    {
+      "source": "CDKN2C",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2C is associated with glioma (GLIOMA). Open Targets association score 0.34"
+    },
+    {
+      "source": "MAML2",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAML2 is associated with glioma (GLIOMA). Open Targets association score 0.34"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with glioma (GLIOMA). Open Targets association score 0.34"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with glioma (GLIOMA). Open Targets association score 0.34"
+    },
+    {
+      "source": "CCND1",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with glioma (GLIOMA). Open Targets association score 0.33"
+    },
+    {
+      "source": "POLE",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with glioma (GLIOMA). Open Targets association score 0.33"
+    },
+    {
+      "source": "FGFR3",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with glioma (GLIOMA). Open Targets association score 0.33"
+    },
+    {
+      "source": "ATM",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with glioma (GLIOMA). Open Targets association score 0.33"
+    },
+    {
+      "source": "LMF1",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMF1 is associated with glioma (GLIOMA). Open Targets association score 0.33"
+    },
+    {
+      "source": "ATR",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATR is associated with glioma (GLIOMA). Open Targets association score 0.33"
+    },
+    {
+      "source": "PIK3R1",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R1 is associated with glioma (GLIOMA). Open Targets association score 0.33"
+    },
+    {
+      "source": "STAG2",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAG2 is associated with glioma (GLIOMA). Open Targets association score 0.32"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with glioma (GLIOMA). Open Targets association score 0.31"
+    },
+    {
+      "source": "RAVER2",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAVER2 is associated with glioma (GLIOMA). Open Targets association score 0.31"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with glioma (GLIOMA). Open Targets association score 0.31"
+    },
+    {
+      "source": "CXCR4",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR4 is associated with glioma (GLIOMA). Open Targets association score 0.31"
+    },
+    {
+      "source": "CDH1",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with glioma (GLIOMA). Open Targets association score 0.31"
+    },
+    {
+      "source": "KDR",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with glioma (GLIOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "PPARG",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with glioma (GLIOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "MDM2",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM2 is associated with glioma (GLIOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "PTPN11",
+      "target": "glioma (GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with glioma (GLIOMA). Open Targets association score 0.30"
+    }
+  ]
+}

@@ -1,0 +1,556 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL189963",
+      "target": "CDK6",
+      "type": "TARGETS",
+      "description": "PALBOCICLIB targets CDK6."
+    },
+    {
+      "source": "CHEMBL4303201",
+      "target": "PDGFRB",
+      "type": "TARGETS",
+      "description": "CATEQUENTINIB targets PDGFRB."
+    },
+    {
+      "source": "CHEMBL4303201",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "CATEQUENTINIB targets KIT."
+    },
+    {
+      "source": "CHEMBL4303201",
+      "target": "KDR",
+      "type": "TARGETS",
+      "description": "CATEQUENTINIB targets KDR."
+    },
+    {
+      "source": "CHEMBL4303201",
+      "target": "FLT4",
+      "type": "TARGETS",
+      "description": "CATEQUENTINIB targets FLT4."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CCND3",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND3 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDK6",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK6 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ASPSCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "ASPSCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL1A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "EPAS1",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "EPAS1 is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LRP1B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ALK",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FUS",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUS is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "COL1A1",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A1 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PDGFB",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFB is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "EWSR1",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EWSR1 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CREB3L1",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREB3L1 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SSX2",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSX2 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SSX1",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSX1 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CREB3L2",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREB3L2 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "LRP1B",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1B is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MECOM",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MECOM is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "GPC3",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPC3 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TFE3",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFE3 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "YWHAE",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YWHAE is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SS18",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SS18 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ASPSCR1",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASPSCR1 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ATF1",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATF1 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KIF5B",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF5B is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NUTM2B",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUTM2B is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FLI1",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLI1 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KIT",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "TP53",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "KDR",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "FLT4",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "MET",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "NF2",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "NF1",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "KRAS",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "TSC2",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "MSH2",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH2 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "PTEN",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "CDK6",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK6 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "ATM",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "PTCH1",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "MDM2",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM2 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EGFR",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "DDIT3",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDIT3 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MTOR",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CCND3",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND3 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRAF",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RB1",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NRAS",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP63",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TERT",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ROS1",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROS1 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RET",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EPAS1",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPAS1 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NTRK1",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "HMGA2",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGA2 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTPRC",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "WWTR1",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WWTR1 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDH1",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "AR",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BCL2",
+      "target": "undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with undifferentiated pleomorphic sarcoma (UNDIFFERENTIATED_PLEOMORPHIC_SARCOMA). Open Targets association score 0.28"
+    }
+  ]
+}

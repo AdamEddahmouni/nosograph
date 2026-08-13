@@ -1,0 +1,484 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2A1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2A1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "WEE1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "WEE1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GLP1R",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GLP1R is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "BMP7",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP7 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "TIGIT",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "TIGIT is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PPARGC1A",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARGC1A is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PPARGC1B",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARGC1B is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "OPRM1",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "OPRM1 is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTHLH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTHLH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD47",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD47 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "UGT2B17",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "UGT2B17 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SMARCAD1",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCAD1 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CD47",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD47 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "TIGIT",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIGIT is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MGMT",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MGMT is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GPT",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GOT1",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOT1 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC17A5",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A5 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ANXA1",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANXA1 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IDH1",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPARGC1A",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARGC1A is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGF1",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ANXA2",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANXA2 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NCAPG",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCAPG is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ZGLP1",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZGLP1 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "UGT2B17",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGT2B17 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "EHMT1",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EHMT1 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NGFR",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NGFR is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALPK2",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPK2 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTHLH",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTHLH is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPARGC1B",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARGC1B is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ST8SIA1",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST8SIA1 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRP",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "DCAF16",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCAF16 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GRPR",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRPR is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "BID",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BID is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPK1",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "BMP7",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP7 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KDM8",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM8 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PLEKHA3",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLEKHA3 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDK2",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDK2 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GCG",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCG is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GLP1R",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLP1R is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PLA2G2A",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G2A is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MRAS",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRAS is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIGP",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIGP is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PARD3",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARD3 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CMAS",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMAS is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "LGALS1",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS1 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IDH3A",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH3A is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TCF7L2",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF7L2 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GPR162",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR162 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRKAA2",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA2 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CFAP410",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFAP410 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATP6V0A2",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP6V0A2 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "BCL2A1",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2A1 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "OCLN",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OCLN is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IDH2",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH2 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACACA",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACACA is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GPHA2",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPHA2 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATRX",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "WEE1",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WEE1 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SGCA",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCA is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRKAA1",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA1 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP53",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDCD1",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "OPRM1",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OPRM1 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CUL2",
+      "target": "isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUL2 is associated with isolated congenital adermatoglyphia (ISOLATED_CONGENITAL_ADERMATOGLYPHIA). Open Targets association score 0.00"
+    }
+  ]
+}

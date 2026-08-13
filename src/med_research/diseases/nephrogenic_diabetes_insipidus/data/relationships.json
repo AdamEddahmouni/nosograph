@@ -1,0 +1,460 @@
+{
+  "relationships": [
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL4A4",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A4 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "SLC2A9",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A9 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GLIS2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLIS2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BMP4",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP4 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "MRGPRX1",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "MRGPRX1 is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "MRGPRX3",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "MRGPRX3 is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "MRGPRX4",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "MRGPRX4 is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "NFAT5",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFAT5 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "NR3C2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "NR3C2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "REN",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "REN is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "AVPR2",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVPR2 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.72"
+    },
+    {
+      "source": "AQP2",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP2 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.68"
+    },
+    {
+      "source": "ADCY6",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADCY6 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "UMOD",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UMOD is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CLDN17",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN17 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC5A2",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC5A2 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRPV5",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV5 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC12A1",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A1 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "KCNJ1",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNJ1 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "AKR1B1",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKR1B1 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC2A9",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A9 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TGFB1",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "NR3C2",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C2 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "GRN",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRN is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CLCNKA",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCNKA is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "REN",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REN is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CLCNKB",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCNKB is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "NEDD4L",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEDD4L is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "UPK2",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UPK2 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "AQP1",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP1 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "COL4A4",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A4 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "AVP",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVP is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC14A2",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC14A2 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "GUCA2B",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GUCA2B is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SCTR",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCTR is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD63",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD63 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "APRT",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APRT is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "GLIS2",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLIS2 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC14A1",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC14A1 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ACE",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "STUB1",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STUB1 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CLDN7",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN7 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "BMP4",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP4 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "AGT",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CLTRN",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLTRN is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "FXYD4",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FXYD4 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "VWF",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ARHGAP4",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP4 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "L1CAM",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "L1CAM is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNX27",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNX27 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GABPA",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABPA is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MINDY4",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MINDY4 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "LGR6",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGR6 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "FZD4",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FZD4 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "LPAR3",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPAR3 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MRGPRX3",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRGPRX3 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MRGPRX4",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRGPRX4 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NMUR1",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NMUR1 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPRC6A",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPRC6A is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "OXER1",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OXER1 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MRGPRX1",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRGPRX1 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPBAR1",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPBAR1 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPR151",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR151 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "AQP3",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP3 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTGS2",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MT-CO2",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO2 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "BDNF",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BDNF is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFAT5",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFAT5 is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "HNRNPC",
+      "target": "nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNRNPC is associated with nephrogenic diabetes insipidus (NEPHROGENIC_DIABETES_INSIPIDUS). Open Targets association score 0.01"
+    }
+  ]
+}

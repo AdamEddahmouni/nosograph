@@ -1,0 +1,454 @@
+{
+  "relationships": [
+    {
+      "source": "FGF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL11A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL11A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP14",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP14 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLI2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "IHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IL6ST",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6ST is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CHUK",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CHUK is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "THRB",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THRB is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "THRB",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "THRB is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "WNT5A",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT5A is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP51A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP51A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GPC6",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPC6 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.76"
+    },
+    {
+      "source": "COL2A1",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "FGFR3",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "ROR2",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROR2 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "SATB2",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SATB2 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGF9",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF9 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC10A7",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC10A7 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PITX1",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX1 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZEB1",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXD12",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD12 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PHEX",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHEX is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GLI2",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI2 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "IHH",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IHH is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "NPR2",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPR2 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FREM1",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FREM1 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FMN1",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMN1 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ARSB",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARSB is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRICKLE1",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRICKLE1 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NABP2",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NABP2 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYP51A1",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP51A1 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "WNT5A",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT5A is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "GDF5",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF5 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TENT5A",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TENT5A is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PKDCC",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKDCC is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ALKBH1",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALKBH1 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "EVC",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EVC is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CILK1",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CILK1 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CHUK",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHUK is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL11A1",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL11A1 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "VPS25",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VPS25 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "XYLT1",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XYLT1 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "RPL38",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL38 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CERT1",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CERT1 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MMP2",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FOXC1",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SMPD3",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMPD3 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "THRB",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THRB is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "BPNT2",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BPNT2 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "DYRK2",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYRK2 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PDS5B",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDS5B is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "DHRS3",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHRS3 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TMEM107",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM107 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "RYK",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYK is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "EVC2",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EVC2 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFITM5",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFITM5 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRKAR1A",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAR1A is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "LRRK1",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRK1 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "EVX2",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EVX2 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TMEM53",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM53 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFT172",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT172 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PCSK5",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK5 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "GLI3",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "EDNRA",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRA is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ANO6",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANO6 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL6ST",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6ST is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MMP14",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP14 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TWIST1",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TWIST1 is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "INPP4B",
+      "target": "autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INPP4B is associated with autosomal recessive omodysplasia (AUTOSOMAL_RECESSIVE_OMODYSPLASIA). Open Targets association score 0.03"
+    }
+  ]
+}

@@ -1,0 +1,568 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL941",
+      "target": "ABL1",
+      "type": "TARGETS",
+      "description": "IMATINIB targets ABL1."
+    },
+    {
+      "source": "CHEMBL1642",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "IMATINIB MESYLATE targets KIT."
+    },
+    {
+      "source": "CHEMBL1642",
+      "target": "BCR",
+      "type": "TARGETS",
+      "description": "IMATINIB MESYLATE targets BCR."
+    },
+    {
+      "source": "CHEMBL1642",
+      "target": "ABL1",
+      "type": "TARGETS",
+      "description": "IMATINIB MESYLATE targets ABL1."
+    },
+    {
+      "source": "CHEMBL1201583",
+      "target": "VEGFA",
+      "type": "TARGETS",
+      "description": "BEVACIZUMAB targets VEGFA."
+    },
+    {
+      "source": "CHEMBL941",
+      "target": "PDGFRB",
+      "type": "TARGETS",
+      "description": "IMATINIB targets PDGFRB."
+    },
+    {
+      "source": "CHEMBL941",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "IMATINIB targets KIT."
+    },
+    {
+      "source": "CHEMBL941",
+      "target": "BCR",
+      "type": "TARGETS",
+      "description": "IMATINIB targets BCR."
+    },
+    {
+      "source": "CHEMBL1642",
+      "target": "PDGFRB",
+      "type": "TARGETS",
+      "description": "IMATINIB MESYLATE targets PDGFRB."
+    },
+    {
+      "source": "SYK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "SYK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "APLNR",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "APLNR is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "KCNA5",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNA5 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "EIF2AK2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EIF2AK2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "EIF2AK4",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EIF2AK4 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GDF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "GDF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ELN",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ELN is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "LOX",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "LOX is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP10",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP10 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TIMP1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GRIN1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "BMPR2",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMPR2 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "ACE2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "FBN1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "FBN1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SMAD9",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD9 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "PTGER4",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGER4 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFB",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFB is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "WNT7B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT7B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "BMPR2",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMPR2 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.68"
+    },
+    {
+      "source": "EIF2AK4",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF2AK4 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.50"
+    },
+    {
+      "source": "AGER",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGER is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "EIF2AK2",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF2AK2 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "FBLN5",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBLN5 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "APLNR",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APLNR is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "FBN1",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBN1 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "BCR",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCR is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "ABL1",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABL1 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "KIT",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXF1",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXF1 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "ACE2",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE2 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "ERG",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERG is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADORA2A",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADORA2A is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAN1A2",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAN1A2 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "TGFB3",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB3 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "ABCA3",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA3 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "PSEN2",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSEN2 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "WNT7B",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT7B is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "LPCAT1",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPCAT1 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "VEGFA",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "MMP10",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP10 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "INPP5D",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INPP5D is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "S100A1",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A1 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "VIP",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIP is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "GRIN1",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN1 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SYK",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYK is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "DDAH1",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDAH1 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "HOXA5",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA5 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "LOX",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LOX is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "MOK",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MOK is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ID1",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ID1 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SEMA3D",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEMA3D is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "HSPA5",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPA5 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "HIF3A",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF3A is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "VEGFB",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFB is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTGER4",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGER4 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOD3",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD3 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ELN",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELN is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "PDGFA",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFA is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "TIMP1",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP1 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "GNLY",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNLY is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ACVRL1",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACVRL1 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "SMAD9",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD9 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "SOX17",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX17 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "KCNK3",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNK3 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "AQP1",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP1 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGFR",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ENG",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENG is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TBX4",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX4 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKT1",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "GDF2",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF2 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNG",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP13A3",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP13A3 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "KCNA5",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNA5 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPY4R2",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPY4R2 is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPY4R",
+      "target": "pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPY4R is associated with pulmonary venoocclusive disease (PULMONARY_VENOOCCLUSIVE_DISEASE). Open Targets association score 0.01"
+    }
+  ]
+}

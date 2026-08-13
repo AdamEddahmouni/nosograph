@@ -1,0 +1,228 @@
+{
+  "pathways": [
+    {
+      "id": "apoptosis",
+      "name": "Apoptosis",
+      "description": "Intrinsic and extrinsic programmed cell death; dysregulation contributes to autoimmunity and cancer.",
+      "key_components": [
+        "RIPK4"
+      ],
+      "therapeutic_targets": [
+        "RIPK4"
+      ],
+      "references": []
+    },
+    {
+      "id": "cell-cycle",
+      "name": "Cell Cycle Regulation",
+      "description": "Cyclin-CDK machinery controlling cell division; a backbone of oncology target discovery.",
+      "key_components": [
+        "CDK5",
+        "CDKN1A",
+        "CDKN2A",
+        "MKI67"
+      ],
+      "therapeutic_targets": [
+        "CDK5",
+        "CDKN1A",
+        "CDKN2A",
+        "MKI67"
+      ],
+      "references": []
+    },
+    {
+      "id": "complement",
+      "name": "Complement Cascade",
+      "description": "Classical, lectin, and alternative complement pathways for opsonization, lysis, and immune complex clearance.",
+      "key_components": [
+        "HAVCR2"
+      ],
+      "therapeutic_targets": [
+        "HAVCR2"
+      ],
+      "references": []
+    },
+    {
+      "id": "dna-repair",
+      "name": "DNA Repair",
+      "description": "Homologous recombination, mismatch repair, and base excision pathways preserving genome integrity.",
+      "key_components": [
+        "TP53"
+      ],
+      "therapeutic_targets": [
+        "TP53"
+      ],
+      "references": []
+    },
+    {
+      "id": "ecm-remodeling",
+      "name": "ECM Remodeling",
+      "description": "Matrix metalloproteinases and extracellular matrix turnover in tissue remodeling and fibrosis.",
+      "key_components": [
+        "MMP20"
+      ],
+      "therapeutic_targets": [
+        "MMP20"
+      ],
+      "references": []
+    },
+    {
+      "id": "il6-signaling",
+      "name": "IL-6 Signaling",
+      "description": "Interleukin-6 signaling via gp130 and STAT3; a key amplifier of systemic inflammation.",
+      "key_components": [
+        "STAT3"
+      ],
+      "therapeutic_targets": [
+        "STAT3"
+      ],
+      "references": []
+    },
+    {
+      "id": "immune-checkpoint",
+      "name": "Immune Checkpoint Signaling",
+      "description": "Co-inhibitory receptor signaling (PD-1/CTLA-4/TIGIT/LAG-3) that restrains T cell responses.",
+      "key_components": [
+        "CD274",
+        "HAVCR2"
+      ],
+      "therapeutic_targets": [
+        "CD274",
+        "HAVCR2"
+      ],
+      "references": []
+    },
+    {
+      "id": "jak-stat",
+      "name": "JAK-STAT Signaling",
+      "description": "Cytokine receptor signaling through JAK kinases and STAT transcription factors; a hub for inflammatory and autoimmune disease pathways.",
+      "key_components": [
+        "STAT3"
+      ],
+      "therapeutic_targets": [
+        "STAT3"
+      ],
+      "references": []
+    },
+    {
+      "id": "mapk-erk",
+      "name": "MAPK / ERK Signaling",
+      "description": "RAS-RAF-MEK-ERK cascade coupling growth factor receptors to proliferation and differentiation.",
+      "key_components": [
+        "EGFR",
+        "ERAS",
+        "HRAS"
+      ],
+      "therapeutic_targets": [
+        "EGFR",
+        "ERAS",
+        "HRAS"
+      ],
+      "references": []
+    },
+    {
+      "id": "nfkb",
+      "name": "NF-κB Pathway",
+      "description": "Canonical and non-canonical NF-κB activation driving pro-inflammatory gene expression.",
+      "key_components": [
+        "NFKB1"
+      ],
+      "therapeutic_targets": [
+        "NFKB1"
+      ],
+      "references": []
+    },
+    {
+      "id": "notch-signaling",
+      "name": "Notch Signaling",
+      "description": "Notch receptor signaling regulating cell fate decisions and immune development.",
+      "key_components": [
+        "NOTCH1"
+      ],
+      "therapeutic_targets": [
+        "NOTCH1"
+      ],
+      "references": []
+    },
+    {
+      "id": "pi3k-akt-mtor",
+      "name": "PI3K / AKT / mTOR Signaling",
+      "description": "Growth and survival signaling through PI3K-AKT-mTOR; a major oncology and immunology target hub.",
+      "key_components": [
+        "AKT1"
+      ],
+      "therapeutic_targets": [
+        "AKT1"
+      ],
+      "references": []
+    },
+    {
+      "id": "tcr-signaling",
+      "name": "T Cell Receptor Signaling",
+      "description": "TCR signal transduction and T cell activation; a therapeutic hub in autoimmunity.",
+      "key_components": [
+        "CD4",
+        "CD8A"
+      ],
+      "therapeutic_targets": [
+        "CD4",
+        "CD8A"
+      ],
+      "references": []
+    },
+    {
+      "id": "tgf-beta",
+      "name": "TGF-β Signaling",
+      "description": "Transforming growth factor beta signaling controlling fibrosis, immune tolerance, and tumor suppression.",
+      "key_components": [
+        "TGFB1",
+        "TGFBR2"
+      ],
+      "therapeutic_targets": [
+        "TGFB1",
+        "TGFBR2"
+      ],
+      "references": []
+    },
+    {
+      "id": "thyroid-hormone",
+      "name": "Thyroid Hormone Signaling",
+      "description": "Thyroid hormone synthesis, transport, and nuclear receptor signaling.",
+      "key_components": [
+        "PTGS2",
+        "TGFB1",
+        "TGFBR2"
+      ],
+      "therapeutic_targets": [
+        "PTGS2",
+        "TGFB1",
+        "TGFBR2"
+      ],
+      "references": []
+    },
+    {
+      "id": "tlr-signaling",
+      "name": "TLR / Innate Sensing",
+      "description": "Endosomal and surface Toll-like receptor signaling driving innate immune activation.",
+      "key_components": [
+        "TLR9"
+      ],
+      "therapeutic_targets": [
+        "TLR9"
+      ],
+      "references": []
+    },
+    {
+      "id": "vegf-angiogenesis",
+      "name": "VEGF / Angiogenesis",
+      "description": "Vascular endothelial growth factor signaling driving angiogenesis and vascular permeability.",
+      "key_components": [
+        "VEGFC"
+      ],
+      "therapeutic_targets": [
+        "VEGFC"
+      ],
+      "references": []
+    }
+  ]
+}

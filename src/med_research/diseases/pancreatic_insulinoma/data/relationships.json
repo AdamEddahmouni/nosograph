@@ -1,0 +1,532 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL181",
+      "target": "KCNJ8",
+      "type": "TARGETS",
+      "description": "DIAZOXIDE targets KCNJ8."
+    },
+    {
+      "source": "CHEMBL1201583",
+      "target": "VEGFA",
+      "type": "TARGETS",
+      "description": "BEVACIZUMAB targets VEGFA."
+    },
+    {
+      "source": "CHEMBL181",
+      "target": "KCNJ11",
+      "type": "TARGETS",
+      "description": "DIAZOXIDE targets KCNJ11."
+    },
+    {
+      "source": "CHEMBL1201182",
+      "target": "FKBP1A",
+      "type": "TARGETS",
+      "description": "TEMSIROLIMUS targets FKBP1A."
+    },
+    {
+      "source": "CHEMBL181",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "TREATS",
+      "description": "DIAZOXIDE is phase 4 / marketed for pancreatic insulinoma (PANCREATIC_INSULINOMA)."
+    },
+    {
+      "source": "CHEMBL181",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "TREATS",
+      "description": "DIAZOXIDE is phase 4 / marketed for pancreatic insulinoma (PANCREATIC_INSULINOMA)."
+    },
+    {
+      "source": "BAX",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BAX is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "RIPK1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "RIPK1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "RIPK2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "RIPK2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BECN1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "BECN1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CXCL12",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL12 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "ARHGEF28",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ARHGEF28 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATR",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATR is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "LOX",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "LOX is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLP1R",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GLP1R is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "KCNJ11",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNJ11 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "BMP5",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP5 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "RENBP",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "RENBP is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "THRB",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THRB is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "THRB",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "THRB is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "KCNJ8",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNJ8 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KCNJ11",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNJ11 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MEN1",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARHGAP35",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP35 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "H3-3A",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3-3A is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KRAS",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KDM6A",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM6A is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "TP53",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "POLD1",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD1 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "LMO2",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMO2 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CREBBP",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2C",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "STAG2",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAG2 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "VHL",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VHL is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PSIP1",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSIP1 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ATR",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATR is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "AFDN",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFDN is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "IL7R",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7R is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "DDX6",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDX6 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CDX2",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDX2 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ERBB4",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB4 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SUFU",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUFU is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "BAX",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAX is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "BMP5",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP5 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "SHTN1",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHTN1 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "ITK",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITK is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "ZNRF3",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNRF3 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "VEGFA",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "FKBP1A",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP1A is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "INS",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ARF1",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARF1 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RAB26",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB26 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GCG",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCG is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKT1",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RENBP",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RENBP is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCL12",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL12 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "THRB",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THRB is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SUGP1",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUGP1 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RBP4",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBP4 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "UQCRFS1",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UQCRFS1 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RALBP1",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RALBP1 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRR1",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRR1 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RIPK1",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIPK1 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP6AP2",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP6AP2 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "LOX",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LOX is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "P2RY13",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RY13 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "BECN1",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BECN1 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAFA",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAFA is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "UCP2",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UCP2 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ANGPT2",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPT2 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "STAB1",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAB1 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "RIPK2",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIPK2 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ARHGEF28",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGEF28 is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GLP1R",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLP1R is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYC",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHGA",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHGA is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IAPP",
+      "target": "pancreatic insulinoma (PANCREATIC_INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IAPP is associated with pancreatic insulinoma (PANCREATIC_INSULINOMA). Open Targets association score 0.00"
+    }
+  ]
+}

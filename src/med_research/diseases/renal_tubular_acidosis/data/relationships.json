@@ -25,6 +25,12 @@
       "description": "BUMETANIDE is phase 4 / marketed for renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)."
     },
     {
+      "source": "TNFSF11",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF11 is a component of the Bone Remodeling pathway."
+    },
+    {
       "source": "ZNF80",
       "target": "coagulation",
       "type": "PARTICIPATES_IN",
@@ -97,6 +103,18 @@
       "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
     },
     {
+      "source": "JAG1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "JAG1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH2 is a component of the Notch Signaling pathway."
+    },
+    {
       "source": "ACE",
       "target": "renin-angiotensin",
       "type": "PARTICIPATES_IN",
@@ -137,6 +155,12 @@
       "target": "tnf-signaling",
       "type": "PARTICIPATES_IN",
       "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF11",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF11 is a component of the TNF Signaling pathway."
     },
     {
       "source": "SLC3A1",
@@ -295,16 +319,16 @@
       "description": "ATP4A is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.01"
     },
     {
+      "source": "DNAH8",
+      "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH8 is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.01"
+    },
+    {
       "source": "PDCD1",
       "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
       "type": "ASSOCIATED_WITH",
       "description": "PDCD1 is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.01"
-    },
-    {
-      "source": "SPATA2",
-      "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SPATA2 is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.01"
     },
     {
       "source": "RPL17-C18orf32",
@@ -319,10 +343,10 @@
       "description": "SNCA is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.01"
     },
     {
-      "source": "DNAH8",
+      "source": "SPATA2",
       "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "DNAH8 is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.01"
+      "description": "SPATA2 is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.01"
     },
     {
       "source": "PC",
@@ -355,16 +379,16 @@
       "description": "RO60 is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
     },
     {
-      "source": "ATP6V0A4",
-      "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ATP6V0A4 is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
-    },
-    {
       "source": "INS",
       "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
       "type": "ASSOCIATED_WITH",
       "description": "INS is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATP6V0A4",
+      "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP6V0A4 is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
     },
     {
       "source": "AVP",
@@ -373,34 +397,16 @@
       "description": "AVP is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
     },
     {
-      "source": "PHKA2",
-      "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PHKA2 is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
-    },
-    {
-      "source": "KIT",
-      "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "KIT is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
-    },
-    {
-      "source": "ZNF80",
-      "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ZNF80 is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
-    },
-    {
       "source": "PHKG2",
       "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
       "type": "ASSOCIATED_WITH",
       "description": "PHKG2 is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
     },
     {
-      "source": "MME",
+      "source": "PHKA2",
       "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "MME is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
+      "description": "PHKA2 is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
     },
     {
       "source": "ATP6AP2",
@@ -409,10 +415,28 @@
       "description": "ATP6AP2 is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
     },
     {
+      "source": "MME",
+      "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MME is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
+    },
+    {
       "source": "NECTIN1",
       "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
       "type": "ASSOCIATED_WITH",
       "description": "NECTIN1 is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ZNF80",
+      "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF80 is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "KIT",
+      "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
     },
     {
       "source": "NR1I2",
@@ -451,10 +475,34 @@
       "description": "SLC12A7 is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
     },
     {
-      "source": "ROGDI",
+      "source": "BTG3",
       "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "ROGDI is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
+      "description": "BTG3 is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNFSF11",
+      "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF11 is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "NOTCH2",
+      "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH2 is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "KCNMA1",
+      "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNMA1 is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMAB",
+      "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMAB is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
     },
     {
       "source": "GGH",
@@ -463,10 +511,46 @@
       "description": "GGH is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
     },
     {
-      "source": "GOT1",
+      "source": "ROGDI",
       "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "GOT1 is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
+      "description": "ROGDI is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "JAG1",
+      "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAG1 is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPY",
+      "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPY is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "C3",
+      "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3 is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC17A5",
+      "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A5 is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "BSND",
+      "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BSND is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CPT1C",
+      "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPT1C is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
     },
     {
       "source": "SPTA1",
@@ -475,10 +559,10 @@
       "description": "SPTA1 is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
     },
     {
-      "source": "BSND",
+      "source": "GOT1",
       "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "BSND is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
+      "description": "GOT1 is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
     },
     {
       "source": "KCNE1",
@@ -517,22 +601,10 @@
       "description": "TPO is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
     },
     {
-      "source": "BTG3",
-      "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "BTG3 is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
-    },
-    {
       "source": "CLCNKB",
       "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
       "type": "ASSOCIATED_WITH",
       "description": "CLCNKB is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
-    },
-    {
-      "source": "SLC17A5",
-      "target": "renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SLC17A5 is associated with renal tubular acidosis (RENAL_TUBULAR_ACIDOSIS). Open Targets association score 0.00"
     },
     {
       "source": "SLC12A3",

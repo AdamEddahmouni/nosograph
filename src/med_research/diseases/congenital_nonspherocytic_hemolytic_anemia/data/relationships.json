@@ -1,0 +1,418 @@
+{
+  "relationships": [
+    {
+      "source": "SLC4A1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC4A1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "PTCH2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "TFRC",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFRC is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "FCER1G",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "FCER1G is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "KITLG",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KITLG is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "CD47",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD47 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "NMNAT3",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NMNAT3 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "HBA1",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBA1 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "HBA2",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBA2 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "HEPH",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEPH is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "EPO",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPO is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "GATA1",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA1 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "SPTA1",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "DNM2",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM2 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PICALM",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PICALM is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "AHSP",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSP is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "IKZF1",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "KITLG",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KITLG is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "SPTB",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTB is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "ANK1",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "EPOR",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPOR is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "TPI1",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPI1 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "RHBDF1",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHBDF1 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "SLC20A1",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC20A1 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "TMPRSS6",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS6 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "LDHA",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDHA is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "EPB41",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPB41 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLC4A1",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC4A1 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "HBZ",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBZ is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "FCER1G",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCER1G is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "KLF1",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF1 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "PROM2",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROM2 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "EXOC6",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EXOC6 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "PKLR",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKLR is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "BNIP3L",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BNIP3L is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "TFRC",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFRC is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "SAP30BP",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAP30BP is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "GPC4",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPC4 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "JAK2",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "LIG1",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIG1 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CPOX",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPOX is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "MYB",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYB is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "SH2B3",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2B3 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "GATA2",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA2 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CTSG",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSG is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLFN14",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLFN14 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADD2",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADD2 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD47",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD47 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TSPAN33",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSPAN33 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "FLI1",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLI1 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTCH2",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH2 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "HK1",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HK1 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "DMTN",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMTN is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TTC7A",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC7A is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRDX2",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDX2 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRKAA1",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA1 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CLCN5",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCN5 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CBFA2T3",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBFA2T3 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "NMNAT3",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NMNAT3 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GYPE",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GYPE is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GYPB",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GYPB is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "FBXL5",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXL5 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GYPA",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GYPA is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "EPB42",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPB42 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRKAG1",
+      "target": "congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAG1 is associated with congenital nonspherocytic hemolytic anemia (CONGENITAL_NONSPHEROCYTIC_HEMOLYTIC_ANEMIA). Open Targets association score 0.05"
+    }
+  ]
+}

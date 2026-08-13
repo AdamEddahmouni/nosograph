@@ -1,0 +1,496 @@
+{
+  "relationships": [
+    {
+      "source": "SCN5A",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "SCN5A is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR1",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR1 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "C16orf82",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C16orf82 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CXCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGTR1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGTR1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CYP11B2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP11B2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "REN",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "REN is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "PTH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "PTGIS",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGIS is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TG",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TG is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "CYP11B2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP11B2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.48"
+    },
+    {
+      "source": "AGTR1",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGTR1 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.46"
+    },
+    {
+      "source": "PTGIS",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGIS is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.12"
+    },
+    {
+      "source": "PTX3",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTX3 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.07"
+    },
+    {
+      "source": "CD68",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD68 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.03"
+    },
+    {
+      "source": "AR",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.02"
+    },
+    {
+      "source": "LGALS3",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.02"
+    },
+    {
+      "source": "TGFB1",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.02"
+    },
+    {
+      "source": "NPPA",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPA is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.02"
+    },
+    {
+      "source": "APOA5",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD44",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.02"
+    },
+    {
+      "source": "ACE",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.02"
+    },
+    {
+      "source": "ASAH1",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASAH1 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.02"
+    },
+    {
+      "source": "SPI1",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPI1 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "REN",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REN is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPP1",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPP1 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP2B1",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP2B1 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYH7",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH7 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "KLF1",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF1 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "LYL1",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYL1 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "WNK4",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNK4 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS3",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "SCN5A",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN5A is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "LEP",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTH",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTH is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "C16orf82",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C16orf82 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNNT1",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNT1 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPPB",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPB is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "INS",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "RUNX1",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "GATA2",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA2 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDH5",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH5 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "HDAC1",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC1 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "HDAC2",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC2 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADIPOQ",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOQ is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERBB2",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "EPO",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPO is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL10",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "TG",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TG is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC5A4",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC5A4 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCR2",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR2 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCR1",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR1 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "AVP",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVP is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "CALCA",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "MSX2",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSX2 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "S100A12",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A12 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "CST3",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CST3 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "LCN2",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN2 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "SERPINA4",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA4 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "ANOS1",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANOS1 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP11B2",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP11B2 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "EDN1",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDN1 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADRA2B",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2B is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "DBH",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DBH is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "NT5E",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NT5E is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "HDAC9",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC9 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    },
+    {
+      "source": "KLK4",
+      "target": "essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK4 is associated with essential hypertension, genetic (ESSENTIAL_HYPERTENSION_GENETIC). Open Targets association score 0.01"
+    }
+  ]
+}

@@ -1,0 +1,526 @@
+{
+  "relationships": [
+    {
+      "source": "CDK6",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK6 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ACKR1",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ACKR1 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL12",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL12 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL6",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL6 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR4",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR4 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "MARCHF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "MARCHF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TNFRSF10C",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF10C is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CHEK2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "CHEK2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "IL17RA",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17RA is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1RN",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1RN is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "VSIR",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "VSIR is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ITGA4",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA4 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "VLDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "VLDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "CD33",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD33 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL17RA",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17RA is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGA4",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA4 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFRSF10C",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF10C is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF13B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF13B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF13B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "ANAPC1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ANAPC1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR2 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.70"
+    },
+    {
+      "source": "TET2",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.69"
+    },
+    {
+      "source": "SH2B3",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2B3 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.68"
+    },
+    {
+      "source": "MPO",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPO is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.68"
+    },
+    {
+      "source": "S1PR4",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S1PR4 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.68"
+    },
+    {
+      "source": "CXCL6",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL6 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.67"
+    },
+    {
+      "source": "IL17RA",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17RA is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.66"
+    },
+    {
+      "source": "CXCR4",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR4 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.65"
+    },
+    {
+      "source": "CHEK2",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHEK2 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.65"
+    },
+    {
+      "source": "JAML",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAML is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.63"
+    },
+    {
+      "source": "TNFRSF13B",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF13B is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.62"
+    },
+    {
+      "source": "TNFRSF10C",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF10C is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.59"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.59"
+    },
+    {
+      "source": "CSF3R",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3R is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.58"
+    },
+    {
+      "source": "ACKR1",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACKR1 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.57"
+    },
+    {
+      "source": "ITGA4",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA4 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.56"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.56"
+    },
+    {
+      "source": "LY75",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LY75 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.56"
+    },
+    {
+      "source": "S1PR2",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S1PR2 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.56"
+    },
+    {
+      "source": "CD33",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD33 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.55"
+    },
+    {
+      "source": "ADGRE5",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADGRE5 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.55"
+    },
+    {
+      "source": "GC",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GC is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.55"
+    },
+    {
+      "source": "SPHK1",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPHK1 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.55"
+    },
+    {
+      "source": "VSIR",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VSIR is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.55"
+    },
+    {
+      "source": "CXCL12",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL12 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.55"
+    },
+    {
+      "source": "SLC22A5",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A5 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.55"
+    },
+    {
+      "source": "FLT3",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.55"
+    },
+    {
+      "source": "VLDLR",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VLDLR is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.55"
+    },
+    {
+      "source": "IL1RN",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1RN is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.55"
+    },
+    {
+      "source": "MXI1",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MXI1 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.55"
+    },
+    {
+      "source": "PTPRC",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.54"
+    },
+    {
+      "source": "NHERF1",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NHERF1 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.54"
+    },
+    {
+      "source": "CXCL2",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL2 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.54"
+    },
+    {
+      "source": "RREB1",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RREB1 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.54"
+    },
+    {
+      "source": "ATXN1",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATXN1 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.54"
+    },
+    {
+      "source": "NOSTRIN",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOSTRIN is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.54"
+    },
+    {
+      "source": "ATM",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.54"
+    },
+    {
+      "source": "TRIM58",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM58 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.54"
+    },
+    {
+      "source": "TREML2",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREML2 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.54"
+    },
+    {
+      "source": "MYO1G",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO1G is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.53"
+    },
+    {
+      "source": "RIN3",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIN3 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.53"
+    },
+    {
+      "source": "PTPN22",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.53"
+    },
+    {
+      "source": "KIT",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.53"
+    },
+    {
+      "source": "PLCB1",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCB1 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.53"
+    },
+    {
+      "source": "ARPC2",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARPC2 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.53"
+    },
+    {
+      "source": "CABLES1",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CABLES1 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.53"
+    },
+    {
+      "source": "TERT",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.53"
+    },
+    {
+      "source": "ANAPC1",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANAPC1 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.53"
+    },
+    {
+      "source": "RC3H1",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RC3H1 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.53"
+    },
+    {
+      "source": "MARCHF7",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MARCHF7 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.52"
+    },
+    {
+      "source": "TNFSF13B",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13B is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.52"
+    },
+    {
+      "source": "SLC25A24",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A24 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.52"
+    },
+    {
+      "source": "ACVRL1",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACVRL1 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.52"
+    },
+    {
+      "source": "RBMS1",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBMS1 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.52"
+    },
+    {
+      "source": "LYZ",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYZ is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.52"
+    },
+    {
+      "source": "CCDC69",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC69 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.52"
+    },
+    {
+      "source": "ZNF316",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF316 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.52"
+    },
+    {
+      "source": "MIF",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIF is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.52"
+    },
+    {
+      "source": "MBNL1",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBNL1 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.52"
+    },
+    {
+      "source": "CDK6",
+      "target": "leukocyte count (LEUKOCYTE_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK6 is associated with leukocyte count (LEUKOCYTE_COUNT). Open Targets association score 0.52"
+    }
+  ]
+}

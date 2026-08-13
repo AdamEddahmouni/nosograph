@@ -1,0 +1,52 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL3545110",
+      "target": "CDK6",
+      "type": "TARGETS",
+      "description": "RIBOCICLIB targets CDK6."
+    },
+    {
+      "source": "CHEMBL3545110",
+      "target": "CDK4",
+      "type": "TARGETS",
+      "description": "RIBOCICLIB targets CDK4."
+    },
+    {
+      "source": "CDK4",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK4 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDK6",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK6 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDK4",
+      "target": "functional pancreatic neuroendocrine tumor (FUNCTIONAL_PANCREATIC_NEUROENDOCRINE_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK4 is associated with functional pancreatic neuroendocrine tumor (FUNCTIONAL_PANCREATIC_NEUROENDOCRINE_TUMOR). Open Targets association score 0.07"
+    },
+    {
+      "source": "CDK6",
+      "target": "functional pancreatic neuroendocrine tumor (FUNCTIONAL_PANCREATIC_NEUROENDOCRINE_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK6 is associated with functional pancreatic neuroendocrine tumor (FUNCTIONAL_PANCREATIC_NEUROENDOCRINE_TUMOR). Open Targets association score 0.07"
+    },
+    {
+      "source": "BAP1",
+      "target": "functional pancreatic neuroendocrine tumor (FUNCTIONAL_PANCREATIC_NEUROENDOCRINE_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAP1 is associated with functional pancreatic neuroendocrine tumor (FUNCTIONAL_PANCREATIC_NEUROENDOCRINE_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "FAP",
+      "target": "functional pancreatic neuroendocrine tumor (FUNCTIONAL_PANCREATIC_NEUROENDOCRINE_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAP is associated with functional pancreatic neuroendocrine tumor (FUNCTIONAL_PANCREATIC_NEUROENDOCRINE_TUMOR). Open Targets association score 0.00"
+    }
+  ]
+}

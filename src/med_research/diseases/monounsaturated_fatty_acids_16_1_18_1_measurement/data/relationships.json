@@ -1,0 +1,472 @@
+{
+  "relationships": [
+    {
+      "source": "BMERB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "BMERB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCND2",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND2 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "FGF21",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF21 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TM6SF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TM6SF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATRAID",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRAID is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53BP1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53BP1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL3 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL4 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CETP is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CD300LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD300LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "VEGFB",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFB is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "NAT2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NAT2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SLCO1B1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLCO1B1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.68"
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL3 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.63"
+    },
+    {
+      "source": "APOA5",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.59"
+    },
+    {
+      "source": "LPL",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.56"
+    },
+    {
+      "source": "LPA",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "PLTP",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLTP is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "GALNT2",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GALNT2 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "ZPR1",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZPR1 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "ANKRD55",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKRD55 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "CETP",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETP is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "COBLL1",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COBLL1 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "APOC1",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC1 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "APOE",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "MLXIPL",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLXIPL is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "FADS2",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS2 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "APOC3",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC3 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "MAP3K1",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K1 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "NECTIN2",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NECTIN2 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "CD300LG",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD300LG is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "MTARC1",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTARC1 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL4 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "CPT1A",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPT1A is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "HGFAC",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGFAC is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "GCKR",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "PAFAH1B2",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAFAH1B2 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "GAS6",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAS6 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "FTO",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FTO is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "LIPG",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPG is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "FADS1",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS1 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "LIPC",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "NTAN1",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTAN1 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "TYW1B",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYW1B is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "ATRAID",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRAID is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "ZC3H11B",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZC3H11B is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "TRIB1",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIB1 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "RRN3",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RRN3 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "VEGFB",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFB is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "SLC22A1",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A1 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "APOA1",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "GPAM",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPAM is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "ABCA1",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "KLB",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLB is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "BMERB1",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMERB1 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "TP53BP1",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53BP1 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "LDLR",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "NAT2",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAT2 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "SDC1",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC1 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "PKD2L1",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKD2L1 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "GATA4",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA4 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "FGF21",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF21 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "CITED2",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CITED2 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "TM6SF2",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM6SF2 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "FRMD5",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FRMD5 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "KPNA2",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KPNA2 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "JMJD1C",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JMJD1C is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.27"
+    },
+    {
+      "source": "SLCO1B1",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLCO1B1 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.27"
+    },
+    {
+      "source": "MYRF",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYRF is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.27"
+    },
+    {
+      "source": "ASAP3",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASAP3 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.26"
+    },
+    {
+      "source": "ZNF664",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF664 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.25"
+    },
+    {
+      "source": "CCND2",
+      "target": "monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND2 is associated with monounsaturated fatty acids; 16:1, 18:1 measurement (MONOUNSATURATED_FATTY_ACIDS_16_1_18_1_MEASUREMENT). Open Targets association score 0.25"
+    }
+  ]
+}

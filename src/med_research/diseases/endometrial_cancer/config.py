@@ -92,6 +92,7 @@ CAR_T_SCORES = {
         "PARP2": 4.0,
         "PARP3": 4.0,
         "PDCD1": 4.0,
+        "PDPK1": 4.0,
         "PIK3CA": 4.0,
         "PIK3R1": 4.0,
         "PMS2": 4.0,

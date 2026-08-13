@@ -1,0 +1,634 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1789941",
+      "target": "JAK2",
+      "type": "TARGETS",
+      "description": "RUXOLITINIB targets JAK2."
+    },
+    {
+      "source": "CHEMBL413",
+      "target": "FKBP1A",
+      "type": "TARGETS",
+      "description": "SIROLIMUS targets FKBP1A."
+    },
+    {
+      "source": "CHEMBL1201139",
+      "target": "PGR",
+      "type": "TARGETS",
+      "description": "MEGESTROL ACETATE targets PGR."
+    },
+    {
+      "source": "CHEMBL1789941",
+      "target": "JAK1",
+      "type": "TARGETS",
+      "description": "RUXOLITINIB targets JAK1."
+    },
+    {
+      "source": "CHEMBL3989909",
+      "target": "PIK3CD",
+      "type": "TARGETS",
+      "description": "LENIOLISIB PHOSPHATE targets PIK3CD."
+    },
+    {
+      "source": "CHEMBL1042",
+      "target": "VDR",
+      "type": "TARGETS",
+      "description": "CHOLECALCIFEROL targets VDR."
+    },
+    {
+      "source": "CHEMBL1201139",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "TREATS",
+      "description": "MEGESTROL ACETATE is phase 4 / marketed for inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)."
+    },
+    {
+      "source": "CHEMBL3989909",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "TREATS",
+      "description": "LENIOLISIB PHOSPHATE is phase 4 / marketed for inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)."
+    },
+    {
+      "source": "RIPK1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "RIPK1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BTK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BTK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "FGB",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGB is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FGG",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGG is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IL18R1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18R1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "TICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "TICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "TYK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "TYK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "TRAF3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "IKBKG",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "IKBKG is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBIA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RELA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD36",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD36 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL21",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL21 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IRAK4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IRAK4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "MYD88",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MYD88 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TICAM1",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TICAM1 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR1",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR1 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR2",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR2 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR3",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR3 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR5",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR5 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR6",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR6 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "UNC93B1",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "UNC93B1 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF13B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF13B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF13B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TRAF3",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF3 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "PGR",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.50"
+    },
+    {
+      "source": "MYD88",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYD88 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.50"
+    },
+    {
+      "source": "RAG2",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG2 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.50"
+    },
+    {
+      "source": "RIPK1",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIPK1 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.49"
+    },
+    {
+      "source": "IRAK4",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRAK4 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.46"
+    },
+    {
+      "source": "BTK",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTK is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "NFKB1",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "NFKB2",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "RELA",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELA is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "TLR3",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR3 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "NFKBIA",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIA is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "IKBKG",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKBKG is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "CD36",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD36 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "TLR1",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR1 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "UNC93B1",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UNC93B1 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "TLR2",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR2 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "S100A9",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A9 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "TRAF3",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAF3 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "TIRAP",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIRAP is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "CD14",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD14 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "FGG",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGG is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "FGB",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGB is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "S100A1",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A1 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "HMGB1",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGB1 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "FGA",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGA is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "LY96",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LY96 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "S100A8",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A8 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "TICAM1",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TICAM1 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "TLR6",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR6 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "TLR5",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR5 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "TLR4",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "JAK1",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK1 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.08"
+    },
+    {
+      "source": "JAK2",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.07"
+    },
+    {
+      "source": "FKBP1A",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP1A is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.04"
+    },
+    {
+      "source": "VDR",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VDR is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNF",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.03"
+    },
+    {
+      "source": "IKZF1",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.03"
+    },
+    {
+      "source": "LGALS9",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS9 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD79A",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL18R1",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18R1 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "EBI3",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EBI3 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD8A",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD40LG",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "ERBB2",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "STAT1",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT1 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "NF1",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNFRSF13B",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF13B is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "UNC13D",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UNC13D is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNFSF13B",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13B is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TYK2",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYK2 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "FOXP3",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "MRTFA",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRTFA is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "SERPINA1",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA1 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "SOAT1",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOAT1 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD5L",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD5L is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZC3H12A",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZC3H12A is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MST1",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MST1 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL21",
+      "target": "inborn error of immunity (INBORN_ERROR_OF_IMMUNITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL21 is associated with inborn error of immunity (INBORN_ERROR_OF_IMMUNITY). Open Targets association score 0.01"
+    }
+  ]
+}

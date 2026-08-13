@@ -1,0 +1,478 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL481",
+      "target": "TOP1",
+      "type": "TARGETS",
+      "description": "IRINOTECAN targets TOP1."
+    },
+    {
+      "source": "CHEMBL3989514",
+      "target": "TOP1",
+      "type": "TARGETS",
+      "description": "IRINOTECAN HYDROCHLORIDE targets TOP1."
+    },
+    {
+      "source": "CHEMBL185",
+      "target": "TYMS",
+      "type": "TARGETS",
+      "description": "FLUOROURACIL targets TYMS."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CXCL10",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL10 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP53",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERBB4",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB4 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ARID1A",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TSC2",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2C",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TOP1",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOP1 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "TYMS",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYMS is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "TNF",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PIRT",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIRT is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FOS",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOS is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "KLK3",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK3 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "LGALS9",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS9 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADIPOQ",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOQ is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PROS1",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROS1 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PLAG1",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAG1 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "NPEPPS",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPEPPS is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PSAT1",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSAT1 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "RPL17",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CXCL10",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL10 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "LEP",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDH1",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNG",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CMPK1",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMPK1 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHKA",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKA is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GAL",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAL is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHKB",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKB is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "OXT",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OXT is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD274",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD79A",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL10",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "LGALS3",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD40LG",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMARCA1",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA1 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TF",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDCD1",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPATA2",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNCA",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CKAP4",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CKAP4 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSG2",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSG2 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP63",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPE65",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPE65 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD163",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD163 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM7",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM7 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "UVRAG",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UVRAG is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM3",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM3 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AQP4",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP4 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOD1",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD1 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM5",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM5 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MME",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MME is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "UCP1",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UCP1 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD4",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CUBN",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUBN is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1B",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VEGFA",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "LGALS1",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS1 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TRPV1",
+      "target": "Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV1 is associated with Undifferentiated Pancreatic Carcinoma (UNDIFFERENTIATED_PANCREATIC_CARCINOMA). Open Targets association score 0.00"
+    }
+  ]
+}

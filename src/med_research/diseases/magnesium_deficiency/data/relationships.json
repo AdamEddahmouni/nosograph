@@ -1,0 +1,490 @@
+{
+  "relationships": [
+    {
+      "source": "CCL27",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL27 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL1",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL1 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "FGF23",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF23 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TACR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "TACR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ATRNL1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRNL1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "VCAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "VCAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "REN",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "REN is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "PTH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TGM2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "GSTM1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "NAT10",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NAT10 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "PTH",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTH is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL1B",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "PARK7",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARK7 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "AGT",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "INS",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL10",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TAC1",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAC1 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGF23",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF23 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "EDF1",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDF1 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GCG",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCG is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL13",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRPM7",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPM7 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP4A",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP4A is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP12A",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP12A is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "LCAT",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCAT is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD14",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD14 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "C3",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "REN",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REN is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CALCA",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUTYH",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUTYH is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SFRP4",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFRP4 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "KCNJ2",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNJ2 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPA1",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPA1 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCL27",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL27 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NAT10",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAT10 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALPP",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPP is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDLIM3",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDLIM3 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLPI",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLPI is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATRNL1",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRNL1 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ASRGL1",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASRGL1 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRPM6",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPM6 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNG",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSTM1",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM1 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS2",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GOT1",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOT1 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC17A5",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A5 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CNNM2",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNNM2 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPIG",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIG is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TACR1",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TACR1 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GGH",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGH is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGM2",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM2 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GH1",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NPS",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPS is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TTR",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTR is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALB",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NFKB1",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CLDN16",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN16 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "DNAH8",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH8 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "HSD11B2",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSD11B2 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TRPV3",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV3 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "FOXA3",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXA3 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL1",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL1 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CLDN19",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN19 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADCY1",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADCY1 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "VCAM1",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VCAM1 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL2",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "KCNJ1",
+      "target": "magnesium deficiency (MAGNESIUM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNJ1 is associated with magnesium deficiency (MAGNESIUM_DEFICIENCY). Open Targets association score 0.00"
+    }
+  ]
+}

@@ -1,0 +1,556 @@
+{
+  "relationships": [
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "SELE",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELE is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "GORASP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "GORASP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CHUK",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CHUK is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RELA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBIA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "ACE2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "RENBP",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "RENBP is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "IL23A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL23A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR2",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR2 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IRF4",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF4 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "SULT1A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SULT1A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SULT1A2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SULT1A2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "NR1H4",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1H4 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "DEFA5",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEFA5 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "AGT",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL1B",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "METTL3",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "METTL3 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IRF4",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF4 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PWWP3A",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PWWP3A is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "VIP",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIP is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYC",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLA2G4A",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G4A is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLB1",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLB1 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLA2G1B",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G1B is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "YWHAZ",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YWHAZ is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "DEFB103A",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEFB103A is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "DEFB103B",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEFB103B is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGFR",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCL8",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GH1",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFKB1",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS1",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS1 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHAT",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHAT is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "RENBP",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RENBP is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "SUGP1",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUGP1 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDH17",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH17 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TLR2",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR2 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TMPRSS4",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS4 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "SULT1A1",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SULT1A1 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "FOXP3",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "RBP4",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBP4 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "SULT1A2",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SULT1A2 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTGS2",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MT-CO2",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO2 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERBB4",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB4 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "FFAR4",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FFAR4 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "EEF1A2",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EEF1A2 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NR0B2",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR0B2 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC5AC",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5AC is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL10",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL23A",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL23A is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "STAT3",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD79A",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "LYZ",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYZ is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ESR1",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CTSD",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSD is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ERBB2",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCR2",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR2 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SELE",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELE is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "IRGM",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRGM is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTPN11",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "INPP5D",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INPP5D is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNC",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNC is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "DEFB4A",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEFB4A is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TLR4",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "WNK1",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNK1 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "GORASP1",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GORASP1 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "FGF19",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF19 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPTBN1",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTBN1 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "NFKBIA",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIA is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "FSCN1",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSCN1 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "HSPA4",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPA4 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACE2",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE2 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "NR2C2",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR2C2 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHUK",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHUK is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "RELA",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELA is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAP3K7",
+      "target": "Crohn's colitis (CROHNS_COLITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K7 is associated with Crohn's colitis (CROHNS_COLITIS). Open Targets association score 0.00"
+    }
+  ]
+}

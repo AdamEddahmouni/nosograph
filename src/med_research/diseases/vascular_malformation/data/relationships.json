@@ -1,0 +1,562 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL413",
+      "target": "FKBP1A",
+      "type": "TARGETS",
+      "description": "SIROLIMUS targets FKBP1A."
+    },
+    {
+      "source": "CHEMBL468",
+      "target": "DDB1",
+      "type": "TARGETS",
+      "description": "THALIDOMIDE targets DDB1."
+    },
+    {
+      "source": "CHEMBL468",
+      "target": "CRBN",
+      "type": "TARGETS",
+      "description": "THALIDOMIDE targets CRBN."
+    },
+    {
+      "source": "CHEMBL468",
+      "target": "CUL4A",
+      "type": "TARGETS",
+      "description": "THALIDOMIDE targets CUL4A."
+    },
+    {
+      "source": "CHEMBL468",
+      "target": "RBX1",
+      "type": "TARGETS",
+      "description": "THALIDOMIDE targets RBX1."
+    },
+    {
+      "source": "BAX",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BAX is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "FGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TNFSF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SLC2A1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RASA1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASA1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3R1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "SMAD4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TNFSF10",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF10 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "EPAS1",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "EPAS1 is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "HIF1A",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "HIF1A is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "TEK",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TEK is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.50"
+    },
+    {
+      "source": "BRAF",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.46"
+    },
+    {
+      "source": "RASA1",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASA1 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.43"
+    },
+    {
+      "source": "KRAS",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.41"
+    },
+    {
+      "source": "PIK3R1",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R1 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.41"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.39"
+    },
+    {
+      "source": "MAP2K1",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K1 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.37"
+    },
+    {
+      "source": "IDH2",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH2 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.33"
+    },
+    {
+      "source": "HRAS",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.27"
+    },
+    {
+      "source": "CRBN",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRBN is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.26"
+    },
+    {
+      "source": "DDB1",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDB1 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.26"
+    },
+    {
+      "source": "CUL4A",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUL4A is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.26"
+    },
+    {
+      "source": "RBX1",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBX1 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.26"
+    },
+    {
+      "source": "FKBP1A",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP1A is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.07"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "FGF2",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF2 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "NR3C1",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "AGGF1",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGGF1 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "WT1",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.02"
+    },
+    {
+      "source": "MTOR",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.02"
+    },
+    {
+      "source": "VEGFA",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLC2A1",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A1 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.02"
+    },
+    {
+      "source": "AKT1",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.02"
+    },
+    {
+      "source": "SRC",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRC is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.02"
+    },
+    {
+      "source": "KIT",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.02"
+    },
+    {
+      "source": "GSR",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSR is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.02"
+    },
+    {
+      "source": "BAX",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAX is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.02"
+    },
+    {
+      "source": "ACVRL1",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACVRL1 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.02"
+    },
+    {
+      "source": "EPAS1",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPAS1 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.02"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.02"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.02"
+    },
+    {
+      "source": "FLT4",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PROM1",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROM1 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "DDX24",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDX24 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "ENG",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENG is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMAD4",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD4 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCM2",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCM2 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "NRP2",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRP2 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PGR",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "LZTR1",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LZTR1 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "GHR",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHR is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL2",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRIT1",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRIT1 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTEN",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCL2",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL2 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "VWF",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "ANGPT2",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPT2 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PCNA",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNA is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "KDR",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "RBP1",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBP1 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNFSF10",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF10 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRABP1",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRABP1 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "GJA4",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA4 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "NR4A1",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR4A1 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "KLF4",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF4 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "ELMO2",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELMO2 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "HIF1A",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF1A is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PROX1",
+      "target": "vascular malformation (VASCULAR_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROX1 is associated with vascular malformation (VASCULAR_MALFORMATION). Open Targets association score 0.01"
+    }
+  ]
+}

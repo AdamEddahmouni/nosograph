@@ -1,0 +1,448 @@
+{
+  "relationships": [
+    {
+      "source": "CDKN1C",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1C is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "FGF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IL4R",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4R is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "CHUK",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CHUK is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PIK3R1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "PTGDS",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGDS is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGM2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "SRCAP",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRCAP is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.80"
+    },
+    {
+      "source": "NCDN",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCDN is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.12"
+    },
+    {
+      "source": "FGFR2",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ROR2",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROR2 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGF10",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF10 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TGFB2",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB2 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RPGRIP1L",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPGRIP1L is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CPLANE1",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPLANE1 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRICKLE1",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRICKLE1 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SMG9",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMG9 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TBC1D32",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D32 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FOXH1",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXH1 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHTOP",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHTOP is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PSPH",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSPH is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SFN",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFN is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FOXC1",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHUK",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHUK is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MKS1",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKS1 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRRX1",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRRX1 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFT27",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT27 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "EYA1",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EYA1 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GLI3",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "IGF1R",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1R is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "PCK1",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCK1 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPARA",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARA is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "GH1",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CIDEA",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIDEA is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CIDEC",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIDEC is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKAA1",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA1 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKAA2",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA2 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "DNAH8",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH8 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "GGH",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGH is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "HPGDS",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPGDS is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGM2",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM2 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTGDS",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGDS is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3R1",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R1 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGF2",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN1C",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1C is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLAG1",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAG1 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "NTRK2",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK2 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "INHBE",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INHBE is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "APOA1",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "APOA4",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA4 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "KIT",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPT",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "GOT1",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOT1 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC17A5",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A5 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "KMT2D",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CREBBP",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ANKRD11",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKRD11 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "BRF1",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRF1 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "JAK2",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "DSP",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSP is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "MRC1",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRC1 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "EDARADD",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDARADD is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL4R",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4R is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "EP300",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EP300 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "PCNT",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNT is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDH1",
+      "target": "Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with Floating-Harbor syndrome (FLOATING_HARBOR_SYNDROME). Open Targets association score 0.00"
+    }
+  ]
+}

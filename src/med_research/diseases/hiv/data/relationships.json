@@ -193,6 +193,12 @@
       "description": "TAF2 is a component of the Coagulation Cascade pathway."
     },
     {
+      "source": "TAF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TAF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
       "source": "CD4",
       "target": "tcr-signaling",
       "type": "PARTICIPATES_IN",
@@ -259,58 +265,22 @@
       "description": "CYP3A43 is associated with HIV infectious disease (HIV). Open Targets association score 0.61"
     },
     {
-      "source": "CYP3A7",
-      "target": "HIV infectious disease (HIV)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CYP3A7 is associated with HIV infectious disease (HIV). Open Targets association score 0.61"
-    },
-    {
       "source": "CYP3A5",
       "target": "HIV infectious disease (HIV)",
       "type": "ASSOCIATED_WITH",
       "description": "CYP3A5 is associated with HIV infectious disease (HIV). Open Targets association score 0.61"
     },
     {
-      "source": "GTF2F2",
+      "source": "CYP3A7",
       "target": "HIV infectious disease (HIV)",
       "type": "ASSOCIATED_WITH",
-      "description": "GTF2F2 is associated with HIV infectious disease (HIV). Open Targets association score 0.60"
+      "description": "CYP3A7 is associated with HIV infectious disease (HIV). Open Targets association score 0.61"
     },
     {
-      "source": "POLR2D",
+      "source": "POLR2J",
       "target": "HIV infectious disease (HIV)",
       "type": "ASSOCIATED_WITH",
-      "description": "POLR2D is associated with HIV infectious disease (HIV). Open Targets association score 0.60"
-    },
-    {
-      "source": "POLR2B",
-      "target": "HIV infectious disease (HIV)",
-      "type": "ASSOCIATED_WITH",
-      "description": "POLR2B is associated with HIV infectious disease (HIV). Open Targets association score 0.60"
-    },
-    {
-      "source": "POLR2C",
-      "target": "HIV infectious disease (HIV)",
-      "type": "ASSOCIATED_WITH",
-      "description": "POLR2C is associated with HIV infectious disease (HIV). Open Targets association score 0.60"
-    },
-    {
-      "source": "POLR2E",
-      "target": "HIV infectious disease (HIV)",
-      "type": "ASSOCIATED_WITH",
-      "description": "POLR2E is associated with HIV infectious disease (HIV). Open Targets association score 0.60"
-    },
-    {
-      "source": "POLR2L",
-      "target": "HIV infectious disease (HIV)",
-      "type": "ASSOCIATED_WITH",
-      "description": "POLR2L is associated with HIV infectious disease (HIV). Open Targets association score 0.60"
-    },
-    {
-      "source": "POLR2A",
-      "target": "HIV infectious disease (HIV)",
-      "type": "ASSOCIATED_WITH",
-      "description": "POLR2A is associated with HIV infectious disease (HIV). Open Targets association score 0.60"
+      "description": "POLR2J is associated with HIV infectious disease (HIV). Open Targets association score 0.60"
     },
     {
       "source": "POLR2K",
@@ -319,28 +289,34 @@
       "description": "POLR2K is associated with HIV infectious disease (HIV). Open Targets association score 0.60"
     },
     {
-      "source": "GTF2F1",
+      "source": "GTF2F2",
       "target": "HIV infectious disease (HIV)",
       "type": "ASSOCIATED_WITH",
-      "description": "GTF2F1 is associated with HIV infectious disease (HIV). Open Targets association score 0.60"
+      "description": "GTF2F2 is associated with HIV infectious disease (HIV). Open Targets association score 0.60"
     },
     {
-      "source": "POLR2G",
+      "source": "POLR2C",
       "target": "HIV infectious disease (HIV)",
       "type": "ASSOCIATED_WITH",
-      "description": "POLR2G is associated with HIV infectious disease (HIV). Open Targets association score 0.60"
+      "description": "POLR2C is associated with HIV infectious disease (HIV). Open Targets association score 0.60"
+    },
+    {
+      "source": "POLR2D",
+      "target": "HIV infectious disease (HIV)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLR2D is associated with HIV infectious disease (HIV). Open Targets association score 0.60"
+    },
+    {
+      "source": "POLR2L",
+      "target": "HIV infectious disease (HIV)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLR2L is associated with HIV infectious disease (HIV). Open Targets association score 0.60"
     },
     {
       "source": "POLR2H",
       "target": "HIV infectious disease (HIV)",
       "type": "ASSOCIATED_WITH",
       "description": "POLR2H is associated with HIV infectious disease (HIV). Open Targets association score 0.60"
-    },
-    {
-      "source": "POLR2J",
-      "target": "HIV infectious disease (HIV)",
-      "type": "ASSOCIATED_WITH",
-      "description": "POLR2J is associated with HIV infectious disease (HIV). Open Targets association score 0.60"
     },
     {
       "source": "POLR2F",
@@ -353,6 +329,36 @@
       "target": "HIV infectious disease (HIV)",
       "type": "ASSOCIATED_WITH",
       "description": "POLR2I is associated with HIV infectious disease (HIV). Open Targets association score 0.60"
+    },
+    {
+      "source": "POLR2E",
+      "target": "HIV infectious disease (HIV)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLR2E is associated with HIV infectious disease (HIV). Open Targets association score 0.60"
+    },
+    {
+      "source": "GTF2F1",
+      "target": "HIV infectious disease (HIV)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GTF2F1 is associated with HIV infectious disease (HIV). Open Targets association score 0.60"
+    },
+    {
+      "source": "POLR2B",
+      "target": "HIV infectious disease (HIV)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLR2B is associated with HIV infectious disease (HIV). Open Targets association score 0.60"
+    },
+    {
+      "source": "POLR2G",
+      "target": "HIV infectious disease (HIV)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLR2G is associated with HIV infectious disease (HIV). Open Targets association score 0.60"
+    },
+    {
+      "source": "POLR2A",
+      "target": "HIV infectious disease (HIV)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLR2A is associated with HIV infectious disease (HIV). Open Targets association score 0.60"
     },
     {
       "source": "GTF2H1",
@@ -433,16 +439,22 @@
       "description": "ERCC2 is associated with HIV infectious disease (HIV). Open Targets association score 0.59"
     },
     {
+      "source": "NCBP2",
+      "target": "HIV infectious disease (HIV)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCBP2 is associated with HIV infectious disease (HIV). Open Targets association score 0.59"
+    },
+    {
       "source": "NCBP1",
       "target": "HIV infectious disease (HIV)",
       "type": "ASSOCIATED_WITH",
       "description": "NCBP1 is associated with HIV infectious disease (HIV). Open Targets association score 0.59"
     },
     {
-      "source": "NCBP2",
+      "source": "CCNH",
       "target": "HIV infectious disease (HIV)",
       "type": "ASSOCIATED_WITH",
-      "description": "NCBP2 is associated with HIV infectious disease (HIV). Open Targets association score 0.59"
+      "description": "CCNH is associated with HIV infectious disease (HIV). Open Targets association score 0.59"
     },
     {
       "source": "SUPT4H1",
@@ -457,18 +469,6 @@
       "description": "CDK7 is associated with HIV infectious disease (HIV). Open Targets association score 0.59"
     },
     {
-      "source": "CCNH",
-      "target": "HIV infectious disease (HIV)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CCNH is associated with HIV infectious disease (HIV). Open Targets association score 0.59"
-    },
-    {
-      "source": "NELFB",
-      "target": "HIV infectious disease (HIV)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NELFB is associated with HIV infectious disease (HIV). Open Targets association score 0.59"
-    },
-    {
       "source": "NELFE",
       "target": "HIV infectious disease (HIV)",
       "type": "ASSOCIATED_WITH",
@@ -479,6 +479,12 @@
       "target": "HIV infectious disease (HIV)",
       "type": "ASSOCIATED_WITH",
       "description": "NELFA is associated with HIV infectious disease (HIV). Open Targets association score 0.59"
+    },
+    {
+      "source": "NELFB",
+      "target": "HIV infectious disease (HIV)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NELFB is associated with HIV infectious disease (HIV). Open Targets association score 0.59"
     },
     {
       "source": "ELOB",
@@ -505,16 +511,22 @@
       "description": "SSRP1 is associated with HIV infectious disease (HIV). Open Targets association score 0.58"
     },
     {
+      "source": "ELOA",
+      "target": "HIV infectious disease (HIV)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELOA is associated with HIV infectious disease (HIV). Open Targets association score 0.58"
+    },
+    {
       "source": "ELL",
       "target": "HIV infectious disease (HIV)",
       "type": "ASSOCIATED_WITH",
       "description": "ELL is associated with HIV infectious disease (HIV). Open Targets association score 0.58"
     },
     {
-      "source": "SUPT16H",
+      "source": "TCEA1",
       "target": "HIV infectious disease (HIV)",
       "type": "ASSOCIATED_WITH",
-      "description": "SUPT16H is associated with HIV infectious disease (HIV). Open Targets association score 0.58"
+      "description": "TCEA1 is associated with HIV infectious disease (HIV). Open Targets association score 0.58"
     },
     {
       "source": "ELOA2",
@@ -523,16 +535,10 @@
       "description": "ELOA2 is associated with HIV infectious disease (HIV). Open Targets association score 0.58"
     },
     {
-      "source": "ELOA",
+      "source": "SUPT16H",
       "target": "HIV infectious disease (HIV)",
       "type": "ASSOCIATED_WITH",
-      "description": "ELOA is associated with HIV infectious disease (HIV). Open Targets association score 0.58"
-    },
-    {
-      "source": "TCEA1",
-      "target": "HIV infectious disease (HIV)",
-      "type": "ASSOCIATED_WITH",
-      "description": "TCEA1 is associated with HIV infectious disease (HIV). Open Targets association score 0.58"
+      "description": "SUPT16H is associated with HIV infectious disease (HIV). Open Targets association score 0.58"
     },
     {
       "source": "BANF1",
@@ -547,16 +553,16 @@
       "description": "HMGA1 is associated with HIV infectious disease (HIV). Open Targets association score 0.58"
     },
     {
-      "source": "GTF2E1",
-      "target": "HIV infectious disease (HIV)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GTF2E1 is associated with HIV infectious disease (HIV). Open Targets association score 0.58"
-    },
-    {
       "source": "GTF2E2",
       "target": "HIV infectious disease (HIV)",
       "type": "ASSOCIATED_WITH",
       "description": "GTF2E2 is associated with HIV infectious disease (HIV). Open Targets association score 0.58"
+    },
+    {
+      "source": "GTF2E1",
+      "target": "HIV infectious disease (HIV)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GTF2E1 is associated with HIV infectious disease (HIV). Open Targets association score 0.58"
     },
     {
       "source": "TAF5",
@@ -571,16 +577,22 @@
       "description": "TBP is associated with HIV infectious disease (HIV). Open Targets association score 0.58"
     },
     {
+      "source": "TAF4",
+      "target": "HIV infectious disease (HIV)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAF4 is associated with HIV infectious disease (HIV). Open Targets association score 0.58"
+    },
+    {
       "source": "TAF2",
       "target": "HIV infectious disease (HIV)",
       "type": "ASSOCIATED_WITH",
       "description": "TAF2 is associated with HIV infectious disease (HIV). Open Targets association score 0.58"
     },
     {
-      "source": "TAF4",
+      "source": "TAF7",
       "target": "HIV infectious disease (HIV)",
       "type": "ASSOCIATED_WITH",
-      "description": "TAF4 is associated with HIV infectious disease (HIV). Open Targets association score 0.58"
+      "description": "TAF7 is associated with HIV infectious disease (HIV). Open Targets association score 0.58"
     },
     {
       "source": "TAF10",

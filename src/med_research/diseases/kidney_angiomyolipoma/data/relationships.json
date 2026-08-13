@@ -1,0 +1,496 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL413",
+      "target": "FKBP1A",
+      "type": "TARGETS",
+      "description": "SIROLIMUS targets FKBP1A."
+    },
+    {
+      "source": "RUNX2",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "RUNX2 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "F2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "KLF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "KLF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CHEK1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "CHEK1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "STAT5B",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT5B is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK13",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK13 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RASA1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASA1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "REN",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "REN is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTGER3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGER3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TPO",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TPO is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "FKBP1A",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP1A is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "TSC1",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC1 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TSC2",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TP53",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MLANA",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLANA is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PMEL",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMEL is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GGPS1",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGPS1 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MTOR",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLC12A3",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A3 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TESC",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TESC is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PGR",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPI1",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPI1 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ESR1",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NR4A1",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR4A1 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNG",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MKI67",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TFE3",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFE3 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "F2",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F2 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOAT1",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOAT1 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGFR",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "OBSCN",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OBSCN is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOX4",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOX4 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RUNX2",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX2 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KLF2",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF2 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KIT",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERBB2",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TFEB",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFEB is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EREG",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EREG is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MITF",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MITF is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIEZO1",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIEZO1 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP9",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RGS6",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RGS6 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RASA1",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASA1 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRH2",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH2 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TMEM37",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM37 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "VEGFA",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "VEGFD",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFD is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MVK",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MVK is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTGER3",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGER3 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHEK1",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHEK1 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NTRK1",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TPO",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPO is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SMN1",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMN1 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "REN",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REN is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "LGALS3",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CTSK",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSK is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD8A",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NCF1",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCF1 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "STAT5B",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT5B is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PROX1",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROX1 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "YY1AP1",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YY1AP1 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GPNMB",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPNMB is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PROS1",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROS1 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPK13",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK13 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC25A37",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A37 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PCSK1N",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK1N is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACTA2",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTA2 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "YAP1",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YAP1 is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "UBD",
+      "target": "kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBD is associated with kidney angiomyolipoma (KIDNEY_ANGIOMYOLIPOMA). Open Targets association score 0.00"
+    }
+  ]
+}

@@ -1,0 +1,592 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1200675",
+      "target": "ESR1",
+      "type": "TARGETS",
+      "description": "TOREMIFENE CITRATE targets ESR1."
+    },
+    {
+      "source": "CHEMBL1234354",
+      "target": "PIK3CD",
+      "type": "TARGETS",
+      "description": "PF-04691502 targets PIK3CD."
+    },
+    {
+      "source": "CHEMBL2007641",
+      "target": "ERBB2",
+      "type": "TARGETS",
+      "description": "PERTUZUMAB targets ERBB2."
+    },
+    {
+      "source": "CHEMBL2325741",
+      "target": "AKT1",
+      "type": "TARGETS",
+      "description": "CAPIVASERTIB targets AKT1."
+    },
+    {
+      "source": "CHEMBL3545110",
+      "target": "CDK4",
+      "type": "TARGETS",
+      "description": "RIBOCICLIB targets CDK4."
+    },
+    {
+      "source": "CHEMBL3894860",
+      "target": "CDK4",
+      "type": "TARGETS",
+      "description": "TRILACICLIB targets CDK4."
+    },
+    {
+      "source": "CHEMBL554",
+      "target": "ERBB2",
+      "type": "TARGETS",
+      "description": "LAPATINIB targets ERBB2."
+    },
+    {
+      "source": "CHEMBL1201139",
+      "target": "PGR",
+      "type": "TARGETS",
+      "description": "MEGESTROL ACETATE targets PGR."
+    },
+    {
+      "source": "CHEMBL1234354",
+      "target": "PIK3CG",
+      "type": "TARGETS",
+      "description": "PF-04691502 targets PIK3CG."
+    },
+    {
+      "source": "CHEMBL1276308",
+      "target": "PGR",
+      "type": "TARGETS",
+      "description": "MIFEPRISTONE targets PGR."
+    },
+    {
+      "source": "CHEMBL180022",
+      "target": "ERBB2",
+      "type": "TARGETS",
+      "description": "NERATINIB targets ERBB2."
+    },
+    {
+      "source": "CHEMBL2007641",
+      "target": "ERBB2",
+      "type": "TARGETS",
+      "description": "PERTUZUMAB targets ERBB2."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDK1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDK4",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK4 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCL5",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL5 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCR3",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR3 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "FOXF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FOXF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "RNF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "RNF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "NFATC4",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC4 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "HIF1A",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "HIF1A is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFC",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFC is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "WNT2B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT2B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP19A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP19A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.02"
+    },
+    {
+      "source": "CYP19A1",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP19A1 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.01"
+    },
+    {
+      "source": "ESR1",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDK4",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK4 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.01"
+    },
+    {
+      "source": "GLS",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLS is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTOR",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.01"
+    },
+    {
+      "source": "ELF5",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELF5 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.01"
+    },
+    {
+      "source": "PGR",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.01"
+    },
+    {
+      "source": "FOXF2",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXF2 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCL5",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL5 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.01"
+    },
+    {
+      "source": "RERG",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RERG is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKAA2",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA2 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.01"
+    },
+    {
+      "source": "DBN1",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DBN1 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.01"
+    },
+    {
+      "source": "JUN",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JUN is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYB",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYB is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.01"
+    },
+    {
+      "source": "SIRT7",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT7 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.01"
+    },
+    {
+      "source": "FAM234B",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM234B is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKAA1",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA1 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.01"
+    },
+    {
+      "source": "MKI67",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFATC4",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFATC4 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.01"
+    },
+    {
+      "source": "GRK2",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRK2 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.01"
+    },
+    {
+      "source": "HIF1A",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF1A is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.01"
+    },
+    {
+      "source": "ELAVL1",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELAVL1 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.01"
+    },
+    {
+      "source": "NR4A1",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR4A1 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "ERBB2",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "ENTPD1",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENTPD1 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL6",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "KDM1A",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM1A is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "GPER1",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPER1 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDK1",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK1 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "POLD1",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD1 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "RNF2",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF2 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "BRCA1",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "KDM5B",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM5B is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "N6AMT1",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "N6AMT1 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIEZO1",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIEZO1 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "EREG",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EREG is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "GSDMB",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCND1",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD14",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD14 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "TMEM37",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM37 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "VEGFC",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFC is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYC",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRH2",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH2 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMP9",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "CPT1A",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPT1A is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCR3",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR3 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "CENPU",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CENPU is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "FZD1",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FZD1 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "BRCA2",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "WNT2B",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT2B is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "EIF6",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF6 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    },
+    {
+      "source": "AKT1",
+      "target": "breast tumor luminal (BREAST_TUMOR_LUMINAL)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with breast tumor luminal (BREAST_TUMOR_LUMINAL). Open Targets association score 0.00"
+    }
+  ]
+}

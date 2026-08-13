@@ -1,0 +1,454 @@
+{
+  "relationships": [
+    {
+      "source": "CDK4",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK4 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDK6",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK6 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RNF213",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "RNF213 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BMPR1A",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMPR1A is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3R1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TNFRSF14",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF14 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "H3-3A",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3-3A is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TP53",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NOTCH2",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH2 is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2C",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TNFRSF14",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF14 is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FANCA",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRAF",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "NF1",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "CDK4",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK4 is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "PTEN",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "ATRX",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "CARD11",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FLCN",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLCN is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RBM10",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM10 is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ERBB2",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PRDM1",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM1 is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ARID1A",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CREBBP",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PIK3R1",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R1 is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "BMPR1A",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMPR1A is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CDK6",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK6 is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "HLA-A",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-A is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ATM",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PER1",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PER1 is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "EGFR",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PTPN13",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN13 is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NRAS",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MTOR",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TENT5C",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TENT5C is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ABL2",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABL2 is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MET",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SDHA",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDHA is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RB1",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SSX1",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSX1 is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KIAA1549",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIAA1549 is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "HSP90AA1",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSP90AA1 is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "HSP90AB1",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSP90AB1 is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "RNF213",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF213 is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "PROM1",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROM1 is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IDH1",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IDH2",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH2 is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ETFA",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETFA is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MKI67",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MUC1",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC1 is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MGMT",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MGMT is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GSDMB",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PMS2",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMS2 is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "H3-3B",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3-3B is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GFAP",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "POSTN",
+      "target": "Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POSTN is associated with Spinal Cord Astrocytoma (SPINAL_CORD_ASTROCYTOMA). Open Targets association score 0.00"
+    }
+  ]
+}

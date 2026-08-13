@@ -75,6 +75,7 @@ CAR_T_SCORES = {
         "IMPDH1": 4.0,
         "IMPDH2": 4.0,
         "KCNA1": 4.0,
+        "KCNN1": 4.0,
         "KLF2": 4.0,
         "LAMA2": 4.0,
         "LYST": 4.0,

@@ -1,0 +1,556 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN3B",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN3B."
+    },
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN2A",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN2A."
+    },
+    {
+      "source": "CHEMBL1699",
+      "target": "GRIN3B",
+      "type": "TARGETS",
+      "description": "MEMANTINE HYDROCHLORIDE targets GRIN3B."
+    },
+    {
+      "source": "CHEMBL1699",
+      "target": "GRIN2B",
+      "type": "TARGETS",
+      "description": "MEMANTINE HYDROCHLORIDE targets GRIN2B."
+    },
+    {
+      "source": "CHEMBL503",
+      "target": "HMGCR",
+      "type": "TARGETS",
+      "description": "LOVASTATIN targets HMGCR."
+    },
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN1",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN1."
+    },
+    {
+      "source": "CHEMBL1699",
+      "target": "GRIN2A",
+      "type": "TARGETS",
+      "description": "MEMANTINE HYDROCHLORIDE targets GRIN2A."
+    },
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN2B",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN2B."
+    },
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN2C",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN2C."
+    },
+    {
+      "source": "CHEMBL1699",
+      "target": "GRIN2C",
+      "type": "TARGETS",
+      "description": "MEMANTINE HYDROCHLORIDE targets GRIN2C."
+    },
+    {
+      "source": "CHEMBL1699",
+      "target": "GRIN1",
+      "type": "TARGETS",
+      "description": "MEMANTINE HYDROCHLORIDE targets GRIN1."
+    },
+    {
+      "source": "CHEMBL1699",
+      "target": "GRIN2D",
+      "type": "TARGETS",
+      "description": "MEMANTINE HYDROCHLORIDE targets GRIN2D."
+    },
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN3A",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN3A."
+    },
+    {
+      "source": "CHEMBL1699",
+      "target": "GRIN3A",
+      "type": "TARGETS",
+      "description": "MEMANTINE HYDROCHLORIDE targets GRIN3A."
+    },
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN2D",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN2D."
+    },
+    {
+      "source": "FGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TIMP1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GRIN1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN2A",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2A is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN2B",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2B is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN2C",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2C is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN2D",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2D is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN3A",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN3A is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN3B",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN3B is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "HNF1B",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1B is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HMGCR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HMGCR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "PIK3C3",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3C3 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "LTBP3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGM2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "LTBP3",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP3 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "GRIN2B",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2B is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.32"
+    },
+    {
+      "source": "GRIN3B",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN3B is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.32"
+    },
+    {
+      "source": "GRIN1",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN1 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.32"
+    },
+    {
+      "source": "GRIN2C",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2C is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.32"
+    },
+    {
+      "source": "GRIN2A",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2A is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.32"
+    },
+    {
+      "source": "GRIN3A",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN3A is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.32"
+    },
+    {
+      "source": "GRIN2D",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2D is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.32"
+    },
+    {
+      "source": "FIBP",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FIBP is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.26"
+    },
+    {
+      "source": "LTBP3",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTBP3 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.18"
+    },
+    {
+      "source": "HMGCR",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCR is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.07"
+    },
+    {
+      "source": "CDH8",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH8 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "HNF1B",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1B is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "BDNF",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BDNF is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "OMG",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OMG is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "KCNN2",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNN2 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NF1",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPR88",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR88 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "KCNJ2",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNJ2 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PURA",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PURA is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MOG",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MOG is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MEIS2",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEIS2 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPT",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPT is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SIRT1",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT1 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "FOXP2",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP2 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "DYRK1A",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYRK1A is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3C3",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3C3 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPAS3",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPAS3 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCORL1",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCORL1 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "POMC",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPP2R5E",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP2R5E is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADRA2C",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2C is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "LMOD1",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMOD1 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TIMP1",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP1 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADRA2A",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2A is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "DBH",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DBH is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "YWHAE",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YWHAE is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP9",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPAST",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPAST is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TUBGCP5",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBGCP5 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGF2",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF2 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GH1",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTPN11",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "RYR1",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYR1 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TBX1",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX1 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "FMR1",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMR1 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GGH",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGH is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "HAAO",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAAO is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "AADAT",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AADAT is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGM2",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM2 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SCO2",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCO2 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GRN",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRN is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "LRFN2",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRFN2 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRRT2",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRRT2 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC6A1",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A1 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "RNF135",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF135 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MRPL49",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRPL49 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "EZH2",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EZH2 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SYN1",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYN1 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "DLX4",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLX4 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGFBP2",
+      "target": "learning disability (LEARNING_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGFBP2 is associated with learning disability (LEARNING_DISABILITY). Open Targets association score 0.00"
+    }
+  ]
+}

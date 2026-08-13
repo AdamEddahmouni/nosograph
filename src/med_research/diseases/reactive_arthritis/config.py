@@ -134,6 +134,7 @@ CAR_T_SCORES = {
         "TNFRSF1A": 4.0,
         "TP53": 4.0,
         "TREX1": 4.0,
+        "USO1": 4.0,
         "VDAC1": 4.0,
     },
 }

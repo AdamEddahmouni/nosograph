@@ -1,0 +1,376 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL3301587",
+      "target": "CD274",
+      "type": "TARGETS",
+      "description": "DURVALUMAB targets CD274."
+    },
+    {
+      "source": "CHEMBL535",
+      "target": "RET",
+      "type": "TARGETS",
+      "description": "SUNITINIB targets RET."
+    },
+    {
+      "source": "CHEMBL1336",
+      "target": "RET",
+      "type": "TARGETS",
+      "description": "SORAFENIB targets RET."
+    },
+    {
+      "source": "CHEMBL1946170",
+      "target": "RET",
+      "type": "TARGETS",
+      "description": "REGORAFENIB targets RET."
+    },
+    {
+      "source": "BAX",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BAX is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "IGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ADAMDEC1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMDEC1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP12",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP12 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PBRM1",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBRM1 is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CSF3R",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3R is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ATM",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SRC",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRC is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ALK",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RAC1",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAC1 is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "HGF",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "EML4",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EML4 is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "BRIP1",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRIP1 is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ERCC2",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC2 is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FOXP1",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP1 is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PTCH1",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PTPRD",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRD is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "CSF3",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSDMB",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FXN",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FXN is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FAS",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KIF5B",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF5B is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGF2",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2 is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "RET",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FANCA",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGF1",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NME1",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NME1 is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MKI67",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "BAX",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAX is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRF1",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRF1 is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "INS",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPP1",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPP1 is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NF1",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FRK",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FRK is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "LYZ",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYZ is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MET",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ABCB1",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB1 is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMP12",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP12 is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "DICER1",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DICER1 is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADAMDEC1",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMDEC1 is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PGP",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGP is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP53",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD274",
+      "target": "lung sarcoma (LUNG_SARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with lung sarcoma (LUNG_SARCOMA). Open Targets association score 0.00"
+    }
+  ]
+}

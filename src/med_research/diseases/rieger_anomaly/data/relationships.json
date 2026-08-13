@@ -1,0 +1,436 @@
+{
+  "relationships": [
+    {
+      "source": "FGF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FGF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FOXF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FOXF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL4A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "BMP4",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP4 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "JAG1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "JAG1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "LTBP2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBI",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBI is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBI",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBI is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "LTBP2",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP2 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LMX1B",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "LMX1B is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "CYP1B1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP1B1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "FOXC1",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.77"
+    },
+    {
+      "source": "PITX2",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX2 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.65"
+    },
+    {
+      "source": "PAX6",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX6 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.10"
+    },
+    {
+      "source": "FOXE3",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXE3 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.09"
+    },
+    {
+      "source": "CRYGD",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYGD is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.08"
+    },
+    {
+      "source": "CRYAA",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYAA is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.07"
+    },
+    {
+      "source": "GJA8",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA8 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.07"
+    },
+    {
+      "source": "TYRP1",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYRP1 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.07"
+    },
+    {
+      "source": "TRPM3",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPM3 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.07"
+    },
+    {
+      "source": "BMP4",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP4 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.07"
+    },
+    {
+      "source": "GPNMB",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPNMB is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.07"
+    },
+    {
+      "source": "LIM2",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIM2 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.06"
+    },
+    {
+      "source": "MITF",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MITF is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CRYBB2",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYBB2 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.06"
+    },
+    {
+      "source": "ZEB1",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CRYBA2",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYBA2 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.06"
+    },
+    {
+      "source": "GJE1",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJE1 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.06"
+    },
+    {
+      "source": "HSF4",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSF4 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.06"
+    },
+    {
+      "source": "FOXC2",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC2 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.06"
+    },
+    {
+      "source": "MIP",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIP is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.06"
+    },
+    {
+      "source": "NRG1",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRG1 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.06"
+    },
+    {
+      "source": "COL4A1",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A1 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.06"
+    },
+    {
+      "source": "LMX1B",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMX1B is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.06"
+    },
+    {
+      "source": "TMEM98",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM98 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CRYGC",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYGC is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.06"
+    },
+    {
+      "source": "JAG1",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAG1 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGF9",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF9 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CUBN",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUBN is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.05"
+    },
+    {
+      "source": "TGFBI",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBI is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.05"
+    },
+    {
+      "source": "DSTN",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSTN is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SIPA1L3",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIPA1L3 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.05"
+    },
+    {
+      "source": "UBIAD1",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBIAD1 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.05"
+    },
+    {
+      "source": "FLNA",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLNA is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SFRP1",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFRP1 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LTBP2",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTBP2 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.05"
+    },
+    {
+      "source": "FREM2",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FREM2 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.05"
+    },
+    {
+      "source": "TMEM165",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM165 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ITPR1",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITPR1 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ABHD17B",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABHD17B is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NCOA6",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOA6 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.05"
+    },
+    {
+      "source": "JMJD1C",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JMJD1C is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CHST5",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHST5 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CYP1B1",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP1B1 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LGR4",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGR4 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZNF597",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF597 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.05"
+    },
+    {
+      "source": "TSSK4",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSSK4 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZNF329",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF329 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.05"
+    },
+    {
+      "source": "DIAPH3",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DIAPH3 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGF7",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF7 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTPN18",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN18 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.05"
+    },
+    {
+      "source": "UBE3B",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBE3B is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CHST6",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHST6 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CRYAB",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYAB is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.04"
+    },
+    {
+      "source": "KRT12",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT12 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.04"
+    },
+    {
+      "source": "BCAR3",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCAR3 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXF2",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXF2 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PODN",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PODN is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ELAVL2",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELAVL2 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.04"
+    },
+    {
+      "source": "USP50",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP50 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PEX6",
+      "target": "Rieger anomaly (RIEGER_ANOMALY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PEX6 is associated with Rieger anomaly (RIEGER_ANOMALY). Open Targets association score 0.04"
+    }
+  ]
+}

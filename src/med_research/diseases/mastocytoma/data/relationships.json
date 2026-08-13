@@ -1,0 +1,550 @@
+{
+  "relationships": [
+    {
+      "source": "CASP6",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP6 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CASP9",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP9 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "WEE1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "WEE1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ALOX5",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ALOX5 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TFRC",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFRC is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGAL",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAL is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT5A",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT5A is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT5B",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT5B is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HDC",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "HDC is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "TPH1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "TPH1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD80",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD80 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "ITGAL",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAL is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGER4",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGER4 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGIR",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGIR is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "PTPN11",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TGFB1",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "VEGFA",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CMA1",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMA1 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "UNC13B",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UNC13B is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD80",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD80 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "NGF",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NGF is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "RPL17",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL3",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL3 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TPH1",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPH1 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "HMOX1",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMOX1 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "JAK2",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "STAT5B",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT5B is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "STAT5A",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT5A is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "LRRC23",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRC23 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL10",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD8A",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "HDC",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDC is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTGIR",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGIR is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD274",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNF",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PEPD",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PEPD is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CASP6",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP6 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD63",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD63 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL2",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADCY1",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADCY1 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HCAR3",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HCAR3 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GTPBP4",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GTPBP4 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TFRC",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFRC is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DDX53",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDX53 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSF2",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "WWOX",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WWOX is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLA2G4A",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G4A is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALOX5",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALOX5 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "LYZ",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYZ is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FN1",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FN1 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGFR1",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "WEE1",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WEE1 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ICAM1",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CASP9",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP9 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RLN2",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RLN2 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PMEL",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMEL is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AHCY",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHCY is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNCA",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPATA2",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDCD1",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IDO1",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDO1 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD4",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERVW-1",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERVW-1 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KDR",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLA2G1B",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G1B is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ITGAL",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAL is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MS4A2",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MS4A2 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADORA3",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADORA3 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTGER4",
+      "target": "mastocytoma (MASTOCYTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGER4 is associated with mastocytoma (MASTOCYTOMA). Open Targets association score 0.01"
+    }
+  ]
+}

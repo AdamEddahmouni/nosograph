@@ -1,0 +1,502 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1642",
+      "target": "BCR",
+      "type": "TARGETS",
+      "description": "IMATINIB MESYLATE targets BCR."
+    },
+    {
+      "source": "CHEMBL1642",
+      "target": "ABL1",
+      "type": "TARGETS",
+      "description": "IMATINIB MESYLATE targets ABL1."
+    },
+    {
+      "source": "CHEMBL1642",
+      "target": "PDGFRB",
+      "type": "TARGETS",
+      "description": "IMATINIB MESYLATE targets PDGFRB."
+    },
+    {
+      "source": "CHEMBL941",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "IMATINIB targets KIT."
+    },
+    {
+      "source": "CHEMBL1201129",
+      "target": "DNMT3A",
+      "type": "TARGETS",
+      "description": "DECITABINE targets DNMT3A."
+    },
+    {
+      "source": "CHEMBL1201567",
+      "target": "CSF3R",
+      "type": "TARGETS",
+      "description": "FILGRASTIM targets CSF3R."
+    },
+    {
+      "source": "CCND2",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND2 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CXCR4",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR4 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "SRSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SRSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "JAK1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT5B",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT5B is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "IKBKB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "IKBKB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MYD88",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MYD88 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "ITPKB",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITPKB is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.46"
+    },
+    {
+      "source": "TCF3",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF3 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.38"
+    },
+    {
+      "source": "JAK2",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.37"
+    },
+    {
+      "source": "ASXL1",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.37"
+    },
+    {
+      "source": "SRSF2",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRSF2 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.37"
+    },
+    {
+      "source": "BCL6",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL6 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.37"
+    },
+    {
+      "source": "NF1",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.34"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.34"
+    },
+    {
+      "source": "SETBP1",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETBP1 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.28"
+    },
+    {
+      "source": "TET2",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.28"
+    },
+    {
+      "source": "CALR",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALR is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP53",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.28"
+    },
+    {
+      "source": "ABL1",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABL1 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.28"
+    },
+    {
+      "source": "ETV6",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV6 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.28"
+    },
+    {
+      "source": "GNAS",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAS is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.28"
+    },
+    {
+      "source": "JAK1",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK1 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.28"
+    },
+    {
+      "source": "SF3B1",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SF3B1 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.28"
+    },
+    {
+      "source": "EZH2",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EZH2 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.28"
+    },
+    {
+      "source": "MPL",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPL is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.28"
+    },
+    {
+      "source": "STAT5B",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT5B is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.28"
+    },
+    {
+      "source": "DNMT3A",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT3A is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.28"
+    },
+    {
+      "source": "U2AF1",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "U2AF1 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.28"
+    },
+    {
+      "source": "GATA2",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA2 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.28"
+    },
+    {
+      "source": "MALT1",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MALT1 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTEN",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.28"
+    },
+    {
+      "source": "CCND2",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND2 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.28"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.27"
+    },
+    {
+      "source": "CREBBP",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.19"
+    },
+    {
+      "source": "BCR",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCR is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.19"
+    },
+    {
+      "source": "KIT",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.19"
+    },
+    {
+      "source": "PTPN11",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.18"
+    },
+    {
+      "source": "MED12",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MED12 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.18"
+    },
+    {
+      "source": "STAG2",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAG2 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.18"
+    },
+    {
+      "source": "IDH2",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH2 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.18"
+    },
+    {
+      "source": "CSF1R",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF1R is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.18"
+    },
+    {
+      "source": "RAD21",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD21 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.18"
+    },
+    {
+      "source": "CUX1",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUX1 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.18"
+    },
+    {
+      "source": "P2RY8",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RY8 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.18"
+    },
+    {
+      "source": "CBL",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBL is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.18"
+    },
+    {
+      "source": "CEBPA",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPA is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.18"
+    },
+    {
+      "source": "KDM6A",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM6A is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.18"
+    },
+    {
+      "source": "EZR",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EZR is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.18"
+    },
+    {
+      "source": "GATA3",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.18"
+    },
+    {
+      "source": "EP300",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EP300 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.18"
+    },
+    {
+      "source": "IKBKB",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKBKB is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.18"
+    },
+    {
+      "source": "FLT3",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.18"
+    },
+    {
+      "source": "CNOT3",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNOT3 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.18"
+    },
+    {
+      "source": "PRPF40B",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRPF40B is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.09"
+    },
+    {
+      "source": "SMC1A",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMC1A is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.09"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGFR1",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSF3R",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3R is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCR4",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR4 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.00"
+    },
+    {
+      "source": "LPL",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.00"
+    },
+    {
+      "source": "BRAF",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.00"
+    },
+    {
+      "source": "KMT2D",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYD88",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYD88 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.00"
+    },
+    {
+      "source": "FLT3LG",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3LG is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.00"
+    },
+    {
+      "source": "NRAS",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ETNK1",
+      "target": "myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETNK1 is associated with myeloproliferative neoplasm, unclassifiable (MYELOPROLIFERATIVE_NEOPLASM_UNCLASSIFIABLE). Open Targets association score 0.00"
+    }
+  ]
+}

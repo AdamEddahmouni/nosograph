@@ -1,0 +1,544 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL384467",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "DEXAMETHASONE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL277474",
+      "target": "PTGS1",
+      "type": "TARGETS",
+      "description": "ANTIPYRINE targets PTGS1."
+    },
+    {
+      "source": "RIPK2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "RIPK2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCR7",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR7 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CD46",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CD46 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "TACR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "TACR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "IL1A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL5",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL5 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "APOBEC3G",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOBEC3G is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "KLHDC2",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KLHDC2 is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "YTHDF1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "YTHDF1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD46",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD46 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTGS1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR1",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR1 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR2",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR2 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR9",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR9 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "PTGS1",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS1 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "NR3C1",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "NLRP3",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ID1",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ID1 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ID3",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ID3 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DHRS2",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHRS2 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOD2",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOD2 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCR2",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR2 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TACR1",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TACR1 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1B",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RIPK2",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIPK2 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TLR2",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR2 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TLR4",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MECOM",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MECOM is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "STAT1",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT1 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "OPRL1",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OPRL1 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KLHDC2",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLHDC2 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL31",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL31 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TUFM",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUFM is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "YTHDF1",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YTHDF1 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "EEF1A1",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EEF1A1 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TLR9",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR9 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ECRG4",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ECRG4 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NR5A1",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR5A1 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TLR1",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR1 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NBAS",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBAS is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPR",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPR is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CAPG",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAPG is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRP",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCL2",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL2 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD46",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD46 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNG",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TRPV1",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV1 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "BPIFA1",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BPIFA1 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CALM3",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALM3 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "APOBEC3G",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOBEC3G is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CAMKMT",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMKMT is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRIT1",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRIT1 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL5",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL5 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGF1",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "RUNX1",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NFKB1",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "LACTB",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LACTB is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPIB",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIB is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "DBH",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DBH is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCR7",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR7 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CALM1",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALM1 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD44",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CALM2",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALM2 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "EXOSC9",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EXOSC9 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1A",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1A is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC25A16",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A16 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC10A5",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC10A5 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDIA6",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDIA6 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MUC5AC",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5AC is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MUC5B",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5B is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL6",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "AMY2A",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMY2A is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SFTPC",
+      "target": "infectious otitis media (INFECTIOUS_OTITIS_MEDIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFTPC is associated with infectious otitis media (INFECTIOUS_OTITIS_MEDIA). Open Targets association score 0.00"
+    }
+  ]
+}

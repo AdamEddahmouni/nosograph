@@ -1,0 +1,454 @@
+{
+  "relationships": [
+    {
+      "source": "TFF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TFF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "WASF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "WASF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MSH2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MCOLN1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MCOLN1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "PDX1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PDX1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL18",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP6",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP6 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "ACE2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "SMAD1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SMAD4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "NLRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.72"
+    },
+    {
+      "source": "SMAD4",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD4 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.07"
+    },
+    {
+      "source": "STK11",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.07"
+    },
+    {
+      "source": "RNF43",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF43 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.06"
+    },
+    {
+      "source": "CDX2",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDX2 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.06"
+    },
+    {
+      "source": "GAST",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAST is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.06"
+    },
+    {
+      "source": "ATP4A",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP4A is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.06"
+    },
+    {
+      "source": "MUC2",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC2 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.06"
+    },
+    {
+      "source": "TFF1",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFF1 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.06"
+    },
+    {
+      "source": "TES",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TES is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL18",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.05"
+    },
+    {
+      "source": "KCNE2",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNE2 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.05"
+    },
+    {
+      "source": "PDX1",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDX1 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC9A4",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC9A4 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.05"
+    },
+    {
+      "source": "CA9",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA9 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.05"
+    },
+    {
+      "source": "SST",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SST is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.05"
+    },
+    {
+      "source": "IQGAP1",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IQGAP1 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.05"
+    },
+    {
+      "source": "RUFY3",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUFY3 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.05"
+    },
+    {
+      "source": "RNF144A",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF144A is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.05"
+    },
+    {
+      "source": "DNASE1L2",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNASE1L2 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.05"
+    },
+    {
+      "source": "WASF2",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WASF2 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.05"
+    },
+    {
+      "source": "RNASE13",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNASE13 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.05"
+    },
+    {
+      "source": "TTC7A",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC7A is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.05"
+    },
+    {
+      "source": "FUT7",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUT7 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPDEF",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPDEF is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC26A9",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC26A9 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "ATP4B",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP4B is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "EPCAM",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPCAM is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "OCLN",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OCLN is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXL1",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXL1 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "ACE2",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE2 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "FEM1A",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FEM1A is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "KIT",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "DCN",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCN is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC12A2",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A2 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "TFF2",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFF2 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "MUC13",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC13 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "MSH2",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH2 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "TECR",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TECR is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "RNF135",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF135 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "DYNC2I1",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYNC2I1 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "BARX1",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BARX1 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "PYROXD1",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PYROXD1 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "MISP",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MISP is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "HRH2",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRH2 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "FUT1",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUT1 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "NEUROG3",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEUROG3 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "XAF1",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XAF1 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "VWF",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "SOX2",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX2 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "SMAD1",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD1 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "PGLYRP4",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGLYRP4 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "PGLYRP3",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGLYRP3 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "PGLYRP2",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGLYRP2 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "PGLYRP1",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGLYRP1 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "NLRP6",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP6 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.04"
+    },
+    {
+      "source": "MCOLN1",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCOLN1 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.03"
+    },
+    {
+      "source": "MAP3K8",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K8 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.03"
+    },
+    {
+      "source": "TP53",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.03"
+    },
+    {
+      "source": "AQP3",
+      "target": "gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP3 is associated with gastric adenocarcinoma and proximal polyposis of the stomach (GASTRIC_ADENOCARCINOMA_AND_PROXIMAL_POLYPOSIS_OF_THE_STOMACH). Open Targets association score 0.03"
+    }
+  ]
+}

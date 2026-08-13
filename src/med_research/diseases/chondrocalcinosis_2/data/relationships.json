@@ -1,0 +1,526 @@
+{
+  "relationships": [
+    {
+      "source": "PLCG2",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLCG2 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "F2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C1QTNF3",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF3 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "C1QTNF3-AMACR",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF3-AMACR is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ADAM8",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM8 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ADAMTS5",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS5 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ALOX5AP",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ALOX5AP is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL11A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL11A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL9A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL9A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL1R1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1R1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1RN",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1RN is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "MEFV",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "MEFV is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "RASGRP4",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASGRP4 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ZAP70",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ZAP70 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "MYD88",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MYD88 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "C1QTNF3",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF3 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "C1QTNF3-AMACR",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF3-AMACR is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTB4R",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTB4R is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTB4R2",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTB4R2 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNGR1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNGR1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "ANKH",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKH is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.79"
+    },
+    {
+      "source": "OTULIN",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OTULIN is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.41"
+    },
+    {
+      "source": "TNF",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.09"
+    },
+    {
+      "source": "MMP3",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP3 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.08"
+    },
+    {
+      "source": "COL9A1",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL9A1 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.08"
+    },
+    {
+      "source": "ZAP70",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZAP70 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.08"
+    },
+    {
+      "source": "ADAMTS5",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS5 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.08"
+    },
+    {
+      "source": "PECAM1",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PECAM1 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.07"
+    },
+    {
+      "source": "TIA1",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIA1 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.07"
+    },
+    {
+      "source": "LTB4R",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTB4R is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL1RN",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1RN is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.07"
+    },
+    {
+      "source": "CD44",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.07"
+    },
+    {
+      "source": "COL11A1",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL11A1 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "MMP9",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "EPYC",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPYC is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "NID2",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NID2 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "FCGR2C",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2C is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "FCGR2A",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2A is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "FCGR2B",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2B is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "CYTL1",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYTL1 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "PGLYRP1",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGLYRP1 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL27RA",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL27RA is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "SOD3",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD3 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "C1QTNF3",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1QTNF3 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "C1QTNF3-AMACR",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1QTNF3-AMACR is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "TLR4",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "ADAM8",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAM8 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "ACAN",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACAN is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "NOD2",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOD2 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "F2",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F2 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "MYD88",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYD88 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "BMX",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMX is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "CLEC5A",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC5A is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "TYROBP",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYROBP is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "LTB4R2",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTB4R2 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "C3",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "CFB",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFB is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "SYVN1",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYVN1 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "BGN",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BGN is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "RASGRP4",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASGRP4 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "ALOX5AP",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALOX5AP is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "MATN3",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MATN3 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "ATP7A",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP7A is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "MEFV",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEFV is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "NUDT7",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUDT7 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL1R1",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1R1 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.06"
+    },
+    {
+      "source": "PDCD1",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "ENPP1",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENPP1 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "CHTOP",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHTOP is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "PLCG2",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCG2 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "IFNGR1",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNGR1 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "PAPSS2",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAPSS2 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "FCGR3B",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR3B is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "FCGR3A",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR3A is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "NDST2",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDST2 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "PANX3",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PANX3 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "CTSS",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSS is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "PGLYRP2",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGLYRP2 is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.05"
+    },
+    {
+      "source": "CFP",
+      "target": "chondrocalcinosis 2 (CHONDROCALCINOSIS_2)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFP is associated with chondrocalcinosis 2 (CHONDROCALCINOSIS_2). Open Targets association score 0.05"
+    }
+  ]
+}

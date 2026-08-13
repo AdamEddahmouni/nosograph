@@ -1,0 +1,598 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL221959",
+      "target": "JAK2",
+      "type": "TARGETS",
+      "description": "TOFACITINIB targets JAK2."
+    },
+    {
+      "source": "CHEMBL221959",
+      "target": "JAK1",
+      "type": "TARGETS",
+      "description": "TOFACITINIB targets JAK1."
+    },
+    {
+      "source": "CHEMBL221959",
+      "target": "TYK2",
+      "type": "TARGETS",
+      "description": "TOFACITINIB targets TYK2."
+    },
+    {
+      "source": "CHEMBL221959",
+      "target": "JAK3",
+      "type": "TARGETS",
+      "description": "TOFACITINIB targets JAK3."
+    },
+    {
+      "source": "CD200",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD200 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "F2RL1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F2RL1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "TSLP",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "TSLP is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGAE",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAE is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELPLG",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELPLG is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "TYK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "TYK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "SELPLG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SELPLG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CARD14",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD14 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "IKBKB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "IKBKB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL23A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL23A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGAE",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAE is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "NLRP1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "EGFL8",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFL8 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.19"
+    },
+    {
+      "source": "LCE5A",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCE5A is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.11"
+    },
+    {
+      "source": "EMSY",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EMSY is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "JAK1",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK1 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "JAK3",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "JAK2",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "TYK2",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYK2 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNF",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CARD14",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD14 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "TRPV1",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV1 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SERPINB4",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINB4 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SCN10A",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN10A is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD1A",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD1A is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "F2RL1",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F2RL1 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "AHR",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHR is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "S100A2",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A2 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CRNN",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRNN is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "NR1I2",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1I2 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL1A",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1A is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLC52A1",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC52A1 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "SELPLG",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELPLG is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ICAM1",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL6",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "GZMB",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GZMB is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL10",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL36RN",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL36RN is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL17A",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL1B",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD4",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "MTOR",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "MCAM",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCAM is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CISH",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CISH is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "HNRNPD",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNRNPD is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TSLP",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSLP is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNA1",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKT1",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL23A",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL23A is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL37",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL37 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD200",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD200 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "GJA1",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA1 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CALCA",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "UBXN11",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBXN11 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "C3",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "S100A7",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A7 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TBCE",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBCE is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD1D",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD1D is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOAT1",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOAT1 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL7",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "FAM3C",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM3C is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "KLK4",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK4 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ITGAE",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAE is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "IKBKB",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKBKB is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD44",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NLRP1",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP1 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRPA1",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPA1 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB1",
+      "target": "inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with inflammatory skin disease (INFLAMMATORY_SKIN_DISEASE). Open Targets association score 0.01"
+    }
+  ]
+}

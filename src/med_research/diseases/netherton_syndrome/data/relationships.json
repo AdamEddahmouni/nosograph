@@ -1,0 +1,538 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1200686",
+      "target": "FKBP1A",
+      "type": "TARGETS",
+      "description": "PIMECROLIMUS targets FKBP1A."
+    },
+    {
+      "source": "CHEMBL4297911",
+      "target": "IL1RAP",
+      "type": "TARGETS",
+      "description": "SPESOLIMAB targets IL1RAP."
+    },
+    {
+      "source": "CHEMBL2108675",
+      "target": "IL4R",
+      "type": "TARGETS",
+      "description": "DUPILUMAB targets IL4R."
+    },
+    {
+      "source": "CHEMBL1201580",
+      "target": "TNF",
+      "type": "TARGETS",
+      "description": "ADALIMUMAB targets TNF."
+    },
+    {
+      "source": "CHEMBL4297911",
+      "target": "IL1RL2",
+      "type": "TARGETS",
+      "description": "SPESOLIMAB targets IL1RL2."
+    },
+    {
+      "source": "COL17A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL17A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1RAP",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1RAP is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1RL2",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1RL2 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "PSTPIP2",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "PSTPIP2 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4R",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4R is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL5",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL5 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL3 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "IKBKG",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "IKBKG is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBIA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBIZ",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIZ is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RELB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTB",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTB is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SPINK5",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPINK5 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.79"
+    },
+    {
+      "source": "TNF",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "IL1RL2",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1RL2 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "IL4R",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4R is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "IL1RAP",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1RAP is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "ST14",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST14 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ITGB2",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TMEM79",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM79 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "NFKBIZ",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIZ is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FLG",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLG is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "RELB",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELB is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "DSG4",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSG4 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CEBPE",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPE is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFKB1",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXP3",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PKP3",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKP3 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CTSL",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSL is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CARD11",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IKBKG",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKBKG is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CTSV",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSV is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SHARPIN",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHARPIN is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CTSE",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSE is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ABCB1",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB1 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL4",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "DSC1",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSC1 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL3 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL13",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FKBP1A",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP1A is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL17A1",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL17A1 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TBK1",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBK1 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL2",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "REL",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REL is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SCD",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCD is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL5",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL5 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CLDN1",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN1 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "HR",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HR is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SAV1",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAV1 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ENPP3",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENPP3 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PSMB10",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMB10 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "RAG2",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG2 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MMP9",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PSTPIP2",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSTPIP2 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ABCA12",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA12 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GNAI2",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAI2 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CERS3",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CERS3 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GIMAP1-GIMAP5",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP1-GIMAP5 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GIMAP5",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP5 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDSN",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDSN is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "LTB",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTB is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD109",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD109 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MPZL3",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPZL3 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL36RN",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL36RN is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "LGALS3",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "KPRP",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KPRP is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FFAR2",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FFAR2 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "KRT2",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT2 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FASLG",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ELOVL3",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELOVL3 is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "NFKBIA",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIA is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ITPKB",
+      "target": "Netherton syndrome (NETHERTON_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITPKB is associated with Netherton syndrome (NETHERTON_SYNDROME). Open Targets association score 0.03"
+    }
+  ]
+}

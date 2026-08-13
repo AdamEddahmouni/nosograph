@@ -1,0 +1,514 @@
+{
+  "relationships": [
+    {
+      "source": "HLA-DRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "HLA-DRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCL3",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL3 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL5",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL5 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "SERPINE1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SERPINE1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "HAVCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MMP12",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP12 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TIMP1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TIMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL16",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL16 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL18",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "FABP1",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "FABP1 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PIK3C2A",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3C2A is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "COMT",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "COMT is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "GSTM1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRTN3",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRTN3 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "DKK3",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DKK3 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCL3",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL3 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "IFNG",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL16",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL16 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "IQGAP1",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IQGAP1 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "NPPB",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPB is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "DLC1",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLC1 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "HAVCR1",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAVCR1 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "PIK3C2A",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3C2A is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL10",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "LCN2",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN2 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALDH2",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDH2 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP9",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALAS2",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALAS2 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "HLA-DRB1",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DRB1 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "RBM45",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM45 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TIMP1",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP1 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "KL",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KL is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "EPO",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPO is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TIMP2",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP2 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGFBP7",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGFBP7 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLCD1",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCD1 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC25A38",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A38 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1B",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL7R",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7R is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "YARS2",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YARS2 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GATA1",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA1 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDAN1",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDAN1 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSF3",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ISG20",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISG20 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GDF15",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF15 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL2RA",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RA is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD4",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSTM1",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM1 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "COMT",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COMT is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL18",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERCC8",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC8 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TXNIP",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TXNIP is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "HSPA9",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPA9 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SERPINE1",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINE1 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPARG",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PKN1",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKN1 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "APOE",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCL8",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "HSCB",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSCB is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "KCNJ8",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNJ8 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NOS3",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CSH1",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSH1 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MBP",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBP is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL5",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL5 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CST1",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CST1 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MPO",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPO is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "FABP1",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FABP1 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMP12",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP12 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMP2",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MUC2",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC2 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PNO1",
+      "target": "chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PNO1 is associated with chromosome-type aberration frequency (CHROMOSOME_TYPE_ABERRATION_FREQUENCY). Open Targets association score 0.00"
+    }
+  ]
+}

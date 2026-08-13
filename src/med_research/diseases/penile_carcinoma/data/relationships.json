@@ -1,0 +1,574 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1094636",
+      "target": "PARP2",
+      "type": "TARGETS",
+      "description": "NIRAPARIB targets PARP2."
+    },
+    {
+      "source": "CHEMBL1094636",
+      "target": "PARP1",
+      "type": "TARGETS",
+      "description": "NIRAPARIB targets PARP1."
+    },
+    {
+      "source": "CHEMBL4298124",
+      "target": "PDCD1",
+      "type": "TARGETS",
+      "description": "DOSTARLIMAB targets PDCD1."
+    },
+    {
+      "source": "CHEMBL3137343",
+      "target": "PDCD1",
+      "type": "TARGETS",
+      "description": "PEMBROLIZUMAB targets PDCD1."
+    },
+    {
+      "source": "BAX",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BAX is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CASP3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "ULK1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "ULK1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "PARP1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "PARP1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PARP2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "PARP2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "SLC2A1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD82",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD82 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "IFNA2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFC",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFC is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "HRAS",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KRAS",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "PDCD1",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "PARP1",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARP1 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PARP2",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARP2 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "SLC8A1",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC8A1 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CAV1",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAV1 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GSDMB",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ANXA1",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANXA1 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IFNA2",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA2 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTGS2",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRIAP1",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIAP1 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MKI67",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BAX",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAX is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGFR",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP3",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP3 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SERPINB3",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINB3 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL2",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPP1",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPP1 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AR",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RB1",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKT1",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTOR",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTEN",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PCNA",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNA is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TLR4",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TOP1",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOP1 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD82",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD82 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERG",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERG is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VEGFC",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFC is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CASP3",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP3 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC2A1",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A1 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BSG",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BSG is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD274",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDE5A",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE5A is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "HOXA3",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA3 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MRC1",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRC1 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPL17",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NECTIN4",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NECTIN4 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TTN",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTN is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FAT1",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT1 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOD2",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD2 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CTAG1B",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTAG1B is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CTAG1A",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTAG1A is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCND1",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NSG1",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSG1 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TCEAL1",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCEAL1 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "STK11",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLX4",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLX4 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "HOXA13",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA13 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "XPO1",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XPO1 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYC",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "AIF1",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIF1 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NLRP3",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ULK1",
+      "target": "Penile Carcinoma (PENILE_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ULK1 is associated with Penile Carcinoma (PENILE_CARCINOMA). Open Targets association score 0.00"
+    }
+  ]
+}

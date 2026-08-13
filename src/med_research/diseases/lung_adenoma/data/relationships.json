@@ -1,0 +1,502 @@
+{
+  "relationships": [
+    {
+      "source": "F2R",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F2R is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "F2RL1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F2RL1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FGF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53I3",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53I3 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ADAMTS12",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS12 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ALOX5",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ALOX5 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GAD1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GAD1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RAF1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RAF1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CHUK",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CHUK is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "IKBKB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "IKBKB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC22D1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC22D1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TG",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TG is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "HIF1A",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "HIF1A is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ERCC1",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC1 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CEP57",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEP57 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "RAF1",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAF1 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHUK",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHUK is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FOXM1",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXM1 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "RHOA",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHOA is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "FGF10",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF10 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TP53",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SIRPG",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRPG is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MYC",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "UBE2C",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBE2C is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GAD1",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAD1 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HIF1A",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF1A is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RUNX3",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX3 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTPA",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPA is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "STK11",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FAT4",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT4 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALOX5",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALOX5 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NR1I2",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1I2 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VDR",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VDR is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPARD",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARD is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKT1",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZHX2",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZHX2 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "F2RL1",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F2RL1 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC52A1",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC52A1 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "USP12",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP12 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB1",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BRAF",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TSC22D1",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC22D1 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGFR",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADAMTS12",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS12 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATM",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DHTKD1",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHTKD1 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MARK2",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MARK2 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "F2R",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F2R is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PWAR1",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PWAR1 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC52A2",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC52A2 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53I3",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53I3 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGFR1",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RLN2",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RLN2 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GABPA",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABPA is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "COX5A",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COX5A is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "COX8A",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COX8A is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "POLM",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLM is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CPOX",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPOX is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ODC1",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ODC1 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MRPL41",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRPL41 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TG",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TG is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "LMNTD1",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNTD1 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AGR2",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGR2 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC25A21",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A21 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MST1R",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MST1R is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EML4",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EML4 is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IKBKB",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKBKB is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "UMPS",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UMPS is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RARB",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RARB is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RAP1A",
+      "target": "lung adenoma (LUNG_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAP1A is associated with lung adenoma (LUNG_ADENOMA). Open Targets association score 0.01"
+    }
+  ]
+}

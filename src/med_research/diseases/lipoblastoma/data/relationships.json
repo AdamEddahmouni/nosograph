@@ -1,0 +1,484 @@
+{
+  "relationships": [
+    {
+      "source": "CDK4",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK4 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "IGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "RAD51B",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "RAD51B is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL1A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL3A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL3A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "FABP4",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "FABP4 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PGF",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "PGF is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "PLAG1",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAG1 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "LIFR",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIFR is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TCEA1",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCEA1 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "DDIT3",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDIT3 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "NTRK3",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK3 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ETV6",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV6 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FUS",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUS is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "LEP",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "DES",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DES is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HMGA2",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGA2 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RAD51B",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD51B is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "LEPR",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "COL3A1",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL3A1 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD34",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSDMB",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RB1",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RAB2A",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB2A is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IDH1",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MKI67",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "S100B",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100B is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "S100A1",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A1 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HAS2",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAS2 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "UCP1",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UCP1 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NCAM1",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCAM1 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KIAA1549",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIAA1549 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GPT",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD99",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD99 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00 | Open Targets association score 0.00"
+    },
+    {
+      "source": "BRAF",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGF2",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MDM2",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM2 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYOG",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYOG is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FABP4",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FABP4 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TFAP2A",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFAP2A is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GTF3A",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GTF3A is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDK4",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK4 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PGF",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGF is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SDCBP",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDCBP is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "COL1A2",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A2 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "HNRNPA2B1",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNRNPA2B1 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP53",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PLAGL2",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAGL2 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRABP2",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRABP2 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRLF1",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRLF1 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SRSF3",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRSF3 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MTOR",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIGF",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIGF is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TCEAL1",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCEAL1 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "AKT1",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "VIM",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIM is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NSG1",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSG1 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRIP2",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRIP2 is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MUC5AC",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5AC is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "lipoblastoma (LIPOBLASTOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with lipoblastoma (LIPOBLASTOMA). Open Targets association score 0.00"
+    }
+  ]
+}

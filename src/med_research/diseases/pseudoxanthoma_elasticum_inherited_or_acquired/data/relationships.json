@@ -1,0 +1,568 @@
+{
+  "relationships": [
+    {
+      "source": "RUNX2",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "RUNX2 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "CCL11",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL11 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCL27",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL27 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "F9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TM7SF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TM7SF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CFH",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CFH is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ATRNL1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRNL1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PARP1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "PARP1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ELN",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ELN is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "BMP2",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP2 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELP",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELP is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "ALPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ALPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "HMGCR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HMGCR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "MTHFR",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFR is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "SMAD2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SMAD3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "ABCC6",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC6 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP2U1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2U1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "NAT10",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NAT10 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "IGFBP3",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGFBP3 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.08"
+    },
+    {
+      "source": "GDF11",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF11 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.06"
+    },
+    {
+      "source": "ENPP1",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENPP1 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.06"
+    },
+    {
+      "source": "ABCC6",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC6 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.05"
+    },
+    {
+      "source": "STAT3",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.04"
+    },
+    {
+      "source": "PCSK9",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.04"
+    },
+    {
+      "source": "ELN",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELN is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.04"
+    },
+    {
+      "source": "ICAM1",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.04"
+    },
+    {
+      "source": "IGF1",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.03"
+    },
+    {
+      "source": "SPP1",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPP1 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.03"
+    },
+    {
+      "source": "GGCX",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGCX is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.03"
+    },
+    {
+      "source": "RUNX2",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX2 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.03"
+    },
+    {
+      "source": "XYLT1",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XYLT1 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.03"
+    },
+    {
+      "source": "MGP",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MGP is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL6",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.02"
+    },
+    {
+      "source": "MMP2",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.02"
+    },
+    {
+      "source": "APOE",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL1B",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLPI",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLPI is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.02"
+    },
+    {
+      "source": "ASRGL1",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASRGL1 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.02"
+    },
+    {
+      "source": "ALPP",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPP is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.02"
+    },
+    {
+      "source": "PDLIM3",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDLIM3 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.02"
+    },
+    {
+      "source": "ATRNL1",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRNL1 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCL27",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL27 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.02"
+    },
+    {
+      "source": "NAT10",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAT10 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.02"
+    },
+    {
+      "source": "AHSG",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSG is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.02"
+    },
+    {
+      "source": "ALPL",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPL is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCL11",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL11 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.02"
+    },
+    {
+      "source": "AOPEP",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOPEP is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.02"
+    },
+    {
+      "source": "C3",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.02"
+    },
+    {
+      "source": "HMGCR",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCR is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.02"
+    },
+    {
+      "source": "PARP1",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARP1 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.02"
+    },
+    {
+      "source": "TGFB2",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB2 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.02"
+    },
+    {
+      "source": "ABCG2",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG2 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.02"
+    },
+    {
+      "source": "S100A12",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A12 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.01"
+    },
+    {
+      "source": "BMP2",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP2 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.01"
+    },
+    {
+      "source": "VEGFA",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB1",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.01"
+    },
+    {
+      "source": "LDLR",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.01"
+    },
+    {
+      "source": "SELP",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELP is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMAD2",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD2 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.01"
+    },
+    {
+      "source": "MSX2",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSX2 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTSB",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSB is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALDH7A1",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDH7A1 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.01"
+    },
+    {
+      "source": "APOD",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOD is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCN2",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCN2 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.01"
+    },
+    {
+      "source": "LMNB1",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNB1 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP2U1",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2U1 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.01"
+    },
+    {
+      "source": "TM7SF2",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM7SF2 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.01"
+    },
+    {
+      "source": "APOL1",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOL1 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.01"
+    },
+    {
+      "source": "CFH",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFH is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.01"
+    },
+    {
+      "source": "ANKH",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKH is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMAD3",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD3 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.01"
+    },
+    {
+      "source": "F9",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F9 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.01"
+    },
+    {
+      "source": "AK3",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AK3 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTHFR",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFR is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.01"
+    },
+    {
+      "source": "HBB",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBB is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.01"
+    },
+    {
+      "source": "XYLT2",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XYLT2 is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.01"
+    },
+    {
+      "source": "JTB",
+      "target": "pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JTB is associated with pseudoxanthoma elasticum (inherited or acquired) (PSEUDOXANTHOMA_ELASTICUM_INHERITED_OR_ACQUIRED). Open Targets association score 0.01"
+    }
+  ]
+}

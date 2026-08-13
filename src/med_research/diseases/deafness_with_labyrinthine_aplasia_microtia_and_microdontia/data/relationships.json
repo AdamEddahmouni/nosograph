@@ -1,0 +1,442 @@
+{
+  "relationships": [
+    {
+      "source": "RUNX2",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "RUNX2 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "SOSTDC1",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "SOSTDC1 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "WNT10A",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT10A is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "FGF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MMP14",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP14 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "BMP7",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP7 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "ITGA11",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA11 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "ITGA11",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA11 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "LRP4",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP4 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT10A",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT10A is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "FGF3",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF3 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.78"
+    },
+    {
+      "source": "AMELX",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMELX is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "AMELY",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMELY is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "ENAM",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENAM is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PAX9",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX9 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "EYA1",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EYA1 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "EDAR",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDAR is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLC26A4",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC26A4 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "WNT10A",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT10A is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SIX1",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIX1 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZEB1",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "C3orf38",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3orf38 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "DLX5",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLX5 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GATA3",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFIC",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFIC is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGFR1",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "NECTIN1",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NECTIN1 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SATB2",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SATB2 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGF10",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF10 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SP6",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SP6 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TBX1",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX1 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SSUH2",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSUH2 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "POU3F4",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU3F4 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PAX2",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX2 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "DMP1",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMP1 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "BCL11B",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL11B is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GBX2",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GBX2 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRP4",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP4 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "MSX1",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSX1 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ESPN",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESPN is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGFR3",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "RUNX2",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX2 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "GREM2",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GREM2 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FAM20A",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM20A is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "AMBN",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMBN is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "POU4F3",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU4F3 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "BMP7",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP7 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "EDA",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDA is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TBX10",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX10 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNN",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNN is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC25A13",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A13 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SOSTDC1",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOSTDC1 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ATP6V1B1",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP6V1B1 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ITGA11",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA11 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "POU1F1",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU1F1 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXI1",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXI1 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PSAP",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSAP is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TMPRSS3",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS3 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FOXI3",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXI3 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRKRA",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKRA is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "AMTN",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMTN is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CACHD1",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACHD1 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "HOXA1",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA1 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC12A2",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A2 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "OSTM1",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OSTM1 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MMP14",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP14 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MCTP1",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCTP1 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IGF1R",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1R is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "OSBPL2",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OSBPL2 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SRRM4",
+      "target": "deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRRM4 is associated with deafness with labyrinthine aplasia, microtia, and microdontia (DEAFNESS_WITH_LABYRINTHINE_APLASIA_MICROTIA_AND_MICRODONTIA). Open Targets association score 0.03"
+    }
+  ]
+}

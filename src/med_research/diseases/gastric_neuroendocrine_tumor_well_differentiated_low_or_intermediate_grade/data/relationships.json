@@ -1,0 +1,472 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL4303201",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "CATEQUENTINIB targets KIT."
+    },
+    {
+      "source": "GGTLC3",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "GGTLC3 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "IGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SLC4A2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC4A2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PDX1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PDX1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTH1R",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTH1R is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "SMAD4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "GAST",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAST is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.08"
+    },
+    {
+      "source": "CGA",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGA is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ATP4A",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP4A is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.02"
+    },
+    {
+      "source": "MUC17",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC17 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.02"
+    },
+    {
+      "source": "NCAM1",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCAM1 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP12A",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP12A is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "BRAF",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM3",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM3 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM5",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM5 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSG2",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSG2 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM7",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM7 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCKBR",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCKBR is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "BRCA2",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDX1",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDX1 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHGA",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHGA is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTH1R",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTH1R is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "EWSR1",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EWSR1 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MEN1",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC26A9",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC26A9 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PAPPA2",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAPPA2 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC4A2",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC4A2 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC26A7",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC26A7 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "VHL",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VHL is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.01"
+    },
+    {
+      "source": "GHRL",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHRL is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCN2",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCN2 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOX10",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX10 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MKI67",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "S100A1",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A1 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "S100B",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100B is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SMAD4",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD4 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GATA3",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTEN",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CREM",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREM is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SYP",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYP is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "POLE",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "AMACR",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMACR is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "NKX2-2",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-2 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GGT1",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGT1 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GGTLC3",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGTLC3 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATF1",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATF1 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MTOR",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CLDN18",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN18 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP53",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDX2",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDX2 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ANO1",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANO1 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "KIT",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MUC5AC",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5AC is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "AKT1",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGF2",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "FBXW7",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXW7 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "STK11",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "EGFR",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALK",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PAX8",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX8 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "IDH1",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "DNAH8",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH8 is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MITF",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MITF is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SST",
+      "target": "gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SST is associated with gastric neuroendocrine tumor, well differentiated, low or intermediate grade (GASTRIC_NEUROENDOCRINE_TUMOR_WELL_DIFFERENTIATED_LOW_OR_INTERMEDIATE_GRADE). Open Targets association score 0.00"
+    }
+  ]
+}

@@ -1,0 +1,460 @@
+{
+  "relationships": [
+    {
+      "source": "AURKA",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "AURKA is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MLH1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MLH1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53BP2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53BP2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK8",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK8 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK9",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK9 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CHUK",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CHUK is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "IKBKG",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "IKBKG is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "MVD",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MVD is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.80"
+    },
+    {
+      "source": "MVK",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MVK is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.67"
+    },
+    {
+      "source": "FDPS",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FDPS is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.66"
+    },
+    {
+      "source": "SLC17A9",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A9 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.64"
+    },
+    {
+      "source": "MMAB",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMAB is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.33"
+    },
+    {
+      "source": "SART3",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SART3 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.21"
+    },
+    {
+      "source": "CES2",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CES2 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.10"
+    },
+    {
+      "source": "SLC27A4",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC27A4 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "TP53",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "KRT76",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT76 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "TRIM62",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM62 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "DDB2",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDB2 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "KLK11",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK11 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "MET",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "HIC1",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIC1 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "IKBKG",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKBKG is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ST14",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST14 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "TREX2",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREX2 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ABCA12",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA12 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ITGB2",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "LZTS1",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LZTS1 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "KRT2",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT2 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "KRT10",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT10 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "GPX8",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPX8 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "HTATIP2",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTATIP2 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FLG",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLG is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "KRAS",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "TP53BP2",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53BP2 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "MLH1",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLH1 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "POLH",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLH is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "NSDHL",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSDHL is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "NF2",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "GBA1",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GBA1 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "RINT1",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RINT1 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PPARD",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARD is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "POLD1",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD1 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ATP2C1",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP2C1 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAPK9",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK9 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLK1",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLK1 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNK1",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNK1 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PPARA",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARA is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TP73",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP73 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAPK8",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK8 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "BUB1B-PAK6",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUB1B-PAK6 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "BUB1B",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUB1B is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "BAP1",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAP1 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CHUK",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHUK is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "KRT36",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT36 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PAQR3",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAQR3 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ROBO1",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROBO1 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPINK5",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPINK5 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MSH2",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH2 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "AURKA",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AURKA is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "EVPL",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EVPL is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTEN",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "DMKN",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMKN is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PINX1",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PINX1 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAD1L1",
+      "target": "disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAD1L1 is associated with disseminated superficial actinic porokeratosis (DISSEMINATED_SUPERFICIAL_ACTINIC_POROKERATOSIS). Open Targets association score 0.04"
+    }
+  ]
+}

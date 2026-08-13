@@ -1,0 +1,430 @@
+{
+  "relationships": [
+    {
+      "source": "F2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GLUL",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GLUL is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "G6PC1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "G6PC1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "RENBP",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "RENBP is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF1B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF1B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF3",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF3 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "OTC",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OTC is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "ACADM",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACADM is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "HMGCL",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCL is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IDH3A",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH3A is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TTR",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTR is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TBPL2",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBPL2 is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNFRSF1B",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF1B is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "INS",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLXNA2",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLXNA2 is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACADVL",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACADVL is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PC",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PC is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYCS",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYCS is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TXNIP",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TXNIP is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACADL",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACADL is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS2",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ISYNA1",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISYNA1 is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC17A5",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A5 is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "GOT1",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOT1 is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "UGDH",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGDH is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRYL1",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYL1 is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "GLUD1",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLUD1 is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "H6PD",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H6PD is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "LCN1",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN1 is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "SCO2",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCO2 is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "IRF3",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF3 is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOAT1",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOAT1 is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "TYMP",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYMP is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "TMPO",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPO is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACAT1",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACAT1 is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSMA6",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMA6 is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CES1",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CES1 is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "GPT",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDH15",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH15 is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ENO2",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENO2 is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "TPM1",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPM1 is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "AVP",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVP is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNG",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1B",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "PLG",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLG is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "G6PC1",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "G6PC1 is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACADS",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACADS is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACAD9",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACAD9 is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCNL2",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCNL2 is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNA1",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ODC1",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ODC1 is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "F2",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F2 is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "GGTLC1",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGTLC1 is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CP",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CP is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADRA1D",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA1D is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "PCNA",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNA is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "GLUL",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLUL is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CAD",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAD is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "C2",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C2 is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHKB",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKB is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "COMP",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COMP is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "RXRA",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RXRA is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC25A13",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A13 is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "RENBP",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RENBP is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "RBP4",
+      "target": "Reye syndrome (REYE_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBP4 is associated with Reye syndrome (REYE_SYNDROME). Open Targets association score 0.00"
+    }
+  ]
+}

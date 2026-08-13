@@ -1,0 +1,508 @@
+{
+  "relationships": [
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD79B",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79B is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCR9",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR9 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "RASGRP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASGRP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "THEMIS",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THEMIS is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD3E",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD3E is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8B",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8B is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8B2",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8B2 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LCK",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LCK is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "THEMIS",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "THEMIS is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ZAP70",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ZAP70 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LTA",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTA is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF14",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF14 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.47"
+    },
+    {
+      "source": "PRKDC",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKDC is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.10"
+    },
+    {
+      "source": "DOCK2",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK2 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.10"
+    },
+    {
+      "source": "CD8A",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.10"
+    },
+    {
+      "source": "RASGRP1",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASGRP1 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.09"
+    },
+    {
+      "source": "LAT",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAT is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.09"
+    },
+    {
+      "source": "RAG1",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG1 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.09"
+    },
+    {
+      "source": "PTPRC",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.09"
+    },
+    {
+      "source": "VAV1",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VAV1 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.09"
+    },
+    {
+      "source": "ZAP70",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZAP70 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.09"
+    },
+    {
+      "source": "FOXP3",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.09"
+    },
+    {
+      "source": "NFKB2",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.09"
+    },
+    {
+      "source": "SATB1",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SATB1 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.09"
+    },
+    {
+      "source": "CD3E",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD3E is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.09"
+    },
+    {
+      "source": "NUP210",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUP210 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.09"
+    },
+    {
+      "source": "THEMIS",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THEMIS is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.09"
+    },
+    {
+      "source": "KLHL6",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLHL6 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.09"
+    },
+    {
+      "source": "LCK",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCK is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "PTPN6",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN6 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "TBX21",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX21 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "CD8B2",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8B2 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "CD8B",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8B is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "CCR9",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR9 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "EBF1",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EBF1 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "ATM",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "HIVEP2",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIVEP2 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "JAK3",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "ID3",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ID3 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "DCLRE1C",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCLRE1C is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "PPP3CB",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP3CB is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "LTA",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTA is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "CD247",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD247 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "RAG2",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG2 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "CD79A",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "GIMAP5",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP5 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "GIMAP1-GIMAP5",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP1-GIMAP5 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "RUNX1",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "ITK",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITK is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "RUNX3",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX3 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "IKZF1",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL7R",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7R is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "CD79B",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79B is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "STK4",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK4 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "CARD11",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "PTCRA",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCRA is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "ZBTB7B",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB7B is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL2",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "CD274",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "BCL6B",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL6B is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "FNIP1",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FNIP1 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "KDELR1",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDELR1 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "S1PR5",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S1PR5 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "TCF3",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF3 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "RABL3",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RABL3 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "DOCK8",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK8 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "LBR",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LBR is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "TNFSF14",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF14 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "TNF",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "STAT1",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT1 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "LCP2",
+      "target": "Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCP2 is associated with Okt4 epitope deficiency (OKT4_EPITOPE_DEFICIENCY). Open Targets association score 0.07"
+    }
+  ]
+}

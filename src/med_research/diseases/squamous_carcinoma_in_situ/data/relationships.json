@@ -1,0 +1,484 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201577",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "CETUXIMAB targets EGFR."
+    },
+    {
+      "source": "CHEMBL465",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "TREATS",
+      "description": "DRONABINOL is phase 4 / marketed for squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TNFRSF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MSH2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD47",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD47 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTGER4",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGER4 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF8",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF8 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNFRSF8",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF8 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDH1",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "CFTR",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFTR is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "CKAP4",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CKAP4 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP63",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "UVRAG",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UVRAG is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPE65",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPE65 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSDMB",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRT5",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT5 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "MKI67",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "MCM2",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCM2 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "EPCAM",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPCAM is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPP6C",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP6C is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "PCNA",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNA is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNAI1",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNAI1 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "SNAI2",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNAI2 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGFA",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFA is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "SDC1",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC1 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL27RA",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL27RA is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "HSPH1",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPH1 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "S100A7",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A7 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "STAT3",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "MSH2",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH2 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "BCL2",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD47",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD47 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "PECAM1",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PECAM1 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEACAM5",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM5 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT7",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT7 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSG2",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSG2 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "RB1",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEACAM7",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM7 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEACAM3",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM3 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "LIAT1",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIAT1 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "TCEAL1",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCEAL1 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "EGFR",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "CSTB",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSTB is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "FAS",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "FANCA",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT20",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT20 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "BSG",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BSG is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT15",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT15 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYRIB",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYRIB is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "S100B",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100B is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "IVL",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IVL is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOX10",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX10 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "S100A1",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A1 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "VIM",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIM is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMP2",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "LAMB2",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMB2 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTGER4",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGER4 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "KLF4",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF4 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT19",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT19 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDPN",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDPN is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "FXN",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FXN is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "NSG1",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSG1 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "PLIN1",
+      "target": "squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLIN1 is associated with squamous carcinoma in situ (SQUAMOUS_CARCINOMA_IN_SITU). Open Targets association score 0.00"
+    }
+  ]
+}

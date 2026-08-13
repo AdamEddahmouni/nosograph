@@ -1,0 +1,556 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1174",
+      "target": "ITGB3",
+      "type": "TARGETS",
+      "description": "EPTIFIBATIDE targets ITGB3."
+    },
+    {
+      "source": "CHEMBL25",
+      "target": "PTGS2",
+      "type": "TARGETS",
+      "description": "ASPIRIN targets PTGS2."
+    },
+    {
+      "source": "CHEMBL1771",
+      "target": "P2RY12",
+      "type": "TARGETS",
+      "description": "CLOPIDOGREL targets P2RY12."
+    },
+    {
+      "source": "CHEMBL25",
+      "target": "PTGS1",
+      "type": "TARGETS",
+      "description": "ASPIRIN targets PTGS1."
+    },
+    {
+      "source": "CHEMBL1464",
+      "target": "VKORC1",
+      "type": "TARGETS",
+      "description": "WARFARIN targets VKORC1."
+    },
+    {
+      "source": "CHEMBL1174",
+      "target": "ITGA2B",
+      "type": "TARGETS",
+      "description": "EPTIFIBATIDE targets ITGA2B."
+    },
+    {
+      "source": "APLNR",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "APLNR is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CCL27",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL27 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "FGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATRNL1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRNL1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ITGA2B",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA2B is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGB3",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB3 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NOTCH3",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH3 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "SMAD3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "ITGA2B",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA2B is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGB3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGS1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "NAT10",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NAT10 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.37"
+    },
+    {
+      "source": "FGF5",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF5 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.32"
+    },
+    {
+      "source": "PTGS2",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.26"
+    },
+    {
+      "source": "P2RY12",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RY12 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.26"
+    },
+    {
+      "source": "VKORC1",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VKORC1 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.26"
+    },
+    {
+      "source": "PTGS1",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS1 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.26"
+    },
+    {
+      "source": "PTPRM",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRM is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.22"
+    },
+    {
+      "source": "ITGB3",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB3 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.07"
+    },
+    {
+      "source": "ITGA2B",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA2B is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.07"
+    },
+    {
+      "source": "INS",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.07"
+    },
+    {
+      "source": "LEP",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL6",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.05"
+    },
+    {
+      "source": "CRP",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "AGT",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "ATRNL1",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRNL1 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCL27",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL27 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "PDLIM3",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDLIM3 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "ALPP",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPP is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "NAT10",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAT10 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "ASRGL1",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASRGL1 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLPI",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLPI is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "CFAP299",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFAP299 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "NPPB",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPB is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "FGF2",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF2 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "ANGPT2",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPT2 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADIPOQ",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOQ is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "NOTCH3",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH3 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "MAPK1",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "EPHB2",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHB2 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLC12A1",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A1 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD8A",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNF",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "SORBS1",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORBS1 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "ENHO",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENHO is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "PLA2G7",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G7 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "SMAD3",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD3 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "DLD",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLD is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "VEGFA",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTX3",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTX3 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "CHI3L1",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHI3L1 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "CPOX",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPOX is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "TBX22",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX22 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "EBP",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EBP is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "NPPA",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPA is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "PRKCH",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCH is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "EPO",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPO is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "APLNR",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APLNR is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "ACE",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "TRPV4",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV4 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "LIPG",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPG is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "PCSK9",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "PLAT",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAT is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "AOPEP",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOPEP is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "AHR",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHR is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "VAV1",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VAV1 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNNT2",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNT2 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "MSRB3",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSRB3 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "APOH",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOH is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS3",
+      "target": "brain infarction (BRAIN_INFARCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with brain infarction (BRAIN_INFARCTION). Open Targets association score 0.01"
+    }
+  ]
+}

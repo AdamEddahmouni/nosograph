@@ -73,12 +73,6 @@
       "description": "GRIN2B is a component of the GABA / Glutamate Signaling pathway."
     },
     {
-      "source": "NFATC3",
-      "target": "nfkb",
-      "type": "PARTICIPATES_IN",
-      "description": "NFATC3 is a component of the NF-κB Pathway pathway."
-    },
-    {
       "source": "TSC1",
       "target": "pi3k-akt-mtor",
       "type": "PARTICIPATES_IN",
@@ -125,6 +119,18 @@
       "target": "wnt-signaling",
       "type": "PARTICIPATES_IN",
       "description": "WNT1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "NFATC3",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC3 is a component of the NF-κB Pathway pathway."
     },
     {
       "source": "INSR",
@@ -451,16 +457,46 @@
       "description": "NBEAL2 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.11"
     },
     {
+      "source": "WNT1",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT1 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.11"
+    },
+    {
       "source": "PIK3CG",
       "target": "keratoconus (KERATOCONUS)",
       "type": "ASSOCIATED_WITH",
       "description": "PIK3CG is associated with keratoconus (KERATOCONUS). Open Targets association score 0.11"
     },
     {
-      "source": "WNT1",
+      "source": "NANOGP8",
       "target": "keratoconus (KERATOCONUS)",
       "type": "ASSOCIATED_WITH",
-      "description": "WNT1 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.11"
+      "description": "NANOGP8 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.11"
+    },
+    {
+      "source": "LRP6",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP6 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.11"
+    },
+    {
+      "source": "KIR2DL1",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIR2DL1 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.11"
+    },
+    {
+      "source": "IGF1R",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1R is associated with keratoconus (KERATOCONUS). Open Targets association score 0.11"
+    },
+    {
+      "source": "HNRNPA2B1",
+      "target": "keratoconus (KERATOCONUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNRNPA2B1 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.11"
     },
     {
       "source": "NFATC3",
@@ -473,12 +509,6 @@
       "target": "keratoconus (KERATOCONUS)",
       "type": "ASSOCIATED_WITH",
       "description": "DAB2IP is associated with keratoconus (KERATOCONUS). Open Targets association score 0.11"
-    },
-    {
-      "source": "NANOGP8",
-      "target": "keratoconus (KERATOCONUS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NANOGP8 is associated with keratoconus (KERATOCONUS). Open Targets association score 0.11"
     },
     {
       "source": "DOP1B",

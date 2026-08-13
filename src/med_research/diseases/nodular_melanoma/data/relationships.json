@@ -1,0 +1,502 @@
+{
+  "relationships": [
+    {
+      "source": "CASP8",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP8 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCND2",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND2 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDK12",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK12 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDK4",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK4 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDK6",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK6 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ATR",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATR is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR4",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR4 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "AKT2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3R1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "SMAD2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "IRF4",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF4 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "BRAF",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NRAS",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CD274",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CCND1",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TERT",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CDK4",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK4 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "RAC1",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAC1 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KIT",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FANCA",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NF1",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KDR",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "AKT1",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FGFR4",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR4 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CUX1",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUX1 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MDM2",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM2 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NTRK1",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PREX2",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PREX2 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "POLE",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "BCL11A",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL11A is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ATR",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATR is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CDK6",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK6 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CYLD",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYLD is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SPOP",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPOP is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PPP2R1A",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP2R1A is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KMT2C",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SMAD2",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD2 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CCND2",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND2 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PTPRK",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRK is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CDK12",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK12 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ARHGAP35",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP35 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PIK3R1",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R1 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "IL7R",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7R is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KAT6A",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KAT6A is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KLF6",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF6 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "AFF4",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFF4 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ESR1",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FCRL4",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCRL4 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FGFR2",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "UBR5",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBR5 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "AKT2",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT2 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "IRF4",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF4 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PHOX2B",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHOX2B is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MYB",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYB is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ERCC4",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC4 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MAP3K13",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K13 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ROS1",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROS1 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MET",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CASP8",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP8 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FGFR1",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "HNF1A",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TSC2",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "QKI",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "QKI is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "AMER1",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMER1 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SF3B1",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SF3B1 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TBL1XR1",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBL1XR1 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SPEN",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPEN is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PER1",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PER1 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ERCC2",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC2 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FOXP1",
+      "target": "nodular melanoma (NODULAR_MELANOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP1 is associated with nodular melanoma (NODULAR_MELANOMA). Open Targets association score 0.37"
+    }
+  ]
+}

@@ -1,0 +1,496 @@
+{
+  "relationships": [
+    {
+      "source": "SLC39A8",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC39A8 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "SCARB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "SCARB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MARCHF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "MARCHF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TM6SF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TM6SF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATRAID",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRAID is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ADAMTS3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF4A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF4A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL3 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ANGPTL8",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL8 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CETP is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "HMGCR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HMGCR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CD300LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD300LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ABCB11",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB11 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "NAT2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NAT2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "UGT2B15",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "UGT2B15 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "LIPG",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPG is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.69"
+    },
+    {
+      "source": "LIPC",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.69"
+    },
+    {
+      "source": "ABCA1",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.69"
+    },
+    {
+      "source": "APOB",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.68"
+    },
+    {
+      "source": "PCSK9",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.64"
+    },
+    {
+      "source": "LDLR",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.60"
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL3 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.59"
+    },
+    {
+      "source": "CETP",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETP is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.57"
+    },
+    {
+      "source": "SCARB1",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCARB1 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.56"
+    },
+    {
+      "source": "APOA1",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.55"
+    },
+    {
+      "source": "APOE",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "CD300LG",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD300LG is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "SORT1",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORT1 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "MTARC1",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTARC1 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "FADS2",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS2 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "TMPRSS11E",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS11E is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "TIMD4",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMD4 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "LPL",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "CELSR2",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR2 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "TTC39B",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC39B is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "LPA",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "GPAM",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPAM is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "GALNT2",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GALNT2 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "USP24",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP24 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "HNF1A",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "GCKR",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "ABCG8",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG8 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "TRPS1",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPS1 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "SLC39A8",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC39A8 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "HNF4A",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF4A is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "ZPR1",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZPR1 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "HMGCR",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCR is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "CPS1",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPS1 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "FRK",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FRK is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "TM6SF2",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM6SF2 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "UGT2B15",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGT2B15 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "SH2B3",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2B3 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "APOA5",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "EPGN",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPGN is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "SDC1",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC1 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "APOC1",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC1 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "FAM117B",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM117B is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "MARCHF8",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MARCHF8 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "AKR1C8",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKR1C8 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "SLC25A48",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A48 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "POC5",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POC5 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "ADAMTS3",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS3 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "ANGPTL8",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL8 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "NAT2",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAT2 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "PEMT",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PEMT is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "DOK7",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOK7 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "DNAH11",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH11 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "MAU2",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAU2 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "ATRAID",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRAID is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "ABCB11",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB11 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "SUGP1",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUGP1 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "ZNF682",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF682 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "ABO",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABO is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "CHLSN",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHLSN is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "TRIB1",
+      "target": "choline measurement (CHOLINE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIB1 is associated with choline measurement (CHOLINE_MEASUREMENT). Open Targets association score 0.38"
+    }
+  ]
+}

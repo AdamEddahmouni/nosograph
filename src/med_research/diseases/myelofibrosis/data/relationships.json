@@ -199,6 +199,12 @@
       "description": "NAVITOCLAX targets BCL2L2-PABPN1."
     },
     {
+      "source": "CHEMBL483254",
+      "target": "HDAC1",
+      "type": "TARGETS",
+      "description": "PANOBINOSTAT targets HDAC1."
+    },
+    {
       "source": "CHEMBL941",
       "target": "ABL1",
       "type": "TARGETS",
@@ -263,6 +269,12 @@
       "target": "CRBN",
       "type": "TARGETS",
       "description": "POMALIDOMIDE targets CRBN."
+    },
+    {
+      "source": "CHEMBL483254",
+      "target": "HDAC3",
+      "type": "TARGETS",
+      "description": "PANOBINOSTAT targets HDAC3."
     },
     {
       "source": "CHEMBL1078178",
@@ -371,6 +383,12 @@
       "target": "TERT",
       "type": "TARGETS",
       "description": "IMETELSTAT targets TERT."
+    },
+    {
+      "source": "CHEMBL1213492",
+      "target": "HDAC1",
+      "type": "TARGETS",
+      "description": "GIVINOSTAT targets HDAC1."
     },
     {
       "source": "CHEMBL2107823",
@@ -679,6 +697,12 @@
       "description": "SRSF2 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.40"
     },
     {
+      "source": "BCL2L2-PABPN1",
+      "target": "myelofibrosis (MYELOFIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2L2-PABPN1 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.34"
+    },
+    {
       "source": "BCL2L2",
       "target": "myelofibrosis (MYELOFIBROSIS)",
       "type": "ASSOCIATED_WITH",
@@ -691,16 +715,16 @@
       "description": "BCL2L1 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.34"
     },
     {
-      "source": "BCL2L2-PABPN1",
-      "target": "myelofibrosis (MYELOFIBROSIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "BCL2L2-PABPN1 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.34"
-    },
-    {
       "source": "BCL2",
       "target": "myelofibrosis (MYELOFIBROSIS)",
       "type": "ASSOCIATED_WITH",
       "description": "BCL2 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.34"
+    },
+    {
+      "source": "IFNAR2",
+      "target": "myelofibrosis (MYELOFIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNAR2 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.32"
     },
     {
       "source": "IFNAR1",
@@ -709,10 +733,10 @@
       "description": "IFNAR1 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.32"
     },
     {
-      "source": "IFNAR2",
+      "source": "CRBN",
       "target": "myelofibrosis (MYELOFIBROSIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "IFNAR2 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.32"
+      "description": "CRBN is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.29"
     },
     {
       "source": "RBX1",
@@ -733,12 +757,6 @@
       "description": "CUL4A is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.29"
     },
     {
-      "source": "CRBN",
-      "target": "myelofibrosis (MYELOFIBROSIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CRBN is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.29"
-    },
-    {
       "source": "SRC",
       "target": "myelofibrosis (MYELOFIBROSIS)",
       "type": "ASSOCIATED_WITH",
@@ -749,6 +767,12 @@
       "target": "myelofibrosis (MYELOFIBROSIS)",
       "type": "ASSOCIATED_WITH",
       "description": "RRM2 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "POLD4",
+      "target": "myelofibrosis (MYELOFIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD4 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.10"
     },
     {
       "source": "POLE3",
@@ -763,10 +787,10 @@
       "description": "POLD1 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.10"
     },
     {
-      "source": "POLA1",
+      "source": "RRM1",
       "target": "myelofibrosis (MYELOFIBROSIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "POLA1 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.10"
+      "description": "RRM1 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.10"
     },
     {
       "source": "PRIM1",
@@ -775,40 +799,16 @@
       "description": "PRIM1 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.10"
     },
     {
-      "source": "POLD2",
-      "target": "myelofibrosis (MYELOFIBROSIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "POLD2 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.10"
-    },
-    {
-      "source": "POLD3",
-      "target": "myelofibrosis (MYELOFIBROSIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "POLD3 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.10"
-    },
-    {
-      "source": "RRM1",
-      "target": "myelofibrosis (MYELOFIBROSIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "RRM1 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.10"
-    },
-    {
       "source": "POLA2",
       "target": "myelofibrosis (MYELOFIBROSIS)",
       "type": "ASSOCIATED_WITH",
       "description": "POLA2 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.10"
     },
     {
-      "source": "PRIM2",
+      "source": "POLA1",
       "target": "myelofibrosis (MYELOFIBROSIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "PRIM2 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.10"
-    },
-    {
-      "source": "POLE",
-      "target": "myelofibrosis (MYELOFIBROSIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "POLE is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.10"
+      "description": "POLA1 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.10"
     },
     {
       "source": "POLE2",
@@ -817,16 +817,28 @@
       "description": "POLE2 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.10"
     },
     {
-      "source": "POLD4",
+      "source": "POLD3",
       "target": "myelofibrosis (MYELOFIBROSIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "POLD4 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.10"
+      "description": "POLD3 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.10"
     },
     {
-      "source": "IMPDH2",
+      "source": "PRIM2",
       "target": "myelofibrosis (MYELOFIBROSIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "IMPDH2 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.09"
+      "description": "PRIM2 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.10"
+    },
+    {
+      "source": "POLD2",
+      "target": "myelofibrosis (MYELOFIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD2 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.10"
+    },
+    {
+      "source": "POLE",
+      "target": "myelofibrosis (MYELOFIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.10"
     },
     {
       "source": "FKBP1A",
@@ -841,22 +853,28 @@
       "description": "IMPDH1 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.09"
     },
     {
+      "source": "IMPDH2",
+      "target": "myelofibrosis (MYELOFIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IMPDH2 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.09"
+    },
+    {
       "source": "DHFR",
       "target": "myelofibrosis (MYELOFIBROSIS)",
       "type": "ASSOCIATED_WITH",
       "description": "DHFR is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.09"
     },
     {
-      "source": "NR3C1",
-      "target": "myelofibrosis (MYELOFIBROSIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "NR3C1 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.09"
-    },
-    {
       "source": "FDPS",
       "target": "myelofibrosis (MYELOFIBROSIS)",
       "type": "ASSOCIATED_WITH",
       "description": "FDPS is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "NR3C1",
+      "target": "myelofibrosis (MYELOFIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.09"
     },
     {
       "source": "TP53",
@@ -871,6 +889,12 @@
       "description": "MTOR is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.07"
     },
     {
+      "source": "MDM2",
+      "target": "myelofibrosis (MYELOFIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM2 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.07"
+    },
+    {
       "source": "FNTB",
       "target": "myelofibrosis (MYELOFIBROSIS)",
       "type": "ASSOCIATED_WITH",
@@ -881,12 +905,6 @@
       "target": "myelofibrosis (MYELOFIBROSIS)",
       "type": "ASSOCIATED_WITH",
       "description": "FNTA is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.07"
-    },
-    {
-      "source": "MDM2",
-      "target": "myelofibrosis (MYELOFIBROSIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "MDM2 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.07"
     },
     {
       "source": "SPTA1",
@@ -965,6 +983,24 @@
       "target": "myelofibrosis (MYELOFIBROSIS)",
       "type": "ASSOCIATED_WITH",
       "description": "C9orf72 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "HDAC7",
+      "target": "myelofibrosis (MYELOFIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC7 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "HDAC1",
+      "target": "myelofibrosis (MYELOFIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC1 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "HDAC3",
+      "target": "myelofibrosis (MYELOFIBROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC3 is associated with myelofibrosis (MYELOFIBROSIS). Open Targets association score 0.05"
     },
     {
       "source": "HDAC4",

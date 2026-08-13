@@ -119,6 +119,7 @@ CAR_T_SCORES = {
         "RUNX3": 4.0,
         "SCN8A": 4.0,
         "SERPINA1": 4.0,
+        "SFTPC": 4.0,
         "SMPD1": 4.0,
         "SNCA": 4.0,
         "SNCB": 4.0,

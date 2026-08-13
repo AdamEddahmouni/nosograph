@@ -64,6 +64,7 @@ CAR_T_SCORES = {
         "GABRA1": 4.0,
         "GABRA2": 4.0,
         "GABRA3": 4.0,
+        "GABRA5": 4.0,
         "GABRG1": 4.0,
         "GABRG2": 4.0,
         "GIPR": 4.0,

@@ -1,0 +1,592 @@
+{
+  "relationships": [
+    {
+      "source": "CD19",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD19 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD209",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD209 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNFRSF21",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF21 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ADAM17",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM17 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1R1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1R1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4R",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4R is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "TICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "TICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "STAT4",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT4 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "APOBEC3B",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOBEC3B is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOBEC3C",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOBEC3C is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOBEC3D",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOBEC3D is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOBEC3F",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOBEC3F is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOBEC3G",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOBEC3G is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOBEC3H",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOBEC3H is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "IKBKG",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "IKBKG is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD28",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD28 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ICOSLG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ICOSLG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL21R",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL21R is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IRAK4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IRAK4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TICAM1",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TICAM1 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR1",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR1 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR2",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR2 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "LTA",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTA is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF21",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF21 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNGR1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNGR1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF4",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF4 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IKBKG",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKBKG is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.80"
+    },
+    {
+      "source": "IRAK4",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRAK4 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.34"
+    },
+    {
+      "source": "ADAM17",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAM17 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.23"
+    },
+    {
+      "source": "G6PD",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "G6PD is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.15"
+    },
+    {
+      "source": "AMELX",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMELX is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.07"
+    },
+    {
+      "source": "AMELY",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMELY is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.07"
+    },
+    {
+      "source": "CR2",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CR2 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.07"
+    },
+    {
+      "source": "ENAM",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENAM is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.07"
+    },
+    {
+      "source": "JCHAIN",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JCHAIN is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.07"
+    },
+    {
+      "source": "AICDA",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AICDA is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.07"
+    },
+    {
+      "source": "TNF",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.06"
+    },
+    {
+      "source": "CARD11",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.06"
+    },
+    {
+      "source": "IFNG",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.06"
+    },
+    {
+      "source": "PIGR",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIGR is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.06"
+    },
+    {
+      "source": "PAX9",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX9 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL21R",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL21R is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.06"
+    },
+    {
+      "source": "LTA",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTA is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.06"
+    },
+    {
+      "source": "REL",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REL is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.06"
+    },
+    {
+      "source": "SSUH2",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSUH2 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.06"
+    },
+    {
+      "source": "SH2D1A",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2D1A is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL1R1",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1R1 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD209",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD209 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL4",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "DAPP1",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAPP1 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "STAT6",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT6 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD19",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD19 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "STAT4",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT4 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "EDAR",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDAR is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD40",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "CLEC4M",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC4M is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "TLR2",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR2 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "BCL11B",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL11B is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRKCB",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCB is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "TICAM1",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TICAM1 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL4R",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4R is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "IRF4",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF4 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "AIM2",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIM2 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD28",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD28 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "SP6",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SP6 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPPL2A",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPPL2A is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "PGLYRP1",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGLYRP1 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "IFNGR1",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNGR1 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "APOBEC3D",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOBEC3D is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "APOBEC3G",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOBEC3G is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "APOBEC3H",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOBEC3H is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "APOBEC3C",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOBEC3C is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "APOBEC3F",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOBEC3F is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "APOBEC3B",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOBEC3B is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "FCMR",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCMR is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "MST1R",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MST1R is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "TLR1",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR1 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL13",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNFRSF21",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF21 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "DMP1",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMP1 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "ICOSLG",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICOSLG is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "HLA-E",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-E is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXC4",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXC4 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "SH3BP2",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3BP2 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    },
+    {
+      "source": "MALT1",
+      "target": "immunodeficiency 33 (IMMUNODEFICIENCY_33)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MALT1 is associated with immunodeficiency 33 (IMMUNODEFICIENCY_33). Open Targets association score 0.05"
+    }
+  ]
+}

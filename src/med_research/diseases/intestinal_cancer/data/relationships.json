@@ -1,0 +1,520 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1946170",
+      "target": "BRAF",
+      "type": "TARGETS",
+      "description": "REGORAFENIB targets BRAF."
+    },
+    {
+      "source": "CASP8",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP8 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CXCR1",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR1 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CXCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "HNF4A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF4A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "ANGPTL2",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL2 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "SMAD4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP3A4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP3A4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP3A5",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP3A5 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GSDMD",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMD is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.05"
+    },
+    {
+      "source": "XRCC6",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XRCC6 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.04"
+    },
+    {
+      "source": "RPL17",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.03"
+    },
+    {
+      "source": "DNMT3B",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT3B is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRDM1",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM1 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.02"
+    },
+    {
+      "source": "VEGFA",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.02"
+    },
+    {
+      "source": "APC",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.02"
+    },
+    {
+      "source": "CXCR1",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR1 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.02"
+    },
+    {
+      "source": "TP53",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.02"
+    },
+    {
+      "source": "SOAT1",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOAT1 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.02"
+    },
+    {
+      "source": "KRAS",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.02"
+    },
+    {
+      "source": "GSDME",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDME is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.02"
+    },
+    {
+      "source": "NECTIN2",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NECTIN2 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.02"
+    },
+    {
+      "source": "CASP8",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP8 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.02"
+    },
+    {
+      "source": "JUN",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JUN is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.02"
+    },
+    {
+      "source": "BRAF",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.02"
+    },
+    {
+      "source": "STAT3",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.02"
+    },
+    {
+      "source": "MMP9",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDH1",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD8A",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCN2",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCN2 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.02"
+    },
+    {
+      "source": "SNAI1",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNAI1 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.02"
+    },
+    {
+      "source": "SMAD4",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD4 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.02"
+    },
+    {
+      "source": "MYC",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLIT2",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLIT2 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDX2",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDX2 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.02"
+    },
+    {
+      "source": "KLK3",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK3 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNCA",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDCD1",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPATA2",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "TCF7L2",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF7L2 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "SHMT1",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHMT1 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "DCLK1",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCLK1 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "TF",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTEN",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1B",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP3A5",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP3A5 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP3A4",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP3A4 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERBB2",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "HMGCS2",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCS2 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "NLRP3",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "ANGPTL2",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL2 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "SF1",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SF1 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "RBM3",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM3 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "REPIN1",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REPIN1 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "TFAP4",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFAP4 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "WT1",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPLD1",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPLD1 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "USP10",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP10 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "HNF4A",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF4A is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "KLRK1",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLRK1 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "BMI1",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMI1 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "RSPO3",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO3 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTGS2",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "YAP1",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YAP1 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "YY1AP1",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YY1AP1 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "LGR5",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGR5 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZBTB33",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB33 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    },
+    {
+      "source": "PAK1",
+      "target": "intestinal cancer (INTESTINAL_CANCER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAK1 is associated with intestinal cancer (INTESTINAL_CANCER). Open Targets association score 0.01"
+    }
+  ]
+}

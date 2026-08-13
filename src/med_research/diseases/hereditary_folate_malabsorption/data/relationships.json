@@ -1,0 +1,538 @@
+{
+  "relationships": [
+    {
+      "source": "LYN",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LYN is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP6",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP6 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL5",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL5 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL5RA",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL5RA is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFATC1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBIA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "LAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL17B",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17B is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL21R",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL21R is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "LTB",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTB is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFAIP8L2",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP8L2 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "NLRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SLC46A1",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC46A1 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.83"
+    },
+    {
+      "source": "SARM1",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SARM1 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.53"
+    },
+    {
+      "source": "CARD11",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.05"
+    },
+    {
+      "source": "TMCC2",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMCC2 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.05"
+    },
+    {
+      "source": "GNAI2",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAI2 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.05"
+    },
+    {
+      "source": "CEBPE",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPE is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFKB1",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "SMAP1",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAP1 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZSWIM1",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZSWIM1 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "LYN",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYN is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXP3",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "BACH2",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BACH2 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "IKZF1",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "SAMD9L",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAMD9L is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL21R",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL21R is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFNG",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "GIMAP1-GIMAP5",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP1-GIMAP5 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "GIMAP5",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP5 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "MYB",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYB is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "PGM3",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGM3 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL2",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "LMBR1L",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMBR1L is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "TET2",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL2RA",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RA is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKDC",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKDC is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "ABCB1",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB1 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL4",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL13",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "LTB",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTB is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNFAIP8L2",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFAIP8L2 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "GMDS",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GMDS is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFATC1",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFATC1 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "ITPKB",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITPKB is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.04"
+    },
+    {
+      "source": "ENPP3",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENPP3 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "POU2AF1",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU2AF1 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "REL",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REL is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "TMEM127",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM127 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "NLRP6",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP6 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL17B",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17B is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "AICDA",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AICDA is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "LGALS3",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADGRG3",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADGRG3 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL5",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL5 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "SPTA1",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTPN22",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZFP36L2",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFP36L2 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "WDR1",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR1 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "MMP9",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "STAT6",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT6 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "LAT",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAT is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "NIBAN3",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NIBAN3 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "ARID4A",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID4A is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "ITGB2",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "MSI2",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSI2 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "STX11",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STX11 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "RAB27A",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB27A is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "CXCR2",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR2 is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL5RA",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL5RA is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.03"
+    },
+    {
+      "source": "NFKBIA",
+      "target": "hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIA is associated with hereditary folate malabsorption (HEREDITARY_FOLATE_MALABSORPTION). Open Targets association score 0.03"
+    }
+  ]
+}

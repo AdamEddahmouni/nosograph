@@ -1,0 +1,490 @@
+{
+  "relationships": [
+    {
+      "source": "CDK20",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK20 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "KLRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "KLRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "FGF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ADAMTS20",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS20 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL1A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IL11",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL11 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17RA",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17RA is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CHUK",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CHUK is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL17RA",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17RA is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL21",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL21 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL23R",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL23R is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LRP4",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP4 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP51A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP51A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.84"
+    },
+    {
+      "source": "HOXD13",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD13 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FREM1",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FREM1 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ALX4",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALX4 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FREM2",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FREM2 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRICKLE1",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRICKLE1 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GDF5",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF5 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "B3GLCT",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B3GLCT is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "HOXA13",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA13 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TWIST1",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TWIST1 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "EN1",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EN1 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYP51A1",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP51A1 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGFR2",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GRHL2",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRHL2 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FMN1",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMN1 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PCNT",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNT is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFT172",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT172 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADAMTS20",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS20 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "B9D1",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B9D1 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTK7",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTK7 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "NIPBL",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NIPBL is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SFRP2",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFRP2 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFT88",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT88 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FOXC1",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "AMER1",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMER1 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TMEM107",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM107 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "RGL1",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RGL1 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTCH1",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PHGDH",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHGDH is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHUK",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHUK is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "LMBR1",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMBR1 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FGF9",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF9 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TCTN1",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCTN1 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "WDR11",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR11 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "COL1A1",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A1 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDK20",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK20 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PITX1",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX1 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "LRP4",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP4 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TBC1D32",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D32 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "DHCR7",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHCR7 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNF",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL17A",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD14",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD14 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL21",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL21 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "FCGR3A",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR3A is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL11",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL11 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "GOPC",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOPC is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "FBLIM1",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBLIM1 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL23R",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL23R is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "KLRB1",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLRB1 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PGAM2",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGAM2 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1B",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL17RA",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17RA is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP4A",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP4A is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "GOT1",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOT1 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "LEP",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC17A5",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A5 is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP12A",
+      "target": "Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP12A is associated with Greig cephalopolysyndactyly syndrome (GREIG_CEPHALOPOLYSYNDACTYLY_SYNDROME). Open Targets association score 0.01"
+    }
+  ]
+}

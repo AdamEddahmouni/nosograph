@@ -1,0 +1,556 @@
+{
+  "relationships": [
+    {
+      "source": "BAX",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BAX is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CASP3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "SLC39A14",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC39A14 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "SLC39A8",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC39A8 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCR7",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR7 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TRAF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TFR2",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFR2 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "TRAF2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFATC1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "FTH1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "FTH1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TDRD7",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "TDRD7 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TRAF2",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF2 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ABCC2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GSTP1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTP1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TTR",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTR is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCND1",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKT1",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRAF2",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAF2 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRRAP",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRRAP is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD40LG",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SCYL1",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCYL1 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TDRD7",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TDRD7 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACP5",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACP5 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "YY1AP1",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YY1AP1 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "YAP1",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YAP1 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERBB2",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "OIP5",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OIP5 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "FTH1",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FTH1 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CASP3",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP3 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "BCL2",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "BAX",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAX is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "FAP",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAP is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "SERPINA1",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA1 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "HHIPL2",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HHIPL2 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNG",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC39A8",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC39A8 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC39A14",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC39A14 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "NFATC1",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFATC1 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CTSK",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSK is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1B",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP53",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTGS2",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCR7",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR7 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACO1",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACO1 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ISYNA1",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISYNA1 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "MT-CO2",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO2 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "NCOA4",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOA4 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "MPV17",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPV17 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "NOS2",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC25A10",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A10 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "RUNX1",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "NF2",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "MECOM",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MECOM is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL6",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTPRC",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCN2",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCN2 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCN1",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCN1 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ABCG2",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG2 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "SEC22B",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEC22B is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "TRIM16",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM16 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "FANCC",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCC is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ABCB1",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB1 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ABCC2",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC2 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "DMRT1",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMRT1 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "TFR2",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFR2 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "GSTP1",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTP1 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL8",
+      "target": "fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with fetal anticonvulsant syndrome (FETAL_ANTICONVULSANT_SYNDROME). Open Targets association score 0.00"
+    }
+  ]
+}

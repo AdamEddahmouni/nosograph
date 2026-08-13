@@ -2,6 +2,10 @@
 
 Thank you for helping improve the med-research platform. This document covers the essentials for local development and pull requests.
 
+## Code of conduct
+
+This project follows the [Contributor Covenant](CODE_OF_CONDUCT.md). By participating, you agree to uphold a respectful, inclusive community.
+
 ## Development setup
 
 1. Clone the repository and create a virtual environment.
@@ -17,7 +21,32 @@ Thank you for helping improve the med-research platform. This document covers th
    python -m pip install -e .
    ```
 
+4. Install pre-commit hooks (recommended):
+
+   ```bash
+   pip install pre-commit
+   pre-commit install
+   ```
+
 See [README.md](README.md) for alternative install paths and CLI usage.
+
+## Branch and pull request workflow
+
+- Branch from `main` using prefixes: `feature/`, `fix/`, or `docs/`
+- Keep PRs focused; link related issues when applicable
+- Before opening a PR, run:
+
+  ```bash
+  make lint
+  make test-offline
+  ```
+
+- Fill out the pull request template checklist
+- Ensure CI passes (lint, tests, lock-check, 80% coverage gate)
+
+## Security
+
+Do **not** open public issues for security vulnerabilities. See [SECURITY.md](SECURITY.md) for the private reporting process.
 
 ## Running tests
 
@@ -56,3 +85,5 @@ New analysis modules, HTML reports, and user-facing exports must respect the act
 See [TECHNICAL_DEBT_ISSUES.md](TECHNICAL_DEBT_ISSUES.md) for the historical audit, resolved items, and remaining open work. Re-verify issues against the current tree before implementing large changes.
 
 For disease-module curation (validate, coverage, expression consensus, screening profiles), see [docs/disease-curation.md](docs/disease-curation.md).
+
+For self-hosted deployment, see [docs/deployment.md](docs/deployment.md).

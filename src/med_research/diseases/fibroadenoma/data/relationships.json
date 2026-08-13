@@ -1,0 +1,502 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BIRC5",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BIRC5 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CCND2",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND2 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "SERPINE1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SERPINE1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP3 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3R1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD83",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD83 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "SMAD4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SLC5A5",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC5A5 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP3 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "HIF1A",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "HIF1A is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "MED12",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MED12 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "TP53",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RARA",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RARA is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ROS1",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROS1 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SETD2",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD2 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NOTCH2",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH2 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2D",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TBX3",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX3 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2C",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMAD4",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD4 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAP3K1",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K1 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KIT",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "RB1",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "FOXA1",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXA1 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "CCND2",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND2 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFAIP3 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KDM6A",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM6A is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ASXL1",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "STAT3",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NCOR1",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOR1 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PIK3R1",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R1 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CREBBP",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FGFR2",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FLNA",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLNA is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "NUMA1",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUMA1 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "CD83",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD83 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "LGALS3",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "GSDMB",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ESR2",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR2 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ESR1",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NUCKS1",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUCKS1 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPP1",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPP1 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "LAPTM4B",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAPTM4B is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TERT",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SERPINE1",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINE1 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "LDHB",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDHB is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC5A5",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC5A5 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FBP1",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBP1 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "HIF1A",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF1A is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PSAT1",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSAT1 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PROS1",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROS1 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "KLK3",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK3 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "NPEPPS",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPEPPS is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PLAG1",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAG1 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDH1",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ETS1",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETS1 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "BIRC5",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIRC5 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MMP2",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MKI67",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ANO1",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANO1 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "LASP1",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LASP1 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MTMR3",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTMR3 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "BCL2",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "NGF",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NGF is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ERBB2",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MMP9",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GHR",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHR is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GH1",
+      "target": "Fibroadenoma (FIBROADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with Fibroadenoma (FIBROADENOMA). Open Targets association score 0.02"
+    }
+  ]
+}

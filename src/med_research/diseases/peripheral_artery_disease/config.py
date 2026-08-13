@@ -105,6 +105,7 @@ CAR_T_SCORES = {
         "NDUFS7": 4.0,
         "NDUFS8": 4.0,
         "NDUFV1": 4.0,
+        "NDUFV2": 4.0,
         "NDUFV3": 4.0,
         "NPC1L1": 4.0,
         "NR3C2": 4.0,

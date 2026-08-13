@@ -55,6 +55,7 @@ CAR_T_SCORES = {
         "GRAP2": 4.0,
         "HP": 4.0,
         "HRH1": 4.0,
+        "HSPG2": 4.0,
         "HTR1A": 4.0,
         "HTR3A": 4.0,
         "HTR3B": 4.0,

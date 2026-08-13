@@ -1,0 +1,568 @@
+{
+  "relationships": [
+    {
+      "source": "BTK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BTK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD19",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD19 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LYN",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LYN is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "C9orf72",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C9orf72 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CSF2RB",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2RB is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "DPP4",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "DPP4 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "TFRC",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFRC is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL5",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL5 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL5RA",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL5RA is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "TICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "TICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD40",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ICOS",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ICOS is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL21R",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL21R is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TICAM1",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TICAM1 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF13C",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF13C is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "TFRC",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFRC is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.62"
+    },
+    {
+      "source": "CARD11",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "SH2D1A",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2D1A is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "JAK3",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "RAC2",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAC2 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL4",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "REL",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REL is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL13",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CR2",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CR2 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "LGALS3",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ANK1",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPTA1",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNF",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "AICDA",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AICDA is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXP3",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL21R",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL21R is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFKB1",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPPL2A",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPPL2A is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "STAT6",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT6 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "JCHAIN",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JCHAIN is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CEBPE",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPE is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL5RA",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL5RA is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD40",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD19",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD19 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "FLT3LG",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3LG is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LYN",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYN is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ITGB2",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SAMD9L",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAMD9L is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL2",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "IFNG",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "C9orf72",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C9orf72 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFKB2",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "GNAI2",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAI2 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "WAS",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WAS is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CLEC4E",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC4E is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "POU2AF1",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU2AF1 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ICOS",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICOS is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CSF2RB",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2RB is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PKLR",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKLR is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "BTK",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTK is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "BCL10",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL10 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LMBR1L",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMBR1L is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "TICAM1",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TICAM1 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "HEPH",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEPH is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "VAV1",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VAV1 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL2RG",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RG is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL25",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL25 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "BACH2",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BACH2 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "AHSP",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSP is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "DPP4",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPP4 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD274",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNFRSF13C",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF13C is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL5",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL5 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYB",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYB is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "RAG2",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG2 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "FASLG",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKDC",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKDC is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "STK4",
+      "target": "TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK4 is associated with TFRC-related combined immunodeficiency (TFRC_RELATED_COMBINED_IMMUNODEFICIENCY). Open Targets association score 0.04"
+    }
+  ]
+}

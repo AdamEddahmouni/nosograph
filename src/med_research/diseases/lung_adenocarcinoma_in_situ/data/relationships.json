@@ -1,0 +1,400 @@
+{
+  "relationships": [
+    {
+      "source": "CASP3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "EIF2A",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EIF2A is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "IL12RB2",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL12RB2 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL33",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL33 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "ACE2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "IL12RB2",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL12RB2 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "CYP1A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP1A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM3",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM3 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM7",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM7 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSG2",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSG2 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "CLDN10",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN10 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM5",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM5 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "CLDN1",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN1 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGFR",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRAS",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD274",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "NHSL3",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NHSL3 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "MUC1",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC1 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "HSPA2",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPA2 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "INHBA",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INHBA is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "EIF2A",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF2A is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "VWF",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGFBP7",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGFBP7 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "GHRH",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHRH is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL33",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL33 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL12RB2",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL12RB2 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "PECAM1",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PECAM1 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL31",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL31 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "ERVW-1",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERVW-1 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "PCNA",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNA is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT81",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT81 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRNP",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRNP is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "MSI1",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSI1 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "ST3GAL5",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST3GAL5 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "OCIAD2",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OCIAD2 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC18A3",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC18A3 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "CASP3",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP3 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATXN1",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATXN1 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "BRAF",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC7A5",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC7A5 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "NRAS",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "NBR1",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBR1 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "S100A4",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A4 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACE2",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE2 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "SERPINA1",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA1 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "ERBB2",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "ERBB3",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB3 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "CTAG1B",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTAG1B is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "MUC16",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC16 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAP2K1",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K1 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "TTF1",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTF1 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYP1A1",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP1A1 is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    },
+    {
+      "source": "CTAG1A",
+      "target": "lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTAG1A is associated with lung adenocarcinoma in situ (LUNG_ADENOCARCINOMA_IN_SITU). Open Targets association score 0.00"
+    }
+  ]
+}

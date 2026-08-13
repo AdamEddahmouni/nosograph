@@ -1,0 +1,502 @@
+{
+  "relationships": [
+    {
+      "source": "CDK4",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK4 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "E2F4",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "E2F4 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "U2AF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "U2AF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ADAM17",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM17 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "SELE",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELE is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELPLG",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELPLG is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELPLG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SELPLG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD80",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD80 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TG",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TG is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR9",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR9 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "FOLH1",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOLH1 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "ERBB2",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "LYZ",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYZ is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "MKI67",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "HR",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HR is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "PGR",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD274",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "KLK3",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK3 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPEPPS",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPEPPS is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSAT1",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSAT1 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLAG1",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAG1 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "PROS1",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROS1 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLAUR",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAUR is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.01"
+    },
+    {
+      "source": "TG",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TG is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "ESR1",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "GSDMB",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSG2",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSG2 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEACAM5",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM5 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEACAM3",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM3 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEACAM7",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM7 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "EREG",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EREG is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIEZO1",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIEZO1 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT20",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT20 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "LIAT1",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIAT1 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRH2",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH2 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "TMEM37",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM37 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "NID1",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NID1 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD40LG",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD8A",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDK4",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK4 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "BCL3",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL3 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "ERBB3",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB3 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "EGFR",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD163",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD163 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "GATA3",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD68",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD68 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPL17",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADAM17",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAM17 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL10",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "TLR9",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR9 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP53",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACE",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNA1",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD52",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD52 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "SELPLG",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELPLG is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "E2F4",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "E2F4 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "MDM2",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM2 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD80",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD80 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "POMC",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "SNCA",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPATA2",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDCD1",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "EFNB2",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EFNB2 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "SELE",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELE is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "ASAH1",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASAH1 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "U2AF2",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "U2AF2 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "EPHB4",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHB4 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    },
+    {
+      "source": "NR4A1",
+      "target": "lymph node disorder (LYMPH_NODE_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR4A1 is associated with lymph node disorder (LYMPH_NODE_DISORDER). Open Targets association score 0.00"
+    }
+  ]
+}

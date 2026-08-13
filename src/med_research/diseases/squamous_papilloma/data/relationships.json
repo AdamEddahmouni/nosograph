@@ -1,0 +1,574 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201583",
+      "target": "VEGFA",
+      "type": "TARGETS",
+      "description": "BEVACIZUMAB targets VEGFA."
+    },
+    {
+      "source": "CHEMBL1201560",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "TREATS",
+      "description": "PEGINTERFERON ALFA-2A is phase 4 / marketed for squamous papilloma (SQUAMOUS_PAPILLOMA)."
+    },
+    {
+      "source": "CHEMBL1201752",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "TREATS",
+      "description": "IXABEPILONE is phase 4 / marketed for squamous papilloma (SQUAMOUS_PAPILLOMA)."
+    },
+    {
+      "source": "CHEMBL1683590",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "TREATS",
+      "description": "ERIBULIN is phase 4 / marketed for squamous papilloma (SQUAMOUS_PAPILLOMA)."
+    },
+    {
+      "source": "CHEMBL1683590",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "TREATS",
+      "description": "ERIBULIN is phase 4 / marketed for squamous papilloma (SQUAMOUS_PAPILLOMA)."
+    },
+    {
+      "source": "CHEMBL1742992",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "TREATS",
+      "description": "BLINATUMOMAB is phase 4 / marketed for squamous papilloma (SQUAMOUS_PAPILLOMA)."
+    },
+    {
+      "source": "CHEMBL1789941",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "TREATS",
+      "description": "RUXOLITINIB is phase 4 / marketed for squamous papilloma (SQUAMOUS_PAPILLOMA)."
+    },
+    {
+      "source": "CHEMBL2110725",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "TREATS",
+      "description": "VINFLUNINE is phase 3 for squamous papilloma (SQUAMOUS_PAPILLOMA)."
+    },
+    {
+      "source": "CHEMBL225071",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "TREATS",
+      "description": "RALTITREXED is phase 4 / marketed for squamous papilloma (SQUAMOUS_PAPILLOMA)."
+    },
+    {
+      "source": "MAP1LC3B",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP1LC3B is a component of the Autophagy pathway."
+    },
+    {
+      "source": "MS4A1",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MS4A1 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PDX1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PDX1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD80",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD80 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "MYD88",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MYD88 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "IFNA2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "GSTK1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTK1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SLCO6A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLCO6A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "TGFA",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFA is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGFR",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNA2",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA2 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRAS",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "POSTN",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POSTN is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD4",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HRAS",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRT15",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT15 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FOS",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOS is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GFAP",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DES",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DES is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRT14",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT14 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD8A",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MKI67",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEBPB",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPB is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTCH1",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOX9",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX9 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAP1LC3B",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP1LC3B is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT20",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT20 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDX1",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDX1 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FAP",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAP is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD109",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD109 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MS4A1",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MS4A1 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYD88",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYD88 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TUBB3",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB3 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATP2A2",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP2A2 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PLAT",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAT is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "VEGFA",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYC",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PC",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PC is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SUB1",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUB1 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PCNA",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNA is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGF1",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD44",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPK3",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK3 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "DCC",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCC is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "OVOL1",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OVOL1 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCNL2",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCNL2 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFRD1",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFRD1 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTEN",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CLIC4",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLIC4 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MCAM",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCAM is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TCEAL1",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCEAL1 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLCO6A1",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLCO6A1 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GKN1",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GKN1 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "HPGDS",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPGDS is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NSG1",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSG1 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "S100A8",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A8 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD80",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD80 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT6B",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT6B is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTK2",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTK2 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MIB1",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIB1 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GSTK1",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTK1 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PCSK4",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK4 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "WIF1",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WIF1 is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GSDMB",
+      "target": "squamous papilloma (SQUAMOUS_PAPILLOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with squamous papilloma (SQUAMOUS_PAPILLOMA). Open Targets association score 0.00"
+    }
+  ]
+}

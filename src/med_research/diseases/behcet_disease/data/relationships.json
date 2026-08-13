@@ -50,9 +50,27 @@
     },
     {
       "source": "CHEMBL628",
+      "target": "PDE9A",
+      "type": "TARGETS",
+      "description": "PENTOXIFYLLINE targets PDE9A."
+    },
+    {
+      "source": "CHEMBL628",
       "target": "PDE3A",
       "type": "TARGETS",
       "description": "PENTOXIFYLLINE targets PDE3A."
+    },
+    {
+      "source": "CHEMBL628",
+      "target": "PDE6A",
+      "type": "TARGETS",
+      "description": "PENTOXIFYLLINE targets PDE6A."
+    },
+    {
+      "source": "CHEMBL628",
+      "target": "PDE6A",
+      "type": "TARGETS",
+      "description": "PENTOXIFYLLINE targets PDE6A."
     },
     {
       "source": "CHEMBL107",
@@ -92,9 +110,21 @@
     },
     {
       "source": "CHEMBL628",
+      "target": "PDE7A",
+      "type": "TARGETS",
+      "description": "PENTOXIFYLLINE targets PDE7A."
+    },
+    {
+      "source": "CHEMBL628",
       "target": "ADORA2A",
       "type": "TARGETS",
       "description": "PENTOXIFYLLINE targets ADORA2A."
+    },
+    {
+      "source": "CHEMBL628",
+      "target": "PDE8B",
+      "type": "TARGETS",
+      "description": "PENTOXIFYLLINE targets PDE8B."
     },
     {
       "source": "CHEMBL628",
@@ -155,6 +185,12 @@
       "target": "PDE4B",
       "type": "TARGETS",
       "description": "PENTOXIFYLLINE targets PDE4B."
+    },
+    {
+      "source": "CHEMBL107",
+      "target": "TUBB4B",
+      "type": "TARGETS",
+      "description": "COLCHICINE targets TUBB4B."
     },
     {
       "source": "CHEMBL2108508",
@@ -227,6 +263,12 @@
       "target": "TUBB8",
       "type": "TARGETS",
       "description": "COLCHICINE targets TUBB8."
+    },
+    {
+      "source": "CHEMBL628",
+      "target": "PDE9A",
+      "type": "TARGETS",
+      "description": "PENTOXIFYLLINE targets PDE9A."
     },
     {
       "source": "CHEMBL514800",
@@ -703,16 +745,16 @@
       "description": "PDE4C is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.34"
     },
     {
-      "source": "PDE4D",
-      "target": "Behcet disease (BEHCET_DISEASE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PDE4D is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.34"
-    },
-    {
       "source": "PDE4B",
       "target": "Behcet disease (BEHCET_DISEASE)",
       "type": "ASSOCIATED_WITH",
       "description": "PDE4B is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.34"
+    },
+    {
+      "source": "PDE4D",
+      "target": "Behcet disease (BEHCET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE4D is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.34"
     },
     {
       "source": "FUT2",
@@ -775,16 +817,16 @@
       "description": "IL12A is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.28"
     },
     {
-      "source": "PPIA",
-      "target": "Behcet disease (BEHCET_DISEASE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PPIA is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.26"
-    },
-    {
       "source": "IFNAR1",
       "target": "Behcet disease (BEHCET_DISEASE)",
       "type": "ASSOCIATED_WITH",
       "description": "IFNAR1 is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.26"
+    },
+    {
+      "source": "PPIA",
+      "target": "Behcet disease (BEHCET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIA is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.26"
     },
     {
       "source": "IFNAR2",
@@ -877,28 +919,10 @@
       "description": "IL33 is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
     },
     {
-      "source": "TUBB4A",
+      "source": "PDE7B",
       "target": "Behcet disease (BEHCET_DISEASE)",
       "type": "ASSOCIATED_WITH",
-      "description": "TUBB4A is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
-    },
-    {
-      "source": "PDE8A",
-      "target": "Behcet disease (BEHCET_DISEASE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PDE8A is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
-    },
-    {
-      "source": "PDE6D",
-      "target": "Behcet disease (BEHCET_DISEASE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PDE6D is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
-    },
-    {
-      "source": "ADORA2A",
-      "target": "Behcet disease (BEHCET_DISEASE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ADORA2A is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
+      "description": "PDE7B is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
     },
     {
       "source": "TUBB6",
@@ -907,10 +931,46 @@
       "description": "TUBB6 is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
     },
     {
-      "source": "TUBB8",
+      "source": "PDE6G",
       "target": "Behcet disease (BEHCET_DISEASE)",
       "type": "ASSOCIATED_WITH",
-      "description": "TUBB8 is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
+      "description": "PDE6G is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "PDE5A",
+      "target": "Behcet disease (BEHCET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE5A is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "PDE3A",
+      "target": "Behcet disease (BEHCET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE3A is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "PDE6H",
+      "target": "Behcet disease (BEHCET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE6H is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "ADORA2A",
+      "target": "Behcet disease (BEHCET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADORA2A is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "PDE7A",
+      "target": "Behcet disease (BEHCET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE7A is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "TUBB4A",
+      "target": "Behcet disease (BEHCET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB4A is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
     },
     {
       "source": "PDE6B",
@@ -919,22 +979,70 @@
       "description": "PDE6B is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
     },
     {
+      "source": "PDE6D",
+      "target": "Behcet disease (BEHCET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE6D is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "TUBB4B",
+      "target": "Behcet disease (BEHCET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB4B is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "PDE8B",
+      "target": "Behcet disease (BEHCET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE8B is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "PDE9A",
+      "target": "Behcet disease (BEHCET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE9A is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "PDE6A",
+      "target": "Behcet disease (BEHCET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE6A is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "PDE2A",
+      "target": "Behcet disease (BEHCET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE2A is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "TUBB1",
+      "target": "Behcet disease (BEHCET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB1 is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "PDE10A",
+      "target": "Behcet disease (BEHCET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE10A is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "PDE8A",
+      "target": "Behcet disease (BEHCET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE8A is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "TUBB8",
+      "target": "Behcet disease (BEHCET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB8 is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
+    },
+    {
       "source": "TUBB2B",
       "target": "Behcet disease (BEHCET_DISEASE)",
       "type": "ASSOCIATED_WITH",
       "description": "TUBB2B is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
-    },
-    {
-      "source": "PDE7B",
-      "target": "Behcet disease (BEHCET_DISEASE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PDE7B is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
-    },
-    {
-      "source": "PDE3A",
-      "target": "Behcet disease (BEHCET_DISEASE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PDE3A is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
     },
     {
       "source": "PDE3B",
@@ -953,30 +1061,6 @@
       "target": "Behcet disease (BEHCET_DISEASE)",
       "type": "ASSOCIATED_WITH",
       "description": "PDE1B is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
-    },
-    {
-      "source": "PDE10A",
-      "target": "Behcet disease (BEHCET_DISEASE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PDE10A is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
-    },
-    {
-      "source": "TUBB1",
-      "target": "Behcet disease (BEHCET_DISEASE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "TUBB1 is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
-    },
-    {
-      "source": "PDE6H",
-      "target": "Behcet disease (BEHCET_DISEASE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PDE6H is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
-    },
-    {
-      "source": "PDE5A",
-      "target": "Behcet disease (BEHCET_DISEASE)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PDE5A is associated with Behcet disease (BEHCET_DISEASE). Open Targets association score 0.09"
     },
     {
       "source": "ADORA2B",

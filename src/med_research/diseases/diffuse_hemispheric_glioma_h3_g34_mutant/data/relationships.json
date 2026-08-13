@@ -1,0 +1,58 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1789844",
+      "target": "CTLA4",
+      "type": "TARGETS",
+      "description": "IPILIMUMAB targets CTLA4."
+    },
+    {
+      "source": "CHEMBL2108738",
+      "target": "PDCD1",
+      "type": "TARGETS",
+      "description": "NIVOLUMAB targets PDCD1."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "diffuse hemispheric glioma, H3 G34-mutant (DIFFUSE_HEMISPHERIC_GLIOMA_H3_G34_MUTANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with diffuse hemispheric glioma, H3 G34-mutant (DIFFUSE_HEMISPHERIC_GLIOMA_H3_G34_MUTANT). Open Targets association score 0.12"
+    },
+    {
+      "source": "CTLA4",
+      "target": "diffuse hemispheric glioma, H3 G34-mutant (DIFFUSE_HEMISPHERIC_GLIOMA_H3_G34_MUTANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTLA4 is associated with diffuse hemispheric glioma, H3 G34-mutant (DIFFUSE_HEMISPHERIC_GLIOMA_H3_G34_MUTANT). Open Targets association score 0.04"
+    },
+    {
+      "source": "PDCD1",
+      "target": "diffuse hemispheric glioma, H3 G34-mutant (DIFFUSE_HEMISPHERIC_GLIOMA_H3_G34_MUTANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with diffuse hemispheric glioma, H3 G34-mutant (DIFFUSE_HEMISPHERIC_GLIOMA_H3_G34_MUTANT). Open Targets association score 0.04"
+    }
+  ]
+}

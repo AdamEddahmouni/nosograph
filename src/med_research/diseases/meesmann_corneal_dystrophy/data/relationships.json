@@ -1,0 +1,424 @@
+{
+  "relationships": [
+    {
+      "source": "CASP12",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP12 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "COL8A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL8A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "CASP12",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP12 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "JAG1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "JAG1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "TGFBI",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBI is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBI",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBI is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LMX1B",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "LMX1B is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "KRT12",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT12 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.70"
+    },
+    {
+      "source": "KRT3",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT3 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.60"
+    },
+    {
+      "source": "PAX6",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX6 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "FOXE3",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXE3 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "ADCYAP1",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADCYAP1 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXC1",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZEB1",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "UBIAD1",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBIAD1 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TGFBI",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBI is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL8A2",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL8A2 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CHST6",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHST6 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CHST5",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHST5 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "RAD54L",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD54L is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "DSTN",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSTN is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "B3GNT7",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B3GNT7 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "AQP5",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP5 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ANPEP",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANPEP is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "BEST2",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BEST2 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GJE1",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJE1 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "DSC2",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSC2 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "CRYBA2",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYBA2 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "LGR4",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGR4 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "RARB",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RARB is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "PCSK6",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK6 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "CCDC178",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC178 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GALNT9",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GALNT9 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "JAG1",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAG1 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "UBE3B",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBE3B is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "LMX1B",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMX1B is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "FANCF",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCF is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GRB7",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRB7 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC25A28",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A28 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GIMAP1-GIMAP5",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP1-GIMAP5 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "INPP1",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INPP1 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "ANKRD35",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKRD35 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GIMAP5",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP5 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "HSF4",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSF4 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.03"
+    },
+    {
+      "source": "SECTM1",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SECTM1 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "KCNN3",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNN3 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIKFYVE",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIKFYVE is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "AGBL1",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGBL1 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TACSTD2",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TACSTD2 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTK2",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTK2 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GRHL2",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRHL2 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT8",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT8 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT16",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT16 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL6",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CASP12",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP12 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL10",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT17",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT17 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CAT",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAT is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOD1",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD1 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "DDIT3",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDIT3 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT1",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT1 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT13",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT13 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "KCNG1",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNG1 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT5",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT5 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT18",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT18 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT19",
+      "target": "Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT19 is associated with Meesmann corneal dystrophy (MEESMANN_CORNEAL_DYSTROPHY). Open Targets association score 0.00"
+    }
+  ]
+}

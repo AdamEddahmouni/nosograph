@@ -1,0 +1,592 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1042",
+      "target": "VDR",
+      "type": "TARGETS",
+      "description": "CHOLECALCIFEROL targets VDR."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "SIGLEC10",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "SIGLEC10 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "HLA-DRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "HLA-DRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR1",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR1 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "C4A",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C4A is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CXCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL18R1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18R1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "RENBP",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "RENBP is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR2",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR2 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF1A",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF1A is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VDR",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VDR is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.07"
+    },
+    {
+      "source": "TNF",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "TLR2",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR2 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "IFNG",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL10",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "SPN",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPN is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "SETD2",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD2 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "CR1",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CR1 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.02"
+    },
+    {
+      "source": "EBI3",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EBI3 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL18R1",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18R1 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "SDC1",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC1 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "SIGLEC10",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIGLEC10 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCL2",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL2 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "RENBP",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RENBP is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "ABCG2",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG2 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "ICAM1",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "C4A",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C4A is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACE",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TARP",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TARP is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD4",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "FN1",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FN1 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB1",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL17A",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "HLA-DRB1",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DRB1 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD79A",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKT1",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "LTF",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTF is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "SI",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SI is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "FTO",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FTO is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP2C1",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP2C1 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PXDNL",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PXDNL is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALKBH5",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALKBH5 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRT16",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT16 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPARA",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARA is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "DEFB4A",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEFB4A is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "DEFB4B",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEFB4B is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1B",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRH2",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH2 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "INS",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSAP",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSAP is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRH1",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH1 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CALHM3",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALHM3 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNFRSF1A",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF1A is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFKB1",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD274",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CFB",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFB is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "C3",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCR1",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR1 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "HLA-DRB5",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DRB5 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP2",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL4",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD8A",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD40LG",
+      "target": "Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with Staphylococcus aureus infection (STAPHYLOCOCCUS_AUREUS_INFECTION). Open Targets association score 0.01"
+    }
+  ]
+}

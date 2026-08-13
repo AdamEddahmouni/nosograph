@@ -1,0 +1,448 @@
+{
+  "relationships": [
+    {
+      "source": "FGF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL1A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "IHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BMP5",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP5 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "BMPR1B",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMPR1B is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL6ST",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6ST is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PTHLH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTHLH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "THRA",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THRA is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "FBN1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "FBN1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "THRA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "THRA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "WNT7A",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT7A is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "GDF5",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF5 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "HOXD13",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD13 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "FMN1",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMN1 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "LNPK",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LNPK is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "COL2A1",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "WNT7A",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT7A is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "HOXA11",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA11 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "RSPO2",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO2 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PHEX",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHEX is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXA13",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA13 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGFR3",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PKDCC",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKDCC is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "BMP5",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP5 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "NUBP1",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUBP1 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGF18",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF18 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SFRP2",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFRP2 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTHLH",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTHLH is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "INPP4B",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INPP4B is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FSTL1",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSTL1 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "HOXD12",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD12 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CXXC5",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXXC5 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FUZ",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUZ is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ANO6",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANO6 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "LHCGR",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHCGR is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "EVX2",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EVX2 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SMPD3",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMPD3 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PHOSPHO1",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHOSPHO1 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNNI2",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNI2 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ROR2",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROR2 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PBXIP1",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBXIP1 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRIP11",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIP11 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "BMPR1B",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMPR1B is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NABP2",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NABP2 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGF9",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF9 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TENT5A",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TENT5A is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKG2",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKG2 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFITM5",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFITM5 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FBN1",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBN1 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "EVC2",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EVC2 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL1A1",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A1 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SIX1",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIX1 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IHH",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IHH is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ALX4",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALX4 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "BPNT2",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BPNT2 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ESR2",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR2 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "EN1",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EN1 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "THRA",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THRA is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CBS",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBS is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "RUNX3",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX3 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "XYLT1",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XYLT1 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "RECK",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RECK is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "WDR35",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR35 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "HSPG2",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPG2 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "POSTN",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POSTN is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ARSB",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARSB is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GLI3",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CCN2",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCN2 is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL6ST",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6ST is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PORCN",
+      "target": "diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PORCN is associated with diaphragmatic defect-limb deficiency-skull defect syndrome (DIAPHRAGMATIC_DEFECT_LIMB_DEFICIENCY_SKULL_DEFECT_SYNDROME). Open Targets association score 0.03"
+    }
+  ]
+}

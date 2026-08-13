@@ -1,0 +1,532 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL4650343",
+      "target": "JAK2",
+      "type": "TARGETS",
+      "description": "IZENCITINIB targets JAK2."
+    },
+    {
+      "source": "XIAP",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "XIAP is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "ATG16L1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "ATG16L1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "PLCG2",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLCG2 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CDKAL1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKAL1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCL20",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL20 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL12B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL12B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL18RAP",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18RAP is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL19",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL19 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "ITGA4",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA4 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "TYK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "TYK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "CARD9",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD9 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "CD28",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD28 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "SMAD3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "IL12B",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL12B is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL23R",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL23R is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "RORC",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "RORC is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ATG16L1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ATG16L1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGA4",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA4 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGER4",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGER4 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFSF15",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF15 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFIH1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFIH1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNGR2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNGR2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF5",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF5 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "IL23R",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL23R is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.67"
+    },
+    {
+      "source": "INAVA",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INAVA is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.65"
+    },
+    {
+      "source": "IL10",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.62"
+    },
+    {
+      "source": "FCGR2A",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2A is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.60"
+    },
+    {
+      "source": "NOD2",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOD2 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.59"
+    },
+    {
+      "source": "GPR35",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR35 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.55"
+    },
+    {
+      "source": "BACH2",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BACH2 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.55"
+    },
+    {
+      "source": "PTGER4",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGER4 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.55"
+    },
+    {
+      "source": "MST1",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MST1 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.54"
+    },
+    {
+      "source": "USP25",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP25 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.54"
+    },
+    {
+      "source": "TNFSF15",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF15 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.53"
+    },
+    {
+      "source": "NKX2-3",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-3 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.52"
+    },
+    {
+      "source": "IRF5",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF5 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.52"
+    },
+    {
+      "source": "IL19",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL19 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.51"
+    },
+    {
+      "source": "IFIH1",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFIH1 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.51"
+    },
+    {
+      "source": "CCL20",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL20 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.51"
+    },
+    {
+      "source": "ITGA4",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA4 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.51"
+    },
+    {
+      "source": "ALPI",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPI is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.50"
+    },
+    {
+      "source": "PLCG2",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCG2 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.50"
+    },
+    {
+      "source": "CD40",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.50"
+    },
+    {
+      "source": "DLD",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLD is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.50"
+    },
+    {
+      "source": "TYK2",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYK2 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.50"
+    },
+    {
+      "source": "GPR65",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR65 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.50"
+    },
+    {
+      "source": "KLF3",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF3 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.50"
+    },
+    {
+      "source": "ADCY7",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADCY7 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.49"
+    },
+    {
+      "source": "CARD9",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD9 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.49"
+    },
+    {
+      "source": "CD28",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD28 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.49"
+    },
+    {
+      "source": "IL12B",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL12B is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.48"
+    },
+    {
+      "source": "CD6",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD6 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.48"
+    },
+    {
+      "source": "CDYL2",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDYL2 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.48"
+    },
+    {
+      "source": "JAK2",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.47"
+    },
+    {
+      "source": "XIAP",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XIAP is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.47"
+    },
+    {
+      "source": "PLAU",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAU is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.47"
+    },
+    {
+      "source": "ATG16L1",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATG16L1 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.47"
+    },
+    {
+      "source": "PTPN2",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN2 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.47"
+    },
+    {
+      "source": "HPS1",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPS1 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.47"
+    },
+    {
+      "source": "LPP",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPP is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.47"
+    },
+    {
+      "source": "RORC",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RORC is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.46"
+    },
+    {
+      "source": "SNX20",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNX20 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.46"
+    },
+    {
+      "source": "IRGM",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRGM is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.46"
+    },
+    {
+      "source": "FOSL2",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOSL2 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.46"
+    },
+    {
+      "source": "CEP43",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEP43 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.46"
+    },
+    {
+      "source": "CDKAL1",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKAL1 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.46"
+    },
+    {
+      "source": "ADO",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADO is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.46"
+    },
+    {
+      "source": "FOS",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOS is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.46"
+    },
+    {
+      "source": "PDGFB",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFB is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.45"
+    },
+    {
+      "source": "IFNGR2",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNGR2 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.45"
+    },
+    {
+      "source": "IL18RAP",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18RAP is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.45"
+    },
+    {
+      "source": "NDFIP1",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDFIP1 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.45"
+    },
+    {
+      "source": "SLC22A4",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A4 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.45"
+    },
+    {
+      "source": "HINT1",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HINT1 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.45"
+    },
+    {
+      "source": "MAP3K8",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K8 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.45"
+    },
+    {
+      "source": "TSPAN14",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSPAN14 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.45"
+    },
+    {
+      "source": "NCF4",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCF4 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.45"
+    },
+    {
+      "source": "DENND1B",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DENND1B is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.44"
+    },
+    {
+      "source": "IL2RA",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RA is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.44"
+    },
+    {
+      "source": "TTC33",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC33 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.44"
+    },
+    {
+      "source": "FCGR2B",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2B is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.44"
+    },
+    {
+      "source": "SMAD3",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD3 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.44"
+    },
+    {
+      "source": "ABCB1",
+      "target": "inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB1 is associated with inflammatory bowel disease (INFLAMMATORY_BOWEL_DISEASE). Open Targets association score 0.44"
+    }
+  ]
+}

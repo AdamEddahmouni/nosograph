@@ -1,0 +1,436 @@
+{
+  "relationships": [
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CYP4F2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4F2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CYP4F8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4F8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53BP2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53BP2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "HNF4A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF4A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "CERKL",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "CERKL is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "LMX1B",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "LMX1B is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "LRP5",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP5 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP4F11",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4F11 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP4F12",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4F12 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP4F2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4F2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP4F8",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4F8 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "PAX6",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX6 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "VSX2",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VSX2 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "GJA8",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA8 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "FOXE3",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXE3 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "GJE1",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJE1 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "INTS15",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INTS15 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "APAF1",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APAF1 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "MYH10",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH10 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PXDN",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PXDN is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRPM3",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPM3 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "MSX2",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSX2 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "LGR4",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGR4 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CRYAB",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYAB is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NECTIN3",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NECTIN3 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TBC1D32",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D32 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "VAX1",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VAX1 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAB21L1",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAB21L1 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "LIM2",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIM2 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SCRIB",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCRIB is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RPL24",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL24 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAP3K1",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K1 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FKRP",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKRP is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NR2E1",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR2E1 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FAT1",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT1 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PDHX",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDHX is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRPH2",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRPH2 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NIFK",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NIFK is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RAX",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAX is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CRYGD",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYGD is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "LMX1B",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMX1B is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "OTX2",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OTX2 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "LAMA1",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMA1 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CYP4F2",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4F2 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CYP4F11",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4F11 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CYP4F12",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4F12 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CYP4F8",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4F8 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "NECTIN1",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NECTIN1 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GRIP1",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIP1 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PYGO2",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PYGO2 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "RYBP",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYBP is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FAM162A",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM162A is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SIPA1L3",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIPA1L3 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ATOH7",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATOH7 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "LRP5",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP5 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CERKL",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CERKL is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MITF",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MITF is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "NOSIP",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOSIP is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TP53BP2",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53BP2 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "HSF4",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSF4 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CSTF3",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSTF3 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TULP1",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TULP1 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PLAC8",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAC8 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "KDM2B",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM2B is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC44A3",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC44A3 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "RANBP1",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RANBP1 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MIP",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIP is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZIC5",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZIC5 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "HNF4A",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF4A is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "POMGNT1",
+      "target": "muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMGNT1 is associated with muscular hypertrophy-hepatomegaly-polyhydramnios syndrome (MUSCULAR_HYPERTROPHY_HEPATOMEGALY_POLYHYDRAMNIOS_SYNDROME). Open Targets association score 0.03"
+    }
+  ]
+}

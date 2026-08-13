@@ -1,0 +1,610 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL514800",
+      "target": "PDE4A",
+      "type": "TARGETS",
+      "description": "APREMILAST targets PDE4A."
+    },
+    {
+      "source": "CHEMBL514800",
+      "target": "PDE4C",
+      "type": "TARGETS",
+      "description": "APREMILAST targets PDE4C."
+    },
+    {
+      "source": "CHEMBL2105759",
+      "target": "JAK1",
+      "type": "TARGETS",
+      "description": "BARICITINIB targets JAK1."
+    },
+    {
+      "source": "CHEMBL514800",
+      "target": "PDE4D",
+      "type": "TARGETS",
+      "description": "APREMILAST targets PDE4D."
+    },
+    {
+      "source": "CHEMBL1201570",
+      "target": "IL1R1",
+      "type": "TARGETS",
+      "description": "ANAKINRA targets IL1R1."
+    },
+    {
+      "source": "CHEMBL2105759",
+      "target": "JAK2",
+      "type": "TARGETS",
+      "description": "BARICITINIB targets JAK2."
+    },
+    {
+      "source": "CHEMBL514800",
+      "target": "PDE4B",
+      "type": "TARGETS",
+      "description": "APREMILAST targets PDE4B."
+    },
+    {
+      "source": "CHEMBL2109379",
+      "target": "CXCL10",
+      "type": "TARGETS",
+      "description": "NI-0801 targets CXCL10."
+    },
+    {
+      "source": "CCL17",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL17 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCL21",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL21 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCL27",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL27 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCL5",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL5 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL10",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL10 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL12",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL12 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR4",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR4 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "TNFRSF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "DPP4",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "DPP4 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GLP1R",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GLP1R is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1R1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1R1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL33",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL33 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6R",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6R is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF8",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF8 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF4",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF4 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "IRF4",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF4 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.35"
+    },
+    {
+      "source": "GYG1",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GYG1 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.31"
+    },
+    {
+      "source": "IL1R1",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1R1 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "TAGAP",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAGAP is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.22"
+    },
+    {
+      "source": "GALNT5",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GALNT5 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.22"
+    },
+    {
+      "source": "IL6R",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6R is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.11"
+    },
+    {
+      "source": "RTEL1",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RTEL1 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.10"
+    },
+    {
+      "source": "PDE4A",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE4A is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "PDE4B",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE4B is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "PDE4D",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE4D is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "PDE4C",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE4C is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "CXCL10",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL10 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNF",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ICAM1",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL33",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL33 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "STMN3",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STMN3 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFNG",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ARFRP1",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARFRP1 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SPP1",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPP1 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "TRPA1",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPA1 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCL27",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL27 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCL17",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL17 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNFRSF8",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF8 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CXCL12",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL12 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD4",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "LIME1",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIME1 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "JAK2",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "JAK1",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK1 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "PPARA",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARA is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "TRPV4",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV4 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCL5",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL5 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "MME",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MME is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "VIP",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIP is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CXCR4",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR4 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "BCL11B",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL11B is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "SUCNR1",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUCNR1 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "HRH4",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRH4 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "VEGFA",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD8A",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL1B",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "GLP1R",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLP1R is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCL21",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL21 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL4",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "DPP4",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPP4 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL10",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL9",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL9 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD44",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRF1",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRF1 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD1A",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD1A is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACE",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL17A",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "INS",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TAC1",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAC1 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GZMB",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GZMB is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "EPHB2",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHB2 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CAPZB",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAPZB is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCL2",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL2 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MR1",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MR1 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "AGO2",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGO2 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "HPD",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPD is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCN6",
+      "target": "allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCN6 is associated with allergic contact dermatitis (ALLERGIC_CONTACT_DERMATITIS). Open Targets association score 0.01"
+    }
+  ]
+}

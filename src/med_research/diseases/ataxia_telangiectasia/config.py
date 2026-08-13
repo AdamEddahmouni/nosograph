@@ -113,6 +113,7 @@ CAR_T_SCORES = {
         "NR3C1": 4.0,
         "PDE4A": 4.0,
         "PDE4B": 4.0,
+        "PDE4C": 4.0,
         "PEPD": 4.0,
         "PPIA": 4.0,
         "PPT1": 4.0,

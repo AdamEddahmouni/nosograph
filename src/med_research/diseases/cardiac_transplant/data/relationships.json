@@ -1,0 +1,598 @@
+{
+  "relationships": [
+    {
+      "source": "CASP1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CASP4",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP4 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCR1",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR1 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR3",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR3 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CASP1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "MEFV",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "MEFV is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGAX",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAX is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "TICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "TICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "HMGCR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HMGCR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "MAPK9",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK9 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "NR3C2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "NR3C2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "MTHFD2",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFD2 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD36",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD36 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD80",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD80 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD86",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD86 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGAX",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAX is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TICAM1",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TICAM1 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR6",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR6 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNGR1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNGR1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP3A4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP3A4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP3A5",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP3A5 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.02"
+    },
+    {
+      "source": "NPPB",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPB is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "FCGR3A",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR3A is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "FCGR3B",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR3B is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD14",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD14 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSF3",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTOR",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "CST3",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CST3 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL17A",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD8A",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL7R",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7R is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "PECAM1",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PECAM1 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD80",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD80 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD86",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD86 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "ISG20",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISG20 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL2RA",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RA is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS2",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCR1",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR1 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "VWF",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP3A5",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP3A5 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "ABCB1",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB1 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP3A4",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP3A4 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "LCN2",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN2 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "MTHFD2",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFD2 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "HLA-G",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-G is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "TLR6",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR6 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSEN1",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSEN1 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFI16",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFI16 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCR3",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR3 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "MEFV",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEFV is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "DUSP1",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DUSP1 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "NAMPT",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAMPT is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD36",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD36 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "ITGAX",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAX is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "ITGAM",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAM is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "ITGB2",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "NKTR",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKTR is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNGR1",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNGR1 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "CASP4",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP4 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "CFLAR",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFLAR is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "TLR4",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "AIM2",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIM2 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "CASP1",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP1 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPK9",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK9 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACTC1",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTC1 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "TRIM69",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM69 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "TICAM1",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TICAM1 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "BCR",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCR is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "RYBP",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYBP is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "RNF130",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF130 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "NPPA",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPA is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD34",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "AIF1",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIF1 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "HMGCR",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCR is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "NR3C2",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C2 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCL2",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL2 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "PAMR1",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAMR1 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    },
+    {
+      "source": "CX3CL1",
+      "target": "cardiac transplant (CARDIAC_TRANSPLANT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CX3CL1 is associated with cardiac transplant (CARDIAC_TRANSPLANT). Open Targets association score 0.00"
+    }
+  ]
+}

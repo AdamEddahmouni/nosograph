@@ -1,0 +1,544 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BIRC5",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BIRC5 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCNE1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCNE1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDK2",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK2 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "SLC2A1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTTG1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTTG1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR2",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR2 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "HIF1A",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "HIF1A is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFC",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFC is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH2 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.03"
+    },
+    {
+      "source": "CCND1",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.02"
+    },
+    {
+      "source": "EGFR",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.02"
+    },
+    {
+      "source": "KRAS",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLC2A1",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A1 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.02"
+    },
+    {
+      "source": "FGFR2",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.02"
+    },
+    {
+      "source": "FGFR1",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.02"
+    },
+    {
+      "source": "HIF1A",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF1A is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB1",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTTG1",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTTG1 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFA",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFA is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "APOM",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOM is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYC",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "ANGPT2",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPT2 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "CA9",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA9 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGL1",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGL1 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "VPS51",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VPS51 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "PGP",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGP is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "HK2",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HK2 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTEN",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDK2",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK2 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "VEGFA",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.01"
+    },
+    {
+      "source": "HGF",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "TLR2",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR2 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMP2",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "YY1AP1",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YY1AP1 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOX2",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX2 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "YAP1",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YAP1 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "DEFB1",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEFB1 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "BIRC5",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIRC5 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP53",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD9",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD9 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "STAT3",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "APOA1",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "BCL2",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "GSDMB",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYO10",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO10 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "TCEAL1",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCEAL1 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFI27",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFI27 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "DCTN6",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCTN6 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "MT-CO2",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO2 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "VEGFC",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFC is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "NSG1",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSG1 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOD1",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD1 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCNE1",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCNE1 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "IMP3",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IMP3 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "DEFB4A",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEFB4A is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "PAK2",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAK2 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "DEFB4B",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEFB4B is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSMD9",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMD9 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTGS2",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "TMED7",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMED7 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "MKI67",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "ZNRD2",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNRD2 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "SKP2",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SKP2 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD44",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    },
+    {
+      "source": "PCNA",
+      "target": "vocal cord polyp (VOCAL_CORD_POLYP)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNA is associated with vocal cord polyp (VOCAL_CORD_POLYP). Open Targets association score 0.00"
+    }
+  ]
+}

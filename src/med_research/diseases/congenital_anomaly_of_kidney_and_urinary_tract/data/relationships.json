@@ -1,0 +1,460 @@
+{
+  "relationships": [
+    {
+      "source": "COL4A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "HNF1B",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1B is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "BMP4",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP4 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "BMP7",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP7 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "ITGA8",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA8 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "FRAS1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FRAS1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "JAG1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "JAG1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGTR1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGTR1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "REN",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "REN is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "ACTG1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ACTG1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ACTG2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ACTG2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGA8",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA8 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TRAP1",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAP1 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.65"
+    },
+    {
+      "source": "CHRNA3",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHRNA3 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.55"
+    },
+    {
+      "source": "ZMYM2",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZMYM2 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.55"
+    },
+    {
+      "source": "TBX18",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX18 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.54"
+    },
+    {
+      "source": "ROBO1",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROBO1 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.52"
+    },
+    {
+      "source": "LIFR",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIFR is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.47"
+    },
+    {
+      "source": "FRAS1",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FRAS1 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.47"
+    },
+    {
+      "source": "VPS33B",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VPS33B is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.46"
+    },
+    {
+      "source": "SLIT2",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLIT2 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.45"
+    },
+    {
+      "source": "GREB1L",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GREB1L is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.45"
+    },
+    {
+      "source": "GDF6",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF6 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.44"
+    },
+    {
+      "source": "ACE",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.44"
+    },
+    {
+      "source": "GATA3",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.43"
+    },
+    {
+      "source": "SRGAP1",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRGAP1 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.43"
+    },
+    {
+      "source": "TBC1D1",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D1 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.42"
+    },
+    {
+      "source": "HPSE2",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPSE2 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.42"
+    },
+    {
+      "source": "COL4A1",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A1 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.40"
+    },
+    {
+      "source": "FOXC1",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.39"
+    },
+    {
+      "source": "TSHZ3",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSHZ3 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.38"
+    },
+    {
+      "source": "PBX1",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBX1 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.38"
+    },
+    {
+      "source": "AGT",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.37"
+    },
+    {
+      "source": "AGTR1",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGTR1 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.37"
+    },
+    {
+      "source": "ITGA8",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA8 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.37"
+    },
+    {
+      "source": "REN",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REN is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.37"
+    },
+    {
+      "source": "ANOS1",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANOS1 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.37"
+    },
+    {
+      "source": "LRIG2",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRIG2 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.37"
+    },
+    {
+      "source": "ACTG2",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTG2 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.37"
+    },
+    {
+      "source": "HNF1B",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1B is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.37"
+    },
+    {
+      "source": "FREM2",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FREM2 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.36"
+    },
+    {
+      "source": "SALL1",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SALL1 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.34"
+    },
+    {
+      "source": "PAX2",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX2 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.34"
+    },
+    {
+      "source": "NPHP1",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHP1 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.33"
+    },
+    {
+      "source": "NRIP1",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRIP1 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.33"
+    },
+    {
+      "source": "DNASE1",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNASE1 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.33"
+    },
+    {
+      "source": "ACTG1",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTG1 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.33"
+    },
+    {
+      "source": "FAT4",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT4 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.32"
+    },
+    {
+      "source": "EMC1",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EMC1 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.27"
+    },
+    {
+      "source": "CTU2",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTU2 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.26"
+    },
+    {
+      "source": "NPHP4",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHP4 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.26"
+    },
+    {
+      "source": "ETV4",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV4 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.26"
+    },
+    {
+      "source": "DHX8",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHX8 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.26"
+    },
+    {
+      "source": "KAT6B",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KAT6B is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.26"
+    },
+    {
+      "source": "TMEM231",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM231 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.26"
+    },
+    {
+      "source": "TRPS1",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPS1 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.26"
+    },
+    {
+      "source": "BMP4",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP4 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.19"
+    },
+    {
+      "source": "ROBO2",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROBO2 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.19"
+    },
+    {
+      "source": "CHD1L",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD1L is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.16"
+    },
+    {
+      "source": "RET",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.16"
+    },
+    {
+      "source": "BMP7",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP7 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.16"
+    },
+    {
+      "source": "NOTCH2",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH2 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.15"
+    },
+    {
+      "source": "SIX2",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIX2 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.12"
+    },
+    {
+      "source": "CDC5L",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDC5L is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.12"
+    },
+    {
+      "source": "OFD1",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OFD1 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.12"
+    },
+    {
+      "source": "KMT2D",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.11"
+    },
+    {
+      "source": "FREM1",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FREM1 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.11"
+    },
+    {
+      "source": "BICC1",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BICC1 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.11"
+    },
+    {
+      "source": "JAG1",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAG1 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.11"
+    },
+    {
+      "source": "GEN1",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GEN1 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.07"
+    },
+    {
+      "source": "APOC2",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC2 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.06"
+    },
+    {
+      "source": "APOC3",
+      "target": "congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC3 is associated with congenital anomaly of kidney and urinary tract (CONGENITAL_ANOMALY_OF_KIDNEY_AND_URINARY_TRACT). Open Targets association score 0.05"
+    }
+  ]
+}

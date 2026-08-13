@@ -1,0 +1,514 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL654",
+      "target": "ADRA2C",
+      "type": "TARGETS",
+      "description": "MIRTAZAPINE targets ADRA2C."
+    },
+    {
+      "source": "CHEMBL654",
+      "target": "HTR2C",
+      "type": "TARGETS",
+      "description": "MIRTAZAPINE targets HTR2C."
+    },
+    {
+      "source": "CHEMBL654",
+      "target": "ADRA2B",
+      "type": "TARGETS",
+      "description": "MIRTAZAPINE targets ADRA2B."
+    },
+    {
+      "source": "CHEMBL654",
+      "target": "ADRA2A",
+      "type": "TARGETS",
+      "description": "MIRTAZAPINE targets ADRA2A."
+    },
+    {
+      "source": "CHEMBL654",
+      "target": "HTR2A",
+      "type": "TARGETS",
+      "description": "MIRTAZAPINE targets HTR2A."
+    },
+    {
+      "source": "CASP1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CASP1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "FABP1",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "FABP1 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "TSC22D2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC22D2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "HTR2A",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTR2A is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "HTR2C",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTR2C is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "MTHFR",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFR is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD36",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD36 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP2C9",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2C9 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "APC",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.31"
+    },
+    {
+      "source": "TSC22D2",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC22D2 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.20"
+    },
+    {
+      "source": "ASAP2",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASAP2 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.17"
+    },
+    {
+      "source": "CCKBR",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCKBR is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.13"
+    },
+    {
+      "source": "POU3F3",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU3F3 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.12"
+    },
+    {
+      "source": "MRPS9",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRPS9 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "OR9Q1",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OR9Q1 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "CDH1",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.06"
+    },
+    {
+      "source": "VWA5B1",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWA5B1 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "PFN2",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PFN2 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "S100A8",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A8 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYP2C9",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2C9 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "FHIP1B",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FHIP1B is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPP1",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPP1 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "HTR2C",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTR2C is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADRA2A",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2A is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADRA2C",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2C is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "HTR2A",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTR2A is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADRA2B",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2B is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "NR0B2",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR0B2 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD8A",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CXCL8",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD4",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CNGA4",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNGA4 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD274",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ERCC8",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC8 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "HP",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HP is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNF",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "OR9I1",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OR9I1 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ERCC6",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC6 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "AQP3",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP3 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "TRIB3",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIB3 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "PGC",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGC is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CAMK2N1",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMK2N1 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "FOXP3",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDX2",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDX2 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "FABP1",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FABP1 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "AIM2",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIM2 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "MYC",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "DNMT1",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT1 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADIPOQ",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOQ is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ICAM1",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "MUC1",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC1 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "MUC17",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC17 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTGS2",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TPT1",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPT1 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MT-CO2",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO2 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL37",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL37 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TLR4",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC2",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC2 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCND1",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTHFR",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFR is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD36",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD36 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1B",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "GATA5",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA5 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "AHRR",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHRR is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "AHR",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHR is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CASP1",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP1 is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP12A",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP12A is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP4A",
+      "target": "stomach disease (STOMACH_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP4A is associated with stomach disease (STOMACH_DISEASE). Open Targets association score 0.01"
+    }
+  ]
+}

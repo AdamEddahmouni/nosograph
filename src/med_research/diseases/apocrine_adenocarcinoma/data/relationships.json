@@ -1,0 +1,544 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1278146",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "FAMITINIB targets KIT."
+    },
+    {
+      "source": "CHEMBL1336",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "SORAFENIB targets KIT."
+    },
+    {
+      "source": "CHEMBL2103851",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "AMUVATINIB targets KIT."
+    },
+    {
+      "source": "CHEMBL2110732",
+      "target": "ERBB2",
+      "type": "TARGETS",
+      "description": "DACOMITINIB ANHYDROUS targets ERBB2."
+    },
+    {
+      "source": "CHEMBL1201560",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "TREATS",
+      "description": "PEGINTERFERON ALFA-2A is phase 4 / marketed for apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)."
+    },
+    {
+      "source": "CHEMBL1201752",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "TREATS",
+      "description": "IXABEPILONE is phase 4 / marketed for apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)."
+    },
+    {
+      "source": "CHEMBL1683590",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "TREATS",
+      "description": "ERIBULIN is phase 4 / marketed for apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)."
+    },
+    {
+      "source": "CHEMBL1683590",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "TREATS",
+      "description": "ERIBULIN is phase 4 / marketed for apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)."
+    },
+    {
+      "source": "CHEMBL1742992",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "TREATS",
+      "description": "BLINATUMOMAB is phase 4 / marketed for apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)."
+    },
+    {
+      "source": "CHEMBL1789941",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "TREATS",
+      "description": "RUXOLITINIB is phase 4 / marketed for apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)."
+    },
+    {
+      "source": "CHEMBL2110725",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "TREATS",
+      "description": "VINFLUNINE is phase 3 for apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)."
+    },
+    {
+      "source": "CHEMBL225071",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "TREATS",
+      "description": "RALTITREXED is phase 4 / marketed for apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)."
+    },
+    {
+      "source": "SQSTM1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SQSTM1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "GTF2H1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "GTF2H1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IGF2BP2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2BP2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "FABP7",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "FABP7 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PPARGC1A",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARGC1A is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTH1R",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTH1R is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "PTHLH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTHLH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD86",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD86 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "AR",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "ESR1",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "KMT2C",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "CDC73",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDC73 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "JAK2",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KRAS",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ARID1A",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KDM6A",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM6A is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FABP7",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FABP7 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "HMGCS2",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCS2 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRPS1",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPS1 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ERBB2",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "KHDRBS1",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KHDRBS1 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "DCTN4",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCTN4 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IGF2BP2",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2BP2 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GTF2H1",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GTF2H1 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "NUP62",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUP62 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SQSTM1",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SQSTM1 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PLIN2",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLIN2 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ESR2",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR2 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PPARGC1A",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARGC1A is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "KRT5",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT5 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "KRT14",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT14 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PIEZO1",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIEZO1 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EREG",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EREG is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD274",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGFR",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDH1",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AQP3",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP3 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTHLH",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTHLH is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIP",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIP is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC5AC",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5AC is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOX9",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX9 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTH1R",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTH1R is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD86",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD86 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKT1",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACSM1",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACSM1 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HPGD",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPGD is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TPM3",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPM3 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NTRK1",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GATA3",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PGR",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TMEM37",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM37 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRH2",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH2 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PGD",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGD is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PHGDH",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHGDH is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KIT",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPE65",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPE65 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CKAP4",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CKAP4 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "UVRAG",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UVRAG is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP63",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GHRHR",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHRHR is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VIM",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIM is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NEU1",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEU1 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NEURL1",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEURL1 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NR4A1",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR4A1 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MKI67",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NME1",
+      "target": "apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NME1 is associated with apocrine adenocarcinoma (APOCRINE_ADENOCARCINOMA). Open Targets association score 0.00"
+    }
+  ]
+}

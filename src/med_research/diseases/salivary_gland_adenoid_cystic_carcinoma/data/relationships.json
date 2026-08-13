@@ -1,0 +1,496 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1421",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "DASATINIB targets KIT."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "MAML2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MAML2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "AXIN1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "AXIN1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PLAG1",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAG1 is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "LIFR",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIFR is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TCEA1",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCEA1 is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CHCHD7",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHCHD7 is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CRTC1",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRTC1 is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MAML2",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAML2 is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KIT",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MYB",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYB is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NFIB",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFIB is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRAF",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "WIF1",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WIF1 is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP53",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FAT4",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT4 is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2C",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATM",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KDM6A",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM6A is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NOTCH2",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH2 is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EP300",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EP300 is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "AXIN1",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AXIN1 is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CREBBP",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "HMGA2",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGA2 is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID1A",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "HRAS",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "APC",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RUNX1",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BCOR",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCOR is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CRTC3",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRTC3 is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR2",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NRAS",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BUB1B",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUB1B is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SF3B1",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SF3B1 is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KRAS",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID1B",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1B is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SPEN",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPEN is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FHIT",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FHIT is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERCC2",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC2 is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EGFR",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "MTOR",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "FOXO3",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXO3 is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "BRCA1",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ZFHX3",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFHX3 is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SUFU",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUFU is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CTCF",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTCF is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RB1",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TRRAP",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRRAP is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TENT5C",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TENT5C is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PTPRK",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRK is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "AFDN",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFDN is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "BLM",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLM is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PTEN",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KAT6A",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KAT6A is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NAB2",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAB2 is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RAD50",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD50 is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PPM1D",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPM1D is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KNL1",
+      "target": "salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KNL1 is associated with salivary gland adenoid cystic carcinoma (SALIVARY_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    }
+  ]
+}

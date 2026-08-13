@@ -65,6 +65,7 @@ CAR_T_SCORES = {
         "FLT1": 4.0,
         "FLT4": 4.0,
         "GATA1": 4.0,
+        "GATA4": 4.0,
         "GTF2IRD1": 4.0,
         "HBQ1": 4.0,
         "HEATR3": 4.0,

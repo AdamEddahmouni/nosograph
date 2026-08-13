@@ -1,0 +1,502 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL2396661",
+      "target": "PIK3CA",
+      "type": "TARGETS",
+      "description": "ALPELISIB targets PIK3CA."
+    },
+    {
+      "source": "CHEMBL1201577",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "CETUXIMAB targets EGFR."
+    },
+    {
+      "source": "CHEMBL44657",
+      "target": "TOP2A",
+      "type": "TARGETS",
+      "description": "ETOPOSIDE targets TOP2A."
+    },
+    {
+      "source": "CHEMBL1201577",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "CETUXIMAB targets EGFR."
+    },
+    {
+      "source": "CHEMBL44657",
+      "target": "TOP2B",
+      "type": "TARGETS",
+      "description": "ETOPOSIDE targets TOP2B."
+    },
+    {
+      "source": "CD19",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD19 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PARP1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "PARP1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "THBS4",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THBS4 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "DLAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "DLAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.08"
+    },
+    {
+      "source": "TOP2A",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOP2A is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.07"
+    },
+    {
+      "source": "TOP2B",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOP2B is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.07"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.07"
+    },
+    {
+      "source": "GSDMB",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.07"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.04"
+    },
+    {
+      "source": "NHERF1",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NHERF1 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD274",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDH1",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.01"
+    },
+    {
+      "source": "FKBP4",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP4 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.01"
+    },
+    {
+      "source": "FKBP5",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP5 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.01"
+    },
+    {
+      "source": "ANXA9",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANXA9 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.01"
+    },
+    {
+      "source": "DBT",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DBT is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.01"
+    },
+    {
+      "source": "DLAT",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLAT is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD8A",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.01"
+    },
+    {
+      "source": "PKP2",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKP2 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.01"
+    },
+    {
+      "source": "PKP1",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKP1 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.01"
+    },
+    {
+      "source": "BRAF",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTGS2",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.01"
+    },
+    {
+      "source": "MT-CO2",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO2 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.01"
+    },
+    {
+      "source": "PKP3",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKP3 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERCC1",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC1 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.01"
+    },
+    {
+      "source": "PKP4",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKP4 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.01"
+    },
+    {
+      "source": "ANO1",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANO1 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.01"
+    },
+    {
+      "source": "STAT1",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT1 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.01"
+    },
+    {
+      "source": "PARP1",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARP1 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.01"
+    },
+    {
+      "source": "ANXA10",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANXA10 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPARC",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPARC is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "SNCA",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDCD1",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPATA2",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP63",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOX2",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX2 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "BCHE",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCHE is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "LAPTM4B",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAPTM4B is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "CKAP4",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CKAP4 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "ENOPH1",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENOPH1 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "B3GAT1",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B3GAT1 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPE65",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPE65 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "LRIG1",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRIG1 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "ZEB1",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "UVRAG",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UVRAG is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "EZH2",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EZH2 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "THBS4",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THBS4 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "AKR1C1",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKR1C1 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSMC4",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMC4 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "MET",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNG",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGF1R",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1R is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYC",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATM",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD19",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD19 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "S100A9",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A9 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "NANOG",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NANOG is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPS6",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPS6 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGF1",
+      "target": "neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with neoplasm of oropharynx (NEOPLASM_OF_OROPHARYNX). Open Targets association score 0.00"
+    }
+  ]
+}

@@ -1,0 +1,544 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1421",
+      "target": "ABL1",
+      "type": "TARGETS",
+      "description": "DASATINIB targets ABL1."
+    },
+    {
+      "source": "CHEMBL1421",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "DASATINIB targets KIT."
+    },
+    {
+      "source": "CHEMBL2105728",
+      "target": "PDGFRB",
+      "type": "TARGETS",
+      "description": "CRENOLANIB targets PDGFRB."
+    },
+    {
+      "source": "CHEMBL3137309",
+      "target": "BCL2",
+      "type": "TARGETS",
+      "description": "VENETOCLAX targets BCL2."
+    },
+    {
+      "source": "CHEMBL608533",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "MIDOSTAURIN targets KIT."
+    },
+    {
+      "source": "CHEMBL803",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "TREATS",
+      "description": "CYTARABINE is phase 4 / marketed for erythroleukemia (ERYTHROLEUKEMIA)."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CASP1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCRL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCRL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TFRC",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFRC is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "CASP1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "PIWIL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "PIWIL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "GORASP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "GORASP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RELA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "FTH1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "FTH1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNFSF13",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "MYCN",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYCN is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "FLI1",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLI1 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SYT1",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYT1 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "WNK1",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNK1 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "RELA",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELA is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "GORASP1",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GORASP1 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPI1",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPI1 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFE2",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "EPO",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPO is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MYC",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "KLF1",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF1 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TP53",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MYB",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYB is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDH1",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "EPOR",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPOR is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "NFKB1",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "BCL2",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GATA1",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA1 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PSMC5",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMC5 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CASP1",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP1 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SKP2",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SKP2 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ACTB",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTB is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "FTH1",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FTH1 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TFRC",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFRC is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTPRC",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "JAK2",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "EMB",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EMB is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PIWIL4",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIWIL4 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "STAT3",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERG",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERG is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNFSF13",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ANP32B",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANP32B is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKT1",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AQP1",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP1 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHAT",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHAT is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPTN",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPTN is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPK1",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "JUN",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JUN is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KDM1A",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM1A is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD4",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PCYT2",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCYT2 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MFSD11",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFSD11 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DNASE1L3",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNASE1L3 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DNASE1",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNASE1 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MINDY4",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MINDY4 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HBB",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HBB is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HEMGN",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEMGN is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCRL2",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCRL2 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "UBASH3B",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBASH3B is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ABL1",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABL1 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KIT",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NSD1",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSD1 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC11A1",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC11A1 is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HELLS",
+      "target": "erythroleukemia (ERYTHROLEUKEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HELLS is associated with erythroleukemia (ERYTHROLEUKEMIA). Open Targets association score 0.01"
+    }
+  ]
+}

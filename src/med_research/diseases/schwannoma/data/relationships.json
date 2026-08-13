@@ -1,0 +1,502 @@
+{
+  "relationships": [
+    {
+      "source": "BAX",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BAX is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATR",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATR is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "FANCD2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "FANCD2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL1A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GRIN2A",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2A is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "LATS1",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LATS1 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "EPAS1",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "EPAS1 is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "LRP1B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.73"
+    },
+    {
+      "source": "SMARCB1",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCB1 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.68"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "NTRK3",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK3 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "LATS1",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LATS1 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.29"
+    },
+    {
+      "source": "CHD4",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD4 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ALK",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATM",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FUS",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUS is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "COL1A1",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A1 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ETV6",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV6 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CREB3L1",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREB3L1 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PDGFB",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFB is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "USP8",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP8 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NPM1",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPM1 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "LRP1B",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1B is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CBFA2T3",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBFA2T3 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CREB3L2",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREB3L2 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "LZTR1",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LZTR1 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "KIT",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "KDR",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "GNAQ",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAQ is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "MTOR",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "FANCD2",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCD2 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "EWSR1",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EWSR1 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "NTRK1",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "BAX",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAX is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "NRAS",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "FGFR2",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "ARID1A",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "AR",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "TGFBR2",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBR2 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "FAT1",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT1 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "POLQ",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLQ is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "BCORL1",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCORL1 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ATF1",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATF1 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PRDM1",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM1 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CTNNA2",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNA2 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NT5C2",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NT5C2 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FUBP1",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUBP1 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TET1",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET1 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ZFHX3",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFHX3 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "GRIN2A",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2A is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PTPRC",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ARID2",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID2 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NOTCH2",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH2 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NSD2",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSD2 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "GATA3",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ATR",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATR is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "EPAS1",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPAS1 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "DNMT3A",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT3A is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FLI1",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLI1 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TP53",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.10"
+    },
+    {
+      "source": "SOX10",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX10 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.10"
+    },
+    {
+      "source": "YAP1",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YAP1 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "YY1AP1",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YY1AP1 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "PAX8",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX8 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "DCAF12L2",
+      "target": "schwannoma (SCHWANNOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCAF12L2 is associated with schwannoma (SCHWANNOMA). Open Targets association score 0.09"
+    }
+  ]
+}

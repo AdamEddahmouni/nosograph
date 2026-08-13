@@ -1,0 +1,436 @@
+{
+  "relationships": [
+    {
+      "source": "BANK1",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BANK1 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD226",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD226 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PLCG2",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLCG2 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "MEF2C",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "MEF2C is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CHEK2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "CHEK2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ITGA2B",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA2B is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "LDLRAP1",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLRAP1 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CD36",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD36 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ITGA2B",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA2B is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFRSF13B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF13B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TUBB1",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB1 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.73"
+    },
+    {
+      "source": "IQGAP2",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IQGAP2 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.73"
+    },
+    {
+      "source": "GP1BA",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GP1BA is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.73"
+    },
+    {
+      "source": "EXOC3L4",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EXOC3L4 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.73"
+    },
+    {
+      "source": "CKAP2L",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CKAP2L is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.72"
+    },
+    {
+      "source": "GFI1B",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFI1B is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.72"
+    },
+    {
+      "source": "RHOF",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHOF is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.71"
+    },
+    {
+      "source": "ELOVL7",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELOVL7 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.70"
+    },
+    {
+      "source": "PTPRJ",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRJ is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.70"
+    },
+    {
+      "source": "CAVIN2",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAVIN2 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.70"
+    },
+    {
+      "source": "GP1BB",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GP1BB is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.70"
+    },
+    {
+      "source": "ARHGAP10",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP10 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.69"
+    },
+    {
+      "source": "PEAR1",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PEAR1 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.69"
+    },
+    {
+      "source": "KALRN",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KALRN is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.69"
+    },
+    {
+      "source": "ITGA2B",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA2B is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.68"
+    },
+    {
+      "source": "TPM4",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPM4 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.67"
+    },
+    {
+      "source": "SVEP1",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SVEP1 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.67"
+    },
+    {
+      "source": "DOCK8",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK8 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.66"
+    },
+    {
+      "source": "BLTP1",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLTP1 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.66"
+    },
+    {
+      "source": "TET2",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.66"
+    },
+    {
+      "source": "TADA1",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TADA1 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.65"
+    },
+    {
+      "source": "TNFRSF13B",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF13B is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.65"
+    },
+    {
+      "source": "TRIM58",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM58 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.65"
+    },
+    {
+      "source": "DENND2C",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DENND2C is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.64"
+    },
+    {
+      "source": "STK38",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK38 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.63"
+    },
+    {
+      "source": "BIN2",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIN2 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.62"
+    },
+    {
+      "source": "CD226",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD226 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.62"
+    },
+    {
+      "source": "MOB3C",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MOB3C is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.62"
+    },
+    {
+      "source": "GRTP1",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRTP1 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.62"
+    },
+    {
+      "source": "CHEK2",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHEK2 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.62"
+    },
+    {
+      "source": "MFSD2B",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFSD2B is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.61"
+    },
+    {
+      "source": "ARHGAP18",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP18 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.61"
+    },
+    {
+      "source": "JAK2",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.61"
+    },
+    {
+      "source": "PLEK",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLEK is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.60"
+    },
+    {
+      "source": "MYO9B",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO9B is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.59"
+    },
+    {
+      "source": "GP9",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GP9 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.59"
+    },
+    {
+      "source": "TMCC2",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMCC2 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.59"
+    },
+    {
+      "source": "SIRPB1",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRPB1 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.59"
+    },
+    {
+      "source": "ACTN1",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTN1 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.59"
+    },
+    {
+      "source": "JMJD1C",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JMJD1C is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.58"
+    },
+    {
+      "source": "ARHGEF3",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGEF3 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.58"
+    },
+    {
+      "source": "EHD3",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EHD3 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.57"
+    },
+    {
+      "source": "NFE2",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.57"
+    },
+    {
+      "source": "BANK1",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BANK1 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.57"
+    },
+    {
+      "source": "LDLRAP1",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLRAP1 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.57"
+    },
+    {
+      "source": "VWF",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.56"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.56"
+    },
+    {
+      "source": "CD36",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD36 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.56"
+    },
+    {
+      "source": "TBCA",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBCA is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.56"
+    },
+    {
+      "source": "GCSAML",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCSAML is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.56"
+    },
+    {
+      "source": "ERC2",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERC2 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.56"
+    },
+    {
+      "source": "ERG",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERG is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.56"
+    },
+    {
+      "source": "S1PR4",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S1PR4 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.56"
+    },
+    {
+      "source": "PLCG2",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCG2 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.55"
+    },
+    {
+      "source": "SETD1B",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD1B is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.55"
+    },
+    {
+      "source": "ELMO1",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELMO1 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.55"
+    },
+    {
+      "source": "MEF2C",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEF2C is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.55"
+    },
+    {
+      "source": "CLIP1",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLIP1 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.55"
+    },
+    {
+      "source": "SLFN14",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLFN14 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.55"
+    },
+    {
+      "source": "LRRC66",
+      "target": "mean platelet volume (MEAN_PLATELET_VOLUME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRC66 is associated with mean platelet volume (MEAN_PLATELET_VOLUME). Open Targets association score 0.55"
+    }
+  ]
+}

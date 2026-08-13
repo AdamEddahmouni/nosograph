@@ -1,0 +1,454 @@
+{
+  "relationships": [
+    {
+      "source": "RUNX2",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "RUNX2 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCL18",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL18 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL5",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL5 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "TACR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "TACR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "TIMP1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "BMP7",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP7 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL4 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TCOF1",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCOF1 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.80"
+    },
+    {
+      "source": "POLR1C",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLR1C is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.77"
+    },
+    {
+      "source": "POLR1D",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLR1D is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.75"
+    },
+    {
+      "source": "POLR1B",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLR1B is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.38"
+    },
+    {
+      "source": "PRKCA",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCA is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "CCL18",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL18 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "ZNF609",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF609 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "CDH16",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH16 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "FGF1",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF1 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "ZEB1",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "TNRC6C",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNRC6C is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "INHBA",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INHBA is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TIMP1",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP1 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PIWIL2",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIWIL2 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "GPX4",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPX4 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TACR1",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TACR1 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "FGFR1",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRMT1",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRMT1 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "OSR2",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OSR2 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "NR2F1",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR2F1 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "GATA3",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TMPO",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPO is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "LEMD1",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEMD1 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CCND1",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "EDNRA",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRA is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "RPL17",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "RUNX2",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX2 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "LPAR3",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPAR3 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CNBP",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNBP is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "EGFR",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTEN",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "EYA1",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EYA1 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CXCL5",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL5 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SATB2",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SATB2 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL4 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "NRBP2",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRBP2 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SIX1",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIX1 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TMEM107",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM107 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PPAT",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPAT is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "STRA6",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STRA6 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXI3",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXI3 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXA2",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA2 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GSC",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSC is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOLH1",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOLH1 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NBDY",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBDY is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ARB2A",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARB2A is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "BMP7",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP7 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "DLX5",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLX5 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CRKL",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRKL is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "MDK",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDK is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "HMGA1",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGA1 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "MSX1",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSX1 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PAX9",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX9 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGFR2",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKRA",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKRA is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD274",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAPK1",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "EREG",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EREG is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRICKLE1",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRICKLE1 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "EDN1",
+      "target": "Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDN1 is associated with Treacher-Collins syndrome (TREACHER_COLLINS_SYNDROME). Open Targets association score 0.04"
+    }
+  ]
+}

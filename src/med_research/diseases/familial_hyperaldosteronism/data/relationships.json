@@ -1,0 +1,484 @@
+{
+  "relationships": [
+    {
+      "source": "CACNA1H",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1H is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "ELN",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ELN is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ACE2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CYP11B2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP11B2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "NR3C2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "NR3C2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "DRD5",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "DRD5 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD36",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD36 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "LRP1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LRP5",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP5 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ABCC9",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC9 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP11B1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP11B1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP11B2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP11B2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP4A11",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4A11 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP4A22",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4A22 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CACNA1H",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1H is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.53"
+    },
+    {
+      "source": "KCNJ5",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNJ5 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.20"
+    },
+    {
+      "source": "LDLR",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.11"
+    },
+    {
+      "source": "APOE",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.09"
+    },
+    {
+      "source": "AOPEP",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOPEP is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.09"
+    },
+    {
+      "source": "NPR1",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPR1 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.08"
+    },
+    {
+      "source": "LRP5",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP5 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.08"
+    },
+    {
+      "source": "NEFH",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEFH is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.07"
+    },
+    {
+      "source": "SLC11A2",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC11A2 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.07"
+    },
+    {
+      "source": "MAP3K8",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K8 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.07"
+    },
+    {
+      "source": "STRN",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STRN is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.07"
+    },
+    {
+      "source": "DOT1L",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOT1L is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.07"
+    },
+    {
+      "source": "CD36",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD36 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.07"
+    },
+    {
+      "source": "PCSK9",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.07"
+    },
+    {
+      "source": "MYLIP",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYLIP is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.06"
+    },
+    {
+      "source": "NOS3",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.06"
+    },
+    {
+      "source": "CHGA",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHGA is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL25",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL25 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRKG1",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKG1 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.06"
+    },
+    {
+      "source": "GAL",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAL is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.06"
+    },
+    {
+      "source": "PDC",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDC is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.06"
+    },
+    {
+      "source": "NR3C1",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.06"
+    },
+    {
+      "source": "ACE2",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE2 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.06"
+    },
+    {
+      "source": "VGF",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VGF is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.05"
+    },
+    {
+      "source": "APOB",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.05"
+    },
+    {
+      "source": "GJA5",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA5 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.05"
+    },
+    {
+      "source": "DRD5",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DRD5 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.05"
+    },
+    {
+      "source": "MSR1",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSR1 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.05"
+    },
+    {
+      "source": "TGFB1",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.05"
+    },
+    {
+      "source": "SGK1",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGK1 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.05"
+    },
+    {
+      "source": "RACK1",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RACK1 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.05"
+    },
+    {
+      "source": "KCNK3",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNK3 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.05"
+    },
+    {
+      "source": "LPA",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.05"
+    },
+    {
+      "source": "SCNN1B",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCNN1B is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.05"
+    },
+    {
+      "source": "CYP4A22",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4A22 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.05"
+    },
+    {
+      "source": "CYP4A11",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4A11 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.05"
+    },
+    {
+      "source": "CLCN2",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCN2 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.05"
+    },
+    {
+      "source": "RPL17",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "KCNK6",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNK6 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "ARHGAP42",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP42 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "NPAS2",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPAS2 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "NPPA",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPA is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "KCNE3",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNE3 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "PNMT",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PNMT is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "IGF1",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "HPRT1",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPRT1 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "CHMP2B",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHMP2B is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "DMRT1",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMRT1 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRP1",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "GABPA",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABPA is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "RCN2",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RCN2 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "NEDD4L",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEDD4L is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "GPR37L1",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR37L1 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYP11B2",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP11B2 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "KCNJ8",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNJ8 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "ELN",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELN is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "NR3C2",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C2 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYP11B1",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP11B1 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.04"
+    },
+    {
+      "source": "ABCC9",
+      "target": "familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC9 is associated with familial hyperaldosteronism (FAMILIAL_HYPERALDOSTERONISM). Open Targets association score 0.04"
+    }
+  ]
+}

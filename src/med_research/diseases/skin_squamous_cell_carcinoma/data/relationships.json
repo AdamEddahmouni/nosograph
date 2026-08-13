@@ -1,0 +1,490 @@
+{
+  "relationships": [
+    {
+      "source": "CASP8",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP8 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATR",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATR is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MLH1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MLH1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH6",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH6 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IL6ST",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6ST is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "AXIN2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "AXIN2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "MTOR",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "CDH1",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "AXIN2",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AXIN2 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "EP300",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EP300 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "IL7R",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7R is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TP63",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SOX2",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX2 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ATR",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATR is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "JUN",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JUN is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ERBB4",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB4 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ARID2",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID2 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NTRK1",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KDR",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "HGF",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TERT",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CARD11",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FANCA",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PTCH1",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NOTCH2",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH2 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "RB1",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "BRCA1",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SETD2",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD2 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ATM",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CREBBP",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KMT2D",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FAT1",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT1 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MDM2",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM2 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "HRAS",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MUTYH",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUTYH is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CASP8",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP8 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "BRCA2",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MLH1",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLH1 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KMT2C",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "BRD4",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRD4 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TENT5C",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TENT5C is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SETBP1",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETBP1 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "HNF1A",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TET2",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "RARA",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RARA is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KMT2A",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2A is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "POLD1",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD1 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "IL6ST",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6ST is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PER1",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PER1 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PRDM1",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM1 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MSH6",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH6 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "BCL6",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL6 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FUBP1",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUBP1 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "RECQL4",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RECQL4 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "DICER1",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DICER1 is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PTPRC",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MYCN",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYCN is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KDM5C",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM5C is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FES",
+      "target": "skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FES is associated with skin squamous cell carcinoma (SKIN_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    }
+  ]
+}

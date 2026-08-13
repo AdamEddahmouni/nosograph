@@ -1,0 +1,532 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL131",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "PREDNISOLONE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL1650",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "CORTISONE ACETATE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL384467",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "DEXAMETHASONE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL2021430",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "DEXAMETHASONE SODIUM PHOSPHATE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL1152",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "PREDNISOLONE ACETATE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL635",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "PREDNISONE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL131",
+      "target": "iritis (IRITIS)",
+      "type": "TREATS",
+      "description": "PREDNISOLONE is phase 4 / marketed for iritis (IRITIS)."
+    },
+    {
+      "source": "CHEMBL1650",
+      "target": "iritis (IRITIS)",
+      "type": "TREATS",
+      "description": "CORTISONE ACETATE is phase 4 / marketed for iritis (IRITIS)."
+    },
+    {
+      "source": "CHEMBL384467",
+      "target": "iritis (IRITIS)",
+      "type": "TREATS",
+      "description": "DEXAMETHASONE is phase 4 / marketed for iritis (IRITIS)."
+    },
+    {
+      "source": "CHEMBL2021430",
+      "target": "iritis (IRITIS)",
+      "type": "TREATS",
+      "description": "DEXAMETHASONE SODIUM PHOSPHATE is phase 4 / marketed for iritis (IRITIS)."
+    },
+    {
+      "source": "CHEMBL635",
+      "target": "iritis (IRITIS)",
+      "type": "TREATS",
+      "description": "PREDNISONE is phase 4 / marketed for iritis (IRITIS)."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "RNF216",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "RNF216 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C4A",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C4A is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "GRM4",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRM4 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "CARMIL1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "CARMIL1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "BTG3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "BTG3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGER2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGER2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "NR3C1",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with iritis (IRITIS). Open Targets association score 0.57"
+    },
+    {
+      "source": "SRPK1",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRPK1 is associated with iritis (IRITIS). Open Targets association score 0.42"
+    },
+    {
+      "source": "CARMIL1",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARMIL1 is associated with iritis (IRITIS). Open Targets association score 0.36"
+    },
+    {
+      "source": "BLTP3A",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLTP3A is associated with iritis (IRITIS). Open Targets association score 0.30"
+    },
+    {
+      "source": "LEUTX",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEUTX is associated with iritis (IRITIS). Open Targets association score 0.25"
+    },
+    {
+      "source": "ACTB",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTB is associated with iritis (IRITIS). Open Targets association score 0.24"
+    },
+    {
+      "source": "NRSN1",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRSN1 is associated with iritis (IRITIS). Open Targets association score 0.23"
+    },
+    {
+      "source": "CAVIN4",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAVIN4 is associated with iritis (IRITIS). Open Targets association score 0.22"
+    },
+    {
+      "source": "RNF216",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF216 is associated with iritis (IRITIS). Open Targets association score 0.20"
+    },
+    {
+      "source": "ERAP1",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERAP1 is associated with iritis (IRITIS). Open Targets association score 0.18"
+    },
+    {
+      "source": "CAST",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAST is associated with iritis (IRITIS). Open Targets association score 0.17"
+    },
+    {
+      "source": "MLN",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLN is associated with iritis (IRITIS). Open Targets association score 0.15"
+    },
+    {
+      "source": "MAP6",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP6 is associated with iritis (IRITIS). Open Targets association score 0.13"
+    },
+    {
+      "source": "PLPPR1",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLPPR1 is associated with iritis (IRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "FSCN1",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSCN1 is associated with iritis (IRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "GRM4",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRM4 is associated with iritis (IRITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "SERPINH1",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINH1 is associated with iritis (IRITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "HLA-A",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-A is associated with iritis (IRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD79A",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with iritis (IRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD4",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with iritis (IRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SRP72",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRP72 is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "UBA52",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBA52 is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPS27A",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPS27A is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "DEK",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEK is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "HSPB1",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPB1 is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "B2M",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B2M is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "UBB",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBB is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "UBC",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBC is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRYAB",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYAB is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "NOD2",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOD2 is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MRAP",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRAP is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "FAH",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAH is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL8",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "UCN2",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UCN2 is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL6",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "RLBP1",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RLBP1 is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNF",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD59",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD59 is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "INS",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPL17",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "C3",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3 is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "C4A",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C4A is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MTOR",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOD1",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD1 is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "EPO",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPO is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "BTG3",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTG3 is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "NGF",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NGF is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "NLRP3",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "HLA-B",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-B is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "GPT",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALB",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADA",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADA is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "VEGFA",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTGS2",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPAG11B",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPAG11B is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MORN4",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MORN4 is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "NDRG1",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDRG1 is associated with iritis (IRITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTGER2",
+      "target": "iritis (IRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGER2 is associated with iritis (IRITIS). Open Targets association score 0.00"
+    }
+  ]
+}

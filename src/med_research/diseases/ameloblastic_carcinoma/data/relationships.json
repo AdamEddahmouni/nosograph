@@ -1,0 +1,490 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1946170",
+      "target": "BRAF",
+      "type": "TARGETS",
+      "description": "REGORAFENIB targets BRAF."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "SLC2A1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK8IP2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK8IP2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "IKBKB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "IKBKB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "HIF1A",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "HIF1A is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "APC",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "MMP2",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "RECK",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RECK is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PKM",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKM is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IKBKB",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKBKB is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MAPK8IP2",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK8IP2 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TP53",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GSDMB",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PDPN",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDPN is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PCNA",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNA is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SDC1",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC1 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MKI67",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOX2",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX2 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PITX2",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX2 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "POU5F1",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU5F1 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TERT",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD44",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CAV1",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAV1 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRT5",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT5 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC2A1",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A1 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DNMT1",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT1 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NME1",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NME1 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HIF1A",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF1A is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLIN1",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLIN1 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "STAT3",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLIN2",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLIN2 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ORM1",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ORM1 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACTA1",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTA1 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMN1",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMN1 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SERPINB5",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINB5 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRT19",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT19 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRT16",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT16 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRT17",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT17 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HOXB2",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXB2 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MCM3",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCM3 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MCM2",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCM2 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRT8",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT8 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EPCAM",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPCAM is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NES",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NES is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS1",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS1 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS2",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AMFR",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMFR is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD34",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HGF",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP9",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FN1",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FN1 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MET",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MUC1",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC1 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MSX2",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSX2 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "DLX3",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLX3 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGFB1",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT18",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT18 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "AKT1",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NCAM1",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCAM1 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNC",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNC is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTGS2",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ENG",
+      "target": "Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENG is associated with Ameloblastic Carcinoma (AMELOBLASTIC_CARCINOMA). Open Targets association score 0.00"
+    }
+  ]
+}

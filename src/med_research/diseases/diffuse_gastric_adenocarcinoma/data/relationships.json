@@ -1,0 +1,478 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201179",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "LAPATINIB DITOSYLATE targets EGFR."
+    },
+    {
+      "source": "CHEMBL554",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "LAPATINIB targets EGFR."
+    },
+    {
+      "source": "CHEMBL554",
+      "target": "ERBB2",
+      "type": "TARGETS",
+      "description": "LAPATINIB targets ERBB2."
+    },
+    {
+      "source": "CHEMBL1201179",
+      "target": "ERBB2",
+      "type": "TARGETS",
+      "description": "LAPATINIB DITOSYLATE targets ERBB2."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MSH6",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH6 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "STAT5B",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT5B is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "SMAD2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SMAD4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "IRF4",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF4 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CDH1",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "RHOA",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHOA is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ETV1",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV1 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "EGFR",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "ERBB2",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SFRP4",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFRP4 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "APC",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTPRC",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2C",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BCOR",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCOR is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PREX2",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PREX2 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ACVR2A",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACVR2A is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TSC2",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAP2K1",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K1 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MSH6",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH6 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "IRF4",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF4 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EPS15",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPS15 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID1A",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RNF43",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF43 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SPEN",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPEN is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ROS1",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROS1 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMAD4",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD4 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRD4",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRD4 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TPM3",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPM3 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "IKZF1",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PSIP1",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSIP1 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERBB4",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB4 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MTOR",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ZFHX3",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFHX3 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NF1",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RECQL4",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RECQL4 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "REL",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REL is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SRSF3",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRSF3 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TRRAP",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRRAP is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SH2B3",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2B3 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FBXO11",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXO11 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BCL9L",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL9L is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDH11",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH11 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "STAT5B",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT5B is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TMPRSS2",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS2 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FAT1",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT1 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SETBP1",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETBP1 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CD74",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD74 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "STK11",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTPRB",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRB is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FLT4",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTPRT",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRT is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FAT4",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT4 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PMS2",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMS2 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERBB3",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB3 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARHGEF12",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGEF12 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "HNF1A",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NT5C2",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NT5C2 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMAD2",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD2 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FLI1",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLI1 is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2D",
+      "target": "diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with diffuse gastric adenocarcinoma (DIFFUSE_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    }
+  ]
+}

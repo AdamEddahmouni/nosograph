@@ -1,0 +1,544 @@
+{
+  "relationships": [
+    {
+      "source": "ATG5",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "ATG5 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "SLC39A13",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC39A13 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FGF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TNFSF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TACR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "TACR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ADAMTS2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ADAMTSL2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTSL2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL1A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLI2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CHUK",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CHUK is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RPS6KA3",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "RPS6KA3 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "THRA",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THRA is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL22",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL22 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL23A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL23A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ATG5",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ATG5 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "THRA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "THRA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFSF10",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF10 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF6",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF6 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "HIF1A",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "HIF1A is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "ADAMTS2",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS2 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.74"
+    },
+    {
+      "source": "ADAMTSL2",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTSL2 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.37"
+    },
+    {
+      "source": "IL22",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL22 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.08"
+    },
+    {
+      "source": "IL20",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL20 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.07"
+    },
+    {
+      "source": "CSF2",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.07"
+    },
+    {
+      "source": "HIF1A",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF1A is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.07"
+    },
+    {
+      "source": "TNFSF10",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF10 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.06"
+    },
+    {
+      "source": "AIM2",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIM2 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.06"
+    },
+    {
+      "source": "NTN1",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTN1 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.06"
+    },
+    {
+      "source": "ICAM1",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "ATG5",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATG5 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "CHUK",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHUK is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD274",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL17A",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "TACR1",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TACR1 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "IBSP",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IBSP is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRPM8",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPM8 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFNA1",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "SOX11",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX11 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "SATB2",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SATB2 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "RPS6KA3",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPS6KA3 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "MMP9",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFNG",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL6",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "DUOX2",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DUOX2 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CMTM6",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMTM6 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "PHEX",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHEX is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "DMP1",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMP1 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "P3H1",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P3H1 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CTSK",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSK is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "PHOSPHO1",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHOSPHO1 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZEB1",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "COL1A1",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A1 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SERPINF1",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINF1 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "TRPV1",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV1 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOX9",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX9 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ROR2",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROR2 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "THRA",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THRA is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CLEC11A",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC11A is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SNX10",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNX10 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC39A13",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC39A13 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL23A",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL23A is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL37",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL37 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC10A7",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC10A7 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "PPIB",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIB is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC26A2",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC26A2 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SMPD3",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMPD3 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "PKDCC",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKDCC is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "IRF6",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF6 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "FLNB",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLNB is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "EGFR",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC5A2",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC5A2 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "NFIX",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFIX is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "FGF9",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF9 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "GLI3",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "RUNX3",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX3 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "LRRK1",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRK1 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SIK3",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIK3 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "GLI2",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI2 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "RSPO2",
+      "target": "Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO2 is associated with Ehlers-Danlos syndrome, dermatosparaxis type (EHLERS_DANLOS_SYNDROME_DERMATOSPARAXIS_TYPE). Open Targets association score 0.03"
+    }
+  ]
+}

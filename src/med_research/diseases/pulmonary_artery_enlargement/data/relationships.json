@@ -1,0 +1,514 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "WNT1",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT1 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "PLOD1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLOD1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TIMP1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GRIN2B",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2B is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "RENBP",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "RENBP is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "DRD4",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "DRD4 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "GSK3B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "GSK3B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP26A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP26A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CHRNA5",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHRNA5 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.25"
+    },
+    {
+      "source": "PSMA4",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMA4 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.05"
+    },
+    {
+      "source": "CHRNA3",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHRNA3 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.04"
+    },
+    {
+      "source": "RBP4",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBP4 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.03"
+    },
+    {
+      "source": "RENBP",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RENBP is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.03"
+    },
+    {
+      "source": "SUGP1",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUGP1 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.03"
+    },
+    {
+      "source": "CALB2",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALB2 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.03"
+    },
+    {
+      "source": "MMP9",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.02"
+    },
+    {
+      "source": "TACR3",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TACR3 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.02"
+    },
+    {
+      "source": "TIMP1",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP1 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.02"
+    },
+    {
+      "source": "ENO4",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENO4 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.02"
+    },
+    {
+      "source": "NOS3",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.02"
+    },
+    {
+      "source": "DPPA4",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPPA4 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.02"
+    },
+    {
+      "source": "FOXP2",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP2 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.02"
+    },
+    {
+      "source": "PECAM1",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PECAM1 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDH1",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGFR",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "KLK3",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK3 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "APOE",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "PROS1",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROS1 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLAG1",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAG1 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSAT1",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSAT1 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPEPPS",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPEPPS is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "AOPEP",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOPEP is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "SRC",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRC is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "KDR",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "FAS",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "FANCA",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "FXN",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FXN is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS1",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS1 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS2",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPPA",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPA is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP26A1",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP26A1 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSC",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSC is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1B",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPT",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKCB",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCB is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGF",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGF is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLOD1",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLOD1 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "DRD4",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DRD4 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD40LG",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "SV2A",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SV2A is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "GJA1",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA1 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL2",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALDH2",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDH2 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "HLA-A",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-A is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAD1L1",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAD1L1 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.00"
+    },
+    {
+      "source": "NFKB1",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.00"
+    },
+    {
+      "source": "GRIN2B",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2B is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.00"
+    },
+    {
+      "source": "ASAH1",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASAH1 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACE",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.00"
+    },
+    {
+      "source": "WNT1",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT1 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.00"
+    },
+    {
+      "source": "GSK3B",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSK3B is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.00"
+    },
+    {
+      "source": "C3",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALDH1A2",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDH1A2 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.00"
+    },
+    {
+      "source": "CAMTA1",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMTA1 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRKCG",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCG is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.00"
+    },
+    {
+      "source": "AKT1",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with pulmonary artery enlargement (PULMONARY_ARTERY_ENLARGEMENT). Open Targets association score 0.00"
+    }
+  ]
+}

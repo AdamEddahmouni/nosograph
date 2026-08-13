@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "BLK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BLK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "HAPLN1",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "HAPLN1 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "ADAMTS9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "LOXL4",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "LOXL4 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP24",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP24 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TDRD15",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "TDRD15 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "FBN1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "FBN1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "LTBP4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "LTBP4",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP4 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LRP1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.45"
+    },
+    {
+      "source": "MCPH1",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCPH1 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.40"
+    },
+    {
+      "source": "PRAG1",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRAG1 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.38"
+    },
+    {
+      "source": "ZHX2",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZHX2 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.38"
+    },
+    {
+      "source": "SERPINA1",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA1 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.36"
+    },
+    {
+      "source": "FN1",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FN1 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.36"
+    },
+    {
+      "source": "WDR1",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR1 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.34"
+    },
+    {
+      "source": "LTBP4",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTBP4 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.33"
+    },
+    {
+      "source": "MMP24",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP24 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.32"
+    },
+    {
+      "source": "TLN2",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLN2 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.32"
+    },
+    {
+      "source": "CCDC34",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC34 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.30"
+    },
+    {
+      "source": "LDLR",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.30"
+    },
+    {
+      "source": "FOXC1",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.29"
+    },
+    {
+      "source": "GMDS",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GMDS is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.28"
+    },
+    {
+      "source": "ADAMTS9",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS9 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.27"
+    },
+    {
+      "source": "ASXL3",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL3 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.26"
+    },
+    {
+      "source": "COL4A2",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A2 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.25"
+    },
+    {
+      "source": "CDH13",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH13 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.25"
+    },
+    {
+      "source": "EDNRA",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRA is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.25"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.25"
+    },
+    {
+      "source": "MSRA",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSRA is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.24"
+    },
+    {
+      "source": "LOXL4",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LOXL4 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.23"
+    },
+    {
+      "source": "SVIL",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SVIL is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.23"
+    },
+    {
+      "source": "FER",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FER is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.22"
+    },
+    {
+      "source": "RPS23",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPS23 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.22"
+    },
+    {
+      "source": "ZBTB10",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB10 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.22"
+    },
+    {
+      "source": "JCAD",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JCAD is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.22"
+    },
+    {
+      "source": "MYOCD",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYOCD is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.21"
+    },
+    {
+      "source": "DDI1",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDI1 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.20"
+    },
+    {
+      "source": "MRTFA",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRTFA is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.20"
+    },
+    {
+      "source": "FBN1",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBN1 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.19"
+    },
+    {
+      "source": "TNKS",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNKS is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.18"
+    },
+    {
+      "source": "HERPUD2",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HERPUD2 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.18"
+    },
+    {
+      "source": "ARVCF",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARVCF is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.18"
+    },
+    {
+      "source": "MFHAS1",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFHAS1 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.17"
+    },
+    {
+      "source": "LRP1",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.14"
+    },
+    {
+      "source": "BLK",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLK is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.14"
+    },
+    {
+      "source": "PDLIM1",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDLIM1 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.13"
+    },
+    {
+      "source": "APOB",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.12"
+    },
+    {
+      "source": "STAT6",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT6 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.12"
+    },
+    {
+      "source": "GOSR2",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOSR2 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.11"
+    },
+    {
+      "source": "PINX1",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PINX1 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.10"
+    },
+    {
+      "source": "HAPLN1",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAPLN1 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.08"
+    },
+    {
+      "source": "CFDP1",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFDP1 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.08"
+    },
+    {
+      "source": "VCAN",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VCAN is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.07"
+    },
+    {
+      "source": "LRRC37A2",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRC37A2 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.07"
+    },
+    {
+      "source": "CBFA2T3",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBFA2T3 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.06"
+    },
+    {
+      "source": "R3HCC1L",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "R3HCC1L is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.06"
+    },
+    {
+      "source": "ACSM6",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACSM6 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.06"
+    },
+    {
+      "source": "AIG1",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIG1 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.06"
+    },
+    {
+      "source": "KLHL38",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLHL38 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.06"
+    },
+    {
+      "source": "FBXO32",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXO32 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.06"
+    },
+    {
+      "source": "TDRD15",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TDRD15 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.05"
+    },
+    {
+      "source": "SOX7",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX7 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PDGFD",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFD is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PPP1R3B",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R3B is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ARHGAP44",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP44 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CCDC71L",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC71L is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ANGPT2",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPT2 is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PABPN1L",
+      "target": "common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PABPN1L is associated with common carotid intimal medial thickness (COMMON_CAROTID_INTIMAL_MEDIAL_THICKNESS). Open Targets association score 0.02"
+    }
+  ]
+}

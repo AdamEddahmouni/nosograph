@@ -1,0 +1,526 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1487",
+      "target": "HMGCR",
+      "type": "TARGETS",
+      "description": "ATORVASTATIN targets HMGCR."
+    },
+    {
+      "source": "CHEMBL1064",
+      "target": "HMGCR",
+      "type": "TARGETS",
+      "description": "SIMVASTATIN targets HMGCR."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "CDKN2B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "FGF21",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF21 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MMP10",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP10 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP7",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP7 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL18",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CETP is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "FABP4",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "FABP4 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "HMGCR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HMGCR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "VLDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "VLDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "MTHFR",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFR is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "THBD",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THBD is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.41"
+    },
+    {
+      "source": "CDKN2B",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2B is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.38"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.20"
+    },
+    {
+      "source": "ASXL1",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.14"
+    },
+    {
+      "source": "NOS3",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.10"
+    },
+    {
+      "source": "HMGCR",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCR is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "APOB",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "CFDP1",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFDP1 is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "APOA1",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "CHI3L1",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHI3L1 is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "LPA",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CFD",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFD is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "OLR1",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OLR1 is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CRP",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "AGER",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGER is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MMP7",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP7 is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL1A",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1A is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF11B is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ICAM1",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "HMOX1",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMOX1 is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL17A",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "APOE",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ACE",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "GHRL",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHRL is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SORT1",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORT1 is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL18",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18 is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SEPSECS",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEPSECS is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "FABP4",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FABP4 is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PLA2G7",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G7 is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL27",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL27 is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "LIPC",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "GPX3",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPX3 is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "MTHFR",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFR is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CETP",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETP is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "NBR1",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBR1 is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "MUC16",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC16 is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "MOK",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MOK is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "BLVRB",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLVRB is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNF",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "VLDLR",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VLDLR is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "HGF",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "AOPEP",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOPEP is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "FASLG",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADIPOQ",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOQ is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "FBLN5",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBLN5 is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "LGALS3",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "HABP2",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HABP2 is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "FGF21",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF21 is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PDE4D",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE4D is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "AHSG",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSG is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "BGLAP",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BGLAP is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "MMP9",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL37",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL37 is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "THBD",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THBD is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "TMEM170A",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM170A is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCDC71L",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC71L is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "SIRT1",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT1 is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "LCN2",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN2 is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "MMP10",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP10 is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CST3",
+      "target": "carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CST3 is associated with carotid atherosclerosis (CAROTID_ATHEROSCLEROSIS). Open Targets association score 0.02"
+    }
+  ]
+}

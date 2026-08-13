@@ -8,7 +8,8 @@ from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.responses import Response
 from starlette.types import ASGIApp
 
-from med_research.web.config import DASHBOARD_CSP_MODE, DASHBOARD_CSP_POLICY
+from med_research.web.api_key import extract_api_key_from_headers
+from med_research.web.config import AUTH_TRUSTED_PROXY_IPS, DASHBOARD_CSP_MODE, DASHBOARD_CSP_POLICY
 from med_research.web.rate_limit import (
     InMemoryRateLimitStore,
     RateLimitStore,
@@ -28,11 +29,16 @@ RATE_LIMIT_REQUESTS = int(os.environ.get("RATE_LIMIT_REQUESTS", "60"))
 RATE_LIMIT_WINDOW = int(os.environ.get("RATE_LIMIT_WINDOW", "60"))
 
 
+def _trusted_proxy_ips() -> set[str]:
+    return {ip.strip() for ip in AUTH_TRUSTED_PROXY_IPS.split(",") if ip.strip()}
+
+
 def _get_client_ip(request: Request) -> str:
+    client_ip = request.client.host if request.client else "unknown"
     forwarded = request.headers.get("X-Forwarded-For")
-    if forwarded:
+    if forwarded and client_ip in _trusted_proxy_ips():
         return forwarded.split(",")[0].strip()
-    return request.client.host if request.client else "unknown"
+    return client_ip
 
 
 MAX_REQUEST_BODY_BYTES = int(os.environ.get("MAX_REQUEST_BODY_BYTES", str(10 * 1024 * 1024)))
@@ -104,7 +110,7 @@ class AuthMiddleware(BaseHTTPMiddleware):
             request.method in ("POST", "PUT", "PATCH", "DELETE")
             or any(request.url.path.startswith(prefix) for prefix in PROTECTED_PREFIXES)
         ):
-            auth_header = request.headers.get("X-API-Key", "")
+            auth_header = extract_api_key_from_headers(request.headers)
             if auth_header != API_KEY:
                 return JSONResponse(
                     status_code=401,

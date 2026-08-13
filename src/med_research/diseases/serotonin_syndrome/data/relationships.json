@@ -1,0 +1,388 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL112",
+      "target": "PTGS2",
+      "type": "TARGETS",
+      "description": "ACETAMINOPHEN targets PTGS2."
+    },
+    {
+      "source": "F2R",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F2R is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PIK3C2A",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3C2A is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "DRD2",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "DRD2 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "HTR1A",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTR1A is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "HTR1B",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTR1B is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "HTR1F",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTR1F is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "HTR2A",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTR2A is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "HTR2C",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTR2C is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "HTR3A",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTR3A is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "HTR5A",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTR5A is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "MAOA",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MAOA is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "SLC6A4",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC6A4 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "CYP1A2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP1A2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP2B6",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2B6 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP2C19",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2C19 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP2D6",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2D6 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP3A4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP3A4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "NOS1",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS1 is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MAOB",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAOB is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "HTR1A",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTR1A is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOX1",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX1 is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP2C19",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2C19 is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP2D6",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2D6 is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "HTR3A",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTR3A is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC6A4",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A4 is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "HTR5A",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTR5A is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "OXT",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OXT is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "HTR2A",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTR2A is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHKB",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKB is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHKA",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKA is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CMPK1",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMPK1 is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYP3A4",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP3A4 is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "RYR1",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYR1 is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPIG",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIG is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "MB",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MB is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACE",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "AGT",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRP",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "F2R",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F2R is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "G6PD",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "G6PD is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "GPT",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "A4GALT",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "A4GALT is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "HTR1F",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTR1F is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ASAH1",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASAH1 is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAP3K20",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K20 is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYP2B6",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2B6 is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAOA",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAOA is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "IDO1",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDO1 is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "AVPR1A",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVPR1A is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "TRIM32",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM32 is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CABP1",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CABP1 is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "HTR2C",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTR2C is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "HTR1B",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTR1B is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "NPPA",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPA is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "DRD2",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DRD2 is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "MZB1",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MZB1 is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTGS2",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3C2A",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3C2A is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADCYAP1",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADCYAP1 is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYP1A2",
+      "target": "Serotonin Syndrome (SEROTONIN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP1A2 is associated with Serotonin Syndrome (SEROTONIN_SYNDROME). Open Targets association score 0.00"
+    }
+  ]
+}

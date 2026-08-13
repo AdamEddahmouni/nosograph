@@ -1,0 +1,520 @@
+{
+  "relationships": [
+    {
+      "source": "BLK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BLK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCR6",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR6 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "RAD51B",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "RAD51B is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "IL12RB2",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL12RB2 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "STAT4",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT4 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "TYK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "TYK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "RASGRP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASGRP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "TRAF1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKBIE",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIE is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP3 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "CD28",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD28 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD83",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD83 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ICOSLG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ICOSLG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCR6",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR6 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL12RB2",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL12RB2 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP3 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF4",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF4 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TRAF1",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF1 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNGR2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNGR2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF5",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF5 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "SYNGR1",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYNGR1 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "RPLP1",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPLP1 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "CD40",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "TYK2",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYK2 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "CCR6",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR6 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "IRF5",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF5 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "PTPN22",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "RUNX1",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "PTPN2",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN2 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "TNFSF4",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF4 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "NFKBIE",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIE is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "FCGR2A",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2A is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "IL2RA",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RA is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "BLK",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLK is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "AARS2",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AARS2 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "PADI4",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PADI4 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "GATA3",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "ARID5B",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID5B is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "AIRE",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIRE is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "RASGRP1",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASGRP1 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "MACIR",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MACIR is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "ETS1",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETS1 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "RNASET2",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNASET2 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "MMEL1",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMEL1 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "TTC34",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC34 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "PLCL2",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCL2 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "AFF3",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFF3 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "ETV7",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV7 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "MAGI3",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAGI3 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "PRKCQ",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCQ is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "RTKN2",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RTKN2 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "ANKRD55",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKRD55 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "TCTE1",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCTE1 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "TEC",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TEC is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "CD28",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD28 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "TLE3",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLE3 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "TXNDC11",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TXNDC11 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "REL",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REL is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "TREH",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREH is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "IL12RB2",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL12RB2 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "PHTF1",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHTF1 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "EOMES",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EOMES is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "SUOX",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUOX is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "FLT3",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFAIP3 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "NAB1",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAB1 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "ICOSLG",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICOSLG is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "WDFY4",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDFY4 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "CTLA4",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTLA4 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "STAT4",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT4 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "COG6",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COG6 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "PLD4",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLD4 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "RAD51B",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD51B is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "SH2B3",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2B3 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "CD83",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD83 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "PLCL1",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCL1 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "TRAF1",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAF1 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "CCN4",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCN4 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "FAM167A",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM167A is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "IFNGR2",
+      "target": "rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNGR2 is associated with rheumatoid factor seropositivity measurement (RHEUMATOID_FACTOR_SEROPOSITIVITY_MEASUREMENT). Open Targets association score 0.32"
+    }
+  ]
+}

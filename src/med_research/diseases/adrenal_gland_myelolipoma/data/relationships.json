@@ -1,0 +1,394 @@
+{
+  "relationships": [
+    {
+      "source": "MS4A1",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MS4A1 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CXCL12",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL12 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "IGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "FABP4",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "FABP4 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF4",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF4 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "CYP11B1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP11B1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP21A2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP21A2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "MC2R",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MC2R is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "AR",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "POMC",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNF",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ARMC5",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARMC5 is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADIPOQ",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOQ is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD274",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MEN1",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDP1",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDP1 is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GIP",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIP is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD68",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD68 is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "LEP",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD34",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FABP4",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FABP4 is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALB",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPARG",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KIT",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GHRL",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHRL is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CIDEA",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIDEA is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNG",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CAMTA1",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMTA1 is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGF2",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2 is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IRF4",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF4 is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL2RB",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RB is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SF1",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SF1 is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDCD1",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPATA2",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MC5R",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MC5R is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SNCA",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOAT1",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOAT1 is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYP21A2",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP21A2 is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CYP11B1",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP11B1 is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT20",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT20 is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MS4A1",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MS4A1 is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "WWTR1",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WWTR1 is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL12",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL12 is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FXN",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FXN is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FAS",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FANCA",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "AVP",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVP is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTEN",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD8A",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NF1",
+      "target": "Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with Adrenal Gland Myelolipoma (ADRENAL_GLAND_MYELOLIPOMA). Open Targets association score 0.00"
+    }
+  ]
+}

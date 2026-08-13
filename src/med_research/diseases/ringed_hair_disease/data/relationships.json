@@ -1,0 +1,418 @@
+{
+  "relationships": [
+    {
+      "source": "CCHCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CCHCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ADAMTS20",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS20 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLI2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "ZDHHC13",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "ZDHHC13 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "KITLG",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KITLG is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "TGM3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "EDA",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDA is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.12"
+    },
+    {
+      "source": "TGM3",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM3 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.11"
+    },
+    {
+      "source": "KRT25",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT25 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.11"
+    },
+    {
+      "source": "ASIP",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASIP is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.11"
+    },
+    {
+      "source": "TYR",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYR is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.11"
+    },
+    {
+      "source": "MYO5A",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO5A is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.11"
+    },
+    {
+      "source": "TYRP1",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYRP1 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.11"
+    },
+    {
+      "source": "KITLG",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KITLG is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.11"
+    },
+    {
+      "source": "KIT",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.11"
+    },
+    {
+      "source": "OCA2",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OCA2 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.11"
+    },
+    {
+      "source": "C8orf44-SGK3",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C8orf44-SGK3 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "SGK3",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGK3 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "HR",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HR is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "EGFR",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "ATP7A",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP7A is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "KRT71",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT71 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "ADAMTS20",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS20 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "FGF5",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF5 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "MGRN1",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MGRN1 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "KRT75",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT75 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "MITF",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MITF is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "OTC",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OTC is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "SLC45A2",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC45A2 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "GATA3",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "MC1R",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MC1R is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "RAB27A",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB27A is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "AP3B1",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AP3B1 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "SOX18",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX18 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "RAB38",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB38 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "HOXC13",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXC13 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "FOXN1",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXN1 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "CCHCR1",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCHCR1 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "NAA10",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAA10 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "GLI2",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI2 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "KRT27",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT27 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "PAX3",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX3 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "TMEM79",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM79 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "FAM83G",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM83G is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "KRT10",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT10 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "EDAR",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDAR is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "LYST",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYST is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "SOAT1",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOAT1 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "ITPR3",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITPR3 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "EDNRB",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRB is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "GK5",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GK5 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.09"
+    },
+    {
+      "source": "DCT",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCT is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "EDARADD",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDARADD is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "ZDHHC13",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZDHHC13 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "PCDH1",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCDH1 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "CD109",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD109 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "HPS3",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPS3 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "SEL1L3",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEL1L3 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "APEX2",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APEX2 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "TMEM175",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM175 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "TICRR",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TICRR is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "ZC3H11B",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZC3H11B is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "EIF3F",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF3F is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "SAXO4",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAXO4 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "FNTA",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FNTA is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.08"
+    },
+    {
+      "source": "WDR12",
+      "target": "ringed hair disease (RINGED_HAIR_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR12 is associated with ringed hair disease (RINGED_HAIR_DISEASE). Open Targets association score 0.08"
+    }
+  ]
+}

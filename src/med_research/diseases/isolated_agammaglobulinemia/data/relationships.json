@@ -1,0 +1,574 @@
+{
+  "relationships": [
+    {
+      "source": "BTK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BTK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD19",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD19 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD209",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD209 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD22",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD22 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD79B",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79B is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "SIGLEC1",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "SIGLEC1 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL5RA",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL5RA is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "IKBKB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "IKBKB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBIA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PIK3AP1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3AP1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD40",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD81",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD81 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ICOS",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ICOS is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "RORC",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "RORC is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "LTA",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTA is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTB",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTB is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF13C",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF13C is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "BLNK",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLNK is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.67"
+    },
+    {
+      "source": "CD79A",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.65"
+    },
+    {
+      "source": "CD79B",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79B is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.62"
+    },
+    {
+      "source": "IGLL1",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGLL1 is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.56"
+    },
+    {
+      "source": "BTK",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTK is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.55"
+    },
+    {
+      "source": "LRRC8A",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRC8A is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.41"
+    },
+    {
+      "source": "JCHAIN",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JCHAIN is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "AICDA",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AICDA is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "CR2",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CR2 is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "SH2D1A",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2D1A is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "CARD11",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "PIGR",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIGR is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "IL5RA",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL5RA is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "JAK3",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "REL",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REL is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "SPPL2A",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPPL2A is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "CD19",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD19 is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "VAV1",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VAV1 is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "RAC2",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAC2 is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "RORC",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RORC is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "NFKB2",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "BCL10",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL10 is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "STAT6",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT6 is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "RAG2",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG2 is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "BACH2",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BACH2 is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "POU2AF1",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU2AF1 is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "SH3BP2",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3BP2 is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "NFKB1",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "DCLRE1C",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCLRE1C is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "CD22",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD22 is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "TNFRSF13C",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF13C is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "IKBKB",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKBKB is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "CD40",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40 is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "PTPRC",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "LGALS3",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "ITGAM",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAM is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "CD81",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD81 is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "CD209",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD209 is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "FCMR",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCMR is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "SFN",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFN is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "SIGLEC1",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIGLEC1 is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "ATP11C",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP11C is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "CD1D",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD1D is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "PAX5",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX5 is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "CLEC4M",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC4M is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "IL4",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "CD274",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "TNF",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "LTB",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTB is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "IL13",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13 is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "ICOS",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICOS is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "PIK3AP1",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3AP1 is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "CLEC4D",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC4D is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "EBF1",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EBF1 is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "NFKBIA",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIA is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "FCGR2B",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2B is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "FCGR2A",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2A is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "FCGR2C",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2C is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "LTA",
+      "target": "isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTA is associated with isolated agammaglobulinemia (ISOLATED_AGAMMAGLOBULINEMIA). Open Targets association score 0.08"
+    }
+  ]
+}

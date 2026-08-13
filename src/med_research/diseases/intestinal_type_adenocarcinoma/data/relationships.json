@@ -1,0 +1,526 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201827",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "PANITUMUMAB targets EGFR."
+    },
+    {
+      "source": "CHEMBL939",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "GEFITINIB targets EGFR."
+    },
+    {
+      "source": "CHEMBL409",
+      "target": "AR",
+      "type": "TARGETS",
+      "description": "BICALUTAMIDE targets AR."
+    },
+    {
+      "source": "CHEMBL428647",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "TREATS",
+      "description": "PACLITAXEL is phase 4 / marketed for Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)."
+    },
+    {
+      "source": "CHEMBL1200721",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "TREATS",
+      "description": "ESTRAMUSTINE PHOSPHATE SODIUM is phase 4 / marketed for Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)."
+    },
+    {
+      "source": "CHEMBL409",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "TREATS",
+      "description": "BICALUTAMIDE is phase 4 / marketed for Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)."
+    },
+    {
+      "source": "BECN1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "BECN1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CXCL12",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL12 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "EIF2S1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EIF2S1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ADAM9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ADAMTS6",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS6 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TFRC",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFRC is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "MYD88",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MYD88 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "HIF1A",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "HIF1A is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP53",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MALT1",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MALT1 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ARID2",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID2 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MET",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FASLG",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDX2",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDX2 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRT7",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT7 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AMACR",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMACR is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RHOA",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHOA is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ICAM1",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "POU2F1",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU2F1 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYD88",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYD88 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HRAS",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD8A",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGFR",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERBB2",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MKI67",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPK1",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKCA",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCA is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EPHB2",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHB2 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADAM9",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAM9 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SFRP4",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFRP4 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FXN",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FXN is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EIF5A",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF5A is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CLDN18",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN18 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTOR",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EIF2S1",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF2S1 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EIF6",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF6 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FANCA",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FAS",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GMNN",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GMNN is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRT20",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT20 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "LIAT1",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIAT1 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CAT",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAT is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOD2",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD2 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC1",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC1 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC2",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC2 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOX10",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX10 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IREB2",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IREB2 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTGS2",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TFRC",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFRC is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC22A1",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A1 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FTL",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FTL is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "OTX2",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OTX2 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "BECN1",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BECN1 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MT-CO2",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO2 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "OTX1",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OTX1 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PXN",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PXN is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "HSPA5",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPA5 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "AR",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL12",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL12 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SFTPD",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFTPD is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "HIF1A",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF1A is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FOXP3",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADAMTS6",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS6 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "DSP",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSP is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "HOXD13",
+      "target": "Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD13 is associated with Intestinal Type Adenocarcinoma (INTESTINAL_TYPE_ADENOCARCINOMA). Open Targets association score 0.00"
+    }
+  ]
+}

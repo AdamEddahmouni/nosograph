@@ -1,0 +1,520 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1289601",
+      "target": "KDR",
+      "type": "TARGETS",
+      "description": "LENVATINIB targets KDR."
+    },
+    {
+      "source": "CHEMBL1201585",
+      "target": "ERBB2",
+      "type": "TARGETS",
+      "description": "TRASTUZUMAB targets ERBB2."
+    },
+    {
+      "source": "CASP8",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP8 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ATR",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATR is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GRIN2A",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2A is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "STAT5B",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT5B is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K4",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K4 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "MAML2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MAML2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "SMAD4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "HRAS",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ERBB2",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "KDR",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "CDH1",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EGFR",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BAP1",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAP1 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR2",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRAF",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTEN",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP53",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FOXA1",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXA1 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NTRK2",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK2 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "AKT1",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAML2",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAML2 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMAD4",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD4 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CRTC1",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRTC1 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MTOR",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID1A",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ALK",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR1",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PBRM1",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBRM1 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MYC",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAP3K13",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K13 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SETD2",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD2 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ZFHX3",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFHX3 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NF1",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERG",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERG is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RB1",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MPL",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPL is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRCA1",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERBB3",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB3 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2C",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NCOR1",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOR1 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "STAT5B",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT5B is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TENT5C",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TENT5C is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRCA2",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TET2",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "GRIN2A",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2A is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATR",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATR is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MED12",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MED12 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAP2K1",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K1 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "POLE",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CASP8",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP8 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FAT1",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT1 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAP2K4",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K4 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EP300",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EP300 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2A",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2A is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2D",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KDM5A",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM5A is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERBB4",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB4 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KDM6A",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM6A is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "IKZF1",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PRDM1",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM1 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BARD1",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BARD1 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRIP1",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRIP1 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CARD11",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ASXL1",
+      "target": "salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with salivary duct carcinoma (SALIVARY_DUCT_CARCINOMA). Open Targets association score 0.28"
+    }
+  ]
+}

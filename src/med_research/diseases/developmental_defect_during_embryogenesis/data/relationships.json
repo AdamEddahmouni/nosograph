@@ -1,0 +1,430 @@
+{
+  "relationships": [
+    {
+      "source": "MASP1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "MASP1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GLI1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "SHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "SMO",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SMO is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "HFE",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "HFE is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "ACTG1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ACTG1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LRP2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "SHH",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHH is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "FBRSL1",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBRSL1 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "RBM10",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM10 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GLI1",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI1 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "HNRNPK",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNRNPK is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "AFP",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CENPF",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CENPF is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ABL1",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABL1 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRODH",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRODH is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOX11",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX11 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SALL1",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SALL1 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRKAG2",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAG2 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "DHCR7",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHCR7 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "FHL1",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FHL1 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "BRCA1",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "APC",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "FUT1",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUT1 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "LRP2",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP2 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "DYNC1I1",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYNC1I1 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SC5D",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SC5D is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "GDF6",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF6 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MEN1",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "HFE",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HFE is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ARID1A",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MASP1",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MASP1 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACTB",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTB is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP63",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPP1R12A",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R12A is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "FGF3",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF3 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "EVC2",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EVC2 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "RAD21",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD21 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPE65",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPE65 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SMC3",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMC3 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CKAP4",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CKAP4 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALDH1A2",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDH1A2 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "NIPBL",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NIPBL is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHD7",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD7 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ERF",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERF is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SMC1A",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMC1A is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "UVRAG",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UVRAG is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "HDAC8",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC8 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PAX2",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX2 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOD1",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD1 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "GLI3",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "FTO",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FTO is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "NSD2",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSD2 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHD8",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD8 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "HYAL2",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HYAL2 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACTG1",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTG1 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SMARCB1",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCB1 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SATB2",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SATB2 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "LAMP2",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMP2 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACVR1",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACVR1 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACE",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ASXL1",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDC42",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDC42 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "KCNMA1",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNMA1 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "VPS35L",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VPS35L is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SMO",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMO is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "WT1",
+      "target": "developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with developmental defect during embryogenesis (DEVELOPMENTAL_DEFECT_DURING_EMBRYOGENESIS). Open Targets association score 0.00"
+    }
+  ]
+}

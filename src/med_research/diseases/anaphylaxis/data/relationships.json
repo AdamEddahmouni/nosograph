@@ -1,0 +1,544 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL384467",
+      "target": "NR3C1",
+      "type": "TARGETS",
+      "description": "DEXAMETHASONE targets NR3C1."
+    },
+    {
+      "source": "CHEMBL679",
+      "target": "ADRB1",
+      "type": "TARGETS",
+      "description": "EPINEPHRINE targets ADRB1."
+    },
+    {
+      "source": "CHEMBL679",
+      "target": "ADRA1A",
+      "type": "TARGETS",
+      "description": "EPINEPHRINE targets ADRA1A."
+    },
+    {
+      "source": "CHEMBL679",
+      "target": "ADRB2",
+      "type": "TARGETS",
+      "description": "EPINEPHRINE targets ADRB2."
+    },
+    {
+      "source": "CHEMBL679",
+      "target": "ADRA1D",
+      "type": "TARGETS",
+      "description": "EPINEPHRINE targets ADRA1D."
+    },
+    {
+      "source": "CHEMBL679",
+      "target": "ADRA1B",
+      "type": "TARGETS",
+      "description": "EPINEPHRINE targets ADRA1B."
+    },
+    {
+      "source": "CHEMBL679",
+      "target": "ADRA2A",
+      "type": "TARGETS",
+      "description": "EPINEPHRINE targets ADRA2A."
+    },
+    {
+      "source": "CHEMBL679",
+      "target": "ADRB3",
+      "type": "TARGETS",
+      "description": "EPINEPHRINE targets ADRB3."
+    },
+    {
+      "source": "CHEMBL1873475",
+      "target": "BTK",
+      "type": "TARGETS",
+      "description": "IBRUTINIB targets BTK."
+    },
+    {
+      "source": "CHEMBL679",
+      "target": "ADRA2B",
+      "type": "TARGETS",
+      "description": "EPINEPHRINE targets ADRA2B."
+    },
+    {
+      "source": "CHEMBL679",
+      "target": "ADRA2C",
+      "type": "TARGETS",
+      "description": "EPINEPHRINE targets ADRA2C."
+    },
+    {
+      "source": "BTK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BTK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ADRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "ADRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "F2RL1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F2RL1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ASPSCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "ASPSCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "GLP1R",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GLP1R is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "TSLP",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "TSLP is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "FCER1A",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "FCER1A is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "MRGPRX2",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "MRGPRX2 is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "TPSAB1",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "TPSAB1 is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "REN",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "REN is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CMA1",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMA1 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "MRGPRX2",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRGPRX2 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "GCG",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCG is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "F2RL1",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F2RL1 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "NR1I2",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1I2 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "SLC52A1",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC52A1 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "BTK",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTK is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "ASPSCR1",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASPSCR1 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "PLA2G7",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G7 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "ACE",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "ASAH1",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASAH1 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "MCAT",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCAT is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "MCPH1",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCPH1 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLC16A1",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC16A1 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "ASPG",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASPG is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADRB2",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB2 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "LCAT",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCAT is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADRA1B",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA1B is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADRB3",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB3 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADRA1A",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA1A is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADRA1D",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA1D is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADRB1",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB1 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADRA2B",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2B is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADRA2C",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2C is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADRA2A",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2A is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "PAFAH1B1",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAFAH1B1 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL2",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CALCA",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "NR3C1",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD4",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXP3",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "UROD",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UROD is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "AGT",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "NOS3",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TSLP",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSLP is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ANGPT1",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPT1 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNF",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL9",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL9 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "GLP1R",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLP1R is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CRP",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL4",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ENO4",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENO4 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TPSD1",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPSD1 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ENPP3",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENPP3 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL1B",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL9R",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL9R is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "GAL",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAL is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TPSAB1",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPSAB1 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TRH",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRH is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "FCER1A",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCER1A is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "REN",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REN is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "MS4A2",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MS4A2 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "MT-CO1",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO1 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IFNG",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "AVP",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVP is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "NLRP3",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "AOC1",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOC1 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "ALB",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "PCLAF",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCLAF is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD63",
+      "target": "anaphylaxis (ANAPHYLAXIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD63 is associated with anaphylaxis (ANAPHYLAXIS). Open Targets association score 0.02"
+    }
+  ]
+}

@@ -1,0 +1,562 @@
+{
+  "relationships": [
+    {
+      "source": "PLCG2",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLCG2 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ACKR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ACKR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCL1",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL1 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "EIF2AK2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EIF2AK2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IL12A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL12A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL12B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL12B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "TICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "TICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "STAT4",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT4 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "TYK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "TYK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "TRAF3IP2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF3IP2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FCER1G",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "FCER1G is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "CARD14",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD14 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "CD28",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD28 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL12A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL12A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL12B",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL12B is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL21R",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL21R is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL23A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL23A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "PTGDR",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGDR is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "MYD88",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MYD88 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TICAM1",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TICAM1 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR3",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR3 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR9",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR9 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF4",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF4 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TRAF3IP2",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF3IP2 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "MRTFA",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRTFA is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.53"
+    },
+    {
+      "source": "TRAF3IP2",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAF3IP2 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.06"
+    },
+    {
+      "source": "PPP3CB",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP3CB is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.05"
+    },
+    {
+      "source": "CARD11",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL12B",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL12B is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL13",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL21R",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL21R is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD276",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD276 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.05"
+    },
+    {
+      "source": "AIRE",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIRE is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.05"
+    },
+    {
+      "source": "TLR9",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR9 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD28",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD28 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.04"
+    },
+    {
+      "source": "CEBPB",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPB is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD4",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL12A",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL12A is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.04"
+    },
+    {
+      "source": "CARD14",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD14 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.04"
+    },
+    {
+      "source": "NOS2",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFIT1B",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFIT1B is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFIT1",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFIT1 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL31RA",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL31RA is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.04"
+    },
+    {
+      "source": "SH2D1A",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2D1A is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTX3",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTX3 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL4",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRPV3",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV3 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL23A",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL23A is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.04"
+    },
+    {
+      "source": "MYD88",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYD88 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLGRKT",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLGRKT is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNFRSF4",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF4 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.04"
+    },
+    {
+      "source": "TYK2",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYK2 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.04"
+    },
+    {
+      "source": "STAT4",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT4 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.04"
+    },
+    {
+      "source": "EIF2AK2",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF2AK2 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLCG2",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCG2 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYBA",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYBA is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.04"
+    },
+    {
+      "source": "LGALS3",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD1D",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD1D is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKCQ",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCQ is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.04"
+    },
+    {
+      "source": "UBE2N",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBE2N is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.04"
+    },
+    {
+      "source": "NSMAF",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSMAF is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.03"
+    },
+    {
+      "source": "FCER1G",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCER1G is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD44",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.03"
+    },
+    {
+      "source": "RCAN1",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RCAN1 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.03"
+    },
+    {
+      "source": "EFS",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EFS is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNF",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.03"
+    },
+    {
+      "source": "TBC1D10C",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D10C is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.03"
+    },
+    {
+      "source": "STAT6",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT6 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.03"
+    },
+    {
+      "source": "MUC5B",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5B is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.03"
+    },
+    {
+      "source": "CCL1",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL1 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.03"
+    },
+    {
+      "source": "RGS16",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RGS16 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRF1",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRF1 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.03"
+    },
+    {
+      "source": "TICAM1",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TICAM1 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.03"
+    },
+    {
+      "source": "TLR3",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR3 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.03"
+    },
+    {
+      "source": "HLA-E",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-E is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.03"
+    },
+    {
+      "source": "RHOG",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHOG is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTGDR",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGDR is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.03"
+    },
+    {
+      "source": "TREX1",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREX1 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLFN12",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLFN12 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLFN12L",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLFN12L is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZBTB46",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB46 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.03"
+    },
+    {
+      "source": "FOXP3",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.03"
+    },
+    {
+      "source": "ACKR2",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACKR2 is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.03"
+    },
+    {
+      "source": "FLG",
+      "target": "immunodeficiency 66 (IMMUNODEFICIENCY_66)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLG is associated with immunodeficiency 66 (IMMUNODEFICIENCY_66). Open Targets association score 0.03"
+    }
+  ]
+}

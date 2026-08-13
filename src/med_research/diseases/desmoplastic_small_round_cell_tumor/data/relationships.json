@@ -1,0 +1,460 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1743062",
+      "target": "KDR",
+      "type": "TARGETS",
+      "description": "RAMUCIRUMAB targets KDR."
+    },
+    {
+      "source": "CHEMBL941",
+      "target": "PDGFRB",
+      "type": "TARGETS",
+      "description": "IMATINIB targets PDGFRB."
+    },
+    {
+      "source": "CHEMBL941",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "IMATINIB targets KIT."
+    },
+    {
+      "source": "TNFRSF17",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF17 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CDKN2C",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2C is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RAF1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RAF1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TNFRSF17",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF17 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "EWSR1",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EWSR1 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.38"
+    },
+    {
+      "source": "WT1",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.38"
+    },
+    {
+      "source": "FLI1",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLI1 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.37"
+    },
+    {
+      "source": "ERG",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERG is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.37"
+    },
+    {
+      "source": "FOXO1",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXO1 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.37"
+    },
+    {
+      "source": "PAX3",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX3 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.37"
+    },
+    {
+      "source": "PAX7",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX7 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.37"
+    },
+    {
+      "source": "SS18",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SS18 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "SSX2",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSX2 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "SSX1",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSX1 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "TNFRSF17",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF17 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.21"
+    },
+    {
+      "source": "TET2",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.20"
+    },
+    {
+      "source": "APC",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.20"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "EGFR",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "CREBBP",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "NTRK3",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK3 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "MTOR",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "CIC",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIC is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "KMT2C",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "RAF1",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAF1 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "ETV6",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV6 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "ROS1",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROS1 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "SDHB",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDHB is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "NTRK2",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK2 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "DAXX",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAXX is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "PPP6C",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP6C is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "JAK2",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "U2AF1",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "U2AF1 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "STAG2",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAG2 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "EP300",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EP300 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "NPIPB2",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPIPB2 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.11"
+    },
+    {
+      "source": "EPHA3",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHA3 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.09"
+    },
+    {
+      "source": "MEN1",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.06"
+    },
+    {
+      "source": "TP53",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.06"
+    },
+    {
+      "source": "PTEN",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.05"
+    },
+    {
+      "source": "STK11",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRDX1",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDX1 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.05"
+    },
+    {
+      "source": "CFTR",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFTR is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.05"
+    },
+    {
+      "source": "IKZF1",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.05"
+    },
+    {
+      "source": "KIT",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.05"
+    },
+    {
+      "source": "AR",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "BHLHA15",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BHLHA15 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXP3",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "RCBTB2",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RCBTB2 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "BAP1",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAP1 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPI1",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPI1 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDKN2C",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2C is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "FBXO4",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXO4 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "INHA",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INHA is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "AHSP",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSP is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "SAMD9L",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAMD9L is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "BUB1B",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUB1B is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "BUB1B-PAK6",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUB1B-PAK6 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRIM62",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM62 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPTA1",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "KDR",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPTBN1",
+      "target": "desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTBN1 is associated with desmoplastic small round cell tumor (DESMOPLASTIC_SMALL_ROUND_CELL_TUMOR). Open Targets association score 0.04"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "pathways": [
+    {
+      "id": "coagulation",
+      "name": "Coagulation Cascade",
+      "description": "Plasma coagulation factors and fibrinolysis; a hub for cardiovascular and thrombotic disease.",
+      "key_components": [
+        "TNFRSF8"
+      ],
+      "therapeutic_targets": [
+        "TNFRSF8"
+      ],
+      "references": []
+    },
+    {
+      "id": "complement",
+      "name": "Complement Cascade",
+      "description": "Classical, lectin, and alternative complement pathways for opsonization, lysis, and immune complex clearance.",
+      "key_components": [
+        "TACR1"
+      ],
+      "therapeutic_targets": [
+        "TACR1"
+      ],
+      "references": []
+    },
+    {
+      "id": "dna-repair",
+      "name": "DNA Repair",
+      "description": "Homologous recombination, mismatch repair, and base excision pathways preserving genome integrity.",
+      "key_components": [
+        "PARP1",
+        "PARP2",
+        "PARP3",
+        "TP53"
+      ],
+      "therapeutic_targets": [
+        "PARP1",
+        "PARP2",
+        "PARP3",
+        "TP53"
+      ],
+      "references": []
+    },
+    {
+      "id": "immune-checkpoint",
+      "name": "Immune Checkpoint Signaling",
+      "description": "Co-inhibitory receptor signaling (PD-1/CTLA-4/TIGIT/LAG-3) that restrains T cell responses.",
+      "key_components": [
+        "CD274",
+        "CTLA4",
+        "PDCD1"
+      ],
+      "therapeutic_targets": [
+        "CD274",
+        "CTLA4",
+        "PDCD1"
+      ],
+      "references": []
+    },
+    {
+      "id": "mapk-erk",
+      "name": "MAPK / ERK Signaling",
+      "description": "RAS-RAF-MEK-ERK cascade coupling growth factor receptors to proliferation and differentiation.",
+      "key_components": [
+        "EGFR",
+        "FGFR1",
+        "FGFR3"
+      ],
+      "therapeutic_targets": [
+        "EGFR",
+        "FGFR1",
+        "FGFR3"
+      ],
+      "references": []
+    },
+    {
+      "id": "mast-cell",
+      "name": "Mast Cell / IgE Signaling",
+      "description": "FcεRI-mediated mast cell activation and degranulation in allergic disease.",
+      "key_components": [
+        "KIT"
+      ],
+      "therapeutic_targets": [
+        "KIT"
+      ],
+      "references": []
+    },
+    {
+      "id": "tcr-signaling",
+      "name": "T Cell Receptor Signaling",
+      "description": "TCR signal transduction and T cell activation; a therapeutic hub in autoimmunity.",
+      "key_components": [
+        "CTLA4",
+        "LCK"
+      ],
+      "therapeutic_targets": [
+        "CTLA4",
+        "LCK"
+      ],
+      "references": []
+    },
+    {
+      "id": "tnf-signaling",
+      "name": "TNF Signaling",
+      "description": "Tumor necrosis factor receptor superfamily signaling; central to many autoimmune and inflammatory diseases.",
+      "key_components": [
+        "TNFRSF8"
+      ],
+      "therapeutic_targets": [
+        "TNFRSF8"
+      ],
+      "references": []
+    },
+    {
+      "id": "vegf-angiogenesis",
+      "name": "VEGF / Angiogenesis",
+      "description": "Vascular endothelial growth factor signaling driving angiogenesis and vascular permeability.",
+      "key_components": [
+        "FLT1",
+        "KDR",
+        "VEGFA"
+      ],
+      "therapeutic_targets": [
+        "FLT1",
+        "KDR",
+        "VEGFA"
+      ],
+      "references": []
+    }
+  ]
+}

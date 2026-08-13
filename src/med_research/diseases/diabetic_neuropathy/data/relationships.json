@@ -547,6 +547,12 @@
       "description": "SLC6A3 is a component of the Serotonin / Dopamine Signaling pathway."
     },
     {
+      "source": "MAOA",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MAOA is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
       "source": "PTGS1",
       "target": "thyroid-hormone",
       "type": "PARTICIPATES_IN",
@@ -667,18 +673,6 @@
       "description": "SCN3A is associated with diabetic neuropathy (DIABETIC_NEUROPATHY). Open Targets association score 0.39"
     },
     {
-      "source": "SCN5A",
-      "target": "diabetic neuropathy (DIABETIC_NEUROPATHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SCN5A is associated with diabetic neuropathy (DIABETIC_NEUROPATHY). Open Targets association score 0.39"
-    },
-    {
-      "source": "SCN4A",
-      "target": "diabetic neuropathy (DIABETIC_NEUROPATHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SCN4A is associated with diabetic neuropathy (DIABETIC_NEUROPATHY). Open Targets association score 0.39"
-    },
-    {
       "source": "SCN7A",
       "target": "diabetic neuropathy (DIABETIC_NEUROPATHY)",
       "type": "ASSOCIATED_WITH",
@@ -689,6 +683,18 @@
       "target": "diabetic neuropathy (DIABETIC_NEUROPATHY)",
       "type": "ASSOCIATED_WITH",
       "description": "SCN1A is associated with diabetic neuropathy (DIABETIC_NEUROPATHY). Open Targets association score 0.39"
+    },
+    {
+      "source": "SCN5A",
+      "target": "diabetic neuropathy (DIABETIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN5A is associated with diabetic neuropathy (DIABETIC_NEUROPATHY). Open Targets association score 0.39"
+    },
+    {
+      "source": "SCN4A",
+      "target": "diabetic neuropathy (DIABETIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN4A is associated with diabetic neuropathy (DIABETIC_NEUROPATHY). Open Targets association score 0.39"
     },
     {
       "source": "TRPV1",
@@ -787,6 +793,12 @@
       "description": "GRM5 is associated with diabetic neuropathy (DIABETIC_NEUROPATHY). Open Targets association score 0.09"
     },
     {
+      "source": "HTR2C",
+      "target": "diabetic neuropathy (DIABETIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTR2C is associated with diabetic neuropathy (DIABETIC_NEUROPATHY). Open Targets association score 0.09"
+    },
+    {
       "source": "GRIN2A",
       "target": "diabetic neuropathy (DIABETIC_NEUROPATHY)",
       "type": "ASSOCIATED_WITH",
@@ -797,12 +809,6 @@
       "target": "diabetic neuropathy (DIABETIC_NEUROPATHY)",
       "type": "ASSOCIATED_WITH",
       "description": "HRH1 is associated with diabetic neuropathy (DIABETIC_NEUROPATHY). Open Targets association score 0.09"
-    },
-    {
-      "source": "HTR2C",
-      "target": "diabetic neuropathy (DIABETIC_NEUROPATHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "HTR2C is associated with diabetic neuropathy (DIABETIC_NEUROPATHY). Open Targets association score 0.09"
     },
     {
       "source": "TRPA1",
@@ -907,22 +913,16 @@
       "description": "MS4A1 is associated with diabetic neuropathy (DIABETIC_NEUROPATHY). Open Targets association score 0.07"
     },
     {
-      "source": "CACNA1B",
-      "target": "diabetic neuropathy (DIABETIC_NEUROPATHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CACNA1B is associated with diabetic neuropathy (DIABETIC_NEUROPATHY). Open Targets association score 0.07"
-    },
-    {
       "source": "GRIA1",
       "target": "diabetic neuropathy (DIABETIC_NEUROPATHY)",
       "type": "ASSOCIATED_WITH",
       "description": "GRIA1 is associated with diabetic neuropathy (DIABETIC_NEUROPATHY). Open Targets association score 0.07"
     },
     {
-      "source": "GRIA3",
+      "source": "CACNA1B",
       "target": "diabetic neuropathy (DIABETIC_NEUROPATHY)",
       "type": "ASSOCIATED_WITH",
-      "description": "GRIA3 is associated with diabetic neuropathy (DIABETIC_NEUROPATHY). Open Targets association score 0.07"
+      "description": "CACNA1B is associated with diabetic neuropathy (DIABETIC_NEUROPATHY). Open Targets association score 0.07"
     },
     {
       "source": "GRIN2C",
@@ -931,22 +931,22 @@
       "description": "GRIN2C is associated with diabetic neuropathy (DIABETIC_NEUROPATHY). Open Targets association score 0.07"
     },
     {
+      "source": "GRIA3",
+      "target": "diabetic neuropathy (DIABETIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIA3 is associated with diabetic neuropathy (DIABETIC_NEUROPATHY). Open Targets association score 0.07"
+    },
+    {
       "source": "GRIN3B",
       "target": "diabetic neuropathy (DIABETIC_NEUROPATHY)",
       "type": "ASSOCIATED_WITH",
       "description": "GRIN3B is associated with diabetic neuropathy (DIABETIC_NEUROPATHY). Open Targets association score 0.07"
     },
     {
-      "source": "SNAP25",
+      "source": "MAOA",
       "target": "diabetic neuropathy (DIABETIC_NEUROPATHY)",
       "type": "ASSOCIATED_WITH",
-      "description": "SNAP25 is associated with diabetic neuropathy (DIABETIC_NEUROPATHY). Open Targets association score 0.07"
-    },
-    {
-      "source": "CACNA2D2",
-      "target": "diabetic neuropathy (DIABETIC_NEUROPATHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CACNA2D2 is associated with diabetic neuropathy (DIABETIC_NEUROPATHY). Open Targets association score 0.07"
+      "description": "MAOA is associated with diabetic neuropathy (DIABETIC_NEUROPATHY). Open Targets association score 0.07"
     },
     {
       "source": "GUCY1B1",
@@ -955,10 +955,28 @@
       "description": "GUCY1B1 is associated with diabetic neuropathy (DIABETIC_NEUROPATHY). Open Targets association score 0.07"
     },
     {
+      "source": "CACNA2D2",
+      "target": "diabetic neuropathy (DIABETIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA2D2 is associated with diabetic neuropathy (DIABETIC_NEUROPATHY). Open Targets association score 0.07"
+    },
+    {
       "source": "HCRTR2",
       "target": "diabetic neuropathy (DIABETIC_NEUROPATHY)",
       "type": "ASSOCIATED_WITH",
       "description": "HCRTR2 is associated with diabetic neuropathy (DIABETIC_NEUROPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "GRIA4",
+      "target": "diabetic neuropathy (DIABETIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIA4 is associated with diabetic neuropathy (DIABETIC_NEUROPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "SNAP25",
+      "target": "diabetic neuropathy (DIABETIC_NEUROPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNAP25 is associated with diabetic neuropathy (DIABETIC_NEUROPATHY). Open Targets association score 0.07"
     },
     {
       "source": "GRIN2D",
@@ -1031,12 +1049,6 @@
       "target": "diabetic neuropathy (DIABETIC_NEUROPATHY)",
       "type": "ASSOCIATED_WITH",
       "description": "CDKAL1 is associated with diabetic neuropathy (DIABETIC_NEUROPATHY). Open Targets association score 0.44"
-    },
-    {
-      "source": "GRIA4",
-      "target": "diabetic neuropathy (DIABETIC_NEUROPATHY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GRIA4 is associated with diabetic neuropathy (DIABETIC_NEUROPATHY). Open Targets association score 0.44"
     },
     {
       "source": "APOE",

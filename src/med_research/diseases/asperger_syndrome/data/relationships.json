@@ -1,0 +1,592 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL85",
+      "target": "HTR2A",
+      "type": "TARGETS",
+      "description": "RISPERIDONE targets HTR2A."
+    },
+    {
+      "source": "CHEMBL1112",
+      "target": "DRD2",
+      "type": "TARGETS",
+      "description": "ARIPIPRAZOLE targets DRD2."
+    },
+    {
+      "source": "CHEMBL1699",
+      "target": "GRIN2B",
+      "type": "TARGETS",
+      "description": "MEMANTINE HYDROCHLORIDE targets GRIN2B."
+    },
+    {
+      "source": "CHEMBL85",
+      "target": "HTR2C",
+      "type": "TARGETS",
+      "description": "RISPERIDONE targets HTR2C."
+    },
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN3A",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN3A."
+    },
+    {
+      "source": "CHEMBL1699",
+      "target": "GRIN2C",
+      "type": "TARGETS",
+      "description": "MEMANTINE HYDROCHLORIDE targets GRIN2C."
+    },
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN3B",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN3B."
+    },
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN2C",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN2C."
+    },
+    {
+      "source": "CHEMBL1699",
+      "target": "GRIN3B",
+      "type": "TARGETS",
+      "description": "MEMANTINE HYDROCHLORIDE targets GRIN3B."
+    },
+    {
+      "source": "CHEMBL1699",
+      "target": "GRIN1",
+      "type": "TARGETS",
+      "description": "MEMANTINE HYDROCHLORIDE targets GRIN1."
+    },
+    {
+      "source": "CHEMBL1112",
+      "target": "HTR1A",
+      "type": "TARGETS",
+      "description": "ARIPIPRAZOLE targets HTR1A."
+    },
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN2B",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN2B."
+    },
+    {
+      "source": "CHEMBL1699",
+      "target": "GRIN3A",
+      "type": "TARGETS",
+      "description": "MEMANTINE HYDROCHLORIDE targets GRIN3A."
+    },
+    {
+      "source": "CHEMBL1112",
+      "target": "HTR2A",
+      "type": "TARGETS",
+      "description": "ARIPIPRAZOLE targets HTR2A."
+    },
+    {
+      "source": "CHEMBL85",
+      "target": "DRD2",
+      "type": "TARGETS",
+      "description": "RISPERIDONE targets DRD2."
+    },
+    {
+      "source": "CHEMBL1699",
+      "target": "GRIN2D",
+      "type": "TARGETS",
+      "description": "MEMANTINE HYDROCHLORIDE targets GRIN2D."
+    },
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN2D",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN2D."
+    },
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN2A",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN2A."
+    },
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN1",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN1."
+    },
+    {
+      "source": "CHEMBL1699",
+      "target": "GRIN2A",
+      "type": "TARGETS",
+      "description": "MEMANTINE HYDROCHLORIDE targets GRIN2A."
+    },
+    {
+      "source": "KCNQ1",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNQ1 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "TCF20",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF20 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GRIA1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIA1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN2A",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2A is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN2B",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2B is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN2C",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2C is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN2D",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2D is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN3A",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN3A is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN3B",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN3B is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "JAG1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "JAG1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "DRD2",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "DRD2 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "HTR1A",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTR1A is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "HTR2A",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTR2A is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "HTR2C",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTR2C is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "NLGN3",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLGN3 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.39"
+    },
+    {
+      "source": "DRD2",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DRD2 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.30"
+    },
+    {
+      "source": "HTR2A",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTR2A is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.29"
+    },
+    {
+      "source": "HTR2C",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTR2C is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.26"
+    },
+    {
+      "source": "NLGN4X",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLGN4X is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.16"
+    },
+    {
+      "source": "GRIN1",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN1 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.11"
+    },
+    {
+      "source": "GRIN2B",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2B is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "GRIN3B",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN3B is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "HTR1A",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTR1A is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "MYO6",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO6 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.10"
+    },
+    {
+      "source": "MYO7A",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO7A is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "GRIN3A",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN3A is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "GRIN2A",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2A is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "GRIN2D",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2D is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "GRIN2C",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2C is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "CAMK2A",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMK2A is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "PCDH15",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCDH15 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "CHD7",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD7 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "JAG1",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAG1 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "CDH23",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH23 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "TAFA3",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAFA3 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "LRRC51",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRC51 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "TOMT",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOMT is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "LRTOMT",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRTOMT is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "USH1C",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USH1C is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "ZPLD1",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZPLD1 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "GRIA1",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIA1 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "FMR1",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMR1 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "TSC2",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "ESRP1",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESRP1 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "PTEN",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.08"
+    },
+    {
+      "source": "KCNQ1",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNQ1 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "MAP6",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP6 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "AP1G1",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AP1G1 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "SLC24A3",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC24A3 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "NEUROD1",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEUROD1 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "NPAS3",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPAS3 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "NRXN2",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRXN2 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "AVPR1A",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVPR1A is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "TMEM266",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM266 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "MYO15A",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO15A is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "LRRC7",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRC7 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "OXTR",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OXTR is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "POU3F4",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU3F4 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "GNPAT",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNPAT is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "RYR3",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYR3 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "TCF20",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF20 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "WNK2",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNK2 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "CELSR1",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR1 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "BDNF",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BDNF is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "NOX3",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOX3 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "TMIE",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMIE is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "DISC1",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DISC1 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PCDH20",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCDH20 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "SIPA1",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIPA1 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "GABRD",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRD is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "USH1G",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USH1G is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "SHANK3",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHANK3 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TSC1",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC1 is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "SOBP",
+      "target": "Asperger syndrome (ASPERGER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOBP is associated with Asperger syndrome (ASPERGER_SYNDROME). Open Targets association score 0.06"
+    }
+  ]
+}

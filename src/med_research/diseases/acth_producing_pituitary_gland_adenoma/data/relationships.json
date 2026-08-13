@@ -1,0 +1,490 @@
+{
+  "relationships": [
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL3A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL3A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "SMO",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SMO is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6ST",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6ST is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3R1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "AGTR1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGTR1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "SMAD2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "LRP1B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "USP8",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP8 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.39"
+    },
+    {
+      "source": "TP53",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MEN1",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "GNAS",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAS is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FAT1",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT1 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERBB4",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB4 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMO",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMO is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "AFDN",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFDN is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "STAG2",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAG2 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "HSP90AB1",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSP90AB1 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "DICER1",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DICER1 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "PRKAR1A",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAR1A is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "NF1",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "HRAS",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "WRN",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WRN is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ATRX",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SMAD2",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD2 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MAP2K1",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K1 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "IL6ST",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6ST is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "BAP1",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAP1 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PPP6C",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP6C is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PREX2",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PREX2 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2C",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "LRP1B",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1B is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "BCOR",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCOR is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "GATA3",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KDR",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KAT6A",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KAT6A is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PIK3R1",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R1 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "STAT6",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT6 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TMSB4X",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMSB4X is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "CRNKL1",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRNKL1 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "MSN",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSN is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "CTNND1",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNND1 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "CNTNAP2",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNTNAP2 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "COL3A1",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL3A1 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "SHTN1",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHTN1 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "RBM15",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM15 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "CHD2",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD2 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "POMC",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "EGFR",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "BRAF",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "USP48",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP48 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CIRBP",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIRBP is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CABLES1",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CABLES1 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NMBR",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NMBR is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "HDAC2",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDAC2 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "DLK1",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLK1 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "OXT",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OXT is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CRH",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRH is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TBX19",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX19 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "AGTR1",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGTR1 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "NMB",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NMB is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "KHDRBS1",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KHDRBS1 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "AVPR1B",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVPR1B is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "HSP90AA1",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSP90AA1 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "POU1F1",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU1F1 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MKI67",
+      "target": "ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with ACTH-Producing Pituitary Gland Adenoma (ACTH_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.01"
+    }
+  ]
+}

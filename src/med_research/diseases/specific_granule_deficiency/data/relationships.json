@@ -1,0 +1,592 @@
+{
+  "relationships": [
+    {
+      "source": "BAX",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BAX is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CASP3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "F2RL1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F2RL1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ALOX15",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ALOX15 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLUL",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GLUL is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GCK",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCK is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "SLC2A4",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A4 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17RB",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17RB is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "GORASP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "GORASP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "KITLG",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KITLG is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RELA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "SLC6A4",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC6A4 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "IL17RB",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17RB is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL23R",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL23R is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP2E1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2E1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP3A4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP3A4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CEBPE",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPE is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.65"
+    },
+    {
+      "source": "SLC6A4",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A4 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL17RB",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17RB is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRPV1",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV1 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "NFKB1",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNF",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GFI1",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFI1 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "CEBPA",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPA is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "SEMA3G",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEMA3G is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TLR4",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "AKT1",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "SOD1",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD1 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CASP3",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP3 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CYP3A4",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP3A4 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "PRKAA2",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA2 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "PRKAA1",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA1 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "RELA",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELA is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "WNK1",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNK1 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "GORASP1",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GORASP1 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "SYT1",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYT1 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL1B",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "BMS1",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMS1 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACACA",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACACA is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "LTF",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTF is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CAT",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAT is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "BAX",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAX is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL13",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "COL2A1",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTGS2",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGF",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGF is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL2",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "JAK2",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL23R",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL23R is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "STAT6",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT6 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NGF",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NGF is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MT-CO2",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO2 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CAMP",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMP is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GCK",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCK is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NR1I2",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1I2 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "KIT",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GDF5",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF5 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "LCN2",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN2 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL10",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC52A1",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC52A1 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "F2RL1",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F2RL1 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TJP1",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TJP1 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALOX15",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALOX15 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP2E1",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2E1 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC2A4",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A4 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "APC",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL4",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GLUL",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLUL is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "KITLG",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KITLG is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "HSP90AA1",
+      "target": "specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSP90AA1 is associated with specific granule deficiency (SPECIFIC_GRANULE_DEFICIENCY). Open Targets association score 0.01"
+    }
+  ]
+}

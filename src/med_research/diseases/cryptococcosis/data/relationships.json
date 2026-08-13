@@ -1,0 +1,562 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1535",
+      "target": "TLR9",
+      "type": "TARGETS",
+      "description": "HYDROXYCHLOROQUINE targets TLR9."
+    },
+    {
+      "source": "CHEMBL989",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "TREATS",
+      "description": "FLUOCINOLONE ACETONIDE is phase 4 / marketed for cryptococcosis (CRYPTOCOCCOSIS)."
+    },
+    {
+      "source": "FADD",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "FADD is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "RIPK3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "RIPK3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCL3",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL3 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCL4",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL4 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL10",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL10 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ZNF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MBL2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "MBL2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL18",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL4R",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4R is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ITGAX",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAX is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELL",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELL is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "FCER1G",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "FCER1G is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "CARD9",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD9 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGAX",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAX is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR9",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR9 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNB1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNB1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "FCGR2B",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2B is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "TNF",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "CSF2",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "CD40LG",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "RPL17",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "LGALS3",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "RIPK3",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIPK3 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL6",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD4",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CLEC4D",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC4D is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SNCA",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PDCD1",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SPATA2",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHIT1",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHIT1 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "MARCO",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MARCO is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "FADD",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADD is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "MBL2",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBL2 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFNG",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CSF1",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF1 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SELL",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELL is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "FCER1G",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCER1G is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCL3",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL3 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "BATF3",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BATF3 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCL2",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL2 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL4R",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4R is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTX3",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTX3 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CXCL10",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL10 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "PRM1",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRM1 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL2",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "FBP1",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBP1 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NLRC4",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRC4 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CARD9",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD9 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL10",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZNF2",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF2 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNC",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNC is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "RNF130",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF130 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TLR9",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR9 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD40",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL18",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ITGAX",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAX is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD79A",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKAR1A",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAR1A is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "VPS45",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VPS45 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNB1",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNB1 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXADR",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXADR is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPG7",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPG7 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CASR",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASR is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRIM13",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM13 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NR1I3",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1I3 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ARR3",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARR3 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "AICDA",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AICDA is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MPPE1",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPPE1 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "SFTPD",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFTPD is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL17A",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "STAT6",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT6 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "FCGR2A",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2A is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCL4",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL4 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "YAP1",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YAP1 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NEURL3",
+      "target": "cryptococcosis (CRYPTOCOCCOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEURL3 is associated with cryptococcosis (CRYPTOCOCCOSIS). Open Targets association score 0.01"
+    }
+  ]
+}

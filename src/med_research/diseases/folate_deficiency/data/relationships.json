@@ -1,0 +1,502 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "SLC38A2",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC38A2 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CACNA1C",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1C is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CCNE1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCNE1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "IGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "SHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "TFRC",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFRC is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTHFD1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFD1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "MTHFR",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFR is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFAIP1",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP1 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "CYP2U1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2U1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GSTM1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GCM1",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCM1 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "MTHFR",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFR is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CBS",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBS is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "TCF4",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF4 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GSTM1",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM1 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC46A1",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC46A1 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "GNAS",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAS is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL6",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "ATRX",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "SHH",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHH is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "MECP2",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MECP2 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TCN2",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCN2 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "MTR",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTR is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "DNMT3A",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT3A is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "APOE",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "AOPEP",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOPEP is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "BCL2",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "ACSS2",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACSS2 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "DNMT1",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT1 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CRP",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "MTHFD1",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFD1 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "FOLR1",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOLR1 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "AKT1",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TFRC",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFRC is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCNE1",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCNE1 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "EPO",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPO is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TYMS",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYMS is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "DHFR",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHFR is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNFAIP1",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFAIP1 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NDUFB3",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFB3 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADSL",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADSL is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGF2",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CLEC4F",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC4F is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PCBP1",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCBP1 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SHMT2",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHMT2 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "BRCA1",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB1",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "LEP",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP2U1",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2U1 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "STAT3",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NANOG",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NANOG is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "LMBRD1",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMBRD1 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC38A2",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC38A2 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD55",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD55 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SHMT1",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHMT1 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "H2AX",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H2AX is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPT",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "FHIT",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FHIT is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TBXT",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBXT is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CACNA1C",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1C is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TBXAS1",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBXAS1 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GGH",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGH is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "RFC1",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RFC1 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "BRCA2",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "HPRT1",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPRT1 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTRR",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTRR is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "FOLH1",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOLH1 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PAX3",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX3 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NRF1",
+      "target": "folate deficiency (FOLATE_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRF1 is associated with folate deficiency (FOLATE_DEFICIENCY). Open Targets association score 0.01"
+    }
+  ]
+}

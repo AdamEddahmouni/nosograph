@@ -1,0 +1,436 @@
+{
+  "relationships": [
+    {
+      "source": "RHBDF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "RHBDF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "GATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL19A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL19A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "NLRP6",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP6 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ACE2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "NLRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ABCC4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "RHBDF2",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHBDF2 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.73"
+    },
+    {
+      "source": "CFTR",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFTR is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TP63",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ST14",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST14 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC27A4",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC27A4 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "STK11",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "APC",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TLX2",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLX2 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "MUC2",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC2 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ACE2",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE2 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "EPCAM",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPCAM is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "YIPF6",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YIPF6 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "KRT6A",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT6A is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "KRT6C",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT6C is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "KRT6B",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT6B is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PLG",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLG is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "ABCA12",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA12 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL19A1",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL19A1 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "RAB8A",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB8A is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "KRT36",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT36 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GRHL3",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRHL3 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "AGR2",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGR2 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "KEAP1",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KEAP1 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PGLYRP1",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGLYRP1 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PGLYRP4",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGLYRP4 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PGLYRP3",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGLYRP3 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PGLYRP2",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGLYRP2 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CES2",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CES2 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FEM1A",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FEM1A is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "KRT8",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT8 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TCF7L2",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF7L2 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "KRT76",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT76 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "KRT4",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT4 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PPARD",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARD is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "MUC13",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC13 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ACVRL1",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACVRL1 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NR5A2",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR5A2 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ANXA1",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANXA1 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "KLF4",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF4 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PPARA",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARA is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GPX8",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPX8 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GUCY1B1",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GUCY1B1 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRPV5",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV5 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "LMNA",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNA is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FNDC4",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FNDC4 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "KRT13",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT13 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ARHGAP17",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP17 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NLRP6",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP6 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GPA33",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPA33 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "LYPD8",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYPD8 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FLG",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLG is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ITGB2",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "KLK11",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK11 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SFN",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFN is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "MISP",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MISP is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "KRT5",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT5 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ABCC4",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC4 is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "MLXIPL",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLXIPL is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GATM",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATM is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "DMKN",
+      "target": "palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMKN is associated with palmoplantar keratoderma-esophageal carcinoma syndrome (PALMOPLANTAR_KERATODERMA_ESOPHAGEAL_CARCINOMA_SYNDROME). Open Targets association score 0.04"
+    }
+  ]
+}

@@ -127,6 +127,12 @@
       "description": "VWF is a component of the Coagulation Cascade pathway."
     },
     {
+      "source": "C4BPA",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C4BPA is a component of the Complement Cascade pathway."
+    },
+    {
       "source": "TIPARP",
       "target": "dna-repair",
       "type": "PARTICIPATES_IN",
@@ -427,16 +433,22 @@
       "description": "CHUK is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.03"
     },
     {
-      "source": "TERF2IP",
+      "source": "SMG6",
       "target": "ichthyosis vulgaris (ICHTHYOSIS_VULGARIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "TERF2IP is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.03"
+      "description": "SMG6 is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.03"
     },
     {
       "source": "TIPARP",
       "target": "ichthyosis vulgaris (ICHTHYOSIS_VULGARIS)",
       "type": "ASSOCIATED_WITH",
       "description": "TIPARP is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TERF2IP",
+      "target": "ichthyosis vulgaris (ICHTHYOSIS_VULGARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERF2IP is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.03"
     },
     {
       "source": "ATF6B",
@@ -449,12 +461,6 @@
       "target": "ichthyosis vulgaris (ICHTHYOSIS_VULGARIS)",
       "type": "ASSOCIATED_WITH",
       "description": "SHARPIN is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.03"
-    },
-    {
-      "source": "SMG6",
-      "target": "ichthyosis vulgaris (ICHTHYOSIS_VULGARIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SMG6 is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.03"
     },
     {
       "source": "LORICRIN",
@@ -505,10 +511,22 @@
       "description": "CD1A is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.01"
     },
     {
+      "source": "ZNF185",
+      "target": "ichthyosis vulgaris (ICHTHYOSIS_VULGARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF185 is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.01"
+    },
+    {
       "source": "FOS",
       "target": "ichthyosis vulgaris (ICHTHYOSIS_VULGARIS)",
       "type": "ASSOCIATED_WITH",
       "description": "FOS is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "JUNB",
+      "target": "ichthyosis vulgaris (ICHTHYOSIS_VULGARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JUNB is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.01"
     },
     {
       "source": "JUND",
@@ -523,22 +541,10 @@
       "description": "JUN is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.01"
     },
     {
-      "source": "JUNB",
-      "target": "ichthyosis vulgaris (ICHTHYOSIS_VULGARIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "JUNB is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.01"
-    },
-    {
       "source": "FOSB",
       "target": "ichthyosis vulgaris (ICHTHYOSIS_VULGARIS)",
       "type": "ASSOCIATED_WITH",
       "description": "FOSB is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.01"
-    },
-    {
-      "source": "ZNF185",
-      "target": "ichthyosis vulgaris (ICHTHYOSIS_VULGARIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ZNF185 is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.01"
     },
     {
       "source": "CD36",
@@ -553,16 +559,16 @@
       "description": "HRNR is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.00"
     },
     {
-      "source": "VWF",
-      "target": "ichthyosis vulgaris (ICHTHYOSIS_VULGARIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "VWF is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.00"
-    },
-    {
       "source": "GJB2",
       "target": "ichthyosis vulgaris (ICHTHYOSIS_VULGARIS)",
       "type": "ASSOCIATED_WITH",
       "description": "GJB2 is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "VWF",
+      "target": "ichthyosis vulgaris (ICHTHYOSIS_VULGARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.00"
     },
     {
       "source": "IVL",
@@ -571,34 +577,16 @@
       "description": "IVL is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.00"
     },
     {
-      "source": "TGM5",
-      "target": "ichthyosis vulgaris (ICHTHYOSIS_VULGARIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "TGM5 is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.00"
-    },
-    {
-      "source": "HSPB2",
-      "target": "ichthyosis vulgaris (ICHTHYOSIS_VULGARIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "HSPB2 is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.00"
-    },
-    {
-      "source": "CXCL8",
-      "target": "ichthyosis vulgaris (ICHTHYOSIS_VULGARIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CXCL8 is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.00"
-    },
-    {
-      "source": "KRT14",
-      "target": "ichthyosis vulgaris (ICHTHYOSIS_VULGARIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "KRT14 is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.00"
-    },
-    {
       "source": "TGM3",
       "target": "ichthyosis vulgaris (ICHTHYOSIS_VULGARIS)",
       "type": "ASSOCIATED_WITH",
       "description": "TGM3 is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGM5",
+      "target": "ichthyosis vulgaris (ICHTHYOSIS_VULGARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM5 is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.00"
     },
     {
       "source": "PCNA",
@@ -607,10 +595,10 @@
       "description": "PCNA is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.00"
     },
     {
-      "source": "HSPB3",
+      "source": "KRT14",
       "target": "ichthyosis vulgaris (ICHTHYOSIS_VULGARIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "HSPB3 is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.00"
+      "description": "KRT14 is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.00"
     },
     {
       "source": "HSPB1",
@@ -619,16 +607,40 @@
       "description": "HSPB1 is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.00"
     },
     {
+      "source": "CXCL8",
+      "target": "ichthyosis vulgaris (ICHTHYOSIS_VULGARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "HSPB2",
+      "target": "ichthyosis vulgaris (ICHTHYOSIS_VULGARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPB2 is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.00"
+    },
+    {
       "source": "ARSH",
       "target": "ichthyosis vulgaris (ICHTHYOSIS_VULGARIS)",
       "type": "ASSOCIATED_WITH",
       "description": "ARSH is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.00"
     },
     {
+      "source": "HSPB3",
+      "target": "ichthyosis vulgaris (ICHTHYOSIS_VULGARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPB3 is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.00"
+    },
+    {
       "source": "PPL",
       "target": "ichthyosis vulgaris (ICHTHYOSIS_VULGARIS)",
       "type": "ASSOCIATED_WITH",
       "description": "PPL is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "C4BPA",
+      "target": "ichthyosis vulgaris (ICHTHYOSIS_VULGARIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C4BPA is associated with ichthyosis vulgaris (ICHTHYOSIS_VULGARIS). Open Targets association score 0.00"
     },
     {
       "source": "ERCC2",

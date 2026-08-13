@@ -1,0 +1,454 @@
+{
+  "relationships": [
+    {
+      "source": "SLC4A5",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC4A5 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "G6PC1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "G6PC1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INSR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INSR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "SLC2A2",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A2 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "SLC2A5",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A5 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "SLC2A9",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A9 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL5",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL5 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ABCC2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "SLCO2A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLCO2A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ALDOB",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDOB is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.83"
+    },
+    {
+      "source": "ANO5",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANO5 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.34"
+    },
+    {
+      "source": "HNF1A",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.06"
+    },
+    {
+      "source": "UMOD",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UMOD is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.05"
+    },
+    {
+      "source": "ABCG2",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG2 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.04"
+    },
+    {
+      "source": "BICC1",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BICC1 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.04"
+    },
+    {
+      "source": "SLC12A1",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A1 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYS1",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYS1 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.04"
+    },
+    {
+      "source": "TXNIP",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TXNIP is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC5A2",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC5A2 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.03"
+    },
+    {
+      "source": "INSR",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INSR is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC26A1",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC26A1 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC2A9",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A9 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CLCN5",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCN5 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.03"
+    },
+    {
+      "source": "FAH",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAH is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.03"
+    },
+    {
+      "source": "HADHA",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HADHA is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC4A5",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC4A5 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.03"
+    },
+    {
+      "source": "WHAMM",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WHAMM is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.03"
+    },
+    {
+      "source": "PKD1",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKD1 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOD2",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD2 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.03"
+    },
+    {
+      "source": "NOS1",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS1 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPHP3-ACAD11",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHP3-ACAD11 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPHP3",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHP3 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ABCC2",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC2 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.03"
+    },
+    {
+      "source": "G6PC1",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "G6PC1 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC2A5",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A5 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.02"
+    },
+    {
+      "source": "TF",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLCO2A1",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLCO2A1 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.01"
+    },
+    {
+      "source": "KHK",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KHK is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PMM2",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMM2 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MPI",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPI is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.01"
+    },
+    {
+      "source": "AMPD2",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMPD2 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.01"
+    },
+    {
+      "source": "GCKR",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC2A2",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A2 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTH",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTH is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSMA6",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMA6 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.01"
+    },
+    {
+      "source": "FBP1",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBP1 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.00"
+    },
+    {
+      "source": "AGA",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGA is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADRA1D",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA1D is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GAA",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAA is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SERPINA1",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA1 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CPT2",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPT2 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PCBD1",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCBD1 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.00"
+    },
+    {
+      "source": "DHCR7",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHCR7 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GALT",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GALT is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PYGM",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PYGM is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MLXIPL",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLXIPL is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALDOA",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDOA is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GCG",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCG is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL5",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL5 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.00"
+    },
+    {
+      "source": "LIPA",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPA is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.00"
+    },
+    {
+      "source": "AKT1",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.00"
+    },
+    {
+      "source": "OGA",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OGA is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GPI",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPI is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGFB1",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MANBA",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MANBA is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GK",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GK is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GALK1",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GALK1 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.00"
+    },
+    {
+      "source": "LCT",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCT is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GLB1",
+      "target": "hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLB1 is associated with hereditary fructose intolerance (HEREDITARY_FRUCTOSE_INTOLERANCE). Open Targets association score 0.00"
+    }
+  ]
+}

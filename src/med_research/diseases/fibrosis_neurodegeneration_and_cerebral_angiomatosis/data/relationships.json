@@ -1,0 +1,442 @@
+{
+  "relationships": [
+    {
+      "source": "C9orf72",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C9orf72 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IRF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "SOCS1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "SOCS1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RELB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "LAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "UNC93B1",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "UNC93B1 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IRF8",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "NMNAT3",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NMNAT3 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "NHLRC2",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NHLRC2 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.73"
+    },
+    {
+      "source": "SPTA1",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "ANK1",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "SPTB",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTB is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL2",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "GIMAP5",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP5 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "GIMAP1-GIMAP5",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP1-GIMAP5 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXP3",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "GPI",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPI is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "C9orf72",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C9orf72 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "AHSP",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSP is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IKZF1",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKAG1",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAG1 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "NCKAP1L",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCKAP1L is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "FBXO7",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXO7 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "HK1",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HK1 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "LDHA",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDHA is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL2RA",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RA is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PKLR",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKLR is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "INPP5D",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INPP5D is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "FECH",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FECH is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ASAH1",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASAH1 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZFPM1",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFPM1 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ATP4A",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP4A is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "JAK2",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "EPB41",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPB41 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "RELB",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELB is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IRAG1",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRAG1 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "COG6",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COG6 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ITCH",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITCH is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "UNC93B1",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UNC93B1 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "REL",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REL is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHORDC1",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHORDC1 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "RUNX1",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "FASLG",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TTC7A",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC7A is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "LGMN",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGMN is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "HPRT1",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPRT1 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "STEAP3",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STEAP3 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRDX2",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDX2 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADD2",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADD2 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOCS1",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOCS1 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "NMNAT3",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NMNAT3 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "LAT",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAT is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SMAP1",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAP1 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "LEPR",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TPI1",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPI1 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "NFKB2",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IRF8",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF8 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "NFKB1",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "LIF",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIF is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ARID4A",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID4A is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "BNIP3L",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BNIP3L is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SNRNP40",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNRNP40 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CTSA",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSA is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "KLF3",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF3 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "NDUFS6",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS6 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "RBMS3",
+      "target": "fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBMS3 is associated with fibrosis, neurodegeneration, and cerebral angiomatosis (FIBROSIS_NEURODEGENERATION_AND_CEREBRAL_ANGIOMATOSIS). Open Targets association score 0.00"
+    }
+  ]
+}

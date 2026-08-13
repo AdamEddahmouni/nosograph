@@ -1,0 +1,484 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL413",
+      "target": "FKBP1A",
+      "type": "TARGETS",
+      "description": "SIROLIMUS targets FKBP1A."
+    },
+    {
+      "source": "CHEMBL1908360",
+      "target": "FKBP1A",
+      "type": "TARGETS",
+      "description": "EVEROLIMUS targets FKBP1A."
+    },
+    {
+      "source": "CCND2",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND2 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1C",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1C is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "IGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IGF2R",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2R is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FANCD2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "FANCD2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "HFE",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "HFE is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "ERAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "ERAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3R1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3R2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TGM2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PIK3R1",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R1 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.40"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.38"
+    },
+    {
+      "source": "MTOR",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.30"
+    },
+    {
+      "source": "AKT1",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.28"
+    },
+    {
+      "source": "FANCD2",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCD2 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.18"
+    },
+    {
+      "source": "PIK3R2",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R2 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.12"
+    },
+    {
+      "source": "MUC6",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC6 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "FKBP1A",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP1A is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.09"
+    },
+    {
+      "source": "DNMT3A",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT3A is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "NPR2",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPR2 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "SUZ12",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUZ12 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SETD2",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD2 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERAS",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERAS is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFIX",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFIX is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPC3",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPC3 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "NSD2",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSD2 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "NSD3",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSD3 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGF1",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRAS",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "RNF125",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF125 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGF2",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN1C",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1C is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPIN4",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPIN4 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CHD8",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD8 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "MFN2",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFN2 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "NSD1",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSD1 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ESR1",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERAL1",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERAL1 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "NF1",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTEN",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "EZH2",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EZH2 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCND2",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND2 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "FIBP",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FIBP is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "DNMT1",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT1 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "EED",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EED is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "GH1",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC25A43",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A43 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "DNMT3B",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT3B is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHSY1",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHSY1 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CNP",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNP is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "LIPE",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPE is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "RNF135",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF135 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "FCGR2C",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2C is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "XPO1",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XPO1 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "AGGF1",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGGF1 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGF2R",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2R is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "FCGR2B",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2B is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "FCGR2A",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2A is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "DIS3L2",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DIS3L2 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRDM9",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM9 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "KMT5B",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT5B is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGF1R",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1R is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "GGH",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGH is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "GPC1",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPC1 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGM2",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM2 is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "HFE",
+      "target": "overgrowth syndrome (OVERGROWTH_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HFE is associated with overgrowth syndrome (OVERGROWTH_SYNDROME). Open Targets association score 0.00"
+    }
+  ]
+}

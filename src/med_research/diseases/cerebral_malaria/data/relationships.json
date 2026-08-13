@@ -1,0 +1,592 @@
+{
+  "relationships": [
+    {
+      "source": "CCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCL5",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL5 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL10",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL10 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "IRF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PROCR",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "PROCR is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TM7SF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TM7SF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C5AR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C5AR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ADAMTS13",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS13 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TFRC",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFRC is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1R1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1R1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1RN",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1RN is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL33",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL33 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6R",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6R is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELP",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELP is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SOCS1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "SOCS1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "MYD88",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MYD88 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR2",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR2 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR7",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR7 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR9",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR9 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF1B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF1B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF8",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "GSTM1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.10"
+    },
+    {
+      "source": "CXCL10",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL10 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.09"
+    },
+    {
+      "source": "TNF",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "CCL2",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL2 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "IL1B",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "TLR7",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR7 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "ANGPT1",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPT1 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "KIR2DL3",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIR2DL3 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "APOE",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "VWF",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "NEFL",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEFL is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL4",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADAMTS13",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS13 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "AOPEP",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOPEP is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "KIR3DL1",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIR3DL1 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "GEM",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GEM is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "AGT",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "C5",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C5 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL6R",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6R is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD8A",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TLR9",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR9 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL1R1",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1R1 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL1RN",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1RN is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TM7SF2",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM7SF2 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "G6PD",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "G6PD is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "UCHL1",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UCHL1 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ANGPT2",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPT2 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "VPS51",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VPS51 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CR1",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CR1 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NOS2",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TLR2",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR2 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TRPV1",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV1 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD4",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "HDGFL2",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDGFL2 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PROCR",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROCR is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL10",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ISYNA1",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISYNA1 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFNG",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IRF8",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF8 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PECAM1",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PECAM1 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL33",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL33 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PPARG",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADA",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADA is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SELP",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELP is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MYD88",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYD88 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TFRC",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFRC is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHI3L1",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHI3L1 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MAPT",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPT is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CRP",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CCL5",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL5 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "EPO",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPO is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "C9",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C9 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ITGAM",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAM is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GFAP",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SOCS1",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOCS1 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNFRSF1B",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF1B is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GCG",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCG is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GSTM1",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM1 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "C5AR1",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C5AR1 is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TEK",
+      "target": "cerebral malaria (CEREBRAL_MALARIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TEK is associated with cerebral malaria (CEREBRAL_MALARIA). Open Targets association score 0.02"
+    }
+  ]
+}

@@ -1,0 +1,484 @@
+{
+  "relationships": [
+    {
+      "source": "SQSTM1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SQSTM1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CACNA1E",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1E is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "C1QTNF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C1QTNF9B",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9B is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C1QTNF9",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "C1QTNF9B",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9B is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GCK",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCK is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INSR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INSR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IRS1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "IRS1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "AKT2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "THRA",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THRA is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "THRA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "THRA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "C1QTNF9",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "C1QTNF9B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IGFALS",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGFALS is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.67"
+    },
+    {
+      "source": "SPSB3",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPSB3 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.50"
+    },
+    {
+      "source": "LEPR",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "OTP",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OTP is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "AKT2",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT2 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "SIM1",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIM1 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "IRS1",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRS1 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "PCSK1",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK1 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "ALMS1",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALMS1 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "HMGA1",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGA1 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "TRARG1",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRARG1 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "WDTC1",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDTC1 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "THRA",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THRA is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "KMT2B",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2B is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRLHR",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRLHR is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "INSR",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INSR is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "MC4R",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MC4R is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LEP",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "POMC",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "GCK",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCK is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "KBTBD2",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KBTBD2 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADIPOR2",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOR2 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "BAIAP2L1",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAIAP2L1 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CARTPT",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARTPT is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "IAPP",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IAPP is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CREBBP",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "GCKR",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRKAA2",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA2 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ADIPOR1",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOR1 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "DBH",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DBH is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "GYS2",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GYS2 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CORT",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CORT is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRKAB2",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB2 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NPY5R",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPY5R is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRLH",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRLH is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ANK2",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK2 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "STX4",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STX4 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "NPY1R",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPY1R is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZEB1",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CACNA1E",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1E is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "BRS3",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRS3 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TBC1D4",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D4 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CEP19",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEP19 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLSCR3",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLSCR3 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ARFGEF3",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARFGEF3 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CSF2",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "STXBP3",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STXBP3 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "LMNA",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNA is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PPP1R3C",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP1R3C is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GCG",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCG is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "C1QTNF9",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1QTNF9 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "C1QTNF9B",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1QTNF9B is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "BECN2",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BECN2 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CPE",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPE is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "LZTFL1",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LZTFL1 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SQSTM1",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SQSTM1 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "LCMT1",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCMT1 is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ATM",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with short stature due to primary acid-labile subunit deficiency (SHORT_STATURE_DUE_TO_PRIMARY_ACID_LABILE_SUBUNIT_DEFICIENCY). Open Targets association score 0.04"
+    }
+  ]
+}

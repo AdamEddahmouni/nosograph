@@ -1,0 +1,592 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1737",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "TREATS",
+      "description": "SILDENAFIL CITRATE is phase 4 / marketed for oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)."
+    },
+    {
+      "source": "CD19",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD19 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "HLA-DRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "HLA-DRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TNFSF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C1QTNF3",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF3 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "C1QTNF3-AMACR",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF3-AMACR is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CLEC4A",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CLEC4A is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL19",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL19 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1R1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1R1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1RN",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1RN is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "MEFV",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "MEFV is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6ST",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6ST is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ITGAX",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAX is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELP",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELP is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "TYK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "TYK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "NFKBIB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ICOS",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ICOS is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ZAP70",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ZAP70 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL17B",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17B is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "BTG3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "BTG3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGAX",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAX is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGER4",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGER4 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "C1QTNF3",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF3 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "C1QTNF3-AMACR",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF3-AMACR is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF10",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF10 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF13",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNGR1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNGR1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "DRAXIN",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "DRAXIN is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.32"
+    },
+    {
+      "source": "TNF",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "MEFV",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEFV is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL1RN",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1RN is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "RSBN1",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSBN1 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNFSF13",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SOD3",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD3 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNFSF10",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF10 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PECAM1",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PECAM1 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "RNF128",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF128 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "LGR4",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGR4 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFIL3",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFIL3 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ASH1L",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASH1L is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SELP",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELP is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXE3",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXE3 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "C1QTNF3-AMACR",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1QTNF3-AMACR is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "C1QTNF3",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1QTNF3 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC15A4",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC15A4 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CLEC4C",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC4C is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CLEC4A",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC4A is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "NFKBIB",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIB is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTGER4",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGER4 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TYK2",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYK2 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TARM1",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TARM1 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "DUSP2",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DUSP2 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PPARG",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL19",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL19 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZFP36",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFP36 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "DUSP1",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DUSP1 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL6ST",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6ST is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL1R1",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1R1 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL1B",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD274",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZAP70",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZAP70 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PGLYRP2",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGLYRP2 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "DUSP10",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DUSP10 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL25",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL25 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ICOS",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICOS is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "FCGR2C",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2C is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "FCGR2A",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2A is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "FCGR2B",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2B is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "FMOD",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMOD is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "MMP9",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFNGR1",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNGR1 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL17B",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17B is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "NT5E",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NT5E is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "PHTF1",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHTF1 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD19",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD19 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NGFR",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NGFR is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "HLA-DRB1",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DRB1 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "DEK",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEK is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTPN2",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN2 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD8A",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD4",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "DRAXIN",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DRAXIN is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ITGAX",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAX is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL10",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "FOXP3",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "BTG3",
+      "target": "oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTG3 is associated with oligoarticular juvenile idiopathic arthritis (OLIGOARTICULAR_JUVENILE_IDIOPATHIC_ARTHRITIS). Open Targets association score 0.01"
+    }
+  ]
+}

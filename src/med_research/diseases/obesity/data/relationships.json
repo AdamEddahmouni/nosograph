@@ -301,6 +301,12 @@
       "description": "GRIA4 is a component of the GABA / Glutamate Signaling pathway."
     },
     {
+      "source": "GABRA5",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GABRA5 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
       "source": "GLP1R",
       "target": "glucose-metabolism",
       "type": "PARTICIPATES_IN",
@@ -511,6 +517,12 @@
       "description": "SCN1A is associated with obesity disorder (OBESITY). Open Targets association score 0.47"
     },
     {
+      "source": "ADRA2A",
+      "target": "obesity disorder (OBESITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2A is associated with obesity disorder (OBESITY). Open Targets association score 0.47"
+    },
+    {
       "source": "ADRA2B",
       "target": "obesity disorder (OBESITY)",
       "type": "ASSOCIATED_WITH",
@@ -521,12 +533,6 @@
       "target": "obesity disorder (OBESITY)",
       "type": "ASSOCIATED_WITH",
       "description": "ADRA2C is associated with obesity disorder (OBESITY). Open Targets association score 0.47"
-    },
-    {
-      "source": "ADRA2A",
-      "target": "obesity disorder (OBESITY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ADRA2A is associated with obesity disorder (OBESITY). Open Targets association score 0.47"
     },
     {
       "source": "GRIA4",
@@ -583,10 +589,10 @@
       "description": "ADRB1 is associated with obesity disorder (OBESITY). Open Targets association score 0.45"
     },
     {
-      "source": "ADRA1D",
+      "source": "ADRA1A",
       "target": "obesity disorder (OBESITY)",
       "type": "ASSOCIATED_WITH",
-      "description": "ADRA1D is associated with obesity disorder (OBESITY). Open Targets association score 0.44"
+      "description": "ADRA1A is associated with obesity disorder (OBESITY). Open Targets association score 0.44"
     },
     {
       "source": "ADRA1B",
@@ -595,10 +601,10 @@
       "description": "ADRA1B is associated with obesity disorder (OBESITY). Open Targets association score 0.44"
     },
     {
-      "source": "ADRA1A",
+      "source": "ADRA1D",
       "target": "obesity disorder (OBESITY)",
       "type": "ASSOCIATED_WITH",
-      "description": "ADRA1A is associated with obesity disorder (OBESITY). Open Targets association score 0.44"
+      "description": "ADRA1D is associated with obesity disorder (OBESITY). Open Targets association score 0.44"
     },
     {
       "source": "RBMS1",
@@ -661,40 +667,16 @@
       "description": "LEPR is associated with obesity disorder (OBESITY). Open Targets association score 0.42"
     },
     {
-      "source": "SCN8A",
-      "target": "obesity disorder (OBESITY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SCN8A is associated with obesity disorder (OBESITY). Open Targets association score 0.41"
-    },
-    {
-      "source": "SCN7A",
-      "target": "obesity disorder (OBESITY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SCN7A is associated with obesity disorder (OBESITY). Open Targets association score 0.41"
-    },
-    {
-      "source": "SCN9A",
-      "target": "obesity disorder (OBESITY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SCN9A is associated with obesity disorder (OBESITY). Open Targets association score 0.41"
-    },
-    {
       "source": "SCN4A",
       "target": "obesity disorder (OBESITY)",
       "type": "ASSOCIATED_WITH",
       "description": "SCN4A is associated with obesity disorder (OBESITY). Open Targets association score 0.41"
     },
     {
-      "source": "SCN3A",
+      "source": "SCN5A",
       "target": "obesity disorder (OBESITY)",
       "type": "ASSOCIATED_WITH",
-      "description": "SCN3A is associated with obesity disorder (OBESITY). Open Targets association score 0.41"
-    },
-    {
-      "source": "SCN2A",
-      "target": "obesity disorder (OBESITY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SCN2A is associated with obesity disorder (OBESITY). Open Targets association score 0.41"
+      "description": "SCN5A is associated with obesity disorder (OBESITY). Open Targets association score 0.41"
     },
     {
       "source": "SCN10A",
@@ -709,10 +691,34 @@
       "description": "SCN11A is associated with obesity disorder (OBESITY). Open Targets association score 0.41"
     },
     {
-      "source": "SCN5A",
+      "source": "SCN9A",
       "target": "obesity disorder (OBESITY)",
       "type": "ASSOCIATED_WITH",
-      "description": "SCN5A is associated with obesity disorder (OBESITY). Open Targets association score 0.41"
+      "description": "SCN9A is associated with obesity disorder (OBESITY). Open Targets association score 0.41"
+    },
+    {
+      "source": "SCN3A",
+      "target": "obesity disorder (OBESITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN3A is associated with obesity disorder (OBESITY). Open Targets association score 0.41"
+    },
+    {
+      "source": "SCN8A",
+      "target": "obesity disorder (OBESITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN8A is associated with obesity disorder (OBESITY). Open Targets association score 0.41"
+    },
+    {
+      "source": "SCN7A",
+      "target": "obesity disorder (OBESITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN7A is associated with obesity disorder (OBESITY). Open Targets association score 0.41"
+    },
+    {
+      "source": "SCN2A",
+      "target": "obesity disorder (OBESITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN2A is associated with obesity disorder (OBESITY). Open Targets association score 0.41"
     },
     {
       "source": "GABRG2",
@@ -721,16 +727,10 @@
       "description": "GABRG2 is associated with obesity disorder (OBESITY). Open Targets association score 0.41"
     },
     {
-      "source": "GABRA1",
+      "source": "GABRA5",
       "target": "obesity disorder (OBESITY)",
       "type": "ASSOCIATED_WITH",
-      "description": "GABRA1 is associated with obesity disorder (OBESITY). Open Targets association score 0.41"
-    },
-    {
-      "source": "GABRA2",
-      "target": "obesity disorder (OBESITY)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GABRA2 is associated with obesity disorder (OBESITY). Open Targets association score 0.41"
+      "description": "GABRA5 is associated with obesity disorder (OBESITY). Open Targets association score 0.41"
     },
     {
       "source": "GABRA3",
@@ -743,6 +743,18 @@
       "target": "obesity disorder (OBESITY)",
       "type": "ASSOCIATED_WITH",
       "description": "GABRG1 is associated with obesity disorder (OBESITY). Open Targets association score 0.41"
+    },
+    {
+      "source": "GABRA2",
+      "target": "obesity disorder (OBESITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRA2 is associated with obesity disorder (OBESITY). Open Targets association score 0.41"
+    },
+    {
+      "source": "GABRA1",
+      "target": "obesity disorder (OBESITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABRA1 is associated with obesity disorder (OBESITY). Open Targets association score 0.41"
     },
     {
       "source": "PCSK1",

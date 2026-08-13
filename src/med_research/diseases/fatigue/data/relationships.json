@@ -1,0 +1,40 @@
+{
+  "relationships": [
+    {
+      "source": "SRSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SRSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL4A4",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A4 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "SRSF2",
+      "target": "sign or symptom (FATIGUE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRSF2 is associated with sign or symptom (FATIGUE). Open Targets association score 0.27"
+    },
+    {
+      "source": "TET2",
+      "target": "sign or symptom (FATIGUE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with sign or symptom (FATIGUE). Open Targets association score 0.27"
+    },
+    {
+      "source": "ASXL1",
+      "target": "sign or symptom (FATIGUE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with sign or symptom (FATIGUE). Open Targets association score 0.25"
+    },
+    {
+      "source": "COL4A4",
+      "target": "sign or symptom (FATIGUE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A4 is associated with sign or symptom (FATIGUE). Open Targets association score 0.12"
+    }
+  ]
+}

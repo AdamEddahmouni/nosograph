@@ -51,6 +51,7 @@ CAR_T_SCORES = {
         "CRH": 4.0,
         "CRP": 4.0,
         "CSE1L": 4.0,
+        "CTNND1": 4.0,
         "CTSS": 4.0,
         "DPP4": 4.0,
         "EGFR": 4.0,

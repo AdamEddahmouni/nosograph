@@ -1,0 +1,628 @@
+{
+  "relationships": [
+    {
+      "source": "BTK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BTK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LYN",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LYN is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCR6",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR6 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "C9orf72",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C9orf72 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "DPP4",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "DPP4 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6ST",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6ST is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBIA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RELB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "TNIP1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "TNIP1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "ACE2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "LAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ZAP70",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ZAP70 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "CCR6",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR6 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "RORC",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "RORC is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "MYD88",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MYD88 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR7",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR7 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTA",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTA is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTB",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTB is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF1A",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF1A is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNGR1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNGR1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "FAS",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "IFNG",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "NFKB1",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CEBPE",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPE is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "FASLG",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "RAG2",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG2 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL2",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "BCL6",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL6 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LTB",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTB is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "IFNGR1",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNGR1 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LGALS3",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFKB2",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL4",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "RELB",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELB is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXP3",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LTA",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTA is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNFRSF1A",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF1A is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "IKZF1",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "C9orf72",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C9orf72 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTPN22",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "TLR7",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR7 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "JAK3",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYD88",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYD88 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "TLR4",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CLEC4D",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC4D is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL13",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LYN",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYN is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CCR6",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR6 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL25",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL25 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "TGFB1",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRF1",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRF1 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL10",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ACE2",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE2 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "STAT1",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT1 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "RORC",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RORC is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "DPP4",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPP4 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL6ST",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6ST is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRKDC",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKDC is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD59",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD59 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "EBI3",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EBI3 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NOS2",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNIP1",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNIP1 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "REL",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REL is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TOM1L2",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOM1L2 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SH2D1A",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2D1A is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "BCL10",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL10 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CARD11",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TREX1",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREX1 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFKBIA",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIA is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ITGB2",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "BTK",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTK is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ASH1L",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASH1L is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CEBPB",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPB is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "LAT",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAT is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "MMP9",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPTA1",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTA1 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTPRC",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCR2",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR2 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZAP70",
+      "target": "selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZAP70 is associated with selective IgM deficiency (SELECTIVE_IGM_DEFICIENCY). Open Targets association score 0.04"
+    }
+  ]
+}

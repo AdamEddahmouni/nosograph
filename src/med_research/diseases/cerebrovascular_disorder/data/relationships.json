@@ -1,0 +1,652 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL24",
+      "target": "ADRB1",
+      "type": "TARGETS",
+      "description": "ATENOLOL targets ADRB1."
+    },
+    {
+      "source": "CHEMBL1428",
+      "target": "CACNA1C",
+      "type": "TARGETS",
+      "description": "NIMODIPINE targets CACNA1C."
+    },
+    {
+      "source": "CHEMBL503",
+      "target": "HMGCR",
+      "type": "TARGETS",
+      "description": "LOVASTATIN targets HMGCR."
+    },
+    {
+      "source": "CHEMBL25",
+      "target": "PTGS2",
+      "type": "TARGETS",
+      "description": "ASPIRIN targets PTGS2."
+    },
+    {
+      "source": "CHEMBL25",
+      "target": "PTGS2",
+      "type": "TARGETS",
+      "description": "ASPIRIN targets PTGS2."
+    },
+    {
+      "source": "CHEMBL1055",
+      "target": "SLC12A3",
+      "type": "TARGETS",
+      "description": "CHLORTHALIDONE targets SLC12A3."
+    },
+    {
+      "source": "CHEMBL799",
+      "target": "PDE3A",
+      "type": "TARGETS",
+      "description": "CILOSTAZOL targets PDE3A."
+    },
+    {
+      "source": "CHEMBL25",
+      "target": "PTGS1",
+      "type": "TARGETS",
+      "description": "ASPIRIN targets PTGS1."
+    },
+    {
+      "source": "CHEMBL1219",
+      "target": "ATP4A",
+      "type": "TARGETS",
+      "description": "RABEPRAZOLE targets ATP4A."
+    },
+    {
+      "source": "CHEMBL1200930",
+      "target": "ATP4A",
+      "type": "TARGETS",
+      "description": "RABEPRAZOLE SODIUM targets ATP4A."
+    },
+    {
+      "source": "CHEMBL1428",
+      "target": "NR3C2",
+      "type": "TARGETS",
+      "description": "NIMODIPINE targets NR3C2."
+    },
+    {
+      "source": "CHEMBL25",
+      "target": "PTGS1",
+      "type": "TARGETS",
+      "description": "ASPIRIN targets PTGS1."
+    },
+    {
+      "source": "CHEMBL772",
+      "target": "SLC18A2",
+      "type": "TARGETS",
+      "description": "RESERPINE targets SLC18A2."
+    },
+    {
+      "source": "SYK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "SYK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CACNA1C",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1C is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "ADRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "ADRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CYP4F2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4F2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FGG",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGG is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FOXF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FOXF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "RNF213",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "RNF213 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SERPINE1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SERPINE1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SRSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SRSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MBL2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "MBL2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "COL4A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLP1R",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GLP1R is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "HMGCR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HMGCR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGTR1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGTR1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "NR3C2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "NR3C2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "HTRA1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTRA1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "MTHFR",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFR is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "PTGS1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGM2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP2C19",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2C19 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP4F2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4F2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GSTM1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ATP4A",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP4A is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.32"
+    },
+    {
+      "source": "PTGS2",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTGS1",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS1 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.28"
+    },
+    {
+      "source": "PDE3A",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE3A is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.26"
+    },
+    {
+      "source": "SLC12A3",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A3 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.26"
+    },
+    {
+      "source": "ADRB1",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB1 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.26"
+    },
+    {
+      "source": "SLC18A2",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC18A2 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.26"
+    },
+    {
+      "source": "FGG",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGG is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.24"
+    },
+    {
+      "source": "CDKN2B",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2B is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.21"
+    },
+    {
+      "source": "FOXF2",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXF2 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.18"
+    },
+    {
+      "source": "ASXL1",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.17"
+    },
+    {
+      "source": "HTRA1",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTRA1 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.14"
+    },
+    {
+      "source": "SRSF2",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRSF2 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.11"
+    },
+    {
+      "source": "ZGRF1",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZGRF1 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.09"
+    },
+    {
+      "source": "SH3PXD2A",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3PXD2A is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.08"
+    },
+    {
+      "source": "HMGCR",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCR is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.08"
+    },
+    {
+      "source": "NLRP3",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.07"
+    },
+    {
+      "source": "KL",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KL is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.06"
+    },
+    {
+      "source": "FGA",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGA is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.05"
+    },
+    {
+      "source": "CBLN1",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBLN1 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.05"
+    },
+    {
+      "source": "CHI3L1",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHI3L1 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.04"
+    },
+    {
+      "source": "GSTM1",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM1 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.03"
+    },
+    {
+      "source": "RNF213",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF213 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.03"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.03"
+    },
+    {
+      "source": "GABPA",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABPA is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.03"
+    },
+    {
+      "source": "POMC",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.03"
+    },
+    {
+      "source": "COL4A1",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A1 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.03"
+    },
+    {
+      "source": "INS",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNF",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.03"
+    },
+    {
+      "source": "TGFB1",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.03"
+    },
+    {
+      "source": "VEGFA",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL6",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.03"
+    },
+    {
+      "source": "ACE",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.03"
+    },
+    {
+      "source": "TRIB3",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIB3 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.03"
+    },
+    {
+      "source": "APOE",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.03"
+    },
+    {
+      "source": "AGTR1",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGTR1 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.03"
+    },
+    {
+      "source": "AOPEP",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOPEP is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.03"
+    },
+    {
+      "source": "MTHFR",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFR is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.03"
+    },
+    {
+      "source": "GLP1R",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLP1R is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "NT5C2",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NT5C2 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "AQP4",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP4 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "SYK",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYK is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "NEURL1",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEURL1 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "ALB",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "CYP4F2",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4F2 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "CYP2C19",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2C19 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "MBL2",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBL2 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "GH1",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "GGH",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGH is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "TGM2",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM2 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTX3",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTX3 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "NR3C2",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C2 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "MEN1",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "STIM1",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STIM1 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "TRH",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRH is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "PLRG1",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLRG1 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "SERPINE1",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINE1 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "CACNA1C",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1C is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "ACTA2",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTA2 is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.02"
+    },
+    {
+      "source": "CRP",
+      "target": "cerebrovascular disorder (CEREBROVASCULAR_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with cerebrovascular disorder (CEREBROVASCULAR_DISORDER). Open Targets association score 0.02"
+    }
+  ]
+}

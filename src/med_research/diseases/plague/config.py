@@ -28,6 +28,7 @@ CAR_T_SCORES = {
     "Uncategorized": {
         "ADAM17": 4.0,
         "ADAMTSL2": 4.0,
+        "ADCY1": 4.0,
         "AHR": 4.0,
         "AIRE": 4.0,
         "ARPP21": 4.0,

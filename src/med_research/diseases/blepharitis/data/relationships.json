@@ -229,6 +229,12 @@
       "description": "IL6 is a component of the IL-6 Signaling pathway."
     },
     {
+      "source": "IL6R",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6R is a component of the IL-6 Signaling pathway."
+    },
+    {
       "source": "ITGAM",
       "target": "integrin-adhesion",
       "type": "PARTICIPATES_IN",
@@ -379,6 +385,12 @@
       "description": "GTF2E2 is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.09"
     },
     {
+      "source": "MMP8",
+      "target": "blepharitis (BLEPHARITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP8 is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.09"
+    },
+    {
       "source": "MMP13",
       "target": "blepharitis (BLEPHARITIS)",
       "type": "ASSOCIATED_WITH",
@@ -389,12 +401,6 @@
       "target": "blepharitis (BLEPHARITIS)",
       "type": "ASSOCIATED_WITH",
       "description": "MMP1 is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.09"
-    },
-    {
-      "source": "MMP8",
-      "target": "blepharitis (BLEPHARITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "MMP8 is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.09"
     },
     {
       "source": "MMP7",
@@ -445,10 +451,10 @@
       "description": "HTT is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.01"
     },
     {
-      "source": "FANCA",
+      "source": "FXN",
       "target": "blepharitis (BLEPHARITIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "FANCA is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.01"
+      "description": "FXN is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.01"
     },
     {
       "source": "FAS",
@@ -457,10 +463,10 @@
       "description": "FAS is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.01"
     },
     {
-      "source": "FXN",
+      "source": "FANCA",
       "target": "blepharitis (BLEPHARITIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "FXN is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.01"
+      "description": "FANCA is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.01"
     },
     {
       "source": "STAT6",
@@ -487,16 +493,16 @@
       "description": "CALR is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.01"
     },
     {
-      "source": "SLC6A8",
-      "target": "blepharitis (BLEPHARITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SLC6A8 is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.01"
-    },
-    {
       "source": "CALCR",
       "target": "blepharitis (BLEPHARITIS)",
       "type": "ASSOCIATED_WITH",
       "description": "CALCR is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC6A8",
+      "target": "blepharitis (BLEPHARITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A8 is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.01"
     },
     {
       "source": "IFNA2",
@@ -559,10 +565,16 @@
       "description": "CSF3 is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
     },
     {
-      "source": "PRKCB",
+      "source": "PRRT2",
       "target": "blepharitis (BLEPHARITIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "PRKCB is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
+      "description": "PRRT2 is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADGRA3",
+      "target": "blepharitis (BLEPHARITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADGRA3 is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
     },
     {
       "source": "PRKCG",
@@ -571,22 +583,10 @@
       "description": "PRKCG is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
     },
     {
-      "source": "PRRT2",
+      "source": "PRKCB",
       "target": "blepharitis (BLEPHARITIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "PRRT2 is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
-    },
-    {
-      "source": "CCL4",
-      "target": "blepharitis (BLEPHARITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CCL4 is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
-    },
-    {
-      "source": "ADGRA3",
-      "target": "blepharitis (BLEPHARITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ADGRA3 is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
+      "description": "PRKCB is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
     },
     {
       "source": "MYO9B",
@@ -601,10 +601,16 @@
       "description": "PRKCA is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
     },
     {
-      "source": "TNKS",
+      "source": "CCL4",
       "target": "blepharitis (BLEPHARITIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "TNKS is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
+      "description": "CCL4 is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MUC4",
+      "target": "blepharitis (BLEPHARITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC4 is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
     },
     {
       "source": "IL17C",
@@ -613,10 +619,10 @@
       "description": "IL17C is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
     },
     {
-      "source": "BCL11B",
+      "source": "TNKS",
       "target": "blepharitis (BLEPHARITIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "BCL11B is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
+      "description": "TNKS is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
     },
     {
       "source": "CD40",
@@ -625,10 +631,10 @@
       "description": "CD40 is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
     },
     {
-      "source": "MUC4",
+      "source": "BCL11B",
       "target": "blepharitis (BLEPHARITIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "MUC4 is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
+      "description": "BCL11B is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
     },
     {
       "source": "EGFR",
@@ -649,16 +655,16 @@
       "description": "ITGAM is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
     },
     {
-      "source": "IL13",
-      "target": "blepharitis (BLEPHARITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "IL13 is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
-    },
-    {
       "source": "IL6",
       "target": "blepharitis (BLEPHARITIS)",
       "type": "ASSOCIATED_WITH",
       "description": "IL6 is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL13",
+      "target": "blepharitis (BLEPHARITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13 is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
     },
     {
       "source": "IFNG",
@@ -691,10 +697,40 @@
       "description": "VEGFA is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
     },
     {
+      "source": "IL7",
+      "target": "blepharitis (BLEPHARITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7 is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CST6",
+      "target": "blepharitis (BLEPHARITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CST6 is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL5",
+      "target": "blepharitis (BLEPHARITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL5 is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "LAT",
+      "target": "blepharitis (BLEPHARITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAT is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
+    },
+    {
       "source": "PRKDC",
       "target": "blepharitis (BLEPHARITIS)",
       "type": "ASSOCIATED_WITH",
       "description": "PRKDC is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL6R",
+      "target": "blepharitis (BLEPHARITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6R is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.00"
     },
     {
       "source": "CCL4L2",
@@ -815,12 +851,6 @@
       "target": "blepharitis (BLEPHARITIS)",
       "type": "ASSOCIATED_WITH",
       "description": "HOXB6 is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.08"
-    },
-    {
-      "source": "IL5",
-      "target": "blepharitis (BLEPHARITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "IL5 is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.08"
     },
     {
       "source": "P4HA2",
@@ -1001,12 +1031,6 @@
       "target": "blepharitis (BLEPHARITIS)",
       "type": "ASSOCIATED_WITH",
       "description": "PLPPR5 is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.04"
-    },
-    {
-      "source": "LAT",
-      "target": "blepharitis (BLEPHARITIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "LAT is associated with blepharitis (BLEPHARITIS). Open Targets association score 0.04"
     },
     {
       "source": "WWTR1",

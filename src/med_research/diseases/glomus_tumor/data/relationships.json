@@ -1,0 +1,496 @@
+{
+  "relationships": [
+    {
+      "source": "ATG7",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "ATG7 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "KCNQ5",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNQ5 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCND3",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND3 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TFF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TFF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GLI1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RAF1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RAF1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "NOTCH3",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH3 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "REN",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "REN is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ATG7",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ATG7 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "NF1",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.29"
+    },
+    {
+      "source": "BRAF",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "KRAS",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "SMARCB1",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCB1 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "SYP",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYP is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "VEGFA",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "NOTCH2",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH2 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "NOTCH3",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH3 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCND3",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND3 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTGS2",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD34",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "RAF1",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAF1 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATG7",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATG7 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "TAC1",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAC1 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYH14",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH14 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "FH",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FH is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACTB",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTB is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMN1",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMN1 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "RGS5",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RGS5 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPT",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "WT1",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYO1B",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO1B is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "CGA",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGA is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "SIRT1",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT1 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "VIM",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIM is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "KIT",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "GLMN",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLMN is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "KCNQ5",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNQ5 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "GLI1",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI1 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "DES",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DES is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "S100B",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100B is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "S100A1",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A1 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACTA1",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTA1 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MKI67",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "REN",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REN is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALB",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "NEFH",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEFH is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "TFF2",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFF2 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPK3",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK3 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MUC1",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC1 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "SDHB",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDHB is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "SDHD",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDHD is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "ETFA",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETFA is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MUC5AC",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5AC is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "VHL",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VHL is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MCAM",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCAM is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHGA",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHGA is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MIB1",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIB1 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCND1",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "GATA3",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "WASF1",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WASF1 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "SERPINA3",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA3 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "ESR1",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "ENO2",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENO2 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "MME",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MME is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACOT7",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACOT7 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHL1",
+      "target": "glomus tumor (GLOMUS_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHL1 is associated with glomus tumor (GLOMUS_TUMOR). Open Targets association score 0.00"
+    }
+  ]
+}

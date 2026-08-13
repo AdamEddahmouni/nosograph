@@ -1,0 +1,230 @@
+{
+  "pathways": [
+    {
+      "id": "bcr-signaling",
+      "name": "B Cell Receptor Signaling",
+      "description": "BCR signal transduction controlling B cell survival, proliferation, and antibody production.",
+      "key_components": [
+        "BTK",
+        "CD19",
+        "CD209",
+        "CD79A",
+        "LYN"
+      ],
+      "therapeutic_targets": [
+        "BTK",
+        "CD19",
+        "CD209",
+        "CD79A",
+        "LYN"
+      ],
+      "references": []
+    },
+    {
+      "id": "complement",
+      "name": "Complement Cascade",
+      "description": "Classical, lectin, and alternative complement pathways for opsonization, lysis, and immune complex clearance.",
+      "key_components": [
+        "CR2"
+      ],
+      "therapeutic_targets": [
+        "CR2"
+      ],
+      "references": []
+    },
+    {
+      "id": "il1-inflammasome",
+      "name": "IL-1 / Inflammasome Pathway",
+      "description": "NLRP3 inflammasome assembly and IL-1β/IL-18 maturation; a driver of sterile inflammation.",
+      "key_components": [
+        "IL13",
+        "IL17A"
+      ],
+      "therapeutic_targets": [
+        "IL13",
+        "IL17A"
+      ],
+      "references": []
+    },
+    {
+      "id": "il4-il13",
+      "name": "IL-4 / IL-13 (Th2) Pathway",
+      "description": "Type 2 cytokine signaling driving allergic and eosinophilic inflammation.",
+      "key_components": [
+        "IL13",
+        "IL4",
+        "IL4R",
+        "STAT6"
+      ],
+      "therapeutic_targets": [
+        "IL13",
+        "IL4",
+        "IL4R",
+        "STAT6"
+      ],
+      "references": []
+    },
+    {
+      "id": "immune-checkpoint",
+      "name": "Immune Checkpoint Signaling",
+      "description": "Co-inhibitory receptor signaling (PD-1/CTLA-4/TIGIT/LAG-3) that restrains T cell responses.",
+      "key_components": [
+        "PDCD1LG2"
+      ],
+      "therapeutic_targets": [
+        "PDCD1LG2"
+      ],
+      "references": []
+    },
+    {
+      "id": "integrin-adhesion",
+      "name": "Integrin / Cell Adhesion",
+      "description": "Integrin-mediated adhesion and leukocyte trafficking into inflamed tissue.",
+      "key_components": [
+        "TICAM1"
+      ],
+      "therapeutic_targets": [
+        "TICAM1"
+      ],
+      "references": []
+    },
+    {
+      "id": "jak-stat",
+      "name": "JAK-STAT Signaling",
+      "description": "Cytokine receptor signaling through JAK kinases and STAT transcription factors; a hub for inflammatory and autoimmune disease pathways.",
+      "key_components": [
+        "STAT1",
+        "STAT6"
+      ],
+      "therapeutic_targets": [
+        "STAT1",
+        "STAT6"
+      ],
+      "references": []
+    },
+    {
+      "id": "nfkb",
+      "name": "NF-κB Pathway",
+      "description": "Canonical and non-canonical NF-κB activation driving pro-inflammatory gene expression.",
+      "key_components": [
+        "CARD11",
+        "NFKB1",
+        "NFKB2",
+        "REL"
+      ],
+      "therapeutic_targets": [
+        "CARD11",
+        "NFKB1",
+        "NFKB2",
+        "REL"
+      ],
+      "references": []
+    },
+    {
+      "id": "pi3k-akt-mtor",
+      "name": "PI3K / AKT / mTOR Signaling",
+      "description": "Growth and survival signaling through PI3K-AKT-mTOR; a major oncology and immunology target hub.",
+      "key_components": [
+        "PIK3CD"
+      ],
+      "therapeutic_targets": [
+        "PIK3CD"
+      ],
+      "references": []
+    },
+    {
+      "id": "tcr-signaling",
+      "name": "T Cell Receptor Signaling",
+      "description": "TCR signal transduction and T cell activation; a therapeutic hub in autoimmunity.",
+      "key_components": [
+        "CD28",
+        "CD40",
+        "CD40LG",
+        "ICOS",
+        "ICOSLG",
+        "PTPN22"
+      ],
+      "therapeutic_targets": [
+        "CD28",
+        "CD40",
+        "CD40LG",
+        "ICOS",
+        "ICOSLG",
+        "PTPN22"
+      ],
+      "references": []
+    },
+    {
+      "id": "th17-il17",
+      "name": "Th17 / IL-17 Pathway",
+      "description": "Th17 differentiation and IL-17 family cytokine signaling driving neutrophil recruitment and autoimmunity.",
+      "key_components": [
+        "IL17A",
+        "IL21R"
+      ],
+      "therapeutic_targets": [
+        "IL17A",
+        "IL21R"
+      ],
+      "references": []
+    },
+    {
+      "id": "tlr-signaling",
+      "name": "TLR / Innate Sensing",
+      "description": "Endosomal and surface Toll-like receptor signaling driving innate immune activation.",
+      "key_components": [
+        "MYD88",
+        "TICAM1",
+        "TLR4",
+        "TLR9"
+      ],
+      "therapeutic_targets": [
+        "MYD88",
+        "TICAM1",
+        "TLR4",
+        "TLR9"
+      ],
+      "references": []
+    },
+    {
+      "id": "tnf-signaling",
+      "name": "TNF Signaling",
+      "description": "Tumor necrosis factor receptor superfamily signaling; central to many autoimmune and inflammatory diseases.",
+      "key_components": [
+        "FAS",
+        "FASLG",
+        "LTA",
+        "LTB",
+        "TNF",
+        "TNFRSF13B",
+        "TNFSF13"
+      ],
+      "therapeutic_targets": [
+        "FAS",
+        "FASLG",
+        "LTA",
+        "LTB",
+        "TNF",
+        "TNFRSF13B",
+        "TNFSF13"
+      ],
+      "references": []
+    },
+    {
+      "id": "type1-ifn",
+      "name": "Type I Interferon Pathway",
+      "description": "IFN-α/β production and signaling through IFNAR; drives the interferon gene signature in autoimmune disease.",
+      "key_components": [
+        "IFNG",
+        "IRF4",
+        "STAT1"
+      ],
+      "therapeutic_targets": [
+        "IFNG",
+        "IRF4",
+        "STAT1"
+      ],
+      "references": []
+    }
+  ]
+}

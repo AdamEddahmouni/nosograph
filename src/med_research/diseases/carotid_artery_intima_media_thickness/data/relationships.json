@@ -1,0 +1,472 @@
+{
+  "relationships": [
+    {
+      "source": "BLK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BLK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "SIGLEC6",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "SIGLEC6 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "HAPLN1",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "HAPLN1 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "ADAMTS9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "LOXL1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "LOXL1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "LOXL4",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "LOXL4 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP24",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP24 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP24OS",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP24OS is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "MAP2K4",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K4 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TDRD15",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "TDRD15 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "FBN1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "FBN1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "LTBP4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "LTBP4",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP4 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "CYP2A6",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP2A6 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.56"
+    },
+    {
+      "source": "MAP2K4",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K4 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.40"
+    },
+    {
+      "source": "MYOCD",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYOCD is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.40"
+    },
+    {
+      "source": "ZHX2",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZHX2 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.40"
+    },
+    {
+      "source": "LTBP4",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTBP4 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.39"
+    },
+    {
+      "source": "MCPH1",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCPH1 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.37"
+    },
+    {
+      "source": "COL4A2",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A2 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.37"
+    },
+    {
+      "source": "RPS23",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPS23 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.34"
+    },
+    {
+      "source": "LOXL1",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LOXL1 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.33"
+    },
+    {
+      "source": "MMP24OS",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP24OS is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.32"
+    },
+    {
+      "source": "GMDS",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GMDS is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.32"
+    },
+    {
+      "source": "GATA4",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA4 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.31"
+    },
+    {
+      "source": "FOXC1",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.31"
+    },
+    {
+      "source": "GDF5",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF5 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.30"
+    },
+    {
+      "source": "SIGLEC6",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIGLEC6 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.29"
+    },
+    {
+      "source": "ADAMTS9",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS9 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.28"
+    },
+    {
+      "source": "TBX20",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX20 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.28"
+    },
+    {
+      "source": "EBF1",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EBF1 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.28"
+    },
+    {
+      "source": "DDI1",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDI1 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.27"
+    },
+    {
+      "source": "HAPLN1",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAPLN1 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.26"
+    },
+    {
+      "source": "PCDH15",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCDH15 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.25"
+    },
+    {
+      "source": "LOXL4",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LOXL4 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.23"
+    },
+    {
+      "source": "MFHAS1",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFHAS1 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.22"
+    },
+    {
+      "source": "HAND2",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAND2 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.22"
+    },
+    {
+      "source": "JCAD",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JCAD is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.22"
+    },
+    {
+      "source": "MMP24",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP24 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.21"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.20"
+    },
+    {
+      "source": "XKR6",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XKR6 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.20"
+    },
+    {
+      "source": "FBXO32",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXO32 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.20"
+    },
+    {
+      "source": "PROK1",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROK1 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.20"
+    },
+    {
+      "source": "FBN1",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBN1 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.19"
+    },
+    {
+      "source": "SOX7",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX7 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.18"
+    },
+    {
+      "source": "APOC1",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC1 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.18"
+    },
+    {
+      "source": "UACA",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UACA is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.16"
+    },
+    {
+      "source": "UQCC1",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UQCC1 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.16"
+    },
+    {
+      "source": "PRAG1",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRAG1 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.16"
+    },
+    {
+      "source": "CNOT11",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNOT11 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.15"
+    },
+    {
+      "source": "CFDP1",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFDP1 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.15"
+    },
+    {
+      "source": "BLK",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLK is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.14"
+    },
+    {
+      "source": "APOB",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.13"
+    },
+    {
+      "source": "CYP2A6",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP2A6 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.12"
+    },
+    {
+      "source": "ARHGAP44",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP44 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.12"
+    },
+    {
+      "source": "CBFA2T3",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBFA2T3 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.11"
+    },
+    {
+      "source": "VCAN",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VCAN is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.11"
+    },
+    {
+      "source": "MSRA",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSRA is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.11"
+    },
+    {
+      "source": "ZNF18",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF18 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.09"
+    },
+    {
+      "source": "HERPUD2",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HERPUD2 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.09"
+    },
+    {
+      "source": "KLHL38",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLHL38 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.09"
+    },
+    {
+      "source": "ANGPT2",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPT2 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.09"
+    },
+    {
+      "source": "R3HCC1L",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "R3HCC1L is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.07"
+    },
+    {
+      "source": "DNAH9",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH9 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.07"
+    },
+    {
+      "source": "AIG1",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIG1 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRSS51",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRSS51 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.05"
+    },
+    {
+      "source": "TDRD15",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TDRD15 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.05"
+    },
+    {
+      "source": "PDGFD",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFD is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.05"
+    },
+    {
+      "source": "BCAR1",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCAR1 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SVIL",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SVIL is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PINX1",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PINX1 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.03"
+    },
+    {
+      "source": "NEIL2",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEIL2 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRSS55",
+      "target": "carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRSS55 is associated with carotid artery intima media thickness (CAROTID_ARTERY_INTIMA_MEDIA_THICKNESS). Open Targets association score 0.03"
+    }
+  ]
+}

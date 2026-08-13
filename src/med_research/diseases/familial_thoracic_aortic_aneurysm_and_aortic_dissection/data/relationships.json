@@ -1,0 +1,556 @@
+{
+  "relationships": [
+    {
+      "source": "CSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL1A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL3A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL3A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL5A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL5A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL5A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL5A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ELN",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ELN is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "LOX",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "LOX is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "PLOD1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLOD1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "SLC2A10",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A10 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "JAG1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "JAG1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "THSD4",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THSD4 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "FBN1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "FBN1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "FBN2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "FBN2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SMAD2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SMAD3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SMAD4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFBR1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFBR3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "ABCC9",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC9 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "LOX",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LOX is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.80"
+    },
+    {
+      "source": "BGN",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BGN is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.72"
+    },
+    {
+      "source": "FBN1",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBN1 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.72"
+    },
+    {
+      "source": "TGFBR2",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBR2 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.71"
+    },
+    {
+      "source": "TGFBR1",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBR1 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.71"
+    },
+    {
+      "source": "SMAD3",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD3 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.71"
+    },
+    {
+      "source": "TGFB2",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB2 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.70"
+    },
+    {
+      "source": "ACTA2",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTA2 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.70"
+    },
+    {
+      "source": "PRKG1",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKG1 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.69"
+    },
+    {
+      "source": "MYH11",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH11 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.67"
+    },
+    {
+      "source": "MFAP5",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFAP5 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.66"
+    },
+    {
+      "source": "SMAD4",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD4 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.65"
+    },
+    {
+      "source": "TGFB3",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB3 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.64"
+    },
+    {
+      "source": "COL3A1",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL3A1 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.60"
+    },
+    {
+      "source": "STAMBPL1",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAMBPL1 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.56"
+    },
+    {
+      "source": "COL5A1",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL5A1 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.55"
+    },
+    {
+      "source": "SLC2A10",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A10 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.55"
+    },
+    {
+      "source": "CBS",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBS is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.54"
+    },
+    {
+      "source": "PLOD1",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLOD1 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.54"
+    },
+    {
+      "source": "FLNA",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLNA is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.54"
+    },
+    {
+      "source": "MYLK",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYLK is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.53"
+    },
+    {
+      "source": "NDE1",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDE1 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.51"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.51"
+    },
+    {
+      "source": "FOXE3",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXE3 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.51"
+    },
+    {
+      "source": "MED12",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MED12 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.51"
+    },
+    {
+      "source": "FBN2",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBN2 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.50"
+    },
+    {
+      "source": "THSD4",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THSD4 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.48"
+    },
+    {
+      "source": "SKI",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SKI is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.47"
+    },
+    {
+      "source": "HEY2",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HEY2 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.39"
+    },
+    {
+      "source": "SMAD2",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD2 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.37"
+    },
+    {
+      "source": "COL5A2",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL5A2 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.37"
+    },
+    {
+      "source": "COL1A1",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A1 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.34"
+    },
+    {
+      "source": "ATP2B3",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP2B3 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.33"
+    },
+    {
+      "source": "JAG1",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAG1 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.27"
+    },
+    {
+      "source": "MAT2A",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAT2A is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.19"
+    },
+    {
+      "source": "ROBO4",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROBO4 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.18"
+    },
+    {
+      "source": "GATA5",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA5 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.18"
+    },
+    {
+      "source": "FAS",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.16"
+    },
+    {
+      "source": "EFEMP2",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EFEMP2 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.14"
+    },
+    {
+      "source": "PKD1",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKD1 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.13"
+    },
+    {
+      "source": "TGFBR3",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBR3 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.12"
+    },
+    {
+      "source": "COL2A1",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.12"
+    },
+    {
+      "source": "ATP7A",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP7A is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.09"
+    },
+    {
+      "source": "TBX1",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX1 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.08"
+    },
+    {
+      "source": "MUS81",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUS81 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.08"
+    },
+    {
+      "source": "APOE",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.08"
+    },
+    {
+      "source": "LMNA",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNA is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.08"
+    },
+    {
+      "source": "CSF2",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.07"
+    },
+    {
+      "source": "ABCC9",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC9 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.07"
+    },
+    {
+      "source": "TAB1",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAB1 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.07"
+    },
+    {
+      "source": "ELN",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELN is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.07"
+    },
+    {
+      "source": "ECE1",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ECE1 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.07"
+    },
+    {
+      "source": "MPO",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPO is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.07"
+    },
+    {
+      "source": "MIB1",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIB1 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.06"
+    },
+    {
+      "source": "HECTD1",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HECTD1 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.06"
+    },
+    {
+      "source": "EMILIN1",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EMILIN1 is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.06"
+    },
+    {
+      "source": "EDNRA",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRA is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.06"
+    },
+    {
+      "source": "SEMA3C",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEMA3C is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.06"
+    },
+    {
+      "source": "LDLR",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.06"
+    },
+    {
+      "source": "MRTFB",
+      "target": "familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRTFB is associated with familial thoracic aortic aneurysm and aortic dissection (FAMILIAL_THORACIC_AORTIC_ANEURYSM_AND_AORTIC_DISSECTION). Open Targets association score 0.06"
+    }
+  ]
+}

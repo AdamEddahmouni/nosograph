@@ -1,0 +1,502 @@
+{
+  "relationships": [
+    {
+      "source": "CDK6",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK6 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ACKR1",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ACKR1 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL12",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL12 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL6",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL6 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "MARCHF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "MARCHF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TNFRSF10C",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF10C is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "IL17RA",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17RA is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1RN",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1RN is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "VSIR",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "VSIR is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ITGA4",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA4 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGAL",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAL is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "VLDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "VLDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL17RA",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17RA is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGA4",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA4 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGAL",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAL is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFRSF10C",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF10C is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF13B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFIH1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFIH1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CSF3R",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3R is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.56"
+    },
+    {
+      "source": "ACKR1",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACKR1 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.55"
+    },
+    {
+      "source": "MPO",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPO is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.53"
+    },
+    {
+      "source": "LY75",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LY75 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.53"
+    },
+    {
+      "source": "IL17RA",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17RA is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.52"
+    },
+    {
+      "source": "VSIR",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VSIR is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.51"
+    },
+    {
+      "source": "CXCR2",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR2 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.51"
+    },
+    {
+      "source": "NOSTRIN",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOSTRIN is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.51"
+    },
+    {
+      "source": "CXCL12",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL12 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.51"
+    },
+    {
+      "source": "TNFSF13B",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13B is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.50"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.50"
+    },
+    {
+      "source": "CABLES1",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CABLES1 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.50"
+    },
+    {
+      "source": "CXCL6",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL6 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.50"
+    },
+    {
+      "source": "ATXN1",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATXN1 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.50"
+    },
+    {
+      "source": "LEPR",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.50"
+    },
+    {
+      "source": "GC",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GC is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.50"
+    },
+    {
+      "source": "RBPMS",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBPMS is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.50"
+    },
+    {
+      "source": "MXI1",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MXI1 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.50"
+    },
+    {
+      "source": "SH2B3",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2B3 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.50"
+    },
+    {
+      "source": "EHD4",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EHD4 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.50"
+    },
+    {
+      "source": "ADGRE5",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADGRE5 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.50"
+    },
+    {
+      "source": "LYZ",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYZ is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.50"
+    },
+    {
+      "source": "BACH2",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BACH2 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.50"
+    },
+    {
+      "source": "IL1RN",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1RN is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.49"
+    },
+    {
+      "source": "ITGA4",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA4 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.49"
+    },
+    {
+      "source": "TET2",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.49"
+    },
+    {
+      "source": "TNFRSF10C",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF10C is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.49"
+    },
+    {
+      "source": "ACVRL1",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACVRL1 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.49"
+    },
+    {
+      "source": "PTPN22",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.49"
+    },
+    {
+      "source": "ADGRL4",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADGRL4 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.49"
+    },
+    {
+      "source": "VLDLR",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VLDLR is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.48"
+    },
+    {
+      "source": "CDK6",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK6 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.48"
+    },
+    {
+      "source": "TERT",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.48"
+    },
+    {
+      "source": "JAML",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAML is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.48"
+    },
+    {
+      "source": "TNS3",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNS3 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.48"
+    },
+    {
+      "source": "SETBP1",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETBP1 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.48"
+    },
+    {
+      "source": "NLRP3",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.48"
+    },
+    {
+      "source": "IFIH1",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFIH1 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.48"
+    },
+    {
+      "source": "LRRC25",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRC25 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.48"
+    },
+    {
+      "source": "SLC25A24",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A24 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.48"
+    },
+    {
+      "source": "MARCHF7",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MARCHF7 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.48"
+    },
+    {
+      "source": "ITGAL",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAL is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.48"
+    },
+    {
+      "source": "PRKCE",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCE is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.48"
+    },
+    {
+      "source": "P4HA2",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P4HA2 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.47"
+    },
+    {
+      "source": "EHD3",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EHD3 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.47"
+    },
+    {
+      "source": "NCLN",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCLN is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.47"
+    },
+    {
+      "source": "RIN3",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIN3 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.47"
+    },
+    {
+      "source": "ETS1",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETS1 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.47"
+    },
+    {
+      "source": "FES",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FES is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.47"
+    },
+    {
+      "source": "TSPAN32",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSPAN32 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.47"
+    },
+    {
+      "source": "FADS1",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS1 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.47"
+    },
+    {
+      "source": "RREB1",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RREB1 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.47"
+    },
+    {
+      "source": "STXBP6",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STXBP6 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.47"
+    },
+    {
+      "source": "ADRB2",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB2 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.47"
+    },
+    {
+      "source": "ZNF366",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF366 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.47"
+    },
+    {
+      "source": "SPRED2",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPRED2 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.47"
+    },
+    {
+      "source": "PLCB1",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCB1 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.47"
+    },
+    {
+      "source": "RCBTB1",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RCBTB1 is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.47"
+    },
+    {
+      "source": "PTPRC",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.47"
+    },
+    {
+      "source": "EIF3B",
+      "target": "myeloid white cell count (MYELOID_WHITE_CELL_COUNT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF3B is associated with myeloid white cell count (MYELOID_WHITE_CELL_COUNT). Open Targets association score 0.47"
+    }
+  ]
+}

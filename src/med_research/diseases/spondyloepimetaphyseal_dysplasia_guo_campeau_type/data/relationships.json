@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "FGF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLI2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "IHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "SHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BMP5",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP5 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CHUK",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CHUK is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "THRA",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THRA is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "FBN2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "FBN2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "THRA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "THRA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "IRF6",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF6 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "WNT5A",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT5A is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP51A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP51A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ERI1",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERI1 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.51"
+    },
+    {
+      "source": "ROR2",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROR2 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGFR3",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "GLI3",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "BMP5",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP5 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL2A1",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.05"
+    },
+    {
+      "source": "PHEX",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHEX is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "GLI2",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI2 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "HOXD13",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD13 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGF9",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF9 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGFR2",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZEB1",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYP51A1",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP51A1 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CPLANE1",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPLANE1 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "FLNB",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLNB is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "TBX15",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX15 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFT140",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT140 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "WDR19",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR19 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "PHOSPHO1",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHOSPHO1 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "RSPO2",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO2 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "PDS5B",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDS5B is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "WNT5A",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT5A is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHUK",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHUK is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOX11",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX11 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "EYA1",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EYA1 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "TMEM53",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM53 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "NPR2",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPR2 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "PCSK5",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK5 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "FBN2",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBN2 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRRX1",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRRX1 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "DYM",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYM is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CTSK",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSK is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "PITX1",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX1 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "NABP2",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NABP2 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SHH",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHH is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "IHH",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IHH is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "HSPG2",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPG2 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOX9",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX9 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZMPSTE24",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZMPSTE24 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "PPIB",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPIB is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SATB2",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SATB2 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "HOXD12",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD12 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "IBSP",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IBSP is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "PDS5A",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDS5A is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "EVC",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EVC is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "FOXC1",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHSY1",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHSY1 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CILK1",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CILK1 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "IRF6",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF6 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "THRA",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THRA is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "FSTL1",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSTL1 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRICKLE1",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRICKLE1 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ACP5",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACP5 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "AMER1",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMER1 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "FGF18",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF18 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "LRRK1",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRK1 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "CC2D2A",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CC2D2A is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "FGFR1",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    },
+    {
+      "source": "GDF5",
+      "target": "spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF5 is associated with spondyloepimetaphyseal dysplasia, Guo-Campeau type (SPONDYLOEPIMETAPHYSEAL_DYSPLASIA_GUO_CAMPEAU_TYPE). Open Targets association score 0.03"
+    }
+  ]
+}

@@ -1,0 +1,526 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "E2F4",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "E2F4 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCL21",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL21 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "FGF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "NUF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NUF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "HAVCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "HNF1B",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1B is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "HAVCR2",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR2 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "LAG3",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "LAG3 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "AKT2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "HIF1A",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "HIF1A is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "GLI3",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGF10",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF10 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ARX",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARX is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL13",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ALX1",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALX1 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MET",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "HIF1A",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF1A is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "RPL17",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "DEFB4A",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEFB4A is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "DEFB4B",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEFB4B is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "AKT2",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT2 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "BCL2",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL6",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDCP1",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDCP1 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDX2",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDX2 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "NUF2",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUF2 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDCD1",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "FOLH1",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOLH1 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNCA",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPATA2",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "EEF1A2",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EEF1A2 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "HCLS1",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HCLS1 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTTN",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTTN is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "YWHAQ",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YWHAQ is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "YWHAB",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YWHAB is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD68",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD68 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "STAT3",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "HNF1B",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1B is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "XRCC1",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XRCC1 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM3",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM3 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM5",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM5 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM7",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM7 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSG2",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSG2 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCL21",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL21 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPR135",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR135 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTAFR",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTAFR is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSDMB",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCL8",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "LGALS3",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "STAB1",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAB1 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "DDB1",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDB1 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "BRAF",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERBB2",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "INS",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "VEGFA",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1B",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "LAG3",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAG3 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "HAVCR2",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAVCR2 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALB",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "LCN1",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN1 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "RBP4",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBP4 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SCO2",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCO2 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC16A1",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC16A1 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TYMP",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYMP is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "MCAT",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCAT is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "E2F4",
+      "target": "oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "E2F4 is associated with oculocerebrocutaneous syndrome (OCULOCEREBROCUTANEOUS_SYNDROME). Open Targets association score 0.01"
+    }
+  ]
+}

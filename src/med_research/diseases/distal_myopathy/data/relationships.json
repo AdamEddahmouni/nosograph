@@ -1,0 +1,412 @@
+{
+  "relationships": [
+    {
+      "source": "MATR3",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MATR3 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL13A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL13A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL6A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL6A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL6A3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL6A3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ITGA7",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA7 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELENON",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELENON is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "APOBEC2",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOBEC2 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "NFATC3",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC3 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "ITGA7",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA7 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "CAV3",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAV3 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.62"
+    },
+    {
+      "source": "SSUH2",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSUH2 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.50"
+    },
+    {
+      "source": "GNE",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNE is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.47"
+    },
+    {
+      "source": "HSPB8",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPB8 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.44"
+    },
+    {
+      "source": "MATR3",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MATR3 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.41 | Open Targets association score 0.38"
+    },
+    {
+      "source": "TTN",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTN is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.38"
+    },
+    {
+      "source": "BICD2",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BICD2 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.34"
+    },
+    {
+      "source": "HNRNPA1",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNRNPA1 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.27"
+    },
+    {
+      "source": "DMD",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMD is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "DES",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DES is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "RYR1",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYR1 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "SCN4A",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN4A is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "DNAJB4",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAJB4 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "DYSF",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYSF is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "DMPK",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMPK is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "TNNT1",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNNT1 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.06"
+    },
+    {
+      "source": "COL6A3",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL6A3 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYH4",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH4 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CAPN3",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAPN3 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LAMA2",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMA2 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ITGA7",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA7 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "DNM2",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNM2 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NEB",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEB is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL6A1",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL6A1 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "MTM1",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTM1 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL13A1",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL13A1 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "GAA",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAA is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "OBSCN",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OBSCN is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LIMCH1",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIMCH1 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LMOD3",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMOD3 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.05"
+    },
+    {
+      "source": "FLNC",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLNC is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SGCG",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCG is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "VCP",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VCP is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "MSTN",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSTN is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ASNSD1",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASNSD1 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "LDB3",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDB3 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SGCA",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGCA is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "FKRP",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKRP is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRIM32",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM32 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ANK1",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "MBNL2",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBNL2 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CHKB",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHKB is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "MYBPC2",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYBPC2 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ANO5",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANO5 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SRPK3",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRPK3 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SELENON",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELENON is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "EMD",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EMD is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "NEBL",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEBL is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "KBTBD13",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KBTBD13 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "APOBEC2",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOBEC2 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLEC",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLEC is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "KLHL40",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLHL40 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "KLHL31",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLHL31 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFATC3",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFATC3 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "LARGE1",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LARGE1 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TCAP",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCAP is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "STIM1",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STIM1 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GMPPA",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GMPPA is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CASQ1",
+      "target": "distal myopathy (DISTAL_MYOPATHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASQ1 is associated with distal myopathy (DISTAL_MYOPATHY). Open Targets association score 0.04"
+    }
+  ]
+}

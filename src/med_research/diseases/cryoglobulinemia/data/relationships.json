@@ -1,0 +1,568 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201438",
+      "target": "IL2RB",
+      "type": "TARGETS",
+      "description": "ALDESLEUKIN targets IL2RB."
+    },
+    {
+      "source": "CHEMBL1201438",
+      "target": "IL2RA",
+      "type": "TARGETS",
+      "description": "ALDESLEUKIN targets IL2RA."
+    },
+    {
+      "source": "CD19",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD19 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "MS4A1",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MS4A1 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCR5",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR5 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL10",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL10 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL11",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL11 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL13",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL13 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TNFRSF25",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF25 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C4A",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C4A is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "TSLP",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "TSLP is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD86",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD86 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "BTG3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "BTG3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF25",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF25 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF13B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNA17",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA17 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNA2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNL3",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNL3 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "IL2RA",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RA is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL2RB",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RB is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCR5",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR5 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "C4A",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C4A is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "NLRP3",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SSB",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSB is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "C3",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C3 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CALR",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALR is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CXCL10",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL10 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CXCL8",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD79A",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CALCA",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRYGD",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYGD is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCL11",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL11 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSF2",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FN1",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FN1 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TSLP",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSLP is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRIM21",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM21 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNL3",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNL3 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RO60",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RO60 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1B",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNG",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "S100B",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100B is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCL13",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL13 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CR2",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CR2 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNA1",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD19",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD19 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNA2",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA2 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACLY",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACLY is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYC",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NGF",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NGF is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCL2",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL2 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPT",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMN1",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMN1 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CP",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CP is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD4",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD86",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD86 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD27",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD27 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BTG3",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTG3 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL10",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC17A5",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A5 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GOT1",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOT1 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT20",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT20 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MS4A1",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MS4A1 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MPO",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPO is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRAS",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAG",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAG is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "RNPC3",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNPC3 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRH1",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH1 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRH2",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH2 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSAP",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSAP is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNFRSF25",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF25 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNFSF13B",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13B is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ASS1",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASS1 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "AFP",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNA17",
+      "target": "cryoglobulinemia (CRYOGLOBULINEMIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA17 is associated with cryoglobulinemia (CRYOGLOBULINEMIA). Open Targets association score 0.00"
+    }
+  ]
+}

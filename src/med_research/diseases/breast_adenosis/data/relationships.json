@@ -1,0 +1,484 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL2007641",
+      "target": "ERBB2",
+      "type": "TARGETS",
+      "description": "PERTUZUMAB targets ERBB2."
+    },
+    {
+      "source": "CHEMBL1201585",
+      "target": "ERBB2",
+      "type": "TARGETS",
+      "description": "TRASTUZUMAB targets ERBB2."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GRIN2A",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2A is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "VSIR",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "VSIR is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "STAT5A",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT5A is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERBB3",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB3 is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTEN",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR2",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "APC",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "MED12",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MED12 is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "POLE",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRCA1",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.19"
+    },
+    {
+      "source": "GRIN2A",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2A is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.18"
+    },
+    {
+      "source": "ATM",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.18"
+    },
+    {
+      "source": "TSC2",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.18"
+    },
+    {
+      "source": "CREBBP",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2C",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.18"
+    },
+    {
+      "source": "EGFR",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.18"
+    },
+    {
+      "source": "KDM6A",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM6A is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.18"
+    },
+    {
+      "source": "NRAS",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.18"
+    },
+    {
+      "source": "AOC1",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOC1 is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "ERG",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERG is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "SOX10",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX10 is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC5AC",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5AC is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "VSIR",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VSIR is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ANO1",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANO1 is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NUCKS1",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUCKS1 is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYC",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TMPRSS2",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS2 is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "AMACR",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMACR is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "LYZ",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYZ is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP2A3",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP2A3 is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GATA3",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP63",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ESR1",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CKAP4",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CKAP4 is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "UVRAG",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UVRAG is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPE65",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPE65 is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACTB",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTB is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "S100A1",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A1 is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "S100B",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100B is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CLDN4",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN4 is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "DAO",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAO is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIEZO1",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIEZO1 is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "EREG",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EREG is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PCNA",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNA is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TFDP3",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFDP3 is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "RUNX1",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACVR1C",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACVR1C is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ERBB2",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "AVP",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVP is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "FAS",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TBXAS1",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBXAS1 is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "FANCA",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "FOSL1",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOSL1 is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "EZH2",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EZH2 is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "UCP1",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UCP1 is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTPRC",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "STAT5A",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT5A is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALDH1A1",
+      "target": "breast adenosis (BREAST_ADENOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDH1A1 is associated with breast adenosis (BREAST_ADENOSIS). Open Targets association score 0.00"
+    }
+  ]
+}

@@ -1,0 +1,382 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1738797",
+      "target": "ALK",
+      "type": "TARGETS",
+      "description": "ALECTINIB targets ALK."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "JAK1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LRP1B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EP300",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EP300 is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SPEN",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPEN is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID1A",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BCOR",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCOR is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR2",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KIT",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATM",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP53",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EGFR",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATRX",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "APC",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "LRP1B",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1B is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ARID2",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID2 is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KRAS",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "BRCA2",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PRDM16",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM16 is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "JAK1",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK1 is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "BRD3",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRD3 is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2D",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MYCN",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYCN is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "BAP1",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAP1 is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CUX1",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUX1 is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MYB",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYB is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TCF7L2",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF7L2 is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PHOX2B",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHOX2B is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KDM5C",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM5C is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SF3B1",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SF3B1 is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ALK",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PTPN11",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MED12",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MED12 is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2C",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NRAS",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NTRK1",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NFIB",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFIB is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MYOD1",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYOD1 is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SMARCE1",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCE1 is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MUC16",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC16 is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "CSMD3",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSMD3 is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "NSD1",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSD1 is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "TRPS1",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPS1 is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GATA3",
+      "target": "Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with Parotid Gland Adenoid Cystic Carcinoma (PAROTID_GLAND_ADENOID_CYSTIC_CARCINOMA). Open Targets association score 0.00"
+    }
+  ]
+}

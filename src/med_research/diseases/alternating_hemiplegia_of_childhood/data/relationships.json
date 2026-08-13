@@ -1,0 +1,538 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1200682",
+      "target": "GABBR1",
+      "type": "TARGETS",
+      "description": "SODIUM OXYBATE targets GABBR1."
+    },
+    {
+      "source": "CHEMBL1342",
+      "target": "GABBR2",
+      "type": "TARGETS",
+      "description": "OXYBATE targets GABBR2."
+    },
+    {
+      "source": "CHEMBL1342",
+      "target": "GABBR1",
+      "type": "TARGETS",
+      "description": "OXYBATE targets GABBR1."
+    },
+    {
+      "source": "CHEMBL1200682",
+      "target": "GABBR2",
+      "type": "TARGETS",
+      "description": "SODIUM OXYBATE targets GABBR2."
+    },
+    {
+      "source": "MS4A1",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MS4A1 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CACNA1A",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1A is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CXCL10",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL10 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "SLC1A3",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC1A3 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "SLC2A1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "SLC2A3",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A3 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF13B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNA17",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA17 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNA2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNB1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNB1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNL3",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNL3 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "CYP19A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP19A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ATP1A2",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP1A2 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.66"
+    },
+    {
+      "source": "ATP1A3",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP1A3 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.62"
+    },
+    {
+      "source": "NR0B1",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR0B1 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.47"
+    },
+    {
+      "source": "NR5A1",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR5A1 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.37"
+    },
+    {
+      "source": "STAR",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAR is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.37"
+    },
+    {
+      "source": "MC2R",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MC2R is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.37"
+    },
+    {
+      "source": "MRAP",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRAP is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.37"
+    },
+    {
+      "source": "AIRE",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIRE is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.37"
+    },
+    {
+      "source": "NNT",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NNT is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.37"
+    },
+    {
+      "source": "MCM4",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCM4 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.18"
+    },
+    {
+      "source": "GABBR2",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABBR2 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.05"
+    },
+    {
+      "source": "GABBR1",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABBR1 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC2A1",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A1 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.03"
+    },
+    {
+      "source": "NDUFS4",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDUFS4 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFNL3",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNL3 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD4",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL6",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.02"
+    },
+    {
+      "source": "IFNA1",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.02"
+    },
+    {
+      "source": "CRP",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.02"
+    },
+    {
+      "source": "CXCL10",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL10 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD8A",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNFSF13B",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13B is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.02"
+    },
+    {
+      "source": "GK",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GK is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC2A3",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A3 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "OTC",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OTC is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "POMC",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPT",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "SF1",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SF1 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNA17",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA17 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNA2",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA2 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD40LG",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "ICAM1",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "CACNA1A",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1A is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "ESRRB",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESRRB is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "DMD",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMD is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1B",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "CLDN5",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN5 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "S100A12",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A12 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "CALCA",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNG",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "MS4A1",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MS4A1 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRT20",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT20 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "GOT1",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOT1 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSMB5",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMB5 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC17A5",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A5 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP19A1",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP19A1 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "USP18",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP18 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "FCGR3B",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR3B is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "FCGR3A",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR3A is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRAS",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL4",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "INS",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "GALT",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GALT is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC1A3",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC1A3 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.01"
+    },
+    {
+      "source": "SERPINA4",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA4 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.00"
+    },
+    {
+      "source": "ANOS1",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANOS1 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.00"
+    },
+    {
+      "source": "TBXA2R",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBXA2R is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNB1",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNB1 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.00"
+    },
+    {
+      "source": "DPEP1",
+      "target": "alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPEP1 is associated with alternating hemiplegia of childhood (ALTERNATING_HEMIPLEGIA_OF_CHILDHOOD). Open Targets association score 0.00"
+    }
+  ]
+}

@@ -1,0 +1,478 @@
+{
+  "relationships": [
+    {
+      "source": "SLC39A8",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC39A8 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "SCARB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "SCARB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "FGB",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGB is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TM6SF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TM6SF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ZNF229",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF229 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL3 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL4 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CETP is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "HMGCR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HMGCR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CD300LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD300LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNFSF13",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "CYP7A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP7A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "NAT2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NAT2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.75"
+    },
+    {
+      "source": "PCSK9",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.75"
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL3 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.73"
+    },
+    {
+      "source": "ABCA1",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.73"
+    },
+    {
+      "source": "LDLR",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.73"
+    },
+    {
+      "source": "LIPG",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPG is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.71"
+    },
+    {
+      "source": "NPC1L1",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPC1L1 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.71"
+    },
+    {
+      "source": "ABCG5",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG5 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.71"
+    },
+    {
+      "source": "LCAT",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCAT is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.70"
+    },
+    {
+      "source": "LIPC",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.67"
+    },
+    {
+      "source": "SCARB1",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCARB1 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.67"
+    },
+    {
+      "source": "ASGR1",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASGR1 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.66"
+    },
+    {
+      "source": "SH2B3",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2B3 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.64"
+    },
+    {
+      "source": "SLC22A3",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A3 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.62"
+    },
+    {
+      "source": "TIMD4",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMD4 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.61"
+    },
+    {
+      "source": "ABCG8",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG8 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.61"
+    },
+    {
+      "source": "TM6SF2",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM6SF2 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.61"
+    },
+    {
+      "source": "FGB",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGB is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.61"
+    },
+    {
+      "source": "SORT1",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORT1 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.60"
+    },
+    {
+      "source": "LPL",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.60"
+    },
+    {
+      "source": "HP",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HP is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.60"
+    },
+    {
+      "source": "CD300LG",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD300LG is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.60"
+    },
+    {
+      "source": "GIGYF1",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIGYF1 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.60"
+    },
+    {
+      "source": "PLTP",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLTP is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.59"
+    },
+    {
+      "source": "APOE",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.59"
+    },
+    {
+      "source": "CELSR2",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR2 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.59"
+    },
+    {
+      "source": "ZNF229",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF229 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.59"
+    },
+    {
+      "source": "CETP",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETP is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.59"
+    },
+    {
+      "source": "SLC22A1",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A1 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.59"
+    },
+    {
+      "source": "APOH",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOH is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.59"
+    },
+    {
+      "source": "HPR",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPR is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.59"
+    },
+    {
+      "source": "RSPO3",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO3 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.59"
+    },
+    {
+      "source": "APOA1",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.58"
+    },
+    {
+      "source": "MTARC1",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTARC1 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.58"
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL4 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.58"
+    },
+    {
+      "source": "SERPINA1",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA1 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.58"
+    },
+    {
+      "source": "MLXIPL",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLXIPL is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.58"
+    },
+    {
+      "source": "HMGCR",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCR is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.58"
+    },
+    {
+      "source": "APOA5",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.58"
+    },
+    {
+      "source": "HNF1A",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.58"
+    },
+    {
+      "source": "LPA",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.58"
+    },
+    {
+      "source": "DNAH11",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH11 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.58"
+    },
+    {
+      "source": "COBLL1",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COBLL1 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.57"
+    },
+    {
+      "source": "HGFAC",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGFAC is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.57"
+    },
+    {
+      "source": "GAS6",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAS6 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.57"
+    },
+    {
+      "source": "NAT2",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAT2 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.57"
+    },
+    {
+      "source": "TNFSF13",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.57"
+    },
+    {
+      "source": "ABCA6",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA6 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.57"
+    },
+    {
+      "source": "GPAM",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPAM is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.57"
+    },
+    {
+      "source": "FADS2",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS2 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.57"
+    },
+    {
+      "source": "TTC39B",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC39B is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.57"
+    },
+    {
+      "source": "TRPS1",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPS1 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.57"
+    },
+    {
+      "source": "ZPR1",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZPR1 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.57"
+    },
+    {
+      "source": "GALNT2",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GALNT2 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.57"
+    },
+    {
+      "source": "SLC39A8",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC39A8 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.56"
+    },
+    {
+      "source": "M6PR",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "M6PR is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.56"
+    },
+    {
+      "source": "TRIB1",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIB1 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.56"
+    },
+    {
+      "source": "ACVR1C",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACVR1C is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.56"
+    },
+    {
+      "source": "USP24",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP24 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.56"
+    },
+    {
+      "source": "CYP7A1",
+      "target": "total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP7A1 is associated with total cholesterol measurement (TOTAL_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.56"
+    }
+  ]
+}

@@ -1,0 +1,490 @@
+{
+  "relationships": [
+    {
+      "source": "SLC34A1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC34A1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "TFRC",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFRC is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL4R",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4R is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "APOBR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOBR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "MAPK10",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK10 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MTHFR",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFR is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "ABCD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD320",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD320 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL21R",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL21R is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TG",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TG is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TPO",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TPO is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFIH1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFIH1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF4",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF4 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "LRP2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "GSTM1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CUBN",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUBN is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.45"
+    },
+    {
+      "source": "ARHGAP24",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP24 is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.36"
+    },
+    {
+      "source": "PTPN22",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.36"
+    },
+    {
+      "source": "APOBR",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOBR is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.36"
+    },
+    {
+      "source": "AIRE",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIRE is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.36"
+    },
+    {
+      "source": "IFIH1",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFIH1 is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.35"
+    },
+    {
+      "source": "SH2B3",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2B3 is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.33"
+    },
+    {
+      "source": "IRF4",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF4 is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.29"
+    },
+    {
+      "source": "CAMSAP2",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMSAP2 is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.25"
+    },
+    {
+      "source": "CTLA4",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTLA4 is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.24"
+    },
+    {
+      "source": "CLEC16A",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC16A is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.24"
+    },
+    {
+      "source": "IL21R",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL21R is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.22"
+    },
+    {
+      "source": "VNN2",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VNN2 is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.15"
+    },
+    {
+      "source": "MAPK10",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK10 is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.10"
+    },
+    {
+      "source": "ATP4A",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP4A is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.10"
+    },
+    {
+      "source": "IL27",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL27 is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLC18B1",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC18B1 is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "MTHFR",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFR is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PFKL",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PFKL is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL4R",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4R is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "RPS12",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPS12 is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "FAP",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAP is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "S100A8",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A8 is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "RSBN1",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSBN1 is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TCN2",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCN2 is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNF",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "EPO",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPO is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CLN3",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLN3 is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "DCLRE1B",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCLRE1B is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "DUSP22",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DUSP22 is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD320",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD320 is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "ALDH2",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDH2 is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "TPO",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPO is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "PCNA",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNA is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALB",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSTM1",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM1 is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP12A",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP12A is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GAST",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAST is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SDS",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDS is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTR",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTR is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PGC",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGC is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CBS",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBS is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC34A1",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC34A1 is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "LRP2",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP2 is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TG",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TG is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PON1",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PON1 is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ABCD4",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCD4 is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "AGER",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGER is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MOK",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MOK is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMUT",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMUT is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MVK",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MVK is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMACHC",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMACHC is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDH5",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH5 is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "AMN",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMN is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TFRC",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFRC is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTRR",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTRR is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "INS",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CBLIF",
+      "target": "vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBLIF is associated with vitamin B12 deficiency (TRANSCOBALAMIN_DEFICIENCY). Open Targets association score 0.01"
+    }
+  ]
+}

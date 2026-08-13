@@ -1,0 +1,616 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL428647",
+      "target": "TUBB2B",
+      "type": "TARGETS",
+      "description": "PACLITAXEL targets TUBB2B."
+    },
+    {
+      "source": "CHEMBL428647",
+      "target": "TUBB",
+      "type": "TARGETS",
+      "description": "PACLITAXEL targets TUBB."
+    },
+    {
+      "source": "CHEMBL428647",
+      "target": "TUBB6",
+      "type": "TARGETS",
+      "description": "PACLITAXEL targets TUBB6."
+    },
+    {
+      "source": "CHEMBL428647",
+      "target": "TUBB2A",
+      "type": "TARGETS",
+      "description": "PACLITAXEL targets TUBB2A."
+    },
+    {
+      "source": "CHEMBL4298124",
+      "target": "PDCD1",
+      "type": "TARGETS",
+      "description": "DOSTARLIMAB targets PDCD1."
+    },
+    {
+      "source": "CHEMBL428647",
+      "target": "TUBB1",
+      "type": "TARGETS",
+      "description": "PACLITAXEL targets TUBB1."
+    },
+    {
+      "source": "CHEMBL428647",
+      "target": "TUBB3",
+      "type": "TARGETS",
+      "description": "PACLITAXEL targets TUBB3."
+    },
+    {
+      "source": "CHEMBL3137343",
+      "target": "PDCD1",
+      "type": "TARGETS",
+      "description": "PEMBROLIZUMAB targets PDCD1."
+    },
+    {
+      "source": "CHEMBL428647",
+      "target": "TUBB4A",
+      "type": "TARGETS",
+      "description": "PACLITAXEL targets TUBB4A."
+    },
+    {
+      "source": "CHEMBL428647",
+      "target": "TUBB4B",
+      "type": "TARGETS",
+      "description": "PACLITAXEL targets TUBB4B."
+    },
+    {
+      "source": "CHEMBL4298178",
+      "target": "ERBB2",
+      "type": "TARGETS",
+      "description": "TRASTUZUMAB DUOCARMAZINE targets ERBB2."
+    },
+    {
+      "source": "CHEMBL428647",
+      "target": "TUBB8",
+      "type": "TARGETS",
+      "description": "PACLITAXEL targets TUBB8."
+    },
+    {
+      "source": "CHEMBL4298124",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "TREATS",
+      "description": "DOSTARLIMAB is phase 4 / marketed for endometrium neoplasm (ENDOMETRIUM_NEOPLASM)."
+    },
+    {
+      "source": "CHEMBL3137343",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "TREATS",
+      "description": "PEMBROLIZUMAB is phase 4 / marketed for endometrium neoplasm (ENDOMETRIUM_NEOPLASM)."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MLH1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MLH1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP26",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP26 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "HNF1B",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1B is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL11",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL11 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ITGAE",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAE is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "ERAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "ERAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "ITGAE",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAE is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFBR1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LEF1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LEF1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP19A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP19A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP1A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP1A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.47"
+    },
+    {
+      "source": "ERBB2",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.04"
+    },
+    {
+      "source": "PROM1",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROM1 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.04"
+    },
+    {
+      "source": "MMP26",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP26 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.04"
+    },
+    {
+      "source": "TUBB6",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB6 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.04"
+    },
+    {
+      "source": "TUBB4A",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB4A is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.04"
+    },
+    {
+      "source": "TUBB2B",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB2B is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.04"
+    },
+    {
+      "source": "TUBB2A",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB2A is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.04"
+    },
+    {
+      "source": "TUBB3",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB3 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.04"
+    },
+    {
+      "source": "TUBB1",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB1 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.04"
+    },
+    {
+      "source": "TUBB",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.04"
+    },
+    {
+      "source": "TUBB8",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB8 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.04"
+    },
+    {
+      "source": "TUBB4B",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB4B is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD8A",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.04"
+    },
+    {
+      "source": "TGFBR1",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBR1 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.04"
+    },
+    {
+      "source": "PGR",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.03"
+    },
+    {
+      "source": "TP53",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.03"
+    },
+    {
+      "source": "ATAD5",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATAD5 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.03"
+    },
+    {
+      "source": "ESR1",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.03"
+    },
+    {
+      "source": "RPL17",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRH2",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRH2 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.03"
+    },
+    {
+      "source": "TMEM37",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM37 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRAP1",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRAP1 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.03"
+    },
+    {
+      "source": "PLAU",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAU is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.03"
+    },
+    {
+      "source": "PGK1",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGK1 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.03"
+    },
+    {
+      "source": "TGFB1",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.03"
+    },
+    {
+      "source": "DHODH",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHODH is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNF",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD274",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.03"
+    },
+    {
+      "source": "MUC1",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC1 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRKCA",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCA is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.03"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "PLAC1",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAC1 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "FOXA2",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXA2 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "EGFR",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "EMP2",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EMP2 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "CYP19A1",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP19A1 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "PAQR7",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAQR7 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTEN",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "ITGAE",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAE is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "JAK1",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK1 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "MLH1",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLH1 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "TYMP",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYMP is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "ARID1A",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "ENTPD1",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENTPD1 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "POLD1",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD1 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "ERAS",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERAS is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "ERAL1",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERAL1 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "LEF1",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEF1 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "SIRT1",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT1 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL11",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL11 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNK2",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNK2 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "CYP1A1",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP1A1 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "HNF1B",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1B is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "SOX2",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX2 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    },
+    {
+      "source": "AKT1",
+      "target": "endometrium neoplasm (ENDOMETRIUM_NEOPLASM)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with endometrium neoplasm (ENDOMETRIUM_NEOPLASM). Open Targets association score 0.02"
+    }
+  ]
+}

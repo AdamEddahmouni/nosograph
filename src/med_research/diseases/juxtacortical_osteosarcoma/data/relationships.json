@@ -1,0 +1,574 @@
+{
+  "relationships": [
+    {
+      "source": "CASP3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CASP8",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP8 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "RIPK1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "RIPK1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "RIPK3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "RIPK3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CD19",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD19 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCL2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCL5",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL5 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL1",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL1 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL5",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL5 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "EIF2A",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EIF2A is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "EIF2AK3",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EIF2AK3 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C5AR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C5AR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "SMOX",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SMOX is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IL18",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL18 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP1",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP1 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL33",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL33 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "SPDL1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "SPDL1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "TSC22D3",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC22D3 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "IL23A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL23A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "LRP5",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP5 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "NLRP1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "GNAS",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAS is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PADI4",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PADI4 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "RIPK1",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIPK1 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL33",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL33 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL23A",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL23A is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD19",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD19 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL37",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL37 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "HRAS",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CRP",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CASP3",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP3 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "KCNJ2",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNJ2 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNF",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CASP8",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP8 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TGFB1",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "DDIT3",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDIT3 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SAT1",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAT1 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VEGFA",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FAT1",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT1 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZC3H12A",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZC3H12A is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ELANE",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELANE is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMOX",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMOX is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PAOX",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAOX is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNA1",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPPA",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPA is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RIPK3",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIPK3 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VWF",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1B",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL4",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EIF2A",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF2A is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCL2",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL2 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCL5",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL5 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCL1",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL1 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTH",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTH is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AIF1",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIF1 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EIF2AK3",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF2AK3 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MLKL",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLKL is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RBFOX3",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBFOX3 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAP3K14",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K14 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPDL1",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPDL1 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCL5",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL5 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GFAP",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FUT1",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUT1 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPT",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPT is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HMOX1",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMOX1 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "LRP5",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP5 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CALCA",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TSC22D3",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC22D3 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRYGD",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYGD is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNG",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLAT",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAT is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "POSTN",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POSTN is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NLRP1",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP1 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RC3H1",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RC3H1 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ESR1",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "XK",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XK is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGFBP1",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGFBP1 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "C5",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C5 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL18",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL18 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "C5AR1",
+      "target": "juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C5AR1 is associated with juxtacortical osteosarcoma (JUXTACORTICAL_OSTEOSARCOMA). Open Targets association score 0.00"
+    }
+  ]
+}

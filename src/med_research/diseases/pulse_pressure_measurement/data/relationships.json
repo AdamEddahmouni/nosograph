@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "CACNA1D",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1D is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "KCNQ5",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNQ5 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RNF207",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "RNF207 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ADAMTS8",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS8 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL15A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL15A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL21A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL21A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "G6PC2",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "G6PC2 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF4G",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF4G is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "KCNJ11",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNJ11 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "BMP4",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP4 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "BMP6",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP6 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "JAG1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "JAG1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "THBS2",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THBS2 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "FGF5",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF5 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.57"
+    },
+    {
+      "source": "NOX4",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOX4 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.57"
+    },
+    {
+      "source": "JCAD",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JCAD is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.56"
+    },
+    {
+      "source": "APOE",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.56"
+    },
+    {
+      "source": "FN1",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FN1 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.56"
+    },
+    {
+      "source": "ADAMTS8",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS8 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.56"
+    },
+    {
+      "source": "IGFBP3",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGFBP3 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.55"
+    },
+    {
+      "source": "EDN1",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDN1 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.55"
+    },
+    {
+      "source": "NPR3",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPR3 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.55"
+    },
+    {
+      "source": "HGFAC",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGFAC is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "GEM",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GEM is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "TRAPPC9",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAPPC9 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "PDE3A",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE3A is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "FES",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FES is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "CCDC141",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC141 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "INPP5A",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INPP5A is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "COL21A1",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL21A1 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "NT5C2",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NT5C2 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "FIGN",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FIGN is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "THBS2",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THBS2 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "COL15A1",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL15A1 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "TBX3",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX3 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "KCNQ5",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNQ5 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "G6PC2",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "G6PC2 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "SETBP1",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETBP1 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "GJA1",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA1 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "FURIN",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FURIN is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "TBX2",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX2 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "TBX5",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX5 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "BMP6",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP6 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "HNF4G",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF4G is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "CEP164",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEP164 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "CASZ1",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASZ1 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "EBF1",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EBF1 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "TRHR",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRHR is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "ATP2B1",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP2B1 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "BMP4",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP4 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "JAG1",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAG1 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "AOC3",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOC3 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "ARHGAP42",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP42 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "RNF207",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF207 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "MYO1C",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO1C is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "AEBP2",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AEBP2 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "PLCE1",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCE1 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "FNDC1",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FNDC1 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "GOSR2",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOSR2 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "ADH1B",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADH1B is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "CACNA1D",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1D is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "ESR1",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "PRDM6",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM6 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "CCN3",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCN3 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "JPH2",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JPH2 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "MECOM",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MECOM is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "HHIPL1",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HHIPL1 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "RREB1",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RREB1 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "KCNJ11",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNJ11 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "NFE2L3",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L3 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "RSPO3",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO3 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "TCF7L2",
+      "target": "pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF7L2 is associated with pulse pressure measurement (PULSE_PRESSURE_MEASUREMENT). Open Targets association score 0.50"
+    }
+  ]
+}

@@ -1,0 +1,550 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN2C",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN2C."
+    },
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN1",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN1."
+    },
+    {
+      "source": "CHEMBL807",
+      "target": "GRIN2B",
+      "type": "TARGETS",
+      "description": "MEMANTINE targets GRIN2B."
+    },
+    {
+      "source": "KCNA1",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNA1 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CDKN1C",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1C is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "KIF2A",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "KIF2A is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ADAM10",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM10 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "RELN",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "RELN is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GAD1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GAD1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN2B",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2B is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GRIN2C",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRIN2C is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "SLC2A1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RELN",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELN is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "ADAM10",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM10 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "AKT3",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT3 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3R2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFC",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFC is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "TSC1",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC1 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.41"
+    },
+    {
+      "source": "MTOR",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TSC2",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRAF",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KIF5C",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF5C is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.27"
+    },
+    {
+      "source": "TBR1",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBR1 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.27"
+    },
+    {
+      "source": "FAM20C",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM20C is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.26"
+    },
+    {
+      "source": "LGI1",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGI1 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PAFAH1B1",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAFAH1B1 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MAP2",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GAP43",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAP43 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTEN",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SPI1",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPI1 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN1C",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1C is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TUBB",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADAM10",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAM10 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GRIN2B",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2B is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC12A5",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A5 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VEGFC",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFC is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DEPDC5",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEPDC5 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RBFOX3",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBFOX3 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKT1",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PVALB",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PVALB is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GRIN1",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN1 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RELN",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELN is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KIF2A",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF2A is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRPC3",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPC3 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TUBB3",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB3 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPRL3",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPRL3 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SYBU",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYBU is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RMDN1",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RMDN1 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SCN2A",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN2A is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RMDN3",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RMDN3 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RMDN2",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RMDN2 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TUBB2B",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUBB2B is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DAG1",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAG1 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NES",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NES is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SST",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SST is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GRIN2C",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRIN2C is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC6A1",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A1 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "LAMA2",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMA2 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC2A1",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A1 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKT3",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT3 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL17A",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KDR",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GAD1",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAD1 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NEUROG2",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEUROG2 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRPC5",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPC5 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3R2",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R2 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL2",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KCNA1",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNA1 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NDOR1",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDOR1 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTPN11",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CORO1A",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CORO1A is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRPC1",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPC1 is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BDNF",
+      "target": "cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BDNF is associated with cerebral cortical dysplasia (CEREBRAL_CORTICAL_DYSPLASIA). Open Targets association score 0.01"
+    }
+  ]
+}

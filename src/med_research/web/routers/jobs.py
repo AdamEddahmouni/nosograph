@@ -13,6 +13,12 @@ from pydantic import Field, ValidationError
 
 from med_research.pipeline.evidence_workspace.schemas import ResearchRequest
 from med_research.pipeline.registry import module_catalog
+from med_research.web.api_key import (
+    extract_api_key_from_headers,
+    extract_api_key_from_query,
+    is_api_key_required,
+    validate_api_key,
+)
 from med_research.web.dependencies import safe_serialize
 from med_research.web.identity import DEFAULT_RESEARCHER_ID, get_researcher_id
 from med_research.web.models import JobStatus, JobSubmitResponse
@@ -442,6 +448,14 @@ async def job_websocket(websocket: WebSocket, job_id: str) -> None:
     Connects to Celery's AsyncResult and pushes state changes
     every 500ms until the job reaches a terminal state.
     """
+    if is_api_key_required():
+        api_key = extract_api_key_from_query(websocket.query_params) or extract_api_key_from_headers(
+            websocket.headers
+        )
+        if not validate_api_key(api_key):
+            await websocket.close(code=1008, reason="Invalid or missing API key")
+            return
+
     try:
         UUID(job_id)
     except ValueError:

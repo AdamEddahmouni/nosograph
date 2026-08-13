@@ -1,0 +1,568 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201593",
+      "target": "PLAT",
+      "type": "TARGETS",
+      "description": "ALTEPLASE targets PLAT."
+    },
+    {
+      "source": "CHEMBL596",
+      "target": "OPRM1",
+      "type": "TARGETS",
+      "description": "FENTANYL targets OPRM1."
+    },
+    {
+      "source": "CHEMBL1201593",
+      "target": "PLAT",
+      "type": "TARGETS",
+      "description": "ALTEPLASE targets PLAT."
+    },
+    {
+      "source": "CHEMBL1201593",
+      "target": "PLAT",
+      "type": "TARGETS",
+      "description": "ALTEPLASE targets PLAT."
+    },
+    {
+      "source": "CASP3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CASP9",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP9 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C5AR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C5AR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MASP1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "MASP1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MBL2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "MBL2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MLH3",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MLH3 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "LOXL2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "LOXL2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "SLC2A1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "MAP2K1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "OPRM1",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "OPRM1 is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "CD28",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD28 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR6",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR6 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "LTB4R",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTB4R is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "HIF1A",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "HIF1A is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "ACYP1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ACYP1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GSTM1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAT is associated with abscess (ABSCESS). Open Targets association score 0.29"
+    },
+    {
+      "source": "OPRM1",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OPRM1 is associated with abscess (ABSCESS). Open Targets association score 0.26"
+    },
+    {
+      "source": "PCSK5",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK5 is associated with abscess (ABSCESS). Open Targets association score 0.26"
+    },
+    {
+      "source": "ENG",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENG is associated with abscess (ABSCESS). Open Targets association score 0.20"
+    },
+    {
+      "source": "TNRC18",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNRC18 is associated with abscess (ABSCESS). Open Targets association score 0.13"
+    },
+    {
+      "source": "MLH3",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLH3 is associated with abscess (ABSCESS). Open Targets association score 0.11"
+    },
+    {
+      "source": "SP1",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SP1 is associated with abscess (ABSCESS). Open Targets association score 0.07"
+    },
+    {
+      "source": "IL1B",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with abscess (ABSCESS). Open Targets association score 0.06"
+    },
+    {
+      "source": "LORICRIN",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LORICRIN is associated with abscess (ABSCESS). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD8A",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with abscess (ABSCESS). Open Targets association score 0.06"
+    },
+    {
+      "source": "SLC2A1",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A1 is associated with abscess (ABSCESS). Open Targets association score 0.05"
+    },
+    {
+      "source": "HMGA2",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGA2 is associated with abscess (ABSCESS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CRP",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with abscess (ABSCESS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CXCL8",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with abscess (ABSCESS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD4",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with abscess (ABSCESS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL6",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with abscess (ABSCESS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ALB",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with abscess (ABSCESS). Open Targets association score 0.04"
+    },
+    {
+      "source": "RNF170",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF170 is associated with abscess (ABSCESS). Open Targets association score 0.04"
+    },
+    {
+      "source": "S100A9",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A9 is associated with abscess (ABSCESS). Open Targets association score 0.03"
+    },
+    {
+      "source": "MASP1",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MASP1 is associated with abscess (ABSCESS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TLR4",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with abscess (ABSCESS). Open Targets association score 0.03"
+    },
+    {
+      "source": "AASS",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AASS is associated with abscess (ABSCESS). Open Targets association score 0.03"
+    },
+    {
+      "source": "LOXL2",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LOXL2 is associated with abscess (ABSCESS). Open Targets association score 0.03"
+    },
+    {
+      "source": "LCT",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCT is associated with abscess (ABSCESS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD28",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD28 is associated with abscess (ABSCESS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL1A",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1A is associated with abscess (ABSCESS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PPP3CA",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP3CA is associated with abscess (ABSCESS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL27",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL27 is associated with abscess (ABSCESS). Open Targets association score 0.03"
+    },
+    {
+      "source": "LLPH",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LLPH is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "HIF1A",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF1A is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "MBL2",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBL2 is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CALCA",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "UROD",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UROD is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "ACYP1",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACYP1 is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL10",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "TRPM2",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPM2 is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CP",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CP is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "GSTM1",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM1 is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "S100A8",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A8 is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNF",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLC29A4",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC29A4 is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "GSDMD",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMD is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CASP3",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP3 is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CAD",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAD is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "MPO",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPO is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "BBC3",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BBC3 is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CASP9",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP9 is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "MAS1",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAS1 is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "AQP4",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP4 is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "LACTB",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LACTB is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "NEU1",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEU1 is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "LTB4R",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTB4R is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "MAP2K1",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K1 is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "C5AR1",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C5AR1 is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "TLR6",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR6 is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IFNG",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL17A",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CREB1",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREB1 is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLC7A11",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC7A11 is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    },
+    {
+      "source": "GOT1",
+      "target": "abscess (ABSCESS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOT1 is associated with abscess (ABSCESS). Open Targets association score 0.02"
+    }
+  ]
+}

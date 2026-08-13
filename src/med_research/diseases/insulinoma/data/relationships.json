@@ -1,0 +1,598 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201182",
+      "target": "FKBP1A",
+      "type": "TARGETS",
+      "description": "TEMSIROLIMUS targets FKBP1A."
+    },
+    {
+      "source": "CHEMBL1201583",
+      "target": "VEGFA",
+      "type": "TARGETS",
+      "description": "BEVACIZUMAB targets VEGFA."
+    },
+    {
+      "source": "CHEMBL1201585",
+      "target": "ERBB2",
+      "type": "TARGETS",
+      "description": "TRASTUZUMAB targets ERBB2."
+    },
+    {
+      "source": "RIPK1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "RIPK1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "KCNH6",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNH6 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1C",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1C is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CXCL12",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL12 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "C1QTNF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "EIF2AK3",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EIF2AK3 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FGF21",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF21 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C1QTNF9",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "LOX",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "LOX is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GAD1",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GAD1 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "GAD2",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GAD2 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "ABCC8",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC8 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GLP1R",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GLP1R is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INSM1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INSM1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "PDX1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PDX1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "SELP",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELP is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "DLL4",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "DLL4 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "JAGN1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "JAGN1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "THRA",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THRA is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "THRA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "THRA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "C1QTNF9",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "C1QTNF9 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "APCS",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APCS is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ABCC8",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCC8 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "INS",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with insulinoma (INSULINOMA). Open Targets association score 0.11"
+    },
+    {
+      "source": "GLP1R",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLP1R is associated with insulinoma (INSULINOMA). Open Targets association score 0.10"
+    },
+    {
+      "source": "CGA",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGA is associated with insulinoma (INSULINOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "RALBP1",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RALBP1 is associated with insulinoma (INSULINOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "RIPK1",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIPK1 is associated with insulinoma (INSULINOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "UQCRFS1",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UQCRFS1 is associated with insulinoma (INSULINOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "KRR1",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRR1 is associated with insulinoma (INSULINOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "SELP",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELP is associated with insulinoma (INSULINOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "VEGFA",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with insulinoma (INSULINOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "AKT1",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with insulinoma (INSULINOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "GHRL",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHRL is associated with insulinoma (INSULINOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "ATP6AP2",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP6AP2 is associated with insulinoma (INSULINOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "APCS",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APCS is associated with insulinoma (INSULINOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "FKBP1A",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP1A is associated with insulinoma (INSULINOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "GCKR",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with insulinoma (INSULINOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "SH2D1A",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2D1A is associated with insulinoma (INSULINOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "MEN1",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with insulinoma (INSULINOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "LOX",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LOX is associated with insulinoma (INSULINOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PDX1",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDX1 is associated with insulinoma (INSULINOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "CD44",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with insulinoma (INSULINOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "ABCC8",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC8 is associated with insulinoma (INSULINOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "PCNT",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNT is associated with insulinoma (INSULINOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "LEPR",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with insulinoma (INSULINOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with insulinoma (INSULINOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "DLL4",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLL4 is associated with insulinoma (INSULINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GCG",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCG is associated with insulinoma (INSULINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "EIF2AK3",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF2AK3 is associated with insulinoma (INSULINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "IAPP",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IAPP is associated with insulinoma (INSULINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CDKN1C",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1C is associated with insulinoma (INSULINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MAPT",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPT is associated with insulinoma (INSULINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFKB1",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with insulinoma (INSULINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "GAD1",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAD1 is associated with insulinoma (INSULINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CPE",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPE is associated with insulinoma (INSULINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with insulinoma (INSULINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "INSM1",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INSM1 is associated with insulinoma (INSULINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "MNX1",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MNX1 is associated with insulinoma (INSULINOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ARX",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARX is associated with insulinoma (INSULINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGF21",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF21 is associated with insulinoma (INSULINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "LEP",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with insulinoma (INSULINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PCSK2",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK2 is associated with insulinoma (INSULINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "POMC",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with insulinoma (INSULINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TCF7L2",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF7L2 is associated with insulinoma (INSULINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "KCNH6",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNH6 is associated with insulinoma (INSULINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CXCL12",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL12 is associated with insulinoma (INSULINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CASR",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASR is associated with insulinoma (INSULINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "IGF2",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2 is associated with insulinoma (INSULINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SCT",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCT is associated with insulinoma (INSULINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ERBB2",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with insulinoma (INSULINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TLR4",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with insulinoma (INSULINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SNAP25",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNAP25 is associated with insulinoma (INSULINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "IRS2",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRS2 is associated with insulinoma (INSULINOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADRA1B",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA1B is associated with insulinoma (INSULINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "THRA",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THRA is associated with insulinoma (INSULINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "GCGR",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCGR is associated with insulinoma (INSULINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHRM3",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHRM3 is associated with insulinoma (INSULINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "GAD2",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAD2 is associated with insulinoma (INSULINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "JAGN1",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAGN1 is associated with insulinoma (INSULINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDH1",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with insulinoma (INSULINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MC2R",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MC2R is associated with insulinoma (INSULINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "C1QTNF9",
+      "target": "insulinoma (INSULINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C1QTNF9 is associated with insulinoma (INSULINOMA). Open Targets association score 0.03"
+    }
+  ]
+}

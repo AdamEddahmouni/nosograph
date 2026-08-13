@@ -1,0 +1,520 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1079742",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "ERLOTINIB HYDROCHLORIDE targets EGFR."
+    },
+    {
+      "source": "CHEMBL553",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "ERLOTINIB targets EGFR."
+    },
+    {
+      "source": "CHEMBL1079175",
+      "target": "AKT2",
+      "type": "TARGETS",
+      "description": "MK-2206 targets AKT2."
+    },
+    {
+      "source": "CHEMBL939",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "GEFITINIB targets EGFR."
+    },
+    {
+      "source": "SLC34A2",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC34A2 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATR",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATR is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "FANCD2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "FANCD2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "AKT2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "SMAD4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "LRP1B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.45"
+    },
+    {
+      "source": "KRAS",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.38"
+    },
+    {
+      "source": "ALK",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "EML4",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EML4 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TP53",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERBB2",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTEN",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMAD4",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD4 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "DICER1",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DICER1 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NTRK1",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR1",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRAF",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "LRP1B",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1B is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FLT3",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PBX1",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBX1 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "U2AF1",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "U2AF1 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NCOR2",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOR2 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MTOR",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SPEN",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPEN is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FCRL4",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCRL4 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "DDX3X",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDX3X is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2C",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ETV1",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV1 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "LPP",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPP is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KEAP1",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KEAP1 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "STAG2",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAG2 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PBRM1",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBRM1 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TRRAP",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRRAP is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SLC34A2",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC34A2 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR2",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KDR",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NOTCH2",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH2 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RET",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRIP1",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRIP1 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAP3K13",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K13 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "AFF3",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFF3 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ROS1",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROS1 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NCOR1",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOR1 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "DEK",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEK is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID1B",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1B is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KIF5B",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF5B is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATR",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATR is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MED12",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MED12 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KAT6B",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KAT6B is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NF1",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATM",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TCF3",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF3 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MET",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRCA1",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "COL2A1",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FANCD2",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCD2 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "STK11",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTPRB",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRB is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "AKT2",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT2 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.20"
+    },
+    {
+      "source": "HGF",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with bronchoalveolar adenocarcinoma (BRONCHOALVEOLAR_ADENOCARCINOMA). Open Targets association score 0.19"
+    }
+  ]
+}

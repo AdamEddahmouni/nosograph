@@ -127,12 +127,6 @@
       "description": "CXCR4 is a component of the Chemokine Signaling pathway."
     },
     {
-      "source": "SERPINE1",
-      "target": "coagulation",
-      "type": "PARTICIPATES_IN",
-      "description": "SERPINE1 is a component of the Coagulation Cascade pathway."
-    },
-    {
       "source": "MMP14",
       "target": "ecm-remodeling",
       "type": "PARTICIPATES_IN",
@@ -161,6 +155,12 @@
       "target": "glucose-metabolism",
       "type": "PARTICIPATES_IN",
       "description": "ABCC8 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
     },
     {
       "source": "BMP5",
@@ -295,6 +295,12 @@
       "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
     },
     {
+      "source": "SERPINE1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SERPINE1 is a component of the Coagulation Cascade pathway."
+    },
+    {
       "source": "PLA2G4A",
       "target": "nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS)",
       "type": "ASSOCIATED_WITH",
@@ -415,16 +421,16 @@
       "description": "MMP9 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.01"
     },
     {
-      "source": "PGA3",
-      "target": "nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PGA3 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.01"
-    },
-    {
       "source": "MMP3",
       "target": "nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS)",
       "type": "ASSOCIATED_WITH",
       "description": "MMP3 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PGA3",
+      "target": "nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGA3 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.01"
     },
     {
       "source": "ALB",
@@ -439,16 +445,16 @@
       "description": "SIRT1 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.01"
     },
     {
-      "source": "GGTLC3",
-      "target": "nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GGTLC3 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.01"
-    },
-    {
       "source": "GGT1",
       "target": "nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS)",
       "type": "ASSOCIATED_WITH",
       "description": "GGT1 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GGTLC3",
+      "target": "nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGTLC3 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.01"
     },
     {
       "source": "REN",
@@ -487,16 +493,16 @@
       "description": "PTGES3 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.01"
     },
     {
-      "source": "CCN2",
-      "target": "nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CCN2 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.01"
-    },
-    {
       "source": "PLA2G7",
       "target": "nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS)",
       "type": "ASSOCIATED_WITH",
       "description": "PLA2G7 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCN2",
+      "target": "nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCN2 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.01"
     },
     {
       "source": "FOS",
@@ -547,28 +553,28 @@
       "description": "SPP1 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.01"
     },
     {
-      "source": "PRSS55",
-      "target": "nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PRSS55 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.01"
-    },
-    {
-      "source": "SPZ1",
-      "target": "nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SPZ1 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.01"
-    },
-    {
       "source": "CRISP2",
       "target": "nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS)",
       "type": "ASSOCIATED_WITH",
       "description": "CRISP2 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.01"
     },
     {
+      "source": "PRSS55",
+      "target": "nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRSS55 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.01"
+    },
+    {
       "source": "THBS1",
       "target": "nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS)",
       "type": "ASSOCIATED_WITH",
       "description": "THBS1 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPZ1",
+      "target": "nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPZ1 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.01"
     },
     {
       "source": "MYH9",
@@ -613,28 +619,16 @@
       "description": "CXCR4 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.00"
     },
     {
-      "source": "ABCC8",
-      "target": "nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ABCC8 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.00"
-    },
-    {
-      "source": "PRTN3",
-      "target": "nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PRTN3 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.00"
-    },
-    {
       "source": "NPPA",
       "target": "nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS)",
       "type": "ASSOCIATED_WITH",
       "description": "NPPA is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.00"
     },
     {
-      "source": "CLIC4",
+      "source": "ABCC11",
       "target": "nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "CLIC4 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.00"
+      "description": "ABCC11 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.00"
     },
     {
       "source": "S100A8",
@@ -643,10 +637,28 @@
       "description": "S100A8 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.00"
     },
     {
-      "source": "ABCC11",
+      "source": "PRTN3",
       "target": "nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS)",
       "type": "ASSOCIATED_WITH",
-      "description": "ABCC11 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.00"
+      "description": "PRTN3 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CLIC4",
+      "target": "nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLIC4 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ABCC8",
+      "target": "nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCC8 is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "INS",
+      "target": "nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with nephrosclerosis (HYPERTENSIVE_NEPHROSCLEROSIS). Open Targets association score 0.00"
     },
     {
       "source": "SERPINE1",

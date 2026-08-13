@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "BECN1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "BECN1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SMURF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SMURF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MLH1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MLH1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53BP2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53BP2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TGM1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "A2ML1",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "A2ML1 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.08"
+    },
+    {
+      "source": "TP53",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.08"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.07"
+    },
+    {
+      "source": "NF2",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.07"
+    },
+    {
+      "source": "TRIM62",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM62 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.06"
+    },
+    {
+      "source": "MET",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.06"
+    },
+    {
+      "source": "HTATIP2",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTATIP2 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.06"
+    },
+    {
+      "source": "TNK1",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNK1 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.06"
+    },
+    {
+      "source": "TP73",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP73 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL10",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "LZTS1",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LZTS1 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRDM2",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM2 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "NEFL",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEFL is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "TGM1",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM1 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "RCBTB2",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RCBTB2 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "RALGAPB",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RALGAPB is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ABCB1",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB1 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CUL9",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUL9 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "TSC1",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC1 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "KRAS",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "BUB1B",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUB1B is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "BUB1B-PAK6",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUB1B-PAK6 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FLT3",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "FBXO4",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXO4 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTEN",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "NF1",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "ATM",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "TP53BP2",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53BP2 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "HIC1",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIC1 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "SMARCB1",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCB1 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "DCLRE1A",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCLRE1A is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "DSG3",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSG3 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "RGPD2",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RGPD2 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "RGPD5",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RGPD5 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "RGPD4",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RGPD4 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "RGPD3",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RGPD3 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "RGPD8",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RGPD8 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "RANBP2",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RANBP2 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "RGPD1",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RGPD1 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "RGPD6",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RGPD6 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "RINT1",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RINT1 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRDX1",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDX1 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRF1",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRF1 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MLH1",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLH1 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "POLD1",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD1 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TSC2",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "S100A4",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A4 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SMURF2",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMURF2 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLK1",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLK1 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKAR1A",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAR1A is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PINX1",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PINX1 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SRPX",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRPX is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "POLE",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAD1L1",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAD1L1 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MSH2",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH2 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "DSG1",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSG1 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLK3",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLK3 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "BECN1",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BECN1 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ROBO1",
+      "target": "paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROBO1 is associated with paraneoplastic pemphigus (PARANEOPLASTIC_PEMPHIGUS). Open Targets association score 0.04"
+    }
+  ]
+}

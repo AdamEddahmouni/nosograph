@@ -1,0 +1,430 @@
+{
+  "relationships": [
+    {
+      "source": "BIRC6",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BIRC6 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ADAM12",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM12 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "SELENOP",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELENOP is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "MTHFR",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFR is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TGM2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PGF",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "PGF is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "AMH",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMH is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.02"
+    },
+    {
+      "source": "PAPPA",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAPPA is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.02"
+    },
+    {
+      "source": "BRD2",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRD2 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTHFR",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFR is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEP192",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEP192 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CGA",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGA is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CGB5",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB5 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.01"
+    },
+    {
+      "source": "DHODH",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHODH is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ELL3",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELL3 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SELENOP",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELENOP is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.01"
+    },
+    {
+      "source": "RB1",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGM2",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM2 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GH1",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GGH",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGH is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSE1L",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSE1L is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCAR1",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCAR1 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.01"
+    },
+    {
+      "source": "BIRC6",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIRC6 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ENSG00000288534",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENSG00000288534 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADAM12",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAM12 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NET1",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NET1 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTNND1",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNND1 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.01"
+    },
+    {
+      "source": "APC",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PAK2",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAK2 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "FMR1",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMR1 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFI27",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFI27 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ZNRD2",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNRD2 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ZW10",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZW10 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACVR2B",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACVR2B is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SGO2",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SGO2 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TMED7",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMED7 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSMD9",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMD9 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "DCTN6",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCTN6 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "LGALS1",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS1 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "AFP",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "KASH5",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KASH5 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCNL2",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCNL2 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SERPINB5",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINB5 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "HIPK2",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIPK2 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATRX",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "HLA-G",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-G is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "DHTKD1",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHTKD1 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SIRT1",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT1 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOD2",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD2 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NDC80",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDC80 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "KIF14",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF14 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "KIF11",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF11 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYH14",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH14 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CAMK2B",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMK2B is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CAMK2G",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMK2G is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CAMK2A",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMK2A is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ASB7",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASB7 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CKAP5",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CKAP5 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PGF",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGF is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "BUB1B",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUB1B is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CEP57",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEP57 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRDM9",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM9 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MDM2",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM2 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADCY10",
+      "target": "aneuploidy (ANEUPLOIDY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADCY10 is associated with aneuploidy (ANEUPLOIDY). Open Targets association score 0.00"
+    }
+  ]
+}

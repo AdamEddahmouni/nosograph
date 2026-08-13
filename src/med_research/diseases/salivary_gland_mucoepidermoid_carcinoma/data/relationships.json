@@ -1,0 +1,460 @@
+{
+  "relationships": [
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CXCR4",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR4 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "SLC2A1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAML2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MAML2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD44",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD44 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CRTC1",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRTC1 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MAML2",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAML2 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MYB",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYB is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NFIB",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFIB is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CRTC3",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRTC3 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "HRAS",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CHCHD7",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHCHD7 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "WIF1",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WIF1 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "HMGA2",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGA2 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PLAG1",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAG1 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "LIFR",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIFR is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TCEA1",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCEA1 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FHIT",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FHIT is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EWSR1",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EWSR1 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "POU5F1",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU5F1 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "TP53",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "AFF4",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFF4 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2C",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KRAS",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PTEN",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CEP43",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEP43 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.09"
+    },
+    {
+      "source": "MUC5AC",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5AC is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PCNA",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNA is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC1",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC1 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPK1",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPK3",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK3 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC2",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC2 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTOR",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC4",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC4 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ESR1",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGFR",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD44",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD44 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERBB2",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MKI67",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NANOG",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NANOG is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "LDHA",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDHA is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFI27",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFI27 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZNRD2",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNRD2 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TMED7",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMED7 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSMD9",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSMD9 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "LAPTM4B",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAPTM4B is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC2A1",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A1 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SKP2",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SKP2 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC7",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC7 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DNMT1",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT1 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RUNX3",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX3 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC6",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC6 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PROS1",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROS1 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC5B",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5B is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CLIC3",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLIC3 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DNMT3B",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT3B is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DES",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DES is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DCTN6",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCTN6 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCR4",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR4 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD24",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD24 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GFAP",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PAK2",
+      "target": "salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAK2 is associated with salivary gland mucoepidermoid carcinoma (SALIVARY_GLAND_MUCOEPIDERMOID_CARCINOMA). Open Targets association score 0.01"
+    }
+  ]
+}

@@ -1,0 +1,394 @@
+{
+  "relationships": [
+    {
+      "source": "EIF2S3",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EIF2S3 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PHF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "PHF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "SHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "FBN1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "FBN1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "MECP2",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MECP2 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.57"
+    },
+    {
+      "source": "CCDC22",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC22 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.55"
+    },
+    {
+      "source": "SLC9A7",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC9A7 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.51"
+    },
+    {
+      "source": "CASK",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASK is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.45"
+    },
+    {
+      "source": "AP1S2",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AP1S2 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "USP9X",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP9X is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "BRWD3",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRWD3 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "NONO",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NONO is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "RPL10",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL10 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "ZC4H2",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZC4H2 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "DDX3X",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDX3X is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "KDM5C",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM5C is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "PAK3",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAK3 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.37"
+    },
+    {
+      "source": "NHS",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NHS is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.34"
+    },
+    {
+      "source": "IQSEC2",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IQSEC2 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.27"
+    },
+    {
+      "source": "CUL4B",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUL4B is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.19"
+    },
+    {
+      "source": "UBE2A",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBE2A is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "DAXX",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAXX is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "EIF2S3",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF2S3 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "RBMX",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBMX is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUL1",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUL1 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKN",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKN is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CBLL2",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBLL2 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC9A6",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC9A6 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MED12",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MED12 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATRX",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IDH1",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC16A2",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC16A2 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMARCA2",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA2 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PHF6",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHF6 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "HUWE1",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HUWE1 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALK",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PLXNA3",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLXNA3 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "OLIG2",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OLIG2 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHGA",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHGA is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PHOX2B",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHOX2B is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ZBED1",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBED1 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00 | Open Targets association score 0.00"
+    },
+    {
+      "source": "DPYSL5",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPYSL5 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GFAP",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IDH2",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH2 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PHF8",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHF8 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IDH3A",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH3A is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "FBN1",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBN1 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "LAS1L",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAS1L is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDC",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDC is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PODN",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PODN is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CLCN4",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCN4 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "BRF1",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRF1 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "APP",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APP is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL31RA",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL31RA is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDC27",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDC27 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "OPHN1",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OPHN1 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "QRICH1",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "QRICH1 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "RAB40AL",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB40AL is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "DHX30",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHX30 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SHH",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHH is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GLI3",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SMS",
+      "target": "X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMS is associated with X-linked syndromic intellectual disability (X_LINKED_SYNDROMIC_INTELLECTUAL_DISABILITY). Open Targets association score 0.00"
+    }
+  ]
+}

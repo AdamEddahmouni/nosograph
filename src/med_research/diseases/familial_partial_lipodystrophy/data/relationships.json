@@ -1,0 +1,478 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL3544994",
+      "target": "APOC3",
+      "type": "TARGETS",
+      "description": "VOLANESORSEN targets APOC3."
+    },
+    {
+      "source": "CHEMBL2107857",
+      "target": "LEPR",
+      "type": "TARGETS",
+      "description": "METRELEPTIN targets LEPR."
+    },
+    {
+      "source": "CHEMBL4298197",
+      "target": "ASGR1",
+      "type": "TARGETS",
+      "description": "VUPANORSEN targets ASGR1."
+    },
+    {
+      "source": "CHEMBL2107857",
+      "target": "LEPR",
+      "type": "TARGETS",
+      "description": "METRELEPTIN targets LEPR."
+    },
+    {
+      "source": "CHEMBL566315",
+      "target": "NR1H4",
+      "type": "TARGETS",
+      "description": "OBETICHOLIC ACID targets NR1H4."
+    },
+    {
+      "source": "CHEMBL4298197",
+      "target": "ANGPTL3",
+      "type": "TARGETS",
+      "description": "VUPANORSEN targets ANGPTL3."
+    },
+    {
+      "source": "CHEMBL2107857",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "TREATS",
+      "description": "METRELEPTIN is phase 4 / marketed for familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)."
+    },
+    {
+      "source": "RIPK3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "RIPK3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "RNF213",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "RNF213 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SERPINE1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SERPINE1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GLP1R",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GLP1R is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INSR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INSR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL3 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "AKT2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "LMNA",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNA is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.57"
+    },
+    {
+      "source": "CAV1",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAV1 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.52"
+    },
+    {
+      "source": "LEPR",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEPR is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.39"
+    },
+    {
+      "source": "PPARG",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.27"
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL3 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.09"
+    },
+    {
+      "source": "APOC3",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC3 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.08"
+    },
+    {
+      "source": "ASGR1",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASGR1 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "NR1H4",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1H4 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.07"
+    },
+    {
+      "source": "RBP4",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBP4 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.02"
+    },
+    {
+      "source": "GPT",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLIN1",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLIN1 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GLP1R",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLP1R is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SUMO1",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUMO1 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "LEP",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "LPL",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "LIPE",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPE is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADRA2A",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRA2A is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGF1",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GOT1",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOT1 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC17A5",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A5 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ESR1",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIEZO1",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIEZO1 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "EREG",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EREG is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADIPOQ",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOQ is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SREBF1",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SREBF1 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGFBP1",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGFBP1 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "RIPK3",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIPK3 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CIDEC",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIDEC is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "INS",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "AGPAT2",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGPAT2 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "BSCL2",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BSCL2 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CAVIN1",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAVIN1 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "URB2",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "URB2 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PCYT1A",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCYT1A is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "AKT2",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT2 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NUP88",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUP88 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SUN2",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUN2 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCT4",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCT4 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "KLF5",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF5 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "RNF213",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF213 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SERPINE1",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINE1 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TMEM120A",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM120A is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "RETN",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RETN is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRKAA2",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA2 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "MSTN",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSTN is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "AMPD1",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMPD1 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRKAA1",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA1 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SCN2A",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN2A is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGF1R",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1R is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ZMPSTE24",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZMPSTE24 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "INSR",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INSR is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TSPAN5",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSPAN5 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NR3C1",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "UBE2I",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBE2I is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1B",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PROS1",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROS1 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALMS1",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALMS1 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TMEM53",
+      "target": "familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM53 is associated with familial partial lipodystrophy (FAMILIAL_PARTIAL_LIPODYSTROPHY). Open Targets association score 0.00"
+    }
+  ]
+}

@@ -1,0 +1,436 @@
+{
+  "relationships": [
+    {
+      "source": "EIF2AK2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EIF2AK2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C4BPA",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C4BPA is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ALOX12B",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ALOX12B is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CARD14",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD14 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PLAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IFNA1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNA1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "GSK3B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "GSK3B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LRP1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ABCB6",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB6 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "PRNP",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRNP is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "C4BPA",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C4BPA is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "ABCB6",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB6 is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CARD14",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD14 is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRDX2",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDX2 is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CLU",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLU is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SCRG1",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCRG1 is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD9",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD9 is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "MAPT",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPT is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRND",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRND is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "HTT",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTT is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALOX12B",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALOX12B is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAP2",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2 is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MX2",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MX2 is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "JUND",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JUND is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "FOSB",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOSB is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZNF185",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF185 is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "JUNB",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JUNB is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "JUN",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JUN is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SSBP1",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSBP1 is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "FOS",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOS is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "AHSP",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHSP is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNCA",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNCG",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCG is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNCB",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCB is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLAT",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAT is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TKT",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TKT is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "APOE",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "AOPEP",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOPEP is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CBS",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBS is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSK3B",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSK3B is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "FYN",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FYN is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "GFAP",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "S100B",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100B is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MSMB",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSMB is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "LRP1",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1 is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTPRA",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRA is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPSA",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPSA is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MVP",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MVP is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "EIF2AK2",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF2AK2 is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "IAPP",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IAPP is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "A4GALT",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "A4GALT is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAP3K20",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K20 is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ENO2",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENO2 is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "STIP1",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STIP1 is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "REG1A",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REG1A is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MTOR",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MARK4",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MARK4 is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ERMAP",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERMAP is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SERF1A",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERF1A is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CAMP",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMP is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "APP",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APP is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MT1F",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT1F is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MT1M",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT1M is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MT1E",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT1E is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALG1",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALG1 is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MTNR1A",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTNR1A is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "IFNA1",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNA1 is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MT1A",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT1A is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MT1X",
+      "target": "human prion disease (HUMAN_PRION_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT1X is associated with human prion disease (HUMAN_PRION_DISEASE). Open Targets association score 0.00"
+    }
+  ]
+}

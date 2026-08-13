@@ -1,0 +1,532 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201187",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "TREATS",
+      "description": "MARAVIROC is phase 4 / marketed for combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)."
+    },
+    {
+      "source": "BTK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "BTK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD22",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD22 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD79B",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79B is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LYN",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LYN is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CDK6",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK6 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCR9",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR9 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "NCF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NCF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "RASGRP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASGRP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RRAS2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RRAS2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PIK3R1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "THEMIS",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THEMIS is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD3E",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD3E is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "THEMIS",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "THEMIS is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ZAP70",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ZAP70 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "RORC",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "RORC is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TLR7",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR7 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTA",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTA is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "STAT1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "RAG1",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG1 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.65"
+    },
+    {
+      "source": "PTPRC",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "PRKDC",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKDC is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "DCLRE1C",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCLRE1C is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "IKZF1",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "RAG2",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG2 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "JAK3",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "DOCK2",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK2 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "LYN",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYN is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "WAS",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WAS is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "FOXP3",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "PTPN6",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN6 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "NFKB2",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "SPI1",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPI1 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "RASGRP1",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASGRP1 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "THEMIS",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THEMIS is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL7R",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7R is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CARD11",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "FNIP1",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FNIP1 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "BTK",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BTK is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "LAT",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAT is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "DOCK8",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK8 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD22",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD22 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "FLT3",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "STK4",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK4 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "RAC2",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAC2 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "ZAP70",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZAP70 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL2RB",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RB is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "BLNK",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BLNK is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "DCK",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCK is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD247",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD247 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "AIRE",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIRE is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD79A",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "LTA",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTA is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "TNF",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "FAS",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL7",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL7 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "TCF3",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF3 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "VAV1",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VAV1 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "POLE3",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE3 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "INPP5D",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INPP5D is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD79B",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79B is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "TLR7",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR7 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "LCP2",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCP2 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "KLHL6",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLHL6 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "ATM",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "RUNX1",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "RRAS2",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RRAS2 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "STAT1",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT1 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "RORC",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RORC is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "EBF1",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EBF1 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYB",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYB is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NCF2",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCF2 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "XRCC5",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XRCC5 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "TCF12",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF12 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD3E",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD3E is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CDK6",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK6 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "GFI1",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFI1 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CCR9",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR9 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PIK3R1",
+      "target": "combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R1 is associated with combined immunodeficiency due to partial RAG1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_PARTIAL_RAG1_DEFICIENCY). Open Targets association score 0.05"
+    }
+  ]
+}

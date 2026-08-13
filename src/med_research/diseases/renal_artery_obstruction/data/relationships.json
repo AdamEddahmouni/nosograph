@@ -1,0 +1,58 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1496",
+      "target": "HMGCR",
+      "type": "TARGETS",
+      "description": "ROSUVASTATIN targets HMGCR."
+    },
+    {
+      "source": "CHEMBL1014",
+      "target": "AGTR1",
+      "type": "TARGETS",
+      "description": "CANDESARTAN CILEXETIL targets AGTR1."
+    },
+    {
+      "source": "HMGCR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HMGCR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGTR1",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGTR1 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGTR1",
+      "target": "renal artery obstruction (RENAL_ARTERY_OBSTRUCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGTR1 is associated with renal artery obstruction (RENAL_ARTERY_OBSTRUCTION). Open Targets association score 0.26"
+    },
+    {
+      "source": "HMGCR",
+      "target": "renal artery obstruction (RENAL_ARTERY_OBSTRUCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCR is associated with renal artery obstruction (RENAL_ARTERY_OBSTRUCTION). Open Targets association score 0.07"
+    },
+    {
+      "source": "ACE",
+      "target": "renal artery obstruction (RENAL_ARTERY_OBSTRUCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with renal artery obstruction (RENAL_ARTERY_OBSTRUCTION). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC5A4",
+      "target": "renal artery obstruction (RENAL_ARTERY_OBSTRUCTION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC5A4 is associated with renal artery obstruction (RENAL_ARTERY_OBSTRUCTION). Open Targets association score 0.00"
+    }
+  ]
+}

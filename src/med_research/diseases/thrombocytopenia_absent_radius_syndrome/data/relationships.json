@@ -1,0 +1,436 @@
+{
+  "relationships": [
+    {
+      "source": "FGF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLI2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BMP5",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP5 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "WNT5A",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT5A is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT7A",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT7A is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP51A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP51A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "RBM8A",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM8A is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.75"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "BMP5",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP5 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "ROR2",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROR2 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "FGFR3",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "COL2A1",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PHEX",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHEX is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "GLI3",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "PITX1",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX1 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FMN1",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMN1 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "GDF5",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF5 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "RSPO2",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO2 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXD13",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD13 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXC1",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PCSK5",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK5 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "LNPK",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LNPK is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PAX1",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX1 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGFR1",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXA11",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA11 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PKDCC",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKDCC is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FLNB",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLNB is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "TENT5A",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TENT5A is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "WNT7A",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT7A is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PORCN",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PORCN is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RPL38",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL38 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "WNT5A",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT5A is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TBX4",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX4 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CBFB",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBFB is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SOX11",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX11 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GLI2",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI2 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TBC1D32",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D32 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGF9",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF9 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "MKS1",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKS1 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFT140",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT140 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFT25",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT25 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGF18",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF18 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "HOXA13",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA13 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NABP2",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NABP2 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFITM5",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFITM5 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TP63",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "EVC2",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EVC2 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "HOXD12",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD12 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TGFB2",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB2 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PDS5A",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDS5A is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "KL",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KL is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SOX9",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX9 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "EVC",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EVC is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "HOXD11",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD11 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZEB1",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CPLANE1",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPLANE1 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SMPD3",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMPD3 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "POSTN",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POSTN is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FSTL1",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSTL1 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GSC",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSC is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PBXIP1",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBXIP1 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRRX1",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRRX1 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TBX15",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX15 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFT172",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT172 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYP51A1",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP51A1 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TREX1",
+      "target": "thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREX1 is associated with thrombocytopenia-absent radius syndrome (THROMBOCYTOPENIA_ABSENT_RADIUS_SYNDROME). Open Targets association score 0.04"
+    }
+  ]
+}

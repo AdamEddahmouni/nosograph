@@ -1,0 +1,460 @@
+{
+  "relationships": [
+    {
+      "source": "SLC33A1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC33A1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "IRF2BP2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF2BP2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TM6SF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TM6SF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INSIG2",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INSIG2 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL3 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CETP is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "HMGCR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HMGCR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "TDRD15",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "TDRD15 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "IRF2BP2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF2BP2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "UGT2B15",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "UGT2B15 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.71"
+    },
+    {
+      "source": "PCSK9",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.71"
+    },
+    {
+      "source": "LDLR",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.70"
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL3 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.63"
+    },
+    {
+      "source": "APOE",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.57"
+    },
+    {
+      "source": "CELSR2",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR2 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.55"
+    },
+    {
+      "source": "HP",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HP is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "APOA5",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "LPL",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.54"
+    },
+    {
+      "source": "SORT1",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORT1 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "CETP",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETP is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "PCSK5",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK5 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "TIMD4",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMD4 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "USP24",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP24 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "LIPG",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPG is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.53"
+    },
+    {
+      "source": "HGFAC",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGFAC is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "UGT2B15",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UGT2B15 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "TM6SF2",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM6SF2 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "ACVR1C",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACVR1C is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "ABCA1",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "HMGCR",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCR is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "ABCG8",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG8 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "ASCC3",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASCC3 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "TRIB1",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIB1 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "MAFB",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAFB is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "DNAH11",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH11 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "SERPINA1",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA1 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "GAS6",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAS6 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "HNF1A",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "PLTP",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLTP is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "ABCA6",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA6 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "MTARC1",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTARC1 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "SLC22A1",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A1 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "DOCK7",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK7 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "ST3GAL4",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST3GAL4 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "RSPO3",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO3 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "INSIG2",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INSIG2 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "TDRD15",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TDRD15 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "TRIM5",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM5 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "N4BP2L1",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "N4BP2L1 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "LITAF",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LITAF is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "ZPR1",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZPR1 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "IRF2BP2",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF2BP2 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "TRPS1",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPS1 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "DNAJC13",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAJC13 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "PLG",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLG is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "SLC33A1",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC33A1 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "L3MBTL3",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "L3MBTL3 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "MLXIPL",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLXIPL is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "KIF13B",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF13B is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "KCNJ2",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNJ2 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "M6PR",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "M6PR is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "WDPCP",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDPCP is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "LHCGR",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHCGR is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "NFIA",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFIA is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "GPAM",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPAM is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "MAP3K1",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K1 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "APOH",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOH is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "PRKCE",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCE is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "GPCPD1",
+      "target": "non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPCPD1 is associated with non-high density lipoprotein cholesterol measurement (NON_HIGH_DENSITY_LIPOPROTEIN_CHOLESTEROL_MEASUREMENT). Open Targets association score 0.45"
+    }
+  ]
+}

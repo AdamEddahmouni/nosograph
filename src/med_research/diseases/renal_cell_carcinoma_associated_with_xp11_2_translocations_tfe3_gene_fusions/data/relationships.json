@@ -1,0 +1,574 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1289926",
+      "target": "KDR",
+      "type": "TARGETS",
+      "description": "AXITINIB targets KDR."
+    },
+    {
+      "source": "CHEMBL1289926",
+      "target": "FLT1",
+      "type": "TARGETS",
+      "description": "AXITINIB targets FLT1."
+    },
+    {
+      "source": "CHEMBL2108738",
+      "target": "PDCD1",
+      "type": "TARGETS",
+      "description": "NIVOLUMAB targets PDCD1."
+    },
+    {
+      "source": "CHEMBL1289926",
+      "target": "FLT4",
+      "type": "TARGETS",
+      "description": "AXITINIB targets FLT4."
+    },
+    {
+      "source": "BCL2L1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2L1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "ASPSCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "ASPSCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "PARP1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "PARP1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "HNF1B",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1B is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IRS1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "IRS1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ITGA5",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA5 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ANGPTL2",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL2 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PPARGC1A",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARGC1A is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ERAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "ERAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK8",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK8 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "TRAF3IP2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF3IP2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3R2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "ITGA5",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA5 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGDR",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGDR is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TRAF3IP2",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF3IP2 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "FLT1",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "FLT1 is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "HIF1A",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "HIF1A is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "GSTP1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTP1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "TFE3",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFE3 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.40"
+    },
+    {
+      "source": "ASPSCR1",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASPSCR1 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.29"
+    },
+    {
+      "source": "PRCC",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRCC is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.20"
+    },
+    {
+      "source": "NONO",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NONO is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.19"
+    },
+    {
+      "source": "SFPQ",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFPQ is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.19"
+    },
+    {
+      "source": "CLTC",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLTC is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.18"
+    },
+    {
+      "source": "TRAF3IP2",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAF3IP2 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.09"
+    },
+    {
+      "source": "ANGPTL2",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL2 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.08"
+    },
+    {
+      "source": "KDR",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.08"
+    },
+    {
+      "source": "PDCD1",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.07"
+    },
+    {
+      "source": "FLT4",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.07"
+    },
+    {
+      "source": "GSTP1",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTP1 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.07"
+    },
+    {
+      "source": "FLT1",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT1 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.07"
+    },
+    {
+      "source": "AR",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.07"
+    },
+    {
+      "source": "GPNMB",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPNMB is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.06"
+    },
+    {
+      "source": "TFEB",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFEB is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC5A2",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC5A2 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PPARGC1A",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARGC1A is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ALK",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.03"
+    },
+    {
+      "source": "MTOR",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.02"
+    },
+    {
+      "source": "PAX8",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX8 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.02"
+    },
+    {
+      "source": "PIK3R2",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R2 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CRP",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.02"
+    },
+    {
+      "source": "ALB",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.02"
+    },
+    {
+      "source": "HIF1A",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF1A is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.02"
+    },
+    {
+      "source": "TSC1",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC1 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.02"
+    },
+    {
+      "source": "TRPM3",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPM3 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.02"
+    },
+    {
+      "source": "ITGA5",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA5 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.02"
+    },
+    {
+      "source": "HNF1B",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1B is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CTSK",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSK is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTGDR",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGDR is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IFNG",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.02"
+    },
+    {
+      "source": "RAD54L2",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD54L2 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.02"
+    },
+    {
+      "source": "MDM2",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MDM2 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.02"
+    },
+    {
+      "source": "PTEN",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.02"
+    },
+    {
+      "source": "VEGFA",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGLN1",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGLN1 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NLRC5",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRC5 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MED15",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MED15 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PARP1",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PARP1 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.01"
+    },
+    {
+      "source": "LUC7L3",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LUC7L3 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD274",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.01"
+    },
+    {
+      "source": "SETDB1",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETDB1 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TBK1",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBK1 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IRF1",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF1 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL2L1",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2L1 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GTPBP1",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GTPBP1 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MET",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKT1",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPK8",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK8 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IRS1",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRS1 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.01"
+    },
+    {
+      "source": "VHL",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VHL is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.01"
+    },
+    {
+      "source": "UCHL1",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UCHL1 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERAL1",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERAL1 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERAS",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERAS is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ESR1",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions (RENAL_CELL_CARCINOMA_ASSOCIATED_WITH_XP11_2_TRANSLOCATIONS_TFE3_GENE_FUSIONS). Open Targets association score 0.01"
+    }
+  ]
+}

@@ -1,0 +1,508 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL27",
+      "target": "ADRB1",
+      "type": "TARGETS",
+      "description": "PROPRANOLOL targets ADRB1."
+    },
+    {
+      "source": "CHEMBL27",
+      "target": "ADRB2",
+      "type": "TARGETS",
+      "description": "PROPRANOLOL targets ADRB2."
+    },
+    {
+      "source": "ADRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "ADRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "KLF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "KLF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ADAMTS5",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS5 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "PDCD10",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD10 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ITGB1BP1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB1BP1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "GORASP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "GORASP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RELA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "DLL4",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "DLL4 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "NOTCH3",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH3 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "THBS1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THBS1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ITGB1BP1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB1BP1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "WNT9B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT9B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "KRIT1",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRIT1 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.60"
+    },
+    {
+      "source": "PDCD10",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD10 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.50"
+    },
+    {
+      "source": "CCM2",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCM2 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.45"
+    },
+    {
+      "source": "ANKIB1",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKIB1 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.17"
+    },
+    {
+      "source": "VEGFA",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.09"
+    },
+    {
+      "source": "MAP3K3",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K3 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.09"
+    },
+    {
+      "source": "TLR4",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.08"
+    },
+    {
+      "source": "FN1",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FN1 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.08"
+    },
+    {
+      "source": "CDH5",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH5 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.08"
+    },
+    {
+      "source": "ADRB1",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB1 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.08"
+    },
+    {
+      "source": "TEK",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TEK is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.08"
+    },
+    {
+      "source": "THBS1",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THBS1 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.08"
+    },
+    {
+      "source": "CDH3",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH3 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.08"
+    },
+    {
+      "source": "ADAMTS5",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS5 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.08"
+    },
+    {
+      "source": "ADRB2",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB2 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.08"
+    },
+    {
+      "source": "VCAN",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VCAN is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.07"
+    },
+    {
+      "source": "OLR1",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OLR1 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.07"
+    },
+    {
+      "source": "DLL4",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLL4 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.07"
+    },
+    {
+      "source": "ANGPT2",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPT2 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.07"
+    },
+    {
+      "source": "CRISP2",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRISP2 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.07"
+    },
+    {
+      "source": "SPZ1",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPZ1 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.07"
+    },
+    {
+      "source": "PRSS55",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRSS55 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.07"
+    },
+    {
+      "source": "PTEN",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "KLF4",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF4 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "CHI3L1",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHI3L1 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "CBX7",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBX7 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "CD52",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD52 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "JUN",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JUN is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "STK24",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK24 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "CAV1",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAV1 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "ALB",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "KLF2",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF2 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "GABPA",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABPA is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "VWF",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "ITGB1BP1",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB1BP1 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD14",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD14 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "NFKB1",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "NOTCH3",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH3 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "LGALS3",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTGS2",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "RELA",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELA is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "SYT1",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYT1 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "GORASP1",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GORASP1 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "WNK1",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNK1 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "EPHB4",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHB4 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "MT-CO2",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MT-CO2 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "SMN1",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMN1 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDC42",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDC42 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD4",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "ACTA1",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTA1 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "RHOA",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHOA is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "MTOR",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "ANKS1A",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKS1A is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "SNRPB",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNRPB is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "BDNF",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BDNF is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "WNT9B",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT9B is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "LPL",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDH4",
+      "target": "cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH4 is associated with cerebral cavernous malformation (CEREBRAL_CAVERNOUS_MALFORMATION). Open Targets association score 0.03"
+    }
+  ]
+}

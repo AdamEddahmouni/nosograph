@@ -1,0 +1,388 @@
+{
+  "relationships": [
+    {
+      "source": "CDK20",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK20 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MSH2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53BP2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53BP2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BMPR1B",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMPR1B is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FBN1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "FBN1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT7A",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT7A is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "EXT1",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EXT1 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.82"
+    },
+    {
+      "source": "TP53",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "GDF5",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF5 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "NF2",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "FMN1",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FMN1 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXD13",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD13 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "HOXD12",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD12 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "TULP3",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TULP3 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRIM62",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM62 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL2A1",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTCH1",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "VANGL2",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VANGL2 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "DEAF1",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEAF1 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "PHEX",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHEX is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "LNPK",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LNPK is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "SFRP2",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFRP2 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGFR3",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "TENT5A",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TENT5A is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRDX1",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDX1 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "ATP7A",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP7A is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "EN1",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EN1 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "WNT7A",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT7A is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDK20",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK20 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "ACVR1",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACVR1 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "SOX9",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX9 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "EVX2",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EVX2 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "KRAS",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "MAD1L1",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAD1L1 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "SMPD3",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMPD3 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "ROR2",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROR2 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "MSH2",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH2 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "RECQL4",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RECQL4 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "NF1",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "APC",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "HOXD11",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD11 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "WIF1",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WIF1 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "HIC1",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIC1 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "FBN1",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBN1 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "BUB1B-PAK6",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUB1B-PAK6 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "BUB1B",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUB1B is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "SAV1",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAV1 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "TP53BP2",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53BP2 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNK1",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNK1 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "BMPR1B",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMPR1B is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "EXT2",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EXT2 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.01"
+    },
+    {
+      "source": "EXOC4",
+      "target": "exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EXOC4 is associated with exostoses, multiple, type 1 (EXOSTOSES_MULTIPLE_TYPE_1). Open Targets association score 0.01"
+    }
+  ]
+}

@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "CDK13",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK13 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SERPING1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "SERPING1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL11A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL11A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GAD2",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GAD2 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "KIDINS220",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "KIDINS220 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NOTCH3",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH3 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "TSC1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TGM6",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM6 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "SERPING1",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPING1 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATXN3",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATXN3 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "KIDINS220",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIDINS220 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "COL11A1",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL11A1 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "APC",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MEN1",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TTR",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTR is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NF1",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "UMOD",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UMOD is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "VCP",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VCP is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PACS1",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PACS1 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "COL2A1",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOTCH3",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH3 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYH9",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH9 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MPV17",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPV17 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOG",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOG is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDK13",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK13 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRNP",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRNP is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "LDLR",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ARHGAP4",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP4 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "HNRNPC",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNRNPC is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PFDN4",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PFDN4 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOD1",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD1 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "NOD2",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOD2 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "VHL",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VHL is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "NF2",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TSC2",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TSC1",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC1 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TESC",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TESC is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC12A3",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC12A3 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGM6",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM6 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TERT",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GRN",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRN is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDC73",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDC73 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "LMNA",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNA is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TCOF1",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCOF1 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP53",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "EXT1",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EXT1 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "INS",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "AICDA",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AICDA is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPARG",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TBX5",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX5 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALB",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRRT2",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRRT2 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPAST",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPAST is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CREBBP",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "FGFR2",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "RNF125",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF125 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PER2",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PER2 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GAD2",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAD2 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACVR1",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACVR1 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYH3",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH3 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SHOC2",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHOC2 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TRPV4",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV4 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSEN2",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSEN2 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "AKR1A1",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKR1A1 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTPN11",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "RIT1",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIT1 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYH7",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH7 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "RP1",
+      "target": "autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RP1 is associated with autosomal dominant disease (AUTOSOMAL_DOMINANT_DISEASE). Open Targets association score 0.00"
+    }
+  ]
+}

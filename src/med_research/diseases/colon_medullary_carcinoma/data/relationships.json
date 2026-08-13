@@ -1,0 +1,574 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201585",
+      "target": "ERBB2",
+      "type": "TARGETS",
+      "description": "TRASTUZUMAB targets ERBB2."
+    },
+    {
+      "source": "CHEMBL4303201",
+      "target": "FLT4",
+      "type": "TARGETS",
+      "description": "CATEQUENTINIB targets FLT4."
+    },
+    {
+      "source": "CHEMBL1201129",
+      "target": "DNMT3A",
+      "type": "TARGETS",
+      "description": "DECITABINE targets DNMT3A."
+    },
+    {
+      "source": "CHEMBL4297844",
+      "target": "ERBB2",
+      "type": "TARGETS",
+      "description": "TRASTUZUMAB DERUXTECAN targets ERBB2."
+    },
+    {
+      "source": "CHEMBL4303201",
+      "target": "KDR",
+      "type": "TARGETS",
+      "description": "CATEQUENTINIB targets KDR."
+    },
+    {
+      "source": "CHEMBL3647420",
+      "target": "ERBB2",
+      "type": "TARGETS",
+      "description": "PYROTINIB targets ERBB2."
+    },
+    {
+      "source": "CHEMBL4303201",
+      "target": "KIT",
+      "type": "TARGETS",
+      "description": "CATEQUENTINIB targets KIT."
+    },
+    {
+      "source": "CASP8",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP8 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CD79A",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2C",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2C is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH6",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH6 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "RAD51B",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "RAD51B is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "JAK1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT5B",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT5B is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K4",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K4 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "AXIN2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "AXIN2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "MSH2",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH2 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "JUN",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JUN is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FLT4",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PTCH1",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MSH6",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH6 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RAD50",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD50 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ERBB4",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB4 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SDHA",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDHA is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TGFBR2",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBR2 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FBXO11",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXO11 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "POLD1",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD1 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ERBB2",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NTRK1",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CASP8",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP8 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "WT1",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "IDH2",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH2 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FAT1",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT1 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CDH1",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SF3B1",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SF3B1 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TP53",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MITF",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MITF is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "APC",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KLF4",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF4 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2D",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ERBB3",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB3 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "POLE",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MYCL",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYCL is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RAD21",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD21 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MAP2K4",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K4 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CREBBP",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RHOA",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHOA is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FUBP1",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUBP1 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RB1",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "DAXX",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAXX is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FBXW7",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXW7 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PTEN",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PBRM1",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBRM1 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CD79A",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD79A is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CDKN2C",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2C is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "BRAF",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ARID1B",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1B is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ROS1",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROS1 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KDR",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "TCF7L2",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF7L2 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2C",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MED12",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MED12 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RAD51B",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD51B is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "JAK2",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "JAK1",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK1 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "DNMT3A",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT3A is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "AXIN2",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AXIN2 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KIT",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ATRX",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ARID1A",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "STAT5B",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT5B is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "HRAS",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NTRK2",
+      "target": "colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK2 is associated with colon medullary carcinoma (COLON_MEDULLARY_CARCINOMA). Open Targets association score 0.18"
+    }
+  ]
+}

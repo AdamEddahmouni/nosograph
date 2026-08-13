@@ -1,0 +1,526 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL2396661",
+      "target": "PIK3CA",
+      "type": "TARGETS",
+      "description": "ALPELISIB targets PIK3CA."
+    },
+    {
+      "source": "BAX",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BAX is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CCL28",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL28 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCR5",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR5 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "KIF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "KIF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "AKT3",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT3 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3R2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "LRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.85"
+    },
+    {
+      "source": "PIK3R2",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R2 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.33"
+    },
+    {
+      "source": "AKT3",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT3 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.33"
+    },
+    {
+      "source": "RIT1",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIT1 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.27"
+    },
+    {
+      "source": "RPL17",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "PDCD1",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SNCA",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SPATA2",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ACTA1",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTA1 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GAS1",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAS1 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "KIF7",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF7 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "EN1",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EN1 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "RPL24",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL24 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNF",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "DUX4",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DUX4 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "IFNG",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD8A",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "BAX",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAX is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL1B",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "GPER1",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPER1 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "LGALS1",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS1 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "MERTK",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MERTK is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL13",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTLA4",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTLA4 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SIRT1",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT1 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "GDF15",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF15 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL2",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "NRG1",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRG1 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL9",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL9 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCR5",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR5 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "LPL",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "LIF",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIF is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTPN11",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL10",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "STOML2",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STOML2 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "SYTL2",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYTL2 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD163",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD163 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALB",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "LRP6",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP6 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "HLA-C",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-C is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "GAL",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAL is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "NCAM1",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCAM1 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "FCGR3A",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR3A is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "FCGR3B",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR3B is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "HGS",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGS is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "NR1D1",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1D1 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPPB",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPB is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "AREG",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AREG is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ICAM1",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTOR",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC5AC",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5AC is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "KIT",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMUT",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMUT is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD274",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD4",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCL28",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL28 is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CALCA",
+      "target": "megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with megalencephaly-capillary malformation-polymicrogyria syndrome (MEGALENCEPHALY_CAPILLARY_MALFORMATION_POLYMICROGYRIA_SYNDROME). Open Targets association score 0.01"
+    }
+  ]
+}

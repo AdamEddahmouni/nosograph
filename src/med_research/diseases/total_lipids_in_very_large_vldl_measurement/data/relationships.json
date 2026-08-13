@@ -1,0 +1,460 @@
+{
+  "relationships": [
+    {
+      "source": "ADRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "ADRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TM6SF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TM6SF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "HAVCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ATRAID",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRAID is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL3 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL4 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CETP is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LPL is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "MAPKBP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPKBP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CD300LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD300LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "VEGFB",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFB is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "NAT2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NAT2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "LPL",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPL is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.55"
+    },
+    {
+      "source": "LPA",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "CD300LG",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD300LG is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "RSPO3",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO3 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "GALNT2",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GALNT2 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "CETP",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETP is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "TM6SF2",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM6SF2 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "APOB",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "TRIB1",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIB1 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "MLXIPL",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLXIPL is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.49"
+    },
+    {
+      "source": "ANKRD55",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKRD55 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "APOA5",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "ZPR1",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZPR1 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "HGFAC",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGFAC is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "TIMD4",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMD4 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "PLTP",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLTP is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "COBLL1",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COBLL1 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "APOC1",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC1 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "APOA1",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "NAT2",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAT2 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "MAPKBP1",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPKBP1 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "NECTIN2",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NECTIN2 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "MAP3K1",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K1 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "GCKR",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "BAZ1B",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAZ1B is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL4 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "FDFT1",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FDFT1 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "GAS6",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAS6 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "L3MBTL3",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "L3MBTL3 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "FADS2",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS2 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "TAGLN",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAGLN is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "APOE",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "ARL15",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARL15 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "BUD13",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUD13 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "PRAG1",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRAG1 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "MSRA",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSRA is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "SORT1",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORT1 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "APOC3",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC3 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "ATRAID",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRAID is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "APOH",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOH is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "PDE3A",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE3A is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "PTPRB",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRB is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "LDLR",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "VEGFB",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFB is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL3 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "MAFF",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAFF is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "SLC22A3",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A3 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "PDE3B",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE3B is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "PAFAH1B2",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAFAH1B2 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "RAI1",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAI1 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "PCSK7",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK7 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "BABAM2",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BABAM2 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "PCCB",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCCB is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "DNAH12",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH12 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "ADRB1",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB1 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "PEPD",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PEPD is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "PLA2G6",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G6 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "FADS1",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS1 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "IDUA",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDUA is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "HAVCR1",
+      "target": "total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAVCR1 is associated with total lipids in very large VLDL measurement  (TOTAL_LIPIDS_IN_VERY_LARGE_VLDL_MEASUREMENT). Open Targets association score 0.31"
+    }
+  ]
+}

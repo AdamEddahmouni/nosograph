@@ -1,0 +1,388 @@
+{
+  "relationships": [
+    {
+      "source": "CDK20",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK20 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "FGF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FGF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLI2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "GLI3",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI3 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "GATA3",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "GATA3 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FRAS1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FRAS1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PTHLH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTHLH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "IRF6",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF6 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "LRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT5A",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT5A is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "SATB2",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SATB2 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.05"
+    },
+    {
+      "source": "ROR2",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROR2 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.05"
+    },
+    {
+      "source": "TMEM107",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM107 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGFR2",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.05"
+    },
+    {
+      "source": "ZEB1",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRICKLE1",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRICKLE1 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.04"
+    },
+    {
+      "source": "TBX22",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX22 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGF9",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF9 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.04"
+    },
+    {
+      "source": "ALX1",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALX1 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGF10",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF10 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.04"
+    },
+    {
+      "source": "SIX1",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIX1 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.04"
+    },
+    {
+      "source": "MKS1",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKS1 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.04"
+    },
+    {
+      "source": "PITX1",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX1 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.04"
+    },
+    {
+      "source": "RSPO2",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO2 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRP6",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP6 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.04"
+    },
+    {
+      "source": "WDR19",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WDR19 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.04"
+    },
+    {
+      "source": "WNT5A",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT5A is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.04"
+    },
+    {
+      "source": "EYA1",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EYA1 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.04"
+    },
+    {
+      "source": "EDN1",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDN1 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "DLX5",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLX5 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "SP8",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SP8 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "GATA3",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA3 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOX11",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX11 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "FUZ",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUZ is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "INPP5E",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INPP5E is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "ARB2A",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARB2A is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "GLI2",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI2 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "CRKL",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRKL is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "CILK1",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CILK1 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "TRPS1",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPS1 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "COL2A1",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "IRF6",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF6 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFT88",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFT88 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "GLI3",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI3 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "SPRY2",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPRY2 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "HHAT",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HHAT is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRRX1",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRRX1 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "RPL38",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL38 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "FRAS1",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FRAS1 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "EDNRB",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRB is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "SFN",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFN is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "FGFR1",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "WBP11",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WBP11 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRDM16",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM16 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "NABP2",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NABP2 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTHLH",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTHLH is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDK20",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK20 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOX9",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX9 is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    },
+    {
+      "source": "PDS5B",
+      "target": "trisomy 8q (TRISOMY_8Q)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDS5B is associated with trisomy 8q (TRISOMY_8Q). Open Targets association score 0.03"
+    }
+  ]
+}

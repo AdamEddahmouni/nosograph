@@ -1,0 +1,520 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1654",
+      "target": "FDPS",
+      "type": "TARGETS",
+      "description": "RISEDRONATE SODIUM targets FDPS."
+    },
+    {
+      "source": "CHEMBL4303669",
+      "target": "FDPS",
+      "type": "TARGETS",
+      "description": "ZOLEDRONIC ACID targets FDPS."
+    },
+    {
+      "source": "CHEMBL1654",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "TREATS",
+      "description": "RISEDRONATE SODIUM is phase 4 / marketed for Paget disease (PAGET_DISEASE)."
+    },
+    {
+      "source": "CHEMBL4303669",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "TREATS",
+      "description": "ZOLEDRONIC ACID is phase 4 / marketed for Paget disease (PAGET_DISEASE)."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "SQSTM1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SQSTM1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "TNFRSF11A",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11A is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "TNFSF11",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF11 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCL27",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL27 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "FGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GTF2H1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "GTF2H1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IGF2BP2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2BP2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATRNL1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRNL1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "PTH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD34",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD34 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11A",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11A is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF11",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF11 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "NAT10",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NAT10 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "FDPS",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FDPS is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.53"
+    },
+    {
+      "source": "SQSTM1",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SQSTM1 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.10"
+    },
+    {
+      "source": "ERBB2",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "GPC3",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPC3 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "KRT7",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT7 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL6",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "DCTN4",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCTN4 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "NUP62",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUP62 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "KHDRBS1",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KHDRBS1 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "IGF2BP2",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2BP2 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "GTF2H1",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GTF2H1 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "VEGFA",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNFRSF11A",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF11A is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CTSK",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSK is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "BGLAP",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BGLAP is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF11B is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "NGF",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NGF is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDH1",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "ESR1",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CALCA",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "FGF2",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF2 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "FOLH1",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOLH1 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD1A",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD1A is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "CLDN2",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN2 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.02"
+    },
+    {
+      "source": "TYMP",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYMP is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSDMB",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PFN1",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PFN1 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "VDR",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VDR is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNFSF11",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF11 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM5",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM5 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "POMC",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "VCP",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VCP is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "RIN3",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIN3 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL2",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ZNF687",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF687 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFKB1",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSF1",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF1 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "OPTN",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OPTN is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACP5",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACP5 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALPP",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPP is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLPI",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLPI is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NAT10",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAT10 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCL27",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL27 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDLIM3",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDLIM3 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ASRGL1",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASRGL1 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATRNL1",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRNL1 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "FOS",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOS is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NEU1",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEU1 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NEURL1",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEURL1 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTH",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTH is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CASR",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASR is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD34",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD34 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "HNRNPA2B1",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNRNPA2B1 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC5AC",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5AC is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "UBC",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBC is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "UBA52",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBA52 is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPS27A",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPS27A is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "UBB",
+      "target": "Paget disease (PAGET_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBB is associated with Paget disease (PAGET_DISEASE). Open Targets association score 0.01"
+    }
+  ]
+}

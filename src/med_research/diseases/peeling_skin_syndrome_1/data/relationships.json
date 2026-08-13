@@ -1,0 +1,550 @@
+{
+  "relationships": [
+    {
+      "source": "PLCG2",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLCG2 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IRF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TNFRSF21",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF21 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TNFRSF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL17A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL17A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MEFV",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "MEFV is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "PSTPIP2",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "PSTPIP2 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "STAT6",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT6 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "TRAF3IP2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF3IP2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFATC1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBIA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBIZ",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIZ is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "RELB",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELB is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD40",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ICOS",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ICOS is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ICOSLG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ICOSLG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL21R",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL21R is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGM3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGM5",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM5 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFRSF21",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF21 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF9",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF9 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TRAF3IP2",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF3IP2 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFIH1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFIH1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IRF2",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF2 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "CDSN",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDSN is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.70"
+    },
+    {
+      "source": "PSORS1C1",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSORS1C1 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.49"
+    },
+    {
+      "source": "TGM5",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM5 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.42"
+    },
+    {
+      "source": "CARD11",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.06"
+    },
+    {
+      "source": "ITGB2",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXP3",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP3 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "FLG",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLG is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "GSDMA",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMA is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.05"
+    },
+    {
+      "source": "DSG4",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSG4 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRAF3IP2",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAF3IP2 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL21R",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL21R is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFKBIZ",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIZ is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "CTSE",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSE is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRPV3",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPV3 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "TMEM79",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM79 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "COL17A1",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL17A1 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "RAG1",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG1 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "TGM3",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM3 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "DSG3",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSG3 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFATC1",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFATC1 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "FCGR2A",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2A is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "FCGR2C",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2C is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "FCGR2B",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2B is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.04"
+    },
+    {
+      "source": "NIBAN3",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NIBAN3 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "TUFT1",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TUFT1 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "PSTPIP2",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSTPIP2 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "ERP44",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERP44 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "LBR",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LBR is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "PKP3",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKP3 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "BACH2",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BACH2 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD40",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "CTSL",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSL is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "CTSV",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSV is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "NFKB1",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADGRG3",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADGRG3 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "DLK1",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLK1 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "HOXC4",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXC4 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFIH1",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFIH1 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "POU2AF1",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU2AF1 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "RELB",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELB is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "STAT6",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT6 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "SH3BP2",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3BP2 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "RUVBL2",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUVBL2 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "RGS13",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RGS13 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "ICOS",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICOS is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "PDCD1",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "IRF2",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF2 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "LMBR1L",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMBR1L is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "PLD4",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLD4 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "NFKBIA",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIA is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "MEFV",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEFV is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "SCD",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCD is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNFRSF9",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF9 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL2RB",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RB is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD72",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD72 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNFRSF21",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF21 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "ICOSLG",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICOSLG is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "AICDA",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AICDA is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    },
+    {
+      "source": "PLCG2",
+      "target": "peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCG2 is associated with peeling skin syndrome 1 (PEELING_SKIN_SYNDROME_1). Open Targets association score 0.03"
+    }
+  ]
+}

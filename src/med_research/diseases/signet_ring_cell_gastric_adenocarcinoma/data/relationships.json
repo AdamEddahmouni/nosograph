@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1289601",
+      "target": "FLT4",
+      "type": "TARGETS",
+      "description": "LENVATINIB targets FLT4."
+    },
+    {
+      "source": "SLC34A2",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC34A2 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RNF213",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "RNF213 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MSH6",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH6 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "IL6ST",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6ST is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ITGAV",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAV is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "SMAD2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SMAD3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "SMAD4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "ITGAV",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAV is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CDH1",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "BAP1",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAP1 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CHD4",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD4 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SLC34A2",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC34A2 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RECQL4",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RECQL4 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "APC",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MSH6",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH6 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NTRK3",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK3 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP53",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ROS1",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROS1 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CD74",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD74 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "STAT3",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTPRC",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID1A",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TPM3",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPM3 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SDC4",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC4 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SFRP4",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFRP4 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TCF3",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF3 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KDM6A",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM6A is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMAD3",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD3 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PML",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PML is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CBLB",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBLB is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EZR",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EZR is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "WT1",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PRF1",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRF1 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "LRIG3",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRIG3 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMAD2",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD2 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TFE3",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFE3 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MYB",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYB is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FBXO11",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FBXO11 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CUX1",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CUX1 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RHOA",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHOA is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MED12",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MED12 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FLT4",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "IKZF3",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF3 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NDRG1",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NDRG1 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERCC5",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC5 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RARA",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RARA is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ABL2",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABL2 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KRAS",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMAD4",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD4 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "ZEB1",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "IL6ST",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6ST is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CTCF",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTCF is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ERBB3",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB3 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ZFHX3",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFHX3 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PRDM16",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM16 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FCGR2B",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2B is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "LASP1",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LASP1 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CSMD3",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSMD3 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ITGAV",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAV is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PTPRD",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRD is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ELF3",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELF3 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PTEN",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CDH10",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH10 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "AFF3",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFF3 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "RNF213",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF213 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FAT3",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT3 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "FAT1",
+      "target": "Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT1 is associated with Signet Ring Cell Gastric Adenocarcinoma (SIGNET_RING_CELL_GASTRIC_ADENOCARCINOMA). Open Targets association score 0.18"
+    }
+  ]
+}

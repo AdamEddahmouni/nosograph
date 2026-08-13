@@ -91,8 +91,18 @@
       "category": ""
     },
     {
-      "id": "SCN3A",
-      "name": "sodium voltage-gated channel alpha subunit 3",
+      "id": "SCN7A",
+      "name": "sodium voltage-gated channel alpha subunit 7",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.56",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "SCN9A",
+      "name": "sodium voltage-gated channel alpha subunit 9",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.56",
@@ -121,31 +131,11 @@
       "category": ""
     },
     {
-      "id": "SCN9A",
-      "name": "sodium voltage-gated channel alpha subunit 9",
+      "id": "SCN3A",
+      "name": "sodium voltage-gated channel alpha subunit 3",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.56",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "SCN7A",
-      "name": "sodium voltage-gated channel alpha subunit 7",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.56",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "GABRA5",
-      "name": "gamma-aminobutyric acid type A receptor subunit alpha5",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.55",
       "odds_ratio": null,
       "references": [],
       "category": ""
@@ -161,8 +151,8 @@
       "category": ""
     },
     {
-      "id": "GABRG3",
-      "name": "gamma-aminobutyric acid type A receptor subunit gamma3",
+      "id": "GABRA5",
+      "name": "gamma-aminobutyric acid type A receptor subunit alpha5",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.55",
@@ -183,6 +173,16 @@
     {
       "id": "GABRG1",
       "name": "gamma-aminobutyric acid type A receptor subunit gamma1",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.55",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "GABRG3",
+      "name": "gamma-aminobutyric acid type A receptor subunit gamma3",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.55",
@@ -281,8 +281,8 @@
       "category": ""
     },
     {
-      "id": "CA4",
-      "name": "carbonic anhydrase 4",
+      "id": "GRIK2",
+      "name": "glutamate ionotropic receptor kainate type subunit 2",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.49",
@@ -301,18 +301,8 @@
       "category": ""
     },
     {
-      "id": "GRIK1",
-      "name": "glutamate ionotropic receptor kainate type subunit 1",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.49",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "GABRE",
-      "name": "gamma-aminobutyric acid type A receptor subunit epsilon",
+      "id": "CA2",
+      "name": "carbonic anhydrase 2",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.49",
@@ -331,8 +321,8 @@
       "category": ""
     },
     {
-      "id": "CA2",
-      "name": "carbonic anhydrase 2",
+      "id": "GABRP",
+      "name": "gamma-aminobutyric acid type A receptor subunit pi",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.49",
@@ -341,18 +331,8 @@
       "category": ""
     },
     {
-      "id": "GRIK3",
-      "name": "glutamate ionotropic receptor kainate type subunit 3",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.49",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "GABRA6",
-      "name": "gamma-aminobutyric acid type A receptor subunit alpha6",
+      "id": "GABRE",
+      "name": "gamma-aminobutyric acid type A receptor subunit epsilon",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.49",
@@ -371,28 +351,48 @@
       "category": ""
     },
     {
-      "id": "GRIK2",
-      "name": "glutamate ionotropic receptor kainate type subunit 2",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.49",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "GABRP",
-      "name": "gamma-aminobutyric acid type A receptor subunit pi",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.49",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
       "id": "GRIK5",
       "name": "glutamate ionotropic receptor kainate type subunit 5",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.49",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "GABRA6",
+      "name": "gamma-aminobutyric acid type A receptor subunit alpha6",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.49",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "GRIK1",
+      "name": "glutamate ionotropic receptor kainate type subunit 1",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.49",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "CA4",
+      "name": "carbonic anhydrase 4",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.49",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
+      "id": "GRIK3",
+      "name": "glutamate ionotropic receptor kainate type subunit 3",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.49",
@@ -451,8 +451,8 @@
       "category": ""
     },
     {
-      "id": "HTR1D",
-      "name": "5-hydroxytryptamine receptor 1D",
+      "id": "HTR2C",
+      "name": "5-hydroxytryptamine receptor 2C",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.26",
@@ -461,8 +461,8 @@
       "category": ""
     },
     {
-      "id": "HTR2C",
-      "name": "5-hydroxytryptamine receptor 2C",
+      "id": "HTR1D",
+      "name": "5-hydroxytryptamine receptor 1D",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.26",
@@ -491,6 +491,16 @@
       "category": ""
     },
     {
+      "id": "ZEB2",
+      "name": "zinc finger E-box binding homeobox 2",
+      "chromosome": "",
+      "function": "",
+      "disease_evidence": "Open Targets association score 0.11",
+      "odds_ratio": null,
+      "references": [],
+      "category": ""
+    },
+    {
       "id": "POLG",
       "name": "DNA polymerase gamma, catalytic subunit",
       "chromosome": "",
@@ -503,16 +513,6 @@
     {
       "id": "GATM",
       "name": "glycine amidinotransferase",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.11",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "ZEB2",
-      "name": "zinc finger E-box binding homeobox 2",
       "chromosome": "",
       "function": "",
       "disease_evidence": "Open Targets association score 0.11",

@@ -109,6 +109,7 @@ CAR_T_SCORES = {
         "TUBB2B": 4.0,
         "TUBB3": 4.0,
         "TUBB4A": 4.0,
+        "TUBB4B": 4.0,
         "TUBB6": 4.0,
         "TUBB8": 4.0,
         "U2AF1": 4.0,

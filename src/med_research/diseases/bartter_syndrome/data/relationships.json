@@ -25,6 +25,12 @@
       "description": "SLC33A1 is a component of the Autophagy pathway."
     },
     {
+      "source": "MAP1LC3B",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP1LC3B is a component of the Autophagy pathway."
+    },
+    {
       "source": "KCNA3",
       "target": "cardiac-ion-channel",
       "type": "PARTICIPATES_IN",
@@ -35,6 +41,18 @@
       "target": "dna-repair",
       "type": "PARTICIPATES_IN",
       "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GLIS2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLIS2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "SHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SHH is a component of the Hedgehog Signaling pathway."
     },
     {
       "source": "ACE",
@@ -143,12 +161,6 @@
       "target": "glucose-metabolism",
       "type": "PARTICIPATES_IN",
       "description": "SLC2A9 is a component of the Glucose Metabolism / Insulin Secretion pathway."
-    },
-    {
-      "source": "GLIS2",
-      "target": "hedgehog",
-      "type": "PARTICIPATES_IN",
-      "description": "GLIS2 is a component of the Hedgehog Signaling pathway."
     },
     {
       "source": "CLCNKB",
@@ -307,22 +319,10 @@
       "description": "OSR1 is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.01"
     },
     {
-      "source": "ESPN",
-      "target": "Bartter syndrome (BARTTER_SYNDROME)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ESPN is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.01"
-    },
-    {
       "source": "KCNMA1",
       "target": "Bartter syndrome (BARTTER_SYNDROME)",
       "type": "ASSOCIATED_WITH",
       "description": "KCNMA1 is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.01"
-    },
-    {
-      "source": "KRT80",
-      "target": "Bartter syndrome (BARTTER_SYNDROME)",
-      "type": "ASSOCIATED_WITH",
-      "description": "KRT80 is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.01"
     },
     {
       "source": "SERPINA7",
@@ -331,16 +331,28 @@
       "description": "SERPINA7 is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.01"
     },
     {
-      "source": "ATP12A",
+      "source": "ESPN",
       "target": "Bartter syndrome (BARTTER_SYNDROME)",
       "type": "ASSOCIATED_WITH",
-      "description": "ATP12A is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.01"
+      "description": "ESPN is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.01"
     },
     {
       "source": "NR4A1",
       "target": "Bartter syndrome (BARTTER_SYNDROME)",
       "type": "ASSOCIATED_WITH",
       "description": "NR4A1 is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP12A",
+      "target": "Bartter syndrome (BARTTER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP12A is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRT80",
+      "target": "Bartter syndrome (BARTTER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT80 is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.01"
     },
     {
       "source": "FPR1",
@@ -391,16 +403,16 @@
       "description": "MT-CO2 is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.00"
     },
     {
-      "source": "KIR3DL1",
-      "target": "Bartter syndrome (BARTTER_SYNDROME)",
-      "type": "ASSOCIATED_WITH",
-      "description": "KIR3DL1 is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.00"
-    },
-    {
       "source": "GEM",
       "target": "Bartter syndrome (BARTTER_SYNDROME)",
       "type": "ASSOCIATED_WITH",
       "description": "GEM is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "KIR3DL1",
+      "target": "Bartter syndrome (BARTTER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIR3DL1 is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.00"
     },
     {
       "source": "SLC26A3",
@@ -421,16 +433,16 @@
       "description": "AVP is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.00"
     },
     {
-      "source": "TGM2",
-      "target": "Bartter syndrome (BARTTER_SYNDROME)",
-      "type": "ASSOCIATED_WITH",
-      "description": "TGM2 is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.00"
-    },
-    {
       "source": "GGH",
       "target": "Bartter syndrome (BARTTER_SYNDROME)",
       "type": "ASSOCIATED_WITH",
       "description": "GGH is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGM2",
+      "target": "Bartter syndrome (BARTTER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM2 is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.00"
     },
     {
       "source": "KCNJ10",
@@ -439,10 +451,10 @@
       "description": "KCNJ10 is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.00"
     },
     {
-      "source": "LRSAM1",
+      "source": "TALDO1",
       "target": "Bartter syndrome (BARTTER_SYNDROME)",
       "type": "ASSOCIATED_WITH",
-      "description": "LRSAM1 is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.00"
+      "description": "TALDO1 is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.00"
     },
     {
       "source": "CNNM2",
@@ -451,10 +463,34 @@
       "description": "CNNM2 is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.00"
     },
     {
-      "source": "TALDO1",
+      "source": "LRSAM1",
       "target": "Bartter syndrome (BARTTER_SYNDROME)",
       "type": "ASSOCIATED_WITH",
-      "description": "TALDO1 is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.00"
+      "description": "LRSAM1 is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "BBS9",
+      "target": "Bartter syndrome (BARTTER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BBS9 is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "SHH",
+      "target": "Bartter syndrome (BARTTER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHH is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "SST",
+      "target": "Bartter syndrome (BARTTER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SST is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "UMOD",
+      "target": "Bartter syndrome (BARTTER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UMOD is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.00"
     },
     {
       "source": "ABCB1",
@@ -463,22 +499,34 @@
       "description": "ABCB1 is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.00"
     },
     {
+      "source": "MAP1LC3B",
+      "target": "Bartter syndrome (BARTTER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP1LC3B is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.00"
+    },
+    {
       "source": "SPTA1",
       "target": "Bartter syndrome (BARTTER_SYNDROME)",
       "type": "ASSOCIATED_WITH",
       "description": "SPTA1 is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.00"
     },
     {
-      "source": "BBS4",
-      "target": "Bartter syndrome (BARTTER_SYNDROME)",
-      "type": "ASSOCIATED_WITH",
-      "description": "BBS4 is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.00"
-    },
-    {
       "source": "CBS",
       "target": "Bartter syndrome (BARTTER_SYNDROME)",
       "type": "ASSOCIATED_WITH",
       "description": "CBS is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPY",
+      "target": "Bartter syndrome (BARTTER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPY is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "BBS4",
+      "target": "Bartter syndrome (BARTTER_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BBS4 is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.00"
     },
     {
       "source": "KCNJ3",
@@ -499,28 +547,10 @@
       "description": "NR1H4 is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.00"
     },
     {
-      "source": "SST",
-      "target": "Bartter syndrome (BARTTER_SYNDROME)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SST is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.00"
-    },
-    {
-      "source": "PPY",
-      "target": "Bartter syndrome (BARTTER_SYNDROME)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PPY is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.00"
-    },
-    {
       "source": "COL12A1",
       "target": "Bartter syndrome (BARTTER_SYNDROME)",
       "type": "ASSOCIATED_WITH",
       "description": "COL12A1 is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.12"
-    },
-    {
-      "source": "UMOD",
-      "target": "Bartter syndrome (BARTTER_SYNDROME)",
-      "type": "ASSOCIATED_WITH",
-      "description": "UMOD is associated with Bartter syndrome (BARTTER_SYNDROME). Open Targets association score 0.08"
     },
     {
       "source": "WNK4",

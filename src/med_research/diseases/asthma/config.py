@@ -11,40 +11,181 @@ TRIAL_QUERY = "ASTHMA"
 GWAS_SEARCH_TERMS = []
 
 CAR_T_SCORES = {
-    "asthma_cat1": [
-        "GENE1",
-        "GENE2"
-    ],
-    "asthma_cat2": [
-        "GENE3",
-        "GENE4"
-    ],
-    "asthma_cat3": [
-        "GENE5"
-    ],
-    "asthma_cat4": [
-        "GENE6",
-        "GENE7",
-        "GENE8"
-    ],
-    "asthma_cat5": [
-        "GENE9"
-    ]
+    "Epidermal Barrier Function": {
+        "TSLP": 4.5,
+    },
+    "Fibrosis & Tissue Remodeling": {
+        "ADAM33": 4.2,
+    },
+    "Type 2 Immune Signaling": {
+        "IL4R": 4.5,
+        "IL5": 4.6,
+    },
+    "Uncategorized": {
+        "ADORA1": 4.0,
+        "ADORA2A": 4.0,
+        "ADORA2B": 4.0,
+        "ADORA3": 4.0,
+        "ADRA1A": 4.0,
+        "ADRA1B": 4.0,
+        "ADRA1D": 4.0,
+        "ADRA2A": 4.0,
+        "ADRA2B": 4.0,
+        "ADRA2C": 4.0,
+        "ADRB1": 4.0,
+        "ADRB2": 4.0,
+        "ADRB3": 4.0,
+        "ALOX5": 4.0,
+        "APOE": 4.0,
+        "BACH2": 4.0,
+        "CARD11": 4.0,
+        "CHI3L1": 4.0,
+        "CHRM3": 4.0,
+        "CYSLTR1": 4.0,
+        "D2HGDH": 4.0,
+        "FLG": 4.0,
+        "GATA3": 4.0,
+        "GLB1": 4.0,
+        "ID2": 4.0,
+        "IL13": 4.0,
+        "IL1RL1": 4.0,
+        "IL21R": 4.0,
+        "IL2RA": 4.0,
+        "IL33": 4.0,
+        "IL5RA": 4.0,
+        "IL6": 4.0,
+        "IL7R": 4.0,
+        "IRAG1": 4.0,
+        "IRF1": 4.0,
+        "LPP": 4.0,
+        "NPNT": 4.0,
+        "NR3C1": 4.0,
+        "OTULINL": 4.0,
+        "PDE3A": 4.0,
+        "PDE3B": 4.0,
+        "PDE4A": 4.0,
+        "PDE4B": 4.0,
+        "PDE4C": 4.0,
+        "PDE4D": 4.0,
+        "PRKCQ": 4.0,
+        "PTPRC": 4.0,
+        "RAD51B": 4.0,
+        "RORA": 4.0,
+        "RUNX1": 4.0,
+        "SMAD3": 4.0,
+        "STAT6": 4.0,
+        "SUOX": 4.0,
+        "TLR1": 4.0,
+        "TNFRSF8": 4.0,
+        "TNFSF4": 4.0,
+        "WDR36": 4.0,
+    },
 }
 DRUG_SAFETY_RISK = {
     "high_risk": [
-        "drugA",
-        "drugB"
+        "etanercept",
+        "interferon beta-1a",
     ],
     "moderate_risk": [
-        "drugC",
-        "drugD"
+        "abediterol",
+        "adriforant",
+        "alendronic acid",
+        "amg-157",
+        "aminophylline",
+        "beclomethasone dipropionate",
+        "budesonide",
+        "cholecalciferol",
+        "colchicine",
+        "ephedrine hydrochloride",
+        "ephedrine sulfate",
+        "epinephrine",
+        "fevipiprant",
+        "fingolimod",
+        "fluticasone propionate",
+        "formoterol",
+        "formoterol fumarate",
+        "glycopyrrolate",
+        "glycopyrronium",
+        "ipratropium bromide",
+        "lebrikizumab",
+        "lenzilumab",
+        "methacholine",
+        "methylprednisolone",
+        "montelukast sodium",
+        "omalizumab",
+        "prednisolone",
+        "prednisone",
+        "reslizumab",
+        "roflumilast",
+        "salmeterol xinafoate",
+        "secukinumab",
+        "sitaxentan",
+        "tezepelumab",
+        "theophylline",
+        "tiotropium bromide",
+        "tofimilast",
+        "vilanterol",
+        "zileuton",
     ],
     "low_risk": [
-        "drugE"
-    ]
+    ],
 }
+
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK
 DRUG_INDUCED_LUPUS_RISK = DRUG_SAFETY_RISK
 
-SCREENING_PROFILE = {}
+SCREENING_PROFILE = {
+    "strategy_id": "asthma-screening-v1",
+    "pathway_keywords": [
+        "(th2)",
+        "cascade",
+        "cell",
+        "coagulation",
+        "cycle",
+        "inflammasome",
+        "lipid",
+        "metabolism",
+        "pathway",
+        "regulation",
+    ],
+    "mechanism_keywords": [
+        "(th2)",
+        "cascade",
+        "cell",
+        "coagulation",
+        "cycle",
+        "inflammasome",
+        "lipid",
+        "metabolism",
+        "pathway",
+        "regulation",
+    ],
+    "reference_drug_ids": [
+        "CHEMBL1200681",
+        "CHEMBL1201027",
+        "CHEMBL1256786",
+        "CHEMBL131",
+        "CHEMBL1370561",
+        "CHEMBL1473",
+    ],
+    "weights": {
+        "binding_estimate": 0.25,
+        "druglikeness": 0.15,
+        "target_complementarity": 0.35,
+        "similarity_score": 0.15,
+        "novelty_score": 0.1,
+    },
+    "source": "scaffold_asthma_knowledge_graph",
+    "curated_inputs": [
+        "pathways",
+        "drugs",
+        "screening_strategy",
+    ],
+    "inferred_inputs": [
+        "mechanism_keyword_matching",
+        "property_based_binding_estimate",
+    ],
+    "limitations": [
+        "Property scores are heuristic prioritization signals and do not establish clinical efficacy or safety.",
+    ],
+}

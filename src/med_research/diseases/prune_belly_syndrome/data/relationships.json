@@ -1,0 +1,448 @@
+{
+  "relationships": [
+    {
+      "source": "FGF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MEGF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "MEGF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TCF21",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF21 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ADAMTS1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "HNF1B",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1B is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "BMP4",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP4 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "BMP5",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP5 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "SMAD3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "PTGS2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGS2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "AXIN1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "AXIN1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT5A",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT5A is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CHRM3",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHRM3 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.69"
+    },
+    {
+      "source": "MYOCD",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYOCD is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.45"
+    },
+    {
+      "source": "FLNA",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLNA is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.35"
+    },
+    {
+      "source": "PCSK5",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK5 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "LHCGR",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHCGR is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "FOXC1",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "HNF1B",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1B is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "DLG1",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLG1 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "DACT1",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DACT1 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GDF11",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF11 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CPLANE1",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPLANE1 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FAT4",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT4 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CIR1",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIR1 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "MEGF8",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEGF8 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "HOXA13",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA13 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RET",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RET is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ROBO1",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROBO1 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "BMP4",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP4 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "LZTS2",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LZTS2 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FSTL1",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSTL1 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PDS5A",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDS5A is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "LIFR",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIFR is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "HOXA10",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXA10 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "DCHS1",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCHS1 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHTOP",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHTOP is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TCF21",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF21 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ACVR2B",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACVR2B is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLC9A3",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC9A3 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "WBP11",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WBP11 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PBX1",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBX1 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TBX6",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX6 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FSHR",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSHR is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "LAMC1",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMC1 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTGS2",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGS2 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TBC1D32",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBC1D32 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FGFR2",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CNTRL",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNTRL is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PKD1",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKD1 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MKS1",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKS1 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CC2D2A",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CC2D2A is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADAMTS1",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS1 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GPC3",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPC3 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "NOS3",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CLMP",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLMP is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "NOG",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOG is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOX11",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX11 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GATA5",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA5 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "BMP5",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP5 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SMAD3",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD3 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "FGF9",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF9 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "WNT5A",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT5A is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TGFB2",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB2 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "AXIN1",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AXIN1 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MYH11",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH11 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIEZO1",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIEZO1 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "HPSE2",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPSE2 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "LRIG2",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRIG2 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "BNC2",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BNC2 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "VPS41",
+      "target": "prune belly syndrome (PRUNE_BELLY_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VPS41 is associated with prune belly syndrome (PRUNE_BELLY_SYNDROME). Open Targets association score 0.00"
+    }
+  ]
+}

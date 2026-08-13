@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL939",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "GEFITINIB targets EGFR."
+    },
+    {
+      "source": "CHEMBL1201827",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "PANITUMUMAB targets EGFR."
+    },
+    {
+      "source": "CDK5R1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK5R1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "F2R",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F2R is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ADAM8",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAM8 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL12A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL12A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "IL12A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL12A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "MET",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "EGFR",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KRAS",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP53",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "RB1",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "TET2",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MAP3K1",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K1 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "IDH1",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "SETD2",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD2 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2D",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "GPAT3",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPAT3 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MTSS1",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTSS1 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MYC",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "DNMT1",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT1 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "F2R",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F2R is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PWAR1",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PWAR1 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NR1I2",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1I2 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MARK2",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MARK2 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC52A2",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC52A2 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCL8",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CGA",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGA is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CGB5",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB5 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERBB2",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD274",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CSF3",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HMOX1",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMOX1 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC7A11",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC7A11 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYH9",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH9 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TIAM1",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIAM1 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GCLC",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCLC is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TCF4",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF4 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGFB1",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDH1",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "VEGFA",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRT7",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT7 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "YY1AP1",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "YY1AP1 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSAT1",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSAT1 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "EGLN3",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGLN3 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ANXA1",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANXA1 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "AQP3",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP3 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "AR",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PROS1",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROS1 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NKX3-1",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX3-1 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "GPX2",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPX2 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FCN2",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCN2 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDK5R1",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK5R1 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PROM1",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROM1 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "EGR1",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGR1 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL12A",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL12A is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FOLH1",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOLH1 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "WRAP53",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WRAP53 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CA9",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA9 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PLAG1",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAG1 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NPEPPS",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPEPPS is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADAM8",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAM8 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "UPK3B",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UPK3B is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "KLK3",
+      "target": "Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK3 is associated with Lung Giant Cell Carcinoma (LUNG_GIANT_CELL_CARCINOMA). Open Targets association score 0.00"
+    }
+  ]
+}

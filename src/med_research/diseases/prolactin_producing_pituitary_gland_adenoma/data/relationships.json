@@ -1,0 +1,448 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201583",
+      "target": "VEGFA",
+      "type": "TARGETS",
+      "description": "BEVACIZUMAB targets VEGFA."
+    },
+    {
+      "source": "PLOD1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLOD1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "ERAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "ERAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NOTCH3",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH3 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "DRD2",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "DRD2 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "LATS1",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LATS1 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGM2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "LRP2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP19A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP19A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "AIP",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIP is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.46"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "HRAS",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "LRP2",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP2 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.27"
+    },
+    {
+      "source": "MEN1",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "SDHA",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDHA is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PRKAA1",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA1 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PRKAA2",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA2 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "PRL",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRL is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "FSHR",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSHR is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "LHCGR",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHCGR is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "DRD2",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DRD2 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "GH1",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TGM2",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM2 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "GGH",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGH is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PROP1",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROP1 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CGB5",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB5 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CGB3",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB3 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "LHX3",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHX3 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "GNRHR",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRHR is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "KISS1R",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KISS1R is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "GNRH1",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRH1 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CGA",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGA is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "LHX9",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHX9 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ESR1",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FANCL",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCL is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CGB2",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB2 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "LHB",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHB is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CGB1",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB1 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CGB8",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB8 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CGB7",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB7 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FSHB",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSHB is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOX2",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX2 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CYP19A1",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP19A1 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "LATS1",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LATS1 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TAF4B",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAF4B is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NR2C2",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR2C2 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZGLP1",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZGLP1 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "B4GALT1",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "B4GALT1 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHST8",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHST8 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRLR",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRLR is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PIEZO1",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIEZO1 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "EREG",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EREG is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "VEGFA",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "VIP",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VIP is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "NPY",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPY is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "POU1F1",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU1F1 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC20A1",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC20A1 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERAL1",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERAL1 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERAS",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERAS is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "INS",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOTCH3",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH3 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPDC1",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPDC1 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CA1",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA1 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EIF6",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF6 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTOR",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DLK1",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DLK1 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SST",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SST is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PLOD1",
+      "target": "Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLOD1 is associated with Prolactin-Producing Pituitary Gland Adenoma (PROLACTIN_PRODUCING_PITUITARY_GLAND_ADENOMA). Open Targets association score 0.01"
+    }
+  ]
+}

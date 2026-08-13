@@ -1,0 +1,454 @@
+{
+  "relationships": [
+    {
+      "source": "RUNX2",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "RUNX2 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "TNFRSF11A",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11A is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "FGF23",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF23 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FGF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLI2",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI2 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "IHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BMP5",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP5 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "ITGB1BP1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB1BP1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K7",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K7 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CHUK",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CHUK is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PTHLH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTHLH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "ITGB1BP1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB1BP1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11A",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11A is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "WNT5A",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT5A is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP27B1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP27B1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "INPPL1",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INPPL1 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.80"
+    },
+    {
+      "source": "ROR2",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROR2 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "FGFR3",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL2A1",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "PHEX",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHEX is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "BMP5",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP5 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNFRSF11A",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF11A is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "HOXD13",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HOXD13 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "RUNX2",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX2 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGF9",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF9 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CILK1",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CILK1 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "RPL38",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL38 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCN2",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCN2 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "IHH",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IHH is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NPR2",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPR2 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTHLH",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTHLH is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "ARSB",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARSB is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TENT5A",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TENT5A is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ACAN",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACAN is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IDUA",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDUA is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "GLI2",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI2 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TBX15",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX15 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ITGB1BP1",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB1BP1 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FLNB",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLNB is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "WNT5A",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT5A is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PHOSPHO1",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHOSPHO1 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "DYM",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DYM is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CBS",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBS is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FGFR2",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZEB1",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "WBP11",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WBP11 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRKAR1A",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAR1A is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FOS",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOS is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "XYLT1",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XYLT1 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TMEM53",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM53 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NABP2",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NABP2 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CXXC5",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXXC5 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SMPD3",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMPD3 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SFRP2",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFRP2 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "LRRK1",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRK1 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TBX4",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX4 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FSTL1",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FSTL1 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHUK",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHUK is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MMP2",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CYP27B1",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP27B1 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "KL",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KL is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CREBBP",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRICKLE1",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRICKLE1 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MAPK3",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK3 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAP2K7",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K7 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGF23",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF23 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DMP1",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMP1 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "AVPR2",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVPR2 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOS1",
+      "target": "opsismodysplasia (OPSISMODYSPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOS1 is associated with opsismodysplasia (OPSISMODYSPLASIA). Open Targets association score 0.00"
+    }
+  ]
+}

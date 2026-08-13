@@ -1,0 +1,556 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1079742",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "ERLOTINIB HYDROCHLORIDE targets EGFR."
+    },
+    {
+      "source": "CHEMBL553",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "ERLOTINIB targets EGFR."
+    },
+    {
+      "source": "CHEMBL1201670",
+      "target": "CSF2RA",
+      "type": "TARGETS",
+      "description": "SARGRAMOSTIM targets CSF2RA."
+    },
+    {
+      "source": "CHEMBL1201670",
+      "target": "CSF2RA",
+      "type": "TARGETS",
+      "description": "SARGRAMOSTIM targets CSF2RA."
+    },
+    {
+      "source": "CDK4",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK4 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CSF2RA",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2RA is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TNFSF10",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF10 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "SHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13RA2",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13RA2 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1RAP",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1RAP is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL13",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL13RA2",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL13RA2 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL4R",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4R is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "APOBEC3B",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOBEC3B is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF10",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF10 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNB1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNB1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "WNT2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.06"
+    },
+    {
+      "source": "EGFR",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "ATM",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "CSF2RA",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2RA is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.04 | Open Targets association score 0.04"
+    },
+    {
+      "source": "CDH2",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH2 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IDH1",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH1 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD274",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IDH2",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH2 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD8A",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ERBB2",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PPM1D",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPM1D is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IFNB1",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNB1 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL13RA2",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13RA2 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PAX3",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX3 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IDH3A",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IDH3A is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FLT3LG",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3LG is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MGMT",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MGMT is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDGFB",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFB is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "H3-3A",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3-3A is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "H3-3B",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3-3B is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "OLIG2",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OLIG2 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1RAP",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1RAP is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOX10",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX10 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL4R",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4R is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNC",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNC is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYC",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "WNT2",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT2 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNFSF10",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF10 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACVR1",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACVR1 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD276",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD276 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TKT",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TKT is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "H3C3",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C3 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "H3C6",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C6 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDK4",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK4 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "H3C2",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C2 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "H3C11",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C11 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "H3C4",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C4 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "H3C8",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C8 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "H3C12",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C12 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "H3C1",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C1 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "H3C10",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C10 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "H3C7",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C7 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PTCH1",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ABCB1",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB1 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ABCG2",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG2 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FGFR1",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYCN",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYCN is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL13",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL13 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FOXG1",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXG1 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD40LG",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "APOBEC3B",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOBEC3B is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SETD2",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD2 is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SHH",
+      "target": "Brain Stem Glioma (BRAIN_STEM_GLIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHH is associated with Brain Stem Glioma (BRAIN_STEM_GLIOMA). Open Targets association score 0.00"
+    }
+  ]
+}

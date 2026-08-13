@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "BIRC5",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BIRC5 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CCNA2",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCNA2 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCNE1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCNE1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCL18",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL18 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL12",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL12 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "IGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "HIF1A",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "HIF1A is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "HIF1A",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF1A is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.06"
+    },
+    {
+      "source": "CDH1",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "DCN",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCN is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "TERT",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "ESR2",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR2 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "EGFR",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.03"
+    },
+    {
+      "source": "MKI67",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "EDN1",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDN1 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "TP53",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "POSTN",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POSTN is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "CA9",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA9 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "CD276",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD276 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "LIF",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIF is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "VEGFA",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "KIT",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "NGF",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NGF is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "MED12",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MED12 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "MME",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MME is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "ERBB2",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "VTCN1",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VTCN1 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "TP63",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.02"
+    },
+    {
+      "source": "BIRC5",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIRC5 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPE65",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPE65 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CKAP4",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CKAP4 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "UVRAG",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UVRAG is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "PGR",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PGR is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CGB5",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB5 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CGA",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGA is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "RB1",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "AR",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCL18",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL18 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPARC",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPARC is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "FLNA",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLNA is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCNA2",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCNA2 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCNB1",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCNB1 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCNE1",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCNE1 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "LDHA",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDHA is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "ILK",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ILK is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "SETD2",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETD2 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "KMT2D",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "TRPS1",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPS1 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "EMP2",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EMP2 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "EMP1",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EMP1 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "EMP3",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EMP3 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACTB",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACTB is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTEN",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "EZH2",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EZH2 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "ERBB4",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB4 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CXCL12",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL12 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "ESR1",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM5",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM5 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD4",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "PCNA",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNA is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD274",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPT",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGF2",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "EREG",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EREG is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIEZO1",
+      "target": "phyllodes tumor (PHYLLODES_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIEZO1 is associated with phyllodes tumor (PHYLLODES_TUMOR). Open Targets association score 0.01"
+    }
+  ]
+}

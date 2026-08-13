@@ -1,0 +1,442 @@
+{
+  "relationships": [
+    {
+      "source": "FGB",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGB is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TM6SF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TM6SF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ZNF285",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF285 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATRAID",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRAID is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL3 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CETP is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "TNFSF13",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF13 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.67"
+    },
+    {
+      "source": "PCSK9",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.67"
+    },
+    {
+      "source": "LDLR",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.67"
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL3 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.57"
+    },
+    {
+      "source": "ABCA1",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.57"
+    },
+    {
+      "source": "LIPG",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPG is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.56"
+    },
+    {
+      "source": "LIPC",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.52"
+    },
+    {
+      "source": "LPA",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "CETP",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETP is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "ABCG8",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG8 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "APOE",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "SORT1",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORT1 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "TIMD4",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMD4 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "SLC22A1",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A1 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.45"
+    },
+    {
+      "source": "CELSR2",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR2 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "APOA5",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.44"
+    },
+    {
+      "source": "TTC39B",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TTC39B is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.43"
+    },
+    {
+      "source": "TM6SF2",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TM6SF2 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "GCKR",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "HNF1A",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "MLXIPL",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLXIPL is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "TNFSF13",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF13 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "GAS6",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAS6 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "ABCA6",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA6 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "ZNF285",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF285 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "MAMSTR",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAMSTR is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "HP",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HP is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "ZPR1",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZPR1 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "APOC3",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC3 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "ASGR1",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASGR1 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "MAFB",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAFB is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "COBLL1",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COBLL1 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "C12orf43",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C12orf43 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "FAM117B",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM117B is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "RSPO3",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO3 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "ABCG5",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCG5 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "TRIB1",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIB1 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "DGAT2",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DGAT2 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "MAP3K1",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K1 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "FGB",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGB is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "ASGR2",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASGR2 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "ATRAID",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRAID is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "APOA1",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "SDC1",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDC1 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "TMPRSS11E",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMPRSS11E is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "HGFAC",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGFAC is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "ZHX3",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZHX3 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "FADS2",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS2 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "ILF3",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ILF3 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "DOK7",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOK7 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "FGA",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGA is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "FUT2",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUT2 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "DNAH11",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH11 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "AKR1C4",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKR1C4 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "SPTY2D1",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTY2D1 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "TBKBP1",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBKBP1 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "ANKRD55",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANKRD55 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "MACO1",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MACO1 is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "MYO5B",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO5B is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "MISFA",
+      "target": "total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MISFA is associated with total lipids in lipoprotein particles measurement  (TOTAL_LIPIDS_IN_LIPOPROTEIN_PARTICLES_MEASUREMENT). Open Targets association score 0.28"
+    }
+  ]
+}

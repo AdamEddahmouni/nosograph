@@ -1,0 +1,502 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CASP8",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP8 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDK12",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK12 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATR",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATR is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MSH2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MSH2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "SMAD3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "AXIN1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "AXIN1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "AXIN2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "AXIN2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MET",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BCL2",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RB1",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CCND1",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EGFR",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CASP8",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP8 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP63",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MTOR",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KLF4",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF4 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATRX",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FLT4",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "DDR2",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDR2 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDK12",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK12 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ZFHX3",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFHX3 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2C",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAPK1",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "DDX3X",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDX3X is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MED12",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MED12 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID1B",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1B is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FANCA",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RBM10",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM10 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTPN11",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CREBBP",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRCA2",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PBRM1",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBRM1 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ROS1",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROS1 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RNF43",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF43 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID2",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID2 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "AXIN1",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AXIN1 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NCOR1",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOR1 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATM",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR2",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CHD4",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD4 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MSH2",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSH2 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERBB2",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KEAP1",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KEAP1 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PLCG1",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCG1 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PALB2",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PALB2 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "STK11",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "STAG2",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAG2 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TRRAP",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRRAP is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ESR1",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESR1 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KDM6A",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM6A is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMAD3",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD3 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NF1",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RUNX1",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RUNX1 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "POLD1",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLD1 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SPEN",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPEN is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATR",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATR is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "AXIN2",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AXIN2 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "JAK2",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "AR",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FOXP1",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP1 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with pharyngeal squamous cell carcinoma (PHARYNGEAL_SQUAMOUS_CELL_CARCINOMA). Open Targets association score 0.28"
+    }
+  ]
+}

@@ -19,12 +19,6 @@
       "description": "SLC39A13 is a component of the Autophagy pathway."
     },
     {
-      "source": "WEE1",
-      "target": "cell-cycle",
-      "type": "PARTICIPATES_IN",
-      "description": "WEE1 is a component of the Cell Cycle Regulation pathway."
-    },
-    {
       "source": "FGF10",
       "target": "coagulation",
       "type": "PARTICIPATES_IN",
@@ -53,12 +47,6 @@
       "target": "dna-repair",
       "type": "PARTICIPATES_IN",
       "description": "ATRX is a component of the DNA Repair pathway."
-    },
-    {
-      "source": "GRM8",
-      "target": "gaba-glutamate",
-      "type": "PARTICIPATES_IN",
-      "description": "GRM8 is a component of the GABA / Glutamate Signaling pathway."
     },
     {
       "source": "ABCC8",
@@ -127,6 +115,12 @@
       "description": "CHUK is a component of the NF-κB Pathway pathway."
     },
     {
+      "source": "RPS6KA3",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "RPS6KA3 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
       "source": "RENBP",
       "target": "renin-angiotensin",
       "type": "PARTICIPATES_IN",
@@ -161,6 +155,18 @@
       "target": "xenobiotic-metabolism",
       "type": "PARTICIPATES_IN",
       "description": "ABCC8 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "WEE1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "WEE1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "GRM8",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRM8 is a component of the GABA / Glutamate Signaling pathway."
     },
     {
       "source": "CACNA1S",
@@ -283,22 +289,16 @@
       "description": "HSF2 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.02"
     },
     {
-      "source": "OPN1LW",
-      "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
-      "type": "ASSOCIATED_WITH",
-      "description": "OPN1LW is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.02"
-    },
-    {
-      "source": "PAG1",
-      "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PAG1 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.02"
-    },
-    {
       "source": "EIF4E",
       "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
       "type": "ASSOCIATED_WITH",
       "description": "EIF4E is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.02"
+    },
+    {
+      "source": "OPN1LW",
+      "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OPN1LW is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.02"
     },
     {
       "source": "PCBP4",
@@ -307,10 +307,10 @@
       "description": "PCBP4 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.02"
     },
     {
-      "source": "RBMXL1",
+      "source": "PAG1",
       "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
       "type": "ASSOCIATED_WITH",
-      "description": "RBMXL1 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.01"
+      "description": "PAG1 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.02"
     },
     {
       "source": "KYAT3",
@@ -319,22 +319,10 @@
       "description": "KYAT3 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.01"
     },
     {
-      "source": "SRRM2",
+      "source": "RBMXL1",
       "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
       "type": "ASSOCIATED_WITH",
-      "description": "SRRM2 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.01"
-    },
-    {
-      "source": "MAK16",
-      "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
-      "type": "ASSOCIATED_WITH",
-      "description": "MAK16 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.01"
-    },
-    {
-      "source": "PNO1",
-      "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PNO1 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.01"
+      "description": "RBMXL1 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.01"
     },
     {
       "source": "RBMS3",
@@ -347,6 +335,24 @@
       "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
       "type": "ASSOCIATED_WITH",
       "description": "PTBP1 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.01"
+    },
+    {
+      "source": "SRRM2",
+      "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRRM2 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.01"
+    },
+    {
+      "source": "PNO1",
+      "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PNO1 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAK16",
+      "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAK16 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.01"
     },
     {
       "source": "ABCC8",
@@ -409,6 +415,18 @@
       "description": "BMP2 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.01"
     },
     {
+      "source": "KATNB1",
+      "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KATNB1 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.01"
+    },
+    {
+      "source": "VRK1",
+      "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VRK1 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.01"
+    },
+    {
       "source": "TSTD1",
       "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
       "type": "ASSOCIATED_WITH",
@@ -433,34 +451,22 @@
       "description": "SLX4 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.01"
     },
     {
-      "source": "VRK1",
-      "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
-      "type": "ASSOCIATED_WITH",
-      "description": "VRK1 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.01"
-    },
-    {
-      "source": "KATNB1",
-      "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
-      "type": "ASSOCIATED_WITH",
-      "description": "KATNB1 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.01"
-    },
-    {
       "source": "RBP4",
       "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
       "type": "ASSOCIATED_WITH",
       "description": "RBP4 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.01"
     },
     {
-      "source": "SUGP1",
-      "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
-      "type": "ASSOCIATED_WITH",
-      "description": "SUGP1 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.01"
-    },
-    {
       "source": "RENBP",
       "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
       "type": "ASSOCIATED_WITH",
       "description": "RENBP is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.01"
+    },
+    {
+      "source": "SUGP1",
+      "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUGP1 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.01"
     },
     {
       "source": "BAP1",
@@ -481,28 +487,10 @@
       "description": "SRCAP is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.01"
     },
     {
-      "source": "TRADD",
-      "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
-      "type": "ASSOCIATED_WITH",
-      "description": "TRADD is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.00"
-    },
-    {
-      "source": "HNRNPDL",
-      "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
-      "type": "ASSOCIATED_WITH",
-      "description": "HNRNPDL is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.00"
-    },
-    {
       "source": "HNRNPC",
       "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
       "type": "ASSOCIATED_WITH",
       "description": "HNRNPC is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.00"
-    },
-    {
-      "source": "ATRX",
-      "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ATRX is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.00"
     },
     {
       "source": "PAX6",
@@ -511,10 +499,46 @@
       "description": "PAX6 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.00"
     },
     {
+      "source": "HNRNPDL",
+      "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNRNPDL is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.00"
+    },
+    {
+      "source": "TRADD",
+      "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRADD is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.00"
+    },
+    {
+      "source": "ATRX",
+      "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.00"
+    },
+    {
       "source": "NF2",
       "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
       "type": "ASSOCIATED_WITH",
       "description": "NF2 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.00"
+    },
+    {
+      "source": "PDPK1",
+      "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDPK1 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.00"
+    },
+    {
+      "source": "HGFAC",
+      "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGFAC is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.00"
+    },
+    {
+      "source": "MITF",
+      "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MITF is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.00"
     },
     {
       "source": "DRD2",
@@ -523,16 +547,22 @@
       "description": "DRD2 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.00"
     },
     {
+      "source": "RPS6KA3",
+      "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPS6KA3 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.00"
+    },
+    {
+      "source": "POLR3A",
+      "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLR3A is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.00"
+    },
+    {
       "source": "GRM8",
       "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
       "type": "ASSOCIATED_WITH",
       "description": "GRM8 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.00"
-    },
-    {
-      "source": "MITF",
-      "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
-      "type": "ASSOCIATED_WITH",
-      "description": "MITF is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.00"
     },
     {
       "source": "WEE1",
@@ -545,12 +575,6 @@
       "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
       "type": "ASSOCIATED_WITH",
       "description": "PHF19 is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.00"
-    },
-    {
-      "source": "HGFAC",
-      "target": "Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI)",
-      "type": "ASSOCIATED_WITH",
-      "description": "HGFAC is associated with Rubinstein-Taybi syndrome (RUBINSTEIN_TAYBI). Open Targets association score 0.00"
     },
     {
       "source": "FOXC1",

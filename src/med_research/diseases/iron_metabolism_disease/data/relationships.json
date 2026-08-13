@@ -1,0 +1,496 @@
+{
+  "relationships": [
+    {
+      "source": "SQSTM1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SQSTM1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "CDKAL1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKAL1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BMP2",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP2 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "BMP6",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP6 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "BMPR2",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMPR2 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "ERFE",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "ERFE is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "HAMP",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "HAMP is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "HFE",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "HFE is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "HJV",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "HJV is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "SLC40A1",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC40A1 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "TFRC",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFRC is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP6",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP6 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "MAPK8",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK8 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "FTH1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "FTH1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "EPAS1",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "EPAS1 is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "HIF1A",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "HIF1A is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "NLRP6",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP6 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "NRSN1",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRSN1 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.43"
+    },
+    {
+      "source": "HFE",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HFE is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.37"
+    },
+    {
+      "source": "PRL",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRL is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.36"
+    },
+    {
+      "source": "HDGFL1",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDGFL1 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.30"
+    },
+    {
+      "source": "SOX4",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX4 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.20"
+    },
+    {
+      "source": "DCDC2",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCDC2 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.11"
+    },
+    {
+      "source": "KIAA0319",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIAA0319 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "CDKAL1",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKAL1 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "ALDH5A1",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDH5A1 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "MRS2",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRS2 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "GPLD1",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPLD1 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "HAMP",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAMP is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "IREB2",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IREB2 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC17A3",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A3 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPC1",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPC1 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATP5MK",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP5MK is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ISCA1",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISCA1 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "LTF",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTF is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "HJV",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HJV is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "BMP6",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP6 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "FTH1",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FTH1 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "GHRL",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHRL is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "BMP2",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP2 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CAV1",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAV1 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TFRC",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFRC is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TF",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NLRP6",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP6 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "LDLR",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MYBPC3",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYBPC3 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC40A1",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC40A1 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "EPAS1",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPAS1 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC17A1",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A1 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "HIF1A",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF1A is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1B",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "BMPR2",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMPR2 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "NCOA4",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOA4 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "EPO",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPO is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP53",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SQSTM1",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SQSTM1 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC48A1",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC48A1 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SAMD4A",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAMD4A is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "AKT1",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "NR1H4",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1H4 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SNRPG",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNRPG is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSEN1",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSEN1 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SCD",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCD is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GABPA",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABPA is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ERFE",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERFE is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ERF",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERF is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "HMOX1",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMOX1 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CP",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CP is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDH5",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH5 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD163",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD163 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPT",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPT is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC7A11",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC7A11 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAPK8",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK8 is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "FYN",
+      "target": "iron metabolism disease (IRON_METABOLISM_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FYN is associated with iron metabolism disease (IRON_METABOLISM_DISEASE). Open Targets association score 0.00"
+    }
+  ]
+}

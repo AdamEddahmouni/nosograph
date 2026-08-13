@@ -1,0 +1,490 @@
+{
+  "relationships": [
+    {
+      "source": "CDKN1C",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1C is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CYP4F2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4F2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CYP4F8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4F8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "GIGYF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "GIGYF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "PRPF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "PRPF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TRAF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CX3CR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CX3CR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "COL4A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL8A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL8A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "SLC2A5",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A5 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "VLDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "VLDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "TRAF7",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF7 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "THSD7A",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THSD7A is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TRAF7",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF7 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "CYP4F11",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4F11 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP4F12",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4F12 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP4F2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4F2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "CYP4F8",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP4F8 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "NMNAT1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NMNAT1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "KCNJ13",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNJ13 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.55"
+    },
+    {
+      "source": "GIGYF2",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIGYF2 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.31"
+    },
+    {
+      "source": "PAX6",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX6 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.08"
+    },
+    {
+      "source": "RHO",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHO is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.07"
+    },
+    {
+      "source": "PDE6B",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE6B is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.07"
+    },
+    {
+      "source": "TMEM98",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM98 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.07"
+    },
+    {
+      "source": "CRB1",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRB1 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.07"
+    },
+    {
+      "source": "VSX2",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VSX2 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "CYP4F8",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4F8 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "PRPH2",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRPH2 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "COL4A1",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A1 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "FOXE3",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXE3 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "GJA8",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA8 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "ATOH7",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATOH7 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "GJE1",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJE1 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "RS1",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RS1 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "CRX",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRX is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "LAMA1",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAMA1 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "CYP4F2",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4F2 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "RPGR",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPGR is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "PDE6A",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDE6A is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "CRYGD",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYGD is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "MFRP",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFRP is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "TULP1",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TULP1 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "MERTK",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MERTK is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "CX3CR1",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CX3CR1 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.06"
+    },
+    {
+      "source": "ARF3",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARF3 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "ROM1",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROM1 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "CYP4F11",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4F11 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "CYP4F12",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP4F12 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "RPGRIP1",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPGRIP1 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "GAPDH",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAPDH is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "VLDLR",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VLDLR is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "CDKN1C",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1C is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "MITF",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MITF is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPARC",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPARC is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "PDHX",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDHX is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "COL8A2",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL8A2 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "ABHD17B",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABHD17B is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "DSCAM",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSCAM is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "CRYGC",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYGC is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "NMNAT1",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NMNAT1 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRPF8",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRPF8 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "RPE65",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPE65 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "TEAD1",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TEAD1 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "NECTIN3",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NECTIN3 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "SEMA4A",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEMA4A is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "RARB",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RARB is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "INTS15",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INTS15 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "ALDH1L1",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALDH1L1 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "LIM2",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIM2 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "NHS",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NHS is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "GDI2",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDI2 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "SLC2A5",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A5 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "THSD7A",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THSD7A is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "ELL2",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELL2 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "TRAF7",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAF7 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "LPCAT1",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPCAT1 is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    },
+    {
+      "source": "NEFL",
+      "target": "snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEFL is associated with snowflake vitreoretinal degeneration (SNOWFLAKE_VITREORETINAL_DEGENERATION). Open Targets association score 0.05"
+    }
+  ]
+}

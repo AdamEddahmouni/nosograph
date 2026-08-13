@@ -1,0 +1,466 @@
+{
+  "relationships": [
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GLI1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "GLI1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "PTCH1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "PTCH1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "ARAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "ARAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LRP1B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "MEN1",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.62"
+    },
+    {
+      "source": "NUTM1",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUTM1 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.37"
+    },
+    {
+      "source": "BRD4",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRD4 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.37"
+    },
+    {
+      "source": "TP53",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "KRAS",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "LRP1B",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1B is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "RB1",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "STK11",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK11 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERBB4",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB4 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTEN",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID1A",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTCH1",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTCH1 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATM",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "BCOR",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCOR is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "PBX1",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBX1 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "KLF4",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF4 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "HGF",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "TCF3",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF3 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "FAT4",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT4 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDC73",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDC73 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRCA1",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "POT1",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POT1 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "SETBP1",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETBP1 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAX",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAX is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2D",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "TSC2",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "CREBBP",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "ZFHX3",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZFHX3 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.28"
+    },
+    {
+      "source": "KEAP1",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KEAP1 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.20"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "HMGA2",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGA2 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "GNAS",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAS is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "EML4",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EML4 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "ALK",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "KIT",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "VHL",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VHL is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "ROS1",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROS1 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "APC",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "WIF1",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WIF1 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.19"
+    },
+    {
+      "source": "CBFA2T3",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBFA2T3 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ARHGEF12",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGEF12 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "EIF1AX",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF1AX is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "BARD1",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BARD1 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "RECQL4",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RECQL4 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ERBB3",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB3 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "CTNNA2",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNA2 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "CSMD3",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSMD3 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "RALGDS",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RALGDS is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "DDB2",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDB2 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "PDGFRA",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRA is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "NUP214",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUP214 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "PSIP1",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSIP1 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "GLI1",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLI1 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "USP8",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "USP8 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "LRIG3",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRIG3 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "MUC16",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC16 is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.18"
+    },
+    {
+      "source": "ARAF",
+      "target": "lung carcinoid tumor (LUNG_CARCINOID_TUMOR)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARAF is associated with lung carcinoid tumor (LUNG_CARCINOID_TUMOR). Open Targets association score 0.18"
+    }
+  ]
+}

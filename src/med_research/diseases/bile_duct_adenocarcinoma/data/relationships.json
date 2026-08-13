@@ -1,0 +1,490 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL4297190",
+      "target": "KDR",
+      "type": "TARGETS",
+      "description": "SURUFATINIB targets KDR."
+    },
+    {
+      "source": "CHEMBL4297190",
+      "target": "FGFR1",
+      "type": "TARGETS",
+      "description": "SURUFATINIB targets FGFR1."
+    },
+    {
+      "source": "CHEMBL4297190",
+      "target": "FLT4",
+      "type": "TARGETS",
+      "description": "SURUFATINIB targets FLT4."
+    },
+    {
+      "source": "CXCR4",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR4 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CHEK2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "CHEK2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR4",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR4 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "TSC1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "SMAD4",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD4 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFBR2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFBR2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "IRF4",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF4 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "EPAS1",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "EPAS1 is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "KDR",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "KDR is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.62"
+    },
+    {
+      "source": "PALB2",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PALB2 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.60"
+    },
+    {
+      "source": "BRCA1",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA1 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.53"
+    },
+    {
+      "source": "ATM",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.44"
+    },
+    {
+      "source": "CHEK2",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHEK2 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.44"
+    },
+    {
+      "source": "SMAD4",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD4 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ARID1A",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "DNAJB1",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAJB1 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "BAP1",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAP1 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PBRM1",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PBRM1 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SRSF3",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRSF3 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PRKACA",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKACA is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "GOPC",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOPC is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "BARD1",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BARD1 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.31"
+    },
+    {
+      "source": "FLT4",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "KDR",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDR is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "FGFR1",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.30"
+    },
+    {
+      "source": "TP53",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "VHL",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VHL is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CAMTA1",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMTA1 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR4",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR4 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PDGFRB",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDGFRB is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MYCN",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYCN is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NKX2-1",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-1 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ZNF521",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF521 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FANCA",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "H3C2",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "H3C2 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EPAS1",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPAS1 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BUB1B",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUB1B is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TRIM24",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM24 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KIT",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FUBP1",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FUBP1 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BCL9L",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL9L is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CHD4",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD4 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "GNA11",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNA11 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TGFBR2",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFBR2 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ZRSR2",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZRSR2 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAP3K13",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K13 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SSX1",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SSX1 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "HMGA2",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGA2 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAP2K2",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K2 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SFRP4",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFRP4 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CIITA",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CIITA is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ATP1A1",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP1A1 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KNL1",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KNL1 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SH3GL1",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3GL1 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TSC1",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC1 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2A",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2A is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CXCR4",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR4 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CLTCL1",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLTCL1 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ABL1",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABL1 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "IRF4",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF4 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RHOA",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHOA is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KLF6",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF6 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CNBP",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNBP is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "EGFR",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "LPP",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPP is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "RBM10",
+      "target": "bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBM10 is associated with bile duct adenocarcinoma (BILE_DUCT_ADENOCARCINOMA). Open Targets association score 0.28"
+    }
+  ]
+}

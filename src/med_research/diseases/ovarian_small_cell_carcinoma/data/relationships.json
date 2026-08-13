@@ -1,0 +1,472 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL3137343",
+      "target": "PDCD1",
+      "type": "TARGETS",
+      "description": "PEMBROLIZUMAB targets PDCD1."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDK4",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK4 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "PTH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "PTHLH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTHLH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "SMARCA4",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.47"
+    },
+    {
+      "source": "TP53",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "WT1",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WT1 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "POLE",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLE is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.19"
+    },
+    {
+      "source": "ATRX",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ASXL1",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "JAK3",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MED12",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MED12 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2A",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2A is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "KMT2D",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "MPL",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPL is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PTPRT",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRT is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "ABL1",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABL1 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "NOTCH2",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH2 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "PDCD1",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.08"
+    },
+    {
+      "source": "SMARCA2",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA2 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.07"
+    },
+    {
+      "source": "SMARCB1",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCB1 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTH",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTH is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD274",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPATA2",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNCA",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KIT",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGFR",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EZH2",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EZH2 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTHLH",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTHLH is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMARCA1",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA1 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TOP2A",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TOP2A is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRAS",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ASS1",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASS1 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRDM9",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM9 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCND1",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDK4",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK4 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC16",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC16 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NBR1",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBR1 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "BRCA2",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RRM1",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RRM1 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CLDN4",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLDN4 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "DICER1",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DICER1 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ERCC1",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC1 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "SMARCC1",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCC1 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "PHF6",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PHF6 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ETV5",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ETV5 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MYC",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYC is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MGMT",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MGMT is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ARID3A",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID3A is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "ARID1A",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "RB1",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "VEGFA",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "DNAH8",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAH8 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "FOXL2",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXL2 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "BRD4",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRD4 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "DNER",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNER is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD8A",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "TSPY1",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSPY1 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAGEA4",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAGEA4 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "NUTM1",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUTM1 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "POU5F1",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU5F1 is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.00"
+    },
+    {
+      "source": "CTAG1A",
+      "target": "Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTAG1A is associated with Ovarian Small Cell Carcinoma (OVARIAN_SMALL_CELL_CARCINOMA). Open Targets association score 0.00"
+    }
+  ]
+}

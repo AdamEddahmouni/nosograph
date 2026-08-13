@@ -50,6 +50,7 @@ CAR_T_SCORES = {
         "DROSHA": 4.0,
         "EFCAB11": 4.0,
         "EIF1AX": 4.0,
+        "EP300": 4.0,
         "ERBB4": 4.0,
         "ERCC2": 4.0,
         "ESR1": 4.0,

@@ -1,12 +1,6 @@
 {
   "relationships": [
     {
-      "source": "CDK13",
-      "target": "cell-cycle",
-      "type": "PARTICIPATES_IN",
-      "description": "CDK13 is a component of the Cell Cycle Regulation pathway."
-    },
-    {
       "source": "CCL22",
       "target": "chemokine-signaling",
       "type": "PARTICIPATES_IN",
@@ -29,6 +23,12 @@
       "target": "coagulation",
       "type": "PARTICIPATES_IN",
       "description": "TNFRSF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TERF2IP",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TERF2IP is a component of the Coagulation Cascade pathway."
     },
     {
       "source": "SLC4A1",
@@ -133,6 +133,12 @@
       "description": "TNFRSF8 is a component of the TNF Signaling pathway."
     },
     {
+      "source": "CDK13",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK13 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
       "source": "ADAM17",
       "target": "ecm-remodeling",
       "type": "PARTICIPATES_IN",
@@ -205,16 +211,16 @@
       "description": "HCFC1 is associated with Kabuki syndrome (KABUKI_SYNDROME). Open Targets association score 0.12"
     },
     {
-      "source": "ZBTB24",
-      "target": "Kabuki syndrome (KABUKI_SYNDROME)",
-      "type": "ASSOCIATED_WITH",
-      "description": "ZBTB24 is associated with Kabuki syndrome (KABUKI_SYNDROME). Open Targets association score 0.12"
-    },
-    {
       "source": "DNMT3B",
       "target": "Kabuki syndrome (KABUKI_SYNDROME)",
       "type": "ASSOCIATED_WITH",
       "description": "DNMT3B is associated with Kabuki syndrome (KABUKI_SYNDROME). Open Targets association score 0.12"
+    },
+    {
+      "source": "ZBTB24",
+      "target": "Kabuki syndrome (KABUKI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB24 is associated with Kabuki syndrome (KABUKI_SYNDROME). Open Targets association score 0.12"
     },
     {
       "source": "FGFR2",
@@ -367,16 +373,16 @@
       "description": "GH1 is associated with Kabuki syndrome (KABUKI_SYNDROME). Open Targets association score 0.01"
     },
     {
-      "source": "FCGR3B",
-      "target": "Kabuki syndrome (KABUKI_SYNDROME)",
-      "type": "ASSOCIATED_WITH",
-      "description": "FCGR3B is associated with Kabuki syndrome (KABUKI_SYNDROME). Open Targets association score 0.01"
-    },
-    {
       "source": "FCGR3A",
       "target": "Kabuki syndrome (KABUKI_SYNDROME)",
       "type": "ASSOCIATED_WITH",
       "description": "FCGR3A is associated with Kabuki syndrome (KABUKI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "FCGR3B",
+      "target": "Kabuki syndrome (KABUKI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR3B is associated with Kabuki syndrome (KABUKI_SYNDROME). Open Targets association score 0.01"
     },
     {
       "source": "CD8A",
@@ -469,16 +475,16 @@
       "description": "RAP1A is associated with Kabuki syndrome (KABUKI_SYNDROME). Open Targets association score 0.01"
     },
     {
-      "source": "CTLA4",
-      "target": "Kabuki syndrome (KABUKI_SYNDROME)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CTLA4 is associated with Kabuki syndrome (KABUKI_SYNDROME). Open Targets association score 0.01"
-    },
-    {
       "source": "ANKRD11",
       "target": "Kabuki syndrome (KABUKI_SYNDROME)",
       "type": "ASSOCIATED_WITH",
       "description": "ANKRD11 is associated with Kabuki syndrome (KABUKI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTLA4",
+      "target": "Kabuki syndrome (KABUKI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTLA4 is associated with Kabuki syndrome (KABUKI_SYNDROME). Open Targets association score 0.01"
     },
     {
       "source": "HNRNPK",
@@ -511,16 +517,22 @@
       "description": "IKZF1 is associated with Kabuki syndrome (KABUKI_SYNDROME). Open Targets association score 0.01"
     },
     {
-      "source": "CDK13",
-      "target": "Kabuki syndrome (KABUKI_SYNDROME)",
-      "type": "ASSOCIATED_WITH",
-      "description": "CDK13 is associated with Kabuki syndrome (KABUKI_SYNDROME). Open Targets association score 0.01"
-    },
-    {
       "source": "EPHB2",
       "target": "Kabuki syndrome (KABUKI_SYNDROME)",
       "type": "ASSOCIATED_WITH",
       "description": "EPHB2 is associated with Kabuki syndrome (KABUKI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "TERF2IP",
+      "target": "Kabuki syndrome (KABUKI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERF2IP is associated with Kabuki syndrome (KABUKI_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDK13",
+      "target": "Kabuki syndrome (KABUKI_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK13 is associated with Kabuki syndrome (KABUKI_SYNDROME). Open Targets association score 0.01"
     },
     {
       "source": "EXOSC9",

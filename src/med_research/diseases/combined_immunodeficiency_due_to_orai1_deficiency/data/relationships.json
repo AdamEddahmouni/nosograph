@@ -1,0 +1,538 @@
+{
+  "relationships": [
+    {
+      "source": "LYN",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LYN is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCR6",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR6 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CCR7",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR7 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "IL15",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL15 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "RASGRP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASGRP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CARD11",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD11 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFATC1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFATC1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKBIA",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKBIA is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "REL",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "REL is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "ICOS",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "ICOS is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LAT",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LAT is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LCK",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LCK is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "PTPN22",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "PTPN22 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCR6",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR6 is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "RORC",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "RORC is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "LTA",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTA is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTB",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTB is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "ABCB1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "ORAI1",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ORAI1 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.75"
+    },
+    {
+      "source": "RAI1",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAI1 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.37"
+    },
+    {
+      "source": "CARD11",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD11 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL2RG",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RG is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "JAK3",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PRKDC",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKDC is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFKB2",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPPL2A",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPPL2A is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NFKB1",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LAT",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAT is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PTPN22",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN22 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "RAG2",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG2 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "STK4",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STK4 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "IKZF1",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "ITGB2",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LMBR1L",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMBR1L is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "REL",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REL is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "LTB",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTB is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "BACH2",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BACH2 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "VAV1",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VAV1 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "LYN",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYN is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFKBIA",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKBIA is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CR2",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CR2 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAP3K14",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K14 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "RAC2",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAC2 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL2",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "RAG1",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAG1 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ICOS",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICOS is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "FLT3LG",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT3LG is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "BCL6",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL6 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL4",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GIMAP1-GIMAP5",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP1-GIMAP5 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GIMAP5",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GIMAP5 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "RORC",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RORC is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "RASGRP1",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASGRP1 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "LCK",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCK is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNF",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "LTA",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTA is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "POU2AF1",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU2AF1 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL15",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL15 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SH2D1A",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2D1A is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "GNAI2",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNAI2 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFNG",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL2RA",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2RA is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ITPKB",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITPKB is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADGRG3",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADGRG3 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFATC1",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFATC1 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "SNRNP40",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNRNP40 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCR6",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR6 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCR7",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR7 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYLD",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYLD is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "MTOR",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZEB1",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRRC8A",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRC8A is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "RHOH",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHOH is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "LIG4",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIG4 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "BCL10",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL10 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "ABCB1",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB1 is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRKCH",
+      "target": "combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCH is associated with combined immunodeficiency due to ORAI1 deficiency (COMBINED_IMMUNODEFICIENCY_DUE_TO_ORAI1_DEFICIENCY). Open Targets association score 0.04"
+    }
+  ]
+}

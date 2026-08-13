@@ -1,0 +1,526 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL86",
+      "target": "DRD2",
+      "type": "TARGETS",
+      "description": "METOCLOPRAMIDE targets DRD2."
+    },
+    {
+      "source": "CHEMBL86",
+      "target": "HTR4",
+      "type": "TARGETS",
+      "description": "METOCLOPRAMIDE targets HTR4."
+    },
+    {
+      "source": "CHEMBL86",
+      "target": "HTR3A",
+      "type": "TARGETS",
+      "description": "METOCLOPRAMIDE targets HTR3A."
+    },
+    {
+      "source": "F2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "F2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "SERPINE1",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SERPINE1 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "IRS1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "IRS1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "KCNJ11",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "KCNJ11 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "BMP1",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "BMP1 is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "FABP2",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "FABP2 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "DRD2",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "DRD2 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "HTR3A",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTR3A is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "HTR4",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTR4 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "MTHFR",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFR is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TGFB3",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB3 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "LRP1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "SULT1A3",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SULT1A3 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "DRD2",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DRD2 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "HTR4",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTR4 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "HTR3A",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTR3A is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.26"
+    },
+    {
+      "source": "PODXL",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PODXL is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "NUAK1",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NUAK1 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "ALX4",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALX4 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "EPCAM",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPCAM is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CALD1",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALD1 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "EFEMP1",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EFEMP1 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "LRP1",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "FOXL1",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXL1 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "BIVM",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIVM is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "BIVM-ERCC5",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BIVM-ERCC5 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ERCC5",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC5 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CFTR",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CFTR is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "FERMT1",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FERMT1 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "NKX2-3",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-3 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SCRIB",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCRIB is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PKD1",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKD1 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "BMP1",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BMP1 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ICAM1",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "AEBP1",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AEBP1 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "MTHFR",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFR is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CRP",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CALCA",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "PCYT1A",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCYT1A is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADD1",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADD1 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "AFP",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "FABP2",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FABP2 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS3",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFKB1",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "POMC",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS1",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS1 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOS2",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACHE",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACHE is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GOT2",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOT2 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCHE",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCHE is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "F2",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "F2 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "CAMK1D",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMK1D is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB3",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB3 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "GCG",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCG is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IRS1",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRS1 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IRS2",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRS2 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IFNG",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "GNB3",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNB3 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "GLP2R",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLP2R is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADRB2",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB2 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "FLNA",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLNA is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "KCNJ11",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNJ11 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "HSPD1",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSPD1 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL1B",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "GFAP",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SULT1A3",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SULT1A3 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "NPPA",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPA is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CPT2",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPT2 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MEA1",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEA1 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "HAAO",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAAO is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "TP53",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SERPINE1",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINE1 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC25A1",
+      "target": "gastroschisis (GASTROSCHISIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC25A1 is associated with gastroschisis (GASTROSCHISIS). Open Targets association score 0.00"
+    }
+  ]
+}

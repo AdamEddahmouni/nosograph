@@ -13,6 +13,18 @@
       "description": "CD79A is a component of the B Cell Receptor Signaling pathway."
     },
     {
+      "source": "FGF23",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF23 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
       "source": "SMOC1",
       "target": "hedgehog",
       "type": "PARTICIPATES_IN",
@@ -223,12 +235,6 @@
       "description": "CXCR5 is a component of the Chemokine Signaling pathway."
     },
     {
-      "source": "FGF23",
-      "target": "coagulation",
-      "type": "PARTICIPATES_IN",
-      "description": "FGF23 is a component of the Coagulation Cascade pathway."
-    },
-    {
       "source": "INS",
       "target": "glucose-metabolism",
       "type": "PARTICIPATES_IN",
@@ -307,12 +313,6 @@
       "description": "LST1 is associated with rubella (RUBELLA). Open Targets association score 0.02"
     },
     {
-      "source": "RHCE",
-      "target": "rubella (RUBELLA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "RHCE is associated with rubella (RUBELLA). Open Targets association score 0.02"
-    },
-    {
       "source": "RHD",
       "target": "rubella (RUBELLA)",
       "type": "ASSOCIATED_WITH",
@@ -323,6 +323,12 @@
       "target": "rubella (RUBELLA)",
       "type": "ASSOCIATED_WITH",
       "description": "DDX21 is associated with rubella (RUBELLA). Open Targets association score 0.02"
+    },
+    {
+      "source": "RHCE",
+      "target": "rubella (RUBELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RHCE is associated with rubella (RUBELLA). Open Targets association score 0.02"
     },
     {
       "source": "EBI3",
@@ -343,12 +349,6 @@
       "description": "SAA2 is associated with rubella (RUBELLA). Open Targets association score 0.02"
     },
     {
-      "source": "LIPC",
-      "target": "rubella (RUBELLA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "LIPC is associated with rubella (RUBELLA). Open Targets association score 0.02"
-    },
-    {
       "source": "HES1",
       "target": "rubella (RUBELLA)",
       "type": "ASSOCIATED_WITH",
@@ -359,6 +359,12 @@
       "target": "rubella (RUBELLA)",
       "type": "ASSOCIATED_WITH",
       "description": "HMGCL is associated with rubella (RUBELLA). Open Targets association score 0.02"
+    },
+    {
+      "source": "LIPC",
+      "target": "rubella (RUBELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPC is associated with rubella (RUBELLA). Open Targets association score 0.02"
     },
     {
       "source": "TDRD7",
@@ -403,16 +409,16 @@
       "description": "CD4 is associated with rubella (RUBELLA). Open Targets association score 0.01"
     },
     {
-      "source": "MIP",
-      "target": "rubella (RUBELLA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "MIP is associated with rubella (RUBELLA). Open Targets association score 0.01"
-    },
-    {
       "source": "FOXE3",
       "target": "rubella (RUBELLA)",
       "type": "ASSOCIATED_WITH",
       "description": "FOXE3 is associated with rubella (RUBELLA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MIP",
+      "target": "rubella (RUBELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIP is associated with rubella (RUBELLA). Open Targets association score 0.01"
     },
     {
       "source": "MRC1",
@@ -457,12 +463,6 @@
       "description": "ERVW-1 is associated with rubella (RUBELLA). Open Targets association score 0.01"
     },
     {
-      "source": "HPD",
-      "target": "rubella (RUBELLA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "HPD is associated with rubella (RUBELLA). Open Targets association score 0.01"
-    },
-    {
       "source": "CCN6",
       "target": "rubella (RUBELLA)",
       "type": "ASSOCIATED_WITH",
@@ -481,6 +481,12 @@
       "description": "VSX1 is associated with rubella (RUBELLA). Open Targets association score 0.01"
     },
     {
+      "source": "HPD",
+      "target": "rubella (RUBELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPD is associated with rubella (RUBELLA). Open Targets association score 0.01"
+    },
+    {
       "source": "GPT",
       "target": "rubella (RUBELLA)",
       "type": "ASSOCIATED_WITH",
@@ -493,16 +499,16 @@
       "description": "ALB is associated with rubella (RUBELLA). Open Targets association score 0.01"
     },
     {
-      "source": "JAGN1",
-      "target": "rubella (RUBELLA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "JAGN1 is associated with rubella (RUBELLA). Open Targets association score 0.01"
-    },
-    {
       "source": "CPQ",
       "target": "rubella (RUBELLA)",
       "type": "ASSOCIATED_WITH",
       "description": "CPQ is associated with rubella (RUBELLA). Open Targets association score 0.01"
+    },
+    {
+      "source": "JAGN1",
+      "target": "rubella (RUBELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAGN1 is associated with rubella (RUBELLA). Open Targets association score 0.01"
     },
     {
       "source": "GAN",
@@ -529,16 +535,28 @@
       "description": "OAS1 is associated with rubella (RUBELLA). Open Targets association score 0.01"
     },
     {
+      "source": "PVR",
+      "target": "rubella (RUBELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PVR is associated with rubella (RUBELLA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ART4",
+      "target": "rubella (RUBELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ART4 is associated with rubella (RUBELLA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GFAP",
+      "target": "rubella (RUBELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with rubella (RUBELLA). Open Targets association score 0.01"
+    },
+    {
       "source": "TGFB1",
       "target": "rubella (RUBELLA)",
       "type": "ASSOCIATED_WITH",
       "description": "TGFB1 is associated with rubella (RUBELLA). Open Targets association score 0.01"
-    },
-    {
-      "source": "VIM",
-      "target": "rubella (RUBELLA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "VIM is associated with rubella (RUBELLA). Open Targets association score 0.01"
     },
     {
       "source": "IVNS1ABP",
@@ -553,16 +571,10 @@
       "description": "PTPN11 is associated with rubella (RUBELLA). Open Targets association score 0.01"
     },
     {
-      "source": "DHRS2",
+      "source": "VIM",
       "target": "rubella (RUBELLA)",
       "type": "ASSOCIATED_WITH",
-      "description": "DHRS2 is associated with rubella (RUBELLA). Open Targets association score 0.01"
-    },
-    {
-      "source": "GFAP",
-      "target": "rubella (RUBELLA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "GFAP is associated with rubella (RUBELLA). Open Targets association score 0.01"
+      "description": "VIM is associated with rubella (RUBELLA). Open Targets association score 0.01"
     },
     {
       "source": "RRP12",
@@ -571,16 +583,10 @@
       "description": "RRP12 is associated with rubella (RUBELLA). Open Targets association score 0.01"
     },
     {
-      "source": "ART4",
+      "source": "DHRS2",
       "target": "rubella (RUBELLA)",
       "type": "ASSOCIATED_WITH",
-      "description": "ART4 is associated with rubella (RUBELLA). Open Targets association score 0.01"
-    },
-    {
-      "source": "PVR",
-      "target": "rubella (RUBELLA)",
-      "type": "ASSOCIATED_WITH",
-      "description": "PVR is associated with rubella (RUBELLA). Open Targets association score 0.01"
+      "description": "DHRS2 is associated with rubella (RUBELLA). Open Targets association score 0.01"
     },
     {
       "source": "AFP",
@@ -601,16 +607,28 @@
       "description": "IL4 is associated with rubella (RUBELLA). Open Targets association score 0.01"
     },
     {
+      "source": "CAP1",
+      "target": "rubella (RUBELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAP1 is associated with rubella (RUBELLA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SERPINB6",
+      "target": "rubella (RUBELLA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINB6 is associated with rubella (RUBELLA). Open Targets association score 0.01"
+    },
+    {
       "source": "APC",
       "target": "rubella (RUBELLA)",
       "type": "ASSOCIATED_WITH",
       "description": "APC is associated with rubella (RUBELLA). Open Targets association score 0.01"
     },
     {
-      "source": "CAP1",
+      "source": "FGF2",
       "target": "rubella (RUBELLA)",
       "type": "ASSOCIATED_WITH",
-      "description": "CAP1 is associated with rubella (RUBELLA). Open Targets association score 0.01"
+      "description": "FGF2 is associated with rubella (RUBELLA). Open Targets association score 0.01"
     },
     {
       "source": "LNPEP",

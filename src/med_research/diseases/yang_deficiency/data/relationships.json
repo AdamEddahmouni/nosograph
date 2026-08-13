@@ -1,0 +1,544 @@
+{
+  "relationships": [
+    {
+      "source": "BAX",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BAX is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "GTF2H3",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "GTF2H3 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MBL2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "MBL2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "PLOD1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLOD1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GRM5",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRM5 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "INSR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INSR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "ERAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "ERAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFKB2",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB2 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "THRB",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THRB is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "THRB",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "THRB is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "CYP3A4",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP3A4 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "GSTM1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GSTM1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "AQP2",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AQP2 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.03"
+    },
+    {
+      "source": "POMC",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "ALB",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CYP3A4",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP3A4 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "FANCA",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL2",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "FXN",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FXN is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "BAX",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAX is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NR3C1",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C1 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "FAS",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "KAT2B",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KAT2B is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MBL2",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBL2 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD4",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "AVPR2",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AVPR2 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPK3",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK3 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GSTM1",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSTM1 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "INSR",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INSR is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADIPOQ",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOQ is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CREBBP",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "BRD2",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRD2 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NPPB",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPB is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SAA1",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAA1 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ABCA1",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCA1 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CDH1",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ZBTB7C",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB7C is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GTF2H3",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GTF2H3 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SAA2",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAA2 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRAS",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL4",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD8A",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRL",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRL is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGFBP4",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGFBP4 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ADIPOR1",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOR1 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "AKT1",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CST3",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CST3 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NFKB2",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB2 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGFBP2",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGFBP2 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PPARD",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARD is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PLOD1",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLOD1 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "THRB",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THRB is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CORT",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CORT is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ISYNA1",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISYNA1 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACSL1",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACSL1 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "RGS6",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RGS6 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "VEGFA",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GRM5",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRM5 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PCNA",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCNA is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GHRL",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GHRL is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NFKB1",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOD1",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD1 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "BRAF",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CXCL8",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NOS2",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ERAS",
+      "target": "yang deficiency (YANG_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERAS is associated with yang deficiency (YANG_DEFICIENCY). Open Targets association score 0.00"
+    }
+  ]
+}

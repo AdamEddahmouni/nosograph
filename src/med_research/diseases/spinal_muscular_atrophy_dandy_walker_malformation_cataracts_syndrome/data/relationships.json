@@ -1,0 +1,418 @@
+{
+  "relationships": [
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "FGF9",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF9 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "COL4A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "SELENOF",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELENOF is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELENON",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELENON is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "FABP3",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "FABP3 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "RAF1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RAF1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MTHFS",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFS is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TDRD7",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "TDRD7 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "FOXE3",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXE3 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "CRYGD",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYGD is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "CRYBB2",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYBB2 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "PAX6",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX6 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "CRYAA",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYAA is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "HSF4",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSF4 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "CRYGC",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYGC is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "NHS",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NHS is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.07"
+    },
+    {
+      "source": "GJA8",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA8 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "MIP",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIP is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "LIM2",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIM2 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "FOXC1",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXC1 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CRYAB",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYAB is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "TRPM3",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPM3 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.06"
+    },
+    {
+      "source": "CRYGA",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYGA is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "GJA3",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJA3 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CRYGS",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYGS is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CRYGB",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYGB is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CRYBA2",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYBA2 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "CPOX",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPOX is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ABCD1",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCD1 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SIPA1L3",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIPA1L3 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "DNAJB4",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNAJB4 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "BCAR3",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCAR3 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "LSS",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LSS is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TDRD7",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TDRD7 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PANK4",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PANK4 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NCOA6",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOA6 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "LCTL",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCTL is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "DMD",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMD is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GJE1",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GJE1 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CLCC1",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLCC1 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "LGR4",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGR4 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FGF9",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF9 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TPM2",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TPM2 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SELENOF",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELENOF is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "MBNL1",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MBNL1 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "HERC1",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HERC1 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "P2RX7",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RX7 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RAF1",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAF1 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RAB35",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAB35 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "GMNN",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GMNN is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SORD",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORD is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PRMT8",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRMT8 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TBCE",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBCE is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "LCP2",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCP2 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD7",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD7 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZNF182",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF182 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FABP3",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FABP3 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FAM216A",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAM216A is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "UAP1",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UAP1 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "MACROD1",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MACROD1 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "SELENON",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELENON is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "BFSP1",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BFSP1 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "RARB",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RARB is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "COL4A2",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A2 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ERCC2",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERCC2 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "RB1",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MTHFS",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFS is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "UQCRB",
+      "target": "spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UQCRB is associated with spinal muscular atrophy-Dandy-Walker malformation-cataracts syndrome (SPINAL_MUSCULAR_ATROPHY_DANDY_WALKER_MALFORMATION_CATARACTS_SYNDROME). Open Targets association score 0.03"
+    }
+  ]
+}

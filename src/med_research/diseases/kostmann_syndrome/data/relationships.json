@@ -1,0 +1,520 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CSF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "CSF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IRF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "NCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "NCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ATM",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATM is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "G6PC3",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "G6PC3 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "ITGAL",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAL is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT5B",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT5B is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "CERK",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "CERK is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "HTRA2",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTRA2 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD47",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD47 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD82",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD82 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "ITGAL",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAL is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGB2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "MYD88",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "MYD88 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "IRF8",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "HAX1",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAX1 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.82"
+    },
+    {
+      "source": "GFI1",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFI1 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SAMD9L",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAMD9L is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "RAC2",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAC2 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.05"
+    },
+    {
+      "source": "SPI1",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPI1 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CSF3",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TP53",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "TET2",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TET2 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ARHGAP15",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP15 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "FHIT",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FHIT is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "PML",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PML is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "CYBA",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYBA is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "NF1",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "ELANE",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELANE is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.04"
+    },
+    {
+      "source": "HR",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HR is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "BUB1B",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUB1B is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "BUB1B-PAK6",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BUB1B-PAK6 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SETDB2",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SETDB2 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "G6PC3",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "G6PC3 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ATM",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATM is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ASXL1",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASXL1 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PLAC8",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAC8 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHD7",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHD7 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "KMT2A",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2A is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTEN",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "IKZF1",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "BACH2",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BACH2 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CERK",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CERK is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "VTCN1",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VTCN1 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "JAK3",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK3 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CAMP",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMP is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZSWIM1",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZSWIM1 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "IRF8",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF8 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CEBPA",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEBPA is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "GMDS",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GMDS is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SIX1",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIX1 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "DCLRE1A",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCLRE1A is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "TMEM127",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM127 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "XRCC5",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XRCC5 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "SIPA1",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIPA1 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CREBBP",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "EMX2",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EMX2 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD47",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD47 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CXCR2",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR2 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "ITGAM",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAM is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "NCR1",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCR1 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "MYD88",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYD88 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTPRC",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPRC is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD82",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD82 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.03"
+    },
+    {
+      "source": "CSF3R",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3R is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.02"
+    },
+    {
+      "source": "CSF2",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF2 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "BCL2",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTPN11",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN11 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "HTRA2",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTRA2 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.01"
+    },
+    {
+      "source": "ITGAL",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAL is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "STAT5B",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT5B is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "ITGB2",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB2 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRIPTO3",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRIPTO3 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL2",
+      "target": "Kostmann syndrome (KOSTMANN_SYNDROME)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL2 is associated with Kostmann syndrome (KOSTMANN_SYNDROME). Open Targets association score 0.00"
+    }
+  ]
+}

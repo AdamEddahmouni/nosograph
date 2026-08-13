@@ -1,0 +1,532 @@
+{
+  "relationships": [
+    {
+      "source": "TNFRSF11B",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "SREBF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SREBF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GRINA",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRINA is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "DPP4",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "DPP4 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "GLP1R",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GLP1R is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "INSIG2",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INSIG2 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "TFRC",
+      "target": "hepcidin-iron",
+      "type": "PARTICIPATES_IN",
+      "description": "TFRC is a component of the Hepcidin / Iron Homeostasis pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "ICAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL3 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ANGPTL8",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL8 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CETP is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "FABP2",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "FABP2 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PPARG",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PPARG is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "ACE2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "MTHFR",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFR is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNL3",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNL3 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CRP",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.09"
+    },
+    {
+      "source": "FTO",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FTO is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.08"
+    },
+    {
+      "source": "NR1H4",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1H4 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.08"
+    },
+    {
+      "source": "CMIP",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMIP is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.08"
+    },
+    {
+      "source": "LECT2",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LECT2 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.08"
+    },
+    {
+      "source": "CASR",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASR is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.07"
+    },
+    {
+      "source": "ANGPTL3",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL3 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.07"
+    },
+    {
+      "source": "SPARCL1",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPARCL1 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.07"
+    },
+    {
+      "source": "CETP",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETP is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.07"
+    },
+    {
+      "source": "PPARG",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARG is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.07"
+    },
+    {
+      "source": "TF",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TF is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.07"
+    },
+    {
+      "source": "FABP2",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FABP2 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.07"
+    },
+    {
+      "source": "PPARA",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARA is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.07"
+    },
+    {
+      "source": "LEP",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.07"
+    },
+    {
+      "source": "APOE",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.07"
+    },
+    {
+      "source": "AOPEP",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOPEP is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.07"
+    },
+    {
+      "source": "IFNL3",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNL3 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.06"
+    },
+    {
+      "source": "CHI3L1",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHI3L1 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.06"
+    },
+    {
+      "source": "ENHO",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENHO is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.06"
+    },
+    {
+      "source": "NR1H3",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR1H3 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.06"
+    },
+    {
+      "source": "PON1",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PON1 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.06"
+    },
+    {
+      "source": "ALB",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.06"
+    },
+    {
+      "source": "PCSK9",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.06"
+    },
+    {
+      "source": "MTHFR",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFR is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.06"
+    },
+    {
+      "source": "RXRA",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RXRA is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.06"
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF11B is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.05"
+    },
+    {
+      "source": "NPPB",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPPB is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.05"
+    },
+    {
+      "source": "TNF",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.05"
+    },
+    {
+      "source": "ANGPTL8",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL8 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.05"
+    },
+    {
+      "source": "APOB",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.05"
+    },
+    {
+      "source": "ACE",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL10",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.05"
+    },
+    {
+      "source": "ACE2",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE2 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.05"
+    },
+    {
+      "source": "ASAH1",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASAH1 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.05"
+    },
+    {
+      "source": "APOC3",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC3 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.05"
+    },
+    {
+      "source": "INSIG2",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INSIG2 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.05"
+    },
+    {
+      "source": "NECTIN2",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NECTIN2 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.05"
+    },
+    {
+      "source": "INS",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.04"
+    },
+    {
+      "source": "KCTD10",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCTD10 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.04"
+    },
+    {
+      "source": "TFRC",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TFRC is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD4",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.04"
+    },
+    {
+      "source": "SREBF2",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SREBF2 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.04"
+    },
+    {
+      "source": "ADIPOQ",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOQ is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.04"
+    },
+    {
+      "source": "EPO",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPO is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.04"
+    },
+    {
+      "source": "GLP1R",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLP1R is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.04"
+    },
+    {
+      "source": "APOA1",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA1 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.04"
+    },
+    {
+      "source": "CST3",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CST3 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.04"
+    },
+    {
+      "source": "MMP9",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.04"
+    },
+    {
+      "source": "APOA5",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRIB3",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIB3 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.04"
+    },
+    {
+      "source": "GRINA",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRINA is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.04"
+    },
+    {
+      "source": "GPT",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPT is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.04"
+    },
+    {
+      "source": "LPA",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.04"
+    },
+    {
+      "source": "PPARD",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPARD is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.04"
+    },
+    {
+      "source": "SEPSECS",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEPSECS is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.04"
+    },
+    {
+      "source": "FNDC5",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FNDC5 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.04"
+    },
+    {
+      "source": "TCF7L2",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF7L2 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.04"
+    },
+    {
+      "source": "DPP4",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPP4 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.04"
+    },
+    {
+      "source": "SHBG",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHBG is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.04"
+    },
+    {
+      "source": "ICAM1",
+      "target": "inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM1 is associated with inherited lipid metabolism disorder (INHERITED_LIPID_METABOLISM_DISORDER). Open Targets association score 0.04"
+    }
+  ]
+}

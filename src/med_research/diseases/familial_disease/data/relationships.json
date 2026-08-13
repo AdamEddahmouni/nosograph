@@ -1,0 +1,484 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "SQSTM1",
+      "target": "autophagy",
+      "type": "PARTICIPATES_IN",
+      "description": "SQSTM1 is a component of the Autophagy pathway."
+    },
+    {
+      "source": "HLA-DRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "HLA-DRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "EIF2S2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EIF2S2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "RNF213",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "RNF213 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C4BPA",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C4BPA is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MATR3",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "MATR3 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "COL1A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL1A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL3A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL3A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "APOB",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOB is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "FGFR2",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR2 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "CARD14",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "CARD14 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP3 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "REN",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "REN is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "THPO",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THPO is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFAIP3 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "ABCB6",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ABCB6 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "APP",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APP is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "SCN4A",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN4A is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NOD2",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOD2 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHCHD2",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHCHD2 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSAT1",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSAT1 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PLAG1",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAG1 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "KLK3",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLK3 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "NPEPPS",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPEPPS is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PROS1",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROS1 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SQSTM1",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SQSTM1 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PSEN1",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSEN1 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SDHD",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDHD is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "FADS1",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS1 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CR1",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CR1 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "FGFR2",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR2 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "FADS2",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FADS2 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRNP",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRNP is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "COL3A1",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL3A1 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "RNF213",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF213 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNFAIP3",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFAIP3 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "EIF2S2",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF2S2 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ABCB6",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABCB6 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "C4BPA",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C4BPA is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRDX2",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDX2 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CARD14",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CARD14 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "LRRK2",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRK2 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SOD1",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD1 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CALCA",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MATR3",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MATR3 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00 | Open Targets association score 0.00"
+    },
+    {
+      "source": "SNCA",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "NEFH",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEFH is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "HLA-DRB1",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLA-DRB1 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GATA2",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATA2 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "OPTN",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OPTN is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CTSD",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSD is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "COL1A1",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL1A1 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CRYGD",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRYGD is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "HDGFL2",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDGFL2 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "FST",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FST is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "AR",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "THPO",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THPO is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALMS1",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALMS1 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PRKAR1A",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAR1A is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TNF",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "BCL2",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "REN",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "REN is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MKRN3",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKRN3 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "APOB",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOB is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "AIP",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AIP is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SCN1A",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SCN1A is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "NEFL",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEFL is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "RBMS3",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBMS3 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGF2",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TLR4",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAK16",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAK16 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "PINK1",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PINK1 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "AOPEP",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOPEP is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SRRM2",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRRM2 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SUCLA2",
+      "target": "familial disease (FAMILIAL_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUCLA2 is associated with familial disease (FAMILIAL_DISEASE). Open Targets association score 0.00"
+    }
+  ]
+}

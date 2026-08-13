@@ -39,18 +39,6 @@
       "references": []
     },
     {
-      "id": "coagulation",
-      "name": "Coagulation Cascade",
-      "description": "Plasma coagulation factors and fibrinolysis; a hub for cardiovascular and thrombotic disease.",
-      "key_components": [
-        "SERPINE1"
-      ],
-      "therapeutic_targets": [
-        "SERPINE1"
-      ],
-      "references": []
-    },
-    {
       "id": "ecm-remodeling",
       "name": "ECM Remodeling",
       "description": "Matrix metalloproteinases and extracellular matrix turnover in tissue remodeling and fibrosis.",
@@ -73,10 +61,12 @@
       "name": "Glucose Metabolism / Insulin Secretion",
       "description": "Pancreatic β-cell function, insulin secretion, and glycemic control.",
       "key_components": [
-        "ABCC8"
+        "ABCC8",
+        "INS"
       ],
       "therapeutic_targets": [
-        "ABCC8"
+        "ABCC8",
+        "INS"
       ],
       "references": []
     },
@@ -211,6 +201,18 @@
         "ABCC11",
         "ABCC8",
         "GSTM1"
+      ],
+      "references": []
+    },
+    {
+      "id": "coagulation",
+      "name": "Coagulation Cascade",
+      "description": "Plasma coagulation factors and fibrinolysis; a hub for cardiovascular and thrombotic disease.",
+      "key_components": [
+        "SERPINE1"
+      ],
+      "therapeutic_targets": [
+        "SERPINE1"
       ],
       "references": []
     }

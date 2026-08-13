@@ -1,0 +1,406 @@
+{
+  "relationships": [
+    {
+      "source": "CDK2",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK2 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RAD51C",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "RAD51C is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GADD45G",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GADD45G is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "INSL3",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INSL3 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "DHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "DHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "PTH2",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTH2 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "HSD17B3",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HSD17B3 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.82"
+    },
+    {
+      "source": "AMH",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMH is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "AR",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AR is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "AMHR2",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AMHR2 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.08"
+    },
+    {
+      "source": "FKBP4",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FKBP4 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "DHH",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHH is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "KISS1R",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KISS1R is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "SRY",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SRY is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "GADD45G",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GADD45G is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "MAP7",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP7 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.07"
+    },
+    {
+      "source": "GNRHR",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRHR is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "INSL3",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INSL3 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "RSPO1",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSPO1 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "FANCL",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCL is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "KISS1",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KISS1 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "KIT",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "NR5A1",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR5A1 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "SPO11",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPO11 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "LHCGR",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHCGR is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "ROS1",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROS1 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "DMC1",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DMC1 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "DNMT3L",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT3L is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CDK2",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK2 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "SPATA22",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA22 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "PTH2",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTH2 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "KIF18A",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIF18A is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "LHX9",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHX9 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "RAD51C",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAD51C is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "NR0B1",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR0B1 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "SYCP2",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYCP2 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "TRIP13",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIP13 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "POLR3H",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POLR3H is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "NSMF",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NSMF is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CGB5",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB5 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "SERPINA5",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SERPINA5 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "KCTD13",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCTD13 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CGB3",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB3 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CGB7",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB7 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CGB8",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB8 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CGB2",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB2 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "CGB1",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CGB1 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "LHB",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHB is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.06"
+    },
+    {
+      "source": "SOX8",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX8 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "SYCP1",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYCP1 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "HMGA1",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGA1 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "HFM1",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HFM1 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NOS3",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS3 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "VRK1",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VRK1 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "PATZ1",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PATZ1 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "DAZ4",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAZ4 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "DAZ1",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAZ1 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "DAZ2",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAZ2 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "DAZ3",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAZ3 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "DAZL",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DAZL is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "NANOS3",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NANOS3 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD9",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD9 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "LGR4",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGR4 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "XKR8",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XKR8 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "GNRH1",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRH1 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.05"
+    },
+    {
+      "source": "TAC3",
+      "target": "46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TAC3 is associated with 46,XY disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency (46_XY_DISORDER_OF_SEX_DEVELOPMENT_DUE_TO_17_BETA_HYDROXYSTEROID_DEHYDROGENASE_3_DEFICIENCY). Open Targets association score 0.05"
+    }
+  ]
+}

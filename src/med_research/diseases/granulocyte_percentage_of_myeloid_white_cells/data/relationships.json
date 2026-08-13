@@ -1,0 +1,484 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2A1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2A1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "SIGLEC9",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "SIGLEC9 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL6",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL6 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "IRF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "CCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CX3CR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CX3CR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CXCR2",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR2 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "IL17RA",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17RA is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP12",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP12 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "ITGA4",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA4 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "IL17RA",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17RA is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGA4",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGA4 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNFRSF13B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF13B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF1A",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF1A is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IRF8",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IRF8 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "NLRP12",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP12 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "TCF7L2",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF7L2 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CSF1R",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF1R is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.50"
+    },
+    {
+      "source": "CSF3R",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3R is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.49"
+    },
+    {
+      "source": "S1PR4",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S1PR4 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.48"
+    },
+    {
+      "source": "MPO",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MPO is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.48"
+    },
+    {
+      "source": "IKZF1",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IKZF1 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.45"
+    },
+    {
+      "source": "IRF8",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRF8 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.44"
+    },
+    {
+      "source": "IL17RA",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17RA is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.44"
+    },
+    {
+      "source": "FOXO1",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXO1 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.42"
+    },
+    {
+      "source": "S1PR3",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S1PR3 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.42"
+    },
+    {
+      "source": "OSER1",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OSER1 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.41"
+    },
+    {
+      "source": "CCR2",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCR2 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.39"
+    },
+    {
+      "source": "EVI5",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EVI5 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.39"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.39"
+    },
+    {
+      "source": "RPN1",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPN1 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.39"
+    },
+    {
+      "source": "UBASH3B",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UBASH3B is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.38"
+    },
+    {
+      "source": "PLAUR",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLAUR is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.38"
+    },
+    {
+      "source": "DEFA1B",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEFA1B is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.37"
+    },
+    {
+      "source": "LYZ",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYZ is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.37"
+    },
+    {
+      "source": "COMMD7",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COMMD7 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.36"
+    },
+    {
+      "source": "CXCL6",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL6 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.36"
+    },
+    {
+      "source": "CXCR2",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR2 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.36"
+    },
+    {
+      "source": "ITGA4",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGA4 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.36"
+    },
+    {
+      "source": "TRIM37",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM37 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.36"
+    },
+    {
+      "source": "TCF7L2",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF7L2 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.36"
+    },
+    {
+      "source": "LSP1",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LSP1 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.36"
+    },
+    {
+      "source": "CELA3A",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELA3A is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.35"
+    },
+    {
+      "source": "NBEAL2",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NBEAL2 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.35"
+    },
+    {
+      "source": "TNFRSF13B",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF13B is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.35"
+    },
+    {
+      "source": "SIGLEC9",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIGLEC9 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.35"
+    },
+    {
+      "source": "LRRC25",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRC25 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.35"
+    },
+    {
+      "source": "DCAF12",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCAF12 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.35"
+    },
+    {
+      "source": "ERG",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERG is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.35"
+    },
+    {
+      "source": "CAPN3",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAPN3 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.35"
+    },
+    {
+      "source": "NFE2",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.35"
+    },
+    {
+      "source": "GGT5",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGT5 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.35"
+    },
+    {
+      "source": "CX3CR1",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CX3CR1 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.35"
+    },
+    {
+      "source": "TYMP",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TYMP is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.35"
+    },
+    {
+      "source": "KDELR2",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDELR2 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.35"
+    },
+    {
+      "source": "HLX",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HLX is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.35"
+    },
+    {
+      "source": "GPR35",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPR35 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.34"
+    },
+    {
+      "source": "GSDMA",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMA is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.34"
+    },
+    {
+      "source": "ID2",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ID2 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.34"
+    },
+    {
+      "source": "MAP3K19",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K19 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.34"
+    },
+    {
+      "source": "BEND3",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BEND3 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.34"
+    },
+    {
+      "source": "MSANTD5",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSANTD5 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.34"
+    },
+    {
+      "source": "NINJ2",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NINJ2 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.34"
+    },
+    {
+      "source": "TNFRSF1A",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF1A is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.34"
+    },
+    {
+      "source": "FCGR2B",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGR2B is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.34"
+    },
+    {
+      "source": "ADRB2",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB2 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.34"
+    },
+    {
+      "source": "MARK3",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MARK3 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.33"
+    },
+    {
+      "source": "GLMN",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLMN is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.33"
+    },
+    {
+      "source": "CMKLR1",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CMKLR1 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.33"
+    },
+    {
+      "source": "PTRH2",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTRH2 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.33"
+    },
+    {
+      "source": "NLRP12",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP12 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.33"
+    },
+    {
+      "source": "DEFA3",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DEFA3 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.33"
+    },
+    {
+      "source": "ANK1",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANK1 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.33"
+    },
+    {
+      "source": "EIF4E3",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF4E3 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.33"
+    },
+    {
+      "source": "ENSA",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENSA is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.33"
+    },
+    {
+      "source": "PROK2",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PROK2 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.33"
+    },
+    {
+      "source": "BCL2A1",
+      "target": "granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2A1 is associated with granulocyte percentage of myeloid white cells (GRANULOCYTE_PERCENTAGE_OF_MYELOID_WHITE_CELLS). Open Targets association score 0.33"
+    }
+  ]
+}

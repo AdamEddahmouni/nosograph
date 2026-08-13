@@ -1,0 +1,598 @@
+{
+  "relationships": [
+    {
+      "source": "CASP3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "VWF",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "VWF is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MMP1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "SMOC1",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SMOC1 is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ITGB3",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB3 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "AKT3",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT3 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "CTH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "CTH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD28",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD28 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL23A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL23A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "ITGAM",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGAM is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "ITGB3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "ITGB3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGFA",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFA is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF1A",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF1A is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFIH1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFIH1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "APCS",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APCS is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "PTX3",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTX3 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.10"
+    },
+    {
+      "source": "CD8A",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "IL17A",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "CLEC7A",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLEC7A is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "CD4",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "CD28",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD28 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "AGT",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "MYO10",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYO10 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TREM1",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TREM1 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CXCL8",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MMP1",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP1 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "MTOR",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CRP",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ALB",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALB is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "NLRX1",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRX1 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "FOXE3",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXE3 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "S100A9",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A9 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "AFP",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AFP is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SP6",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SP6 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ALX4",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALX4 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PITX1",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PITX1 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "FREM2",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FREM2 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TNF",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD40LG",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL6",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "LGALS2",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS2 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ZBTB16",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZBTB16 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TGFA",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFA is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SMOC1",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMOC1 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IFIH1",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFIH1 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "MMP9",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ITGB3",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGB3 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "APCS",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APCS is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL4",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL10",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL1B",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CALCA",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCA is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "UROD",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UROD is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "VWF",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VWF is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL1A",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1A is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IFNG",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "NLRP3",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "PFKFB3",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PFKFB3 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "AKT3",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT3 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CASP3",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP3 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL37",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL37 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL23A",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL23A is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "ITGAM",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ITGAM is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNFRSF1A",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF1A is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CTH",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTH is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "IFI44L",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFI44L is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CPA1",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPA1 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CTNND1",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNND1 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "CSE1L",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSE1L is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "BCAR1",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCAR1 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.02"
+    },
+    {
+      "source": "ENSG00000288534",
+      "target": "Ito hypomelanosis (ITO_HYPOMELANOSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENSG00000288534 is associated with Ito hypomelanosis (ITO_HYPOMELANOSIS). Open Targets association score 0.02"
+    }
+  ]
+}

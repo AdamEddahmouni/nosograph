@@ -1,0 +1,568 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL20",
+      "target": "CA4",
+      "type": "TARGETS",
+      "description": "ACETAZOLAMIDE targets CA4."
+    },
+    {
+      "source": "CHEMBL46",
+      "target": "HTR3A",
+      "type": "TARGETS",
+      "description": "ONDANSETRON targets HTR3A."
+    },
+    {
+      "source": "CHEMBL20",
+      "target": "CA2",
+      "type": "TARGETS",
+      "description": "ACETAZOLAMIDE targets CA2."
+    },
+    {
+      "source": "CHEMBL1189679",
+      "target": "HTR3A",
+      "type": "TARGETS",
+      "description": "PALONOSETRON targets HTR3A."
+    },
+    {
+      "source": "CHEMBL289469",
+      "target": "HTR3A",
+      "type": "TARGETS",
+      "description": "GRANISETRON targets HTR3A."
+    },
+    {
+      "source": "CHEMBL20",
+      "target": "CA12",
+      "type": "TARGETS",
+      "description": "ACETAZOLAMIDE targets CA12."
+    },
+    {
+      "source": "CHEMBL20",
+      "target": "CA1",
+      "type": "TARGETS",
+      "description": "ACETAZOLAMIDE targets CA1."
+    },
+    {
+      "source": "CASP3",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP3 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "EIF2A",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EIF2A is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "EIF2AK3",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "EIF2AK3 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "FGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "HAVCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "HAVCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "PLOD1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "PLOD1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GLP1R",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GLP1R is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "NR3C2",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "NR3C2 is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "HTR3A",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTR3A is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "MTHFR",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "MTHFR is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "CYP3A5",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP3A5 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "HTR3A",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTR3A is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.35"
+    },
+    {
+      "source": "CA1",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA1 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.07"
+    },
+    {
+      "source": "CA12",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA12 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.07"
+    },
+    {
+      "source": "CA2",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA2 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.07"
+    },
+    {
+      "source": "CA4",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA4 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.07"
+    },
+    {
+      "source": "SLC22A10",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC22A10 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.02"
+    },
+    {
+      "source": "CSF3",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSF3 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GLP1R",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLP1R is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PON1",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PON1 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "HAVCR1",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAVCR1 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GABPA",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABPA is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SOD1",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOD1 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "HMOX1",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMOX1 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CAT",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAT is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP2",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL10",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNCA",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDCD1",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPATA2",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "LCN2",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LCN2 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP3A5",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP3A5 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NR3C2",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NR3C2 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "EIF2A",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF2A is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGFR",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTHFR",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTHFR is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKAB1",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAB1 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "EIF2AK3",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EIF2AK3 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "GPX4",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPX4 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "SIRT3",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT3 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKAA1",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA1 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPHS1",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPHS1 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGF2",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF2 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKAA2",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAA2 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "KL",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KL is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ATF4",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATF4 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MIF",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MIF is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CRP",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "FASLG",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "ANGPT1",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPT1 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD274",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFKB1",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.01"
+    },
+    {
+      "source": "MCAT",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCAT is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "CASP3",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP3 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL6",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "TGFB1",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "GOT1",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GOT1 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "SLC17A5",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC17A5 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "NOS2",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "PLOD1",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLOD1 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ANXA1",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANXA1 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ACE",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.00"
+    },
+    {
+      "source": "ASAH1",
+      "target": "nephrotoxicity (NEPHROTOXICITY)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASAH1 is associated with nephrotoxicity (NEPHROTOXICITY). Open Targets association score 0.00"
+    }
+  ]
+}

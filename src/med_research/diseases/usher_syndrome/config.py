@@ -33,6 +33,7 @@ CAR_T_SCORES = {
         "AMELX": 4.0,
         "AMELY": 4.0,
         "ARSG": 4.0,
+        "ATF6": 4.0,
         "ATP2B2": 4.0,
         "ATP6V1B1": 4.0,
         "BBS1": 4.0,

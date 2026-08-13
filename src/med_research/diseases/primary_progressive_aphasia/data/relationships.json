@@ -1,0 +1,484 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL636",
+      "target": "ACHE",
+      "type": "TARGETS",
+      "description": "RIVASTIGMINE targets ACHE."
+    },
+    {
+      "source": "CHEMBL502",
+      "target": "ACHE",
+      "type": "TARGETS",
+      "description": "DONEPEZIL targets ACHE."
+    },
+    {
+      "source": "C9orf72",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "C9orf72 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "RNF213",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "RNF213 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "GRM2",
+      "target": "gaba-glutamate",
+      "type": "PARTICIPATES_IN",
+      "description": "GRM2 is a component of the GABA / Glutamate Signaling pathway."
+    },
+    {
+      "source": "INS",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "INS is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL33",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL33 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "POMC",
+      "target": "opioid-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "POMC is a component of the Opioid Signaling pathway."
+    },
+    {
+      "source": "SLC6A3",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC6A3 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "GRN",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRN is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.49"
+    },
+    {
+      "source": "MAPT",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPT is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.06"
+    },
+    {
+      "source": "NOS2",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS2 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "NOS1",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOS1 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "APOE",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "TARDBP",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TARDBP is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "AOPEP",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AOPEP is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL33",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL33 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "NEFL",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEFL is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IL17A",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "RNF213",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RNF213 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CLRN1",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CLRN1 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "FOXP2",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP2 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "RPL17",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PRNP",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRNP is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNF",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "PICK1",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PICK1 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "C9orf72",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C9orf72 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "VEGFA",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ACHE",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACHE is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGFR3",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PRKCA",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKCA is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SORL1",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORL1 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC6A3",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A3 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AGO2",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGO2 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VSX1",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VSX1 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "HPD",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HPD is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCN6",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCN6 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FOXP1",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP1 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TBK1",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBK1 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KIAA0319",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIAA0319 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ENO2",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENO2 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGFR",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NPY",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPY is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB1",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTA2",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTA2 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP73",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP73 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "S100B",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100B is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GFAP",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GFAP is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSEN1",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSEN1 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ANXA11",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANXA11 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "LGALS3",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LGALS3 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "POMC",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POMC is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SLC6A2",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC6A2 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ELK3",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ELK3 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "GRM2",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GRM2 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EPHB1",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EPHB1 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SYP",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYP is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "APP",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APP is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNCA",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDCD1",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPATA2",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SUCLA2",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUCLA2 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "APOC1",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOC1 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VCP",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VCP is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP9",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "INS",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "INS is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFIB",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFIB is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFIC",
+      "target": "Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFIC is associated with Primary progressive aphasia (PRIMARY_PROGRESSIVE_APHASIA). Open Targets association score 0.01"
+    }
+  ]
+}

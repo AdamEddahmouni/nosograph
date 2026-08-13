@@ -1,0 +1,646 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1201583",
+      "target": "VEGFA",
+      "type": "TARGETS",
+      "description": "BEVACIZUMAB targets VEGFA."
+    },
+    {
+      "source": "CHEMBL1201733",
+      "target": "FGFR1",
+      "type": "TARGETS",
+      "description": "PAZOPANIB HYDROCHLORIDE targets FGFR1."
+    },
+    {
+      "source": "CHEMBL1201560",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "TREATS",
+      "description": "PEGINTERFERON ALFA-2A is phase 4 / marketed for Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)."
+    },
+    {
+      "source": "CHEMBL1201752",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "TREATS",
+      "description": "IXABEPILONE is phase 4 / marketed for Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)."
+    },
+    {
+      "source": "CHEMBL1683590",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "TREATS",
+      "description": "ERIBULIN is phase 4 / marketed for Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)."
+    },
+    {
+      "source": "CHEMBL1683590",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "TREATS",
+      "description": "ERIBULIN is phase 4 / marketed for Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)."
+    },
+    {
+      "source": "CHEMBL1742992",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "TREATS",
+      "description": "BLINATUMOMAB is phase 4 / marketed for Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)."
+    },
+    {
+      "source": "CHEMBL1789941",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "TREATS",
+      "description": "RUXOLITINIB is phase 4 / marketed for Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)."
+    },
+    {
+      "source": "CHEMBL2110725",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "TREATS",
+      "description": "VINFLUNINE is phase 3 for Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)."
+    },
+    {
+      "source": "CHEMBL225071",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "TREATS",
+      "description": "RALTITREXED is phase 4 / marketed for Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)."
+    },
+    {
+      "source": "CASP9",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "CASP9 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ADAMTS4",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS4 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ADAMTS5",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS5 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL9A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL9A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL9A3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL9A3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP13",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP13 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "MMP3",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP3 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "TIMP1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TIMP1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "TSLP",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "TSLP is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "RORA",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "RORA is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "FAS",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FAS is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "NFASC",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NFASC is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "HIF1A",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "HIF1A is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "NLRP3",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NLRP3 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.66"
+    },
+    {
+      "source": "NLRP3",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NLRP3 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.07"
+    },
+    {
+      "source": "IGF1",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "MEN1",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MEN1 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.05"
+    },
+    {
+      "source": "RORA",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RORA is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "MYH10",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH10 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "VEGFA",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "UNC5C",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UNC5C is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.04"
+    },
+    {
+      "source": "TP53",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "GAS1",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAS1 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "VDR",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VDR is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "ASTN1",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASTN1 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "RINT1",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RINT1 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SUN1",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUN1 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "SPTBN1",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPTBN1 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.03"
+    },
+    {
+      "source": "IGF1R",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1R is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP3",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP3 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TGFB1",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "HIF1A",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HIF1A is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKT1",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPM1D",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPM1D is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "NFASC",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFASC is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGFR3",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "LEP",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LEP is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL6",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1A",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1A is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "CILP",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CILP is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MTOR",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADIPOQ",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADIPOQ is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ASPN",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASPN is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADAMTS5",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS5 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "ADAMTS4",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS4 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "KCNT2",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNT2 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "DNMT1",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DNMT1 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TSLP",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSLP is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP2",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP2 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPK3",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK3 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "GDF15",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GDF15 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "FGFR1",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR1 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "FANCA",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FANCA is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "FXN",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FXN is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "FASLG",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "FAS",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAS is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNF",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "EGFR",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.01"
+    },
+    {
+      "source": "IL1B",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "COL9A2",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL9A2 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "FOXO1",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXO1 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "SUFU",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUFU is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CHST3",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHST3 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "MMP13",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP13 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "COL9A3",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL9A3 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "TIMP1",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TIMP1 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "IL10",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "CASP9",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASP9 is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.00"
+    },
+    {
+      "source": "GSDMC",
+      "target": "Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMC is associated with Lhermitte-Duclos disease (LHERMITTE_DUCLOS_DISEASE). Open Targets association score 0.00"
+    }
+  ]
+}

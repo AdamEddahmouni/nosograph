@@ -64,6 +64,7 @@ CAR_T_SCORES = {
         "GRIN1": 4.0,
         "GRIN2A": 4.0,
         "GRIN2B": 4.0,
+        "GRIN2C": 4.0,
         "GYPC": 4.0,
         "HMGCR": 4.0,
         "HSD17B13": 4.0,

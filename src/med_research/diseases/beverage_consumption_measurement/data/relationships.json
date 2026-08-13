@@ -1,0 +1,418 @@
+{
+  "relationships": [
+    {
+      "source": "CACNA1B",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "CACNA1B is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "RYR2",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "RYR2 is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "ATRAID",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRAID is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "GCKR",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "GCKR is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IRS1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "IRS1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "SLC2A13",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A13 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PTGR3",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "PTGR3 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "CYP1A2",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP1A2 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.51"
+    },
+    {
+      "source": "CYP1A2",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP1A2 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.50"
+    },
+    {
+      "source": "RYR2",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RYR2 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.48"
+    },
+    {
+      "source": "TCF4",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF4 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "NEGR1",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NEGR1 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.47"
+    },
+    {
+      "source": "PCDH1",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCDH1 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "CADM1",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CADM1 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "SDCCAG8",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SDCCAG8 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "NTRK2",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK2 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.46"
+    },
+    {
+      "source": "VRK2",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VRK2 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "HAT1",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HAT1 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "SATB1",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SATB1 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "BCL11B",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL11B is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "FTO",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FTO is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.42"
+    },
+    {
+      "source": "SIRPA",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRPA is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "ARPP21",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARPP21 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "ERGIC3",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERGIC3 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.41"
+    },
+    {
+      "source": "SOX6",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX6 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.40"
+    },
+    {
+      "source": "SIX3",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIX3 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "GCKR",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GCKR is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.39"
+    },
+    {
+      "source": "RBFOX1",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RBFOX1 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.38"
+    },
+    {
+      "source": "COX7B2",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COX7B2 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "MGMT",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MGMT is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "CADM2",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CADM2 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "KHDRBS2",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KHDRBS2 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.37"
+    },
+    {
+      "source": "ATRAID",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRAID is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "SANBR",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SANBR is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "MCHR1",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCHR1 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.36"
+    },
+    {
+      "source": "SPATS2L",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATS2L is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "TSPAN5",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSPAN5 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "PTGR3",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTGR3 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "NMS",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NMS is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "MLXIPL",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLXIPL is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "AHR",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHR is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.35"
+    },
+    {
+      "source": "POU3F1",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POU3F1 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "CCDC68",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCDC68 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "DPH6",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DPH6 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.34"
+    },
+    {
+      "source": "SLC2A13",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A13 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "MYORG",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYORG is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "CSRNP3",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CSRNP3 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.33"
+    },
+    {
+      "source": "ST18",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST18 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "IRS1",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IRS1 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "RSRC1",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RSRC1 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "ZNF521",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF521 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.32"
+    },
+    {
+      "source": "CACNA1B",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CACNA1B is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "SEMA6D",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SEMA6D is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "NRXN3",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRXN3 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "RIT2",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RIT2 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.31"
+    },
+    {
+      "source": "DOCK1",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DOCK1 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "ESAM",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESAM is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "NRGN",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRGN is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.30"
+    },
+    {
+      "source": "PKHD1",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PKHD1 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "SND1",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SND1 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "LRRTM4",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRTM4 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "CTSS",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTSS is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.29"
+    },
+    {
+      "source": "TMEM161B",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM161B is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "PSD4",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSD4 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "FOXP1",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXP1 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "FHL3",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FHL3 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.28"
+    },
+    {
+      "source": "NCOA1",
+      "target": "beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NCOA1 is associated with beverage consumption measurement (BEVERAGE_CONSUMPTION_MEASUREMENT). Open Targets association score 0.28"
+    }
+  ]
+}

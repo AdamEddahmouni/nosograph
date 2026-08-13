@@ -1,0 +1,562 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL2105759",
+      "target": "JAK2",
+      "type": "TARGETS",
+      "description": "BARICITINIB targets JAK2."
+    },
+    {
+      "source": "CHEMBL2105759",
+      "target": "JAK1",
+      "type": "TARGETS",
+      "description": "BARICITINIB targets JAK1."
+    },
+    {
+      "source": "SYK",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "SYK is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CCL27",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL27 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL12",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL12 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL8",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL8 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR1",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR1 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CD46",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CD46 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "CXCR1",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR1 is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "ATRNL1",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRNL1 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "IL10",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL10 is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL1B",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL1B is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "IL4",
+      "target": "il4-il13",
+      "type": "PARTICIPATES_IN",
+      "description": "IL4 is a component of the IL-4 / IL-13 (Th2) Pathway pathway."
+    },
+    {
+      "source": "IL6",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "MADCAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "MADCAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "SELL",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "SELL is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "VCAM1",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "VCAM1 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "JAK1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "PIAS1",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "PIAS1 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "NFKB1",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "NFKB1 is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "AKT3",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT3 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD46",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD46 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TLR2",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR2 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "TLR4",
+      "target": "tlr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TLR4 is a component of the TLR / Innate Sensing pathway."
+    },
+    {
+      "source": "FASLG",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASLG is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNG",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNG is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "NAT10",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "NAT10 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "S100A7",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A7 is associated with mastitis (MASTITIS). Open Targets association score 0.09"
+    },
+    {
+      "source": "JAK2",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with mastitis (MASTITIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "LYZ",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LYZ is associated with mastitis (MASTITIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "TNF",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with mastitis (MASTITIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "IL6",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6 is associated with mastitis (MASTITIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "AHR",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AHR is associated with mastitis (MASTITIS). Open Targets association score 0.08"
+    },
+    {
+      "source": "JAK1",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK1 is associated with mastitis (MASTITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "VCAM1",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VCAM1 is associated with mastitis (MASTITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "SYK",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SYK is associated with mastitis (MASTITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "SLPI",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLPI is associated with mastitis (MASTITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "ALPP",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALPP is associated with mastitis (MASTITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "PDLIM3",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDLIM3 is associated with mastitis (MASTITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "ASRGL1",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASRGL1 is associated with mastitis (MASTITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "CCL27",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL27 is associated with mastitis (MASTITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "NAT10",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NAT10 is associated with mastitis (MASTITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "ATRNL1",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRNL1 is associated with mastitis (MASTITIS). Open Targets association score 0.07"
+    },
+    {
+      "source": "TLR2",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR2 is associated with mastitis (MASTITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "PIAS1",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIAS1 is associated with mastitis (MASTITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "NFKB1",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFKB1 is associated with mastitis (MASTITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL1A",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1A is associated with mastitis (MASTITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "IL4",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL4 is associated with mastitis (MASTITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "FHIT",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FHIT is associated with mastitis (MASTITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "TLR4",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TLR4 is associated with mastitis (MASTITIS). Open Targets association score 0.06"
+    },
+    {
+      "source": "HCAR2",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HCAR2 is associated with mastitis (MASTITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CXCR1",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR1 is associated with mastitis (MASTITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "GPBAR1",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GPBAR1 is associated with mastitis (MASTITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CD4",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with mastitis (MASTITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "IL17A",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with mastitis (MASTITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "LTF",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTF is associated with mastitis (MASTITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "HP",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HP is associated with mastitis (MASTITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CXCL8",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL8 is associated with mastitis (MASTITIS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CRP",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRP is associated with mastitis (MASTITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "BDNF",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BDNF is associated with mastitis (MASTITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "KDM6B",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM6B is associated with mastitis (MASTITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IFNG",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNG is associated with mastitis (MASTITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IL10",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL10 is associated with mastitis (MASTITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "AKT3",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT3 is associated with mastitis (MASTITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "IGF1R",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1R is associated with mastitis (MASTITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "NPR2",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NPR2 is associated with mastitis (MASTITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "NFE2L2",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFE2L2 is associated with mastitis (MASTITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "GABPA",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GABPA is associated with mastitis (MASTITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRAPPC9",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAPPC9 is associated with mastitis (MASTITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "PTK2B",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTK2B is associated with mastitis (MASTITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "SNAI1",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNAI1 is associated with mastitis (MASTITIS). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD46",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD46 is associated with mastitis (MASTITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CXCL12",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL12 is associated with mastitis (MASTITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "LAP3",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAP3 is associated with mastitis (MASTITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOAT1",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOAT1 is associated with mastitis (MASTITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ATP5MK",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATP5MK is associated with mastitis (MASTITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "HHEX",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HHEX is associated with mastitis (MASTITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CAMP",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CAMP is associated with mastitis (MASTITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CP",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CP is associated with mastitis (MASTITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SELL",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SELL is associated with mastitis (MASTITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PLA2G1B",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLA2G1B is associated with mastitis (MASTITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHI3L1",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHI3L1 is associated with mastitis (MASTITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SFTPA1",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFTPA1 is associated with mastitis (MASTITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SFTPA2",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SFTPA2 is associated with mastitis (MASTITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "FASLG",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASLG is associated with mastitis (MASTITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL1B",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL1B is associated with mastitis (MASTITIS). Open Targets association score 0.03"
+    },
+    {
+      "source": "MADCAM1",
+      "target": "mastitis (MASTITIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MADCAM1 is associated with mastitis (MASTITIS). Open Targets association score 0.03"
+    }
+  ]
+}

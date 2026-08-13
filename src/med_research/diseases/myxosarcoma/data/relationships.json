@@ -1,0 +1,490 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "WNT16",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT16 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "APLN",
+      "target": "cardiac-ion-channel",
+      "type": "PARTICIPATES_IN",
+      "description": "APLN is a component of the Cardiac Ion Channel / Conduction pathway."
+    },
+    {
+      "source": "SH3RF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "SH3RF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TNFRSF8",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF8 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ADAMTS1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ADAMTS5",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS5 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL15A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL15A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "LOXL4",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "LOXL4 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "RELN",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "RELN is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "ICAM5",
+      "target": "integrin-adhesion",
+      "type": "PARTICIPATES_IN",
+      "description": "ICAM5 is a component of the Integrin / Cell Adhesion pathway."
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL4 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "MAP2K6",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K6 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RASIP1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RASIP1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "RELN",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELN is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "NFASC",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NFASC is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF8",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF8 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "ISG15",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "ISG15 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "LRP5",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP5 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "WNT16",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "WNT16 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "ST6GALNAC3",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ST6GALNAC3 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.05"
+    },
+    {
+      "source": "TRIM58",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRIM58 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CPA4",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CPA4 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "OXTR",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OXTR is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "P2RY1",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "P2RY1 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "EDNRB",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRB is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "MGAM",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MGAM is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "DSG2",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DSG2 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SHOX2",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SHOX2 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLCB4",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLCB4 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CD93",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD93 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.04"
+    },
+    {
+      "source": "MGAT4A",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MGAT4A is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ESAM",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ESAM is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "OR2W3",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OR2W3 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "EXTL1",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EXTL1 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "NFASC",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NFASC is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADAMTS5",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS5 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CALB2",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALB2 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "BCL6B",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL6B is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "RASIP1",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RASIP1 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FOXG1",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FOXG1 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "APLN",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APLN is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CDA",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDA is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "LAPTM5",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LAPTM5 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "RELN",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELN is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ICAM5",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ICAM5 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ENPEP",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENPEP is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "BCL2",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ENSG00000280143",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENSG00000280143 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CASS4",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CASS4 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "GUCY1A2",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GUCY1A2 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "COL15A1",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL15A1 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "GAS6",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GAS6 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MYH15",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYH15 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CKB",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CKB is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MAP2K6",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K6 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "LOXL4",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LOXL4 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ISG15",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ISG15 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "C15orf48",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C15orf48 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHI3L1",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHI3L1 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CHPF",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHPF is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ASS1",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASS1 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CNTNAP3",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CNTNAP3 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.03"
+    },
+    {
+      "source": "FZD7",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FZD7 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "KIT",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "LMOD1",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMOD1 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "LRP5",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP5 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNFRSF8",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF8 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ADAMTS1",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS1 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "NRK",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRK is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SAA1",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SAA1 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL4 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SH3RF2",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH3RF2 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "LRRC8B",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRRC8B is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CA9",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CA9 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "KRT17",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT17 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "KCNK6",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNK6 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CALCRL",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CALCRL is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "NETO2",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NETO2 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "WNT16",
+      "target": "myxosarcoma (MYXOSARCOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WNT16 is associated with myxosarcoma (MYXOSARCOMA). Open Targets association score 0.02"
+    }
+  ]
+}

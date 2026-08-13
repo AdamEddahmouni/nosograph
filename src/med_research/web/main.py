@@ -25,6 +25,7 @@ from med_research.web.config import (
     CORS_ORIGINS,
     DEBUG,
     HOST,
+    OPENAPI_ENABLED,
     PORT,
 )
 from med_research.web.error_handlers import register_error_handlers
@@ -79,9 +80,9 @@ app = FastAPI(
     description=API_DESCRIPTION,
     openapi_tags=API_TAGS,
     lifespan=lifespan,
-    docs_url="/api/docs",
-    redoc_url="/api/redoc",
-    openapi_url="/api/openapi.json",
+    docs_url="/api/docs" if OPENAPI_ENABLED else None,
+    redoc_url="/api/redoc" if OPENAPI_ENABLED else None,
+    openapi_url="/api/openapi.json" if OPENAPI_ENABLED else None,
 )
 
 # ── CORS ────────────────────────────────────────────────────────────────────

@@ -1,0 +1,520 @@
+{
+  "relationships": [
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "FGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "FGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IGF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "C4A",
+      "target": "complement",
+      "type": "PARTICIPATES_IN",
+      "description": "C4A is a component of the Complement Cascade pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "ADAMTS2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL2A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL2A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "DHH",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "DHH is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "HRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K7",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K7 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RAF1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RAF1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CD",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CD is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CG",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CG is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "ACE",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "ACE is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "AGT",
+      "target": "renin-angiotensin",
+      "type": "PARTICIPATES_IN",
+      "description": "AGT is a component of the Renin-Angiotensin System pathway."
+    },
+    {
+      "source": "PTHLH",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "PTHLH is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "LTBP1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "FASN",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "FASN is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "LTBP1",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LTBP1 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.70"
+    },
+    {
+      "source": "HRAS",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HRAS is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.62"
+    },
+    {
+      "source": "BRAF",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.44"
+    },
+    {
+      "source": "SATB2",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SATB2 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.05"
+    },
+    {
+      "source": "CDON",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDON is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ALX1",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALX1 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "TRPS1",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRPS1 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "ZEB1",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZEB1 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.04"
+    },
+    {
+      "source": "VAX1",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VAX1 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "SIRT1",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRT1 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "WWP2",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WWP2 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "LTBP1",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LTBP1 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "CRKL",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CRKL is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ADAMTS2",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS2 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PRDM16",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRDM16 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TMEM107",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TMEM107 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "TCOF1",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCOF1 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ENAM",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENAM is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "COL2A1",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL2A1 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "MSX1",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSX1 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "PTHLH",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTHLH is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "BAZ1B",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BAZ1B is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "MITF",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MITF is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "GLDC",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GLDC is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "GNRH1",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GNRH1 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "ASPH",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASPH is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "DHH",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DHH is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.03"
+    },
+    {
+      "source": "MC1R",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MC1R is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "IGF1",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF1 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "PPP2R3B",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP2R3B is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.01 | Open Targets association score 0.01"
+    },
+    {
+      "source": "FGF2",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGF2 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ASAH1",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ASAH1 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "ACE",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACE is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.01"
+    },
+    {
+      "source": "NODAL",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NODAL is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CD40LG",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "ALK",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "IGF2",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "KRAS",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "SPP1",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPP1 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MLANA",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MLANA is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PMEL",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PMEL is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "S100B",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100B is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "NF1",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "S100A1",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "S100A1 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "C4A",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "C4A is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CD",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CD is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "BRCA2",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "UQCC2",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UQCC2 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "AKT1",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "FASN",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FASN is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MAP2K7",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K7 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CG",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CG is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "MKI67",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "AGT",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AGT is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "CCND1",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "RAF1",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAF1 is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.00"
+    },
+    {
+      "source": "HGF",
+      "target": "large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HGF is associated with large congenital melanocytic nevus (LARGE_CONGENITAL_MELANOCYTIC_NEVUS). Open Targets association score 0.00"
+    }
+  ]
+}

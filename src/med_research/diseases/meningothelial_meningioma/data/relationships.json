@@ -1,0 +1,580 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL1278146",
+      "target": "FLT4",
+      "type": "TARGETS",
+      "description": "FAMITINIB targets FLT4."
+    },
+    {
+      "source": "CHEMBL2110732",
+      "target": "ERBB2",
+      "type": "TARGETS",
+      "description": "DACOMITINIB ANHYDROUS targets ERBB2."
+    },
+    {
+      "source": "CHEMBL1201560",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "TREATS",
+      "description": "PEGINTERFERON ALFA-2A is phase 4 / marketed for Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)."
+    },
+    {
+      "source": "CHEMBL1201752",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "TREATS",
+      "description": "IXABEPILONE is phase 4 / marketed for Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)."
+    },
+    {
+      "source": "CHEMBL1683590",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "TREATS",
+      "description": "ERIBULIN is phase 4 / marketed for Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)."
+    },
+    {
+      "source": "CHEMBL1683590",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "TREATS",
+      "description": "ERIBULIN is phase 4 / marketed for Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)."
+    },
+    {
+      "source": "CHEMBL1742992",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "TREATS",
+      "description": "BLINATUMOMAB is phase 4 / marketed for Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)."
+    },
+    {
+      "source": "CHEMBL1789941",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "TREATS",
+      "description": "RUXOLITINIB is phase 4 / marketed for Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)."
+    },
+    {
+      "source": "CHEMBL2110725",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "TREATS",
+      "description": "VINFLUNINE is phase 3 for Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)."
+    },
+    {
+      "source": "CHEMBL225071",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "TREATS",
+      "description": "RALTITREXED is phase 4 / marketed for Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "NF2 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TRAF7",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF7 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ATRX",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "ATRX is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "BRCA2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "BRCA2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "CHEK2",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "CHEK2 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "SMO",
+      "target": "hedgehog",
+      "type": "PARTICIPATES_IN",
+      "description": "SMO is a component of the Hedgehog Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "FGFR3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "FGFR3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "TRAF7",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF7 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NOTCH1",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH1 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "NOTCH2",
+      "target": "notch-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "NOTCH2 is a component of the Notch Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "MTOR",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "MTOR is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CA",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CA is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3CB",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3CB is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PIK3R1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PIK3R1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TSC2",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "TSC2 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "TRAF7",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TRAF7 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "APC",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "APC is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "LRP1B",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "LRP1B is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "NF2",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF2 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "AKT1",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TRAF7",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TRAF7 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KLF4",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLF4 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SMO",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMO is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ROS1",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROS1 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TSC2",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC2 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NOTCH1",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH1 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KMT2C",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2C is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "FAT1",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FAT1 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "LZTR1",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LZTR1 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "MET",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MET is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TERT",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TERT is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "SUFU",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SUFU is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PREX2",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PREX2 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ARID2",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID2 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "CBL",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CBL is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "KDM6A",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM6A is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ERBB3",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB3 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ARHGEF12",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGEF12 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "APC",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APC is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NRG1",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRG1 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "ATRX",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ATRX is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "XPC",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XPC is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "LRP1B",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LRP1B is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "NF1",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NF1 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PRKAR1A",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PRKAR1A is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "PTPN13",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTPN13 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "TSC1",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSC1 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.37"
+    },
+    {
+      "source": "EGFR",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "VHL",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VHL is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KDM5C",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KDM5C is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "SMARCB1",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCB1 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ABL1",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ABL1 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID1A",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1A is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "BRCA2",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRCA2 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NOTCH2",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NOTCH2 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2D",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2D is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3CA",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CA is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "TP53",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ARID1B",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARID1B is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CREBBP",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CREBBP is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3R1",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3R1 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MTOR",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MTOR is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MAP3K1",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP3K1 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FGFR3",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FGFR3 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "DDR2",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DDR2 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PTEN",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PIK3CB",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PIK3CB is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "NTRK1",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK1 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "MYB",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MYB is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "CHEK2",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CHEK2 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "KMT2A",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KMT2A is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "FLT4",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FLT4 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "ERBB2",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ERBB2 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.28"
+    },
+    {
+      "source": "PAX5",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAX5 is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.18"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with Meningothelial Meningioma (MENINGOTHELIAL_MENINGIOMA). Open Targets association score 0.18"
+    }
+  ]
+}

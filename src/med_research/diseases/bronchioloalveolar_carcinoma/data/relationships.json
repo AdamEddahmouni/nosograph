@@ -1,0 +1,556 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL2108738",
+      "target": "PDCD1",
+      "type": "TARGETS",
+      "description": "NIVOLUMAB targets PDCD1."
+    },
+    {
+      "source": "CHEMBL3137343",
+      "target": "PDCD1",
+      "type": "TARGETS",
+      "description": "PEMBROLIZUMAB targets PDCD1."
+    },
+    {
+      "source": "CHEMBL601719",
+      "target": "ALK",
+      "type": "TARGETS",
+      "description": "CRIZOTINIB targets ALK."
+    },
+    {
+      "source": "CHEMBL4297840",
+      "target": "PDCD1",
+      "type": "TARGETS",
+      "description": "TISLELIZUMAB targets PDCD1."
+    },
+    {
+      "source": "CHEMBL553",
+      "target": "EGFR",
+      "type": "TARGETS",
+      "description": "ERLOTINIB targets EGFR."
+    },
+    {
+      "source": "CHEMBL1201583",
+      "target": "VEGFA",
+      "type": "TARGETS",
+      "description": "BEVACIZUMAB targets VEGFA."
+    },
+    {
+      "source": "CHEMBL1201583",
+      "target": "VEGFA",
+      "type": "TARGETS",
+      "description": "BEVACIZUMAB targets VEGFA."
+    },
+    {
+      "source": "XIAP",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "XIAP is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CCND1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CCND1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDK4",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK4 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1B",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1B is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "MKI67",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "MKI67 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "RB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "RB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "TP53",
+      "target": "dna-repair",
+      "type": "PARTICIPATES_IN",
+      "description": "TP53 is a component of the DNA Repair pathway."
+    },
+    {
+      "source": "MMP9",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP9 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "SLC2A1",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A1 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "EGFR",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "EGFR is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "KRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "AKT1",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "AKT1 is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "PTEN",
+      "target": "pi3k-akt-mtor",
+      "type": "PARTICIPATES_IN",
+      "description": "PTEN is a component of the PI3K / AKT / mTOR Signaling pathway."
+    },
+    {
+      "source": "CD40LG",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD40LG is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD86",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD86 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CTLA4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTLA4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TSHR",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TSHR is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "IFNB1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNB1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "VEGFA",
+      "target": "vegf-angiogenesis",
+      "type": "PARTICIPATES_IN",
+      "description": "VEGFA is a component of the VEGF / Angiogenesis pathway."
+    },
+    {
+      "source": "CTNNB1",
+      "target": "wnt-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CTNNB1 is a component of the Wnt Signaling pathway."
+    },
+    {
+      "source": "CYP19A1",
+      "target": "xenobiotic-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CYP19A1 is a component of the Xenobiotic Metabolism pathway."
+    },
+    {
+      "source": "IFNB1",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNB1 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDH1",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "EGFR",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EGFR is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CEACAM5",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM5 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MUC1",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC1 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SLC2A1",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A1 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.02"
+    },
+    {
+      "source": "RPL17",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC5AC",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC5AC is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "LIPH",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPH is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRT7",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT7 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "ALK",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "NKX2-1",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NKX2-1 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP53",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP53 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "VEGFA",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "VEGFA is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CCND1",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCND1 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MKI67",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MKI67 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRAS",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRAS is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC6",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC6 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "DCUN1D1",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "DCUN1D1 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MMP9",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP9 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PXN",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PXN is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN1B",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1B is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MUC2",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MUC2 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MCM2",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCM2 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "KRT20",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KRT20 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "AKT1",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "AKT1 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM7",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM7 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CEACAM3",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CEACAM3 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PSG2",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSG2 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "UVRAG",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "UVRAG is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CKAP4",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CKAP4 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TP63",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TP63 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPE65",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPE65 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SP3",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SP3 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "OCIAD2",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "OCIAD2 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SP1",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SP1 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTNNB1",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTNNB1 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CYP19A1",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CYP19A1 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PAK1",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PAK1 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SMARCA4",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMARCA4 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TCEAL1",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCEAL1 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TSHR",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TSHR is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDK4",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK4 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTK2",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTK2 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PDCD1",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD86",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD86 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SPATA2",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CD40LG",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD40LG is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "EML4",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EML4 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "XIAP",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "XIAP is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RB1",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RB1 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CTLA4",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CTLA4 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "PTEN",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PTEN is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MSI1",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MSI1 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "SNCA",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "FHIT",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FHIT is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    },
+    {
+      "source": "CADM1",
+      "target": "bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CADM1 is associated with bronchioloalveolar carcinoma (BRONCHIOLOALVEOLAR_CARCINOMA). Open Targets association score 0.01"
+    }
+  ]
+}

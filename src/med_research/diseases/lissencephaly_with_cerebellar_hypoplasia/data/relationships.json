@@ -1,0 +1,592 @@
+{
+  "relationships": [
+    {
+      "source": "BCL2A1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "BCL2A1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "MCL1",
+      "target": "apoptosis",
+      "type": "PARTICIPATES_IN",
+      "description": "MCL1 is a component of the Apoptosis pathway."
+    },
+    {
+      "source": "CD207",
+      "target": "bcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD207 is a component of the B Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "TNFSF11",
+      "target": "bone-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF11 is a component of the Bone Remodeling pathway."
+    },
+    {
+      "source": "CDK5",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDK5 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN2A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN2A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "KLRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "KLRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CCL20",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CCL20 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCL12",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL12 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "CXCR4",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCR4 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "MMP12",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "MMP12 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "RELN",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "RELN is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "il1-inflammasome",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the IL-1 / Inflammasome Pathway pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "CD274",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "CD274 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "PDCD1",
+      "target": "immune-checkpoint",
+      "type": "PARTICIPATES_IN",
+      "description": "PDCD1 is a component of the Immune Checkpoint Signaling pathway."
+    },
+    {
+      "source": "JAK2",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "JAK2 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "STAT3",
+      "target": "jak-stat",
+      "type": "PARTICIPATES_IN",
+      "description": "STAT3 is a component of the JAK-STAT Signaling pathway."
+    },
+    {
+      "source": "BRAF",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "BRAF is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAP2K1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAP2K1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "MAPK8IP3",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MAPK8IP3 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "NRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "NRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "RAF1",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "RAF1 is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "KIT",
+      "target": "mast-cell",
+      "type": "PARTICIPATES_IN",
+      "description": "KIT is a component of the Mast Cell / IgE Signaling pathway."
+    },
+    {
+      "source": "RELN",
+      "target": "nfkb",
+      "type": "PARTICIPATES_IN",
+      "description": "RELN is a component of the NF-κB Pathway pathway."
+    },
+    {
+      "source": "CD4",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD4 is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "CD8A",
+      "target": "tcr-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CD8A is a component of the T Cell Receptor Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "IL17A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL17A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "IL23A",
+      "target": "th17-il17",
+      "type": "PARTICIPATES_IN",
+      "description": "IL23A is a component of the Th17 / IL-17 Pathway pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TGM2",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGM2 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "TNF",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNF is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFRSF11B is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "TNFSF11",
+      "target": "tnf-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "TNFSF11 is a component of the TNF Signaling pathway."
+    },
+    {
+      "source": "IFNGR1",
+      "target": "type1-ifn",
+      "type": "PARTICIPATES_IN",
+      "description": "IFNGR1 is a component of the Type I Interferon Pathway pathway."
+    },
+    {
+      "source": "CDK5",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDK5 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.41"
+    },
+    {
+      "source": "RELN",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RELN is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.37"
+    },
+    {
+      "source": "BRAF",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BRAF is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.10"
+    },
+    {
+      "source": "CD1A",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD1A is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "IL17A",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL17A is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "BCL2A1",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "BCL2A1 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.08"
+    },
+    {
+      "source": "CXCR4",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCR4 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.07"
+    },
+    {
+      "source": "TGFB1",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "SIRPA",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SIRPA is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.05"
+    },
+    {
+      "source": "RPL17",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "TNF",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNF is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "MAP2K1",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP2K1 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "PLXNB2",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLXNB2 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "SATB2",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SATB2 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.04"
+    },
+    {
+      "source": "CCL20",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCL20 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL23A",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL23A is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "IL37",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL37 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "MAPK8IP3",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK8IP3 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "LMNB2",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LMNB2 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "JAK2",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JAK2 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SOX11",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SOX11 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ROBO1",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ROBO1 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD8A",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD8A is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "STAT3",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STAT3 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD207",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD207 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD274",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD274 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "CD4",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CD4 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "ALK",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ALK is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "SLPI",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLPI is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.03"
+    },
+    {
+      "source": "PDCD1",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PDCD1 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ACVRL1",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ACVRL1 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "KIT",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIT is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "LHCGR",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LHCGR is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MMP12",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MMP12 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "RPL17-C18orf32",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPL17-C18orf32 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SPATA2",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPATA2 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SNCA",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SNCA is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDH1",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDH1 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "SPP1",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SPP1 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ENG",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ENG is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GH1",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GH1 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CDKN2A",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN2A is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GSDMB",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSDMB is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "KIR2DL4",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KIR2DL4 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "RAF1",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RAF1 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "ZHX2",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZHX2 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GGH",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GGH is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TGM2",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGM2 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "TNFSF11",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFSF11 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "FCGRT",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FCGRT is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "MCL1",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MCL1 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "GSN",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GSN is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "IFNGR1",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IFNGR1 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "CXCL12",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL12 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "KLRB1",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KLRB1 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "POSTN",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "POSTN is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "NRAS",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NRAS is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.02"
+    },
+    {
+      "source": "NTRK3",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "NTRK3 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "MAPK1",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAPK1 is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.01"
+    },
+    {
+      "source": "TNFRSF11B",
+      "target": "lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TNFRSF11B is associated with lissencephaly with cerebellar hypoplasia (LISSENCEPHALY_WITH_CEREBELLAR_HYPOPLASIA). Open Targets association score 0.01"
+    }
+  ]
+}
